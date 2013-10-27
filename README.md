@@ -80,7 +80,7 @@ $ cd /path/to/dc-general-docs
 # clean documentation
 $ cd build/html
 $ git pull
-$ git rm -r *
+$ git rm -rf *
 
 # build documentation
 $ cd ../../

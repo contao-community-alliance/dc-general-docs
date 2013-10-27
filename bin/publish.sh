@@ -9,7 +9,7 @@ echo -e ' \e[1;34m*\e[00m \e[1;31mclean gh-pages\e[00m'
 echo
 cd build/html
 git pull
-git rm -r *
+git rm -rf *
 
 # build documentation
 echo
