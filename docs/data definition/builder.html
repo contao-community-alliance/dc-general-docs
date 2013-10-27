@@ -1,0 +1,237 @@
+
+  
+  
+ 
+  
+  
+ 
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Builder &mdash; DcGeneral 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="DcGeneral 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Data definition" href="../data definition.html" />
+    <link rel="next" title="Events" href="builder/events.html" />
+    <link rel="prev" title="Data definition" href="../data definition.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">DcGeneral</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../data definition.html">Data definition</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="builder/events.html">Events</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="builder/events.html#event-reference">Event reference</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="palettes.html">Palettes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#history-and-basics">History and basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#conditions">Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#php-example">PHP Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#palette-builder">Palette Builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../book/index.html">Cookbook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Builder</a><ul>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="../data definition.html"
+         title="Previous Chapter: Data definition">&laquo; Data definition</a></li>
+  <li><a href="builder/events.html"
+         title="Next Chapter: Events">Events &raquo;</a></li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="builder">
+<h1>Builder<a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="builder/events.html">Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="builder/events.html#event-reference">Event reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder/events.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2013, Christian Schiffler, Stefan Heimes, Tristan Lins.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

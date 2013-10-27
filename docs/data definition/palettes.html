@@ -1,0 +1,597 @@
+
+  
+  
+ 
+  
+  
+ 
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Palettes &mdash; DcGeneral 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="DcGeneral 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Data definition" href="../data definition.html" />
+    <link rel="next" title="Cookbook" href="../../book/index.html" />
+    <link rel="prev" title="Events" href="builder/events.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">DcGeneral</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../data definition.html">Data definition</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="builder.html">Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="builder/events.html">Events</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="builder/events.html#event-reference">Event reference</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="builder/events.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Palettes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#history-and-basics">History and basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conditions">Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#php-example">PHP Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#palette-builder">Palette Builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../book/index.html">Cookbook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Palettes</a><ul>
+<li><a class="reference internal" href="#history-and-basics">History and basics</a></li>
+<li><a class="reference internal" href="#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li><a class="reference internal" href="#conditions">Conditions</a></li>
+<li><a class="reference internal" href="#php-example">PHP Example</a></li>
+<li><a class="reference internal" href="#palette-builder">Palette Builder</a></li>
+<li><a class="reference internal" href="#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="builder/events.html"
+         title="Previous Chapter: Events">&laquo; Events</a></li>
+  <li><a href="../../book/index.html"
+         title="Next Chapter: Cookbook">Cookbook &raquo;</a></li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="palettes">
+<h1>Palettes<a class="headerlink" href="#palettes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="history-and-basics">
+<h2>History and basics<a class="headerlink" href="#history-and-basics" title="Permalink to this headline">¶</a></h2>
+<p>In Contao palettes are defined as array of strings like this:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;__selector__&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;{title_legend},type,title;{published_legend:hide},published&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;type_one&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;{title_legend},type,title;{experts_legend:hide},expert_option;{published_legend:hide},published&#39;</span><span class="p">,</span>
+<span class="p">),</span>
+<span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;published&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;start,stop&#39;</span>
+<span class="p">),</span>
+</pre></div>
+</div>
+<p>Which is very limited in every case. Strings make it difficult to manipulate palettes. And there is only two level of conditional fields, the palette selection and subpalettes. Because string based palettes are very limited, the <a class="reference external" href="https://github.com/bit3/contao-meta-palettes">MetaPalettes</a> extension tries to extend palettes by defining them as arrays of arrays like this:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;__selector__&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+<span class="p">),</span>
+<span class="s1">&#39;metapalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;published&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;:hide&#39;</span><span class="p">,</span> <span class="nx">published</span><span class="s1">&#39;)</span>
+<span class="s1">    ),</span>
+<span class="s1">    &#39;</span><span class="nx">type_one</span><span class="s1">&#39; =&gt; array(</span>
+<span class="s1">        &#39;</span><span class="nx">title</span><span class="s1">&#39; =&gt; array(&#39;</span><span class="nx">type</span><span class="s1">&#39;, &#39;</span><span class="nx">title</span><span class="s1">&#39;),</span>
+<span class="s1">        &#39;</span><span class="nx">experts</span><span class="s1">&#39; =&gt; array(&#39;</span><span class="o">:</span><span class="nx">hide</span><span class="s1">&#39;, &#39;</span><span class="nx">expert_option</span><span class="s1">&#39;),</span>
+<span class="s1">        &#39;</span><span class="nx">published</span><span class="s1">&#39; =&gt; array(&#39;</span><span class="o">:</span><span class="nx">hide</span><span class="s1">&#39;, published&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">),</span>
+<span class="s1">&#39;metasubpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;published&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">)</span>
+<span class="p">),</span>
+</pre></div>
+</div>
+<p>MetaPalettes make the definition and manipulation of palettes easier, but it is still hardly limited in fact it only generate string based palettes from the arrays. Everything else is done by Contao&#8217;s DC_Table.</p>
+<p>To break the known limitations, the DC General contains an object oriented palette system.</p>
+</div>
+<div class="section" id="the-palette-object-hierarchy">
+<h2>The palette object hierarchy<a class="headerlink" href="#the-palette-object-hierarchy" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>Container
+  \-1:1- PaletteCollection
+          \-( contains a set of palettes )
+          \-1:n- Palette
+                  \-( contains a set of legends )
+                  \-( can have a condition that define the active palette )
+                  \-1:n- Legend
+                          \-( contains a set of properties aka fields )
+                          \-1:n- Property
+                                  \-( a property aka field in a legend )
+                                  \-( can have conditions that define if the property is visible and editable )</pre>
+</div>
+<p>There is no place for subpalettes or something similar. Instead of use a direct hierarchical bounding between fields, each field can have a condition (or more through a chain) that define if the field is visible and/or editable.</p>
+<p>Same for palettes, which will not selected by their name (the name is supported, but is marked as deprecated will be dropped in the future). Palettes even can have a condition (or more through a chain) that define if the palette is active or not.</p>
+</div>
+<div class="section" id="conditions">
+<h2>Conditions<a class="headerlink" href="#conditions" title="Permalink to this headline">¶</a></h2>
+<p>Properties has two conditions. One for its visibility and one for the editable state. If no condition is set, the property is supposed to be visible and editable.</p>
+<p>Palette conditions are a bit more complex, even if they have only one condition. To determinate the active palette, a matching count is calculated from the condition. The <tt class="docutils literal"><span class="pre">DefaultPaletteCondition</span></tt> produce a matching count of <tt class="docutils literal"><span class="pre">0</span></tt> (the lowest value by definition, negative values are not supported). Every other condition produce a matching count of <tt class="docutils literal"><span class="pre">1</span></tt> or greater. A <tt class="docutils literal"><span class="pre">PaletteConditionChain</span></tt> summarize all counts from its conditions. A <tt class="docutils literal"><span class="pre">false</span></tt> matching count means &#8220;no matching&#8221;. The palette with the highest matching count is supposed as active palette.</p>
+</div>
+<div class="section" id="php-example">
+<h2>PHP Example<a class="headerlink" href="#php-example" title="Permalink to this headline">¶</a></h2>
+<p>The palettes are object oriented, that means you can directly create your palettes via PHP code.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// main objects</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\PaletteCollection</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Palette</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Legend</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Property</span><span class="p">;</span>
+
+<span class="c1">// conditions for palettes</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Condition\Palette\DefaultPaletteCondition</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Condition\Palette\PropertyValueCondition</span> <span class="k">as</span> <span class="nx">PalettePropertyValueCondition</span><span class="p">;</span>
+
+<span class="c1">// conditions for properties</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\Condition\Property\PropertyValueCondition</span><span class="p">;</span>
+
+<span class="c1">// default palette</span>
+<span class="p">{</span>
+  <span class="c1">// create type property</span>
+  <span class="nv">$typeProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$typeProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create title property</span>
+  <span class="nv">$titleProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$titleProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create published property</span>
+  <span class="nv">$publishedProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$publishedProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create start property</span>
+  <span class="nv">$startProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$startProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;start&#39;</span><span class="p">);</span>
+  <span class="nv">$startProperty</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">PropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+  <span class="c1">// create stop property</span>
+  <span class="nv">$stopProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$stopProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">);</span>
+  <span class="nv">$stopProperty</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">PropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+  <span class="c1">// create title legend</span>
+  <span class="nv">$titleLegend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Legend</span><span class="p">();</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$typeProperty</span><span class="p">);</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$titleProperty</span><span class="p">);</span>
+
+  <span class="c1">// create published legend</span>
+  <span class="nv">$publishedLegend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Legend</span><span class="p">();</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$publishedProperty</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$startProperty</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$stopProperty</span><span class="p">);</span>
+
+  <span class="c1">// create default palette</span>
+  <span class="nv">$defaultPalette</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Palette</span><span class="p">();</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">addLegend</span><span class="p">(</span><span class="nv">$titleLegend</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">addLegend</span><span class="p">(</span><span class="nv">$publishedLegend</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">DefaultPaletteCondition</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="c1">// type_one palette</span>
+<span class="p">{</span>
+  <span class="c1">// create type property</span>
+  <span class="nv">$typeProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$typeProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create title property</span>
+  <span class="nv">$titleProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$titleProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create expert option property</span>
+  <span class="nv">$expertOptionProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$expertOptionProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;expert_option&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create published property</span>
+  <span class="nv">$publishedProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$publishedProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">);</span>
+
+  <span class="c1">// create start property</span>
+  <span class="nv">$startProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$startProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;start&#39;</span><span class="p">);</span>
+  <span class="nv">$startProperty</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">PropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+  <span class="c1">// create stop property</span>
+  <span class="nv">$stopProperty</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Property</span><span class="p">();</span>
+  <span class="nv">$stopProperty</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">);</span>
+  <span class="nv">$stopProperty</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">PropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+  <span class="c1">// create title legend</span>
+  <span class="nv">$titleLegend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Legend</span><span class="p">();</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$typeProperty</span><span class="p">);</span>
+  <span class="nv">$titleLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$titleProperty</span><span class="p">);</span>
+
+  <span class="c1">// create experts legend</span>
+  <span class="nv">$expertsLegend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Legend</span><span class="p">();</span>
+  <span class="nv">$expertsLegend</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;experts&#39;</span><span class="p">);</span>
+  <span class="nv">$expertsLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$expertOptionProperty</span><span class="p">);</span>
+
+  <span class="c1">// create published legend</span>
+  <span class="nv">$publishedLegend</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Legend</span><span class="p">();</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$publishedProperty</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$startProperty</span><span class="p">);</span>
+  <span class="nv">$publishedLegend</span><span class="o">-&gt;</span><span class="na">addProperty</span><span class="p">(</span><span class="nv">$stopProperty</span><span class="p">);</span>
+
+  <span class="c1">// create default palette</span>
+  <span class="nv">$defaultPalette</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Palette</span><span class="p">();</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">addLegend</span><span class="p">(</span><span class="nv">$titleLegend</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">addLegend</span><span class="p">(</span><span class="nv">$expertsLegend</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">addLegend</span><span class="p">(</span><span class="nv">$publishedLegend</span><span class="p">);</span>
+  <span class="nv">$defaultPalette</span><span class="o">-&gt;</span><span class="na">setCondition</span><span class="p">(</span><span class="k">new</span> <span class="nx">PalettePropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;type_one&#39;</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">// create the palette collection and add all palettes</span>
+<span class="nv">$collection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PaletteCollection</span><span class="p">();</span>
+<span class="nv">$collection</span><span class="o">-&gt;</span><span class="na">addPalette</span><span class="p">(</span><span class="nv">$defaultPalette</span><span class="p">);</span>
+<span class="nv">$collection</span><span class="o">-&gt;</span><span class="na">addPalette</span><span class="p">(</span><span class="nv">$typeOnePalette</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>This create the same palette as the example in the first chapter <a class="reference internal" href="#history-and-basics">History and basics</a>.</p>
+</div>
+<div class="section" id="palette-builder">
+<h2>Palette Builder<a class="headerlink" href="#palette-builder" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="#php-example">PHP example</a> show how to create palettes by directly accessing the API. Using the API may result in a lot of code. If you need to use PHP, it is easier to use the palette builder.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Palette\PaletteBuilder</span><span class="p">;</span>
+
+<span class="nv">$collection</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="nx">PaletteBuilder</span><span class="o">::</span><span class="na">create</span><span class="p">()</span>
+  <span class="o">-&gt;</span><span class="na">createPalette</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">createLegend</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+    <span class="o">-&gt;</span><span class="na">createLegend</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">)</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">createPropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">)</span>
+          <span class="o">-&gt;</span><span class="na">finishCondition</span><span class="p">()</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+    <span class="o">-&gt;</span><span class="na">finishPalette</span><span class="p">()</span>
+  <span class="o">-&gt;</span><span class="na">createPalette</span><span class="p">(</span><span class="s1">&#39;type_one&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">createPropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;type_one&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">createLegend</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+    <span class="o">-&gt;</span><span class="na">createLegend</span><span class="p">(</span><span class="s1">&#39;experts&#39;</span><span class="p">)</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;expert_option&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+    <span class="o">-&gt;</span><span class="na">createLegend</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">)</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">createProperty</span><span class="p">(</span><span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">createPropertyValueCondition</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">)</span>
+          <span class="o">-&gt;</span><span class="na">finishCondition</span><span class="p">()</span>
+        <span class="o">-&gt;</span><span class="na">finishProperty</span><span class="p">()</span>
+      <span class="o">-&gt;</span><span class="na">finishLegend</span><span class="p">()</span>
+    <span class="o">-&gt;</span><span class="na">finishPalette</span><span class="p">()</span>
+  <span class="o">-&gt;</span><span class="na">finishPaletteCollection</span><span class="p">(</span><span class="nv">$collection</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>Using the build simplify the palette creation a lot. And can be more simplified by simply omitt the <tt class="docutils literal"><span class="pre">finishPalette()</span></tt>, <tt class="docutils literal"><span class="pre">finishLegend()</span></tt>, <tt class="docutils literal"><span class="pre">finishProperty()</span></tt> and <tt class="docutils literal"><span class="pre">finishCondition()</span></tt> calls. The <tt class="docutils literal"><span class="pre">finish*</span></tt> methods are only required in two situations. First if you need to &#8220;close&#8221; the current element to make sure the next call will be affect the previous element (this is required for <tt class="docutils literal"><span class="pre">create*Condition</span></tt> which can affect palettes or properties. And second if you want to &#8220;fetch&#8221; the build element, in the example this is done by <tt class="docutils literal"><span class="pre">finishPaletteCollection($collection)</span></tt>. All <tt class="docutils literal"><span class="pre">finish*()</span></tt> methods &#8220;return&#8221; the created element by reference back into the parameter.</p>
+<p><strong>Hint</strong>: The <tt class="docutils literal"><span class="pre">createProperty</span></tt> method is a little special, because it accept multiple property names. If you pass multiple property names, they will be considered as a set of properties. All following calls will affect the complete set, not only the last property. This is useful if you need to add the same condition to multiple fields, like the <tt class="docutils literal"><span class="pre">start</span></tt> and <tt class="docutils literal"><span class="pre">stop</span></tt> properties in the example above.</p>
+</div>
+<div class="section" id="parser">
+<h2>Parser<a class="headerlink" href="#parser" title="Permalink to this headline">¶</a></h2>
+<p>Parsers are used to create palettes from other data formats than PHP.</p>
+<p><strong>TODO</strong> <em>there are currently no parsers exists, this chapter will be completed if there are any parsers</em></p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2013, Christian Schiffler, Stefan Heimes, Tristan Lins.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

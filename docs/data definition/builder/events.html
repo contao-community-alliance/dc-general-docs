@@ -1,0 +1,378 @@
+
+  
+  
+ 
+  
+  
+ 
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Events &mdash; DcGeneral 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="DcGeneral 1.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Builder" href="../builder.html" />
+    <link rel="next" title="Palettes" href="../palettes.html" />
+    <link rel="prev" title="Builder" href="../builder.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html">DcGeneral</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../data definition.html">Data definition</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../builder.html">Builder</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="">Events</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#event-reference">Event reference</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../palettes.html">Palettes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#history-and-basics">History and basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#conditions">Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#php-example">PHP Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#palette-builder">Palette Builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../book/index.html">Cookbook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Reference</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Events</a><ul>
+<li><a class="reference internal" href="#event-reference">Event reference</a><ul>
+<li><a class="reference internal" href="#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li><a class="reference internal" href="#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li><a class="reference internal" href="#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li><a class="reference internal" href="#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li><a class="reference internal" href="#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li><a class="reference internal" href="#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li><a class="reference internal" href="#createpaletteevent">CreatePaletteEvent</a></li>
+<li><a class="reference internal" href="#finishpaletteevent">FinishPaletteEvent</a></li>
+<li><a class="reference internal" href="#createlegendevent">CreateLegendEvent</a></li>
+<li><a class="reference internal" href="#finishlegendevent">FinishLegendEvent</a></li>
+<li><a class="reference internal" href="#createpropertyevent">CreatePropertyEvent</a></li>
+<li><a class="reference internal" href="#finishpropertyevent">FinishPropertyEvent</a></li>
+<li><a class="reference internal" href="#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li><a class="reference internal" href="#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li><a class="reference internal" href="#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li><a class="reference internal" href="#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li><a class="reference internal" href="#createconditionevent">CreateConditionEvent</a></li>
+<li><a class="reference internal" href="#finishconditionevent">FinishConditionEvent</a></li>
+<li><a class="reference internal" href="#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="../builder.html"
+         title="Previous Chapter: Builder">&laquo; Builder</a></li>
+  <li><a href="../palettes.html"
+         title="Next Chapter: Palettes">Palettes &raquo;</a></li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
+<p>The PaletteBuilder dispatch a lot of events for customisation.</p>
+<div class="section" id="event-reference">
+<h2>Event reference<a class="headerlink" href="#event-reference" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setpalettecollectionclassnameevent">
+<h3>SetPaletteCollectionClassNameEvent<a class="headerlink" href="#setpalettecollectionclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteCollectionClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteCollectionInterface.php">PaletteCollection</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpaletteclassnameevent">
+<h3>SetPaletteClassNameEvent<a class="headerlink" href="#setpaletteclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteInterface.php">Palette</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setlegendclassnameevent">
+<h3>SetLegendClassNameEvent<a class="headerlink" href="#setlegendclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetLegendClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/LegendInterface.php">Legend</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpropertyclassnameevent">
+<h3>SetPropertyClassNameEvent<a class="headerlink" href="#setpropertyclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PropertyInterface.php">Property</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpaletteconditionchainclassnameevent">
+<h3>SetPaletteConditionChainClassNameEvent<a class="headerlink" href="#setpaletteconditionchainclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteConditionChainClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PaletteConditionChain.php">PaletteConditionChain</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setdefaultpaletteconditionclassnameevent">
+<h3>SetDefaultPaletteConditionClassNameEvent<a class="headerlink" href="#setdefaultpaletteconditionclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetDefaultPaletteConditionClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/DefaultPaletteCondition.php">DefaultPaletteCondition</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpalettepropertyvalueconditionclassnameevent">
+<h3>SetPalettePropertyValueConditionClassNameEvent<a class="headerlink" href="#setpalettepropertyvalueconditionclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPalettePropertyValueConditionClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PropertyValueCondition.php">Palette PropertyValueCondition</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpropertyconditionchainclassnameevent">
+<h3>SetPropertyConditionChainClassNameEvent<a class="headerlink" href="#setpropertyconditionchainclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyConditionChainClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyConditionChain.php">PropertyConditionChain</a> implementation class name is set.</p>
+</div>
+<div class="section" id="setpropertyvalueconditionclassnameevent">
+<h3>SetPropertyValueConditionClassNameEvent<a class="headerlink" href="#setpropertyvalueconditionclassnameevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyValueConditionClassName</pre>
+</div>
+<p>Is dispatched when the <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyValueCondition.php">PropertyValueCondition</a> implementation class name is set.</p>
+</div>
+<div class="section" id="createpalettecollectionevent">
+<h3>CreatePaletteCollectionEvent<a class="headerlink" href="#createpalettecollectionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteCollection</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteCollectionInterface.php">PaletteCollection</a> is created.</p>
+</div>
+<div class="section" id="finishpalettecollectionevent">
+<h3>FinishPaletteCollectionEvent<a class="headerlink" href="#finishpalettecollectionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\FinishPaletteCollection</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteCollectionInterface.php">PaletteCollection</a> is finished.</p>
+</div>
+<div class="section" id="createpaletteevent">
+<h3>CreatePaletteEvent<a class="headerlink" href="#createpaletteevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePalette</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteInterface.php">Palette</a> is created.</p>
+</div>
+<div class="section" id="finishpaletteevent">
+<h3>FinishPaletteEvent<a class="headerlink" href="#finishpaletteevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\FinishPalette</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PaletteInterface.php">Palette</a> is finished.</p>
+</div>
+<div class="section" id="createlegendevent">
+<h3>CreateLegendEvent<a class="headerlink" href="#createlegendevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreateLegend</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/LegendInterface.php">Legend</a> is created.</p>
+</div>
+<div class="section" id="finishlegendevent">
+<h3>FinishLegendEvent<a class="headerlink" href="#finishlegendevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\FinishLegend</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/LegendInterface.php">Legend</a> is finished.</p>
+</div>
+<div class="section" id="createpropertyevent">
+<h3>CreatePropertyEvent<a class="headerlink" href="#createpropertyevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreateProperty</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PropertyInterface.php">Property</a> is created.</p>
+</div>
+<div class="section" id="finishpropertyevent">
+<h3>FinishPropertyEvent<a class="headerlink" href="#finishpropertyevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\FinishProperty</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/PropertyInterface.php">Property</a> is finished.</p>
+</div>
+<div class="section" id="createpaletteconditionchainevent">
+<h3>CreatePaletteConditionChainEvent<a class="headerlink" href="#createpaletteconditionchainevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChain</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PaletteConditionChain.php">PalettePaletteConditionChain</a> is created.</p>
+</div>
+<div class="section" id="createpropertyconditionchainevent">
+<h3>CreatePropertyConditionChainEvent<a class="headerlink" href="#createpropertyconditionchainevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePropertyConditionChain</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyConditionChain.php">PropertyPropertyConditionChain</a> is created.</p>
+</div>
+<div class="section" id="createdefaultpaletteconditionevent">
+<h3>CreateDefaultPaletteConditionEvent<a class="headerlink" href="#createdefaultpaletteconditionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreateDefaultPaletteCondition</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/DefaultPaletteCondition.php">PaletteDefaultPaletteCondition</a> is created.</p>
+</div>
+<div class="section" id="createpropertyvalueconditionevent">
+<h3>CreatePropertyValueConditionEvent<a class="headerlink" href="#createpropertyvalueconditionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePropertyValueCondition</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PalettePropertyValueCondition.php">PalettePropertyValueCondition</a> or <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyValueCondition.php">PropertyPropertyValueCondition</a> is created.</p>
+</div>
+<div class="section" id="createconditionevent">
+<h3>CreateConditionEvent<a class="headerlink" href="#createconditionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\CreateCondition</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PaletteConditionInterface.php">PalettePaletteCondition</a> or <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyConditionInterface.php">PropertyPropertyConditionInterface</a> is created.</p>
+</div>
+<div class="section" id="finishconditionevent">
+<h3>FinishConditionEvent<a class="headerlink" href="#finishconditionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\FinishCondition</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PaletteConditionInterface.php">PalettePaletteCondition</a> or <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyConditionInterface.php">PropertyPropertyConditionInterface</a> is finished.</p>
+</div>
+<div class="section" id="addconditionevent">
+<h3>AddConditionEvent<a class="headerlink" href="#addconditionevent" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>DcGeneral\DataDefinition\Palette\Builder\Event\AddCondition</pre>
+</div>
+<p>Is dispatched when a <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Palette/PaletteConditionInterface.php">PalettePaletteCondition</a> or <a class="reference external" href="https://github.com/MetaModels/DC_General/tree/master/system/modules/generalDriver/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyConditionInterface.php">PropertyPropertyConditionInterface</a> is added to a palette or property.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2013, Christian Schiffler, Stefan Heimes, Tristan Lins.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
