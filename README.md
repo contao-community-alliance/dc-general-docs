@@ -60,3 +60,37 @@ $ make html
 ```
 
 After `make html` you will find the documentation in `build/html`.
+
+# Publish documentation
+
+## Checkout gh-pages
+
+```bash
+$ cd /path/to/dc-general-docs
+# if you previously generated the documentation
+$ rm -r build
+$ git clone -b gh-pages https://github.com/tristanlins/dc-general-docs.git build/html
+```
+
+## Update gh-pages
+
+```bash
+$ cd /path/to/dc-general-docs
+
+# clean documentation
+$ cd build/html
+$ git pull
+$ git rm -r *
+
+# build documentation
+$ cd ../../
+$ make html
+
+# update documentation
+$ cd build/html
+$ git add .
+$ git commit -m "Generated $(date '+%Y-%m-%d %H:%M')"
+
+# publish documentation
+$ git push
+```
