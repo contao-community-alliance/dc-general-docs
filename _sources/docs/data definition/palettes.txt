@@ -202,7 +202,7 @@ This create the same palette as the example in the first chapter `History and ba
 Palette Builder
 ---------------
 
-The `PHP example`_ show how to create palettes by directly accessing the API. Using the API may result in a lot of code. If you need to use PHP, it is easier to use the palette builder.
+The `PHP example`_ show how to create palettes by directly accessing the API. Using the API may result in a lot of code. If you need to use PHP, it is easier to use the :doc:`builder`.
 
 .. code-block:: php
     :linenos:

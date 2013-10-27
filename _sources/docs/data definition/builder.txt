@@ -1,7 +1,4 @@
-Builder
-=======
+Palette builder
+===============
 
-.. toctree::
-   :glob:
-
-   builder/*
+**TODO** Need to be documented
