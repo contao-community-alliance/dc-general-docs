@@ -16,9 +16,12 @@ Here is a typical *legacy dca* example:
             ...
         ),
         // DcGeneral config
-        'data_provider' => array
+        'dca_config' => array
         (
-            ...
+            'data_provider' => array
+            (
+                ...
+            ),
         ),
         // List
         'list' => array
@@ -88,34 +91,37 @@ Legacy mapping
 Extended mapping
 ~~~~~~~~~~~~~~~~
 
-+----------------------------------------------+----------------------------------------+
-| .. code-block:: php                          | ::                                     |
-|                                              |                                        |
-|     $GLOBALS['TL_DCA']['tl_example'] = array |     -                                  |
-|     (                                        |     -                                  |
-|         // DcGeneral config                  |     -                                  |
-|         'data_provider' => array             |     -                                  |
-|         (                                    |     -                                  |
-|             'root' => array(                 |     -> used as *root* data provider    |
-|                 ...                          |     -                                  |
-|             ),                               |     -                                  |
-|             'parent' => array(               |     -> used as *parent* data provider  |
-|                 ...                          |     -                                  |
-|             ),                               |     -                                  |
-|             'default' => array(              |     -> used as *default* data provider |
-|                 ...                          |     -                                  |
-|             )                                |     -                                  |
-|         ),                                   |     -                                  |
-|         // List                              |     -                                  |
-|         'list' => array                      |     -                                  |
-|         (                                    |     -                                  |
-|             'sorting' => array               |     -                                  |
-|             (                                |     -                                  |
-|                 'mode' => 6,                 |     -> used as mode                    |
-|             ),                               |     -                                  |
-|         ),                                   |     -                                  |
-|     );                                       |     -                                  |
-+----------------------------------------------+----------------------------------------+
++--------------------------------------------------+----------------------------------------+
+| .. code-block:: php                              | ::                                     |
+|                                                  |                                        |
+|     $GLOBALS['TL_DCA']['tl_example'] = array     |     -                                  |
+|     (                                            |     -                                  |
+|         // DcGeneral config                      |     -                                  |
+|         'dca_config' => array                    |     -                                  |
+|         (                                        |     -                                  |
+|             'data_provider' => array             |     -                                  |
+|             (                                    |     -                                  |
+|                 'root' => array(                 |     -> used as *root* data provider    |
+|                     ...                          |     -                                  |
+|                 ),                               |     -                                  |
+|                 'parent' => array(               |     -> used as *parent* data provider  |
+|                     ...                          |     -                                  |
+|                 ),                               |     -                                  |
+|                 'default' => array(              |     -> used as *default* data provider |
+|                     ...                          |     -                                  |
+|                 )                                |     -                                  |
+|             ),                                   |     -                                  |
+|         ),                                       |     -                                  |
+|         // List                                  |     -                                  |
+|         'list' => array                          |     -                                  |
+|         (                                        |     -                                  |
+|             'sorting' => array                   |     -                                  |
+|             (                                    |     -                                  |
+|                 'mode' => 6,                     |     -> used as mode                    |
+|             ),                                   |     -                                  |
+|         ),                                       |     -                                  |
+|     );                                           |     -                                  |
++--------------------------------------------------+----------------------------------------+
 
 full dca
 ========
