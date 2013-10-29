@@ -116,20 +116,20 @@ You can access the data provider section with this snippet:
 Legacy mapping
 ~~~~~~~~~~~~~~
 
-+---------------------------------------------------------+-------------------------------------------------------------+
-| .. code-block:: php                                     | .. parsed-literal::                                         |
-|                                                         |                                                             |
-|     $GLOBALS['TL_DCA']['tl_example'] = array            |    -> create a data provider information called *default*,  |
-|     (                                                   |       of type ContaoDataProviderInformation,                |
-|         // Config                                       |       with DcGeneral\Data\DefaultDriver as driver class,    |
-|         'config' => array                               |       with table name *tl_example* as source                |
-|         (                                               |       (``$dataProviderSection->getInformation("default")``) |
-|             'ptable' => 'tl_parent',                    |    -> create a data provider information called *parent*,   |
-|             'ctable' => array('tl_child1', 'tl_child2') |       of type ContaoDataProviderInformation,                |
-|         )                                               |       with DcGeneral\Data\DefaultDriver as driver class,    |
-|     );                                                  |       with table name *tl_parent* as source                 |
-|                                                         |       (``$dataProviderSection->getInformation("parent")``)  |
-+---------------------------------------------------------+-------------------------------------------------------------+
++---------------------------------------------------------+-----------------------------------------------------------------+
+| .. code-block:: php                                     | .. parsed-literal::                                             |
+|                                                         |                                                                 |
+|     $GLOBALS['TL_DCA']['tl_example'] = array            |    -> create a data provider information called **default**,    |
+|     (                                                   |       of type ``ContaoDataProviderInformation``,                |
+|         // Config                                       |       with ``DcGeneral\Data\DefaultDriver`` as driver class,    |
+|         'config' => array                               |       with table name **tl_example** as source                  |
+|         (                                               |       (``$dataProviderSection->getInformation("default")``)     |
+|             'ptable' => 'tl_parent',                    |    -> create a data provider information called **parent**,     |
+|             'ctable' => array('tl_child1', 'tl_child2') |       of type ``ContaoDataProviderInformation``,                |
+|         )                                               |       with ``DcGeneral\Data\DefaultDriver`` as driver class,    |
+|     );                                                  |       with table name **tl_parent** as source                   |
+|                                                         |       (``$dataProviderSection->getInformation("parent")``)      |
++---------------------------------------------------------+-----------------------------------------------------------------+
 
 Extended mapping
 ~~~~~~~~~~~~~~~~
