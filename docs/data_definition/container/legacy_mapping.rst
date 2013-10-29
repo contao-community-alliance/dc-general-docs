@@ -553,6 +553,49 @@ full dca
             )
         ),
 
+        // DcGeneral config
+        'dca_config' => array
+        (
+            'callback'       => 'DcGeneral\Callbacks\ContaoStyleCallbacks',
+            'data_provider'  => array
+            (
+                    'default' => array
+                    (
+                            'class'  => 'DcGeneral\Data\DefaultDriver',
+                            'source' => 'tl_example'
+                    ),
+                    'parent'  => array
+                    (
+                            'class'  => 'DcGeneral\Data\DefaultDriver',
+                            'source' => 'tl_parent'
+                    )
+            ),
+            'controller'     => 'DcGeneral\Controller\DefaultController',
+            'view'           => 'DcGeneral\View\DefaultView',
+            'childCondition' => array(
+                array(
+                    'from'   => 'tl_parent',
+                    'to'     => 'tl_example',
+                    'setOn'  => array
+                    (
+                        array(
+                            'from_field' => 'id',
+                            'to_field'   => 'pid'
+                        ),
+                    ),
+                    'filter' => array
+                    (
+                        array
+                        (
+                            'remote'    => 'id',
+                            'local'     => 'pid',
+                            'operation' => '='
+                        )
+                    )
+                )
+            )
+        ),
+
         // List
         'list' => array
         (
