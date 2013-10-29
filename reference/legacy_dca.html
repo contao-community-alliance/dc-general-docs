@@ -1,0 +1,477 @@
+
+
+  
+  
+ 
+  
+  
+ 
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Legacy DCA &mdash; DcGeneral 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dc-general-docs.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="DcGeneral 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Reference" href="index.html" />
+    <link rel="prev" title="Palette Builder" href="events/palette_builder.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">DcGeneral</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../docs/data_definition.html">Data definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/builder.html">Palette builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/container.html">Container</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html">Legacy mapping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#basic-config-mapping">Basic config mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#mapping">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#data-provider-mapping">Data provider mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id1">Legacy mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#extended-mapping">Extended mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#backend-view">Backend view</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#listing">Listing</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id2">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#global-operations">Global operations</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id3">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#item-operations">Item operations</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id4">Mapping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#full-dca">full dca</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container.html#default-sections">Default sections</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container.html#basic-section">Basic section</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container.html#data-provider-section">Data provider section</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container.html#legacy-view-section">Legacy view section</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/palettes.html">Palettes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#history-and-basics">History and basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#conditions">Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#php-example">PHP Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#palette-builder">Palette Builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../book/index.html">Cookbook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="events.html">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="events/palette_builder.html">Palette Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Legacy DCA</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Legacy DCA</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="events/palette_builder.html"
+         title="Previous Chapter: Palette Builder">&laquo; Palette Builder</a></li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="legacy-dca">
+<h1>Legacy DCA<a class="headerlink" href="#legacy-dca" title="Permalink to this headline">¶</a></h1>
+<p>This is a full <strong>legacy dca</strong> reference example with all known keys and example values.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;label&#39;</span>              <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;headline&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;dataContainer&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;General&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ptable&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;dynamicPtable&#39;</span>      <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span> <span class="c1">// require &#39;ptable&#39;=&gt;&#39;&#39;</span>
+        <span class="s1">&#39;ctable&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;validFileTypes&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;jpg,png,gif&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;uploadScript&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;closed&#39;</span>             <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;notEditable&#39;</span>        <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;notDeletable&#39;</span>       <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;switchToEdit&#39;</span>       <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;enableVersioning&#39;</span>   <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;doNotCopyRecords&#39;</span>   <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;doNotDeleteRecords&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;onload_callback&#39;</span>    <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;onsubmit_callback&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;ondelete_callback&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;oncut_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;oncopy_callback&#39;</span>    <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;sql&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;id&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;pid&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+
+    <span class="c1">// DcGeneral config</span>
+    <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;callback&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Callbacks\ContaoStyleCallbacks&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+                <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span>
+                <span class="p">),</span>
+                <span class="s1">&#39;parent&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>
+                <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;controller&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Controller\DefaultController&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;view&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\View\DefaultView&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;childCondition&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;from&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;to&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;setOn&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span><span class="p">(</span>
+                        <span class="s1">&#39;from_field&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;to_field&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;pid&#39;</span>
+                    <span class="p">),</span>
+                <span class="p">),</span>
+                <span class="s1">&#39;filter&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span>
+                    <span class="p">(</span>
+                        <span class="s1">&#39;remote&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;local&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;pid&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;operation&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;=&#39;</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;mode&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;flag&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;panelLayout&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;filter;search,limit&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;fields&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;headerFields&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;headline&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">,</span> <span class="s1">&#39;tstamp&#39;</span><span class="p">,</span> <span class="s1">&#39;showTeaser&#39;</span><span class="p">,</span> <span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;icon&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;path/to/icon.png&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;root&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;filter&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;status=?&#39;</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="p">)),</span>
+            <span class="s1">&#39;disableGrouping&#39;</span>       <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="s1">&#39;paste_button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;child_record_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;child_record_class&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;css_class_name&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>         <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;format&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;maxCharacters&#39;</span>  <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
+            <span class="s1">&#39;group_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;label_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+
+    <span class="c1">// Palettes</span>
+    <span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;__selector__&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;protected&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;default&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;{title_legend},title,alias,author;...&#39;</span>
+    <span class="p">),</span>
+
+    <span class="c1">// Subpalettes</span>
+    <span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;protected&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;groups&#39;</span>
+    <span class="p">),</span>
+
+    <span class="c1">// Fields</span>
+    <span class="s1">&#39;fields&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;label&#39;</span>                <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;default&#39;</span>              <span class="o">=&gt;</span> <span class="s1">&#39;default value&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;exclude&#39;</span>              <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="s1">&#39;search&#39;</span>               <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="s1">&#39;sorting&#39;</span>              <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="s1">&#39;filter&#39;</span>               <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="s1">&#39;flag&#39;</span>                 <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">,</span>
+            <span class="s1">&#39;length&#39;</span>               <span class="o">=&gt;</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="s1">&#39;inputType&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;options&#39;</span>              <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;options_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;foreignKey&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;tl_other_table.name&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;reference&#39;</span>            <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;explanation&#39;</span>          <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;input_field_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;wizard&#39;</span>               <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;sql&#39;</span>                  <span class="o">=&gt;</span> <span class="s2">&quot;varchar(255) NOT NULL default &#39;&#39;&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;relation&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;hasOne&#39;</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;eager&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;load_callback&#39;</span>        <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;save_callback&#39;</span>        <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;eval&#39;</span>                 <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;helpwizard&#39;</span>         <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;mandatory&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;maxlength&#39;</span>          <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
+                <span class="s1">&#39;minlength&#39;</span>          <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
+                <span class="s1">&#39;fallback&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;rgxp&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;friendly&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;cols&#39;</span>               <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">,</span>
+                <span class="s1">&#39;rows&#39;</span>               <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+                <span class="s1">&#39;wrap&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;hard&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;multiple&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;size&#39;</span>               <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+                <span class="s1">&#39;style&#39;</span>              <span class="o">=&gt;</span> <span class="s1">&#39;border:2px&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;rte&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;tinyFlash&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;submitOnChange&#39;</span>     <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;nospace&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;allowHtml&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;preserveTags&#39;</span>       <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;decodeEntities&#39;</span>     <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;doNotSaveEmpty&#39;</span>     <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;alwaysSave&#39;</span>         <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;spaceToUnderscore&#39;</span>  <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;unique&#39;</span>             <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;encrypt&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;trailingSlash&#39;</span>      <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;files&#39;</span>              <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;filesOnly&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;extensions&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;jpg,png,gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;path&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;path/inside/of/contao&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;fieldType&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;checkbox&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;includeBlankOption&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;blankOptionLabel&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;- none selected -&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;chosen&#39;</span>             <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;findInSet&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;datepicker&#39;</span>         <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;colorpicker&#39;</span>        <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;feEditable&#39;</span>         <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;feGroup&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;contact&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;feViewable&#39;</span>         <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;doNotCopy&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;hideInput&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;doNotShow&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;isBoolean&#39;</span>          <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;disabled&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+                <span class="s1">&#39;readonly&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+            <span class="p">),</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2013, Christian Schiffler, Stefan Heimes, Tristan Lins.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
