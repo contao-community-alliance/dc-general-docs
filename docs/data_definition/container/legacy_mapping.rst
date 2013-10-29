@@ -251,7 +251,7 @@ Mapping
 |         // Config                                                                                                                                                     |
 |         'config' => array                                                                                                                                             |
 |         (                                                                                                                                                             |
-|             'dataContainer'               => 'General',                                                                                                                 |
+|             'dataContainer'               => 'General',                                                                                                               |
 |             'ptable'                      => 'tl_parent',                                                                                                             |
 |             'ctable'                      => array('tl_child1', 'tl_child2'),                                                                                         |
 |             'switchToEdit'                => true,                                                                                                                    |
@@ -388,7 +388,7 @@ Mapping
 |         // Config                                                                                                                                                     |
 |         'config' => array                                                                                                                                             |
 |         (                                                                                                                                                             |
-|             'dataContainer'               => 'General',                                                                                                                 |
+|             'dataContainer'               => 'General',                                                                                                               |
 |             'ptable'                      => 'tl_parent',                                                                                                             |
 |             'ctable'                      => array('tl_child1', 'tl_child2'),                                                                                         |
 |             'switchToEdit'                => true,                                                                                                                    |
