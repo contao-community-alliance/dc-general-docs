@@ -25,6 +25,8 @@ For example MetaModels use a custom builder, that fill the container directly fr
 Default sections
 ----------------
 
+You find the default section interfaces and implementations in the :namespace:`DcGeneral\\DataDefinition\\Section` namespace.
+
 Basic section
 ~~~~~~~~~~~~~
 
