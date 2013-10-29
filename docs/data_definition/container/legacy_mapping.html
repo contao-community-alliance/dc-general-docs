@@ -876,16 +876,16 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 </div>
 <div class="section" id="full-dca">
 <h1>full dca<a class="headerlink" href="#full-dca" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>                                           <span class="c1">// data provider mapping</span>
 <span class="p">(</span>
     <span class="c1">// Config</span>
     <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
         <span class="s1">&#39;label&#39;</span>              <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;headline&#39;</span><span class="p">],</span>
         <span class="s1">&#39;dataContainer&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;General&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ptable&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ptable&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>                                       <span class="c1">// data provider mapping</span>
         <span class="s1">&#39;dynamicPtable&#39;</span>      <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span> <span class="c1">// require &#39;ptable&#39;=&gt;&#39;&#39;</span>
-        <span class="s1">&#39;ctable&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;ctable&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>                   <span class="c1">// data provider mapping</span>
         <span class="s1">&#39;validFileTypes&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;jpg,png,gif&#39;</span><span class="p">,</span>
         <span class="s1">&#39;uploadScript&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
         <span class="s1">&#39;closed&#39;</span>             <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
@@ -930,19 +930,19 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
         <span class="s1">&#39;callback&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Callbacks\ContaoStyleCallbacks&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-                <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-                <span class="p">(</span>
-                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
-                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span>
-                <span class="p">),</span>
-                <span class="s1">&#39;parent&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
-                <span class="p">(</span>
-                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
-                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>
-                <span class="p">)</span>
-        <span class="p">),</span>
+        <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>                                                  <span class="c1">// data provider mapping</span>
+        <span class="p">(</span>                                                                          <span class="c1">// +</span>
+                <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>                                                 <span class="c1">// +</span>
+                <span class="p">(</span>                                                                  <span class="c1">// +</span>
+                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>                <span class="c1">// +</span>
+                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span>                                   <span class="c1">// +</span>
+                <span class="p">),</span>                                                                 <span class="c1">// +</span>
+                <span class="s1">&#39;parent&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>                                                 <span class="c1">// +</span>
+                <span class="p">(</span>                                                                  <span class="c1">// +</span>
+                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>                <span class="c1">// +</span>
+                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>                                    <span class="c1">// +</span>
+                <span class="p">)</span>                                                                  <span class="c1">// +</span>
+        <span class="p">),</span>                                                                         <span class="c1">// +</span>
         <span class="s1">&#39;controller&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Controller\DefaultController&#39;</span><span class="p">,</span>
         <span class="s1">&#39;view&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\View\DefaultView&#39;</span><span class="p">,</span>
         <span class="s1">&#39;childCondition&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
@@ -974,7 +974,7 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="p">(</span>
         <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
-            <span class="s1">&#39;mode&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;mode&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>                                          <span class="c1">// basic mapping</span>
             <span class="s1">&#39;flag&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
             <span class="s1">&#39;panelLayout&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;filter;search,limit&#39;</span><span class="p">,</span>
             <span class="s1">&#39;fields&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
