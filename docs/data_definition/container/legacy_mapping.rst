@@ -116,58 +116,93 @@ You can access the data provider section with this snippet:
 Legacy mapping
 ~~~~~~~~~~~~~~
 
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| .. code-block:: php                                     | .. parsed-literal::                                             |
-|                                                         |                                                                 |
-|     $GLOBALS['TL_DCA']['tl_example'] = array            |    -> create a data provider information called **default**,    |
-|     (                                                   |       of type ``ContaoDataProviderInformation``,                |
-|         // Config                                       |       with ``DcGeneral\Data\DefaultDriver`` as driver class,    |
-|         'config' => array                               |       with table name **tl_example** as source                  |
-|         (                                               |       (``$dataProviderSection->getInformation("default")``)     |
-|             'ptable' => 'tl_parent',                    |    -> create a data provider information called **parent**,     |
-|             'ctable' => array('tl_child1', 'tl_child2') |       of type ``ContaoDataProviderInformation``,                |
-|         )                                               |       with ``DcGeneral\Data\DefaultDriver`` as driver class,    |
-|     );                                                  |       with table name **tl_parent** as source                   |
-|                                                         |       (``$dataProviderSection->getInformation("parent")``)      |
-+---------------------------------------------------------+-----------------------------------------------------------------+
++---------------------------------------------------------+--------------------------------------------------------------------+
+| .. code-block:: php                                     | .. parsed-literal::                                                |
+|                                                         |                                                                    |
+|     $GLOBALS['TL_DCA']['tl_example'] = array            |    -> create a data provider information called **tl_example**,    |
+|     (                                                   |       of type ``ContaoDataProviderInformation``,                   |
+|                                                         |       with ``DcGeneral\Data\DefaultDriver`` as driver class,       |
+|                                                         |       with table name **tl_example** as source                     |
+|                                                         |       Retrieve it like the following:                              |
+|                                                         |       ``$parentDriver = $dataProviderSection->getInformation(``    |
+|         // Config                                       |         ``$container->getBasicSection()->getDataProvider()``       |
+|         'config' => array                               |       ``);``                                                       |
+|         (                                               |                                                                    |
+|             'ptable' => 'tl_parent',                    |    -> create a data provider information called **tl_parent**,     |
+|                                                         |       of type ``ContaoDataProviderInformation``,                   |
+|                                                         |       with ``DcGeneral\Data\DefaultDriver`` as driver class,       |
+|                                                         |       with table name **tl_parent** as source                      |
+|                                                         |       ``$parentDriver = $dataProviderSection->getInformation(``    |
+|                                                         |         ``$container->getBasicSection()->getParentDataProvider()`` |
+|                                                         |       ``);``                                                       |
+|                                                         |                                                                    |
+|             'ctable' => array('tl_child1', 'tl_child2') |    -> get's ignored in DCGeneral as we refuse to destroy the data  |
+|         )                                               |       without the users notice. This is only used to restrict      |
+|     );                                                  |       backend modules to certain tables and prune unparented data- |
+|                                                         |       sets in Contao and considered harmful by the developers of   |
+|                                                         |       DCGeneral.                                                   |
+|                                                         |                                                                    |
++---------------------------------------------------------+--------------------------------------------------------------------+
 
 Extended mapping
 ~~~~~~~~~~~~~~~~
 
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
-| .. code-block:: php                                            | .. parsed-literal::                                                      |
-|                                                                |                                                                          |
-|     $GLOBALS['TL_DCA']['tl_example'] = array                   |    |nl|                                                                  |
-|     (                                                          |    |nl|                                                                  |
-|         // DcGeneral config                                    |    |nl|                                                                  |
-|         'dca_config' => array                                  |    |nl|                                                                  |
-|         (                                                      |    |nl|                                                                  |
-|             'data_provider' => array                           |    |nl|                                                                  |
-|             (                                                  |    |nl|                                                                  |
-|                 'my_name' => array(                            |    -> create a data provider information called **my_name**              |
-|                                                                |       (``$dataProviderSection->getInformation("my_name")``)              |
-|                     'type' => 'DcGeneral\DataDefinition\       |    -> (*optional*) the information type class name                       |
-|                       DataProviderInformation\',               |                                                                          |
-|                       ContaoDataProviderInformation',          |                                                                          |
-|                     'factory' => 'DcGeneral\DataDefinition\    |    -> (*optional*) the information type factory class name               |
-|                       DataProviderInformation\                 |                                                                          |
-|                       ContaoDataProviderInformationFactory',   |                                                                          |
-|                     'class' => 'DcGeneral\Data\DefaultDriver', |    -> (*optional*) the driver class name                                 |
-|                     'source' => 'tl_table_name',               |    -> (*required*) the source (table) name                               |
-|                 ),                                             |                                                                          |
-|                 'root' => array(                               |    -> (*required in parented tree mode*)                                 |
-|                     ...                                        |       **root** is a predefined name for the tree root data provider      |
-|                 ),                                             |       (``$dataProviderSection->getInformation("root")``)                 |
-|                 'parent' => array(                             |    -> (*required in parented list mode*)                                 |
-|                     ...                                        |       **parent** is a predefined name for the parent data provider       |
-|                 ),                                             |       (``$dataProviderSection->getInformation("parent")``)               |
-|                 'default' => array(                            |    -> (*required*)                                                       |
-|                     ...                                        |       **default** is a predefined name for the current data provider     |
-|                 )                                              |       (``$dataProviderSection->getInformation("default")``)              |
-|             )                                                  |                                                                          |
-|         )                                                      |                                                                          |
-|     );                                                         |                                                                          |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
++----------------------------------------------------------------+----------------------------------------------------------------------------+
+| .. code-block:: php                                            | .. parsed-literal::                                                        |
+|                                                                |                                                                            |
+|     $GLOBALS['TL_DCA']['tl_example'] = array                   |    |nl|                                                                    |
+|     (                                                          |    |nl|                                                                    |
+|         // DcGeneral config                                    |    |nl|                                                                    |
+|         'dca_config' => array                                  |    |nl|                                                                    |
+|         (                                                      |    |nl|                                                                    |
+|             'data_provider' => array                           |    |nl|                                                                    |
+|             (                                                  |    |nl|                                                                    |
+|                 array(                                         |    -> create a data provider information called **tl_table_name**          |
+|                                                                |       (See comment for "source" key)                                       |
+|                                                                |                                                                            |
+|                     'factory' => 'DcGeneral\DataDefinition\    |    -> (*optional*) the information type factory class name                 |
+|                       DataProviderInformation\                 |                                                                            |
+|                       ContaoDataProviderInformationFactory',   |                                                                            |
+|                                                                |                                                                            |
+|                     'type' => 'DcGeneral\DataDefinition\       |    -> (*optional*) the information type class name. This is ignored by     |
+|                       DataProviderInformation\                 |       the ``ExtendedLegacyDcaDataDefinitionBuilder`` when a factory is     |
+|                       ContaoDataProviderInformation',          |       defined but the factory might non the less use it.                   |
+|                                                                |                                                                            |
+|                     'class' => 'DcGeneral\Data\DefaultDriver', |    -> (*optional*) the driver class name, note that this is only inter-    |
+|                                                                |       preted by the default ``DataProviderPopulator`` and other popula-    |
+|                                                                |       tors might ignore it.                                                |
+|                                                                |                                                                            |
+|                     'source' => 'tl_table_name',               |    -> (*required*) the source (table) name.                                |
+|                                                                |       *NOTE:* This will also get used as the name for the information.     |
+|                                                                |                                                                            |
+|                      ...                                       |    -> Any optional data that can be interpreted by any registered builder  |
+|                                                                |       or factory.                                                          |
+|                 ),                                             |                                                                            |
+|                 'root' => array(                               |    -> (*required in (parented) tree mode*)                                 |
+|                     ...                                        |       Root elements for tree view will get fetched from this provider.     |
+|                                                                |       ``$dataProviderSection->getInformation(``                            |
+|                 ),                                             |         ``$basicSection()->getRootDataProvider()``                         |
+|                                                                |       ``);``                                                               |
+|                                                                |                                                                            |
+|                 'parent' => array(                             |    -> (*required in parented list and parented tree mode*)                 |
+|                     ...                                        |       This defines the parent element the root elements (when in tree mode)|
+|                                                                |       or the current elements (when in list mode must be children of.      |
+|                                                                |       ``$dataProviderSection->getInformation(``                            |
+|                 ),                                             |         ``$basicSection()->getParentDataProvider()``                       |
+|                                                                |       ``);``                                                               |
+|                                                                |                                                                            |
+|                                                                |                                                                            |
+|                 'default' => array(                            |    -> (*required*)                                                         |
+|                     ...                                        |       The current data provider, this is the data we really work on.       |
+|                                                                |       ``$dataProviderSection->getInformation(``                            |
+|                 ),                                             |         ``$basicSection()->getDataProvider()``                             |
+|                                                                |       ``);``                                                               |
+|                                                                |                                                                            |
+|                 'default' => 'tl_table_name'                   |    -> Any of the named keys (root, parent, current) can be aliased to each |
+|             )                                                  |       other. In this example default is an alias of the parent and there-  |
+|         )                                                      |       fore both will use the same driver.                                  |
+|     );                                                         |                                                                            |
++----------------------------------------------------------------+----------------------------------------------------------------------------+
 
 Backend view
 ------------
