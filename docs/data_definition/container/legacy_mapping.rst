@@ -512,7 +512,7 @@ full dca
             'dataContainer'      => 'General',
             'ptable'             => 'tl_parent',                                       // data provider mapping
             'dynamicPtable'      => true, // require 'ptable'=>''
-            'ctable'             => array('tl_child1', 'tl_child2'),                   // data provider mapping
+            'ctable'             => array('tl_child1', 'tl_child2'),                   // ignored
             'validFileTypes'     => 'jpg,png,gif',
             'uploadScript'       => '',
             'closed'             => true,
