@@ -369,8 +369,8 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <h3>Legacy mapping<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
-<col width="48%" />
-<col width="52%" />
+<col width="47%" />
+<col width="53%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
@@ -386,15 +386,15 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 </div>
 </td>
 <td><pre class="first last literal-block">
--&gt; create a data provider information called <em>default</em>,
-   of type ContaoDataProviderInformation,
-   with DcGeneralDataDefaultDriver as driver class,
-   with table name <em>tl_example</em> as source
+-&gt; create a data provider information called <strong>default</strong>,
+   of type <tt class="docutils literal"><span class="pre">ContaoDataProviderInformation</span></tt>,
+   with <tt class="docutils literal"><span class="pre">DcGeneral\Data\DefaultDriver</span></tt> as driver class,
+   with table name <strong>tl_example</strong> as source
    (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;default&quot;)</span></tt>)
--&gt; create a data provider information called <em>parent</em>,
-   of type ContaoDataProviderInformation,
-   with DcGeneralDataDefaultDriver as driver class,
-   with table name <em>tl_parent</em> as source
+-&gt; create a data provider information called <strong>parent</strong>,
+   of type <tt class="docutils literal"><span class="pre">ContaoDataProviderInformation</span></tt>,
+   with <tt class="docutils literal"><span class="pre">DcGeneral\Data\DefaultDriver</span></tt> as driver class,
+   with table name <strong>tl_parent</strong> as source
    (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;parent&quot;)</span></tt>)
 </pre>
 </td>
