@@ -601,7 +601,7 @@ full dca
         (
             'sorting' => array
             (
-                'mode'                  => 6,
+                'mode'                  => 6,                                          // basic mapping
                 'flag'                  => 6,
                 'panelLayout'           => 'filter;search,limit',
                 'fields'                => array('published DESC', 'title', 'author'),
