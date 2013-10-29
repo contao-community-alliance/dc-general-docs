@@ -503,16 +503,16 @@ full dca
 
 .. code-block:: php
 
-    $GLOBALS['TL_DCA']['tl_example'] = array
+    $GLOBALS['TL_DCA']['tl_example'] = array                                           // data provider mapping
     (
         // Config
         'config' => array
         (
             'label'              => &$GLOBALS['TL_LANG']['tl_example']['headline'],
             'dataContainer'      => 'General',
-            'ptable'             => 'tl_parent',
+            'ptable'             => 'tl_parent',                                       // data provider mapping
             'dynamicPtable'      => true, // require 'ptable'=>''
-            'ctable'             => array('tl_child1', 'tl_child2'),
+            'ctable'             => array('tl_child1', 'tl_child2'),                   // data provider mapping
             'validFileTypes'     => 'jpg,png,gif',
             'uploadScript'       => '',
             'closed'             => true,
@@ -557,19 +557,19 @@ full dca
         'dca_config' => array
         (
             'callback'       => 'DcGeneral\Callbacks\ContaoStyleCallbacks',
-            'data_provider'  => array
-            (
-                    'default' => array
-                    (
-                            'class'  => 'DcGeneral\Data\DefaultDriver',
-                            'source' => 'tl_example'
-                    ),
-                    'parent'  => array
-                    (
-                            'class'  => 'DcGeneral\Data\DefaultDriver',
-                            'source' => 'tl_parent'
-                    )
-            ),
+            'data_provider'  => array                                                  // data provider mapping
+            (                                                                          // +
+                    'default' => array                                                 // +
+                    (                                                                  // +
+                            'class'  => 'DcGeneral\Data\DefaultDriver',                // +
+                            'source' => 'tl_example'                                   // +
+                    ),                                                                 // +
+                    'parent'  => array                                                 // +
+                    (                                                                  // +
+                            'class'  => 'DcGeneral\Data\DefaultDriver',                // +
+                            'source' => 'tl_parent'                                    // +
+                    )                                                                  // +
+            ),                                                                         // +
             'controller'     => 'DcGeneral\Controller\DefaultController',
             'view'           => 'DcGeneral\View\DefaultView',
             'childCondition' => array(
