@@ -1,0 +1,997 @@
+
+
+  
+  
+ 
+  
+  
+ 
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Legacy mapping &mdash; DcGeneral 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/dc-general-docs.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="DcGeneral 1.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Container" href="../container.html" />
+    <link rel="next" title="Palettes" href="../palettes.html" />
+    <link rel="prev" title="Container" href="../container.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html">DcGeneral</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../data definition.html">Data definition</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../builder.html">Palette builder</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../container.html">Container</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="">Legacy mapping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#basic-config-mapping">Basic config mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#mapping">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#data-provider-mapping">Data provider mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#id1">Legacy mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#extended-mapping">Extended mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#backend-view">Backend view</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#listing">Listing</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id2">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#global-operations">Global operations</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id3">Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#item-operations">Item operations</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id4">Mapping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#full-dca">full dca</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../container.html#default-sections">Default sections</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../container.html#basic-section">Basic section</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../container.html#data-provider-section">Data provider section</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../container.html#legacy-view-section">Legacy view section</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../palettes.html">Palettes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#history-and-basics">History and basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#the-palette-object-hierarchy">The palette object hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#conditions">Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#php-example">PHP Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#palette-builder">Palette Builder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../palettes.html#parser">Parser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../book/index.html">Cookbook</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../reference/events.html">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/events/palette-builder.html">Palette Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/events/palette-builder.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Legacy mapping</a><ul>
+<li><a class="reference internal" href="#basic-config-mapping">Basic config mapping</a><ul>
+<li><a class="reference internal" href="#mapping">Mapping</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-provider-mapping">Data provider mapping</a><ul>
+<li><a class="reference internal" href="#id1">Legacy mapping</a></li>
+<li><a class="reference internal" href="#extended-mapping">Extended mapping</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backend-view">Backend view</a><ul>
+<li><a class="reference internal" href="#listing">Listing</a><ul>
+<li><a class="reference internal" href="#id2">Mapping</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#global-operations">Global operations</a><ul>
+<li><a class="reference internal" href="#id3">Mapping</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#item-operations">Item operations</a><ul>
+<li><a class="reference internal" href="#id4">Mapping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#full-dca">full dca</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="../container.html"
+         title="Previous Chapter: Container">&laquo; Container</a></li>
+  <li><a href="../palettes.html"
+         title="Next Chapter: Palettes">Palettes &raquo;</a></li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="legacy-mapping">
+<h1>Legacy mapping<a class="headerlink" href="#legacy-mapping" title="Permalink to this headline">¶</a></h1>
+<p>The <strong>legacy dca</strong> aka <strong>old dca</strong> format is used in Contao 2 and Contao 3.
+This page describe how this format is mapped into the DcGeneral <a class="reference internal" href="../container.html"><em>Container</em></a>.</p>
+<p>Here is a typical <strong>legacy dca</strong> example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">),</span>
+    <span class="c1">// DcGeneral config</span>
+    <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;data_provider&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="o">...</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="o">...</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="o">...</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="o">...</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="o">...</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="c1">// Palettes</span>
+    <span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">),</span>
+    <span class="c1">// Subpalettes</span>
+    <span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">),</span>
+    <span class="c1">// Fields</span>
+    <span class="s1">&#39;fields&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<div class="section" id="basic-config-mapping">
+<h2>Basic config mapping<a class="headerlink" href="#basic-config-mapping" title="Permalink to this headline">¶</a></h2>
+<p>You can access the basic section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BasicSectionInterface</span><span class="p">;</span>
+
+<span class="nv">$basicSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BasicSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BasicSectionInterface $basicSection */</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<div class="last line-block">
+<div class="line">In legacy mode, the <tt class="docutils literal"><span class="pre">BasicSectionInterface::$rootDataProvider</span></tt> is always <strong>root</strong>,</div>
+<div class="line">the <tt class="docutils literal"><span class="pre">BasicSectionInterface::$parentDataProvider</span></tt> is always <strong>parent</strong> and</div>
+<div class="line">the <tt class="docutils literal"><span class="pre">BasicSectionInterface::$dataProvider</span></tt> is always <strong>default</strong>.</div>
+</div>
+</div>
+<div class="section" id="mapping">
+<h3>Mapping<a class="headerlink" href="#mapping" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;mode&#39;</span> <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-&gt; used as mode (<tt class="docutils literal"><span class="pre">$basicSection-&gt;getMode()</span></tt>)
+&nbsp;
+&nbsp;
+&nbsp;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="data-provider-mapping">
+<h2>Data provider mapping<a class="headerlink" href="#data-provider-mapping" title="Permalink to this headline">¶</a></h2>
+<p>You can access the data provider section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\DataProviderSectionInterface</span><span class="p">;</span>
+
+<span class="nv">$dataProviderSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">DataProviderSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var DataProviderSectionInterface $dataProviderSection */</span>
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h3>Legacy mapping<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;ptable&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ctable&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+-&gt; create a data provider information called <em>default</em>,
+   of type ContaoDataProviderInformation,
+   with DcGeneralDataDefaultDriver as driver class,
+   with table name <em>tl_example</em> as source
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;default&quot;)</span></tt>)
+-&gt; create a data provider information called <em>parent</em>,
+   of type ContaoDataProviderInformation,
+   with DcGeneralDataDefaultDriver as driver class,
+   with table name <em>tl_parent</em> as source
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;parent&quot;)</span></tt>)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="extended-mapping">
+<h3>Extended mapping<a class="headerlink" href="#extended-mapping" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// DcGeneral config</span>
+    <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;data_provider&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;my_name&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+
+                <span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\DataDefinition\</span>
+<span class="s1">                  DataProviderInformation\&#39;,</span>
+<span class="s1">                  ContaoDataProviderInformation&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;factory&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\DataDefinition\</span>
+<span class="s1">                  DataProviderInformation\</span>
+<span class="s1">                  ContaoDataProviderInformationFactory&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_table_name&#39;</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;root&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="o">...</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;parent&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="o">...</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="o">...</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-&gt; create a data provider information called <strong>my_name</strong>
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;my_name&quot;)</span></tt>)
+-&gt; (<em>optional</em>) the information type class name
+
+
+-&gt; (<em>optional</em>) the information type factory class name
+
+
+-&gt; (<em>optional</em>) the driver class name
+-&gt; (<em>required</em>) the source (table) name
+
+-&gt; (<em>required in parented tree mode</em>)
+   <strong>root</strong> is a predefined name for the tree root data provider
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;root&quot;)</span></tt>)
+-&gt; (<em>required in parented list mode</em>)
+   <strong>parent</strong> is a predefined name for the parent data provider
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;parent&quot;)</span></tt>)
+-&gt; (<em>required</em>)
+   <strong>default</strong> is a predefined name for the current data provider
+   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;default&quot;)</span></tt>)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="backend-view">
+<h2>Backend view<a class="headerlink" href="#backend-view" title="Permalink to this headline">¶</a></h2>
+<p>You can access the backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+</pre></div>
+</div>
+<div class="section" id="listing">
+<h3>Listing<a class="headerlink" href="#listing" title="Permalink to this headline">¶</a></h3>
+<p>You can access the listing options of the backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\ListingConfigInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+
+<span class="nv">$listingConfig</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getListingConfig</span><span class="p">();</span>
+<span class="sd">/** @var ListingConfigInterface $listingConfig */</span>
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h4>Mapping<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="global-operations">
+<h3>Global operations<a class="headerlink" href="#global-operations" title="Permalink to this headline">¶</a></h3>
+<p>You can access the global operations defined in backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+
+<span class="nv">$globalOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getGlobalOperations</span><span class="p">();</span>
+<span class="sd">/** @var OperationCollectionInterface $globalOperations */</span>
+</pre></div>
+</div>
+<div class="section" id="id3">
+<h4>Mapping<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;dataContainer&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;Table&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ptable&#39;</span>                      <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ctable&#39;</span>                      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;switchToEdit&#39;</span>                <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;enableVersioning&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;onload_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;checkPermission&#39;</span><span class="p">),</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_page&#39;</span><span class="p">,</span> <span class="s1">&#39;addBreadcrumb&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;pid&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;mode&#39;</span>                    <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;toggleNodes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;toggleAll&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;&amp;amp;ptg=all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_toggle&#39;</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;edit&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;edit&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;table=tl_content&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;edit.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;editheader&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;editheader&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=edit&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;header.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editHeader&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;copy&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;copy&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=copy&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;copy.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;copyArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;cut&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;cut&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=cut&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;cut.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;cutArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;deleteArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;toggle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;toggle&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;visible.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;toggleIcon&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;show&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;show&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=show&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;show.gif&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="item-operations">
+<h3>Item operations<a class="headerlink" href="#item-operations" title="Permalink to this headline">¶</a></h3>
+<p>You can access the item operations defined in backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+
+<span class="nv">$itemOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getItemOperations</span><span class="p">();</span>
+<span class="sd">/** @var OperationCollectionInterface $itemOperations */</span>
+</pre></div>
+</div>
+<div class="section" id="id4">
+<h4>Mapping<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;dataContainer&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;Table&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ptable&#39;</span>                      <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ctable&#39;</span>                      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;switchToEdit&#39;</span>                <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;enableVersioning&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;onload_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;checkPermission&#39;</span><span class="p">),</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_page&#39;</span><span class="p">,</span> <span class="s1">&#39;addBreadcrumb&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;pid&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;mode&#39;</span>                    <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;toggleNodes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;toggleAll&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;&amp;amp;ptg=all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_toggle&#39;</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;edit&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;edit&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;table=tl_content&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;edit.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;editheader&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;editheader&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=edit&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;header.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editHeader&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;copy&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;copy&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=copy&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;copy.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;copyArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;cut&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;cut&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=cut&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;cut.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;cutArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;deleteArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;toggle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;toggle&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;visible.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;toggleIcon&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;show&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;show&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=show&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;show.gif&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="full-dca">
+<h1>full dca<a class="headerlink" href="#full-dca" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Config</span>
+    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;dataContainer&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;Table&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ptable&#39;</span>                      <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ctable&#39;</span>                      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;switchToEdit&#39;</span>                <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;enableVersioning&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+        <span class="s1">&#39;onload_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;checkPermission&#39;</span><span class="p">),</span>
+            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_page&#39;</span><span class="p">,</span> <span class="s1">&#39;addBreadcrumb&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;pid&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;mode&#39;</span>                    <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;toggleNodes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;toggleAll&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;&amp;amp;ptg=all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_toggle&#39;</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;edit&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;edit&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;table=tl_content&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;edit.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;editheader&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;editheader&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=edit&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;header.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editHeader&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;copy&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;copy&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=copy&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;copy.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;copyArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;cut&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;cut&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=cut&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;cut.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;cutArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;deleteArticle&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;toggle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;toggle&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;visible.gif&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;toggleIcon&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;show&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;show&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=show&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;show.gif&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="c1">// Palettes</span>
+    <span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">),</span>
+    <span class="c1">// Subpalettes</span>
+    <span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">),</span>
+    <span class="c1">// Fields</span>
+    <span class="s1">&#39;fields&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="o">...</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2013, Christian Schiffler, Stefan Heimes, Tristan Lins.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

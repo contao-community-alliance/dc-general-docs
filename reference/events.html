@@ -1,4 +1,5 @@
 
+
   
   
  
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dc-general-docs.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     
@@ -40,7 +42,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="DcGeneral 1.0 documentation" href="../index.html" />
     <link rel="up" title="Reference" href="index.html" />
-    <link rel="next" title="Palette Builder" href="events/palette-builder.html" />
+    <link rel="next" title="Palette Builder" href="events/palette_builder.html" />
     <link rel="prev" title="Reference" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -74,12 +76,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">Manual</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../docs/data definition.html">Data definition</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../docs/data definition/builder.html">Palette builder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../docs/data definition/palettes.html">Palettes</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">Manual</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../book/index.html">Cookbook</a><ul class="simple">
@@ -87,7 +84,33 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="">Events</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="events/palette-builder.html">Palette Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="events/palette_builder.html">Palette Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="events/palette_builder.html#addconditionevent">AddConditionEvent</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -112,7 +135,7 @@
                 
   <li><a href="index.html"
          title="Previous Chapter: Reference">&laquo; Reference</a></li>
-  <li><a href="events/palette-builder.html"
+  <li><a href="events/palette_builder.html"
          title="Next Chapter: Palette Builder">Palette Builder &raquo;</a></li>
               
             
@@ -144,31 +167,31 @@
 <p>Here you will find all events used in DcGeneral.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="events/palette-builder.html">Palette Builder</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpaletteevent">CreatePaletteEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#finishpaletteevent">FinishPaletteEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createlegendevent">CreateLegendEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#finishlegendevent">FinishLegendEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpropertyevent">CreatePropertyEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#finishpropertyevent">FinishPropertyEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#createconditionevent">CreateConditionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#finishconditionevent">FinishConditionEvent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="events/palette-builder.html#addconditionevent">AddConditionEvent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events/palette_builder.html">Palette Builder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpalettecollectionclassnameevent">SetPaletteCollectionClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpaletteclassnameevent">SetPaletteClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setlegendclassnameevent">SetLegendClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpropertyclassnameevent">SetPropertyClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpaletteconditionchainclassnameevent">SetPaletteConditionChainClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setdefaultpaletteconditionclassnameevent">SetDefaultPaletteConditionClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpalettepropertyvalueconditionclassnameevent">SetPalettePropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpropertyconditionchainclassnameevent">SetPropertyConditionChainClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#setpropertyvalueconditionclassnameevent">SetPropertyValueConditionClassNameEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpalettecollectionevent">CreatePaletteCollectionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#finishpalettecollectionevent">FinishPaletteCollectionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpaletteevent">CreatePaletteEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#finishpaletteevent">FinishPaletteEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createlegendevent">CreateLegendEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#finishlegendevent">FinishLegendEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpropertyevent">CreatePropertyEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#finishpropertyevent">FinishPropertyEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpaletteconditionchainevent">CreatePaletteConditionChainEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpropertyconditionchainevent">CreatePropertyConditionChainEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createdefaultpaletteconditionevent">CreateDefaultPaletteConditionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createpropertyvalueconditionevent">CreatePropertyValueConditionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#createconditionevent">CreateConditionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#finishconditionevent">FinishConditionEvent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events/palette_builder.html#addconditionevent">AddConditionEvent</a></li>
 </ul>
 </li>
 </ul>

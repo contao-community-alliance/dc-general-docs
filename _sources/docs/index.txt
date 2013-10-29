@@ -3,4 +3,4 @@ Manual
 
 .. toctree::
 
-   data definition
+   data_definition
