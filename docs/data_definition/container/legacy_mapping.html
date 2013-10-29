@@ -106,9 +106,12 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#full-dca">full dca</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../container.html#default-sections">Default sections</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../container.html#basic-section">Basic section</a></li>
@@ -201,9 +204,12 @@
 </li>
 </ul>
 </li>
+<li><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
+<li><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#full-dca">full dca</a></li>
+<li><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
 </ul>
 </ul>
 </li>
@@ -370,20 +376,27 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <h3>Legacy mapping<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
-<col width="47%" />
-<col width="53%" />
+<col width="46%" />
+<col width="54%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
 <span class="p">(</span>
+
+
+
+
     <span class="c1">// Config</span>
     <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
-
-
-
-
         <span class="s1">&#39;ptable&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
+
+
+
+
+
+
+
         <span class="s1">&#39;ctable&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">)</span>
     <span class="p">)</span>
 <span class="p">);</span>
@@ -404,7 +417,15 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
    of type <tt class="docutils literal"><span class="pre">ContaoDataProviderInformation</span></tt>,
    with <tt class="docutils literal"><span class="pre">DcGeneral\Data\DefaultDriver</span></tt> as driver class,
    with table name <strong>tl_parent</strong> as source
-   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;tl_parent&quot;)</span></tt>)
+   <tt class="docutils literal"><span class="pre">$parentDriver</span> <span class="pre">=</span> <span class="pre">$dataProviderSection-&gt;getInformation(</span></tt>
+     <tt class="docutils literal"><span class="pre">$container-&gt;getBasicSection()-&gt;getParentDataProvider()</span></tt>
+   <tt class="docutils literal"><span class="pre">);</span></tt>
+
+-&gt; get's ignored in DCGeneral as we refuse to destroy the data
+   without the users notice. This is only used to restrict
+   backend modules to certain tables and prune unparented data-
+   sets in Contao and considered harmful by the developers of
+   DCGeneral.
 </pre>
 </td>
 </tr>
@@ -426,26 +447,48 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="p">(</span>
         <span class="s1">&#39;data_provider&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
-            <span class="s1">&#39;my_name&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+            <span class="k">array</span><span class="p">(</span>
 
-                <span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\DataDefinition\</span>
-<span class="s1">                  DataProviderInformation\&#39;,</span>
-<span class="s1">                  ContaoDataProviderInformation&#39;</span><span class="p">,</span>
+
                 <span class="s1">&#39;factory&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\DataDefinition\</span>
 <span class="s1">                  DataProviderInformation\</span>
 <span class="s1">                  ContaoDataProviderInformationFactory&#39;</span><span class="p">,</span>
+
+                <span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\DataDefinition\</span>
+<span class="s1">                  DataProviderInformation\</span>
+<span class="s1">                  ContaoDataProviderInformation&#39;</span><span class="p">,</span>
+
                 <span class="s1">&#39;class&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+
+
+
                 <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_table_name&#39;</span><span class="p">,</span>
+
+
+                 <span class="o">...</span>
+
             <span class="p">),</span>
             <span class="s1">&#39;root&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
                 <span class="o">...</span>
+
             <span class="p">),</span>
+
+
             <span class="s1">&#39;parent&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
                 <span class="o">...</span>
+
+
             <span class="p">),</span>
+
+
+
             <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
                 <span class="o">...</span>
-            <span class="p">)</span>
+
+            <span class="p">),</span>
+
+
+            <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_table_name&#39;</span>
         <span class="p">)</span>
     <span class="p">)</span>
 <span class="p">);</span>
@@ -460,26 +503,50 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 &nbsp;
 &nbsp;
 &nbsp;
--&gt; create a data provider information called <strong>my_name</strong>
-   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;my_name&quot;)</span></tt>)
--&gt; (<em>optional</em>) the information type class name
-
+-&gt; create a data provider information called <strong>tl_table_name</strong>
+   (See comment for &quot;source&quot; key)
 
 -&gt; (<em>optional</em>) the information type factory class name
 
 
--&gt; (<em>optional</em>) the driver class name
--&gt; (<em>required</em>) the source (table) name
 
--&gt; (<em>required in parented tree mode</em>)
-   <strong>root</strong> is a predefined name for the tree root data provider
-   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;root&quot;)</span></tt>)
--&gt; (<em>required in parented list mode</em>)
-   <strong>parent</strong> is a predefined name for the parent data provider
-   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;parent&quot;)</span></tt>)
+-&gt; (<em>optional</em>) the information type class name. This is ignored by
+   the <tt class="docutils literal"><span class="pre">ExtendedLegacyDcaDataDefinitionBuilder</span></tt> when a factory is
+   defined but the factory might non the less use it.
+
+-&gt; (<em>optional</em>) the driver class name, note that this is only inter-
+   preted by the default <tt class="docutils literal"><span class="pre">DataProviderPopulator</span></tt> and other popula-
+   tors might ignore it.
+
+-&gt; (<em>required</em>) the source (table) name.
+   <em>NOTE:</em> This will also get used as the name for the information.
+
+-&gt; Any optional data that can be interpreted by any registered builder
+   or factory.
+
+-&gt; (<em>required in (parented) tree mode</em>)
+   Root elements for tree view will get fetched from this provider.
+   <tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(</span></tt>
+     <tt class="docutils literal"><span class="pre">$basicSection()-&gt;getRootDataProvider()</span></tt>
+   <tt class="docutils literal"><span class="pre">);</span></tt>
+
+-&gt; (<em>required in parented list and parented tree mode</em>)
+   This defines the parent element the root elements (when in tree mode)
+   or the current elements (when in list mode must be children of.
+   <tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(</span></tt>
+     <tt class="docutils literal"><span class="pre">$basicSection()-&gt;getParentDataProvider()</span></tt>
+   <tt class="docutils literal"><span class="pre">);</span></tt>
+
+
 -&gt; (<em>required</em>)
-   <strong>default</strong> is a predefined name for the current data provider
-   (<tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(&quot;default&quot;)</span></tt>)
+   The current data provider, this is the data we really work on.
+   <tt class="docutils literal"><span class="pre">$dataProviderSection-&gt;getInformation(</span></tt>
+     <tt class="docutils literal"><span class="pre">$basicSection()-&gt;getDataProvider()</span></tt>
+   <tt class="docutils literal"><span class="pre">);</span></tt>
+
+-&gt; Any of the named keys (root, parent, current) can be aliased to each
+   other. In this example default is an alias of the parent and there-
+   fore both will use the same driver.
 </pre>
 </td>
 </tr>
@@ -873,19 +940,34 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 </div>
 </div>
 </div>
+<div class="section" id="root-entries-mapping">
+<h2>Root entries mapping<a class="headerlink" href="#root-entries-mapping" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="full-dca">
-<h1>full dca<a class="headerlink" href="#full-dca" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>                                           <span class="c1">// data provider mapping</span>
+<div class="section" id="parent-child-condition-mapping">
+<h2>Parent-child condition mapping<a class="headerlink" href="#parent-child-condition-mapping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="deprecated-dcgeneral-config">
+<h2>Deprecated DcGeneral config<a class="headerlink" href="#deprecated-dcgeneral-config" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="dca-mapping-reference">
+<h1>DCA mapping reference<a class="headerlink" href="#dca-mapping-reference" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="68%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
 <span class="p">(</span>
     <span class="c1">// Config</span>
     <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
         <span class="s1">&#39;label&#39;</span>              <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;headline&#39;</span><span class="p">],</span>
         <span class="s1">&#39;dataContainer&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;General&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ptable&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>                                       <span class="c1">// data provider mapping</span>
+        <span class="s1">&#39;ptable&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
         <span class="s1">&#39;dynamicPtable&#39;</span>      <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span> <span class="c1">// require &#39;ptable&#39;=&gt;&#39;&#39;</span>
-        <span class="s1">&#39;ctable&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>                   <span class="c1">// data provider mapping</span>
+        <span class="s1">&#39;ctable&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
         <span class="s1">&#39;validFileTypes&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;jpg,png,gif&#39;</span><span class="p">,</span>
         <span class="s1">&#39;uploadScript&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
         <span class="s1">&#39;closed&#39;</span>             <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
@@ -930,21 +1012,45 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
         <span class="s1">&#39;callback&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Callbacks\ContaoStyleCallbacks&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>                                                  <span class="c1">// data provider mapping</span>
-        <span class="p">(</span>                                                                          <span class="c1">// +</span>
-                <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>                                                 <span class="c1">// +</span>
-                <span class="p">(</span>                                                                  <span class="c1">// +</span>
-                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>                <span class="c1">// +</span>
-                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span>                                   <span class="c1">// +</span>
-                <span class="p">),</span>                                                                 <span class="c1">// +</span>
-                <span class="s1">&#39;parent&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>                                                 <span class="c1">// +</span>
-                <span class="p">(</span>                                                                  <span class="c1">// +</span>
-                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>                <span class="c1">// +</span>
-                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>                                    <span class="c1">// +</span>
-                <span class="p">)</span>                                                                  <span class="c1">// +</span>
-        <span class="p">),</span>                                                                         <span class="c1">// +</span>
         <span class="s1">&#39;controller&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Controller\DefaultController&#39;</span><span class="p">,</span>
         <span class="s1">&#39;view&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\View\DefaultView&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+                <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                        <span class="s1">&#39;type&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;...\ContaoDataProviderInformation&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;factory&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;...\ContaoDataProviderInformationFactory&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;class&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;source&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;tl_example&#39;</span>
+                <span class="p">),</span>
+                <span class="s1">&#39;parent&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                        <span class="s1">&#39;type&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;...\ContaoDataProviderInformation&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;factory&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;...\ContaoDataProviderInformationFactory&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;class&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Data\DefaultDriver&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>
+                <span class="p">)</span>
+        <span class="p">),</span>
+        <span class="s1">&#39;rootEntries&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">&#39;tl_example&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;setOn&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span><span class="p">(</span>
+                        <span class="s1">&#39;property&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;value&#39;</span>    <span class="o">=&gt;</span> <span class="mi">0</span>
+                    <span class="p">),</span>
+                <span class="p">),</span>
+                <span class="s1">&#39;filter&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span>
+                    <span class="p">(</span>
+                        <span class="s1">&#39;property&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;value&#39;</span>     <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="s1">&#39;operation&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;=&#39;</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
         <span class="s1">&#39;childCondition&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
             <span class="k">array</span><span class="p">(</span>
                 <span class="s1">&#39;from&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
@@ -974,11 +1080,11 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="p">(</span>
         <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
-            <span class="s1">&#39;mode&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>                                          <span class="c1">// basic mapping</span>
+            <span class="s1">&#39;mode&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
             <span class="s1">&#39;flag&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
             <span class="s1">&#39;panelLayout&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;filter;search,limit&#39;</span><span class="p">,</span>
             <span class="s1">&#39;fields&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;headerFields&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;headline&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">,</span> <span class="s1">&#39;tstamp&#39;</span><span class="p">,</span> <span class="s1">&#39;showTeaser&#39;</span><span class="p">,</span> <span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;headerFields&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;headline&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
             <span class="s1">&#39;icon&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;path/to/icon.png&#39;</span><span class="p">,</span>
             <span class="s1">&#39;root&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
             <span class="s1">&#39;filter&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;status=?&#39;</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="p">)),</span>
@@ -990,7 +1096,7 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
         <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
             <span class="s1">&#39;fields&#39;</span>         <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;format&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;format&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
             <span class="s1">&#39;maxCharacters&#39;</span>  <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
             <span class="s1">&#39;group_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
             <span class="s1">&#39;label_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
@@ -1002,7 +1108,7 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
                 <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
                 <span class="s1">&#39;href&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;class&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
             <span class="p">)</span>
         <span class="p">),</span>
@@ -1013,7 +1119,7 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
                 <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
                 <span class="s1">&#39;href&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;icon&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
             <span class="p">),</span>
         <span class="p">)</span>
@@ -1114,6 +1220,270 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <span class="p">);</span>
 </pre></div>
 </div>
+</td>
+<td><pre class="first last literal-block">
+-&gt; <a class="reference internal" href="#data-provider-mapping">Data provider mapping</a>
+
+
+
+
+-&gt;
+-&gt;
+-&gt; <a class="reference internal" href="#data-provider-mapping">Data provider mapping</a>
+-&gt; <em>ignored</em>
+-&gt; <em>ignored</em>
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt; <em>ignored</em>
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+-&gt; <em>ignored</em>
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+
+
+
+-&gt;
+
+-&gt; <a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a>
+-&gt; <a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a>
+-&gt; <a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a>
+-&gt; <a class="reference internal" href="#data-provider-mapping">Data provider mapping</a>
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+-&gt; <a class="reference internal" href="#root-entries-mapping">Root entries mapping</a>
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+-&gt; <a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a>
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+
+
+
+-&gt;
+
+-&gt;
+
+-&gt; <a class="reference internal" href="#basic-config-mapping">Basic config mapping</a>
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+
+-&gt;
+
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+
+-&gt;
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+
+
+
+-&gt;
+
+-&gt;
+-&gt;
+
+
+
+-&gt;
+
+-&gt;
+
+
+
+-&gt;
+
+-&gt;
+
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+-&gt;
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+   +
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
