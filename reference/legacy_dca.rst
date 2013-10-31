@@ -59,6 +59,8 @@ This is a full **legacy dca** reference example with all known keys and example 
         'dca_config' => array
         (
             'callback'       => 'DcGeneral\Callbacks\ContaoStyleCallbacks',
+            'controller'     => 'DcGeneral\Controller\DefaultController',
+            'view'           => 'DcGeneral\View\DefaultView',
             'data_provider'  => array
             (
                     'default' => array
@@ -72,8 +74,26 @@ This is a full **legacy dca** reference example with all known keys and example 
                             'source' => 'tl_parent'
                     )
             ),
-            'controller'     => 'DcGeneral\Controller\DefaultController',
-            'view'           => 'DcGeneral\View\DefaultView',
+            'rootEntries' => array(
+                'tl_example' => array(
+                    'setOn'  => array
+                    (
+                        array(
+                            'property' => 'id',
+                            'value'    => 0
+                        ),
+                    ),
+                    'filter' => array
+                    (
+                        array
+                        (
+                            'property'  => 'id',
+                            'value'     => 0,
+                            'operation' => '='
+                        )
+                    )
+                )
+            ),
             'childCondition' => array(
                 array(
                     'from'   => 'tl_parent',
