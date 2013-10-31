@@ -15,7 +15,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Palette builder &mdash; DcGeneral 1.0 documentation</title>
+    <title>Commands (fka Operations) &mdash; DcGeneral 1.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -42,8 +42,8 @@
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="DcGeneral 1.0 documentation" href="../../index.html" />
     <link rel="up" title="Data definition" href="../data_definition.html" />
-    <link rel="next" title="Commands (fka Operations)" href="commands.html" />
-    <link rel="prev" title="Data definition" href="../data_definition.html" />
+    <link rel="next" title="Container" href="container.html" />
+    <link rel="prev" title="Palette builder" href="builder.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -78,15 +78,15 @@
     ><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Manual</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../data_definition.html">Data definition</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Palette builder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="commands.html">Commands (fka Operations)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="commands.html#predefinition">Predefinition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="commands.html#indexed-command-events">Indexed command events</a></li>
-<li class="toctree-l4"><a class="reference internal" href="commands.html#examples">Examples</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="builder.html">Palette builder</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Commands (fka Operations)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indexed-command-events">Indexed command events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
 </ul>
 </li>
 </ul>
@@ -210,7 +210,18 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Palette builder</a></li>
+<li><a class="reference internal" href="#">Commands (fka Operations)</a><ul>
+<li><a class="reference internal" href="#predefinition">Predefinition</a></li>
+<li><a class="reference internal" href="#indexed-command-events">Indexed command events</a></li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
+<li><a class="reference internal" href="#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
+<li><a class="reference internal" href="#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
+<li><a class="reference internal" href="#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -219,10 +230,10 @@
             
               
                 
-  <li><a href="../data_definition.html"
-         title="Previous Chapter: Data definition">&laquo; Data definition</a></li>
-  <li><a href="commands.html"
-         title="Next Chapter: Commands (fka Operations)">Commands (fka Op... &raquo;</a></li>
+  <li><a href="builder.html"
+         title="Previous Chapter: Palette builder">&laquo; Palette builder</a></li>
+  <li><a href="container.html"
+         title="Next Chapter: Container">Container &raquo;</a></li>
               
             
             
@@ -248,9 +259,90 @@
   <div class="row">
     <div class="col-md-12">
       
-  <div class="section" id="palette-builder">
-<h1>Palette builder<a class="headerlink" href="#palette-builder" title="Permalink to this headline">¶</a></h1>
-<p><strong>TODO</strong> Need to be documented</p>
+  <div class="section" id="commands-fka-operations">
+<h1>Commands (fka Operations)<a class="headerlink" href="#commands-fka-operations" title="Permalink to this headline">¶</a></h1>
+<p>In Contao 2 and Contao 3 operations are normal buttons with a url.
+In DcGeneral, operations are more like <a class="reference external" href="http://en.wikipedia.org/wiki/Command_pattern">commands</a>.</p>
+<p>If a command is triggered by user action in the view, the command will be dispatched as <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/Event/CommandEvent.html" title="DcGeneral\Event\CommandEvent"><span class="pre">CommandEvent</span></a></tt> on the server side.
+Each listener must now decide what he need to do on the command.
+If a listener handle the event, he might stop it&#8217;s propagation.</p>
+<p>Here is an extreme shortened pseudo example of the default item edit listener.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">function</span> <span class="nf">defaultItemEditHandler</span><span class="p">(</span><span class="nx">DcGeneral\Event\ItemCommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$model</span>       <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getItem</span><span class="p">();</span>
+    <span class="nv">$view</span>        <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getView</span><span class="p">();</span>
+
+    <span class="nv">$view</span><span class="o">-&gt;</span><span class="na">redirect</span><span class="p">(</span><span class="s1">&#39;contao/main.php?act=edit&amp;id=&#39;</span> <span class="o">.</span> <span class="nv">$model</span><span class="o">-&gt;</span><span class="na">getId</span><span class="p">());</span>
+    <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">stopPropagation</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>See <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/Event/CommandEvent.html" title="DcGeneral\Event\CommandEvent"><span class="pre">CommandEvent</span></a></tt> and all of it&#8217;s sub-classes for reference about command events.</p>
+<div class="section" id="predefinition">
+<h2>Predefinition<a class="headerlink" href="#predefinition" title="Permalink to this headline">¶</a></h2>
+<p>The priority of default command listeners, that handle the default behaviour is <strong>0</strong>.
+If you want to overwrite the default behaviour, register your listener with a priority greater than <strong>0</strong>.
+If you want to post process the default behaviour (keep in mind that some commands stop event propagation), register your listener with a priority smaller than <strong>0</strong>.</p>
+</div>
+<div class="section" id="indexed-command-events">
+<h2>Indexed command events<a class="headerlink" href="#indexed-command-events" title="Permalink to this headline">¶</a></h2>
+<p>Command events are indexed with the container name or with command name or with container name and command name.
+The event name will be <tt class="docutils literal"><span class="pre">dc-general.command[&lt;container</span> <span class="pre">name&gt;]</span></tt>, <tt class="docutils literal"><span class="pre">dc-general.command[&lt;command</span> <span class="pre">name&gt;]</span></tt> or <tt class="docutils literal"><span class="pre">dc-general.command[&lt;container</span> <span class="pre">name&gt;][&lt;command</span> <span class="pre">name&gt;]</span></tt>,
+e.g. <tt class="docutils literal"><span class="pre">dc-general.command[tl_example]</span></tt>, <tt class="docutils literal"><span class="pre">dc-general.command[edit]</span></tt> and <tt class="docutils literal"><span class="pre">dc-general.command[tl_example][edit]</span></tt>.</p>
+<p>Read more about indexed events in the <a class="reference internal" href="../events.html"><em>Events</em></a> chapter.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="listen-on-edit-command-event-on-tl-example">
+<h3>listen on edit command event on tl_example<a class="headerlink" href="#listen-on-edit-command-event-on-tl-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_EVENTS&#39;</span><span class="p">][</span><span class="nx">DcGeneral\Event\CommandEvent</span><span class="o">::</span><span class="na">NAME</span><span class="p">][]</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="nx">DcGeneral\Event\CommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;edit&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$environment</span> <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">();</span>
+        <span class="nv">$container</span>   <span class="o">=</span> <span class="nv">$environment</span><span class="o">-&gt;</span><span class="na">getDataDefinition</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;tl_example&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="o">...</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="listen-on-indexed-edit-command-event-on-tl-example">
+<h3>listen on indexed edit command event on tl_example<a class="headerlink" href="#listen-on-indexed-edit-command-event-on-tl-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_EVENTS&#39;</span><span class="p">][</span><span class="nx">DcGeneral\Event\Command</span><span class="o">::</span><span class="na">NAME</span> <span class="o">.</span> <span class="s1">&#39;[tl_example][edit]&#39;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="nx">DcGeneral\Event\CommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// the name check is not needed anymore</span>
+    <span class="nv">$environment</span> <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">();</span>
+    <span class="nv">$container</span>   <span class="o">=</span> <span class="nv">$environment</span><span class="o">-&gt;</span><span class="na">getDataDefinition</span><span class="p">();</span>
+    <span class="c1">// the container name check is not needed anymore</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="listen-on-all-indexed-command-events-for-tl-example">
+<h3>listen on all indexed command events for tl_example<a class="headerlink" href="#listen-on-all-indexed-command-events-for-tl-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_EVENTS&#39;</span><span class="p">][</span><span class="nx">DcGeneral\Event\Command</span><span class="o">::</span><span class="na">NAME</span> <span class="o">.</span> <span class="s1">&#39;[tl_example]&#39;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="nx">DcGeneral\Event\CommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// if necessary, do a command name check here</span>
+    <span class="nv">$environment</span> <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">();</span>
+    <span class="nv">$container</span>   <span class="o">=</span> <span class="nv">$environment</span><span class="o">-&gt;</span><span class="na">getDataDefinition</span><span class="p">();</span>
+    <span class="c1">// the container name check is not needed anymore</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="listen-on-all-indexed-edit-command-events">
+<h3>listen on all indexed edit command events<a class="headerlink" href="#listen-on-all-indexed-edit-command-events" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_EVENTS&#39;</span><span class="p">][</span><span class="nx">DcGeneral\Event\Command</span><span class="o">::</span><span class="na">NAME</span> <span class="o">.</span> <span class="s1">&#39;[edit]&#39;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="nx">DcGeneral\Event\CommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// the name check is not needed anymore</span>
+    <span class="nv">$environment</span> <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">();</span>
+    <span class="nv">$container</span>   <span class="o">=</span> <span class="nv">$environment</span><span class="o">-&gt;</span><span class="na">getDataDefinition</span><span class="p">();</span>
+    <span class="c1">// if necessary, do a container name check here</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
 

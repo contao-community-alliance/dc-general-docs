@@ -78,6 +78,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../docs/index.html">Manual</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../docs/data_definition.html">Data definition</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/builder.html">Palette builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/commands.html">Commands (fka Operations)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/commands.html#indexed-command-events">Indexed command events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/commands.html#examples">Examples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/commands.html#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/commands.html#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/commands.html#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../docs/data_definition/container.html">Container</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html">Legacy mapping</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#basic-config-mapping">Basic config mapping</a><ul>
@@ -89,28 +101,44 @@
 <li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#extended-mapping">Extended mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#backend-view">Backend view</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#listing">Listing</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id2">Mapping</a></li>
-</ul>
-</li>
-<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#global-operations">Global operations</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#root-entries-mapping">Root entries mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#backend-view-mapping">Backend view mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#listing-mapping">Listing mapping</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id3">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#item-operations">Item operations</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#id4">Mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#panel-layout-mapping">Panel layout mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#global-operations-mapping">Global operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#item-operations-mapping">Item operations mapping</a></li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#palettes-mapping">Palettes mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#subpalettes-mapping">Subpalettes mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#root-entries-mapping">Root entries mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#parent-child-condition-mapping">Parent-child condition mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#additional-configuration">Additional configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#deprecations">Deprecations</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#callbacks">Callbacks</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#ignored-parts">Ignored parts</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#datacontainer">dataContainer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#dynamicptable">dynamicPtable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#ctable">ctable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#validfiletypes">validFileTypes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#uploadscript">uploadScript</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#donotdeleterecords">doNotDeleteRecords</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/container.html#default-sections">Default sections</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../docs/data_definition/container.html#basic-section">Basic section</a></li>
@@ -129,6 +157,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../docs/data_definition/palettes.html#parser">Parser</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../docs/events.html">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../docs/events.html#indexed-events">Indexed events</a></li>
 </ul>
 </li>
 </ul>
@@ -270,6 +302,8 @@
     <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
     <span class="p">(</span>
         <span class="s1">&#39;callback&#39;</span>       <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Callbacks\ContaoStyleCallbacks&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;controller&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Controller\DefaultController&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;view&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\View\DefaultView&#39;</span><span class="p">,</span>
         <span class="s1">&#39;data_provider&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
                 <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
@@ -283,8 +317,26 @@
                         <span class="s1">&#39;source&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span>
                 <span class="p">)</span>
         <span class="p">),</span>
-        <span class="s1">&#39;controller&#39;</span>     <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\Controller\DefaultController&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;view&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;DcGeneral\View\DefaultView&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;rootEntries&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">&#39;tl_example&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;setOn&#39;</span>  <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span><span class="p">(</span>
+                        <span class="s1">&#39;property&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;value&#39;</span>    <span class="o">=&gt;</span> <span class="mi">0</span>
+                    <span class="p">),</span>
+                <span class="p">),</span>
+                <span class="s1">&#39;filter&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+                <span class="p">(</span>
+                    <span class="k">array</span>
+                    <span class="p">(</span>
+                        <span class="s1">&#39;property&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;value&#39;</span>     <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="s1">&#39;operation&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;=&#39;</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
         <span class="s1">&#39;childCondition&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
             <span class="k">array</span><span class="p">(</span>
                 <span class="s1">&#39;from&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>

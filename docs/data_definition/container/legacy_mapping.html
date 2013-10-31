@@ -79,6 +79,18 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../../data_definition.html">Data definition</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../builder.html">Palette builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commands.html">Commands (fka Operations)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../commands.html#indexed-command-events">Indexed command events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../commands.html#examples">Examples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="reference internal" href="../container.html">Container</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="">Legacy mapping</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#basic-config-mapping">Basic config mapping</a><ul>
@@ -90,28 +102,44 @@
 <li class="toctree-l6"><a class="reference internal" href="#extended-mapping">Extended mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="#backend-view">Backend view</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#listing">Listing</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="#id2">Mapping</a></li>
-</ul>
-</li>
-<li class="toctree-l6"><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#global-operations">Global operations</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#backend-view-mapping">Backend view mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#listing-mapping">Listing mapping</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="#id3">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l6"><a class="reference internal" href="#item-operations">Item operations</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="#id4">Mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#panel-layout-mapping">Panel layout mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#global-operations-mapping">Global operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#item-operations-mapping">Item operations mapping</a></li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="#palettes-mapping">Palettes mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#additional-configuration">Additional configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#deprecations">Deprecations</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#callbacks">Callbacks</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#ignored-parts">Ignored parts</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#datacontainer">dataContainer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#dynamicptable">dynamicPtable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#ctable">ctable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#validfiletypes">validFileTypes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uploadscript">uploadScript</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#donotdeleterecords">doNotDeleteRecords</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../container.html#default-sections">Default sections</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../container.html#basic-section">Basic section</a></li>
@@ -130,6 +158,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../palettes.html#parser">Parser</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../events.html">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../events.html#indexed-events">Indexed events</a></li>
 </ul>
 </li>
 </ul>
@@ -188,28 +220,44 @@
 <li><a class="reference internal" href="#extended-mapping">Extended mapping</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#backend-view">Backend view</a><ul>
-<li><a class="reference internal" href="#listing">Listing</a><ul>
-<li><a class="reference internal" href="#id2">Mapping</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
-<li><a class="reference internal" href="#global-operations">Global operations</a><ul>
+<li><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
+<li><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li><a class="reference internal" href="#backend-view-mapping">Backend view mapping</a><ul>
+<li><a class="reference internal" href="#listing-mapping">Listing mapping</a><ul>
 <li><a class="reference internal" href="#id3">Mapping</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#item-operations">Item operations</a><ul>
-<li><a class="reference internal" href="#id4">Mapping</a></li>
+<li><a class="reference internal" href="#panel-layout-mapping">Panel layout mapping</a></li>
+<li><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
+<li><a class="reference internal" href="#global-operations-mapping">Global operations mapping</a></li>
+<li><a class="reference internal" href="#item-operations-mapping">Item operations mapping</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#palettes-mapping">Palettes mapping</a><ul>
+<li><a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#root-entries-mapping">Root entries mapping</a></li>
-<li><a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
+<li><a class="reference internal" href="#additional-configuration">Additional configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deprecations">Deprecations</a><ul>
+<li><a class="reference internal" href="#callbacks">Callbacks</a></li>
 <li><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#ignored-parts">Ignored parts</a><ul>
+<li><a class="reference internal" href="#datacontainer">dataContainer</a></li>
+<li><a class="reference internal" href="#dynamicptable">dynamicPtable</a></li>
+<li><a class="reference internal" href="#ctable">ctable</a></li>
+<li><a class="reference internal" href="#validfiletypes">validFileTypes</a></li>
+<li><a class="reference internal" href="#uploadscript">uploadScript</a></li>
+<li><a class="reference internal" href="#donotdeleterecords">doNotDeleteRecords</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -251,60 +299,7 @@
 <h1>Legacy mapping<a class="headerlink" href="#legacy-mapping" title="Permalink to this headline">¶</a></h1>
 <p>The <strong>legacy dca</strong> aka <strong>old dca</strong> format is used in Contao 2 and Contao 3.
 This page describe how this format is mapped into the DcGeneral <a class="reference internal" href="../container.html"><em>Container</em></a>.</p>
-<p>Here is a typical <strong>legacy dca</strong> example:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-    <span class="c1">// Config</span>
-    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="o">...</span>
-    <span class="p">),</span>
-    <span class="c1">// DcGeneral config</span>
-    <span class="s1">&#39;dca_config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;data_provider&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="o">...</span>
-        <span class="p">),</span>
-    <span class="p">),</span>
-    <span class="c1">// List</span>
-    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="o">...</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="o">...</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="o">...</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="o">...</span>
-        <span class="p">)</span>
-    <span class="p">),</span>
-    <span class="c1">// Palettes</span>
-    <span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="o">...</span>
-    <span class="p">),</span>
-    <span class="c1">// Subpalettes</span>
-    <span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="o">...</span>
-    <span class="p">),</span>
-    <span class="c1">// Fields</span>
-    <span class="s1">&#39;fields&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="o">...</span>
-    <span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
-</div>
+<p>For a full dca example and mapping description, see the <a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a> chapter.</p>
 <div class="section" id="basic-config-mapping">
 <h2>Basic config mapping<a class="headerlink" href="#basic-config-mapping" title="Permalink to this headline">¶</a></h2>
 <p>You can access the basic section with this snippet:</p>
@@ -554,8 +549,16 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 </table>
 </div>
 </div>
-<div class="section" id="backend-view">
-<h2>Backend view<a class="headerlink" href="#backend-view" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="root-entries-mapping">
+<h2>Root entries mapping<a class="headerlink" href="#root-entries-mapping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="parent-child-condition-mapping">
+<span id="parent-child-condition"></span><h2>Parent-child condition mapping<a class="headerlink" href="#parent-child-condition-mapping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="backend-view-mapping">
+<h2>Backend view mapping<a class="headerlink" href="#backend-view-mapping" title="Permalink to this headline">¶</a></h2>
+<p>Normally the DcGeneral support multiple views on the container.
+The legacy dca will be mapped into backend view, which is the default for the Contao backend editing.</p>
 <p>You can access the backend view section with this snippet:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
 
@@ -563,8 +566,11 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
 </pre></div>
 </div>
-<div class="section" id="listing">
-<h3>Listing<a class="headerlink" href="#listing" title="Permalink to this headline">¶</a></h3>
+<p>There is no special mapping from DCA parts into the backend view.
+The backend view will be filled with <a class="reference internal" href="#listing-mapping"><em>a listing</em></a>, <a class="reference internal" href="#panel-layout-mapping"><em>a panel layout</em></a> and <a class="reference internal" href="#operation-mapping"><em>operations</em></a>.</p>
+<div class="section" id="listing-mapping">
+<span id="id2"></span><h3>Listing mapping<a class="headerlink" href="#listing-mapping" title="Permalink to this headline">¶</a></h3>
+<p>The listing contain all informations how to list the models.</p>
 <p>You can access the listing options of the backend view section with this snippet:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\ListingConfigInterface</span><span class="p">;</span>
@@ -576,12 +582,12 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <span class="sd">/** @var ListingConfigInterface $listingConfig */</span>
 </pre></div>
 </div>
-<div class="section" id="id2">
-<h4>Mapping<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id3">
+<h4>Mapping<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <colgroup>
-<col width="60%" />
-<col width="40%" />
+<col width="48%" />
+<col width="52%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
@@ -591,17 +597,52 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
     <span class="p">(</span>
         <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
+            <span class="s1">&#39;flag&#39;</span>                  <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+
+
+
+            <span class="s1">&#39;fields&#39;</span>                <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span>
+            <span class="p">),</span>
+            <span class="s1">&#39;headerFields&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;headline&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span>
+            <span class="p">),</span>
+
+            <span class="s1">&#39;icon&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;path/to/icon.png&#39;</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;disableGrouping&#39;</span>       <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+
+
+
+            <span class="s1">&#39;child_record_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span>
+            <span class="p">)</span>
+
+            <span class="s1">&#39;child_record_class&#39;</span>    <span class="o">=&gt;</span> <span class="s1">&#39;css_class_name&#39;</span>
+
         <span class="p">),</span>
         <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
         <span class="p">(</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
-        <span class="p">),</span>
-    <span class="p">)</span>
+
+
+            <span class="s1">&#39;fields&#39;</span>         <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;alias&#39;</span><span class="p">),</span>
+
+
+            <span class="s1">&#39;format&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;%s [%s]&#39;</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;maxCharacters&#39;</span>  <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;group_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span>
+            <span class="p">)</span>
+
+            <span class="s1">&#39;label_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">()</span>
+                <span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -614,18 +655,51 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 &nbsp;
 &nbsp;
 &nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+-&gt; (<em>optional</em>) define the default sorting and grouping mode
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getGroupingMode()</span></tt>
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getSortingMode()</span></tt>
+
+-&gt; (<em>optional</em>) define the initial default sorting fields
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getDefaultSortingFields()</span></tt>
+
+-&gt; (<em>required in parented view</em>) define the fields of the
+   parent element which are shown above the item list
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getHeaderPropertyNames()</span></tt>
+
+-&gt; (<em>optional</em>) path to an icon that is used as tree root icon
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getRootIcon()</span></tt>
+
+-&gt; (<em>deprecated</em>) define whether items are grouped or not,
+   this enforce <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getGroupingMode()</span></tt> to be
+   <tt class="docutils literal"><span class="pre">ListingConfigInterface::GROUP_NONE</span></tt> when <tt class="docutils literal"><span class="pre">false</span></tt>
+
+-&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
+   event depends on the view,
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+-&gt; (<em>optional</em>) used as item container css class
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getItemCssClass()</span></tt>
+
+-&gt; (<em>required</em>) this part is converted into an
+   <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/View/BackendView/LabelFormatter`.html" title="DcGeneral\View\BackendView\LabelFormatter`"><span class="pre">LabelFormatter`</span></a></tt>
+   <tt class="docutils literal"><span class="pre">$listingConfig-&gt;getLabelFormatter()</span></tt>
+
+-&gt; (<em>required</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$propertyNames</span></tt>
+
+
+-&gt; (<em>optional</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$format</span></tt>
+
+
+-&gt; (<em>optional</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$maxLength</span></tt>
+
+
+-&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
+   event depends on the view,
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+-&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
+   event depends on the view,
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
 </pre>
 </td>
 </tr>
@@ -633,32 +707,92 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 </table>
 </div>
 </div>
+<div class="section" id="panel-layout-mapping">
+<span id="id4"></span><h3>Panel layout mapping<a class="headerlink" href="#panel-layout-mapping" title="Permalink to this headline">¶</a></h3>
+</div>
 <div class="section" id="operation-mapping">
-<h3>Operation mapping<a class="headerlink" href="#operation-mapping" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3>Operation mapping<a class="headerlink" href="#operation-mapping" title="Permalink to this headline">¶</a></h3>
+<p>In DcGeneral all operations are used as <a class="reference internal" href="../commands.html"><em>Commands (fka Operations)</em></a>.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="100%" />
+<col width="50%" />
+<col width="50%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="s1">&#39;(global_)operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
 <span class="p">(</span>
-    <span class="s1">&#39;my_operation&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
-    <span class="p">)</span>
+
+    <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+
+
+    <span class="s1">&#39;description&#39;</span>     <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+
+
+    <span class="s1">&#39;command&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span>
+
+
+    <span class="s1">&#39;parameters&#39;</span>      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(),</span>
+
+
+    <span class="s1">&#39;href&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
+
+
+
+    <span class="s1">&#39;icon&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
+
+
+    <span class="s1">&#39;class&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
+
+    <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+
+
+    <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>
+</td>
+<td><pre class="first last literal-block">
+-&gt; (<em>optional</em>) used as operation name
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getName()</span></tt>
+
+-&gt; (<em>optional</em>) used as operation label (human readable name)
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getLabel()</span></tt>
+
+-&gt; (<em>optional</em>) used as operation description (tooltip)
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getDescription()</span></tt>
+
+-&gt; (<em>optional</em>) used as operation command name
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getAction()</span></tt>
+
+-&gt; (<em>optional</em>) used as operation's command parameters
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getActionProperties()</span></tt>
+
+-&gt; (<em>deprecated</em>) the query string is parsed and used as command
+   parameters, if the query contain a parameter named <tt class="docutils literal"><span class="pre">act</span></tt>,
+   the value is used as command name
+
+-&gt; (<em>optional</em>) the path to the icon
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getIcon()</span></tt>
+
+-&gt; (<em>deprecated</em>) will be added to <em>attributes</em>
+
+-&gt; (<em>optional</em>) string or array of html attributes
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getHtmlAttributes()</span></tt>
+
+-&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
+   event depends on the view,
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+</pre>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="global-operations">
-<h3>Global operations<a class="headerlink" href="#global-operations" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="global-operations-mapping">
+<h3>Global operations mapping<a class="headerlink" href="#global-operations-mapping" title="Permalink to this headline">¶</a></h3>
+<p>Global operations are mapped als <em>global</em> <a class="reference internal" href="../commands.html"><em>Commands (fka Operations)</em></a>.
+These commands are dispatched in container scope.</p>
+<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
 <p>You can access the global operations defined in backend view section with this snippet:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
@@ -670,136 +804,12 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <span class="sd">/** @var OperationCollectionInterface $globalOperations */</span>
 </pre></div>
 </div>
-<div class="section" id="id3">
-<h4>Mapping<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-    <span class="c1">// Config</span>
-    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;dataContainer&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;General&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ptable&#39;</span>                      <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ctable&#39;</span>                      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;switchToEdit&#39;</span>                <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
-        <span class="s1">&#39;enableVersioning&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
-        <span class="s1">&#39;onload_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;checkPermission&#39;</span><span class="p">),</span>
-            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_page&#39;</span><span class="p">,</span> <span class="s1">&#39;addBreadcrumb&#39;</span><span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;pid&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
-            <span class="p">)</span>
-        <span class="p">)</span>
-    <span class="p">),</span>
-    <span class="c1">// List</span>
-    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;mode&#39;</span>                    <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;toggleNodes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;toggleAll&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;&amp;amp;ptg=all&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_toggle&#39;</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
-            <span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;edit&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;edit&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;table=tl_content&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;edit.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;editheader&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;editheader&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=edit&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;header.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editHeader&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;copy&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;copy&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=copy&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;copy.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;copyArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;cut&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;cut&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=cut&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;cut.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;cutArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;deleteArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;toggle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;toggle&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;visible.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;toggleIcon&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;show&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;show&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=show&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;show.gif&#39;</span>
-            <span class="p">)</span>
-        <span class="p">)</span>
-    <span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section" id="item-operations">
-<h3>Item operations<a class="headerlink" href="#item-operations" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="item-operations-mapping">
+<h3>Item operations mapping<a class="headerlink" href="#item-operations-mapping" title="Permalink to this headline">¶</a></h3>
+<p>Item operations are mapped als <em>item</em> <a class="reference internal" href="../commands.html"><em>Commands (fka Operations)</em></a>.
+These commands are dispatched in model scope.</p>
+<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
 <p>You can access the item operations defined in backend view section with this snippet:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
@@ -811,151 +821,67 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 <span class="sd">/** @var OperationCollectionInterface $itemOperations */</span>
 </pre></div>
 </div>
-<div class="section" id="id4">
-<h4>Mapping<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-    <span class="c1">// Config</span>
-    <span class="s1">&#39;config&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;dataContainer&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;General&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ptable&#39;</span>                      <span class="o">=&gt;</span> <span class="s1">&#39;tl_parent&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;ctable&#39;</span>                      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;switchToEdit&#39;</span>                <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
-        <span class="s1">&#39;enableVersioning&#39;</span>            <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
-        <span class="s1">&#39;onload_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;checkPermission&#39;</span><span class="p">),</span>
-            <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_page&#39;</span><span class="p">,</span> <span class="s1">&#39;addBreadcrumb&#39;</span><span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;keys&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;pid&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;alias&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;index&#39;</span>
-            <span class="p">)</span>
-        <span class="p">)</span>
-    <span class="p">),</span>
-    <span class="c1">// List</span>
-    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-    <span class="p">(</span>
-        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;mode&#39;</span>                    <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;published DESC&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;paste_button_callback&#39;</span>   <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;pasteArticle&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;panelLayout&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;search&#39;</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;fields&#39;</span>                  <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;inColumn&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;format&#39;</span>                  <span class="o">=&gt;</span> <span class="s1">&#39;%s &lt;span style=&quot;color:#b3b3b3;padding-left:3px&quot;&gt;[%s]&lt;/span&gt;&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;label_callback&#39;</span>          <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;addIcon&#39;</span><span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;global_operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;toggleNodes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;toggleAll&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;&amp;amp;ptg=all&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_toggle&#39;</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=select&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;class&#39;</span>               <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot; accesskey=&quot;e&quot;&#39;</span>
-            <span class="p">)</span>
-        <span class="p">),</span>
-        <span class="s1">&#39;operations&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-        <span class="p">(</span>
-            <span class="s1">&#39;edit&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;edit&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;table=tl_content&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;edit.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;editheader&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;editheader&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=edit&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;header.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;editHeader&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;copy&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;copy&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=copy&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;copy.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;copyArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;cut&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;cut&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=paste&amp;amp;mode=cut&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;cut.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;cutArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;delete&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=delete&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;if(!confirm(\&#39;&#39;</span> <span class="o">.</span> <span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;deleteConfirm&#39;</span><span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;\&#39;))return false;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;deleteArticle&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;toggle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;toggle&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;visible.gif&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;attributes&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)&quot;&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;button_callback&#39;</span>     <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_example&#39;</span><span class="p">,</span> <span class="s1">&#39;toggleIcon&#39;</span><span class="p">)</span>
-            <span class="p">),</span>
-            <span class="s1">&#39;show&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
-            <span class="p">(</span>
-                <span class="s1">&#39;label&#39;</span>               <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;show&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;href&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;act=show&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;icon&#39;</span>                <span class="o">=&gt;</span> <span class="s1">&#39;show.gif&#39;</span>
-            <span class="p">)</span>
-        <span class="p">)</span>
-    <span class="p">)</span>
-<span class="p">);</span>
-</pre></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
+<div class="section" id="palettes-mapping">
+<h2>Palettes mapping<a class="headerlink" href="#palettes-mapping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="subpalettes-mapping">
+<h3>Subpalettes mapping<a class="headerlink" href="#subpalettes-mapping" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="root-entries-mapping">
-<h2>Root entries mapping<a class="headerlink" href="#root-entries-mapping" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="parent-child-condition-mapping">
-<h2>Parent-child condition mapping<a class="headerlink" href="#parent-child-condition-mapping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="properties-fka-fields-mapping">
+<h2>Properties (fka fields) mapping<a class="headerlink" href="#properties-fka-fields-mapping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="additional-configuration">
+<h3>Additional configuration<a class="headerlink" href="#additional-configuration" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="deprecations">
+<h2>Deprecations<a class="headerlink" href="#deprecations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="callbacks">
+<h3>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline">¶</a></h3>
+<p>Callbacks are still supported for compatibility reason, but the complete DcGeneral is fully event driven and all
+callbacks are only triggered through a <em>legacy callback event listener</em>. For full functionality, you should use
+custom <a class="reference internal" href="../../events.html"><em>event</em></a> listeners.</p>
+<p>To find out the responsible event, have a look into the <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/DataDefinition/Builder/Event.html" title="DcGeneral\DataDefinition\Builder\Event"><span class="pre">DcGeneral\DataDefinition\Builder\Event</span></a></tt> namespace.</p>
 </div>
 <div class="section" id="deprecated-dcgeneral-config">
-<h2>Deprecated DcGeneral config<a class="headerlink" href="#deprecated-dcgeneral-config" title="Permalink to this headline">¶</a></h2>
+<h3>Deprecated DcGeneral config<a class="headerlink" href="#deprecated-dcgeneral-config" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="ignored-parts">
+<h2>Ignored parts<a class="headerlink" href="#ignored-parts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="datacontainer">
+<span id="id6"></span><h3>dataContainer<a class="headerlink" href="#datacontainer" title="Permalink to this headline">¶</a></h3>
+<p>The <tt class="docutils literal"><span class="pre">dataContainer</span></tt> parts is only necessary for contao to know which data container driver should be used.
+This must be <tt class="docutils literal"><span class="pre">General</span></tt>.</p>
+</div>
+<div class="section" id="dynamicptable">
+<span id="id7"></span><h3>dynamicPtable<a class="headerlink" href="#dynamicptable" title="Permalink to this headline">¶</a></h3>
+<p>The dynamic ptable can be solved over the <a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a>.</p>
+</div>
+<div class="section" id="ctable">
+<span id="id8"></span><h3>ctable<a class="headerlink" href="#ctable" title="Permalink to this headline">¶</a></h3>
+<p>Defining the child tables is not necessary at all, but can be done by a <a class="reference internal" href="#parent-child-condition"><em>parent-child condition</em></a>.</p>
+</div>
+<div class="section" id="validfiletypes">
+<span id="id9"></span><h3>validFileTypes<a class="headerlink" href="#validfiletypes" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
+</div>
+<div class="section" id="uploadscript">
+<span id="id10"></span><h3>uploadScript<a class="headerlink" href="#uploadscript" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
+</div>
+<div class="section" id="donotdeleterecords">
+<span id="id11"></span><h3>doNotDeleteRecords<a class="headerlink" href="#donotdeleterecords" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
 </div>
 </div>
 <div class="section" id="dca-mapping-reference">
-<h1>DCA mapping reference<a class="headerlink" href="#dca-mapping-reference" title="Permalink to this headline">¶</a></h1>
+<h2>DCA mapping reference<a class="headerlink" href="#dca-mapping-reference" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="68%" />
-<col width="32%" />
+<col width="66%" />
+<col width="34%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
@@ -1227,49 +1153,49 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 
 
 
--&gt;
--&gt;
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
+-&gt; <a class="reference internal" href="#datacontainer"><em>*ignored*</em></a>
 -&gt; <a class="reference internal" href="#data-provider-mapping">Data provider mapping</a>
+-&gt; <a class="reference internal" href="#dynamicptable"><em>*ignored*</em></a>
+-&gt; <a class="reference internal" href="#ctable"><em>*ignored*</em></a>
+-&gt; <a class="reference internal" href="#validfiletypes"><em>*ignored*</em></a>
+-&gt; <a class="reference internal" href="#uploadscript"><em>*ignored*</em></a>
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt;
+-&gt; <a class="reference internal" href="#donotdeleterecords"><em>*ignored*</em></a>
+-&gt;
+   ^
+   ^
+   ^
+-&gt;
+   ^
+   ^
+   ^
+-&gt;
+   ^
+   ^
+   ^
+-&gt;
+   ^
+   ^
+   ^
+-&gt;
+   ^
+   ^
+   ^
 -&gt; <em>ignored</em>
--&gt; <em>ignored</em>
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt; <em>ignored</em>
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
--&gt; <em>ignored</em>
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 
 
 
@@ -1279,211 +1205,212 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 -&gt; <a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a>
 -&gt; <a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a>
 -&gt; <a class="reference internal" href="#data-provider-mapping">Data provider mapping</a>
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 -&gt; <a class="reference internal" href="#root-entries-mapping">Root entries mapping</a>
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 -&gt; <a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a>
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 
 
 
--&gt;
+-&gt; <a class="reference internal" href="#backend-view-mapping">Backend view mapping</a>
 
--&gt;
+
 
 -&gt; <a class="reference internal" href="#basic-config-mapping">Basic config mapping</a>
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
+-&gt; <a class="reference internal" href="#id4">Panel layout mapping</a>
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
+   ^
+   ^
 -&gt;
 -&gt;
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
 -&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
+   ^
 
--&gt;
+-&gt; <a class="reference internal" href="#id2">Listing mapping</a>
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
+-&gt; <a class="reference internal" href="#global-operations-mapping">Global operations mapping</a>
 
--&gt;
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+-&gt; <a class="reference internal" href="#id5">Operation mapping</a>
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 
+-&gt; <a class="reference internal" href="#item-operations-mapping">Item operations mapping</a>
 
-
--&gt;
-
--&gt;
--&gt;
+-&gt; <a class="reference internal" href="#id5">Operation mapping</a>
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 
 
 
--&gt;
 
--&gt;
+-&gt; <a class="reference internal" href="#palettes-mapping">Palettes mapping</a>
+   ^
+   ^
+   ^
+   ^
 
 
+-&gt; <a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a>
+   ^
+   ^
+   ^
 
--&gt;
 
--&gt;
-
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
--&gt;
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
-   +
+-&gt; <a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a>
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+-&gt; <a class="reference internal" href="#additional-configuration">Additional configuration</a>
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
+   ^
 </pre>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 
 

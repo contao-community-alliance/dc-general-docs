@@ -42,7 +42,7 @@
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="DcGeneral 1.0 documentation" href="../../index.html" />
     <link rel="up" title="Data definition" href="../data_definition.html" />
-    <link rel="next" title="Cookbook" href="../../book/index.html" />
+    <link rel="next" title="Events" href="../events.html" />
     <link rel="prev" title="Legacy mapping" href="container/legacy_mapping.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -79,6 +79,18 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Manual</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../data_definition.html">Data definition</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="builder.html">Palette builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html">Commands (fka Operations)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="commands.html#indexed-command-events">Indexed command events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="commands.html#examples">Examples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-indexed-edit-command-event-on-tl-example">listen on indexed edit command event on tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-all-indexed-command-events-for-tl-example">listen on all indexed command events for tl_example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="commands.html#listen-on-all-indexed-edit-command-events">listen on all indexed edit command events</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="container.html">Container</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="container/legacy_mapping.html">Legacy mapping</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#basic-config-mapping">Basic config mapping</a><ul>
@@ -90,28 +102,44 @@
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#extended-mapping">Extended mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#backend-view">Backend view</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#listing">Listing</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="container/legacy_mapping.html#id2">Mapping</a></li>
-</ul>
-</li>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#global-operations">Global operations</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#root-entries-mapping">Root entries mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#parent-child-condition-mapping">Parent-child condition mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#backend-view-mapping">Backend view mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#listing-mapping">Listing mapping</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="container/legacy_mapping.html#id3">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#item-operations">Item operations</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="container/legacy_mapping.html#id4">Mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#panel-layout-mapping">Panel layout mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#global-operations-mapping">Global operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#item-operations-mapping">Item operations mapping</a></li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#palettes-mapping">Palettes mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#subpalettes-mapping">Subpalettes mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#root-entries-mapping">Root entries mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#parent-child-condition-mapping">Parent-child condition mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#additional-configuration">Additional configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#deprecations">Deprecations</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#callbacks">Callbacks</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#ignored-parts">Ignored parts</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#datacontainer">dataContainer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#dynamicptable">dynamicPtable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#ctable">ctable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#validfiletypes">validFileTypes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#uploadscript">uploadScript</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#donotdeleterecords">doNotDeleteRecords</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="container.html#bootstrap-and-building-process">Bootstrap and building process</a></li>
 <li class="toctree-l4"><a class="reference internal" href="container.html#default-sections">Default sections</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="container.html#basic-section">Basic section</a></li>
@@ -130,6 +158,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#parser">Parser</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../events.html">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../events.html#indexed-events">Indexed events</a></li>
 </ul>
 </li>
 </ul>
@@ -197,8 +229,8 @@
                 
   <li><a href="container/legacy_mapping.html"
          title="Previous Chapter: Legacy mapping">&laquo; Legacy mapping</a></li>
-  <li><a href="../../book/index.html"
-         title="Next Chapter: Cookbook">Cookbook &raquo;</a></li>
+  <li><a href="../events.html"
+         title="Next Chapter: Events">Events &raquo;</a></li>
               
             
             
