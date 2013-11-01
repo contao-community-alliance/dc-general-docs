@@ -81,6 +81,11 @@
 <li class="toctree-l3"><a class="reference internal" href="builder.html">Palette builder</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Commands (fka Operations)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scopes">Scopes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#container-scope">Container scope</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#model-scope">Model scope</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#indexed-command-events">Indexed command events</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
@@ -110,19 +115,16 @@
 </ul>
 </li>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#panel-layout-mapping">Panel layout mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#global-operations-mapping">Global operations mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#item-operations-mapping">Item operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#model-operations-mapping">Model operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#palettes-mapping">Palettes mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#subpalettes-mapping">Subpalettes mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#id6">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#additional-configuration">Additional configuration</a></li>
-</ul>
-</li>
+<li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a></li>
 <li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#deprecations">Deprecations</a><ul>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#callbacks">Callbacks</a></li>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
@@ -135,6 +137,7 @@
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#validfiletypes">validFileTypes</a></li>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#uploadscript">uploadScript</a></li>
 <li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#donotdeleterecords">doNotDeleteRecords</a></li>
+<li class="toctree-l6"><a class="reference internal" href="container/legacy_mapping.html#sql">sql</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
@@ -212,6 +215,11 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Commands (fka Operations)</a><ul>
 <li><a class="reference internal" href="#predefinition">Predefinition</a></li>
+<li><a class="reference internal" href="#scopes">Scopes</a><ul>
+<li><a class="reference internal" href="#container-scope">Container scope</a></li>
+<li><a class="reference internal" href="#model-scope">Model scope</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#indexed-command-events">Indexed command events</a></li>
 <li><a class="reference internal" href="#examples">Examples</a><ul>
 <li><a class="reference internal" href="#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
@@ -266,7 +274,7 @@ In DcGeneral, operations are more like <a class="reference external" href="http:
 <p>If a command is triggered by user action in the view, the command will be dispatched as <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/Event/CommandEvent.html" title="DcGeneral\Event\CommandEvent"><span class="pre">CommandEvent</span></a></tt> on the server side.
 Each listener must now decide what he need to do on the command.
 If a listener handle the event, he might stop it&#8217;s propagation.</p>
-<p>Here is an extreme shortened pseudo example of the default item edit listener.</p>
+<p>Here is an extreme simplified pseudo example of the default item edit listener.</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="k">function</span> <span class="nf">defaultItemEditHandler</span><span class="p">(</span><span class="nx">DcGeneral\Event\ItemCommandEvent</span> <span class="nv">$event</span><span class="p">)</span> <span class="p">{</span>
     <span class="nv">$model</span>       <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getItem</span><span class="p">();</span>
     <span class="nv">$view</span>        <span class="o">=</span> <span class="nv">$event</span><span class="o">-&gt;</span><span class="na">getEnvironment</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getView</span><span class="p">();</span>
@@ -282,6 +290,19 @@ If a listener handle the event, he might stop it&#8217;s propagation.</p>
 <p>The priority of default command listeners, that handle the default behaviour is <strong>0</strong>.
 If you want to overwrite the default behaviour, register your listener with a priority greater than <strong>0</strong>.
 If you want to post process the default behaviour (keep in mind that some commands stop event propagation), register your listener with a priority smaller than <strong>0</strong>.</p>
+</div>
+<div class="section" id="scopes">
+<h2>Scopes<a class="headerlink" href="#scopes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="container-scope">
+<span id="container-scoped-commands"></span><h3>Container scope<a class="headerlink" href="#container-scope" title="Permalink to this headline">¶</a></h3>
+<p>Container scoped commands are related to the data definition container and do some action on it.</p>
+<p>Event: <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/Event/CommandEvent.html" title="DcGeneral\Event\CommandEvent"><span class="pre">DcGeneral\Event\CommandEvent</span></a></tt></p>
+</div>
+<div class="section" id="model-scope">
+<span id="model-scoped-commands"></span><h3>Model scope<a class="headerlink" href="#model-scope" title="Permalink to this headline">¶</a></h3>
+<p>Model scoped commands are related to a model and do some action on it.</p>
+<p>Event: <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/Event/ModelCommandEvent.html" title="DcGeneral\Event\ModelCommandEvent"><span class="pre">DcGeneral\Event\ModelCommandEvent</span></a></tt></p>
+</div>
 </div>
 <div class="section" id="indexed-command-events">
 <h2>Indexed command events<a class="headerlink" href="#indexed-command-events" title="Permalink to this headline">¶</a></h2>

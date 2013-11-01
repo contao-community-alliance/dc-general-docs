@@ -81,6 +81,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../builder.html">Palette builder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../commands.html">Commands (fka Operations)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../commands.html#scopes">Scopes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#container-scope">Container scope</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../commands.html#model-scope">Model scope</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../commands.html#indexed-command-events">Indexed command events</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../commands.html#examples">Examples</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
@@ -110,19 +115,16 @@
 </ul>
 </li>
 <li class="toctree-l6"><a class="reference internal" href="#panel-layout-mapping">Panel layout mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
 <li class="toctree-l6"><a class="reference internal" href="#global-operations-mapping">Global operations mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#item-operations-mapping">Item operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#model-operations-mapping">Model operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="#palettes-mapping">Palettes mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#id6">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#additional-configuration">Additional configuration</a></li>
-</ul>
-</li>
+<li class="toctree-l5"><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#deprecations">Deprecations</a><ul>
 <li class="toctree-l6"><a class="reference internal" href="#callbacks">Callbacks</a></li>
 <li class="toctree-l6"><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
@@ -135,6 +137,7 @@
 <li class="toctree-l6"><a class="reference internal" href="#validfiletypes">validFileTypes</a></li>
 <li class="toctree-l6"><a class="reference internal" href="#uploadscript">uploadScript</a></li>
 <li class="toctree-l6"><a class="reference internal" href="#donotdeleterecords">doNotDeleteRecords</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#sql">sql</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
@@ -228,19 +231,16 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#panel-layout-mapping">Panel layout mapping</a></li>
-<li><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
 <li><a class="reference internal" href="#global-operations-mapping">Global operations mapping</a></li>
-<li><a class="reference internal" href="#item-operations-mapping">Item operations mapping</a></li>
+<li><a class="reference internal" href="#model-operations-mapping">Model operations mapping</a></li>
+<li><a class="reference internal" href="#operation-mapping">Operation mapping</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#palettes-mapping">Palettes mapping</a><ul>
-<li><a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a></li>
+<li><a class="reference internal" href="#id6">Mapping</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
-<li><a class="reference internal" href="#additional-configuration">Additional configuration</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#properties-fka-fields-mapping">Properties (fka fields) mapping</a></li>
 <li><a class="reference internal" href="#deprecations">Deprecations</a><ul>
 <li><a class="reference internal" href="#callbacks">Callbacks</a></li>
 <li><a class="reference internal" href="#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
@@ -253,6 +253,7 @@
 <li><a class="reference internal" href="#validfiletypes">validFileTypes</a></li>
 <li><a class="reference internal" href="#uploadscript">uploadScript</a></li>
 <li><a class="reference internal" href="#donotdeleterecords">doNotDeleteRecords</a></li>
+<li><a class="reference internal" href="#sql">sql</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#dca-mapping-reference">DCA mapping reference</a></li>
@@ -394,6 +395,8 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 
         <span class="s1">&#39;ctable&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;tl_child1&#39;</span><span class="p">,</span> <span class="s1">&#39;tl_child2&#39;</span><span class="p">)</span>
     <span class="p">)</span>
+
+
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -542,6 +545,7 @@ This page describe how this format is mapped into the DcGeneral <a class="refere
 -&gt; Any of the named keys (root, parent, current) can be aliased to each
    other. In this example default is an alias of the parent and there-
    fore both will use the same driver.
+&nbsp;
 </pre>
 </td>
 </tr>
@@ -563,7 +567,7 @@ The legacy dca will be mapped into backend view, which is the default for the Co
 <div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
 
 <span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
-<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+<span class="sd">/** @var BackendViewSectionInterface $backendViewSection */</span>
 </pre></div>
 </div>
 <p>There is no special mapping from DCA parts into the backend view.
@@ -576,7 +580,7 @@ The backend view will be filled with <a class="reference internal" href="#listin
 <span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\ListingConfigInterface</span><span class="p">;</span>
 
 <span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
-<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
+<span class="sd">/** @var BackendViewSectionInterface $backendViewSection */</span>
 
 <span class="nv">$listingConfig</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getListingConfig</span><span class="p">();</span>
 <span class="sd">/** @var ListingConfigInterface $listingConfig */</span>
@@ -628,12 +632,9 @@ The backend view will be filled with <a class="reference internal" href="#listin
 
             <span class="s1">&#39;fields&#39;</span>         <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;alias&#39;</span><span class="p">),</span>
 
-
             <span class="s1">&#39;format&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;%s [%s]&#39;</span><span class="p">,</span>
 
-
             <span class="s1">&#39;maxCharacters&#39;</span>  <span class="o">=&gt;</span> <span class="mi">255</span><span class="p">,</span>
-
 
             <span class="s1">&#39;group_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
                 <span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span>
@@ -686,13 +687,10 @@ The backend view will be filled with <a class="reference internal" href="#listin
 
 -&gt; (<em>required</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$propertyNames</span></tt>
 
-
 -&gt; (<em>optional</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$format</span></tt>
-
 
 -&gt; (<em>optional</em>) used for <tt class="docutils literal"><span class="pre">ListItemFormatter::$maxLength</span></tt>
 
-
 -&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
    event depends on the view,
    for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
@@ -700,6 +698,8 @@ The backend view will be filled with <a class="reference internal" href="#listin
 -&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
    event depends on the view,
    for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+&nbsp;
+&nbsp;
 </pre>
 </td>
 </tr>
@@ -709,6 +709,86 @@ The backend view will be filled with <a class="reference internal" href="#listin
 </div>
 <div class="section" id="panel-layout-mapping">
 <span id="id4"></span><h3>Panel layout mapping<a class="headerlink" href="#panel-layout-mapping" title="Permalink to this headline">¶</a></h3>
+<p>You can access the panel layout of the backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\PanelLayoutInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $backendViewSection */</span>
+
+<span class="nv">$panelLayout</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getPanelLayout</span><span class="p">();</span>
+<span class="sd">/** @var PanelLayoutInterface $panelLayout */</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// List</span>
+    <span class="s1">&#39;list&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+            <span class="s1">&#39;panelLayout&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;filter;search,limit&#39;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-&gt; (<em>optional</em>) will be parsed and used as panel layout array.
+   <tt class="docutils literal"><span class="pre">$panelLayout-&gt;getRows()</span></tt> will return
+   <tt class="docutils literal"><span class="pre">array(array('filter'),</span> <span class="pre">array('search',</span> <span class="pre">'limit'))</span></tt>
+&nbsp;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="global-operations-mapping">
+<h3>Global operations mapping<a class="headerlink" href="#global-operations-mapping" title="Permalink to this headline">¶</a></h3>
+<p>Global operations are mapped as <a class="reference internal" href="../commands.html#container-scoped-commands"><em>container scoped commands</em></a>.</p>
+<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
+<p>You can access the global operations defined in backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $backendViewSection */</span>
+
+<span class="nv">$globalOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getGlobalOperations</span><span class="p">();</span>
+<span class="sd">/** @var OperationCollectionInterface $globalOperations */</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="model-operations-mapping">
+<h3>Model operations mapping<a class="headerlink" href="#model-operations-mapping" title="Permalink to this headline">¶</a></h3>
+<p>Model operations are mapped as <a class="reference internal" href="../commands.html#model-scoped-commands"><em>model scoped commands</em></a>.</p>
+<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
+<p>You can access the item operations defined in backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
+
+<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var BackendViewSectionInterface $backendViewSection */</span>
+
+<span class="nv">$itemOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getItemOperations</span><span class="p">();</span>
+<span class="sd">/** @var OperationCollectionInterface $itemOperations */</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="operation-mapping">
 <span id="id5"></span><h3>Operation mapping<a class="headerlink" href="#operation-mapping" title="Permalink to this headline">¶</a></h3>
@@ -747,6 +827,7 @@ The backend view will be filled with <a class="reference internal" href="#listin
 
 
     <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -788,52 +869,298 @@ The backend view will be filled with <a class="reference internal" href="#listin
 </tbody>
 </table>
 </div>
-<div class="section" id="global-operations-mapping">
-<h3>Global operations mapping<a class="headerlink" href="#global-operations-mapping" title="Permalink to this headline">¶</a></h3>
-<p>Global operations are mapped als <em>global</em> <a class="reference internal" href="../commands.html"><em>Commands (fka Operations)</em></a>.
-These commands are dispatched in container scope.</p>
-<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
-<p>You can access the global operations defined in backend view section with this snippet:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
-
-<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
-<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
-
-<span class="nv">$globalOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getGlobalOperations</span><span class="p">();</span>
-<span class="sd">/** @var OperationCollectionInterface $globalOperations */</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="item-operations-mapping">
-<h3>Item operations mapping<a class="headerlink" href="#item-operations-mapping" title="Permalink to this headline">¶</a></h3>
-<p>Item operations are mapped als <em>item</em> <a class="reference internal" href="../commands.html"><em>Commands (fka Operations)</em></a>.
-These commands are dispatched in model scope.</p>
-<p>To see how the operations are mapped, see the <a class="reference internal" href="#id5">Operation mapping</a> chapter.</p>
-<p>You can access the item operations defined in backend view section with this snippet:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\BackendViewSectionInterface</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\View\OperationCollectionInterface</span><span class="p">;</span>
-
-<span class="nv">$backendViewSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">BackendViewSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
-<span class="sd">/** @var BackendViewSectionInterface $basicSection */</span>
-
-<span class="nv">$itemOperations</span> <span class="o">=</span> <span class="nv">$backendViewSection</span><span class="o">-&gt;</span><span class="na">getItemOperations</span><span class="p">();</span>
-<span class="sd">/** @var OperationCollectionInterface $itemOperations */</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="palettes-mapping">
 <h2>Palettes mapping<a class="headerlink" href="#palettes-mapping" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="subpalettes-mapping">
-<h3>Subpalettes mapping<a class="headerlink" href="#subpalettes-mapping" title="Permalink to this headline">¶</a></h3>
+<p>Palettes define the arrangement of properties in the view.
+The <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/DataDefinition/Section/PalettesSectionInterface.html" title="DcGeneral\DataDefinition\Section\PalettesSectionInterface"><span class="pre">PalettesSectionInterface</span></a></tt> itself is a subclass of <tt class="docutils literal"><a class="reference external" href="http://tristanlins.github.io/dc-general-docs/api/DcGeneral/DataDefinition/Palette/PaletteCollectionInterface.html" title="DcGeneral\DataDefinition\Palette\PaletteCollectionInterface"><span class="pre">PaletteCollectionInterface</span></a></tt>.</p>
+<p>You can access the palettes defined in backend view section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\PalettesSectionInterface</span><span class="p">;</span>
+
+<span class="nv">$palettesSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">PalettesSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var PalettesSectionInterface $palettesSection */</span>
+</pre></div>
+</div>
+<div class="section" id="id6">
+<h3>Mapping<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Palettes</span>
+    <span class="s1">&#39;palettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;__selector__&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;protected&#39;</span><span class="p">),</span>
+
+
+
+        <span class="s1">&#39;default&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;{title_legend},title,alias,author;...&#39;</span>
+    <span class="p">),</span>
+
+    <span class="c1">// Subpalettes</span>
+    <span class="s1">&#39;subpalettes&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;protected&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;groups&#39;</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-&gt; (<em>deprecated</em>) define selectors is not required,
+   the selector list will be used to generate the
+   corresponding palette conditions.
+
+-&gt; (<em>deprecated</em>) will be parsed into legends from
+   the <tt class="docutils literal"><span class="pre">{*_legend}</span></tt> parts and property collections
+   from the fields list.
+
+-&gt; (<em>deprecated</em>) the generated palettes will be extended
+   with the subpalette properties, each subpalette property
+   gain a corresponding property condition.
+&nbsp;
+&nbsp;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See the <a class="reference internal" href="../palettes.html"><em>Palettes</em></a> document for details about the new palettes system.</p>
 </div>
 </div>
 <div class="section" id="properties-fka-fields-mapping">
 <h2>Properties (fka fields) mapping<a class="headerlink" href="#properties-fka-fields-mapping" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="additional-configuration">
-<h3>Additional configuration<a class="headerlink" href="#additional-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Properties formally known as fields, define certain meta informations of model&#8217;s properties.
+Every model property, that is not defined here, is ignored by DcGeneral.</p>
+<p>These meta informations can have different effects on the properties value (like transformation), the load and store process (similar to triggers) and the view (like display formation).</p>
+<p>You can access the properties section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\PropertiesSectionInterface</span><span class="p">;</span>
+
+<span class="nv">$propertiesSection</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">getSection</span><span class="p">(</span><span class="nx">PropertiesSectionInterface</span><span class="o">::</span><span class="na">NAME</span><span class="p">);</span>
+<span class="sd">/** @var PropertiesSectionInterface $propertiesSection */</span>
+</pre></div>
 </div>
+<p>You can access a single property from the properties section with this snippet:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">DcGeneral\DataDefinition\Section\Palette\PropertyInterface</span><span class="p">;</span>
+
+<span class="nv">$titleProperty</span> <span class="o">=</span> <span class="nv">$propertiesSection</span><span class="o">-&gt;</span><span class="na">getProperty</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+<span class="sd">/** @var PropertyInterface $titleProperty */</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_DCA&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+    <span class="c1">// Fields</span>
+    <span class="s1">&#39;fields&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+    <span class="p">(</span>
+        <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+        <span class="p">(</span>
+
+            <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;...&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+
+
+
+
+            <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;...&#39;</span><span class="p">][</span><span class="s1">&#39;description&#39;</span><span class="p">],</span>
+
+
+
+
+            <span class="s1">&#39;default&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;default value&#39;</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;exclude&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+
+
+
+            <span class="s1">&#39;search&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;sorting&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;filter&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;flag&#39;</span> <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;length&#39;</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;inputType&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span>
+
+
+
+
+            <span class="s1">&#39;options&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">),</span>
+
+
+
+            <span class="s1">&#39;options_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="o">...</span><span class="p">),</span>
+
+
+
+            <span class="s1">&#39;foreignKey&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;tl_other_table.name&#39;</span><span class="p">,</span>
+
+
+            <span class="s1">&#39;reference&#39;</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;...&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+
+
+            <span class="s1">&#39;explanation&#39;</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;...&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+
+
+
+            <span class="s1">&#39;input_field_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="o">...</span><span class="p">),</span>
+
+
+
+
+            <span class="s1">&#39;wizard&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
+
+
+
+
+            <span class="s1">&#39;relation&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;hasOne&#39;</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;eager&#39;</span><span class="p">),</span>
+
+
+            <span class="s1">&#39;load_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+
+            <span class="s1">&#39;save_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
+            <span class="p">(</span>
+                <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
+            <span class="p">),</span>
+
+            <span class="s1">&#39;eval&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="o">...</span>
+            <span class="p">),</span>
+
+
+            <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="s2">&quot;varchar(255) NOT NULL default &#39;&#39;&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</td>
+<td><pre class="first last literal-block">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-&gt; (<em>required</em>) used as property name.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getName()</span></tt>
+
+-&gt; (<em>required</em>) used as property label.
+   if it is an array, only the first item
+   is used as label.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getLabel()</span></tt>
+
+-&gt; (<em>optional</em>) used as property description.
+   if <strong>label</strong> is an array, the second item
+   is used as description.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getDescription()</span></tt>
+
+-&gt; (<em>optional</em>) used as property default value.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getDefaultValue()</span></tt>
+
+-&gt; (<em>optional</em>) define if this property can be
+   excluded from an editors view.
+   <tt class="docutils literal"><span class="pre">$property-&gt;isExcluded()</span></tt>
+
+-&gt; (<em>optional</em>) define if this property is searchable
+   <tt class="docutils literal"><span class="pre">$property-&gt;isSearchable()</span></tt>
+
+-&gt; (<em>optional</em>) define if this property is sortable
+   <tt class="docutils literal"><span class="pre">$property-&gt;isSortable()</span></tt>
+
+-&gt; (<em>optional</em>) define if this property is filterable
+   <tt class="docutils literal"><span class="pre">$property-&gt;isFilterable()</span></tt>
+
+-&gt; (<em>deprecated</em>) define the sort and group mode
+
+
+
+
+
+-&gt; (<em>optional</em>) define the input type (widget type)
+   of this property. How the widget type is interpreted
+   depends on the view.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getWidgetType()</span></tt>
+
+-&gt; (<em>optional</em>) The valid values of this property,
+   formally used by selectable input types.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getOptions()</span></tt>
+
+-&gt; (<em>deprecated</em>) define a callback that produce the
+   valid values of this property.
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+-&gt; (<em>deprecated</em>) define a foreign key that are used
+   as valid values of this property.
+
+-&gt; (<em>deprecated</em>) language array with translations
+   for the valid values.
+
+-&gt; (<em>optional</em>) the explanation of the property, is
+   used in property overview.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getExplanation()</span></tt>
+
+-&gt; (<em>deprecated</em>) define a callback that produce the
+   widget html code, if this is used depends on the
+   view.
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+-&gt; (<em>deprecated</em>) define a callback that produce the
+   wizard html code, if this is used depends on the
+   view.
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+-&gt; (<em>ignored</em>) the relations are only used by the
+   Contao models (don't confuse with the DcGeneral models!)
+
+-&gt; (<em>deprecated</em>) define a callback that is called after
+   loading the data from the model.
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+
+-&gt; (<em>deprecated</em>) define a callback that is called before
+   saving the data to the model.
+   for details, see the <a class="reference internal" href="#callbacks">Callbacks</a> chapter.
+
+
+-&gt; (<em>optional</em>) any additional configuration data,
+   if this data is used depends on the view, widget type
+   and event listeners.
+   <tt class="docutils literal"><span class="pre">$property-&gt;getExtra()</span></tt>
+
+-&gt; (<a class="reference internal" href="#sql"><em>*ignored*</em></a>) the sql is used by
+   Contao's DcaExtractor
+&nbsp;
+&nbsp;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="deprecations">
 <h2>Deprecations<a class="headerlink" href="#deprecations" title="Permalink to this headline">¶</a></h2>
@@ -851,29 +1178,35 @@ custom <a class="reference internal" href="../../events.html"><em>event</em></a>
 <div class="section" id="ignored-parts">
 <h2>Ignored parts<a class="headerlink" href="#ignored-parts" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="datacontainer">
-<span id="id6"></span><h3>dataContainer<a class="headerlink" href="#datacontainer" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3>dataContainer<a class="headerlink" href="#datacontainer" title="Permalink to this headline">¶</a></h3>
 <p>The <tt class="docutils literal"><span class="pre">dataContainer</span></tt> parts is only necessary for contao to know which data container driver should be used.
 This must be <tt class="docutils literal"><span class="pre">General</span></tt>.</p>
 </div>
 <div class="section" id="dynamicptable">
-<span id="id7"></span><h3>dynamicPtable<a class="headerlink" href="#dynamicptable" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>dynamicPtable<a class="headerlink" href="#dynamicptable" title="Permalink to this headline">¶</a></h3>
 <p>The dynamic ptable can be solved over the <a class="reference internal" href="#parent-child-condition-mapping">Parent-child condition mapping</a>.</p>
+<p>TODO add an example</p>
 </div>
 <div class="section" id="ctable">
-<span id="id8"></span><h3>ctable<a class="headerlink" href="#ctable" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>ctable<a class="headerlink" href="#ctable" title="Permalink to this headline">¶</a></h3>
 <p>Defining the child tables is not necessary at all, but can be done by a <a class="reference internal" href="#parent-child-condition"><em>parent-child condition</em></a>.</p>
+<p>TODO add an example</p>
 </div>
 <div class="section" id="validfiletypes">
-<span id="id9"></span><h3>validFileTypes<a class="headerlink" href="#validfiletypes" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3>validFileTypes<a class="headerlink" href="#validfiletypes" title="Permalink to this headline">¶</a></h3>
 <p>TODO</p>
 </div>
 <div class="section" id="uploadscript">
-<span id="id10"></span><h3>uploadScript<a class="headerlink" href="#uploadscript" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>uploadScript<a class="headerlink" href="#uploadscript" title="Permalink to this headline">¶</a></h3>
 <p>TODO</p>
 </div>
 <div class="section" id="donotdeleterecords">
-<span id="id11"></span><h3>doNotDeleteRecords<a class="headerlink" href="#donotdeleterecords" title="Permalink to this headline">¶</a></h3>
+<span id="id12"></span><h3>doNotDeleteRecords<a class="headerlink" href="#donotdeleterecords" title="Permalink to this headline">¶</a></h3>
 <p>TODO</p>
+</div>
+<div class="section" id="sql">
+<span id="id13"></span><h3>sql<a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h3>
+<p>DcGeneral does not do any sql updated, so there is no need to parse this informations.</p>
 </div>
 </div>
 <div class="section" id="dca-mapping-reference">
@@ -1085,7 +1418,6 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
             <span class="s1">&#39;explanation&#39;</span>          <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;tl_example&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
             <span class="s1">&#39;input_field_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
             <span class="s1">&#39;wizard&#39;</span>               <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;sql&#39;</span>                  <span class="o">=&gt;</span> <span class="s2">&quot;varchar(255) NOT NULL default &#39;&#39;&quot;</span><span class="p">,</span>
             <span class="s1">&#39;relation&#39;</span>             <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;hasOne&#39;</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;eager&#39;</span><span class="p">),</span>
             <span class="s1">&#39;load_callback&#39;</span>        <span class="o">=&gt;</span> <span class="k">array</span>
             <span class="p">(</span>
@@ -1141,7 +1473,8 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
                 <span class="s1">&#39;disabled&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
                 <span class="s1">&#39;readonly&#39;</span>           <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
             <span class="p">),</span>
-        <span class="p">),</span>
+            <span class="s1">&#39;sql&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;varchar(255) NOT NULL default &#39;&#39;&#39;</span>
+        <span class="p">)</span>
     <span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
@@ -1187,7 +1520,7 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
    ^
    ^
    ^
--&gt; <em>ignored</em>
+-&gt; <a class="reference internal" href="#sql"><em>*ignored*</em></a>
    ^
    ^
    ^
@@ -1302,7 +1635,7 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
    ^
    ^
 
--&gt; <a class="reference internal" href="#item-operations-mapping">Item operations mapping</a>
+-&gt; <a class="reference internal" href="#model-operations-mapping">Model operations mapping</a>
 
 -&gt; <a class="reference internal" href="#id5">Operation mapping</a>
    ^
@@ -1321,9 +1654,9 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
    ^
    ^
    ^
-
-
--&gt; <a class="reference internal" href="#subpalettes-mapping">Subpalettes mapping</a>
+   ^
+   ^
+   ^
    ^
    ^
    ^
@@ -1359,7 +1692,6 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
    ^
    ^
    ^
--&gt; <a class="reference internal" href="#additional-configuration">Additional configuration</a>
    ^
    ^
    ^
@@ -1405,6 +1737,10 @@ This must be <tt class="docutils literal"><span class="pre">General</span></tt>.
    ^
    ^
    ^
+-&gt; <a class="reference internal" href="#sql"><em>*ignored*</em></a>
+&nbsp;
+&nbsp;
+&nbsp;
 </pre>
 </td>
 </tr>

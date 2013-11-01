@@ -8,7 +8,7 @@ If a command is triggered by user action in the view, the command will be dispat
 Each listener must now decide what he need to do on the command.
 If a listener handle the event, he might stop it's propagation.
 
-Here is an extreme shortened pseudo example of the default item edit listener.
+Here is an extreme simplified pseudo example of the default item edit listener.
 
 .. code-block:: php
 
@@ -28,6 +28,27 @@ Predefinition
 The priority of default command listeners, that handle the default behaviour is **0**.
 If you want to overwrite the default behaviour, register your listener with a priority greater than **0**.
 If you want to post process the default behaviour (keep in mind that some commands stop event propagation), register your listener with a priority smaller than **0**.
+
+Scopes
+------
+
+.. _container-scoped-commands:
+
+Container scope
+~~~~~~~~~~~~~~~
+
+Container scoped commands are related to the data definition container and do some action on it.
+
+Event: :class:`DcGeneral\\Event\\CommandEvent <DcGeneral\\Event\\CommandEvent>`
+
+.. _model-scoped-commands:
+
+Model scope
+~~~~~~~~~~~
+
+Model scoped commands are related to a model and do some action on it.
+
+Event: :class:`DcGeneral\\Event\\ModelCommandEvent <DcGeneral\\Event\\ModelCommandEvent>`
 
 Indexed command events
 ----------------------

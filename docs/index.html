@@ -80,6 +80,11 @@
 <li class="toctree-l3"><a class="reference internal" href="data_definition/builder.html">Palette builder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data_definition/commands.html">Commands (fka Operations)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#scopes">Scopes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/commands.html#container-scope">Container scope</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/commands.html#model-scope">Model scope</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#indexed-command-events">Indexed command events</a></li>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#examples">Examples</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
@@ -109,19 +114,16 @@
 </ul>
 </li>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#panel-layout-mapping">Panel layout mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#global-operations-mapping">Global operations mapping</a></li>
-<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#item-operations-mapping">Item operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#model-operations-mapping">Model operations mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#palettes-mapping">Palettes mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#subpalettes-mapping">Subpalettes mapping</a></li>
+<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#id6">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#additional-configuration">Additional configuration</a></li>
-</ul>
-</li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a></li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#deprecations">Deprecations</a><ul>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#callbacks">Callbacks</a></li>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
@@ -134,6 +136,7 @@
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#validfiletypes">validFileTypes</a></li>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#uploadscript">uploadScript</a></li>
 <li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#donotdeleterecords">doNotDeleteRecords</a></li>
+<li class="toctree-l6"><a class="reference internal" href="data_definition/container/legacy_mapping.html#sql">sql</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
@@ -257,6 +260,11 @@
 <li class="toctree-l2"><a class="reference internal" href="data_definition/builder.html">Palette builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_definition/commands.html">Commands (fka Operations)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="data_definition/commands.html#predefinition">Predefinition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_definition/commands.html#scopes">Scopes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#container-scope">Container scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#model-scope">Model scope</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="data_definition/commands.html#indexed-command-events">Indexed command events</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data_definition/commands.html#examples">Examples</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/commands.html#listen-on-edit-command-event-on-tl-example">listen on edit command event on tl_example</a></li>
@@ -286,19 +294,16 @@
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#panel-layout-mapping">Panel layout mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#global-operations-mapping">Global operations mapping</a></li>
-<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#item-operations-mapping">Item operations mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#model-operations-mapping">Model operations mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#operation-mapping">Operation mapping</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/container/legacy_mapping.html#palettes-mapping">Palettes mapping</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#subpalettes-mapping">Subpalettes mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#id6">Mapping</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="data_definition/container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#additional-configuration">Additional configuration</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="data_definition/container/legacy_mapping.html#properties-fka-fields-mapping">Properties (fka fields) mapping</a></li>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/container/legacy_mapping.html#deprecations">Deprecations</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#callbacks">Callbacks</a></li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#deprecated-dcgeneral-config">Deprecated DcGeneral config</a></li>
@@ -311,6 +316,7 @@
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#validfiletypes">validFileTypes</a></li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#uploadscript">uploadScript</a></li>
 <li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#donotdeleterecords">doNotDeleteRecords</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data_definition/container/legacy_mapping.html#sql">sql</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="data_definition/container/legacy_mapping.html#dca-mapping-reference">DCA mapping reference</a></li>
