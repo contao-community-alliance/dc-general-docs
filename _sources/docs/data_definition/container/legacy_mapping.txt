@@ -478,10 +478,12 @@ You can access a single property from the properties section with this snippet:
 |                                                                              |       ``$property->isFilterable()``                            |
 |                                                                              |                                                                |
 |                 'flag' => 12,                                                |    -> (*deprecated*) define the sort and group mode            |
+|                                                                              |       ``$property->getGroupingMode()``                         |
+|                                                                              |       ``$property->getSortingMode()``                          |
 |                                                                              |                                                                |
-|                                                                              |                                                                |
-|                 'length' => 3,                                               |                                                                |
-|                                                                              |                                                                |
+|                 'length' => 3,                                               |    -> (*optional*) define the count of signs used              |
+|                                                                              |       for grouping                                             |
+|                                                                              |       ``$property->getGroupingLength()``                       |
 |                                                                              |                                                                |
 |                 'inputType' => 'text',                                       |    -> (*optional*) define the input type (widget type)         |
 |                                                                              |       of this property. How the widget type is interpreted     |

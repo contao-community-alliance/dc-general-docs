@@ -999,7 +999,9 @@ Every model property, that is not defined here, is ignored by DcGeneral.</p>
             <span class="s1">&#39;flag&#39;</span> <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">,</span>
 
 
+
             <span class="s1">&#39;length&#39;</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="p">,</span>
+
 
 
             <span class="s1">&#39;inputType&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span>
@@ -1096,10 +1098,12 @@ Every model property, that is not defined here, is ignored by DcGeneral.</p>
    <tt class="docutils literal"><span class="pre">$property-&gt;isFilterable()</span></tt>
 
 -&gt; (<em>deprecated</em>) define the sort and group mode
+   <tt class="docutils literal"><span class="pre">$property-&gt;getGroupingMode()</span></tt>
+   <tt class="docutils literal"><span class="pre">$property-&gt;getSortingMode()</span></tt>
 
-
-
-
+-&gt; (<em>optional</em>) define the count of signs used
+   for grouping
+   <tt class="docutils literal"><span class="pre">$property-&gt;getGroupingLength()</span></tt>
 
 -&gt; (<em>optional</em>) define the input type (widget type)
    of this property. How the widget type is interpreted
