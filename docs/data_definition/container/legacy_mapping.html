@@ -802,15 +802,6 @@ The backend view will be filled with <a class="reference internal" href="#listin
 <tr class="row-odd"><td><div class="first last highlight-php"><div class="highlight"><pre><span class="s1">&#39;all&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span>
 <span class="p">(</span>
 
-    <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
-
-
-    <span class="s1">&#39;description&#39;</span>     <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
-
-
-    <span class="s1">&#39;command&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span>
-
-
     <span class="s1">&#39;parameters&#39;</span>      <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(),</span>
 
 
@@ -818,12 +809,23 @@ The backend view will be filled with <a class="reference internal" href="#listin
 
 
 
+    <span class="s1">&#39;label&#39;</span>           <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+
+
+    <span class="s1">&#39;description&#39;</span>     <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;TL_LANG&#39;</span><span class="p">][</span><span class="s1">&#39;MSC&#39;</span><span class="p">][</span><span class="s1">&#39;all&#39;</span><span class="p">],</span>
+
+
     <span class="s1">&#39;icon&#39;</span>            <span class="o">=&gt;</span> <span class="s1">&#39;delete.gif&#39;</span><span class="p">,</span>
 
 
     <span class="s1">&#39;class&#39;</span>           <span class="o">=&gt;</span> <span class="s1">&#39;header_edit_all&#39;</span><span class="p">,</span>
 
+
     <span class="s1">&#39;attributes&#39;</span>      <span class="o">=&gt;</span> <span class="s1">&#39;onclick=&quot;Backend.getScrollOffset()&quot;&#39;</span><span class="p">,</span>
+
+
+    <span class="s1">&#39;&lt;extra data&gt;&#39;</span>    <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">mixed</span><span class="o">&gt;</span><span class="p">,</span>
+
 
 
     <span class="s1">&#39;button_callback&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&lt;class name&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;method name&gt;&#39;</span><span class="p">)</span>
@@ -833,8 +835,15 @@ The backend view will be filled with <a class="reference internal" href="#listin
 </div>
 </td>
 <td><pre class="first last literal-block">
--&gt; (<em>optional</em>) used as operation name
+-&gt; (<em>optional</em>) used as operation's command name
    <tt class="docutils literal"><span class="pre">$operation-&gt;getName()</span></tt>
+
+-&gt; (<em>optional</em>) used as operation's command parameters
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getParameters()</span></tt>
+
+-&gt; (<em>deprecated</em>) the query string is parsed and used as command
+   parameters, if the query contain a parameter named <tt class="docutils literal"><span class="pre">act</span></tt>,
+   the value is used as command name
 
 -&gt; (<em>optional</em>) used as operation label (human readable name)
    <tt class="docutils literal"><span class="pre">$operation-&gt;getLabel()</span></tt>
@@ -842,23 +851,18 @@ The backend view will be filled with <a class="reference internal" href="#listin
 -&gt; (<em>optional</em>) used as operation description (tooltip)
    <tt class="docutils literal"><span class="pre">$operation-&gt;getDescription()</span></tt>
 
--&gt; (<em>optional</em>) used as operation command name
-   <tt class="docutils literal"><span class="pre">$operation-&gt;getAction()</span></tt>
+-&gt; (<em>optional</em>) will be added to <em>extra</em> data
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getExtra()['icon']</span></tt>
 
--&gt; (<em>optional</em>) used as operation's command parameters
-   <tt class="docutils literal"><span class="pre">$operation-&gt;getActionProperties()</span></tt>
+-&gt; (<em>optional</em>) will be added to <em>extra</em> data
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getExtra()['class']</span></tt>
 
--&gt; (<em>deprecated</em>) the query string is parsed and used as command
-   parameters, if the query contain a parameter named <tt class="docutils literal"><span class="pre">act</span></tt>,
-   the value is used as command name
+-&gt; (<em>optional</em>) will be added to <em>extra</em> data
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getExtra()['attributes']</span></tt>
 
--&gt; (<em>optional</em>) the path to the icon
-   <tt class="docutils literal"><span class="pre">$operation-&gt;getIcon()</span></tt>
-
--&gt; (<em>deprecated</em>) will be added to <em>attributes</em>
-
--&gt; (<em>optional</em>) string or array of html attributes
-   <tt class="docutils literal"><span class="pre">$operation-&gt;getHtmlAttributes()</span></tt>
+-&gt; (<em>optional</em>) all extra data will be mapped into the
+   operations extra data array. The usage depends on the view
+   <tt class="docutils literal"><span class="pre">$operation-&gt;getExtra()</span></tt>
 
 -&gt; (<em>deprecated</em>) use an event listener instead, the dispatched
    event depends on the view,

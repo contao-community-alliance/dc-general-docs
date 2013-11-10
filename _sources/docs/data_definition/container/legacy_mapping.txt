@@ -339,8 +339,15 @@ In DcGeneral all operations are used as :doc:`../commands`.
 +---------------------------------------------------------------------+---------------------------------------------------------------------+
 | .. code-block:: php                                                 | .. parsed-literal::                                                 |
 |                                                                     |                                                                     |
-|     'all' => array                                                  |    -> (*optional*) used as operation name                           |
+|     'all' => array                                                  |    -> (*optional*) used as operation's command name                 |
 |     (                                                               |       ``$operation->getName()``                                     |
+|                                                                     |                                                                     |
+|         'parameters'      => array(),                               |    -> (*optional*) used as operation's command parameters           |
+|                                                                     |       ``$operation->getParameters()``                               |
+|                                                                     |                                                                     |
+|         'href'            => 'act=select',                          |    -> (*deprecated*) the query string is parsed and used as command |
+|                                                                     |       parameters, if the query contain a parameter named ``act``,   |
+|                                                                     |       the value is used as command name                             |
 |                                                                     |                                                                     |
 |         'label'           => &$GLOBALS['TL_LANG']['MSC']['all'],    |    -> (*optional*) used as operation label (human readable name)    |
 |                                                                     |       ``$operation->getLabel()``                                    |
@@ -348,23 +355,18 @@ In DcGeneral all operations are used as :doc:`../commands`.
 |         'description'     => &$GLOBALS['TL_LANG']['MSC']['all'],    |    -> (*optional*) used as operation description (tooltip)          |
 |                                                                     |       ``$operation->getDescription()``                              |
 |                                                                     |                                                                     |
-|         'command'         => 'select',                              |    -> (*optional*) used as operation command name                   |
-|                                                                     |       ``$operation->getAction()``                                   |
+|         'icon'            => 'delete.gif',                          |    -> (*optional*) will be added to *extra* data                    |
+|                                                                     |       ``$operation->getExtra()['icon']``                            |
 |                                                                     |                                                                     |
-|         'parameters'      => array(),                               |    -> (*optional*) used as operation's command parameters           |
-|                                                                     |       ``$operation->getActionProperties()``                         |
+|         'class'           => 'header_edit_all',                     |    -> (*optional*) will be added to *extra* data                    |
+|                                                                     |       ``$operation->getExtra()['class']``                           |
 |                                                                     |                                                                     |
-|         'href'            => 'act=select',                          |    -> (*deprecated*) the query string is parsed and used as command |
-|                                                                     |       parameters, if the query contain a parameter named ``act``,   |
-|                                                                     |       the value is used as command name                             |
+|         'attributes'      => 'onclick="Backend.getScrollOffset()"', |    -> (*optional*) will be added to *extra* data                    |
+|                                                                     |       ``$operation->getExtra()['attributes']``                      |
 |                                                                     |                                                                     |
-|         'icon'            => 'delete.gif',                          |    -> (*optional*) the path to the icon                             |
-|                                                                     |       ``$operation->getIcon()``                                     |
-|                                                                     |                                                                     |
-|         'class'           => 'header_edit_all',                     |    -> (*deprecated*) will be added to *attributes*                  |
-|                                                                     |                                                                     |
-|         'attributes'      => 'onclick="Backend.getScrollOffset()"', |    -> (*optional*) string or array of html attributes               |
-|                                                                     |       ``$operation->getHtmlAttributes()``                           |
+|         '<extra data>'    => <mixed>,                               |    -> (*optional*) all extra data will be mapped into the           |
+|                                                                     |       operations extra data array. The usage depends on the view    |
+|                                                                     |       ``$operation->getExtra()``                                    |
 |                                                                     |                                                                     |
 |         'button_callback' => array('<class name>', '<method name>') |    -> (*deprecated*) use an event listener instead, the dispatched  |
 |                                                                     |       event depends on the view,                                    |
