@@ -10,9 +10,10 @@ The `Legacy view section`_ contains all view settings related to the old dca for
 Each DcGeneral instance can only handle one data definition container.
 
 .. toctree::
+   :maxdepth: 2
    :glob:
 
-   container/*
+   container/legacy_mapping
 
 Bootstrap and building process
 ------------------------------
