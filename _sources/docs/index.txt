@@ -3,7 +3,7 @@ Manual
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
    bootstrapping_and_initialisation_process
    environment

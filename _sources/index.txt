@@ -23,6 +23,7 @@ Contents:
    docs/index
    book/index
    reference/index
+   API documentation <http://contao-community-alliance.github.io/dc-general-docs/api/>
 
 Indices and tables
 ==================
