@@ -2,6 +2,9 @@ Data definition
 ===============
 
 .. toctree::
-   :glob:
+   :maxdepth: 2
 
-   data_definition/*
+   data_definition/commands
+   data_definition/palettes
+   data_definition/builder
+   data_definition/container

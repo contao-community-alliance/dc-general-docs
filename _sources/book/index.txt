@@ -1,7 +1,6 @@
 Cookbook
 ========
 
-.. toctree::
-   :glob:
-
-   *
+.. .. toctree::
+      :glob:
+      *
