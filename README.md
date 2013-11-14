@@ -82,6 +82,10 @@ $ cd build/html
 $ git pull
 $ git rm -rf *
 
+# keep api documentation
+$ git reset HEAD api/
+$ git checkout -- api/
+
 # build documentation
 $ cd ../../
 $ make html

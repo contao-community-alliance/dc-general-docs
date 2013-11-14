@@ -11,6 +11,10 @@ cd build/html
 git pull
 git rm -rf *
 
+# keep api documentation
+git reset HEAD api/
+git checkout -- api/
+
 # build documentation
 echo
 echo -e ' \e[1;34m*\e[00m \e[1;31mbuild documentation\e[00m'
