@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\InputProviderInterface | MetaModels/DC_General</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?1635650964"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Callbacks.html">Callbacks</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Conditions.html">Conditions</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DC_General.html">DC_General</a></li>
+				<li><a href="class-DcGeneral.DefaultEnvironment.html">DefaultEnvironment</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DataContainerInterface.html">DataContainerInterface</a></li>
+				<li><a href="class-DcGeneral.EnvironmentInterface.html">EnvironmentInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.InputProviderInterface.html">InputProviderInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.html" title="Summary of DcGeneral"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface InputProviderInterface</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.Contao.InputProvider.html">DcGeneral\Contao\InputProvider</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-DcGeneral.InputProviderInterface.html#15-152" title="Go to source code">InputProviderInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getParameter" id="_getParameter">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameter">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#17-29" title="Go to source code">getParameter</a>( <span>string <var>$strKey</var></span>, <span>boolean <var>$blnRaw</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve a request parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve a request parameter.</p>
+
+<p>In plain HTTP, this will be a $_GET parameter, for other implementations
+consult the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the parameter to be retrieved.</dd>
+					<dt><var>$blnRaw</var></dt>
+					<dd><code>boolean</code><br>$blnRaw Boolean flag to determine if the content shall be returned RAW or rather
+be stripped of potential malicious content.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParameter" id="_setParameter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParameter">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#31-42" title="Go to source code">setParameter</a>( <span>string <var>$strKey</var></span>, <span>mixed <var>$varValue</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save/change a request parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save/change a request parameter.</p>
+
+<p>In plain HTTP, this will be a $_GET parameter, for other implementations
+consult the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the parameter to be stored.</dd>
+					<dt><var>$varValue</var></dt>
+					<dd><code>mixed</code><br>$varValue The value to be stored.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unsetParameter" id="_unsetParameter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unsetParameter">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#44-53" title="Go to source code">unsetParameter</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Unset a request parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Unset a request parameter.</p>
+
+<p>In plain HTTP, this will be a $_GET parameter, for other implementations
+consult the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the parameter to be removed.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasParameter" id="_hasParameter">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasParameter">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#55-64" title="Go to source code">hasParameter</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determines if a request parameter is defined.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines if a request parameter is defined.</p>
+
+<p>In plain HTTP, this will be a $_GET parameter, for other implementations
+consult the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the parameter to be checked.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValue" id="_getValue">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#66-78" title="Go to source code">getValue</a>( <span>string <var>$strKey</var></span>, <span>boolean <var>$blnRaw</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve a request value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve a request value.</p>
+
+<p>In plain HTTP, this will be a $_POST value, for other implementations consult
+the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be retrieved.</dd>
+					<dt><var>$blnRaw</var></dt>
+					<dd><code>boolean</code><br>$blnRaw Boolean flag to determine if the content shall be returned RAW or rather
+be stripped of potential malicious content.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValue" id="_setValue">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#80-91" title="Go to source code">setValue</a>( <span>string <var>$strKey</var></span>, <span>mixed <var>$varValue</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save/change a request value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save/change a request value.</p>
+
+<p>In plain HTTP, this will be a $_POST value, for other implementations consult
+the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be stored.</dd>
+					<dt><var>$varValue</var></dt>
+					<dd><code>mixed</code><br>$varValue The value to be stored.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unsetValue" id="_unsetValue">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unsetValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#93-102" title="Go to source code">unsetValue</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Unset a request value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Unset a request value.</p>
+
+<p>In plain HTTP, this will be a $_POST value, for other implementations consult
+the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be removed.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasValue" id="_hasValue">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#104-113" title="Go to source code">hasValue</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determines if a request value is defined.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines if a request value is defined.</p>
+
+<p>In plain HTTP, this will be a $_POST value, for other implementations consult
+the API.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be checked.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPersistentValue" id="_getPersistentValue">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPersistentValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#115-124" title="Go to source code">getPersistentValue</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve a persistent value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve a persistent value.</p>
+
+<p>Usually this value is being kept in the user session.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be retrieved.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPersistentValue" id="_setPersistentValue">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPersistentValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#126-137" title="Go to source code">setPersistentValue</a>( <span>string <var>$strKey</var></span>, <span>mixed <var>$varValue</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save/change a persistent value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save/change a persistent value.</p>
+
+<p>Usually this value is being kept in the user session.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be stored.</dd>
+					<dt><var>$varValue</var></dt>
+					<dd><code>mixed</code><br>$varValue The value to be stored.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.InputProviderInterface.html">DcGeneral\InputProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasPersistentValue" id="_hasPersistentValue">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasPersistentValue">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#139-148" title="Go to source code">hasPersistentValue</a>( <span>string <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determines if a persistent value is defined.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines if a persistent value is defined.</p>
+
+<p>Usually this value is being kept in the user session.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd><code>string</code><br>$strKey The name of the value to be checked.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequestUrl" id="_getRequestUrl">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequestUrl">#</a>
+		<code><a href="source-class-DcGeneral.InputProviderInterface.html#151" title="Go to source code">getRequestUrl</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MetaModels/DC_General API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
