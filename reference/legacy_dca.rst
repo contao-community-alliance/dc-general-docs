@@ -212,6 +212,10 @@ This is a full **legacy dca** reference example with all known keys and example 
                 (
                     array('<class name>', '<method name>')
                 ),
+                'xlabel'               => array
+                (
+                    array('<class name>', '<method name>')
+                ),
                 'eval'                 => array(
                     'helpwizard'         => true,
                     'mandatory'          => true,
