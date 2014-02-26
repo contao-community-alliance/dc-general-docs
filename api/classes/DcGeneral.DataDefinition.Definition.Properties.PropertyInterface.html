@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getDefaultValue" title="getDefaultValue() :: Return the default value of the property."><span class="description">Return the default value of the property.</span><pre>getDefaultValue()</pre></a></li>
+<li class="method public "><a href="#method_getDescription" title="getDescription() :: Return the description of the property."><span class="description">Return the description of the property.</span><pre>getDescription()</pre></a></li>
+<li class="method public "><a href="#method_getExplanation" title="getExplanation() :: Return the explanation of the property."><span class="description">Return the explanation of the property.</span><pre>getExplanation()</pre></a></li>
+<li class="method public "><a href="#method_getExtra" title="getExtra() :: Fetch the extra data of the property."><span class="description">Fetch the extra data of the property.</span><pre>getExtra()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingLength" title="getGroupingLength() :: Get the grouping length is used for char or digit grouping."><span class="description">Get the grouping length is used for char or digit grouping.</span><pre>getGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: Return the grouping mode."><span class="description">Return the grouping mode.</span><pre>getGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_getLabel" title="getLabel() :: Return the label of the property."><span class="description">Return the label of the property.</span><pre>getLabel()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: Return the name of the property."><span class="description">Return the name of the property.</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getOptions" title="getOptions() :: Return the valid values of this property."><span class="description">Return the valid values of this property.</span><pre>getOptions()</pre></a></li>
+<li class="method public "><a href="#method_getSortingMode" title="getSortingMode() :: Return the list sorting mode."><span class="description">Return the list sorting mode.</span><pre>getSortingMode()</pre></a></li>
+<li class="method public "><a href="#method_getWidgetType" title="getWidgetType() :: Return the widget type name."><span class="description">Return the widget type name.</span><pre>getWidgetType()</pre></a></li>
+<li class="method public "><a href="#method_isExcluded" title="isExcluded() :: Determinator if this property is excluded from access."><span class="description">Determinator if this property is excluded from access.</span><pre>isExcluded()</pre></a></li>
+<li class="method public "><a href="#method_isFilterable" title="isFilterable() :: Determinator if filtering may be performed on this property."><span class="description">Determinator if filtering may be performed on this property.</span><pre>isFilterable()</pre></a></li>
+<li class="method public "><a href="#method_isSearchable" title="isSearchable() :: Determinator if search is enabled on this property."><span class="description">Determinator if search is enabled on this property.</span><pre>isSearchable()</pre></a></li>
+<li class="method public "><a href="#method_isSortable" title="isSortable() :: Determinator if sorting may be performed on this property."><span class="description">Determinator if sorting may be performed on this property.</span><pre>isSortable()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultValue" title="setDefaultValue() :: Set the default value of the property."><span class="description">Set the default value of the property.</span><pre>setDefaultValue()</pre></a></li>
+<li class="method public "><a href="#method_setDescription" title="setDescription() :: Set the description language key."><span class="description">Set the description language key.</span><pre>setDescription()</pre></a></li>
+<li class="method public "><a href="#method_setExcluded" title="setExcluded() :: Set if the property is excluded from access."><span class="description">Set if the property is excluded from access.</span><pre>setExcluded()</pre></a></li>
+<li class="method public "><a href="#method_setExplanation" title="setExplanation() :: Set the explanation language string."><span class="description">Set the explanation language string.</span><pre>setExplanation()</pre></a></li>
+<li class="method public "><a href="#method_setExtra" title="setExtra() :: Set the extra data of the property."><span class="description">Set the extra data of the property.</span><pre>setExtra()</pre></a></li>
+<li class="method public "><a href="#method_setFilterable" title="setFilterable() :: Set filtering determinator."><span class="description">Set filtering determinator.</span><pre>setFilterable()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingLength" title="setGroupingLength() :: Set the grouping length is used for char or digit grouping."><span class="description">Set the grouping length is used for char or digit grouping.</span><pre>setGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingMode" title="setGroupingMode() :: Set the grouping mode."><span class="description">Set the grouping mode.</span><pre>setGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_setLabel" title="setLabel() :: Set the label language key."><span class="description">Set the label language key.</span><pre>setLabel()</pre></a></li>
+<li class="method public "><a href="#method_setOptions" title="setOptions() :: Set the valid values of this property."><span class="description">Set the valid values of this property.</span><pre>setOptions()</pre></a></li>
+<li class="method public "><a href="#method_setSearchable" title="setSearchable() :: Set the search determinator."><span class="description">Set the search determinator.</span><pre>setSearchable()</pre></a></li>
+<li class="method public "><a href="#method_setSortable" title="setSortable() :: Set the sorting determinator."><span class="description">Set the sorting determinator.</span><pre>setSortable()</pre></a></li>
+<li class="method public "><a href="#method_setSortingMode" title="setSortingMode() :: Set the the list sorting mode."><span class="description">Set the the list sorting mode.</span><pre>setSortingMode()</pre></a></li>
+<li class="method public "><a href="#method_setWidgetType" title="setWidgetType() :: Set the widget type name."><span class="description">Set the widget type name.</span><pre>setWidgetType()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">PropertyInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">Interface PropertyInterface.</p>
+<div class="details">
+<div class="long_description">This interface describes a property information.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.Properties.html">DcGeneral\DataDefinition\Definition\Properties</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getDefaultValue"></a><div class="element clickable method public method_getDefaultValue" data-toggle="collapse" data-target=".method_getDefaultValue .collapse">
+<h2>Return the default value of the property.</h2>
+<pre>getDefaultValue() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_getDescription"></a><div class="element clickable method public method_getDescription" data-toggle="collapse" data-target=".method_getDescription .collapse">
+<h2>Return the description of the property.</h2>
+<pre>getDescription() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getExplanation"></a><div class="element clickable method public method_getExplanation" data-toggle="collapse" data-target=".method_getExplanation .collapse">
+<h2>Return the explanation of the property.</h2>
+<pre>getExplanation() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getExtra"></a><div class="element clickable method public method_getExtra" data-toggle="collapse" data-target=".method_getExtra .collapse">
+<h2>Fetch the extra data of the property.</h2>
+<pre>getExtra() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getGroupingLength"></a><div class="element clickable method public method_getGroupingLength" data-toggle="collapse" data-target=".method_getGroupingLength .collapse">
+<h2>Get the grouping length is used for char or digit grouping.</h2>
+<pre>getGroupingLength() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The grouping length is used for char or digit grouping and define how many chars or digits should be respected
+when grouping.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_getGroupingMode"></a><div class="element clickable method public method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
+<h2>Return the grouping mode.</h2>
+<pre>getGroupingMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getLabel"></a><div class="element clickable method public method_getLabel" data-toggle="collapse" data-target=".method_getLabel .collapse">
+<h2>Return the label of the property.</h2>
+<pre>getLabel() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Return the name of the property.</h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getOptions"></a><div class="element clickable method public method_getOptions" data-toggle="collapse" data-target=".method_getOptions .collapse">
+<h2>Return the valid values of this property.</h2>
+<pre>getOptions() : array | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getSortingMode"></a><div class="element clickable method public method_getSortingMode" data-toggle="collapse" data-target=".method_getSortingMode .collapse">
+<h2>Return the list sorting mode.</h2>
+<pre>getSortingMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This sorting is applied after grouping and could also be called "in-group sorting".
+
+See ListingConfigInterface::SORT_* flags.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getWidgetType"></a><div class="element clickable method public method_getWidgetType" data-toggle="collapse" data-target=".method_getWidgetType .collapse">
+<h2>Return the widget type name.</h2>
+<pre>getWidgetType() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>this is view related, should be moved there?</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_isExcluded"></a><div class="element clickable method public method_isExcluded" data-toggle="collapse" data-target=".method_isExcluded .collapse">
+<h2>Determinator if this property is excluded from access.</h2>
+<pre>isExcluded() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isFilterable"></a><div class="element clickable method public method_isFilterable" data-toggle="collapse" data-target=".method_isFilterable .collapse">
+<h2>Determinator if filtering may be performed on this property.</h2>
+<pre>isFilterable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isSearchable"></a><div class="element clickable method public method_isSearchable" data-toggle="collapse" data-target=".method_isSearchable .collapse">
+<h2>Determinator if search is enabled on this property.</h2>
+<pre>isSearchable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isSortable"></a><div class="element clickable method public method_isSortable" data-toggle="collapse" data-target=".method_isSortable .collapse">
+<h2>Determinator if sorting may be performed on this property.</h2>
+<pre>isSortable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_setDefaultValue"></a><div class="element clickable method public method_setDefaultValue" data-toggle="collapse" data-target=".method_setDefaultValue .collapse">
+<h2>Set the default value of the property.</h2>
+<pre>setDefaultValue(mixed $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDescription"></a><div class="element clickable method public method_setDescription" data-toggle="collapse" data-target=".method_setDescription .collapse">
+<h2>Set the description language key.</h2>
+<pre>setDescription(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The description text.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setExcluded"></a><div class="element clickable method public method_setExcluded" data-toggle="collapse" data-target=".method_setExcluded .collapse">
+<h2>Set if the property is excluded from access.</h2>
+<pre>setExcluded(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setExplanation"></a><div class="element clickable method public method_setExplanation" data-toggle="collapse" data-target=".method_setExplanation .collapse">
+<h2>Set the explanation language string.</h2>
+<pre>setExplanation(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The explanation text.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setExtra"></a><div class="element clickable method public method_setExtra" data-toggle="collapse" data-target=".method_setExtra .collapse">
+<h2>Set the extra data of the property.</h2>
+<pre>setExtra(array $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code><p>The extra data for this property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setFilterable"></a><div class="element clickable method public method_setFilterable" data-toggle="collapse" data-target=".method_setFilterable .collapse">
+<h2>Set filtering determinator.</h2>
+<pre>setFilterable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setGroupingLength"></a><div class="element clickable method public method_setGroupingLength" data-toggle="collapse" data-target=".method_setGroupingLength .collapse">
+<h2>Set the grouping length is used for char or digit grouping.</h2>
+<pre>setGroupingLength(int $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This defines how many chars or digits should be respected when grouping.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>int</code><p>The prefix length.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setGroupingMode"></a><div class="element clickable method public method_setGroupingMode" data-toggle="collapse" data-target=".method_setGroupingMode .collapse">
+<h2>Set the grouping mode.</h2>
+<pre>setGroupingMode(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">See ListingConfigInterface::GROUP_* flags.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The grouping mode to apply.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setLabel"></a><div class="element clickable method public method_setLabel" data-toggle="collapse" data-target=".method_setLabel .collapse">
+<h2>Set the label language key.</h2>
+<pre>setLabel(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The label value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setOptions"></a><div class="element clickable method public method_setOptions" data-toggle="collapse" data-target=".method_setOptions .collapse">
+<h2>Set the valid values of this property.</h2>
+<pre>setOptions(array $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code><p>The options.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setSearchable"></a><div class="element clickable method public method_setSearchable" data-toggle="collapse" data-target=".method_setSearchable .collapse">
+<h2>Set the search determinator.</h2>
+<pre>setSearchable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setSortable"></a><div class="element clickable method public method_setSortable" data-toggle="collapse" data-target=".method_setSortable .collapse">
+<h2>Set the sorting determinator.</h2>
+<pre>setSortable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setSortingMode"></a><div class="element clickable method public method_setSortingMode" data-toggle="collapse" data-target=".method_setSortingMode .collapse">
+<h2>Set the the list sorting mode.</h2>
+<pre>setSortingMode(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">See ListingConfigInterface::SORT_* flags.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The sorting mode to apply.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setWidgetType"></a><div class="element clickable method public method_setWidgetType" data-toggle="collapse" data-target=".method_setWidgetType .collapse">
+<h2>Set the widget type name.</h2>
+<pre>setWidgetType(string $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>this is view related, should be moved there?</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The type name of the widget.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:26+01:00.<br></footer></div>
+</div>
+</body>
+</html>

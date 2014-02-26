@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Controller\DefaultController</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___call" title="__call() :: Throw an exception that an unknown method has been called."><span class="description">Throw an exception that an unknown method has been called.</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method_assembleAllChildrenFrom" title="assembleAllChildrenFrom() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>assembleAllChildrenFrom()</pre></a></li>
+<li class="method public "><a href="#method_copy" title="copy() :: Copy an entry and all children."><span class="description">Copy an entry and all children.</span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: Cut and paste."><span class="description">Cut and paste.</span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_executePostActions" title="executePostActions() :: "><span class="description">executePostActions()
+        </span><pre>executePostActions()</pre></a></li>
+<li class="method public "><a href="#method_generateAjaxPalette" title="generateAjaxPalette() :: Loads the current model from the data provider and overrides the selector"><span class="description">Loads the current model from the data provider and overrides the selector</span><pre>generateAjaxPalette()</pre></a></li>
+<li class="method public "><a href="#method_getBaseConfig" title="getBaseConfig() :: "><span class="description">getBaseConfig()
+        </span><pre>getBaseConfig()</pre></a></li>
+<li class="method public "><a href="#method_getDC" title="getDC() :: Get DC General."><span class="description">Get DC General.</span><pre>getDC()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getSupportedLanguages" title="getSupportedLanguages() :: Return all supported languages from the default data data provider."><span class="description">Return all supported languages from the default data data provider.</span><pre>getSupportedLanguages()</pre></a></li>
+<li class="method public "><a href="#method_isRootModel" title="isRootModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isRootModel()</pre></a></li>
+<li class="method public "><a href="#method_setDC" title="setDC() :: Set DC General."><span class="description">Set DC General.</span><pre>setDC()</pre></a></li>
+<li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_setParent" title="setParent() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setParent()</pre></a></li>
+<li class="method public "><a href="#method_setRootModel" title="setRootModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setRootModel()</pre></a></li>
+<li class="method public "><a href="#method_setSameParent" title="setSameParent() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setSameParent()</pre></a></li>
+<li class="method public "><a href="#method_sortCollection" title="sortCollection() :: "><span class="description">sortCollection()
+        </span><pre>sortCollection()</pre></a></li>
+<li class="method public "><a href="#method_updateModelFromPropertyBag" title="updateModelFromPropertyBag() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>updateModelFromPropertyBag()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_addParentFilter" title="addParentFilter() :: Add the filter for the item with the given id from the parent data provider to the given config."><span class="description">Add the filter for the item with the given id from the parent data provider to the given config.</span><pre>addParentFilter()</pre></a></li>
+<li class="method protected "><a href="#method_calcLabelPattern" title="calcLabelPattern() :: "><span class="description">calcLabelPattern()
+        </span><pre>calcLabelPattern()</pre></a></li>
+<li class="method protected "><a href="#method_calcNeededFields" title="calcNeededFields() :: Get a list with all needed fields for the models."><span class="description">Get a list with all needed fields for the models.</span><pre>calcNeededFields()</pre></a></li>
+<li class="method protected "><a href="#method_fetchMode5ChildrenOf" title="fetchMode5ChildrenOf() :: Recurse through all children in mode 5 and return their Ids."><span class="description">Recurse through all children in mode 5 and return their Ids.</span><pre>fetchMode5ChildrenOf()</pre></a></li>
+<li class="method protected "><a href="#method_getNewPosition" title="getNewPosition() :: Calculate the new position of an element"><span class="description">Calculate the new position of an element</span><pre>getNewPosition()</pre></a></li>
+<li class="method protected "><a href="#method_insertCopyModel" title="insertCopyModel() :: "><span class="description">insertCopyModel()
+        </span><pre>insertCopyModel()</pre></a></li>
+<li class="method protected "><a href="#method_reorderSorting" title="reorderSorting() :: Reorder all sortings for one table."><span class="description">Reorder all sortings for one table.</span><pre>reorderSorting()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_arrColSort" title="$arrColSort() :: Field for the function sortCollection."><span class="description"></span><pre>$arrColSort</pre></a></li>
+<li class="property protected "><a href="#property_arrInsertIDs" title="$arrInsertIDs() :: A list with all current IDs."><span class="description"></span><pre>$arrInsertIDs</pre></a></li>
+<li class="property protected "><a href="#property_environment" title="$environment() :: The attached environment."><span class="description"></span><pre>$environment</pre></a></li>
+<li class="property protected "><a href="#property_notImplMsg" title="$notImplMsg() :: Error message."><span class="description"></span><pre>$notImplMsg</pre></a></li>
+<li class="property protected "><a href="#property_objDC" title="$objDC() :: Current DC General."><span class="description"></span><pre>$objDC</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Controller\DefaultController"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Controller.html">Controller</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Controller.DefaultController.html">DefaultController</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
+<h2>Throw an exception that an unknown method has been called.</h2>
+<pre>__call(string $name, array $arguments) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Method name.</p></div>
+<div class="subelement argument">
+<h4>$arguments</h4>
+<code>array</code><p>Method arguments.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>Always.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_assembleAllChildrenFrom"></a><div class="element clickable method public method_assembleAllChildrenFrom" data-toggle="collapse" data-target=".method_assembleAllChildrenFrom .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>assembleAllChildrenFrom($objModel, $strDataProvider) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objModel</h4></div>
+<div class="subelement argument"><h4>$strDataProvider</h4></div>
+</div></div>
+</div>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>Copy an entry and all children.</h2>
+<pre>copy() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>error msg for an unknown mode</div>
+</div></div>
+</div>
+<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
+<h2>Cut and paste.</h2>
+<pre>cut() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>
+-= GET Parameter =-<br/>
+act		- Mode like cut | copy | and co <br/>
+<br/>
+after	- ID of target element to insert after <br/>
+into		- ID of parent element to insert into <br/>
+<br/>
+id		- Parent child ID used for redirect <br/>
+pid		- ID of the parent used in list mode 4,5 <br/>
+source	- ID of the element which should moved <br/>
+<br/>
+pdp		- Parent Data Provider real name <br/>
+cdp		- Current Data Provider real name <br/>
+<br/>
+-= Deprecated =-<br/>
+mode		- 1 Insert after | 2 Insert into (NEVER USED AGAIN - Deprecated) <br/>
+</p></div></div></div>
+</div>
+<a id="method_executePostActions"></a><div class="element clickable method public method_executePostActions" data-toggle="collapse" data-target=".method_executePostActions .collapse">
+<h2>executePostActions()
+        </h2>
+<pre>executePostActions() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_generateAjaxPalette"></a><div class="element clickable method public method_generateAjaxPalette" data-toggle="collapse" data-target=".method_generateAjaxPalette .collapse">
+<h2>Loads the current model from the data provider and overrides the selector</h2>
+<pre>generateAjaxPalette(\DcGeneral\Controller\type $strSelector) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strSelector</h4>
+<code><a href="type.html">\DcGeneral\Controller\type</a></code><p>the name of the checkbox toggling the palette.</p></div>
+</div></div>
+</div>
+<a id="method_getBaseConfig"></a><div class="element clickable method public method_getBaseConfig" data-toggle="collapse" data-target=".method_getBaseConfig .collapse">
+<h2>getBaseConfig()
+        </h2>
+<pre>getBaseConfig() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDC"></a><div class="element clickable method public method_getDC" data-toggle="collapse" data-target=".method_getDC .collapse">
+<h2>Get DC General.</h2>
+<pre>getDC() : <a href="DataContainerInterface;.html">\DcGeneral\Controller\DataContainerInterface;</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="DataContainerInterface;.html">\DcGeneral\Controller\DataContainerInterface;</a></code></div>
+</div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getEnvironment() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSupportedLanguages"></a><div class="element clickable method public method_getSupportedLanguages" data-toggle="collapse" data-target=".method_getSupportedLanguages .collapse">
+<h2>Return all supported languages from the default data data provider.</h2>
+<pre>getSupportedLanguages(mixed $mixID) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>The id of the item for which to retrieve the valid languages.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_isRootModel"></a><div class="element clickable method public method_isRootModel" data-toggle="collapse" data-target=".method_isRootModel .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>isRootModel(\DcGeneral\Data\ModelInterface $model) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+</div></div>
+</div>
+<a id="method_setDC"></a><div class="element clickable method public method_setDC" data-toggle="collapse" data-target=".method_setDC .collapse">
+<h2>Set DC General.</h2>
+<pre>setDC(\DcGeneral\DataContainerInterface $objDC) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objDC</h4>
+<code><a href="../classes/DcGeneral.DataContainerInterface.html">\DcGeneral\DataContainerInterface</a></code><p>The DC.</p></div>
+</div></div>
+</div>
+<a id="method_setEnvironment"></a><div class="element clickable method public method_setEnvironment" data-toggle="collapse" data-target=".method_setEnvironment .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setEnvironment(\DcGeneral\EnvironmentInterface $environment) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$environment</h4></div>
+</div></div>
+</div>
+<a id="method_setParent"></a><div class="element clickable method public method_setParent" data-toggle="collapse" data-target=".method_setParent .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setParent(\DcGeneral\Data\ModelInterface $childModel, \DcGeneral\Data\ModelInterface $parentModel) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$childModel</h4></div>
+<div class="subelement argument"><h4>$parentModel</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setRootModel"></a><div class="element clickable method public method_setRootModel" data-toggle="collapse" data-target=".method_setRootModel .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setRootModel(\DcGeneral\Data\ModelInterface $model) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+</div></div>
+</div>
+<a id="method_setSameParent"></a><div class="element clickable method public method_setSameParent" data-toggle="collapse" data-target=".method_setSameParent .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setSameParent(\DcGeneral\Data\ModelInterface $receivingModel, \DcGeneral\Data\ModelInterface $sourceModel, $parentTable) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$receivingModel</h4></div>
+<div class="subelement argument"><h4>$sourceModel</h4></div>
+<div class="subelement argument"><h4>$parentTable</h4></div>
+</div></div>
+</div>
+<a id="method_sortCollection"></a><div class="element clickable method public method_sortCollection" data-toggle="collapse" data-target=".method_sortCollection .collapse">
+<h2>sortCollection()
+        </h2>
+<pre>sortCollection(\DcGeneral\Data\ModelInterface $a, \DcGeneral\Data\ModelInterface $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<a id="method_updateModelFromPropertyBag"></a><div class="element clickable method public method_updateModelFromPropertyBag" data-toggle="collapse" data-target=".method_updateModelFromPropertyBag .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>updateModelFromPropertyBag($model, $propertyValues) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+<div class="subelement argument"><h4>$propertyValues</h4></div>
+</div></div>
+</div>
+<a id="method_addParentFilter"></a><div class="element clickable method protected method_addParentFilter" data-toggle="collapse" data-target=".method_addParentFilter .collapse">
+<h2>Add the filter for the item with the given id from the parent data provider to the given config.</h2>
+<pre>addParentFilter(mixed $idParent, \DcGeneral\Data\ConfigInterface $config) : <a href="../classes/DcGeneral.Data.ConfigInterface.html">\DcGeneral\Data\ConfigInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idParent</h4>
+<code>mixed</code><p>The id of the parent item.</p></div>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.Data.ConfigInterface.html">\DcGeneral\Data\ConfigInterface</a></code><p>The config to add the filter to.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When the parent item is not found.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ConfigInterface.html">\DcGeneral\Data\ConfigInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_calcLabelPattern"></a><div class="element clickable method protected method_calcLabelPattern" data-toggle="collapse" data-target=".method_calcLabelPattern .collapse">
+<h2>calcLabelPattern()
+        </h2>
+<pre>calcLabelPattern($strTable) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTable</h4></div>
+</div></div>
+</div>
+<a id="method_calcNeededFields"></a><div class="element clickable method protected method_calcNeededFields" data-toggle="collapse" data-target=".method_calcNeededFields .collapse">
+<h2>Get a list with all needed fields for the models.</h2>
+<pre>calcNeededFields(\DcGeneral\Data\ModelInterface $objModel, string $strDstTable) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code>
+</div>
+<div class="subelement argument">
+<h4>$strDstTable</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>A list with all needed values.</div>
+</div></div>
+</div>
+<a id="method_fetchMode5ChildrenOf"></a><div class="element clickable method protected method_fetchMode5ChildrenOf" data-toggle="collapse" data-target=".method_fetchMode5ChildrenOf .collapse">
+<h2>Recurse through all children in mode 5 and return their Ids.</h2>
+<pre>fetchMode5ChildrenOf(\DcGeneral\Data\ModelInterface $objParentModel, bool $blnRecurse) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The parent model to fetch children for.</p></div>
+<div class="subelement argument">
+<h4>$blnRecurse</h4>
+<code>bool</code><p>Boolean flag determining if the collection shall recurse into sub levels.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getNewPosition"></a><div class="element clickable method protected method_getNewPosition" data-toggle="collapse" data-target=".method_getNewPosition .collapse">
+<h2>Calculate the new position of an element</h2>
+<pre>getNewPosition(\DcGeneral\Data\DataProviderInterface $objCDP, \DcGeneral\Data\DataProviderInterface $objPDP, \DcGeneral\Data\ModelInterface $objDBModel, mixed $mixAfter, mixed $mixInto, string $strMode, mixed $mixParentID, integer $intInsertMode, bool $blnWithoutReorder) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Warning this function needs the cdp (current data provider).
+
+Warning this function needs the pdp (parent data provider).
+
+Based on backbone87 PR - "creating items in parent modes generates sorting value of 0"</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objCDP</h4>
+<code><a href="../classes/DcGeneral.Data.DataProviderInterface.html">\DcGeneral\Data\DataProviderInterface</a></code><p>Current data provider</p></div>
+<div class="subelement argument">
+<h4>$objPDP</h4>
+<code><a href="../classes/DcGeneral.Data.DataProviderInterface.html">\DcGeneral\Data\DataProviderInterface</a></code><p>Parent data provider</p></div>
+<div class="subelement argument">
+<h4>$objDBModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>Model of element which should moved</p></div>
+<div class="subelement argument">
+<h4>$mixAfter</h4>
+<code>mixed</code><p>Target element</p></div>
+<div class="subelement argument"><h4>$mixInto</h4></div>
+<div class="subelement argument">
+<h4>$strMode</h4>
+<code>string</code><p>Mode like cut | create and so on</p></div>
+<div class="subelement argument">
+<h4>$mixParentID</h4>
+<code>mixed</code><p>Parent ID of table or element</p></div>
+<div class="subelement argument">
+<h4>$intInsertMode</h4>
+<code>integer</code><p>Insert Mode => 1 After | 2 Into</p>
+</div>
+<div class="subelement argument">
+<h4>$blnWithoutReorder</h4>
+<code>bool</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="RuntimeException.html">\RuntimeException</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_insertCopyModel"></a><div class="element clickable method protected method_insertCopyModel" data-toggle="collapse" data-target=".method_insertCopyModel .collapse">
+<h2>insertCopyModel()
+        </h2>
+<pre>insertCopyModel($intIdSource, $intIdTarget, \DcGeneral\Controller\type $intMode, \DcGeneral\Controller\type $blnChilds, $strFieldId, $strFieldPid, \DcGeneral\Controller\type $strOperation) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>Make it fine</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intIdSource</h4></div>
+<div class="subelement argument"><h4>$intIdTarget</h4></div>
+<div class="subelement argument">
+<h4>$intMode</h4>
+<code><a href="type.html">\DcGeneral\Controller\type</a></code>
+</div>
+<div class="subelement argument">
+<h4>$blnChilds</h4>
+<code><a href="type.html">\DcGeneral\Controller\type</a></code>
+</div>
+<div class="subelement argument"><h4>$strFieldId</h4></div>
+<div class="subelement argument"><h4>$strFieldPid</h4></div>
+<div class="subelement argument">
+<h4>$strOperation</h4>
+<code><a href="type.html">\DcGeneral\Controller\type</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_reorderSorting"></a><div class="element clickable method protected method_reorderSorting" data-toggle="collapse" data-target=".method_reorderSorting .collapse">
+<h2>Reorder all sortings for one table.</h2>
+<pre>reorderSorting(\DcGeneral\Data\ConfigInterface $objConfig) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/DcGeneral.Data.ConfigInterface.html">\DcGeneral\Data\ConfigInterface</a></code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_arrColSort"> </a><div class="element clickable property protected property_arrColSort" data-toggle="collapse" data-target=".property_arrColSort .collapse">
+<h2>Field for the function sortCollection.</h2>
+<pre>$arrColSort : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_arrInsertIDs"> </a><div class="element clickable property protected property_arrInsertIDs" data-toggle="collapse" data-target=".property_arrInsertIDs .collapse">
+<h2>A list with all current IDs.</h2>
+<pre>$arrInsertIDs : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_environment"> </a><div class="element clickable property protected property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
+<h2>The attached environment.</h2>
+<pre>$environment : <a href="../classes/DcGeneral.EnvironmentInterface.html">\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_notImplMsg"> </a><div class="element clickable property protected property_notImplMsg" data-toggle="collapse" data-target=".property_notImplMsg .collapse">
+<h2>Error message.</h2>
+<pre>$notImplMsg : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objDC"> </a><div class="element clickable property protected property_objDC" data-toggle="collapse" data-target=".property_objDC .collapse">
+<h2>Current DC General.</h2>
+<pre>$objDC : <a href="../classes/DcGeneral.DataContainerInterface.html">\DcGeneral\DataContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:31+01:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\Definition\Properties\DefaultProperty</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create an instance."><span class="description">Create an instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultValue" title="getDefaultValue() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDefaultValue()</pre></a></li>
+<li class="method public "><a href="#method_getDescription" title="getDescription() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDescription()</pre></a></li>
+<li class="method public "><a href="#method_getExplanation" title="getExplanation() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getExplanation()</pre></a></li>
+<li class="method public "><a href="#method_getExtra" title="getExtra() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getExtra()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingLength" title="getGroupingLength() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_getLabel" title="getLabel() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getLabel()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getOptions" title="getOptions() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getOptions()</pre></a></li>
+<li class="method public "><a href="#method_getSortingMode" title="getSortingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSortingMode()</pre></a></li>
+<li class="method public "><a href="#method_getWidgetType" title="getWidgetType() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getWidgetType()</pre></a></li>
+<li class="method public "><a href="#method_isExcluded" title="isExcluded() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isExcluded()</pre></a></li>
+<li class="method public "><a href="#method_isFilterable" title="isFilterable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isFilterable()</pre></a></li>
+<li class="method public "><a href="#method_isSearchable" title="isSearchable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isSearchable()</pre></a></li>
+<li class="method public "><a href="#method_isSortable" title="isSortable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isSortable()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultValue" title="setDefaultValue() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDefaultValue()</pre></a></li>
+<li class="method public "><a href="#method_setDescription" title="setDescription() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDescription()</pre></a></li>
+<li class="method public "><a href="#method_setExcluded" title="setExcluded() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setExcluded()</pre></a></li>
+<li class="method public "><a href="#method_setExplanation" title="setExplanation() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setExplanation()</pre></a></li>
+<li class="method public "><a href="#method_setExtra" title="setExtra() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setExtra()</pre></a></li>
+<li class="method public "><a href="#method_setFilterable" title="setFilterable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setFilterable()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingLength" title="setGroupingLength() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingMode" title="setGroupingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_setLabel" title="setLabel() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setLabel()</pre></a></li>
+<li class="method public "><a href="#method_setOptions" title="setOptions() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setOptions()</pre></a></li>
+<li class="method public "><a href="#method_setSearchable" title="setSearchable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSearchable()</pre></a></li>
+<li class="method public "><a href="#method_setSortable" title="setSortable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSortable()</pre></a></li>
+<li class="method public "><a href="#method_setSortingMode" title="setSortingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSortingMode()</pre></a></li>
+<li class="method public "><a href="#method_setWidgetType" title="setWidgetType() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setWidgetType()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_defaultValue" title="$defaultValue() :: The default value of the property."><span class="description"></span><pre>$defaultValue</pre></a></li>
+<li class="property protected "><a href="#property_description" title="$description() :: The description of the property."><span class="description"></span><pre>$description</pre></a></li>
+<li class="property protected "><a href="#property_excluded" title="$excluded() :: Define if this property shall be excluded by default."><span class="description"></span><pre>$excluded</pre></a></li>
+<li class="property protected "><a href="#property_explanation" title="$explanation() :: The explanation string for this property."><span class="description"></span><pre>$explanation</pre></a></li>
+<li class="property protected "><a href="#property_extra" title="$extra() :: The extra information for this property."><span class="description"></span><pre>$extra</pre></a></li>
+<li class="property protected "><a href="#property_filterable" title="$filterable() :: Flag if this property shall be filterable."><span class="description"></span><pre>$filterable</pre></a></li>
+<li class="property protected "><a href="#property_groupingLength" title="$groupingLength() :: The grouing length of this property. See grouping mode."><span class="description"></span><pre>$groupingLength</pre></a></li>
+<li class="property protected "><a href="#property_groupingMode" title="$groupingMode() :: The grouping mode for this property."><span class="description"></span><pre>$groupingMode</pre></a></li>
+<li class="property protected "><a href="#property_label" title="$label() :: The label of the property."><span class="description"></span><pre>$label</pre></a></li>
+<li class="property protected "><a href="#property_name" title="$name() :: The property name."><span class="description"></span><pre>$name</pre></a></li>
+<li class="property protected "><a href="#property_options" title="$options() :: The value options for this property."><span class="description"></span><pre>$options</pre></a></li>
+<li class="property protected "><a href="#property_searchable" title="$searchable() :: Flag if this property shall be searchable."><span class="description"></span><pre>$searchable</pre></a></li>
+<li class="property protected "><a href="#property_sortable" title="$sortable() :: Flag if this property shall be sortable."><span class="description"></span><pre>$sortable</pre></a></li>
+<li class="property protected "><a href="#property_sortingMode" title="$sortingMode() :: The sorting mode for this property."><span class="description"></span><pre>$sortingMode</pre></a></li>
+<li class="property protected "><a href="#property_widgetType" title="$widgetType() :: The input widget type to use."><span class="description"></span><pre>$widgetType</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\Definition\Properties\DefaultProperty"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.DefaultProperty.html">DefaultProperty</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class DefaultProperty.</p>
+<div class="details">
+<div class="long_description">Default implementation of a property definition.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.Properties.html">DcGeneral\DataDefinition\Definition\Properties</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create an instance.</h2>
+<pre>__construct(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the property.</p></div>
+</div></div>
+</div>
+<a id="method_getDefaultValue"></a><div class="element clickable method public method_getDefaultValue" data-toggle="collapse" data-target=".method_getDefaultValue .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDefaultValue() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDescription"></a><div class="element clickable method public method_getDescription" data-toggle="collapse" data-target=".method_getDescription .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDescription() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getExplanation"></a><div class="element clickable method public method_getExplanation" data-toggle="collapse" data-target=".method_getExplanation .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getExplanation() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getExtra"></a><div class="element clickable method public method_getExtra" data-toggle="collapse" data-target=".method_getExtra .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getExtra() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getGroupingLength"></a><div class="element clickable method public method_getGroupingLength" data-toggle="collapse" data-target=".method_getGroupingLength .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getGroupingLength() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getGroupingMode"></a><div class="element clickable method public method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getGroupingMode() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLabel"></a><div class="element clickable method public method_getLabel" data-toggle="collapse" data-target=".method_getLabel .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getLabel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getOptions"></a><div class="element clickable method public method_getOptions" data-toggle="collapse" data-target=".method_getOptions .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getOptions() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSortingMode"></a><div class="element clickable method public method_getSortingMode" data-toggle="collapse" data-target=".method_getSortingMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getSortingMode() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getWidgetType"></a><div class="element clickable method public method_getWidgetType" data-toggle="collapse" data-target=".method_getWidgetType .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getWidgetType() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isExcluded"></a><div class="element clickable method public method_isExcluded" data-toggle="collapse" data-target=".method_isExcluded .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isExcluded() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isFilterable"></a><div class="element clickable method public method_isFilterable" data-toggle="collapse" data-target=".method_isFilterable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isFilterable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isSearchable"></a><div class="element clickable method public method_isSearchable" data-toggle="collapse" data-target=".method_isSearchable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isSearchable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isSortable"></a><div class="element clickable method public method_isSortable" data-toggle="collapse" data-target=".method_isSortable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isSortable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setDefaultValue"></a><div class="element clickable method public method_setDefaultValue" data-toggle="collapse" data-target=".method_setDefaultValue .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDefaultValue($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setDescription"></a><div class="element clickable method public method_setDescription" data-toggle="collapse" data-target=".method_setDescription .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDescription($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setExcluded"></a><div class="element clickable method public method_setExcluded" data-toggle="collapse" data-target=".method_setExcluded .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setExcluded($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setExplanation"></a><div class="element clickable method public method_setExplanation" data-toggle="collapse" data-target=".method_setExplanation .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setExplanation($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setExtra"></a><div class="element clickable method public method_setExtra" data-toggle="collapse" data-target=".method_setExtra .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setExtra($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setFilterable"></a><div class="element clickable method public method_setFilterable" data-toggle="collapse" data-target=".method_setFilterable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setFilterable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setGroupingLength"></a><div class="element clickable method public method_setGroupingLength" data-toggle="collapse" data-target=".method_setGroupingLength .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setGroupingLength($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setGroupingMode"></a><div class="element clickable method public method_setGroupingMode" data-toggle="collapse" data-target=".method_setGroupingMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setGroupingMode($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLabel"></a><div class="element clickable method public method_setLabel" data-toggle="collapse" data-target=".method_setLabel .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setLabel($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setOptions"></a><div class="element clickable method public method_setOptions" data-toggle="collapse" data-target=".method_setOptions .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setOptions($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setSearchable"></a><div class="element clickable method public method_setSearchable" data-toggle="collapse" data-target=".method_setSearchable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSearchable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setSortable"></a><div class="element clickable method public method_setSortable" data-toggle="collapse" data-target=".method_setSortable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSortable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setSortingMode"></a><div class="element clickable method public method_setSortingMode" data-toggle="collapse" data-target=".method_setSortingMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSortingMode($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setWidgetType"></a><div class="element clickable method public method_setWidgetType" data-toggle="collapse" data-target=".method_setWidgetType .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setWidgetType($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_defaultValue"> </a><div class="element clickable property protected property_defaultValue" data-toggle="collapse" data-target=".property_defaultValue .collapse">
+<h2>The default value of the property.</h2>
+<pre>$defaultValue : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_description"> </a><div class="element clickable property protected property_description" data-toggle="collapse" data-target=".property_description .collapse">
+<h2>The description of the property.</h2>
+<pre>$description : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_excluded"> </a><div class="element clickable property protected property_excluded" data-toggle="collapse" data-target=".property_excluded .collapse">
+<h2>Define if this property shall be excluded by default.</h2>
+<pre>$excluded : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_explanation"> </a><div class="element clickable property protected property_explanation" data-toggle="collapse" data-target=".property_explanation .collapse">
+<h2>The explanation string for this property.</h2>
+<pre>$explanation : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_extra"> </a><div class="element clickable property protected property_extra" data-toggle="collapse" data-target=".property_extra .collapse">
+<h2>The extra information for this property.</h2>
+<pre>$extra : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_filterable"> </a><div class="element clickable property protected property_filterable" data-toggle="collapse" data-target=".property_filterable .collapse">
+<h2>Flag if this property shall be filterable.</h2>
+<pre>$filterable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_groupingLength"> </a><div class="element clickable property protected property_groupingLength" data-toggle="collapse" data-target=".property_groupingLength .collapse">
+<h2>The grouing length of this property. See grouping mode.</h2>
+<pre>$groupingLength : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_groupingMode"> </a><div class="element clickable property protected property_groupingMode" data-toggle="collapse" data-target=".property_groupingMode .collapse">
+<h2>The grouping mode for this property.</h2>
+<pre>$groupingMode : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">See ListingConfigInterface::GROUP_* flags.</div></div></div>
+</div>
+<a id="property_label"> </a><div class="element clickable property protected property_label" data-toggle="collapse" data-target=".property_label .collapse">
+<h2>The label of the property.</h2>
+<pre>$label : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_name"> </a><div class="element clickable property protected property_name" data-toggle="collapse" data-target=".property_name .collapse">
+<h2>The property name.</h2>
+<pre>$name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_options"> </a><div class="element clickable property protected property_options" data-toggle="collapse" data-target=".property_options .collapse">
+<h2>The value options for this property.</h2>
+<pre>$options : array | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_searchable"> </a><div class="element clickable property protected property_searchable" data-toggle="collapse" data-target=".property_searchable .collapse">
+<h2>Flag if this property shall be searchable.</h2>
+<pre>$searchable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sortable"> </a><div class="element clickable property protected property_sortable" data-toggle="collapse" data-target=".property_sortable .collapse">
+<h2>Flag if this property shall be sortable.</h2>
+<pre>$sortable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sortingMode"> </a><div class="element clickable property protected property_sortingMode" data-toggle="collapse" data-target=".property_sortingMode .collapse">
+<h2>The sorting mode for this property.</h2>
+<pre>$sortingMode : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">See ListingConfigInterface::SORT_* flags.</div></div></div>
+</div>
+<a id="property_widgetType"> </a><div class="element clickable property protected property_widgetType" data-toggle="collapse" data-target=".property_widgetType .collapse">
+<h2>The input widget type to use.</h2>
+<pre>$widgetType : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:26+01:00.<br></footer></div>
+</div>
+</body>
+</html>

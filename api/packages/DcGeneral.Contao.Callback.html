@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » DcGeneral\Contao\Callback</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/DcGeneral.Contao.Callback.html" title="Callback"><i class="icon-folder-open"></i>Callback</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#ContainerPasteButtonCallbackListener" title="Class ContainerPasteButtonCallbackListener.">ContainerPasteButtonCallbackListener</a></li>
+<li><a href="#ModelChildRecordCallbackListener" title="Class ModelChildRecordCallbackListener.">ModelChildRecordCallbackListener</a></li>
+<li><a href="#AbstractStaticCallbackListener" title="Class AbstractStaticCallbackListener.">AbstractStaticCallbackListener</a></li>
+<li><a href="#ModelLabelCallbackListener" title="Class ModelLabelCallbackListener.">ModelLabelCallbackListener</a></li>
+<li><a href="#ContainerGlobalButtonCallbackListener" title="Class ContainerGlobalButtonCallbackListener.">ContainerGlobalButtonCallbackListener</a></li>
+<li><a href="#ModelOptionsCallbackListener" title="Class ModelOptionsCallbackListener.">ModelOptionsCallbackListener</a></li>
+<li><a href="#PropertyOnLoadCallbackListener" title="Class PropertyOnLoadCallbackListener.">PropertyOnLoadCallbackListener</a></li>
+<li><a href="#ContainerOnCutCallbackListener" title="Class ContainerOnCutCallbackListener.">ContainerOnCutCallbackListener</a></li>
+<li><a href="#PropertyInputFieldGetWizardCallbackListener" title="Class PropertyInputFieldGetWizardCallbackListener.">PropertyInputFieldGetWizardCallbackListener</a></li>
+<li><a href="#AbstractCallbackListener" title="Class AbstractCallbackListener.">AbstractCallbackListener</a></li>
+<li><a href="#ContainerPasteRootButtonCallbackListener" title="Class ContainerPasteRootButtonCallbackListener.">ContainerPasteRootButtonCallbackListener</a></li>
+<li><a href="#Callbacks" title="Class Callbacks.">Callbacks</a></li>
+<li><a href="#ContainerOnCopyCallbackListener" title="Class ContainerOnCopyCallbackListener.">ContainerOnCopyCallbackListener</a></li>
+<li><a href="#ModelOperationButtonCallbackListener" title="Class ModelOperationButtonCallbackListener.">ModelOperationButtonCallbackListener</a></li>
+<li><a href="#ContainerOnDeleteCallbackListener" title="Class ContainerOnDeleteCallbackListener.">ContainerOnDeleteCallbackListener</a></li>
+<li><a href="#PropertyInputFieldCallbackListener" title="Class PropertyInputFieldCallbackListener.">PropertyInputFieldCallbackListener</a></li>
+<li><a href="#ContainerOnLoadCallbackListener" title="Class ContainerOnLoadCallbackListener.">ContainerOnLoadCallbackListener</a></li>
+<li><a href="#ContainerHeaderCallbackListener" title="Class ContainerHeaderCallbackListener.">ContainerHeaderCallbackListener</a></li>
+<li><a href="#PropertyOnSaveCallbackListener" title="Class PropertyOnSaveCallbackListener.">PropertyOnSaveCallbackListener</a></li>
+<li><a href="#ModelGroupCallbackListener" title="Class ModelGroupCallbackListener.">ModelGroupCallbackListener</a></li>
+<li><a href="#AbstractReturningCallbackListener" title="Class AbstractReturningCallbackListener.">AbstractReturningCallbackListener</a></li>
+<li><a href="#ContainerGetBreadcrumbCallbackListener" title="Class ContainerGetBreadcrumbCallbackListener.">ContainerGetBreadcrumbCallbackListener</a></li>
+<li><a href="#ContainerOnSubmitCallbackListener" title="Class ContainerOnSubmitCallbackListener.">ContainerOnSubmitCallbackListener</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.Callback.html">Callback</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="AbstractCallbackListener" class="element ajax clickable class">
+<h1>AbstractCallbackListener<a href="../classes/DcGeneral.Contao.Callback.AbstractCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.AbstractCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="AbstractReturningCallbackListener" class="element ajax clickable class">
+<h1>AbstractReturningCallbackListener<a href="../classes/DcGeneral.Contao.Callback.AbstractReturningCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractReturningCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.AbstractReturningCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="AbstractStaticCallbackListener" class="element ajax clickable class">
+<h1>AbstractStaticCallbackListener<a href="../classes/DcGeneral.Contao.Callback.AbstractStaticCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractStaticCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.AbstractStaticCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="Callbacks" class="element ajax clickable class">
+<h1>Callbacks<a href="../classes/DcGeneral.Contao.Callback.Callbacks.html">¶</a>
+</h1>
+<p class="short_description">Class Callbacks.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.Callbacks.html" class="more">« More »</a>
+</div>
+<div id="ContainerGetBreadcrumbCallbackListener" class="element ajax clickable class">
+<h1>ContainerGetBreadcrumbCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerGetBreadcrumbCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerGetBreadcrumbCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerGetBreadcrumbCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerGlobalButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerGlobalButtonCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerGlobalButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerGlobalButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerGlobalButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerHeaderCallbackListener" class="element ajax clickable class">
+<h1>ContainerHeaderCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerHeaderCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerHeaderCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerHeaderCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnCopyCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnCopyCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerOnCopyCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnCopyCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerOnCopyCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnCutCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnCutCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerOnCutCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnCutCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerOnCutCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnDeleteCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnDeleteCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerOnDeleteCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnDeleteCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerOnDeleteCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnLoadCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnLoadCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerOnLoadCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnLoadCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerOnLoadCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnSubmitCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnSubmitCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerOnSubmitCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnSubmitCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerOnSubmitCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerPasteButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerPasteButtonCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerPasteButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerPasteButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerPasteButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerPasteRootButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerPasteRootButtonCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ContainerPasteRootButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerPasteRootButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ContainerPasteRootButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelChildRecordCallbackListener" class="element ajax clickable class">
+<h1>ModelChildRecordCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ModelChildRecordCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelChildRecordCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ModelChildRecordCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelGroupCallbackListener" class="element ajax clickable class">
+<h1>ModelGroupCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ModelGroupCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelGroupCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ModelGroupCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelLabelCallbackListener" class="element ajax clickable class">
+<h1>ModelLabelCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ModelLabelCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelLabelCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ModelLabelCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelOperationButtonCallbackListener" class="element ajax clickable class">
+<h1>ModelOperationButtonCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ModelOperationButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelOperationButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ModelOperationButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelOptionsCallbackListener" class="element ajax clickable class">
+<h1>ModelOptionsCallbackListener<a href="../classes/DcGeneral.Contao.Callback.ModelOptionsCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelOptionsCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.ModelOptionsCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyInputFieldCallbackListener" class="element ajax clickable class">
+<h1>PropertyInputFieldCallbackListener<a href="../classes/DcGeneral.Contao.Callback.PropertyInputFieldCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyInputFieldCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.PropertyInputFieldCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyInputFieldGetWizardCallbackListener" class="element ajax clickable class">
+<h1>PropertyInputFieldGetWizardCallbackListener<a href="../classes/DcGeneral.Contao.Callback.PropertyInputFieldGetWizardCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyInputFieldGetWizardCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.PropertyInputFieldGetWizardCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyOnLoadCallbackListener" class="element ajax clickable class">
+<h1>PropertyOnLoadCallbackListener<a href="../classes/DcGeneral.Contao.Callback.PropertyOnLoadCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyOnLoadCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.PropertyOnLoadCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyOnSaveCallbackListener" class="element ajax clickable class">
+<h1>PropertyOnSaveCallbackListener<a href="../classes/DcGeneral.Contao.Callback.PropertyOnSaveCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyOnSaveCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.Callback.PropertyOnSaveCallbackListener.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:24+01:00.<br></footer></div>
+</div>
+</body>
+</html>

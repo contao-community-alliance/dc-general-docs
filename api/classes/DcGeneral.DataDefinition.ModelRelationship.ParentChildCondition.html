@@ -1,0 +1,311 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\ModelRelationship\ParentChildCondition</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_applyTo" title="applyTo() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>applyTo()</pre></a></li>
+<li class="method public "><a href="#method_copyFrom" title="copyFrom() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>copyFrom()</pre></a></li>
+<li class="method public "><a href="#method_getDestinationName" title="getDestinationName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDestinationName()</pre></a></li>
+<li class="method public "><a href="#method_getFilter" title="getFilter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getFilter()</pre></a></li>
+<li class="method public "><a href="#method_getFilterArray" title="getFilterArray() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getFilterArray()</pre></a></li>
+<li class="method public "><a href="#method_getInverseFilterArray" title="getInverseFilterArray() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getInverseFilterArray()</pre></a></li>
+<li class="method public "><a href="#method_getInverseFilterFor" title="getInverseFilterFor() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getInverseFilterFor()</pre></a></li>
+<li class="method public "><a href="#method_getSetters" title="getSetters() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSetters()</pre></a></li>
+<li class="method public "><a href="#method_getSourceName" title="getSourceName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSourceName()</pre></a></li>
+<li class="method public "><a href="#method_matches" title="matches() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>matches()</pre></a></li>
+<li class="method public "><a href="#method_setDestinationName" title="setDestinationName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDestinationName()</pre></a></li>
+<li class="method public "><a href="#method_setFilterArray" title="setFilterArray() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setFilterArray()</pre></a></li>
+<li class="method public "><a href="#method_setInverseFilterArray" title="setInverseFilterArray() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setInverseFilterArray()</pre></a></li>
+<li class="method public "><a href="#method_setSetters" title="setSetters() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSetters()</pre></a></li>
+<li class="method public "><a href="#method_setSourceName" title="setSourceName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSourceName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_destinationProvider" title="$destinationProvider() :: The name of the destination provider (child)."><span class="description"></span><pre>$destinationProvider</pre></a></li>
+<li class="property protected "><a href="#property_filter" title="$filter() :: The filter rules."><span class="description"></span><pre>$filter</pre></a></li>
+<li class="property protected "><a href="#property_inverseFilter" title="$inverseFilter() :: The filter rules to use for an inverse filter."><span class="description"></span><pre>$inverseFilter</pre></a></li>
+<li class="property protected "><a href="#property_setOn" title="$setOn() :: The values to use when enforcing a root condition."><span class="description"></span><pre>$setOn</pre></a></li>
+<li class="property protected "><a href="#property_sourceProvider" title="$sourceProvider() :: The name of the source provider (parent)."><span class="description"></span><pre>$sourceProvider</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\ModelRelationship\ParentChildCondition"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.ModelRelationship.ParentChildCondition.html">ParentChildCondition</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Default implementation of a parent child relationship.</p>
+<div class="details">
+<div class="long_description">It implements a basic condition check.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.ModelRelationship.html">DcGeneral\DataDefinition\ModelRelationship</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_applyTo"></a><div class="element clickable method public method_applyTo" data-toggle="collapse" data-target=".method_applyTo .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>applyTo($objParent, $objChild) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objParent</h4></div>
+<div class="subelement argument"><h4>$objChild</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>For invalid setters.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_copyFrom"></a><div class="element clickable method public method_copyFrom" data-toggle="collapse" data-target=".method_copyFrom .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>copyFrom($sourceModel, $destinationModel) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$sourceModel</h4></div>
+<div class="subelement argument"><h4>$destinationModel</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>For invalid setters.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getDestinationName"></a><div class="element clickable method public method_getDestinationName" data-toggle="collapse" data-target=".method_getDestinationName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDestinationName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getFilter"></a><div class="element clickable method public method_getFilter" data-toggle="collapse" data-target=".method_getFilter .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getFilter($objParent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objParent</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>when an empty parent model is given.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getFilterArray"></a><div class="element clickable method public method_getFilterArray" data-toggle="collapse" data-target=".method_getFilterArray .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getFilterArray() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getInverseFilterArray"></a><div class="element clickable method public method_getInverseFilterArray" data-toggle="collapse" data-target=".method_getInverseFilterArray .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getInverseFilterArray() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getInverseFilterFor"></a><div class="element clickable method public method_getInverseFilterFor" data-toggle="collapse" data-target=".method_getInverseFilterFor .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getInverseFilterFor($objChild) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objChild</h4></div>
+</div></div>
+</div>
+<a id="method_getSetters"></a><div class="element clickable method public method_getSetters" data-toggle="collapse" data-target=".method_getSetters .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getSetters() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSourceName"></a><div class="element clickable method public method_getSourceName" data-toggle="collapse" data-target=".method_getSourceName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getSourceName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_matches"></a><div class="element clickable method public method_matches" data-toggle="collapse" data-target=".method_matches .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>matches($objParent, $objChild) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objParent</h4></div>
+<div class="subelement argument"><h4>$objChild</h4></div>
+</div></div>
+</div>
+<a id="method_setDestinationName"></a><div class="element clickable method public method_setDestinationName" data-toggle="collapse" data-target=".method_setDestinationName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDestinationName($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setFilterArray"></a><div class="element clickable method public method_setFilterArray" data-toggle="collapse" data-target=".method_setFilterArray .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setFilterArray($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setInverseFilterArray"></a><div class="element clickable method public method_setInverseFilterArray" data-toggle="collapse" data-target=".method_setInverseFilterArray .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setInverseFilterArray($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setSetters"></a><div class="element clickable method public method_setSetters" data-toggle="collapse" data-target=".method_setSetters .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSetters($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setSourceName"></a><div class="element clickable method public method_setSourceName" data-toggle="collapse" data-target=".method_setSourceName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSourceName($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_destinationProvider"> </a><div class="element clickable property protected property_destinationProvider" data-toggle="collapse" data-target=".property_destinationProvider .collapse">
+<h2>The name of the destination provider (child).</h2>
+<pre>$destinationProvider : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_filter"> </a><div class="element clickable property protected property_filter" data-toggle="collapse" data-target=".property_filter .collapse">
+<h2>The filter rules.</h2>
+<pre>$filter : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_inverseFilter"> </a><div class="element clickable property protected property_inverseFilter" data-toggle="collapse" data-target=".property_inverseFilter .collapse">
+<h2>The filter rules to use for an inverse filter.</h2>
+<pre>$inverseFilter : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_setOn"> </a><div class="element clickable property protected property_setOn" data-toggle="collapse" data-target=".property_setOn .collapse">
+<h2>The values to use when enforcing a root condition.</h2>
+<pre>$setOn : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sourceProvider"> </a><div class="element clickable property protected property_sourceProvider" data-toggle="collapse" data-target=".property_sourceProvider .collapse">
+<h2>The name of the source provider (parent).</h2>
+<pre>$sourceProvider : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:27+01:00.<br></footer></div>
+</div>
+</body>
+</html>

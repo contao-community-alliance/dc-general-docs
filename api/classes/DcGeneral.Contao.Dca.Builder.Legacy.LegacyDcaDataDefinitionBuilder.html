@@ -1,0 +1,618 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Contao\Dca\Builder\Legacy\LegacyDcaDataDefinitionBuilder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul><li class="method public "><a href="#method_build" title="build() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>build()</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_createCommand" title="createCommand() :: Create a command from dca."><span class="description">Create a command from dca.</span><pre>createCommand()</pre></a></li>
+<li class="method protected "><a href="#method_createCommandInstance" title="createCommandInstance() :: Create the correct command instance for the given information."><span class="description">Create the correct command instance for the given information.</span><pre>createCommandInstance()</pre></a></li>
+<li class="method protected "><a href="#method_evalFlag" title="evalFlag() :: Evaluate the contao 2 sorting flag into sorting mode, grouping mode and grouping length."><span class="description">Evaluate the contao 2 sorting flag into sorting mode, grouping mode and grouping length.</span><pre>evalFlag()</pre></a></li>
+<li class="method protected "><a href="#method_evalFlagGrouping" title="evalFlagGrouping() :: Evaluate the contao 2 sorting flag into grouping mode."><span class="description">Evaluate the contao 2 sorting flag into grouping mode.</span><pre>evalFlagGrouping()</pre></a></li>
+<li class="method protected "><a href="#method_evalFlagGroupingLength" title="evalFlagGroupingLength() :: Evaluate the contao 2 sorting flag into grouping length."><span class="description">Evaluate the contao 2 sorting flag into grouping length.</span><pre>evalFlagGroupingLength()</pre></a></li>
+<li class="method protected "><a href="#method_evalFlagSorting" title="evalFlagSorting() :: Evaluate the contao 2 sorting flag into sorting mode."><span class="description">Evaluate the contao 2 sorting flag into sorting mode.</span><pre>evalFlagSorting()</pre></a></li>
+<li class="method protected "><a href="#method_getRootProviderName" title="getRootProviderName() :: Determine the root provider name from the container."><span class="description">Determine the root provider name from the container.</span><pre>getRootProviderName()</pre></a></li>
+<li class="method protected "><a href="#method_loadAdditionalDefinitions" title="loadAdditionalDefinitions() :: Load additional definitions, like naming of parent data provider."><span class="description">Load additional definitions, like naming of parent data provider.</span><pre>loadAdditionalDefinitions()</pre></a></li>
+<li class="method protected "><a href="#method_parseBackendView" title="parseBackendView() :: Parse and build the backend view definition for the old Contao2 backend view."><span class="description">Parse and build the backend view definition for the old Contao2 backend view.</span><pre>parseBackendView()</pre></a></li>
+<li class="method protected "><a href="#method_parseBasicDefinition" title="parseBasicDefinition() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parseBasicDefinition()</pre></a></li>
+<li class="method protected "><a href="#method_parseBasicFlags" title="parseBasicFlags() :: Parse the basic flags."><span class="description">Parse the basic flags.</span><pre>parseBasicFlags()</pre></a></li>
+<li class="method protected "><a href="#method_parseBasicMode" title="parseBasicMode() :: Parse the mode, flat, parented or hierarchical."><span class="description">Parse the mode, flat, parented or hierarchical.</span><pre>parseBasicMode()</pre></a></li>
+<li class="method protected "><a href="#method_parseCallbacks" title="parseCallbacks() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parseCallbacks()</pre></a></li>
+<li class="method protected "><a href="#method_parseDataProvider" title="parseDataProvider() :: This method parses all data provider related information from Contao legacy data container arrays."><span class="description">This method parses all data provider related information from Contao legacy data container arrays.</span><pre>parseDataProvider()</pre></a></li>
+<li class="method protected "><a href="#method_parseGlobalOperations" title="parseGlobalOperations() :: Parse the defined container scoped operations and populate the definition."><span class="description">Parse the defined container scoped operations and populate the definition.</span><pre>parseGlobalOperations()</pre></a></li>
+<li class="method protected "><a href="#method_parseListLabel" title="parseListLabel() :: Parse the sorting part of listing configuration."><span class="description">Parse the sorting part of listing configuration.</span><pre>parseListLabel()</pre></a></li>
+<li class="method protected "><a href="#method_parseListSorting" title="parseListSorting() :: Parse the sorting part of listing configuration."><span class="description">Parse the sorting part of listing configuration.</span><pre>parseListSorting()</pre></a></li>
+<li class="method protected "><a href="#method_parseListing" title="parseListing() :: Parse the listing configuration."><span class="description">Parse the listing configuration.</span><pre>parseListing()</pre></a></li>
+<li class="method protected "><a href="#method_parseModelOperations" title="parseModelOperations() :: Parse the defined model scoped operations and populate the definition."><span class="description">Parse the defined model scoped operations and populate the definition.</span><pre>parseModelOperations()</pre></a></li>
+<li class="method protected "><a href="#method_parsePalettes" title="parsePalettes() :: Parse the defined palettes and populate the definition."><span class="description">Parse the defined palettes and populate the definition.</span><pre>parsePalettes()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanel" title="parsePanel() :: Parse the defined palettes and populate the definition."><span class="description">Parse the defined palettes and populate the definition.</span><pre>parsePanel()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelFilter" title="parsePanelFilter() :: Add filter elements to the panel."><span class="description">Add filter elements to the panel.</span><pre>parsePanelFilter()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelLimit" title="parsePanelLimit() :: Add  elements to the panel."><span class="description">Add  elements to the panel.</span><pre>parsePanelLimit()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelRow" title="parsePanelRow() :: Parse a single panel row."><span class="description">Parse a single panel row.</span><pre>parsePanelRow()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelSearch" title="parsePanelSearch() :: Add search element to the panel."><span class="description">Add search element to the panel.</span><pre>parsePanelSearch()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelSort" title="parsePanelSort() :: Add sort element to the panel."><span class="description">Add sort element to the panel.</span><pre>parsePanelSort()</pre></a></li>
+<li class="method protected "><a href="#method_parsePanelSubmit" title="parsePanelSubmit() :: Add  elements to the panel."><span class="description">Add  elements to the panel.</span><pre>parsePanelSubmit()</pre></a></li>
+<li class="method protected "><a href="#method_parseParentChildConditions" title="parseParentChildConditions() :: This method parses the parent-child conditions."><span class="description">This method parses the parent-child conditions.</span><pre>parseParentChildConditions()</pre></a></li>
+<li class="method protected "><a href="#method_parseProperties" title="parseProperties() :: Parse the defined properties and populate the definition."><span class="description">Parse the defined properties and populate the definition.</span><pre>parseProperties()</pre></a></li>
+<li class="method protected "><a href="#method_parseRootEntries" title="parseRootEntries() :: This method parses the root entries definition."><span class="description">This method parses the root entries definition.</span><pre>parseRootEntries()</pre></a></li>
+<li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: "><span class="description">parseSingleProperty()
+        </span><pre>parseSingleProperty()</pre></a></li>
+<li class="method protected "><a href="#method_parseSinglePropertyLabel" title="parseSinglePropertyLabel() :: Parse the label of a single property."><span class="description">Parse the label of a single property.</span><pre>parseSinglePropertyLabel()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul><li class="constant  "><a href="#constant_PRIORITY" title="PRIORITY() :: "><span class="description">PRIORITY</span><pre>PRIORITY</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Contao\Dca\Builder\Legacy\LegacyDcaDataDefinitionBuilder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.Dca.Builder.html">Builder</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html">LegacyDcaDataDefinitionBuilder</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Build the container config from legacy DCA syntax.</p>
+<div class="details">
+<div class="long_description">Abstract base class for an data definition builder.
+
+To use it, implement the method build() and register the class to the event dispatcher.</div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_build"></a><div class="element clickable method public method_build" data-toggle="collapse" data-target=".method_build .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>build(\DcGeneral\DataDefinition\ContainerInterface $container, \DcGeneral\Factory\Event\BuildDataDefinitionEvent $event) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$container</h4></div>
+<div class="subelement argument"><h4>$event</h4></div>
+</div></div>
+</div>
+<a id="method_createCommand"></a><div class="element clickable method protected method_createCommand" data-toggle="collapse" data-target=".method_createCommand .collapse">
+<h2>Create a command from dca.</h2>
+<pre>createCommand(string $commandName, array $commandDca) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$commandName</h4>
+<code>string</code><p>The name of the command to parse.</p></div>
+<div class="subelement argument">
+<h4>$commandDca</h4>
+<code>array</code><p>The chunk from the DCA containing the command specification.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_createCommandInstance"></a><div class="element clickable method protected method_createCommandInstance" data-toggle="collapse" data-target=".method_createCommandInstance .collapse">
+<h2>Create the correct command instance for the given information.</h2>
+<pre>createCommandInstance(string $commandName, array $commandDca) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.Command.html">\DcGeneral\DataDefinition\Definition\View\Command</a> | <a href="../classes/DcGeneral.DataDefinition.Definition.View.CutCommand.html">\DcGeneral\DataDefinition\Definition\View\CutCommand</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$commandName</h4>
+<code>string</code><p>The name of the command to create.</p></div>
+<div class="subelement argument">
+<h4>$commandDca</h4>
+<code>array</code><p>The Dca information of the command.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.Command.html">\DcGeneral\DataDefinition\Definition\View\Command</a></code><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CutCommand.html">\DcGeneral\DataDefinition\Definition\View\CutCommand</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_evalFlag"></a><div class="element clickable method protected method_evalFlag" data-toggle="collapse" data-target=".method_evalFlag .collapse">
+<h2>Evaluate the contao 2 sorting flag into sorting mode, grouping mode and grouping length.</h2>
+<pre>evalFlag(\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>The flag to be evaluated.</p></div>
+</div></div>
+</div>
+<a id="method_evalFlagGrouping"></a><div class="element clickable method protected method_evalFlagGrouping" data-toggle="collapse" data-target=".method_evalFlagGrouping .collapse">
+<h2>Evaluate the contao 2 sorting flag into grouping mode.</h2>
+<pre>evalFlagGrouping(\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>The flag to be evaluated.</p></div>
+</div></div>
+</div>
+<a id="method_evalFlagGroupingLength"></a><div class="element clickable method protected method_evalFlagGroupingLength" data-toggle="collapse" data-target=".method_evalFlagGroupingLength .collapse">
+<h2>Evaluate the contao 2 sorting flag into grouping length.</h2>
+<pre>evalFlagGroupingLength(\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>The flag to be evaluated.</p></div>
+</div></div>
+</div>
+<a id="method_evalFlagSorting"></a><div class="element clickable method protected method_evalFlagSorting" data-toggle="collapse" data-target=".method_evalFlagSorting .collapse">
+<h2>Evaluate the contao 2 sorting flag into sorting mode.</h2>
+<pre>evalFlagSorting(\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>The flag to be evaluated.</p></div>
+</div></div>
+</div>
+<a id="method_getRootProviderName"></a><div class="element clickable method protected method_getRootProviderName" data-toggle="collapse" data-target=".method_getRootProviderName .collapse">
+<h2>Determine the root provider name from the container.</h2>
+<pre>getRootProviderName(\DcGeneral\DataDefinition\ContainerInterface $container) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container from where the name shall be retrieved.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the root provider can not be determined.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_loadAdditionalDefinitions"></a><div class="element clickable method protected method_loadAdditionalDefinitions" data-toggle="collapse" data-target=".method_loadAdditionalDefinitions .collapse">
+<h2>Load additional definitions, like naming of parent data provider.</h2>
+<pre>loadAdditionalDefinitions(\DcGeneral\DataDefinition\ContainerInterface $container, \DcGeneral\Factory\Event\BuildDataDefinitionEvent $event) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method will register an event to the populate environment event in which the parent data provider container
+will get loaded.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">\DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code><p>The event being emitted.</p></div>
+</div></div>
+</div>
+<a id="method_parseBackendView"></a><div class="element clickable method protected method_parseBackendView" data-toggle="collapse" data-target=".method_parseBackendView .collapse">
+<h2>Parse and build the backend view definition for the old Contao2 backend view.</h2>
+<pre>parseBackendView(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>If the stored backend view definition does not implement the correct
+                                          interface.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_parseBasicDefinition"></a><div class="element clickable method protected method_parseBasicDefinition" data-toggle="collapse" data-target=".method_parseBasicDefinition .collapse">
+<h2>Parse the basic configuration and populate the definition.</h2>
+<pre>parseBasicDefinition(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parseBasicFlags"></a><div class="element clickable method protected method_parseBasicFlags" data-toggle="collapse" data-target=".method_parseBasicFlags .collapse">
+<h2>Parse the basic flags.</h2>
+<pre>parseBasicFlags(\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface $config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code><p>The basic definition of the data definition.</p></div>
+</div></div>
+</div>
+<a id="method_parseBasicMode"></a><div class="element clickable method protected method_parseBasicMode" data-toggle="collapse" data-target=".method_parseBasicMode .collapse">
+<h2>Parse the mode, flat, parented or hierarchical.</h2>
+<pre>parseBasicMode(\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface $config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code><p>The basic definition of the data definition.</p></div>
+</div></div>
+</div>
+<a id="method_parseCallbacks"></a><div class="element clickable method protected method_parseCallbacks" data-toggle="collapse" data-target=".method_parseCallbacks .collapse">
+<h2>Parse the basic configuration and populate the definition.</h2>
+<pre>parseCallbacks(\DcGeneral\DataDefinition\ContainerInterface $container, \Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<div class="subelement argument">
+<h4>$dispatcher</h4>
+<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher in use.</p></div>
+</div></div>
+</div>
+<a id="method_parseDataProvider"></a><div class="element clickable method protected method_parseDataProvider" data-toggle="collapse" data-target=".method_parseDataProvider .collapse">
+<h2>This method parses all data provider related information from Contao legacy data container arrays.</h2>
+<pre>parseDataProvider(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parseGlobalOperations"></a><div class="element clickable method protected method_parseGlobalOperations" data-toggle="collapse" data-target=".method_parseGlobalOperations .collapse">
+<h2>Parse the defined container scoped operations and populate the definition.</h2>
+<pre>parseGlobalOperations(\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The backend view configuration definition to populate.</p></div>
+</div></div>
+</div>
+<a id="method_parseListLabel"></a><div class="element clickable method protected method_parseListLabel" data-toggle="collapse" data-target=".method_parseListLabel .collapse">
+<h2>Parse the sorting part of listing configuration.</h2>
+<pre>parseListLabel(\DcGeneral\DataDefinition\ContainerInterface $container, \DcGeneral\DataDefinition\Definition\View\ListingConfigInterface $listing, array $listDca) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<div class="subelement argument">
+<h4>$listing</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><p>The listing configuration definition to populate.</p></div>
+<div class="subelement argument">
+<h4>$listDca</h4>
+<code>array</code><p>The DCA part containing the information to use.</p></div>
+</div></div>
+</div>
+<a id="method_parseListSorting"></a><div class="element clickable method protected method_parseListSorting" data-toggle="collapse" data-target=".method_parseListSorting .collapse">
+<h2>Parse the sorting part of listing configuration.</h2>
+<pre>parseListSorting(\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface $listing, array $listDca) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">NOTE: this method currently does NOT support the custom SQL sorting information as supported by DC_Table in
+Contao.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$listing</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><p>The listing configuration definition to populate.</p></div>
+<div class="subelement argument">
+<h4>$listDca</h4>
+<code>array</code><p>The DCA part containing the information to use.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>In case unsupported values are encountered.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_parseListing"></a><div class="element clickable method protected method_parseListing" data-toggle="collapse" data-target=".method_parseListing .collapse">
+<h2>Parse the listing configuration.</h2>
+<pre>parseListing(\DcGeneral\DataDefinition\ContainerInterface $container, \DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The view information for the backend view.</p></div>
+</div></div>
+</div>
+<a id="method_parseModelOperations"></a><div class="element clickable method protected method_parseModelOperations" data-toggle="collapse" data-target=".method_parseModelOperations .collapse">
+<h2>Parse the defined model scoped operations and populate the definition.</h2>
+<pre>parseModelOperations(\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The backend view configuration definition to populate.</p></div>
+</div></div>
+</div>
+<a id="method_parsePalettes"></a><div class="element clickable method protected method_parsePalettes" data-toggle="collapse" data-target=".method_parsePalettes .collapse">
+<h2>Parse the defined palettes and populate the definition.</h2>
+<pre>parsePalettes(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanel"></a><div class="element clickable method protected method_parsePanel" data-toggle="collapse" data-target=".method_parsePanel .collapse">
+<h2>Parse the defined palettes and populate the definition.</h2>
+<pre>parsePanel(\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The listing configuration definition to populate.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelFilter"></a><div class="element clickable method protected method_parsePanelFilter" data-toggle="collapse" data-target=".method_parsePanelFilter .collapse">
+<h2>Add filter elements to the panel.</h2>
+<pre>parsePanelFilter(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to which the element shall get added to.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelLimit"></a><div class="element clickable method protected method_parsePanelLimit" data-toggle="collapse" data-target=".method_parsePanelLimit .collapse">
+<h2>Add  elements to the panel.</h2>
+<pre>parsePanelLimit(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to which the element shall get added to.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelRow"></a><div class="element clickable method protected method_parsePanelRow" data-toggle="collapse" data-target=".method_parsePanelRow .collapse">
+<h2>Parse a single panel row.</h2>
+<pre>parsePanelRow(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row, string $elementList) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to be populated.</p></div>
+<div class="subelement argument">
+<h4>$elementList</h4>
+<code>string</code><p>A comma separated list of elements to be stored in the row.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelSearch"></a><div class="element clickable method protected method_parsePanelSearch" data-toggle="collapse" data-target=".method_parsePanelSearch .collapse">
+<h2>Add search element to the panel.</h2>
+<pre>parsePanelSearch(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to which the element shall get added to.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelSort"></a><div class="element clickable method protected method_parsePanelSort" data-toggle="collapse" data-target=".method_parsePanelSort .collapse">
+<h2>Add sort element to the panel.</h2>
+<pre>parsePanelSort(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to which the element shall get added to.</p></div>
+</div></div>
+</div>
+<a id="method_parsePanelSubmit"></a><div class="element clickable method protected method_parsePanelSubmit" data-toggle="collapse" data-target=".method_parsePanelSubmit .collapse">
+<h2>Add  elements to the panel.</h2>
+<pre>parsePanelSubmit(\DcGeneral\DataDefinition\Definition\View\PanelRowInterface $row) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$row</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">\DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code><p>The row to which the element shall get added to.</p></div>
+</div></div>
+</div>
+<a id="method_parseParentChildConditions"></a><div class="element clickable method protected method_parseParentChildConditions" data-toggle="collapse" data-target=".method_parseParentChildConditions .collapse">
+<h2>This method parses the parent-child conditions.</h2>
+<pre>parseParentChildConditions(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parseProperties"></a><div class="element clickable method protected method_parseProperties" data-toggle="collapse" data-target=".method_parseProperties .collapse">
+<h2>Parse the defined properties and populate the definition.</h2>
+<pre>parseProperties(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parseRootEntries"></a><div class="element clickable method protected method_parseRootEntries" data-toggle="collapse" data-target=".method_parseRootEntries .collapse">
+<h2>This method parses the root entries definition.</h2>
+<pre>parseRootEntries(\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+</div></div>
+</div>
+<a id="method_parseSingleProperty"></a><div class="element clickable method protected method_parseSingleProperty" data-toggle="collapse" data-target=".method_parseSingleProperty .collapse">
+<h2>parseSingleProperty()
+        </h2>
+<pre>parseSingleProperty(\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, array $propInfo) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$property</h4></div>
+<div class="subelement argument"><h4>$propInfo</h4></div>
+</div></div>
+</div>
+<a id="method_parseSinglePropertyLabel"></a><div class="element clickable method protected method_parseSinglePropertyLabel" data-toggle="collapse" data-target=".method_parseSinglePropertyLabel .collapse">
+<h2>Parse the label of a single property.</h2>
+<pre>parseSinglePropertyLabel(\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, string|array $label) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to parse the label for.</p></div>
+<div class="subelement argument">
+<h4>$label</h4>
+<code>string</code><code>array</code><p>The label value.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_PRIORITY"> </a><div class="element clickable constant  constant_PRIORITY" data-toggle="collapse" data-target=".constant_PRIORITY .collapse">
+<h2>PRIORITY</h2>
+<pre>PRIORITY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:31+01:00.<br></footer></div>
+</div>
+</body>
+</html>

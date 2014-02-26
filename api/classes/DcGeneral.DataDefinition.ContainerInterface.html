@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\ContainerInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addDefinitions" title="addDefinitions() :: Add multiple definitions to this container."><span class="description">Add multiple definitions to this container.</span><pre>addDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_clearDefinitions" title="clearDefinitions() :: Clear all definitions from this container."><span class="description">Clear all definitions from this container.</span><pre>clearDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_getBasicDefinition" title="getBasicDefinition() :: Convenience method to retrieve the basic definition."><span class="description">Convenience method to retrieve the basic definition.</span><pre>getBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDataProviderDefinition" title="getDataProviderDefinition() :: Convenience method to retrieve the data provider definition."><span class="description">Convenience method to retrieve the data provider definition.</span><pre>getDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDefinition" title="getDefinition() :: Get a definitions of this container."><span class="description">Get a definitions of this container.</span><pre>getDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDefinitionNames" title="getDefinitionNames() :: Get a list of all definition names in this container."><span class="description">Get a list of all definition names in this container.</span><pre>getDefinitionNames()</pre></a></li>
+<li class="method public "><a href="#method_getModelRelationshipDefinition" title="getModelRelationshipDefinition() :: Convenience method to retrieve the data provider definition."><span class="description">Convenience method to retrieve the data provider definition.</span><pre>getModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: Return the name of the container."><span class="description">Return the name of the container.</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getPalettesDefinition" title="getPalettesDefinition() :: Convenience method to retrieve the palettes definition to use."><span class="description">Convenience method to retrieve the palettes definition to use.</span><pre>getPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getPropertiesDefinition" title="getPropertiesDefinition() :: Convenience method to retrieve the properties definition to use."><span class="description">Convenience method to retrieve the properties definition to use.</span><pre>getPropertiesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasBasicDefinition" title="hasBasicDefinition() :: Convenience method to check if a basic definition is contained."><span class="description">Convenience method to check if a basic definition is contained.</span><pre>hasBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasDataProviderDefinition" title="hasDataProviderDefinition() :: Convenience method to check if a data provider definition is contained."><span class="description">Convenience method to check if a data provider definition is contained.</span><pre>hasDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasDefinition" title="hasDefinition() :: Check if this container has a definition."><span class="description">Check if this container has a definition.</span><pre>hasDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasModelRelationshipDefinition" title="hasModelRelationshipDefinition() :: Convenience method to check if a data provider definition is contained."><span class="description">Convenience method to check if a data provider definition is contained.</span><pre>hasModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasPalettesDefinition" title="hasPalettesDefinition() :: Convenience method to check if there has been a palettes definition defined."><span class="description">Convenience method to check if there has been a palettes definition defined.</span><pre>hasPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasPropertiesDefinition" title="hasPropertiesDefinition() :: Convenience method to check if there has been a properties definition defined."><span class="description">Convenience method to check if there has been a properties definition defined.</span><pre>hasPropertiesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_removeDefinition" title="removeDefinition() :: Remove a definitions from this container."><span class="description">Remove a definitions from this container.</span><pre>removeDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setBasicDefinition" title="setBasicDefinition() :: Convenience method to set the basic definition."><span class="description">Convenience method to set the basic definition.</span><pre>setBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDataProviderDefinition" title="setDataProviderDefinition() :: Convenience method to set the data provider definition."><span class="description">Convenience method to set the data provider definition.</span><pre>setDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDefinition" title="setDefinition() :: Set a definitions of this container."><span class="description">Set a definitions of this container.</span><pre>setDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDefinitions" title="setDefinitions() :: Set the definitions of this container."><span class="description">Set the definitions of this container.</span><pre>setDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_setModelRelationshipDefinition" title="setModelRelationshipDefinition() :: Convenience method to set the data provider definition."><span class="description">Convenience method to set the data provider definition.</span><pre>setModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setPalettesDefinition" title="setPalettesDefinition() :: Convenience method to set the palettes definition to use."><span class="description">Convenience method to set the palettes definition to use.</span><pre>setPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setPropertiesDefinition" title="setPropertiesDefinition() :: Convenience method to set the properties definition to use."><span class="description">Convenience method to set the properties definition to use.</span><pre>setPropertiesDefinition()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\ContainerInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">ContainerInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">This interface is the base of a data definition.</p>
+<div class="details">
+<div class="long_description">Within this interface, all the information about a data definition is to be found.
+
+Most commonly used definitions have their getter and setter defined in this interface, for those definitions that
+are not so common, please use the generic getter and setter using names.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.html">DcGeneral\DataDefinition</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addDefinitions"></a><div class="element clickable method public method_addDefinitions" data-toggle="collapse" data-target=".method_addDefinitions .collapse">
+<h2>Add multiple definitions to this container.</h2>
+<pre>addDefinitions(array|\DcGeneral\DataDefinition\Definition\DefinitionInterface[] $definitions) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitions</h4>
+<code>array</code><code><a href="DefinitionInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\DefinitionInterface[]</a></code><p>The definitons.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_clearDefinitions"></a><div class="element clickable method public method_clearDefinitions" data-toggle="collapse" data-target=".method_clearDefinitions .collapse">
+<h2>Clear all definitions from this container.</h2>
+<pre>clearDefinitions() : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getBasicDefinition"></a><div class="element clickable method public method_getBasicDefinition" data-toggle="collapse" data-target=".method_getBasicDefinition .collapse">
+<h2>Convenience method to retrieve the basic definition.</h2>
+<pre>getBasicDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDataProviderDefinition"></a><div class="element clickable method public method_getDataProviderDefinition" data-toggle="collapse" data-target=".method_getDataProviderDefinition .collapse">
+<h2>Convenience method to retrieve the data provider definition.</h2>
+<pre>getDataProviderDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.DataProviderDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.DataProviderDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDefinition"></a><div class="element clickable method public method_getDefinition" data-toggle="collapse" data-target=".method_getDefinition .collapse">
+<h2>Get a definitions of this container.</h2>
+<pre>getDefinition(string $definitionName) : <a href="../classes/DcGeneral.DataDefinition.Definition.DefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitionName</h4>
+<code>string</code><p>The name of the definition.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.DefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDefinitionNames"></a><div class="element clickable method public method_getDefinitionNames" data-toggle="collapse" data-target=".method_getDefinitionNames .collapse">
+<h2>Get a list of all definition names in this container.</h2>
+<pre>getDefinitionNames() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getModelRelationshipDefinition"></a><div class="element clickable method public method_getModelRelationshipDefinition" data-toggle="collapse" data-target=".method_getModelRelationshipDefinition .collapse">
+<h2>Convenience method to retrieve the data provider definition.</h2>
+<pre>getModelRelationshipDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.ModelRelationshipDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.ModelRelationshipDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Return the name of the container.</h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPalettesDefinition"></a><div class="element clickable method public method_getPalettesDefinition" data-toggle="collapse" data-target=".method_getPalettesDefinition .collapse">
+<h2>Convenience method to retrieve the palettes definition to use.</h2>
+<pre>getPalettesDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.PalettesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PalettesDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.PalettesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PalettesDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getPropertiesDefinition"></a><div class="element clickable method public method_getPropertiesDefinition" data-toggle="collapse" data-target=".method_getPropertiesDefinition .collapse">
+<h2>Convenience method to retrieve the properties definition to use.</h2>
+<pre>getPropertiesDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.PropertiesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.PropertiesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_hasBasicDefinition"></a><div class="element clickable method public method_hasBasicDefinition" data-toggle="collapse" data-target=".method_hasBasicDefinition .collapse">
+<h2>Convenience method to check if a basic definition is contained.</h2>
+<pre>hasBasicDefinition() : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_hasDataProviderDefinition"></a><div class="element clickable method public method_hasDataProviderDefinition" data-toggle="collapse" data-target=".method_hasDataProviderDefinition .collapse">
+<h2>Convenience method to check if a data provider definition is contained.</h2>
+<pre>hasDataProviderDefinition() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_hasDefinition"></a><div class="element clickable method public method_hasDefinition" data-toggle="collapse" data-target=".method_hasDefinition .collapse">
+<h2>Check if this container has a definition.</h2>
+<pre>hasDefinition(string $definitionName) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitionName</h4>
+<code>string</code><p>The name of the definition to check for.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_hasModelRelationshipDefinition"></a><div class="element clickable method public method_hasModelRelationshipDefinition" data-toggle="collapse" data-target=".method_hasModelRelationshipDefinition .collapse">
+<h2>Convenience method to check if a data provider definition is contained.</h2>
+<pre>hasModelRelationshipDefinition() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_hasPalettesDefinition"></a><div class="element clickable method public method_hasPalettesDefinition" data-toggle="collapse" data-target=".method_hasPalettesDefinition .collapse">
+<h2>Convenience method to check if there has been a palettes definition defined.</h2>
+<pre>hasPalettesDefinition() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_hasPropertiesDefinition"></a><div class="element clickable method public method_hasPropertiesDefinition" data-toggle="collapse" data-target=".method_hasPropertiesDefinition .collapse">
+<h2>Convenience method to check if there has been a properties definition defined.</h2>
+<pre>hasPropertiesDefinition() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_removeDefinition"></a><div class="element clickable method public method_removeDefinition" data-toggle="collapse" data-target=".method_removeDefinition .collapse">
+<h2>Remove a definitions from this container.</h2>
+<pre>removeDefinition(string $definitionName) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitionName</h4>
+<code>string</code><p>The name of the definition.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setBasicDefinition"></a><div class="element clickable method public method_setBasicDefinition" data-toggle="collapse" data-target=".method_setBasicDefinition .collapse">
+<h2>Convenience method to set the basic definition.</h2>
+<pre>setBasicDefinition(\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface $basicDefinition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$basicDefinition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code><p>The basic definition to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDataProviderDefinition"></a><div class="element clickable method public method_setDataProviderDefinition" data-toggle="collapse" data-target=".method_setDataProviderDefinition .collapse">
+<h2>Convenience method to set the data provider definition.</h2>
+<pre>setDataProviderDefinition(\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface $dataProviderDefinition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProviderDefinition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.DataProviderDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface</a></code><p>The data provider definition to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDefinition"></a><div class="element clickable method public method_setDefinition" data-toggle="collapse" data-target=".method_setDefinition .collapse">
+<h2>Set a definitions of this container.</h2>
+<pre>setDefinition(string $definitionName, \DcGeneral\DataDefinition\Definition\DefinitionInterface $definition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitionName</h4>
+<code>string</code><p>The name of the definition.</p></div>
+<div class="subelement argument">
+<h4>$definition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.DefinitionInterface.html">\DcGeneral\DataDefinition\Definition\DefinitionInterface</a></code><p>The definition.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDefinitions"></a><div class="element clickable method public method_setDefinitions" data-toggle="collapse" data-target=".method_setDefinitions .collapse">
+<h2>Set the definitions of this container.</h2>
+<pre>setDefinitions(array|\DcGeneral\DataDefinition\Definition\DefinitionInterface[] $definitions) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definitions</h4>
+<code>array</code><code><a href="DefinitionInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\DefinitionInterface[]</a></code><p>The definitons.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setModelRelationshipDefinition"></a><div class="element clickable method public method_setModelRelationshipDefinition" data-toggle="collapse" data-target=".method_setModelRelationshipDefinition .collapse">
+<h2>Convenience method to set the data provider definition.</h2>
+<pre>setModelRelationshipDefinition(\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface $definition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$definition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.ModelRelationshipDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</a></code><p>The model relationship definition to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setPalettesDefinition"></a><div class="element clickable method public method_setPalettesDefinition" data-toggle="collapse" data-target=".method_setPalettesDefinition .collapse">
+<h2>Convenience method to set the palettes definition to use.</h2>
+<pre>setPalettesDefinition(\DcGeneral\DataDefinition\Definition\PalettesDefinitionInterface $palettesDefinition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$palettesDefinition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.PalettesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PalettesDefinitionInterface</a></code><p>The palettes definition to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setPropertiesDefinition"></a><div class="element clickable method public method_setPropertiesDefinition" data-toggle="collapse" data-target=".method_setPropertiesDefinition .collapse">
+<h2>Convenience method to set the properties definition to use.</h2>
+<pre>setPropertiesDefinition(\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface $propertiesDefinition) : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertiesDefinition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.PropertiesDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface</a></code><p>The properties definition to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:27+01:00.<br></footer></div>
+</div>
+</body>
+</html>

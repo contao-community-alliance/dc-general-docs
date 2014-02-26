@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getCircularReference" title="getCircularReference() :: Get determinator if there exists a circular reference."><span class="description">Get determinator if there exists a circular reference.</span><pre>getCircularReference()</pre></a></li>
+<li class="method public "><a href="#method_getHrefAfter" title="getHrefAfter() :: Get the href for the paste after button."><span class="description">Get the href for the paste after button.</span><pre>getHrefAfter()</pre></a></li>
+<li class="method public "><a href="#method_getHrefInto" title="getHrefInto() :: Get the href for the paste into button."><span class="description">Get the href for the paste into button.</span><pre>getHrefInto()</pre></a></li>
+<li class="method public "><a href="#method_getHtmlPasteAfter" title="getHtmlPasteAfter() :: Get the html code for the paste after button."><span class="description">Get the html code for the paste after button.</span><pre>getHtmlPasteAfter()</pre></a></li>
+<li class="method public "><a href="#method_getHtmlPasteInto" title="getHtmlPasteInto() :: Get the html code for the paste after button."><span class="description">Get the html code for the paste after button.</span><pre>getHtmlPasteInto()</pre></a></li>
+<li class="method public "><a href="#method_getModel" title="getModel() :: Get the model currently in scope."><span class="description">Get the model currently in scope.</span><pre>getModel()</pre></a></li>
+<li class="method public "><a href="#method_getNext" title="getNext() :: Get the next model."><span class="description">Get the next model.</span><pre>getNext()</pre></a></li>
+<li class="method public "><a href="#method_getPrevious" title="getPrevious() :: Get the previous model."><span class="description">Get the previous model.</span><pre>getPrevious()</pre></a></li>
+<li class="method public "><a href="#method_isPasteAfterDisabled" title="isPasteAfterDisabled() :: Check if the paste after button shall be disabled."><span class="description">Check if the paste after button shall be disabled.</span><pre>isPasteAfterDisabled()</pre></a></li>
+<li class="method public "><a href="#method_isPasteIntoDisabled" title="isPasteIntoDisabled() :: Check if the paste into button shall be disabled."><span class="description">Check if the paste into button shall be disabled.</span><pre>isPasteIntoDisabled()</pre></a></li>
+<li class="method public "><a href="#method_setCircularReference" title="setCircularReference() :: Set determinator if there exists a circular reference."><span class="description">Set determinator if there exists a circular reference.</span><pre>setCircularReference()</pre></a></li>
+<li class="method public "><a href="#method_setHrefAfter" title="setHrefAfter() :: Set the href for the paste after button."><span class="description">Set the href for the paste after button.</span><pre>setHrefAfter()</pre></a></li>
+<li class="method public "><a href="#method_setHrefInto" title="setHrefInto() :: Set the href for the paste into button."><span class="description">Set the href for the paste into button.</span><pre>setHrefInto()</pre></a></li>
+<li class="method public "><a href="#method_setHtmlPasteAfter" title="setHtmlPasteAfter() :: Set the html code for the paste after button."><span class="description">Set the html code for the paste after button.</span><pre>setHtmlPasteAfter()</pre></a></li>
+<li class="method public "><a href="#method_setHtmlPasteInto" title="setHtmlPasteInto() :: Set the html code for the paste into button."><span class="description">Set the html code for the paste into button.</span><pre>setHtmlPasteInto()</pre></a></li>
+<li class="method public "><a href="#method_setModel" title="setModel() :: Set the model currently in scope."><span class="description">Set the model currently in scope.</span><pre>setModel()</pre></a></li>
+<li class="method public "><a href="#method_setNext" title="setNext() :: Set the next model."><span class="description">Set the next model.</span><pre>setNext()</pre></a></li>
+<li class="method public "><a href="#method_setPasteAfterDisabled" title="setPasteAfterDisabled() :: Set the determinator if the paste after button shall be disabled."><span class="description">Set the determinator if the paste after button shall be disabled.</span><pre>setPasteAfterDisabled()</pre></a></li>
+<li class="method public "><a href="#method_setPasteIntoDisabled" title="setPasteIntoDisabled() :: Set the determinator if the paste into button shall be disabled."><span class="description">Set the determinator if the paste into button shall be disabled.</span><pre>setPasteIntoDisabled()</pre></a></li>
+<li class="method public "><a href="#method_setPrevious" title="setPrevious() :: Set the previous model."><span class="description">Set the previous model.</span><pre>setPrevious()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_blnCircularReference" title="$blnCircularReference() :: Determinator if there is a circular reference from an item in the clipboard to the current model."><span class="description"></span><pre>$blnCircularReference</pre></a></li>
+<li class="property protected "><a href="#property_hrefAfter" title="$hrefAfter() :: The href information to use for the paste after button."><span class="description"></span><pre>$hrefAfter</pre></a></li>
+<li class="property protected "><a href="#property_hrefInto" title="$hrefInto() :: The href information to use for the paste into button."><span class="description"></span><pre>$hrefInto</pre></a></li>
+<li class="property protected "><a href="#property_htmlPasteAfter" title='$htmlPasteAfter() :: The Html code to use for the "paste after" button.'><span class="description"></span><pre>$htmlPasteAfter</pre></a></li>
+<li class="property protected "><a href="#property_htmlPasteInto" title='$htmlPasteInto() :: The Html code to use for the "paste into" button.'><span class="description"></span><pre>$htmlPasteInto</pre></a></li>
+<li class="property protected "><a href="#property_model" title="$model() :: The model to which the command shall be applied to."><span class="description"></span><pre>$model</pre></a></li>
+<li class="property protected "><a href="#property_next" title="$next() :: The next model in the list."><span class="description"></span><pre>$next</pre></a></li>
+<li class="property protected "><a href="#property_pasteAfterDisabled" title="$pasteAfterDisabled() :: Determinator if the paste after button shall be disabled."><span class="description"></span><pre>$pasteAfterDisabled</pre></a></li>
+<li class="property protected "><a href="#property_pasteIntoDisabled" title="$pasteIntoDisabled() :: Determinator if the paste into button shall be disabled."><span class="description"></span><pre>$pasteIntoDisabled</pre></a></li>
+<li class="property protected "><a href="#property_previous" title="$previous() :: The previous model in the list."><span class="description"></span><pre>$previous</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul><li class="constant  "><a href="#constant_NAME" title="NAME() :: "><span class="description">NAME</span><pre>NAME</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">GetPasteButtonEvent</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class GetPasteButtonEvent.</p>
+<div class="details">
+<div class="long_description">This event gets emitted when a paste button is generated.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.Event.html">DcGeneral\Contao\View\Contao2BackendView\Event</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getCircularReference"></a><div class="element clickable method public method_getCircularReference" data-toggle="collapse" data-target=".method_getCircularReference .collapse">
+<h2>Get determinator if there exists a circular reference.</h2>
+<pre>getCircularReference() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This flag determines if there exists a circular reference between the item currently in the clipboard and the
+current model. A circular reference is of relevance when performing a cut and paste operation for example.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getHrefAfter"></a><div class="element clickable method public method_getHrefAfter" data-toggle="collapse" data-target=".method_getHrefAfter .collapse">
+<h2>Get the href for the paste after button.</h2>
+<pre>getHrefAfter() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getHrefInto"></a><div class="element clickable method public method_getHrefInto" data-toggle="collapse" data-target=".method_getHrefInto .collapse">
+<h2>Get the href for the paste into button.</h2>
+<pre>getHrefInto() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getHtmlPasteAfter"></a><div class="element clickable method public method_getHtmlPasteAfter" data-toggle="collapse" data-target=".method_getHtmlPasteAfter .collapse">
+<h2>Get the html code for the paste after button.</h2>
+<pre>getHtmlPasteAfter() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getHtmlPasteInto"></a><div class="element clickable method public method_getHtmlPasteInto" data-toggle="collapse" data-target=".method_getHtmlPasteInto .collapse">
+<h2>Get the html code for the paste after button.</h2>
+<pre>getHtmlPasteInto() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getModel"></a><div class="element clickable method public method_getModel" data-toggle="collapse" data-target=".method_getModel .collapse">
+<h2>Get the model currently in scope.</h2>
+<pre>getModel() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getNext"></a><div class="element clickable method public method_getNext" data-toggle="collapse" data-target=".method_getNext .collapse">
+<h2>Get the next model.</h2>
+<pre>getNext() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getPrevious"></a><div class="element clickable method public method_getPrevious" data-toggle="collapse" data-target=".method_getPrevious .collapse">
+<h2>Get the previous model.</h2>
+<pre>getPrevious() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_isPasteAfterDisabled"></a><div class="element clickable method public method_isPasteAfterDisabled" data-toggle="collapse" data-target=".method_isPasteAfterDisabled .collapse">
+<h2>Check if the paste after button shall be disabled.</h2>
+<pre>isPasteAfterDisabled() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isPasteIntoDisabled"></a><div class="element clickable method public method_isPasteIntoDisabled" data-toggle="collapse" data-target=".method_isPasteIntoDisabled .collapse">
+<h2>Check if the paste into button shall be disabled.</h2>
+<pre>isPasteIntoDisabled() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_setCircularReference"></a><div class="element clickable method public method_setCircularReference" data-toggle="collapse" data-target=".method_setCircularReference .collapse">
+<h2>Set determinator if there exists a circular reference.</h2>
+<pre>setCircularReference(boolean $blnCircularReference) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This flag determines if there exists a circular reference between the item currently in the clipboard and the
+current model. A circular reference is of relevance when performing a cut and paste operation for example.</div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnCircularReference</h4>
+<code>boolean</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setHrefAfter"></a><div class="element clickable method public method_setHrefAfter" data-toggle="collapse" data-target=".method_setHrefAfter .collapse">
+<h2>Set the href for the paste after button.</h2>
+<pre>setHrefAfter(string $hrefAfter) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$hrefAfter</h4>
+<code>string</code><p>The href.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setHrefInto"></a><div class="element clickable method public method_setHrefInto" data-toggle="collapse" data-target=".method_setHrefInto .collapse">
+<h2>Set the href for the paste into button.</h2>
+<pre>setHrefInto(string $hrefInto) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$hrefInto</h4>
+<code>string</code><p>The href.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setHtmlPasteAfter"></a><div class="element clickable method public method_setHtmlPasteAfter" data-toggle="collapse" data-target=".method_setHtmlPasteAfter .collapse">
+<h2>Set the html code for the paste after button.</h2>
+<pre>setHtmlPasteAfter(string $html) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>The HTML code.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setHtmlPasteInto"></a><div class="element clickable method public method_setHtmlPasteInto" data-toggle="collapse" data-target=".method_setHtmlPasteInto .collapse">
+<h2>Set the html code for the paste into button.</h2>
+<pre>setHtmlPasteInto(string $html) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>The HTML code.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setModel"></a><div class="element clickable method public method_setModel" data-toggle="collapse" data-target=".method_setModel .collapse">
+<h2>Set the model currently in scope.</h2>
+<pre>setModel(\DcGeneral\Data\ModelInterface $model) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model currently in scope.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setNext"></a><div class="element clickable method public method_setNext" data-toggle="collapse" data-target=".method_setNext .collapse">
+<h2>Set the next model.</h2>
+<pre>setNext(\DcGeneral\Data\ModelInterface $next) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$next</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The next model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setPasteAfterDisabled"></a><div class="element clickable method public method_setPasteAfterDisabled" data-toggle="collapse" data-target=".method_setPasteAfterDisabled .collapse">
+<h2>Set the determinator if the paste after button shall be disabled.</h2>
+<pre>setPasteAfterDisabled(boolean $pasteAfterDisabled) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pasteAfterDisabled</h4>
+<code>boolean</code><p>Determinator flag for the disabling state.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setPasteIntoDisabled"></a><div class="element clickable method public method_setPasteIntoDisabled" data-toggle="collapse" data-target=".method_setPasteIntoDisabled .collapse">
+<h2>Set the determinator if the paste into button shall be disabled.</h2>
+<pre>setPasteIntoDisabled(boolean $pasteIntoDisabled) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pasteIntoDisabled</h4>
+<code>boolean</code><p>Determinator flag for the disabling state.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setPrevious"></a><div class="element clickable method public method_setPrevious" data-toggle="collapse" data-target=".method_setPrevious .collapse">
+<h2>Set the previous model.</h2>
+<pre>setPrevious(\DcGeneral\Data\ModelInterface $previous) : \DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$previous</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The previous model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_blnCircularReference"> </a><div class="element clickable property protected property_blnCircularReference" data-toggle="collapse" data-target=".property_blnCircularReference .collapse">
+<h2>Determinator if there is a circular reference from an item in the clipboard to the current model.</h2>
+<pre>$blnCircularReference : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_hrefAfter"> </a><div class="element clickable property protected property_hrefAfter" data-toggle="collapse" data-target=".property_hrefAfter .collapse">
+<h2>The href information to use for the paste after button.</h2>
+<pre>$hrefAfter : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_hrefInto"> </a><div class="element clickable property protected property_hrefInto" data-toggle="collapse" data-target=".property_hrefInto .collapse">
+<h2>The href information to use for the paste into button.</h2>
+<pre>$hrefInto : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_htmlPasteAfter"> </a><div class="element clickable property protected property_htmlPasteAfter" data-toggle="collapse" data-target=".property_htmlPasteAfter .collapse">
+<h2>The Html code to use for the "paste after" button.</h2>
+<pre>$htmlPasteAfter : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_htmlPasteInto"> </a><div class="element clickable property protected property_htmlPasteInto" data-toggle="collapse" data-target=".property_htmlPasteInto .collapse">
+<h2>The Html code to use for the "paste into" button.</h2>
+<pre>$htmlPasteInto : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_model"> </a><div class="element clickable property protected property_model" data-toggle="collapse" data-target=".property_model .collapse">
+<h2>The model to which the command shall be applied to.</h2>
+<pre>$model : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_next"> </a><div class="element clickable property protected property_next" data-toggle="collapse" data-target=".property_next .collapse">
+<h2>The next model in the list.</h2>
+<pre>$next : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_pasteAfterDisabled"> </a><div class="element clickable property protected property_pasteAfterDisabled" data-toggle="collapse" data-target=".property_pasteAfterDisabled .collapse">
+<h2>Determinator if the paste after button shall be disabled.</h2>
+<pre>$pasteAfterDisabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_pasteIntoDisabled"> </a><div class="element clickable property protected property_pasteIntoDisabled" data-toggle="collapse" data-target=".property_pasteIntoDisabled .collapse">
+<h2>Determinator if the paste into button shall be disabled.</h2>
+<pre>$pasteIntoDisabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_previous"> </a><div class="element clickable property protected property_previous" data-toggle="collapse" data-target=".property_previous .collapse">
+<h2>The previous model in the list.</h2>
+<pre>$previous : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_NAME"> </a><div class="element clickable constant  constant_NAME" data-toggle="collapse" data-target=".constant_NAME .collapse">
+<h2>NAME</h2>
+<pre>NAME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:30+01:00.<br></footer></div>
+</div>
+</body>
+</html>

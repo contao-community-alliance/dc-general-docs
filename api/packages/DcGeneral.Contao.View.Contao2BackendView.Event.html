@@ -1,0 +1,265 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » DcGeneral\Contao\View\Contao2BackendView\Event</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/DcGeneral.Contao.View.Contao2BackendView.Event.html" title="Event"><i class="icon-folder-open"></i>Event</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#GetPasteRootButtonEvent" title="Class GetPasteRootButtonEvent.">GetPasteRootButtonEvent</a></li>
+<li><a href="#ResolveWidgetErrorMessageEvent" title="Class ResolveWidgetErrorMessageEvent.">ResolveWidgetErrorMessageEvent</a></li>
+<li><a href="#GetParentHeaderEvent" title="Class GetParentHeaderEvent.">GetParentHeaderEvent</a></li>
+<li><a href="#GetBreadcrumbEvent" title="Class GetBreadcrumbEvent.">GetBreadcrumbEvent</a></li>
+<li><a href="#EncodePropertyValueFromWidgetEvent" title="Class EncodePropertyValueFromWidgetEvent.">EncodePropertyValueFromWidgetEvent</a></li>
+<li><a href="#GetGlobalButtonEvent" title="Class GetGlobalButtonEvent.">GetGlobalButtonEvent</a></li>
+<li><a href="#GetSelectModeButtonsEvent" title="Class GetSelectModeButtonsEvent.">GetSelectModeButtonsEvent</a></li>
+<li><a href="#GetGroupHeaderEvent" title="Class GetGroupHeaderEvent.">GetGroupHeaderEvent</a></li>
+<li><a href="#BaseGetButtonsEvent" title="Class BaseGetButtonsEvent.">BaseGetButtonsEvent</a></li>
+<li><a href="#ModelToLabelEvent" title="Class ModelToLabelEvent.">ModelToLabelEvent</a></li>
+<li><a href="#DecodePropertyValueForWidgetEvent" title="Class DecodePropertyValueForWidgetEvent.">DecodePropertyValueForWidgetEvent</a></li>
+<li><a href="#GetOperationButtonEvent" title="Class GetOperationButtonEvent.">GetOperationButtonEvent</a></li>
+<li><a href="#GetPasteButtonEvent" title="Class GetPasteButtonEvent.">GetPasteButtonEvent</a></li>
+<li><a href="#ParentViewChildRecordEvent" title="Class ParentViewChildRecordEvent.">ParentViewChildRecordEvent</a></li>
+<li><a href="#GetEditModeButtonsEvent" title="Class GetEditModeButtonsEvent.">GetEditModeButtonsEvent</a></li>
+<li><a href="#GetGlobalButtonsEvent" title="Class GetGlobalButtonsEvent.">GetGlobalButtonsEvent</a></li>
+<li><a href="#ManipulateWidgetEvent" title="Class ManipulateWidgetEvent.">ManipulateWidgetEvent</a></li>
+<li><a href="#BaseButtonEvent" title="Class BaseButtonEvent.">BaseButtonEvent</a></li>
+<li><a href="#GetPropertyOptionsEvent" title="Class GetPropertyOptionsEvent.">GetPropertyOptionsEvent</a></li>
+<li><a href="#BuildWidgetEvent" title="Class BuildWidgetEvent.">BuildWidgetEvent</a></li>
+<li><a href="#EditModelBeforeSaveEvent" title="Class EditModelBeforeSaveEvent.">EditModelBeforeSaveEvent</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="BaseButtonEvent" class="element ajax clickable class">
+<h1>BaseButtonEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BaseButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="BaseGetButtonsEvent" class="element ajax clickable class">
+<h1>BaseGetButtonsEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BaseGetButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BaseGetButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BaseGetButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="BuildWidgetEvent" class="element ajax clickable class">
+<h1>BuildWidgetEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BuildWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BuildWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.BuildWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="DecodePropertyValueForWidgetEvent" class="element ajax clickable class">
+<h1>DecodePropertyValueForWidgetEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.DecodePropertyValueForWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class DecodePropertyValueForWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.DecodePropertyValueForWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="EditModelBeforeSaveEvent" class="element ajax clickable class">
+<h1>EditModelBeforeSaveEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.EditModelBeforeSaveEvent.html">¶</a>
+</h1>
+<p class="short_description">Class EditModelBeforeSaveEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.EditModelBeforeSaveEvent.html" class="more">« More »</a>
+</div>
+<div id="EncodePropertyValueFromWidgetEvent" class="element ajax clickable class">
+<h1>EncodePropertyValueFromWidgetEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class EncodePropertyValueFromWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="GetBreadcrumbEvent" class="element ajax clickable class">
+<h1>GetBreadcrumbEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetBreadcrumbEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetBreadcrumbEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetBreadcrumbEvent.html" class="more">« More »</a>
+</div>
+<div id="GetEditModeButtonsEvent" class="element ajax clickable class">
+<h1>GetEditModeButtonsEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetEditModeButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetEditModeButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetEditModeButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGlobalButtonEvent" class="element ajax clickable class">
+<h1>GetGlobalButtonEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGlobalButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGlobalButtonsEvent" class="element ajax clickable class">
+<h1>GetGlobalButtonsEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGlobalButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGroupHeaderEvent" class="element ajax clickable class">
+<h1>GetGroupHeaderEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGroupHeaderEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGroupHeaderEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetGroupHeaderEvent.html" class="more">« More »</a>
+</div>
+<div id="GetOperationButtonEvent" class="element ajax clickable class">
+<h1>GetOperationButtonEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetOperationButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetParentHeaderEvent" class="element ajax clickable class">
+<h1>GetParentHeaderEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetParentHeaderEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetParentHeaderEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetParentHeaderEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPasteButtonEvent" class="element ajax clickable class">
+<h1>GetPasteButtonEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPasteButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPasteRootButtonEvent" class="element ajax clickable class">
+<h1>GetPasteRootButtonEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPasteRootButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPropertyOptionsEvent" class="element ajax clickable class">
+<h1>GetPropertyOptionsEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPropertyOptionsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPropertyOptionsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPropertyOptionsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetSelectModeButtonsEvent" class="element ajax clickable class">
+<h1>GetSelectModeButtonsEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetSelectModeButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetSelectModeButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetSelectModeButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="ManipulateWidgetEvent" class="element ajax clickable class">
+<h1>ManipulateWidgetEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ManipulateWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ManipulateWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ManipulateWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="ModelToLabelEvent" class="element ajax clickable class">
+<h1>ModelToLabelEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ModelToLabelEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ModelToLabelEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ModelToLabelEvent.html" class="more">« More »</a>
+</div>
+<div id="ParentViewChildRecordEvent" class="element ajax clickable class">
+<h1>ParentViewChildRecordEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ParentViewChildRecordEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ParentViewChildRecordEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ParentViewChildRecordEvent.html" class="more">« More »</a>
+</div>
+<div id="ResolveWidgetErrorMessageEvent" class="element ajax clickable class">
+<h1>ResolveWidgetErrorMessageEvent<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ResolveWidgetErrorMessageEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ResolveWidgetErrorMessageEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.ResolveWidgetErrorMessageEvent.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:24+01:00.<br></footer></div>
+</div>
+</body>
+</html>

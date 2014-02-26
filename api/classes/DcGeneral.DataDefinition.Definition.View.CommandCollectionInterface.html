@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addCommand" title="addCommand() :: Add an command to this collection."><span class="description">Add an command to this collection.</span><pre>addCommand()</pre></a></li>
+<li class="method public "><a href="#method_addCommands" title="addCommands() :: Add commands to this collection."><span class="description">Add commands to this collection.</span><pre>addCommands()</pre></a></li>
+<li class="method public "><a href="#method_clearCommands" title="clearCommands() :: Remove all commands from this collection."><span class="description">Remove all commands from this collection.</span><pre>clearCommands()</pre></a></li>
+<li class="method public "><a href="#method_getCommandNamed" title="getCommandNamed() :: Get command with given name from this collection."><span class="description">Get command with given name from this collection.</span><pre>getCommandNamed()</pre></a></li>
+<li class="method public "><a href="#method_getCommands" title="getCommands() :: Get commands from this collection."><span class="description">Get commands from this collection.</span><pre>getCommands()</pre></a></li>
+<li class="method public "><a href="#method_hasCommand" title="hasCommand() :: Check if the command exists in this collection."><span class="description">Check if the command exists in this collection.</span><pre>hasCommand()</pre></a></li>
+<li class="method public "><a href="#method_hasCommandNamed" title="hasCommandNamed() :: Check if the command with a given name exists in this collection."><span class="description">Check if the command with a given name exists in this collection.</span><pre>hasCommandNamed()</pre></a></li>
+<li class="method public "><a href="#method_removeCommand" title="removeCommand() :: Remove an command from this collection."><span class="description">Remove an command from this collection.</span><pre>removeCommand()</pre></a></li>
+<li class="method public "><a href="#method_removeCommandNamed" title="removeCommandNamed() :: Remove an command with given name from this collection."><span class="description">Remove an command with given name from this collection.</span><pre>removeCommandNamed()</pre></a></li>
+<li class="method public "><a href="#method_removeCommands" title="removeCommands() :: Remove commands from this collection."><span class="description">Remove commands from this collection.</span><pre>removeCommands()</pre></a></li>
+<li class="method public "><a href="#method_setCommands" title="setCommands() :: Set the commands of this collection."><span class="description">Set the commands of this collection.</span><pre>setCommands()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.View.html">View</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">CommandCollectionInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">Interface CommandCollectionInterface.</p>
+<div class="details">
+<div class="long_description">This interface describes a collection of commands.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.View.html">DcGeneral\DataDefinition\Definition\View</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addCommand"></a><div class="element clickable method public method_addCommand" data-toggle="collapse" data-target=".method_addCommand .collapse">
+<h2>Add an command to this collection.</h2>
+<pre>addCommand(\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$command</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command to add.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_addCommands"></a><div class="element clickable method public method_addCommands" data-toggle="collapse" data-target=".method_addCommands .collapse">
+<h2>Add commands to this collection.</h2>
+<pre>addCommands(\DcGeneral\DataDefinition\Definition\View\CommandInterface[]|array $commands) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$commands</h4>
+<code><a href="CommandInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a></code><code>array</code><p>The commands that shall be added to the collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_clearCommands"></a><div class="element clickable method public method_clearCommands" data-toggle="collapse" data-target=".method_clearCommands .collapse">
+<h2>Remove all commands from this collection.</h2>
+<pre>clearCommands() : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getCommandNamed"></a><div class="element clickable method public method_getCommandNamed" data-toggle="collapse" data-target=".method_getCommandNamed .collapse">
+<h2>Get command with given name from this collection.</h2>
+<pre>getCommandNamed(string $name) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The command name to search.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>If no command was found.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getCommands"></a><div class="element clickable method public method_getCommands" data-toggle="collapse" data-target=".method_getCommands .collapse">
+<h2>Get commands from this collection.</h2>
+<pre>getCommands() : <a href="CommandInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a> | array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="CommandInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a></code><code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_hasCommand"></a><div class="element clickable method public method_hasCommand" data-toggle="collapse" data-target=".method_hasCommand .collapse">
+<h2>Check if the command exists in this collection.</h2>
+<pre>hasCommand(\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$command</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command instance to search for.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_hasCommandNamed"></a><div class="element clickable method public method_hasCommandNamed" data-toggle="collapse" data-target=".method_hasCommandNamed .collapse">
+<h2>Check if the command with a given name exists in this collection.</h2>
+<pre>hasCommandNamed(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The command name to search.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_removeCommand"></a><div class="element clickable method public method_removeCommand" data-toggle="collapse" data-target=".method_removeCommand .collapse">
+<h2>Remove an command from this collection.</h2>
+<pre>removeCommand(\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$command</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command to remove.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_removeCommandNamed"></a><div class="element clickable method public method_removeCommandNamed" data-toggle="collapse" data-target=".method_removeCommandNamed .collapse">
+<h2>Remove an command with given name from this collection.</h2>
+<pre>removeCommandNamed(string $name) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The command name to remove.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_removeCommands"></a><div class="element clickable method public method_removeCommands" data-toggle="collapse" data-target=".method_removeCommands .collapse">
+<h2>Remove commands from this collection.</h2>
+<pre>removeCommands(\DcGeneral\DataDefinition\Definition\View\CommandInterface[]|array $commands) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$commands</h4>
+<code><a href="CommandInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a></code><code>array</code><p>The commands that shall be removed from the collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setCommands"></a><div class="element clickable method public method_setCommands" data-toggle="collapse" data-target=".method_setCommands .collapse">
+<h2>Set the commands of this collection.</h2>
+<pre>setCommands(\DcGeneral\DataDefinition\Definition\View\CommandInterface[]|array $commands) : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$commands</h4>
+<code><a href="CommandInterface%5B%5D.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a></code><code>array</code><p>The commands that shall be contained within the collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:26+01:00.<br></footer></div>
+</div>
+</body>
+</html>

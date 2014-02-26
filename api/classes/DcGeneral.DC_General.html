@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DC_General</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___call" title="__call() :: Delegate all calls directly to current view."><span class="description">Delegate all calls directly to current view.</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get() :: Magic getter."><span class="description">Magic getter.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method_copy" title="copy() :: Do not use."><span class="description">Do not use.</span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Do not use."><span class="description">Do not use.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: Do not use."><span class="description">Do not use.</span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete() :: Do not use."><span class="description">Do not use.</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_edit" title="edit() :: Do not use."><span class="description">Do not use.</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_getControllerHandler" title="getControllerHandler() :: Retrieve the controller."><span class="description">Retrieve the controller.</span><pre>getControllerHandler()</pre></a></li>
+<li class="method public "><a href="#method_getDCA" title="getDCA() :: Retrieve the DCA."><span class="description">Retrieve the DCA.</span><pre>getDCA()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the environment."><span class="description">Retrieve the environment.</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: Retrieve the name of the data container."><span class="description">Retrieve the name of the data container.</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getViewHandler" title="getViewHandler() :: Retrieve the view."><span class="description">Retrieve the view.</span><pre>getViewHandler()</pre></a></li>
+<li class="method public "><a href="#method_handlePopulateEnvironment" title="handlePopulateEnvironment() :: Callback coming from the environment populator."><span class="description">Callback coming from the environment populator.</span><pre>handlePopulateEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_move" title="move() :: Do not use."><span class="description">Do not use.</span><pre>move()</pre></a></li>
+<li class="method public "><a href="#method_show" title="show() :: Do not use."><span class="description">Do not use.</span><pre>show()</pre></a></li>
+<li class="method public "><a href="#method_showAll" title="showAll() :: Do not use."><span class="description">Do not use.</span><pre>showAll()</pre></a></li>
+<li class="method public "><a href="#method_undo" title="undo() :: Do not use."><span class="description">Do not use.</span><pre>undo()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_getTablenameCallback" title="getTablenameCallback() :: Call the table name callback."><span class="description">Call the table name callback.</span><pre>getTablenameCallback()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_arrDCA" title="$arrDCA() :: DCA configuration."><span class="description"></span><pre>$arrDCA</pre></a></li>
+<li class="property protected "><a href="#property_arrFields" title="$arrFields() :: A list with all field for this dca."><span class="description"></span><pre>$arrFields</pre></a></li>
+<li class="property protected "><a href="#property_objEnvironment" title="$objEnvironment() :: The environment attached to this DC."><span class="description"></span><pre>$objEnvironment</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DC_General"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DC_General.html">DC_General</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
+<h2>Delegate all calls directly to current view.</h2>
+<pre>__call(string $name, array $arguments) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of the method.</p></div>
+<div class="subelement argument">
+<h4>$arguments</h4>
+<code>array</code><p>Array of arguments.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance.</h2>
+<pre>__construct(string $strTable, array $arrDCA, bool $blnOnloadCallback) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>The table name.</p></div>
+<div class="subelement argument">
+<h4>$arrDCA</h4>
+<code>array</code><p>The Dca array.</p></div>
+<div class="subelement argument">
+<h4>$blnOnloadCallback</h4>
+<code>bool</code><p>Fire the onload callback.</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Magic getter.</h2>
+<pre>__get(string $name) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>magic access is deprecated.</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of the property to retrieve.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If an invalid key is requested.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>Do not use.</h2>
+<pre>copy() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \editable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Do not use.</h2>
+<pre>create() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \editable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
+<h2>Do not use.</h2>
+<pre>cut() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \editable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Do not use.</h2>
+<pre>delete() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \listable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_edit"></a><div class="element clickable method public method_edit" data-toggle="collapse" data-target=".method_edit .collapse">
+<h2>Do not use.</h2>
+<pre>edit() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \editable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getControllerHandler"></a><div class="element clickable method public method_getControllerHandler" data-toggle="collapse" data-target=".method_getControllerHandler .collapse">
+<h2>Retrieve the controller.</h2>
+<pre>getControllerHandler() : <a href="../classes/DcGeneral.Controller.ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDCA"></a><div class="element clickable method public method_getDCA" data-toggle="collapse" data-target=".method_getDCA .collapse">
+<h2>Retrieve the DCA.</h2>
+<pre>getDCA() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>Retrieve the environment.</h2>
+<pre>getEnvironment() : <a href="../classes/DcGeneral.EnvironmentInterface.html">\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no environment has been set.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.EnvironmentInterface.html">\DcGeneral\EnvironmentInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Retrieve the name of the data container.</h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getViewHandler"></a><div class="element clickable method public method_getViewHandler" data-toggle="collapse" data-target=".method_getViewHandler .collapse">
+<h2>Retrieve the view.</h2>
+<pre>getViewHandler() : <a href="../classes/DcGeneral.View.ViewInterface.html">\DcGeneral\View\ViewInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.View.ViewInterface.html">\DcGeneral\View\ViewInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_handlePopulateEnvironment"></a><div class="element clickable method public method_handlePopulateEnvironment" data-toggle="collapse" data-target=".method_handlePopulateEnvironment .collapse">
+<h2>Callback coming from the environment populator.</h2>
+<pre>handlePopulateEnvironment(\DcGeneral\Factory\Event\PopulateEnvironmentEvent $event) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This is used to get to know the environment here in the DC.
+See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCallback().</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/DcGeneral.Factory.Event.PopulateEnvironmentEvent.html">\DcGeneral\Factory\Event\PopulateEnvironmentEvent</a></code><p>The event.</p></div>
+</div></div>
+</div>
+<a id="method_move"></a><div class="element clickable method public method_move" data-toggle="collapse" data-target=".method_move .collapse">
+<h2>Do not use.</h2>
+<pre>move() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \editable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_show"></a><div class="element clickable method public method_show" data-toggle="collapse" data-target=".method_show .collapse">
+<h2>Do not use.</h2>
+<pre>show() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \listable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_showAll"></a><div class="element clickable method public method_showAll" data-toggle="collapse" data-target=".method_showAll .collapse">
+<h2>Do not use.</h2>
+<pre>showAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \listable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_undo"></a><div class="element clickable method public method_undo" data-toggle="collapse" data-target=".method_undo .collapse">
+<h2>Do not use.</h2>
+<pre>undo() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only here as requirement of \listable</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getTablenameCallback"></a><div class="element clickable method protected method_getTablenameCallback" data-toggle="collapse" data-target=".method_getTablenameCallback .collapse">
+<h2>Call the table name callback.</h2>
+<pre>getTablenameCallback(string $strTable) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>The current table name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>New name of current table.</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_arrDCA"> </a><div class="element clickable property protected property_arrDCA" data-toggle="collapse" data-target=".property_arrDCA .collapse">
+<h2>DCA configuration.</h2>
+<pre>$arrDCA : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_arrFields"> </a><div class="element clickable property protected property_arrFields" data-toggle="collapse" data-target=".property_arrFields .collapse">
+<h2>A list with all field for this dca.</h2>
+<pre>$arrFields : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objEnvironment"> </a><div class="element clickable property protected property_objEnvironment" data-toggle="collapse" data-target=".property_objEnvironment .collapse">
+<h2>The environment attached to this DC.</h2>
+<pre>$objEnvironment : <a href="../classes/DcGeneral.EnvironmentInterface.html">\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:31+01:00.<br></footer></div>
+</div>
+</body>
+</html>

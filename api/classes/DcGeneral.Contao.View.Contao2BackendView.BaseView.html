@@ -1,0 +1,994 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Contao\View\Contao2BackendView\BaseView</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_checkClipboard" title="checkClipboard() :: Update the clipboard in the Environment with data from the InputProvider."><span class="description">Update the clipboard in the Environment with data from the InputProvider.</span><pre>checkClipboard()</pre></a></li>
+<li class="method public "><a href="#method_copy" title="copy() :: "><span class="description">copy()
+        </span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_copyAll" title="copyAll() :: "><span class="description">copyAll()
+        </span><pre>copyAll()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Create a new item."><span class="description">Create a new item.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: "><span class="description">cut()
+        </span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_cutAll" title="cutAll() :: "><span class="description">cutAll()
+        </span><pre>cutAll()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete() :: Delete a model and redirect the user to the listing."><span class="description">Delete a model and redirect the user to the listing.</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_edit" title="edit() :: Generate the view for edit."><span class="description">Generate the view for edit.</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: Abstract method to be overridden in the certain child classes."><span class="description">Abstract method to be overridden in the certain child classes.</span><pre>enforceModelRelationship()</pre></a></li>
+<li class="method public "><a href="#method_formatCurrentValue" title="formatCurrentValue() :: Return the formatted value for use in group headers as string."><span class="description">Return the formatted value for use in group headers as string.</span><pre>formatCurrentValue()</pre></a></li>
+<li class="method public "><a href="#method_formatModel" title="formatModel() :: Format a model accordingly to the current configuration."><span class="description">Format a model accordingly to the current configuration.</span><pre>formatModel()</pre></a></li>
+<li class="method public "><a href="#method_generateAjaxPalette" title="generateAjaxPalette() :: Generates a sub palette for the given selector (field name)."><span class="description">Generates a sub palette for the given selector (field name).</span><pre>generateAjaxPalette()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getPanel" title="getPanel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getPanel()</pre></a></li>
+<li class="method public "><a href="#method_getReadableFieldValue" title="getReadableFieldValue() :: Get for a field the readable value."><span class="description">Get for a field the readable value.</span><pre>getReadableFieldValue()</pre></a></li>
+<li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: TODO: Handle an ajax call, this method is currently not implemented."><span class="description">TODO: Handle an ajax call, this method is currently not implemented.</span><pre>handleAjaxCall()</pre></a></li>
+<li class="method public "><a href="#method_move" title="move() :: "><span class="description">move()
+        </span><pre>move()</pre></a></li>
+<li class="method public "><a href="#method_paste" title="paste() :: "><span class="description">paste()
+        </span><pre>paste()</pre></a></li>
+<li class="method public "><a href="#method_processInput" title="processInput() :: Process input and return all modified properties or null if there is no input."><span class="description">Process input and return all modified properties or null if there is no input.</span><pre>processInput()</pre></a></li>
+<li class="method public "><a href="#method_renderPasteAfterButton" title="renderPasteAfterButton() :: Render the paste after button."><span class="description">Render the paste after button.</span><pre>renderPasteAfterButton()</pre></a></li>
+<li class="method public "><a href="#method_renderPasteIntoButton" title="renderPasteIntoButton() :: Render the paste into button."><span class="description">Render the paste into button.</span><pre>renderPasteIntoButton()</pre></a></li>
+<li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_setPanel" title="setPanel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setPanel()</pre></a></li>
+<li class="method public "><a href="#method_show" title="show() :: Show Information about a model."><span class="description">Show Information about a model.</span><pre>show()</pre></a></li>
+<li class="method public "><a href="#method_showAll" title="showAll() :: Show all entries from one table."><span class="description">Show all entries from one table.</span><pre>showAll()</pre></a></li>
+<li class="method public "><a href="#method_undo" title="undo() :: "><span class="description">undo()
+        </span><pre>undo()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_addToTemplate" title="addToTemplate() :: Add the value to the template."><span class="description">Add the value to the template.</span><pre>addToTemplate()</pre></a></li>
+<li class="method protected "><a href="#method_breadcrumb" title="breadcrumb() :: Get the breadcrumb navigation via event."><span class="description">Get the breadcrumb navigation via event.</span><pre>breadcrumb()</pre></a></li>
+<li class="method protected "><a href="#method_buildCommand" title="buildCommand() :: Render a command button."><span class="description">Render a command button.</span><pre>buildCommand()</pre></a></li>
+<li class="method protected "><a href="#method_checkLanguage" title="checkLanguage() :: Check if the data provider is multi language and prepare the data provider with the selected language."><span class="description">Check if the data provider is multi language and prepare the data provider with the selected language.</span><pre>checkLanguage()</pre></a></li>
+<li class="method protected "><a href="#method_checkRestoreVersion" title="checkRestoreVersion() :: Check the submitted data if we want to restore a previous version of a model."><span class="description">Check the submitted data if we want to restore a previous version of a model.</span><pre>checkRestoreVersion()</pre></a></li>
+<li class="method protected "><a href="#method_createEditMask" title="createEditMask() :: Create the edit mask."><span class="description">Create the edit mask.</span><pre>createEditMask()</pre></a></li>
+<li class="method protected "><a href="#method_createEmptyModelWithDefaults" title="createEmptyModelWithDefaults() :: Create an empty model using the default values from the definition."><span class="description">Create an empty model using the default values from the definition.</span><pre>createEmptyModelWithDefaults()</pre></a></li>
+<li class="method protected "><a href="#method_dispatchEvent" title="dispatchEvent() :: Dispatch an event to the dispatcher."><span class="description">Dispatch an event to the dispatcher.</span><pre>dispatchEvent()</pre></a></li>
+<li class="method protected "><a href="#method_generateButtons" title="generateButtons() :: Compile buttons from the table configuration array and return them as HTML."><span class="description">Compile buttons from the table configuration array and return them as HTML.</span><pre>generateButtons()</pre></a></li>
+<li class="method protected "><a href="#method_generateHeaderButton" title="generateHeaderButton() :: Render a single header button."><span class="description">Render a single header button.</span><pre>generateHeaderButton()</pre></a></li>
+<li class="method protected "><a href="#method_generateHeaderButtons" title="generateHeaderButtons() :: Generate all buttons for the header of a view."><span class="description">Generate all buttons for the header of a view.</span><pre>generateHeaderButtons()</pre></a></li>
+<li class="method protected "><a href="#method_getBackCommand" title='getBackCommand() :: Create the "back" button.'><span class="description">Create the "back" button.</span><pre>getBackCommand()</pre></a></li>
+<li class="method protected "><a href="#method_getButtonLabel" title="getButtonLabel() :: Get the label for a button from the translator."><span class="description">Get the label for a button from the translator.</span><pre>getButtonLabel()</pre></a></li>
+<li class="method protected "><a href="#method_getClearClipboardCommand" title='getClearClipboardCommand() :: Create the "clear clipboard" button.'><span class="description">Create the "clear clipboard" button.</span><pre>getClearClipboardCommand()</pre></a></li>
+<li class="method protected "><a href="#method_getCreateModelCommand" title='getCreateModelCommand() :: Create the "new" button.'><span class="description">Create the "new" button.</span><pre>getCreateModelCommand()</pre></a></li>
+<li class="method protected "><a href="#method_getDataDefinition" title="getDataDefinition() :: Retrieve the data definition from the environment."><span class="description">Retrieve the data definition from the environment.</span><pre>getDataDefinition()</pre></a></li>
+<li class="method protected "><a href="#method_getEditButtons" title="getEditButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getEditButtons()</pre></a></li>
+<li class="method protected "><a href="#method_getGroupingMode" title="getGroupingMode() :: Retrieve the currently active grouping mode."><span class="description">Retrieve the currently active grouping mode.</span><pre>getGroupingMode()</pre></a></li>
+<li class="method protected "><a href="#method_getLabelForShow" title='getLabelForShow() :: Calculate the label of a property to se in "show" view.'><span class="description">Calculate the label of a property to se in "show" view.</span><pre>getLabelForShow()</pre></a></li>
+<li class="method protected "><a href="#method_getSelectButtons" title="getSelectButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getSelectButtons()</pre></a></li>
+<li class="method protected "><a href="#method_getTemplate" title="getTemplate() :: Create a new instance of ContaoBackendViewTemplate with the template file of the given name."><span class="description">Create a new instance of ContaoBackendViewTemplate with the template file of the given name.</span><pre>getTemplate()</pre></a></li>
+<li class="method protected "><a href="#method_getViewSection" title="getViewSection() :: Retrieve the view section for this view."><span class="description">Retrieve the view section for this view.</span><pre>getViewSection()</pre></a></li>
+<li class="method protected "><a href="#method_handleSubmit" title="handleSubmit() :: Handle the submit and determine which button has been triggered."><span class="description">Handle the submit and determine which button has been triggered.</span><pre>handleSubmit()</pre></a></li>
+<li class="method protected "><a href="#method_isMultiLanguage" title="isMultiLanguage() :: Determine if we are currently working in multi language mode."><span class="description">Determine if we are currently working in multi language mode.</span><pre>isMultiLanguage()</pre></a></li>
+<li class="method protected "><a href="#method_isPopup" title="isPopup() :: Determines if this view is opened in a popup frame."><span class="description">Determines if this view is opened in a popup frame.</span><pre>isPopup()</pre></a></li>
+<li class="method protected "><a href="#method_isSelectModeActive" title="isSelectModeActive() :: Determine if the select mode is currently active or not."><span class="description">Determine if the select mode is currently active or not.</span><pre>isSelectModeActive()</pre></a></li>
+<li class="method protected "><a href="#method_panel" title="panel() :: Render the panel."><span class="description">Render the panel.</span><pre>panel()</pre></a></li>
+<li class="method protected "><a href="#method_redirectHome" title="redirectHome() :: Redirects to the real back end module."><span class="description">Redirects to the real back end module.</span><pre>redirectHome()</pre></a></li>
+<li class="method protected "><a href="#method_storeVersion" title="storeVersion() :: Update the versioning information in the data provider for a given model (if necessary)."><span class="description">Update the versioning information in the data provider for a given model (if necessary).</span><pre>storeVersion()</pre></a></li>
+<li class="method protected "><a href="#method_translate" title="translate() :: Translate a string via the translator."><span class="description">Translate a string via the translator.</span><pre>translate()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_environment" title="$environment() :: The attached environment."><span class="description"></span><pre>$environment</pre></a></li>
+<li class="property protected "><a href="#property_notImplMsg" title="$notImplMsg() :: The error message format string to use when a method is not implemented."><span class="description"></span><pre>$notImplMsg</pre></a></li>
+<li class="property protected "><a href="#property_panel" title="$panel() :: The panel container in use."><span class="description"></span><pre>$panel</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Contao\View\Contao2BackendView\BaseView"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.BaseView.html">BaseView</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class BaseView.</p>
+<div class="details">
+<div class="long_description">This class is the base class for the different backend view mode sub classes.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.html">DcGeneral\Contao\View\Contao2BackendView</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_checkClipboard"></a><div class="element clickable method public method_checkClipboard" data-toggle="collapse" data-target=".method_checkClipboard .collapse">
+<h2>Update the clipboard in the Environment with data from the InputProvider.</h2>
+<pre>checkClipboard() : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.BaseView.html">\DcGeneral\Contao\View\Contao2BackendView\BaseView</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The following parameters have to be provided by the input provider:
+
+Name      Type   Description
+clipboard bool   Flag determining if the clipboard shall get cleared.
+act       string Action to perform, either paste, cut or create.
+id        mixed  The Id of the item to copy. In mode cut this is the id of the item to be moved.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.BaseView.html">\DcGeneral\Contao\View\Contao2BackendView\BaseView</a></code></div>
+</div></div>
+</div>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>copy()
+        </h2>
+<pre>copy() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_copyAll"></a><div class="element clickable method public method_copyAll" data-toggle="collapse" data-target=".method_copyAll .collapse">
+<h2>copyAll()
+        </h2>
+<pre>copyAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Create a new item.</h2>
+<pre>create() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CDcGeneral%5CContao%5CView%5CContao2BackendView%5Cedit()"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
+<h2>cut()
+        </h2>
+<pre>cut() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cutAll"></a><div class="element clickable method public method_cutAll" data-toggle="collapse" data-target=".method_cutAll .collapse">
+<h2>cutAll()
+        </h2>
+<pre>cutAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete a model and redirect the user to the listing.</h2>
+<pre>delete() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">NOTE: This method redirects the user to the listing and therefore the script will be ended.</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the model to delete could not be loaded.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_edit"></a><div class="element clickable method public method_edit" data-toggle="collapse" data-target=".method_edit .collapse">
+<h2>Generate the view for edit.</h2>
+<pre>edit() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When the current data definition is not editable or is closed.</td>
+</tr>
+<tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>When an unknown property is mentioned in the palette.</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_enforceModelRelationship"></a><div class="element clickable method public method_enforceModelRelationship" data-toggle="collapse" data-target=".method_enforceModelRelationship .collapse">
+<h2>Abstract method to be overridden in the certain child classes.</h2>
+<pre>enforceModelRelationship(\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method will update the parent relationship between a model and the parent item.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to be updated.</p></div>
+</div></div>
+</div>
+<a id="method_formatCurrentValue"></a><div class="element clickable method public method_formatCurrentValue" data-toggle="collapse" data-target=".method_formatCurrentValue .collapse">
+<h2>Return the formatted value for use in group headers as string.</h2>
+<pre>formatCurrentValue(string $field, \DcGeneral\Data\ModelInterface $model, string $groupMode, int $groupLength) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$field</h4>
+<code>string</code><p>The name of the property to format.</p></div>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model from which the value shall be taken from.</p></div>
+<div class="subelement argument">
+<h4>$groupMode</h4>
+<code>string</code><p>The grouping mode in use.</p></div>
+<div class="subelement argument">
+<h4>$groupLength</h4>
+<code>int</code><p>The length of the value to use for grouping (only used when grouping mode is
+                                   ListingConfigInterface::GROUP_CHAR).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_formatModel"></a><div class="element clickable method public method_formatModel" data-toggle="collapse" data-target=".method_formatModel .collapse">
+<h2>Format a model accordingly to the current configuration.</h2>
+<pre>formatModel(\DcGeneral\Data\ModelInterface $model) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Returns either an array when in tree mode or a string in (parented) list mode.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model that shall be formatted.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_generateAjaxPalette"></a><div class="element clickable method public method_generateAjaxPalette" data-toggle="collapse" data-target=".method_generateAjaxPalette .collapse">
+<h2>Generates a sub palette for the given selector (field name).</h2>
+<pre>generateAjaxPalette(string $strSelector) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strSelector</h4>
+<code>string</code><p>The name of the selector field.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getEnvironment() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getPanel"></a><div class="element clickable method public method_getPanel" data-toggle="collapse" data-target=".method_getPanel .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getPanel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getReadableFieldValue"></a><div class="element clickable method public method_getReadableFieldValue" data-toggle="collapse" data-target=".method_getReadableFieldValue .collapse">
+<h2>Get for a field the readable value.</h2>
+<pre>getReadableFieldValue(\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, \DcGeneral\Data\ModelInterface $model, mixed $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to be rendered.</p></div>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model from which the property value shall be retrieved from.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value for the property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
+<h2>TODO: Handle an ajax call, this method is currently not implemented.</h2>
+<pre>handleAjaxCall() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_move"></a><div class="element clickable method public method_move" data-toggle="collapse" data-target=".method_move .collapse">
+<h2>move()
+        </h2>
+<pre>move() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_paste"></a><div class="element clickable method public method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
+<h2>paste()
+        </h2>
+<pre>paste() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_processInput"></a><div class="element clickable method public method_processInput" data-toggle="collapse" data-target=".method_processInput .collapse">
+<h2>Process input and return all modified properties or null if there is no input.</h2>
+<pre>processInput(\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager $widgetManager) : null | <a href="../classes/DcGeneral.Data.PropertyValueBag.html">\DcGeneral\Data\PropertyValueBag</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$widgetManager</h4>
+<code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html">\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager</a></code><p>The widget manager in use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/DcGeneral.Data.PropertyValueBag.html">\DcGeneral\Data\PropertyValueBag</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_renderPasteAfterButton"></a><div class="element clickable method public method_renderPasteAfterButton" data-toggle="collapse" data-target=".method_renderPasteAfterButton .collapse">
+<h2>Render the paste after button.</h2>
+<pre>renderPasteAfterButton(\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent $event) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</a></code><p>The event that has been triggered.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_renderPasteIntoButton"></a><div class="element clickable method public method_renderPasteIntoButton" data-toggle="collapse" data-target=".method_renderPasteIntoButton .collapse">
+<h2>Render the paste into button.</h2>
+<pre>renderPasteIntoButton(\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent $event) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</a></code><p>The event that has been triggered.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setEnvironment"></a><div class="element clickable method public method_setEnvironment" data-toggle="collapse" data-target=".method_setEnvironment .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setEnvironment(\DcGeneral\EnvironmentInterface $environment) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$environment</h4></div>
+</div></div>
+</div>
+<a id="method_setPanel"></a><div class="element clickable method public method_setPanel" data-toggle="collapse" data-target=".method_setPanel .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setPanel($panelContainer) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$panelContainer</h4></div>
+</div></div>
+</div>
+<a id="method_show"></a><div class="element clickable method public method_show" data-toggle="collapse" data-target=".method_show .collapse">
+<h2>Show Information about a model.</h2>
+<pre>show() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When an unknown property is mentioned in the palette.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_showAll"></a><div class="element clickable method public method_showAll" data-toggle="collapse" data-target=".method_showAll .collapse">
+<h2>Show all entries from one table.</h2>
+<pre>showAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_undo"></a><div class="element clickable method public method_undo" data-toggle="collapse" data-target=".method_undo .collapse">
+<h2>undo()
+        </h2>
+<pre>undo() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>All</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_addToTemplate"></a><div class="element clickable method protected method_addToTemplate" data-toggle="collapse" data-target=".method_addToTemplate .collapse">
+<h2>Add the value to the template.</h2>
+<pre>addToTemplate(string $name, mixed $value, \Template $template) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.BaseView.html">\DcGeneral\Contao\View\Contao2BackendView\BaseView</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of the value.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value to add to the template.</p></div>
+<div class="subelement argument">
+<h4>$template</h4>
+<code><a href="Template.html">\Template</a></code><p>The template to add the value to.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.BaseView.html">\DcGeneral\Contao\View\Contao2BackendView\BaseView</a></code></div>
+</div></div>
+</div>
+<a id="method_breadcrumb"></a><div class="element clickable method protected method_breadcrumb" data-toggle="collapse" data-target=".method_breadcrumb .collapse">
+<h2>Get the breadcrumb navigation via event.</h2>
+<pre>breadcrumb() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_buildCommand"></a><div class="element clickable method protected method_buildCommand" data-toggle="collapse" data-target=".method_buildCommand .collapse">
+<h2>Render a command button.</h2>
+<pre>buildCommand(\DcGeneral\DataDefinition\Definition\View\CommandInterface $objCommand, \DcGeneral\Data\ModelInterface $objModel, bool $blnCircularReference, array $arrChildRecordIds, \DcGeneral\Data\ModelInterface $previous, \DcGeneral\Data\ModelInterface $next) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objCommand</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command to render the button for.</p></div>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to which the command shall get applied.</p></div>
+<div class="subelement argument">
+<h4>$blnCircularReference</h4>
+<code>bool</code><p>Determinator if there exists a circular reference between the model
+                                              and the model(s) contained in the clipboard.</p>
+</div>
+<div class="subelement argument">
+<h4>$arrChildRecordIds</h4>
+<code>array</code><p>List of the ids of all child models of the current model.</p></div>
+<div class="subelement argument">
+<h4>$previous</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The previous model in the collection.</p></div>
+<div class="subelement argument">
+<h4>$next</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The next model in the collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_checkLanguage"></a><div class="element clickable method protected method_checkLanguage" data-toggle="collapse" data-target=".method_checkLanguage .collapse">
+<h2>Check if the data provider is multi language and prepare the data provider with the selected language.</h2>
+<pre>checkLanguage() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_checkRestoreVersion"></a><div class="element clickable method protected method_checkRestoreVersion" data-toggle="collapse" data-target=".method_checkRestoreVersion .collapse">
+<h2>Check the submitted data if we want to restore a previous version of a model.</h2>
+<pre>checkRestoreVersion() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">If so, the model will get loaded and marked as active version in the data provider and the client will perform a
+reload of the page.</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When the requested version could not be located in the database.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_createEditMask"></a><div class="element clickable method protected method_createEditMask" data-toggle="collapse" data-target=".method_createEditMask .collapse">
+<h2>Create the edit mask.</h2>
+<pre>createEditMask(\DcGeneral\Data\ModelInterface $model, \DcGeneral\Data\ModelInterface $originalModel, callable $preFunction, callable $postFunction) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model with the current data.</p></div>
+<div class="subelement argument">
+<h4>$originalModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The data from the original data.</p></div>
+<div class="subelement argument">
+<h4>$preFunction</h4>
+<code>callable</code><p>The function to call before saving an item.</p></div>
+<div class="subelement argument">
+<h4>$postFunction</h4>
+<code>callable</code><p>The function to call after saving an item.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the data container is not editable, closed.</td>
+</tr>
+<tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>If an unknown property is encountered in the palette.</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_createEmptyModelWithDefaults"></a><div class="element clickable method protected method_createEmptyModelWithDefaults" data-toggle="collapse" data-target=".method_createEmptyModelWithDefaults .collapse">
+<h2>Create an empty model using the default values from the definition.</h2>
+<pre>createEmptyModelWithDefaults() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_dispatchEvent"></a><div class="element clickable method protected method_dispatchEvent" data-toggle="collapse" data-target=".method_dispatchEvent .collapse">
+<h2>Dispatch an event to the dispatcher.</h2>
+<pre>dispatchEvent(string $eventName, \Symfony\Component\EventDispatcher\Event $event) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The event will first get triggered with the name of the active data provider within square brackets appended
+and plain afterwards.
+
+Example:
+  Event name: "some-event"
+  DP name:    "tl_table"
+
+  1. dispatch: "some-event[tl_table]"
+  2. dispatch: "some-event"</div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Use $this->getEnvironment()->getEventPropagator()->propagate() instead.</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The name of the event to dispatch.</p></div>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="Event.html">\Symfony\Component\EventDispatcher\Event</a></code><p>The event to dispatch.</p></div>
+</div></div>
+</div>
+<a id="method_generateButtons"></a><div class="element clickable method protected method_generateButtons" data-toggle="collapse" data-target=".method_generateButtons .collapse">
+<h2>Compile buttons from the table configuration array and return them as HTML.</h2>
+<pre>generateButtons(\DcGeneral\Data\ModelInterface $model, \DcGeneral\Data\ModelInterface $previous, \DcGeneral\Data\ModelInterface $next) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model for which the buttons shall be generated for.</p></div>
+<div class="subelement argument">
+<h4>$previous</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The previous model in the collection.</p></div>
+<div class="subelement argument">
+<h4>$next</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The next model in the collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_generateHeaderButton"></a><div class="element clickable method protected method_generateHeaderButton" data-toggle="collapse" data-target=".method_generateHeaderButton .collapse">
+<h2>Render a single header button.</h2>
+<pre>generateHeaderButton(\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$command</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_generateHeaderButtons"></a><div class="element clickable method protected method_generateHeaderButtons" data-toggle="collapse" data-target=".method_generateHeaderButtons .collapse">
+<h2>Generate all buttons for the header of a view.</h2>
+<pre>generateHeaderButtons(string $strButtonId) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strButtonId</h4>
+<code>string</code><p>The id for the surrounding html div element.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getBackCommand"></a><div class="element clickable method protected method_getBackCommand" data-toggle="collapse" data-target=".method_getBackCommand .collapse">
+<h2>Create the "back" button.</h2>
+<pre>getBackCommand() : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getButtonLabel"></a><div class="element clickable method protected method_getButtonLabel" data-toggle="collapse" data-target=".method_getButtonLabel .collapse">
+<h2>Get the label for a button from the translator.</h2>
+<pre>getButtonLabel(string $strButton) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The fallback is as follows:
+1. Try to translate the button via the data definition name as translation section.
+2. Try to translate the button name with the prefix 'MSC.'.
+3. Return the input value as nothing worked out.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strButton</h4>
+<code>string</code><p>The non translated label for the button.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getClearClipboardCommand"></a><div class="element clickable method protected method_getClearClipboardCommand" data-toggle="collapse" data-target=".method_getClearClipboardCommand .collapse">
+<h2>Create the "clear clipboard" button.</h2>
+<pre>getClearClipboardCommand() : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getCreateModelCommand"></a><div class="element clickable method protected method_getCreateModelCommand" data-toggle="collapse" data-target=".method_getCreateModelCommand .collapse">
+<h2>Create the "new" button.</h2>
+<pre>getCreateModelCommand() : <a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getDataDefinition"></a><div class="element clickable method protected method_getDataDefinition" data-toggle="collapse" data-target=".method_getDataDefinition .collapse">
+<h2>Retrieve the data definition from the environment.</h2>
+<pre>getDataDefinition() : <a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.ContainerInterface.html">\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getEditButtons"></a><div class="element clickable method protected method_getEditButtons" data-toggle="collapse" data-target=".method_getEditButtons .collapse">
+<h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
+<pre>getEditButtons() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getGroupingMode"></a><div class="element clickable method protected method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
+<h2>Retrieve the currently active grouping mode.</h2>
+<pre>getGroupingMode() : array | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CDcGeneral%5CDataDefinition%5CDefinition%5CView%5CListingConfigInterface"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getLabelForShow"></a><div class="element clickable method protected method_getLabelForShow" data-toggle="collapse" data-target=".method_getLabelForShow .collapse">
+<h2>Calculate the label of a property to se in "show" view.</h2>
+<pre>getLabelForShow(\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the label shall be calculated.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getSelectButtons"></a><div class="element clickable method protected method_getSelectButtons" data-toggle="collapse" data-target=".method_getSelectButtons .collapse">
+<h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
+<pre>getSelectButtons() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getTemplate"></a><div class="element clickable method protected method_getTemplate" data-toggle="collapse" data-target=".method_getTemplate .collapse">
+<h2>Create a new instance of ContaoBackendViewTemplate with the template file of the given name.</h2>
+<pre>getTemplate(string $strTemplate) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.ContaoBackendViewTemplate.html">\DcGeneral\Contao\View\Contao2BackendView\ContaoBackendViewTemplate</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTemplate</h4>
+<code>string</code><p>Name of the template to create.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.ContaoBackendViewTemplate.html">\DcGeneral\Contao\View\Contao2BackendView\ContaoBackendViewTemplate</a></code></div>
+</div></div>
+</div>
+<a id="method_getViewSection"></a><div class="element clickable method protected method_getViewSection" data-toggle="collapse" data-target=".method_getViewSection .collapse">
+<h2>Retrieve the view section for this view.</h2>
+<pre>getViewSection() : <a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_handleSubmit"></a><div class="element clickable method protected method_handleSubmit" data-toggle="collapse" data-target=".method_handleSubmit .collapse">
+<h2>Handle the submit and determine which button has been triggered.</h2>
+<pre>handleSubmit(\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method will redirect the client.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model that has been submitted.</p></div>
+</div></div>
+</div>
+<a id="method_isMultiLanguage"></a><div class="element clickable method protected method_isMultiLanguage" data-toggle="collapse" data-target=".method_isMultiLanguage .collapse">
+<h2>Determine if we are currently working in multi language mode.</h2>
+<pre>isMultiLanguage(mixed $mixId) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixId</h4>
+<code>mixed</code><p>The id of the current model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isPopup"></a><div class="element clickable method protected method_isPopup" data-toggle="collapse" data-target=".method_isPopup .collapse">
+<h2>Determines if this view is opened in a popup frame.</h2>
+<pre>isPopup() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isSelectModeActive"></a><div class="element clickable method protected method_isSelectModeActive" data-toggle="collapse" data-target=".method_isSelectModeActive .collapse">
+<h2>Determine if the select mode is currently active or not.</h2>
+<pre>isSelectModeActive() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_panel"></a><div class="element clickable method protected method_panel" data-toggle="collapse" data-target=".method_panel .collapse">
+<h2>Render the panel.</h2>
+<pre>panel() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no panel has been defined.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_redirectHome"></a><div class="element clickable method protected method_redirectHome" data-toggle="collapse" data-target=".method_redirectHome .collapse">
+<h2>Redirects to the real back end module.</h2>
+<pre>redirectHome() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_storeVersion"></a><div class="element clickable method protected method_storeVersion" data-toggle="collapse" data-target=".method_storeVersion .collapse">
+<h2>Update the versioning information in the data provider for a given model (if necessary).</h2>
+<pre>storeVersion(\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to update.</p></div>
+</div></div>
+</div>
+<a id="method_translate"></a><div class="element clickable method protected method_translate" data-toggle="collapse" data-target=".method_translate .collapse">
+<h2>Translate a string via the translator.</h2>
+<pre>translate(string $path, string|null $section) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The path within the translation where the string can be found.</p></div>
+<div class="subelement argument">
+<h4>$section</h4>
+<code>string</code><code>null</code><p>The section from which the translation shall be retrieved.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_environment"> </a><div class="element clickable property protected property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
+<h2>The attached environment.</h2>
+<pre>$environment : <a href="../classes/DcGeneral.EnvironmentInterface.html">\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_notImplMsg"> </a><div class="element clickable property protected property_notImplMsg" data-toggle="collapse" data-target=".property_notImplMsg .collapse">
+<h2>The error message format string to use when a method is not implemented.</h2>
+<pre>$notImplMsg : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_panel"> </a><div class="element clickable property protected property_panel" data-toggle="collapse" data-target=".property_panel .collapse">
+<h2>The panel container in use.</h2>
+<pre>$panel : <a href="../classes/DcGeneral.Panel.PanelContainerInterface.html">\DcGeneral\Panel\PanelContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:30+01:00.<br></footer></div>
+</div>
+</body>
+</html>

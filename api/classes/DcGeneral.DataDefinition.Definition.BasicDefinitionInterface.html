@@ -1,0 +1,440 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getAdditionalFilter" title="getAdditionalFilter() :: Get the additional filters to be used for retrieving elements for the view."><span class="description">Get the additional filters to be used for retrieving elements for the view.</span><pre>getAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_getDataProvider" title="getDataProvider() :: Retrieve the name of data provider which holds the models that we work on."><span class="description">Retrieve the name of data provider which holds the models that we work on.</span><pre>getDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getMode" title="getMode() :: Get the mode the data definition is in."><span class="description">Get the mode the data definition is in.</span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#method_getParentDataProvider" title="getParentDataProvider() :: Retrieve the name of data provider that holds the parent model."><span class="description">Retrieve the name of data provider that holds the parent model.</span><pre>getParentDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getRootDataProvider" title="getRootDataProvider() :: Retrieve the name of data provider that holds the models for the root level."><span class="description">Retrieve the name of data provider that holds the models for the root level.</span><pre>getRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_hasAdditionalFilter" title="hasAdditionalFilter() :: Determine if additional filters are set for the given data provider."><span class="description">Determine if additional filters are set for the given data provider.</span><pre>hasAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_isClosed" title="isClosed() :: Boolean flag determining if this data container is closed."><span class="description">Boolean flag determining if this data container is closed.</span><pre>isClosed()</pre></a></li>
+<li class="method public "><a href="#method_isCreatable" title="isCreatable() :: Determines if new entries may be created within this data container."><span class="description">Determines if new entries may be created within this data container.</span><pre>isCreatable()</pre></a></li>
+<li class="method public "><a href="#method_isDeletable" title="isDeletable() :: Boolean flag determining if this data container is deletable."><span class="description">Boolean flag determining if this data container is deletable.</span><pre>isDeletable()</pre></a></li>
+<li class="method public "><a href="#method_isEditable" title="isEditable() :: Boolean flag determining if this data container is editable."><span class="description">Boolean flag determining if this data container is editable.</span><pre>isEditable()</pre></a></li>
+<li class="method public "><a href="#method_isSwitchToEditEnabled" title="isSwitchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description">Determines if the view shall switch automatically into edit mode.</span><pre>isSwitchToEditEnabled()</pre></a></li>
+<li class="method public "><a href="#method_setAdditionalFilter" title="setAdditionalFilter() :: Set the additional filters to be used for retrieving elements for the view."><span class="description">Set the additional filters to be used for retrieving elements for the view.</span><pre>setAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_setClosed" title="setClosed() :: If true, adding of further records is prohibited."><span class="description">If true, adding of further records is prohibited.</span><pre>setClosed()</pre></a></li>
+<li class="method public "><a href="#method_setCreatable" title="setCreatable() :: Determines if new entries may be created within this data container."><span class="description">Determines if new entries may be created within this data container.</span><pre>setCreatable()</pre></a></li>
+<li class="method public "><a href="#method_setDataProvider" title="setDataProvider() :: Set the name of the data provider which holds the models that we work on."><span class="description">Set the name of the data provider which holds the models that we work on.</span><pre>setDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setDeletable" title="setDeletable() :: Set boolean flag determining if this data container is deletable."><span class="description">Set boolean flag determining if this data container is deletable.</span><pre>setDeletable()</pre></a></li>
+<li class="method public "><a href="#method_setEditable" title="setEditable() :: Boolean flag determining if this data container is editable."><span class="description">Boolean flag determining if this data container is editable.</span><pre>setEditable()</pre></a></li>
+<li class="method public "><a href="#method_setMode" title="setMode() :: Set the mode the data definition is in."><span class="description">Set the mode the data definition is in.</span><pre>setMode()</pre></a></li>
+<li class="method public "><a href="#method_setParentDataProvider" title="setParentDataProvider() :: Set the name of the data provider that holds the parent model."><span class="description">Set the name of the data provider that holds the parent model.</span><pre>setParentDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setRootDataProvider" title="setRootDataProvider() :: Set the name of the data provider that holds the models for the root level."><span class="description">Set the name of the data provider that holds the models for the root level.</span><pre>setRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setSwitchToEditEnabled" title="setSwitchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description">Determines if the view shall switch automatically into edit mode.</span><pre>setSwitchToEditEnabled()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_MODE_FLAT" title="MODE_FLAT() :: Flat mode. All models are on the same hierarchical level. No root conditions are defined."><span class="description">Flat mode. All models are on the same hierarchical level. No root conditions are defined.</span><pre>MODE_FLAT</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_HIERARCHICAL" title="MODE_HIERARCHICAL() :: Hierarchical mode. The models span over various levels."><span class="description">Hierarchical mode. The models span over various levels.</span><pre>MODE_HIERARCHICAL</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_PARENTEDLIST" title="MODE_PARENTEDLIST() :: Hierarchical mode. The models span over various levels."><span class="description">Hierarchical mode. The models span over various levels.</span><pre>MODE_PARENTEDLIST</pre></a></li>
+<li class="constant  "><a href="#constant_NAME" title="NAME() :: The name of the definition."><span class="description">The name of the definition.</span><pre>NAME</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">BasicDefinitionInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">This interface describes the basic information about the data definition.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.html">DcGeneral\DataDefinition\Definition</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getAdditionalFilter"></a><div class="element clickable method public method_getAdditionalFilter" data-toggle="collapse" data-target=".method_getAdditionalFilter .collapse">
+<h2>Get the additional filters to be used for retrieving elements for the view.</h2>
+<pre>getAdditionalFilter(string $dataProvider) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProvider</h4>
+<code>string</code><p>The name of the data provider for which additional filters shall be retrieved.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getDataProvider"></a><div class="element clickable method public method_getDataProvider" data-toggle="collapse" data-target=".method_getDataProvider .collapse">
+<h2>Retrieve the name of data provider which holds the models that we work on.</h2>
+<pre>getDataProvider() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getMode"></a><div class="element clickable method public method_getMode" data-toggle="collapse" data-target=".method_getMode .collapse">
+<h2>Get the mode the data definition is in.</h2>
+<pre>getMode() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_getParentDataProvider"></a><div class="element clickable method public method_getParentDataProvider" data-toggle="collapse" data-target=".method_getParentDataProvider .collapse">
+<h2>Retrieve the name of data provider that holds the parent model.</h2>
+<pre>getParentDataProvider() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Note: This does only apply when in tree mode or parenting mode. For flat mode this does not make sense.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getRootDataProvider"></a><div class="element clickable method public method_getRootDataProvider" data-toggle="collapse" data-target=".method_getRootDataProvider .collapse">
+<h2>Retrieve the name of data provider that holds the models for the root level.</h2>
+<pre>getRootDataProvider() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Be aware that there may be any number of in-between data sources, depending on the defined
+{@link ParentChildCondition}s
+
+Note: This does only apply when in tree mode or parenting mode. For flat mode this does not make sense.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_hasAdditionalFilter"></a><div class="element clickable method public method_hasAdditionalFilter" data-toggle="collapse" data-target=".method_hasAdditionalFilter .collapse">
+<h2>Determine if additional filters are set for the given data provider.</h2>
+<pre>hasAdditionalFilter(string $dataProvider) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProvider</h4>
+<code>string</code><p>The name of the data provider for which additional filters shall be checked.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isClosed"></a><div class="element clickable method public method_isClosed" data-toggle="collapse" data-target=".method_isClosed .collapse">
+<h2>Boolean flag determining if this data container is closed.</h2>
+<pre>isClosed() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">True means, there may not be any records added or deleted, false means there may be any record appended or
+deleted..</div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>isn't this a candidate for deprecation? See BasicDefinitionInterface::isCreatable().</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isCreatable"></a><div class="element clickable method public method_isCreatable" data-toggle="collapse" data-target=".method_isCreatable .collapse">
+<h2>Determines if new entries may be created within this data container.</h2>
+<pre>isCreatable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">True means new entries may be created, false prohibits creation of new entries.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isDeletable"></a><div class="element clickable method public method_isDeletable" data-toggle="collapse" data-target=".method_isDeletable .collapse">
+<h2>Boolean flag determining if this data container is deletable.</h2>
+<pre>isDeletable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">True means, the data records may be deleted.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isEditable"></a><div class="element clickable method public method_isEditable" data-toggle="collapse" data-target=".method_isEditable .collapse">
+<h2>Boolean flag determining if this data container is editable.</h2>
+<pre>isEditable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">True means, the data records may be edited.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isSwitchToEditEnabled"></a><div class="element clickable method public method_isSwitchToEditEnabled" data-toggle="collapse" data-target=".method_isSwitchToEditEnabled .collapse">
+<h2>Determines if the view shall switch automatically into edit mode.</h2>
+<pre>isSwitchToEditEnabled() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This most likely only affects parenting modes like trees etc.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_setAdditionalFilter"></a><div class="element clickable method public method_setAdditionalFilter" data-toggle="collapse" data-target=".method_setAdditionalFilter .collapse">
+<h2>Set the additional filters to be used for retrieving elements for the view.</h2>
+<pre>setAdditionalFilter(string $dataProvider, array $filter) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProvider</h4>
+<code>string</code><p>The name of the data provider for which additional filters shall be passed.</p></div>
+<div class="subelement argument">
+<h4>$filter</h4>
+<code>array</code><p>Array of filter rules.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setClosed"></a><div class="element clickable method public method_setClosed" data-toggle="collapse" data-target=".method_setClosed .collapse">
+<h2>If true, adding of further records is prohibited.</h2>
+<pre>setClosed(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>isn't this a candidate for deprecation? See BasicDefinitionInterface::setCreatable().</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag - true means prohibit element creation, false means allow creation of new elements.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setCreatable"></a><div class="element clickable method public method_setCreatable" data-toggle="collapse" data-target=".method_setCreatable .collapse">
+<h2>Determines if new entries may be created within this data container.</h2>
+<pre>setCreatable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>True means new entries may be created, false prohibits creation of new entries.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDataProvider"></a><div class="element clickable method public method_setDataProvider" data-toggle="collapse" data-target=".method_setDataProvider .collapse">
+<h2>Set the name of the data provider which holds the models that we work on.</h2>
+<pre>setDataProvider(string $providerName) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The name of the data provider of the elements being processed.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDeletable"></a><div class="element clickable method public method_setDeletable" data-toggle="collapse" data-target=".method_setDeletable .collapse">
+<h2>Set boolean flag determining if this data container is deletable.</h2>
+<pre>setDeletable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>True means, the data records may be deleted.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setEditable"></a><div class="element clickable method public method_setEditable" data-toggle="collapse" data-target=".method_setEditable .collapse">
+<h2>Boolean flag determining if this data container is editable.</h2>
+<pre>setEditable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>True means, the data records may be edited.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setMode"></a><div class="element clickable method public method_setMode" data-toggle="collapse" data-target=".method_setMode .collapse">
+<h2>Set the mode the data definition is in.</h2>
+<pre>setMode(int $mode) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>int</code><p>See the constants in this interface. The mode should either be {@link BasicDefinitionInterface::MODE_FLAT}
+or {@link BasicDefinitionInterface::MODE_HIERARCHICAL}.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setParentDataProvider"></a><div class="element clickable method public method_setParentDataProvider" data-toggle="collapse" data-target=".method_setParentDataProvider .collapse">
+<h2>Set the name of the data provider that holds the parent model.</h2>
+<pre>setParentDataProvider(string $providerName) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Note: This does only apply when in tree mode or parenting mode. For flat mode this does not make sense.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The name of the data provider of the parent element.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setRootDataProvider"></a><div class="element clickable method public method_setRootDataProvider" data-toggle="collapse" data-target=".method_setRootDataProvider .collapse">
+<h2>Set the name of the data provider that holds the models for the root level.</h2>
+<pre>setRootDataProvider(string $providerName) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Be aware that there may be any number of in-between data sources, depending on the defined
+{@link ParentChildCondition}s
+
+Note: This does only apply when in tree mode or parenting mode. For flat mode this does not make sense.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The name of the data provider of the root elements.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setSwitchToEditEnabled"></a><div class="element clickable method public method_setSwitchToEditEnabled" data-toggle="collapse" data-target=".method_setSwitchToEditEnabled .collapse">
+<h2>Determines if the view shall switch automatically into edit mode.</h2>
+<pre>setSwitchToEditEnabled(bool $switchToEditEnabled) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This most likely only affects parenting modes like trees etc.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$switchToEditEnabled</h4>
+<code>bool</code><p>The flag - true means switch automatically to editing mode, false allows
+                                 listing.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_MODE_FLAT"> </a><div class="element clickable constant  constant_MODE_FLAT" data-toggle="collapse" data-target=".constant_MODE_FLAT .collapse">
+<h2>Flat mode. All models are on the same hierarchical level. No root conditions are defined.</h2>
+<pre>MODE_FLAT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_HIERARCHICAL"> </a><div class="element clickable constant  constant_MODE_HIERARCHICAL" data-toggle="collapse" data-target=".constant_MODE_HIERARCHICAL .collapse">
+<h2>Hierarchical mode. The models span over various levels.</h2>
+<pre>MODE_HIERARCHICAL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_PARENTEDLIST"> </a><div class="element clickable constant  constant_MODE_PARENTEDLIST" data-toggle="collapse" data-target=".constant_MODE_PARENTEDLIST .collapse">
+<h2>Hierarchical mode. The models span over various levels.</h2>
+<pre>MODE_PARENTEDLIST </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NAME"> </a><div class="element clickable constant  constant_NAME" data-toggle="collapse" data-target=".constant_NAME .collapse">
+<h2>The name of the definition.</h2>
+<pre>NAME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:27+01:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\DataDefinition\Palette\PaletteInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone() :: Create a deep clone of the palette."><span class="description">Create a deep clone of the palette.</span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method_addLegend" title="addLegend() :: Add a legend to this palette."><span class="description">Add a legend to this palette.</span><pre>addLegend()</pre></a></li>
+<li class="method public "><a href="#method_addLegends" title="addLegends() :: Add all legends to this palette."><span class="description">Add all legends to this palette.</span><pre>addLegends()</pre></a></li>
+<li class="method public "><a href="#method_clearLegends" title="clearLegends() :: Clear all legends from this palette."><span class="description">Clear all legends from this palette.</span><pre>clearLegends()</pre></a></li>
+<li class="method public "><a href="#method_containsLegend" title="containsLegend() :: Determine if a legend exists in this palette."><span class="description">Determine if a legend exists in this palette.</span><pre>containsLegend()</pre></a></li>
+<li class="method public "><a href="#method_getCondition" title="getCondition() :: Get the condition bound to this palette."><span class="description">Get the condition bound to this palette.</span><pre>getCondition()</pre></a></li>
+<li class="method public "><a href="#method_getEditableProperties" title="getEditableProperties() :: Get all properties from all legends in this palette that are editable."><span class="description">Get all properties from all legends in this palette that are editable.</span><pre>getEditableProperties()</pre></a></li>
+<li class="method public "><a href="#method_getLegend" title="getLegend() :: Return the legend with the given name."><span class="description">Return the legend with the given name.</span><pre>getLegend()</pre></a></li>
+<li class="method public "><a href="#method_getLegends" title="getLegends() :: Return the legends from this palette."><span class="description">Return the legends from this palette.</span><pre>getLegends()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: Return the name of this palette."><span class="description">Return the name of this palette.</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getProperties" title="getProperties() :: Get all properties from all legends in this palette."><span class="description">Get all properties from all legends in this palette.</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_getVisibleProperties" title="getVisibleProperties() :: Get all properties from all legends in this palette that are visible."><span class="description">Get all properties from all legends in this palette that are visible.</span><pre>getVisibleProperties()</pre></a></li>
+<li class="method public "><a href="#method_hasLegend" title="hasLegend() :: Determine if a legend with the given name exists in this palette."><span class="description">Determine if a legend with the given name exists in this palette.</span><pre>hasLegend()</pre></a></li>
+<li class="method public "><a href="#method_removeLegend" title="removeLegend() :: Remove a legend from this palette."><span class="description">Remove a legend from this palette.</span><pre>removeLegend()</pre></a></li>
+<li class="method public "><a href="#method_setCondition" title="setCondition() :: Set the condition bound to this palette."><span class="description">Set the condition bound to this palette.</span><pre>setCondition()</pre></a></li>
+<li class="method public "><a href="#method_setLegends" title="setLegends() :: Set all legends to this palette."><span class="description">Set all legends to this palette.</span><pre>setLegends()</pre></a></li>
+<li class="method public "><a href="#method_setName" title="setName() :: Set the name of this palette."><span class="description">Set the name of this palette.</span><pre>setName()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\DataDefinition\Palette\PaletteInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.DataDefinition.Palette.html">Palette</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">PaletteInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">A palette contains a set of properties, grouped by legends.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>Create a deep clone of the palette.</h2>
+<pre>__clone() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addLegend"></a><div class="element clickable method public method_addLegend" data-toggle="collapse" data-target=".method_addLegend .collapse">
+<h2>Add a legend to this palette.</h2>
+<pre>addLegend(\DcGeneral\DataDefinition\Palette\LegendInterface $legend, \DcGeneral\DataDefinition\Palette\LegendInterface $before) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legend</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend to add.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend before which the new legend shall be inserted (optional).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_addLegends"></a><div class="element clickable method public method_addLegends" data-toggle="collapse" data-target=".method_addLegends .collapse">
+<h2>Add all legends to this palette.</h2>
+<pre>addLegends(array|\DcGeneral\DataDefinition\Palette\LegendInterface[] $legends, \DcGeneral\DataDefinition\Palette\LegendInterface $before) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legends</h4>
+<code>array</code><code><a href="LegendInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\LegendInterface[]</a></code><p>The legends.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend before which the new legends shall be inserted (optional).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_clearLegends"></a><div class="element clickable method public method_clearLegends" data-toggle="collapse" data-target=".method_clearLegends .collapse">
+<h2>Clear all legends from this palette.</h2>
+<pre>clearLegends() : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_containsLegend"></a><div class="element clickable method public method_containsLegend" data-toggle="collapse" data-target=".method_containsLegend .collapse">
+<h2>Determine if a legend exists in this palette.</h2>
+<pre>containsLegend(\DcGeneral\DataDefinition\Palette\LegendInterface $legend) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legend</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend to be checked.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_getCondition"></a><div class="element clickable method public method_getCondition" data-toggle="collapse" data-target=".method_getCondition .collapse">
+<h2>Get the condition bound to this palette.</h2>
+<pre>getCondition() : <a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getEditableProperties"></a><div class="element clickable method public method_getEditableProperties" data-toggle="collapse" data-target=".method_getEditableProperties .collapse">
+<h2>Get all properties from all legends in this palette that are editable.</h2>
+<pre>getEditableProperties(\DcGeneral\Data\ModelInterface|null $model, \DcGeneral\Data\PropertyValueBag $input) : <a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><code>null</code><p>If given, selectors will be evaluated depending on the model.</p></div>
+<div class="subelement argument">
+<h4>$input</h4>
+<code><a href="../classes/DcGeneral.Data.PropertyValueBag.html">\DcGeneral\Data\PropertyValueBag</a></code><p>If given, selectors will be evaluated depending on the input data.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_getLegend"></a><div class="element clickable method public method_getLegend" data-toggle="collapse" data-target=".method_getLegend .collapse">
+<h2>Return the legend with the given name.</h2>
+<pre>getLegend(string $name) : <a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the legend to search for.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>Is thrown if there is no legend found.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getLegends"></a><div class="element clickable method public method_getLegends" data-toggle="collapse" data-target=".method_getLegends .collapse">
+<h2>Return the legends from this palette.</h2>
+<pre>getLegends() : array | <a href="LegendInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\LegendInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code><a href="LegendInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\LegendInterface[]</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Return the name of this palette.</h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only for backwards compatibility, we will remove palette names in the future!</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties" data-toggle="collapse" data-target=".method_getProperties .collapse">
+<h2>Get all properties from all legends in this palette.</h2>
+<pre>getProperties(\DcGeneral\Data\ModelInterface|null $model, \DcGeneral\Data\PropertyValueBag $input) : <a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><code>null</code><p>If given, selectors will be evaluated depending on the model.</p></div>
+<div class="subelement argument">
+<h4>$input</h4>
+<code><a href="../classes/DcGeneral.Data.PropertyValueBag.html">\DcGeneral\Data\PropertyValueBag</a></code><p>If given, selectors will be evaluated depending on the input data.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_getVisibleProperties"></a><div class="element clickable method public method_getVisibleProperties" data-toggle="collapse" data-target=".method_getVisibleProperties .collapse">
+<h2>Get all properties from all legends in this palette that are visible.</h2>
+<pre>getVisibleProperties(\DcGeneral\Data\ModelInterface|null $model, \DcGeneral\Data\PropertyValueBag $input) : <a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><code>null</code><p>If given, selectors will be evaluated depending on the model.</p></div>
+<div class="subelement argument">
+<h4>$input</h4>
+<code><a href="../classes/DcGeneral.Data.PropertyValueBag.html">\DcGeneral\Data\PropertyValueBag</a></code><p>If given, selectors will be evaluated depending on the input data.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_hasLegend"></a><div class="element clickable method public method_hasLegend" data-toggle="collapse" data-target=".method_hasLegend .collapse">
+<h2>Determine if a legend with the given name exists in this palette.</h2>
+<pre>hasLegend(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the legend to search for.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_removeLegend"></a><div class="element clickable method public method_removeLegend" data-toggle="collapse" data-target=".method_removeLegend .collapse">
+<h2>Remove a legend from this palette.</h2>
+<pre>removeLegend(\DcGeneral\DataDefinition\Palette\LegendInterface $legend) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legend</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend to remove.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setCondition"></a><div class="element clickable method public method_setCondition" data-toggle="collapse" data-target=".method_setCondition .collapse">
+<h2>Set the condition bound to this palette.</h2>
+<pre>setCondition(\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface|null $condition) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><code>null</code><p>The condition to be bound to this palette.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setLegends"></a><div class="element clickable method public method_setLegends" data-toggle="collapse" data-target=".method_setLegends .collapse">
+<h2>Set all legends to this palette.</h2>
+<pre>setLegends(array|\DcGeneral\DataDefinition\Palette\LegendInterface[] $legends) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legends</h4>
+<code>array</code><code><a href="LegendInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\LegendInterface[]</a></code><p>The legends.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
+<h2>Set the name of this palette.</h2>
+<pre>setName(string $name) : <a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only for backwards compatibility, we will remove palette names in the future!</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:28+01:00.<br></footer></div>
+</div>
+</body>
+</html>

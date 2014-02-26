@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Contao\BackendBindings</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">30</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addToUrl" title="addToUrl() :: Add a request string to the current URI string."><span class="description">Add a request string to the current URI string.</span><pre>addToUrl()</pre></a></li>
+<li class="method public "><a href="#method_generateImage" title="generateImage() :: Generate an image tag and return it as string."><span class="description">Generate an image tag and return it as string.</span><pre>generateImage()</pre></a></li>
+<li class="method public "><a href="#method_getImage" title="getImage() :: Resize an image and store the resized version in the assets/images folder."><span class="description">Resize an image and store the resized version in the assets/images folder.</span><pre>getImage()</pre></a></li>
+<li class="method public "><a href="#method_getReferer" title="getReferer() :: Return the current referer URL and optionally encode ampersands."><span class="description">Return the current referer URL and optionally encode ampersands.</span><pre>getReferer()</pre></a></li>
+<li class="method public "><a href="#method_loadDataContainer" title="loadDataContainer() :: Load a set of DCA files."><span class="description">Load a set of DCA files.</span><pre>loadDataContainer()</pre></a></li>
+<li class="method public "><a href="#method_loadLanguageFile" title="loadLanguageFile() :: Load a set of language files."><span class="description">Load a set of language files.</span><pre>loadLanguageFile()</pre></a></li>
+<li class="method public "><a href="#method_log" title="log() :: Log a message to the contao system log."><span class="description">Log a message to the contao system log.</span><pre>log()</pre></a></li>
+<li class="method public "><a href="#method_parseDate" title="parseDate() :: Parse a date format string and translate textual representations."><span class="description">Parse a date format string and translate textual representations.</span><pre>parseDate()</pre></a></li>
+<li class="method public "><a href="#method_redirect" title="redirect() :: Redirect the browser to a new location."><span class="description">Redirect the browser to a new location.</span><pre>redirect()</pre></a></li>
+<li class="method public "><a href="#method_reload" title="reload() :: Reload the current page."><span class="description">Reload the current page.</span><pre>reload()</pre></a></li>
+<li class="method public "><a href="#method_substrHtml" title="substrHtml() :: Shorten a HTML string to a certain number of characters."><span class="description">Shorten a HTML string to a certain number of characters.</span><pre>substrHtml()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_dispatch" title="dispatch() :: "><span class="description">dispatch()
+        </span><pre>dispatch()</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Contao\BackendBindings"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Contao.BackendBindings.html">BackendBindings</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class BackendBindings.</p>
+<div class="details">
+<div class="long_description">This class abstracts the Contao backend methods used within DcGeneral over all Contao versions.
+
+This is needed to limit the amount of version_compare() calls to an absolute minimum.</div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.html">DcGeneral\Contao</a></td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Use events-contao-bindings package.</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addToUrl"></a><div class="element clickable method public method_addToUrl" data-toggle="collapse" data-target=".method_addToUrl .collapse">
+<h2>Add a request string to the current URI string.</h2>
+<pre>addToUrl(string $strRequest) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strRequest</h4>
+<code>string</code><p>The parameters to add to the current URL separated by &.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_generateImage"></a><div class="element clickable method public method_generateImage" data-toggle="collapse" data-target=".method_generateImage .collapse">
+<h2>Generate an image tag and return it as string.</h2>
+<pre>generateImage(string $src, string $alt, string $attributes) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$src</h4>
+<code>string</code><p>The image path.</p></div>
+<div class="subelement argument">
+<h4>$alt</h4>
+<code>string</code><p>An optional alt attribute.</p></div>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>string</code><p>A string of other attributes.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The image HTML tag.</div>
+</div></div>
+</div>
+<a id="method_getImage"></a><div class="element clickable method public method_getImage" data-toggle="collapse" data-target=".method_getImage .collapse">
+<h2>Resize an image and store the resized version in the assets/images folder.</h2>
+<pre>getImage(string $image, integer $width, integer $height, string $mode, string $target, boolean $force) : string | null</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>string</code><p>The image path.</p></div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>The target width.</p></div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code><p>The target height.</p></div>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code><p>The resize mode.</p></div>
+<div class="subelement argument">
+<h4>$target</h4>
+<code>string</code><p>An optional target path.</p></div>
+<div class="subelement argument">
+<h4>$force</h4>
+<code>boolean</code><p>Override existing target images.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>The path of the resized image or null.</div>
+</div></div>
+</div>
+<a id="method_getReferer"></a><div class="element clickable method public method_getReferer" data-toggle="collapse" data-target=".method_getReferer .collapse">
+<h2>Return the current referer URL and optionally encode ampersands.</h2>
+<pre>getReferer(boolean $blnEncodeAmpersands, string $strTable) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnEncodeAmpersands</h4>
+<code>boolean</code><p>If true, ampersands will be encoded.</p></div>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>An optional table name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The referer URL</div>
+</div></div>
+</div>
+<a id="method_loadDataContainer"></a><div class="element clickable method public method_loadDataContainer" data-toggle="collapse" data-target=".method_loadDataContainer .collapse">
+<h2>Load a set of DCA files.</h2>
+<pre>loadDataContainer(string $strTable, boolean $blnNoCache) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>The table name.</p></div>
+<div class="subelement argument">
+<h4>$blnNoCache</h4>
+<code>boolean</code><p>If true, the cache will be bypassed.</p></div>
+</div></div>
+</div>
+<a id="method_loadLanguageFile"></a><div class="element clickable method public method_loadLanguageFile" data-toggle="collapse" data-target=".method_loadLanguageFile .collapse">
+<h2>Load a set of language files.</h2>
+<pre>loadLanguageFile(string $strName, boolean $strLanguage, boolean $blnNoCache) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>The table name.</p></div>
+<div class="subelement argument">
+<h4>$strLanguage</h4>
+<code>boolean</code><p>An optional language code.</p></div>
+<div class="subelement argument">
+<h4>$blnNoCache</h4>
+<code>boolean</code><p>If true, the cache will be bypassed.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="Exception.html">\Exception</a></code></th>
+<td>In case a language does not exist.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_log"></a><div class="element clickable method public method_log" data-toggle="collapse" data-target=".method_log .collapse">
+<h2>Log a message to the contao system log.</h2>
+<pre>log(string $strText, string $strFunction, string $strCategory) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strText</h4>
+<code>string</code><p>The message text to add to the log.</p></div>
+<div class="subelement argument">
+<h4>$strFunction</h4>
+<code>string</code><p>The method/function the message originates from.</p>
+</div>
+<div class="subelement argument">
+<h4>$strCategory</h4>
+<code>string</code><p>The category under which the message shall be logged.</p></div>
+</div></div>
+</div>
+<a id="method_parseDate"></a><div class="element clickable method public method_parseDate" data-toggle="collapse" data-target=".method_parseDate .collapse">
+<h2>Parse a date format string and translate textual representations.</h2>
+<pre>parseDate(string $strFormat, integer $intTimestamp) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFormat</h4>
+<code>string</code><p>The date format string.</p></div>
+<div class="subelement argument">
+<h4>$intTimestamp</h4>
+<code>integer</code><p>An optional timestamp.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The textual representation of the date.</div>
+</div></div>
+</div>
+<a id="method_redirect"></a><div class="element clickable method public method_redirect" data-toggle="collapse" data-target=".method_redirect .collapse">
+<h2>Redirect the browser to a new location.</h2>
+<pre>redirect(string $strLocation, int $intStatus) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">NOTE: This method exits the script.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strLocation</h4>
+<code>string</code><p>The new URI to which the browser shall get redirected to.</p></div>
+<div class="subelement argument">
+<h4>$intStatus</h4>
+<code>int</code><p>The HTTP status code to use. 301, 302, 303, 307. Defaults to 303.</p></div>
+</div></div>
+</div>
+<a id="method_reload"></a><div class="element clickable method public method_reload" data-toggle="collapse" data-target=".method_reload .collapse">
+<h2>Reload the current page.</h2>
+<pre>reload() : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">NOTE: This method exits the script.</div></div></div>
+</div>
+<a id="method_substrHtml"></a><div class="element clickable method public method_substrHtml" data-toggle="collapse" data-target=".method_substrHtml .collapse">
+<h2>Shorten a HTML string to a certain number of characters.</h2>
+<pre>substrHtml(string $strString, integer $intNumberOfChars) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Shortens a string to a given number of characters preserving words
+(therefore it might be a bit shorter or longer than the number of
+characters specified). Preserves allowed tags.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strString</h4>
+<code>string</code><p>The Html string to cut.</p></div>
+<div class="subelement argument">
+<h4>$intNumberOfChars</h4>
+<code>integer</code><p>The amount of chars to preserve.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_dispatch"></a><div class="element clickable method protected method_dispatch" data-toggle="collapse" data-target=".method_dispatch .collapse">
+<h2>dispatch()
+        </h2>
+<pre>dispatch($eventName, $event) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$eventName</h4></div>
+<div class="subelement argument"><h4>$event</h4></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-02-26T16:37:29+01:00.<br></footer></div>
+</div>
+</body>
+</html>
