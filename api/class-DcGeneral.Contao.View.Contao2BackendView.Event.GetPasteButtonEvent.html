@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html">BaseButtonEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseGetButtonsEvent.html">BaseGetButtonsEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BuildWidgetEvent.html">BuildWidgetEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.DecodePropertyValueForWidgetEvent.html">DecodePropertyValueForWidgetEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.EditModelBeforeSaveEvent.html">EditModelBeforeSaveEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html">EncodePropertyValueFromWidgetEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetBreadcrumbEvent.html">GetBreadcrumbEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetEditModeButtonsEvent.html">GetEditModeButtonsEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html">GetGlobalButtonEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonsEvent.html">GetGlobalButtonsEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetGroupHeaderEvent.html">GetGroupHeaderEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html">GetOperationButtonEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetParentHeaderEvent.html">GetParentHeaderEvent</a></li>
+				<li class="active"><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">GetPasteButtonEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html">GetPasteRootButtonEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPropertyOptionsEvent.html">GetPropertyOptionsEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.GetSelectModeButtonsEvent.html">GetSelectModeButtonsEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.ManipulateWidgetEvent.html">ManipulateWidgetEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.ModelToLabelEvent.html">ModelToLabelEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.ParentViewChildRecordEvent.html">ParentViewChildRecordEvent</a></li>
+				<li><a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.ResolveWidgetErrorMessageEvent.html">ResolveWidgetErrorMessageEvent</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html" title="Summary of DcGeneral\Contao\View\Contao2BackendView\Event"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class GetPasteButtonEvent</h1>
+
+
+	<div class="description">
+	
+<p>Class GetPasteButtonEvent.</p>
+
+<p>This event gets emitted when a paste button is generated.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Symfony\Component\EventDispatcher\Event
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html"><span>DcGeneral\Event\AbstractEnvironmentAwareEvent</span></a>
+			
+			 implements 
+				<a href="class-DcGeneral.EnvironmentAwareInterface.html"><span>DcGeneral\EnvironmentAwareInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html"><span>DcGeneral\Contao\View\Contao2BackendView\Event\BaseButtonEvent</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteButtonEvent</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Contao.html">Contao</a>\<a href="namespace-DcGeneral.Contao.View.html">View</a>\<a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>\<a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a><br />
+		<b>Package:</b> DcGeneral\Contao\View\Contao2BackendView\Event<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#15-341" title="Go to source code">Contao/View/Contao2BackendView/Event/GetPasteButtonEvent.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setCircularReference" id="_setCircularReference">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCircularReference">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#97-112" title="Go to source code">setCircularReference</a>( <span>boolean <var>$blnCircularReference</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set determinator if there exists a circular reference.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set determinator if there exists a circular reference.</p>
+
+<p>This flag determines if there exists a circular reference between the item
+currently in the clipboard and the current model. A circular reference is of
+relevance when performing a cut and paste operation for example.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$blnCircularReference</var></dt>
+					<dd><code>boolean</code><br>$blnCircularReference The flag.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCircularReference" id="_getCircularReference">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCircularReference">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#114-125" title="Go to source code">getCircularReference</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get determinator if there exists a circular reference.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get determinator if there exists a circular reference.</p>
+
+<p>This flag determines if there exists a circular reference between the item
+currently in the clipboard and the current model. A circular reference is of
+relevance when performing a cut and paste operation for example.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHrefAfter" id="_setHrefAfter">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHrefAfter">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#127-139" title="Go to source code">setHrefAfter</a>( <span>string <var>$hrefAfter</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the href for the paste after button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the href for the paste after button.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$hrefAfter</var></dt>
+					<dd><code>string</code><br>$hrefAfter The href.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHrefAfter" id="_getHrefAfter">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHrefAfter">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#140-148" title="Go to source code">getHrefAfter</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the href for the paste after button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the href for the paste after button.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHrefInto" id="_setHrefInto">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHrefInto">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#150-162" title="Go to source code">setHrefInto</a>( <span>string <var>$hrefInto</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the href for the paste into button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the href for the paste into button.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$hrefInto</var></dt>
+					<dd><code>string</code><br>$hrefInto The href.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHrefInto" id="_getHrefInto">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHrefInto">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#164-172" title="Go to source code">getHrefInto</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the href for the paste into button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the href for the paste into button.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHtmlPasteAfter" id="_setHtmlPasteAfter">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHtmlPasteAfter">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#174-186" title="Go to source code">setHtmlPasteAfter</a>( <span>string <var>$html</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the html code for the paste after button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the html code for the paste after button.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$html</var></dt>
+					<dd><code>string</code><br>$html The HTML code.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHtmlPasteAfter" id="_getHtmlPasteAfter">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHtmlPasteAfter">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#188-196" title="Go to source code">getHtmlPasteAfter</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the html code for the paste after button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the html code for the paste after button.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHtmlPasteInto" id="_setHtmlPasteInto">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHtmlPasteInto">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#198-210" title="Go to source code">setHtmlPasteInto</a>( <span>string <var>$html</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the html code for the paste into button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the html code for the paste into button.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$html</var></dt>
+					<dd><code>string</code><br>$html The HTML code.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHtmlPasteInto" id="_getHtmlPasteInto">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHtmlPasteInto">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#212-220" title="Go to source code">getHtmlPasteInto</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the html code for the paste after button.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the html code for the paste after button.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setModel" id="_setModel">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setModel">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#222-234" title="Go to source code">setModel</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the model currently in scope.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the model currently in scope.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$model The model currently in scope.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getModel" id="_getModel">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getModel">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#236-244" title="Go to source code">getModel</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the model currently in scope.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the model currently in scope.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNext" id="_setNext">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNext">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#246-258" title="Go to source code">setNext</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$next</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the next model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the next model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$next</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$next The next model.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNext" id="_getNext">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNext">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#260-268" title="Go to source code">getNext</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the next model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the next model.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrevious" id="_setPrevious">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrevious">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#270-282" title="Go to source code">setPrevious</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$previous</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the previous model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the previous model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$previous</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$previous The previous model.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrevious" id="_getPrevious">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrevious">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#284-292" title="Go to source code">getPrevious</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the previous model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the previous model.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPasteAfterDisabled" id="_setPasteAfterDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPasteAfterDisabled">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#294-306" title="Go to source code">setPasteAfterDisabled</a>( <span>boolean <var>$pasteAfterDisabled</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the determinator if the paste after button shall be disabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the determinator if the paste after button shall be disabled.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pasteAfterDisabled</var></dt>
+					<dd><code>boolean</code><br>$pasteAfterDisabled Determinator flag for the disabling state.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPasteAfterDisabled" id="_isPasteAfterDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isPasteAfterDisabled">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#308-316" title="Go to source code">isPasteAfterDisabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Check if the paste after button shall be disabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if the paste after button shall be disabled.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPasteIntoDisabled" id="_setPasteIntoDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPasteIntoDisabled">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#318-330" title="Go to source code">setPasteIntoDisabled</a>( <span>boolean <var>$pasteIntoDisabled</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the determinator if the paste into button shall be disabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the determinator if the paste into button shall be disabled.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pasteIntoDisabled</var></dt>
+					<dd><code>boolean</code><br>$pasteIntoDisabled Determinator flag for the disabling state.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPasteIntoDisabled" id="_isPasteIntoDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isPasteIntoDisabled">#</a>
+		<code><a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#332-340" title="Go to source code">isPasteIntoDisabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Check if the paste into button shall be disabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if the paste into button shall be disabled.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#methods">DcGeneral\Contao\View\Contao2BackendView\Event\BaseButtonEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_getAttributes">getAttributes()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_getHtml">getHtml()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_getKey">getKey()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_getLabel">getLabel()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_getTitle">getTitle()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_setAttributes">setAttributes()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_setHtml">setHtml()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_setKey">setKey()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_setLabel">setLabel()</a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#_setTitle">setTitle()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html#methods">DcGeneral\Event\AbstractEnvironmentAwareEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html#___construct">__construct()</a>, 
+			<a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html#_getEnvironment">getEnvironment()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#constants">DcGeneral\Contao\View\Contao2BackendView\Event\BaseButtonEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#NAME"><b>NAME</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="blnCircularReference" id="$blnCircularReference">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#27-32" title="Go to source code"><var>$blnCircularReference</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$blnCircularReference" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Determinator if there is a circular reference from an item in the clipboard
+to the current model.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Determinator if there is a circular reference from an item in the clipboard
+to the current model.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hrefAfter" id="$hrefAfter">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#34-39" title="Go to source code"><var>$hrefAfter</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$hrefAfter" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The href information to use for the paste after button.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The href information to use for the paste after button.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hrefInto" id="$hrefInto">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#41-46" title="Go to source code"><var>$hrefInto</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$hrefInto" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The href information to use for the paste into button.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The href information to use for the paste into button.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="htmlPasteAfter" id="$htmlPasteAfter">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#48-53" title="Go to source code"><var>$htmlPasteAfter</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$htmlPasteAfter" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The Html code to use for the "paste after" button.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The Html code to use for the "paste after" button.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="htmlPasteInto" id="$htmlPasteInto">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#55-60" title="Go to source code"><var>$htmlPasteInto</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$htmlPasteInto" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The Html code to use for the "paste into" button.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The Html code to use for the "paste into" button.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="model" id="$model">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#62-67" title="Go to source code"><var>$model</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$model" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The model to which the command shall be applied to.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The model to which the command shall be applied to.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="next" id="$next">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#69-74" title="Go to source code"><var>$next</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$next" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The next model in the list.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The next model in the list.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="previous" id="$previous">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#76-81" title="Go to source code"><var>$previous</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$previous" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The previous model in the list.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The previous model in the list.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="pasteIntoDisabled" id="$pasteIntoDisabled">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#83-88" title="Go to source code"><var>$pasteIntoDisabled</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$pasteIntoDisabled" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Determinator if the paste into button shall be disabled.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Determinator if the paste into button shall be disabled.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="pasteAfterDisabled" id="$pasteAfterDisabled">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html#90-95" title="Go to source code"><var>$pasteAfterDisabled</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$pasteAfterDisabled" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Determinator if the paste after button shall be disabled.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Determinator if the paste after button shall be disabled.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#properties">DcGeneral\Contao\View\Contao2BackendView\Event\BaseButtonEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#$attributes"><var>$attributes</var></a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#$html"><var>$html</var></a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#$key"><var>$key</var></a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#$label"><var>$label</var></a>, 
+			<a href="class-DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html#$title"><var>$title</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html#properties">DcGeneral\Event\AbstractEnvironmentAwareEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html#$environment"><var>$environment</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

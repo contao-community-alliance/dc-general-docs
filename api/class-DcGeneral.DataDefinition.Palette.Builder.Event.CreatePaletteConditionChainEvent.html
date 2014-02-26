@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChainEvent | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.AddConditionEvent.html">AddConditionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html">BuilderEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateConditionEvent.html">CreateConditionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateDefaultPaletteConditionEvent.html">CreateDefaultPaletteConditionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateLegendEvent.html">CreateLegendEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteCollectionEvent.html">CreatePaletteCollectionEvent</a></li>
+				<li class="active"><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html">CreatePaletteConditionChainEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteEvent.html">CreatePaletteEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyConditionChainEvent.html">CreatePropertyConditionChainEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyEvent.html">CreatePropertyEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyValueConditionEvent.html">CreatePropertyValueConditionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishConditionEvent.html">FinishConditionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishLegendEvent.html">FinishLegendEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPaletteCollectionEvent.html">FinishPaletteCollectionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPaletteEvent.html">FinishPaletteEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPropertyEvent.html">FinishPropertyEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetDefaultPaletteConditionClassNameEvent.html">SetDefaultPaletteConditionClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetLegendClassNameEvent.html">SetLegendClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteClassNameEvent.html">SetPaletteClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteCollectionClassNameEvent.html">SetPaletteCollectionClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteConditionChainClassNameEvent.html">SetPaletteConditionChainClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPalettePropertyValueConditionClassNameEvent.html">SetPalettePropertyValueConditionClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyClassNameEvent.html">SetPropertyClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyConditionChainClassNameEvent.html">SetPropertyConditionChainClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyValueConditionClassNameEvent.html">SetPropertyValueConditionClassNameEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UseLegendEvent.html">UseLegendEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePaletteCollectionEvent.html">UsePaletteCollectionEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePaletteEvent.html">UsePaletteEvent</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePropertyEvent.html">UsePropertyEvent</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html" title="Summary of DcGeneral\DataDefinition\Palette\Builder\Event"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CreatePaletteConditionChainEvent</h1>
+
+
+	<div class="description">
+	
+<p>This event gets emitted when a palette condition chain is created.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Symfony\Component\EventDispatcher\Event
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html"><span>DcGeneral\Event\AbstractContainerAwareEvent</span></a>
+			
+			 implements 
+				<a href="class-DcGeneral.ContainerAwareInterface.html"><span>DcGeneral\ContainerAwareInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html"><span>DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChainEvent</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.DataDefinition.html">DataDefinition</a>\<a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette</a>\<a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder</a>\<a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a><br />
+		<b>Package:</b> DcGeneral\DataDefinition\Palette\Builder\Event<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#18-70" title="Go to source code">DataDefinition/Palette/Builder/Event/CreatePaletteConditionChainEvent.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#34-45" title="Go to source code">__construct</a>( <span><code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code> <var>$paletteConditionChain</var></span>, <span><code><a href="class-DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code> <var>$paletteBuilder</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$paletteConditionChain</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code></code><br>$paletteConditionChain The palette condition chain.</dd>
+					<dt><var>$paletteBuilder</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></code><br>$paletteBuilder The palette builder in use.</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html#___construct">DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPaletteConditionChain" id="_setPaletteConditionChain">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChainEvent</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPaletteConditionChain">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#47-59" title="Go to source code">setPaletteConditionChain</a>( <span><code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code> <var>$paletteConditionChain</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the palette condition chain.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the palette condition chain.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$paletteConditionChain</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code></code><br>$paletteConditionChain The condition chain.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChainEvent</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPaletteConditionChain" id="_getPaletteConditionChain">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPaletteConditionChain">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#61-69" title="Go to source code">getPaletteConditionChain</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the palette condition chain.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the palette condition chain.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html#methods">DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html#_getPaletteBuilder">getPaletteBuilder()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html#methods">DcGeneral\Event\AbstractContainerAwareEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html#_getContainer">getContainer()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="NAME" id="NAME">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#25" title="Go to source code"><b>NAME</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'dc-general.data-definition.palette.builder.create-plaette-condition-chain'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAME" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="paletteConditionChain" id="$paletteConditionChain">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionChain</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html#27-32" title="Go to source code"><var>$paletteConditionChain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$paletteConditionChain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The palette condition chain being created.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The palette condition chain being created.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html#properties">DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html#$paletteBuilder"><var>$paletteBuilder</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html#properties">DcGeneral\Event\AbstractContainerAwareEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html#$container"><var>$container</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

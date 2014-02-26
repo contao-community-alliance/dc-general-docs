@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DataDefinition.ModelRelationship.AbstractCondition.html">AbstractCondition</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildCondition.html">ParentChildCondition</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.ModelRelationship.RootCondition.html">RootCondition</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">ParentChildConditionInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.ModelRelationship.RootConditionInterface.html">RootConditionInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html" title="Summary of DcGeneral\DataDefinition\ModelRelationship"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface ParentChildConditionInterface</h1>
+
+
+	<div class="description">
+	
+<p>This interface holds the information how a parent model relates to a child
+model.</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildCondition.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildCondition</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.DataDefinition.html">DataDefinition</a>\<a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a><br />
+		<b>Package:</b> DcGeneral\DataDefinition\ModelRelationship<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#17-157" title="Go to source code">DataDefinition/ModelRelationship/ParentChildConditionInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setFilterArray" id="_setFilterArray">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFilterArray">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#24-31" title="Go to source code">setFilterArray</a>( <span>array <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the condition as filter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the condition as filter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The filter rules describing the relationship.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilterArray" id="_getFilterArray">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilterArray">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#33-38" title="Go to source code">getFilterArray</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the condition as filter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the condition as filter.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSetters" id="_setSetters">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSetters">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#40-47" title="Go to source code">setSetters</a>( <span>array <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the condition setters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the condition setters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The values to be applied to a model when it shall get set as child of
+another one.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSetters" id="_getSetters">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSetters">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#49-54" title="Go to source code">getSetters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the condition setters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the condition setters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInverseFilterArray" id="_setInverseFilterArray">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInverseFilterArray">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#56-63" title="Go to source code">setInverseFilterArray</a>( <span>array <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the inverse filter for the condition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the inverse filter for the condition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The filter rules to use when inverting the condition to look up the
+parent.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInverseFilterArray" id="_getInverseFilterArray">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInverseFilterArray">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#65-70" title="Go to source code">getInverseFilterArray</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the inverse filter for the condition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the inverse filter for the condition.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilter" id="_getFilter">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilter">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#72-79" title="Go to source code">getFilter</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objParent</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the condition as filter related to the given model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the condition as filter related to the given model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objParent</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objParent The model that shall get used as parent.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSourceName" id="_setSourceName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSourceName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#81-88" title="Go to source code">setSourceName</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the name of the source provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the name of the source provider.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code><br>$value The name of the provider.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSourceName" id="_getSourceName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSourceName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#90-95" title="Go to source code">getSourceName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the name of the source provider (parent).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the name of the source provider (parent).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDestinationName" id="_setDestinationName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDestinationName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#97-104" title="Go to source code">setDestinationName</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the name of the destination provider (child).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the name of the destination provider (child).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code><br>$value The name of the provider.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html">DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDestinationName" id="_getDestinationName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDestinationName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#106-111" title="Go to source code">getDestinationName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the name of the destination provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the name of the destination provider.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="applyTo" id="_applyTo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_applyTo">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#113-122" title="Go to source code">applyTo</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objParent</var></span>, <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objChild</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Apply a condition to a child.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Apply a condition to a child.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objParent</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objParent The parent object.</dd>
+					<dt><var>$objChild</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objChild The object on which the condition shall be enforced on.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="copyFrom" id="_copyFrom">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_copyFrom">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#124-133" title="Go to source code">copyFrom</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$sourceModel</var></span>, <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$destinationModel</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Apply a condition to a child by copying it from another child.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Apply a condition to a child by copying it from another child.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sourceModel</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$sourceModel The sibling model.</dd>
+					<dt><var>$destinationModel</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$destinationModel The model on which the condition shall be enforced on.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInverseFilterFor" id="_getInverseFilterFor">
+
+		<td class="attributes"><code>
+			 public 
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInverseFilterFor">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#135-145" title="Go to source code">getInverseFilterFor</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objChild</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the inverted condition as filter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the inverted condition as filter.</p>
+
+<p>This allows to look up the parent of a child model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objChild</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objChild The model that shall get used as child and for which the parent filter
+shall get retrieved.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="matches" id="_matches">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_matches">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.ModelRelationship.ParentChildConditionInterface.html#147-156" title="Go to source code">matches</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objParent</var></span>, <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objChild</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Test if the given parent is indeed a parent of the given child object for
+this condition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Test if the given parent is indeed a parent of the given child object for
+this condition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objParent</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objParent The parent model.</dd>
+					<dt><var>$objChild</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objChild The child model.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

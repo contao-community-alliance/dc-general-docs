@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\Event\EventPropagatorInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Event.AbstractCommandEvent.html">AbstractCommandEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html">AbstractContainerAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html">AbstractEnvironmentAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractModelAwareEvent.html">AbstractModelAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractModelCommandEvent.html">AbstractModelCommandEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractViewAwareEvent.html">AbstractViewAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.EventPropagator.html">EventPropagator</a></li>
+				<li><a href="class-DcGeneral.Event.PostCreateModelEvent.html">PostCreateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostDeleteModelEvent.html">PostDeleteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostDuplicateModelEvent.html">PostDuplicateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostPasteModelEvent.html">PostPasteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostPersistModelEvent.html">PostPersistModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreCreateModelEvent.html">PreCreateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreDeleteModelEvent.html">PreDeleteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreDuplicateModelEvent.html">PreDuplicateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PrePasteModelEvent.html">PrePasteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PrePersistModelEvent.html">PrePersistModelEvent</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Event.CommandEventInterface.html">CommandEventInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.Event.EventPropagatorInterface.html">EventPropagatorInterface</a></li>
+				<li><a href="class-DcGeneral.Event.ModelCommandEventInterface.html">ModelCommandEventInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Event.html" title="Summary of DcGeneral\Event"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface EventPropagatorInterface</h1>
+
+
+	<div class="description">
+	
+<p>Generic event propagator.</p>
+
+<p>The event propagator is used to dispatch an event to the attached event
+dispatcher.</p>
+
+<p>When propagating an event, one can pass an array of suffixes that will get
+appended to the event name in a loop.</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.Event.EventPropagator.html">DcGeneral\Event\EventPropagator</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Event.html">Event</a><br />
+		<b>Package:</b> DcGeneral\Event<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Event.EventPropagatorInterface.html#15-67" title="Go to source code">Event/EventPropagatorInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="propagate" id="_propagate">
+
+		<td class="attributes"><code>
+			 public 
+			Symfony\Component\EventDispatcher\Event
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_propagate">#</a>
+		<code><a href="source-class-DcGeneral.Event.EventPropagatorInterface.html#26-51" title="Go to source code">propagate</a>( <span>string <var>$eventName</var></span>, <span>Symfony\Component\EventDispatcher\Event <var>$event</var> = <span class="php-keyword1">null</span></span>, <span>string[] <var>$suffixes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Propagate an event to the defined event dispatcher.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Propagate an event to the defined event dispatcher.</p>
+
+<p>The given suffixes will get appended to the event name and the resulting
+event name will get fired.</p>
+
+<p>For each round of firing, the last element from the suffixes get's dropped
+and the event fired again.</p>
+
+<p>The loop stops as soon as the passed event has isPropagationStopped() ===
+true</p>
+
+<p>Example: Eventname: dc-general.some.event Suffixes: array('param1', 'param2')
+Resulting Events: 1. dc-general.some.event[param1][param2] 2.
+dc-general.some.event[param1] 3. dc-general.some.event</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$eventName</var></dt>
+					<dd><code>string</code><br>$eventName The event name of the event to propagate.</dd>
+					<dt><var>$event</var></dt>
+					<dd><code>Symfony\Component\EventDispatcher\Event</code><br>$event The Event to propagate (optional).</dd>
+					<dt><var>$suffixes</var></dt>
+					<dd><code>string[]</code><br>$suffixes Suffixes to attach to the event.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Symfony\Component\EventDispatcher\Event</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="propagateExact" id="_propagateExact">
+
+		<td class="attributes"><code>
+			 public 
+			Symfony\Component\EventDispatcher\Event
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_propagateExact">#</a>
+		<code><a href="source-class-DcGeneral.Event.EventPropagatorInterface.html#53-66" title="Go to source code">propagateExact</a>( <span>string <var>$eventName</var></span>, <span>Symfony\Component\EventDispatcher\Event <var>$event</var></span>, <span>string[] <var>$suffixes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Propagate an event to the defined event dispatcher.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Propagate an event to the defined event dispatcher.</p>
+
+<p>The given suffixes will get appended to the event name and the resulting
+event name will get fired.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$eventName</var></dt>
+					<dd><code>string</code><br>$eventName The event name of the event to propagate.</dd>
+					<dt><var>$event</var></dt>
+					<dd><code>Symfony\Component\EventDispatcher\Event</code><br>$event The Event to propagate.</dd>
+					<dt><var>$suffixes</var></dt>
+					<dd><code>string[]</code><br>$suffixes Suffixes to attach to the event.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Symfony\Component\EventDispatcher\Event</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

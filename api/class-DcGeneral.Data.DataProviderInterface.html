@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\Data\DataProviderInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.AbstractModel.html">AbstractModel</a></li>
+				<li><a href="class-DcGeneral.Data.DCGE.html">DCGE</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultCollection.html">DefaultCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultConfig.html">DefaultConfig</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultDataProvider.html">DefaultDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformation.html">DefaultLanguageInformation</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformationCollection.html">DefaultLanguageInformationCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultModel.html">DefaultModel</a></li>
+				<li><a href="class-DcGeneral.Data.MultiLanguageDataProvider.html">MultiLanguageDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.NoOpDataProvider.html">NoOpDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBag.html">PropertyValueBag</a></li>
+				<li><a href="class-DcGeneral.Data.TableRowsAsRecordsDataProvider.html">TableRowsAsRecordsDataProvider</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.CollectionInterface.html">CollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ConfigInterface.html">ConfigInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.Data.DataProviderInterface.html">DataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationCollectionInterface.html">LanguageInformationCollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationInterface.html">LanguageInformationInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ModelInterface.html">ModelInterface</a></li>
+				<li><a href="class-DcGeneral.Data.MultiLanguageDataProviderInterface.html">MultiLanguageDataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBagInterface.html">PropertyValueBagInterface</a></li>
+				<li><a href="class-DcGeneral.Data.VersionModelInterface.html">VersionModelInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Data.html" title="Summary of DcGeneral\Data"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface DataProviderInterface</h1>
+
+
+	<div class="description">
+	
+<p>Interface DataProviderInterface.</p>
+
+<p>This interface describes a data provider in DcGeneral.</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.Data.DefaultDataProvider.html">DcGeneral\Data\DefaultDataProvider</a>, 
+			<a href="class-DcGeneral.Data.MultiLanguageDataProviderInterface.html">DcGeneral\Data\MultiLanguageDataProviderInterface</a>, 
+			<a href="class-DcGeneral.Data.NoOpDataProvider.html">DcGeneral\Data\NoOpDataProvider</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-DcGeneral.Data.MultiLanguageDataProvider.html">DcGeneral\Data\MultiLanguageDataProvider</a>, 
+			<a href="class-DcGeneral.Data.TableRowsAsRecordsDataProvider.html">DcGeneral\Data\TableRowsAsRecordsDataProvider</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Data.html">Data</a><br />
+		<b>Package:</b> DcGeneral\Data<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Data.DataProviderInterface.html#17-244" title="Go to source code">Data/DataProviderInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setBaseConfig" id="_setBaseConfig">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBaseConfig">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#26-35" title="Go to source code">setBaseConfig</a>( <span>array <var>$arrConfig</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set base config with source and other necessary parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set base config with source and other necessary parameter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arrConfig</var></dt>
+					<dd><code>array</code><br>$arrConfig The configuration to use.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Exception.DcGeneralRuntimeException.html">DcGeneral\Exception\DcGeneralRuntimeException</a></code></code><br>When no source has been defined.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmptyConfig" id="_getEmptyConfig">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmptyConfig">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#37-42" title="Go to source code">getEmptyConfig</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return an empty configuration object.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return an empty configuration object.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmptyModel" id="_getEmptyModel">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmptyModel">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#44-49" title="Go to source code">getEmptyModel</a>( )</code>
+
+		<div class="description short">
+			
+<p>Fetch an empty single record (new model).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch an empty single record (new model).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmptyCollection" id="_getEmptyCollection">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmptyCollection">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#51-56" title="Go to source code">getEmptyCollection</a>( )</code>
+
+		<div class="description short">
+			
+<p>Fetch an empty single collection (new model list).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch an empty single collection (new model list).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch" id="_fetch">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#58-69" title="Go to source code">fetch</a>( <span><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code> <var>$objConfig</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Fetch a single or first record by id or filter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch a single or first record by id or filter.</p>
+
+<p>If the model shall be retrieved by id, use $objConfig-&gt;setId() to populate
+the config with an Id.</p>
+
+<p>If the model shall be retrieved by filter, use $objConfig-&gt;setFilter() to
+populate the config with a filter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objConfig</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code></code><br>$objConfig The configuration to use.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetchAll" id="_fetchAll">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code>|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetchAll">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#71-81" title="Go to source code">fetchAll</a>( <span><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code> <var>$objConfig</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Fetch all records (optional filtered, sorted and limited).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch all records (optional filtered, sorted and limited).</p>
+
+<p>This returns a collection of all models matching the config object. If idOnly
+is true, an array containing all matching ids is returned.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objConfig</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code></code><br>$objConfig The configuration to use.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code>|array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilterOptions" id="_getFilterOptions">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilterOptions">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#83-96" title="Go to source code">getFilterOptions</a>( <span><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code> <var>$objConfig</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve all unique values for the given property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve all unique values for the given property.</p>
+
+<p>The result set will be an array containing all unique values contained in the
+data provider. Note: this only re-ensembles really used values for at least one
+data set.</p>
+
+<p>The only information being interpreted from the passed config object is the
+first property to fetch and the filter definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objConfig</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code></code><br>$objConfig The filter config options.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCount" id="_getCount">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCount">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#98-105" title="Go to source code">getCount</a>( <span><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code> <var>$objConfig</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the amount of total items (filtering may be used in the config).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the amount of total items (filtering may be used in the config).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objConfig</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ConfigInterface.html">DcGeneral\Data\ConfigInterface</a></code></code><br>$objConfig The configuration to use.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#107-117" title="Go to source code">save</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objItem</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save an item to the data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save an item to the data provider.</p>
+
+<p>If the item does not have an Id yet, the save operation will add it as a new
+row to the database and populate the Id of the model accordingly.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objItem</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objItem The model to save back.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>The passed model.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveEach" id="_saveEach">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveEach">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#119-126" title="Go to source code">saveEach</a>( <span><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code> <var>$objItems</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save a collection of items to the data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save a collection of items to the data provider.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objItems</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code></code><br>$objItems The collection containing all items to be saved.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#128-139" title="Go to source code">delete</a>( <span>mixed <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Delete an item.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete an item.</p>
+
+<p>The given value may be either integer, string or an instance of Model</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>mixed</code><br>$item Id or the model itself, to delete.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Exception.DcGeneralRuntimeException.html">DcGeneral\Exception\DcGeneralRuntimeException</a></code></code><br>When an unusable object has been passed.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveVersion" id="_saveVersion">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveVersion">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#141-150" title="Go to source code">saveVersion</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objModel</var></span>, <span>string <var>$strUsername</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save a new version of a model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save a new version of a model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objModel</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objModel The model for which a new version shall be created.</dd>
+					<dt><var>$strUsername</var></dt>
+					<dd><code>string</code><br>$strUsername The username to attach to the version as creator.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#152-161" title="Go to source code">getVersion</a>( <span>mixed <var>$mixID</var></span>, <span>mixed <var>$mixVersion</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return a model based of the version information.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return a model based of the version information.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the record.</dd>
+					<dt><var>$mixVersion</var></dt>
+					<dd><code>mixed</code><br>$mixVersion The ID of the version.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersions" id="_getVersions">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersions">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#163-173" title="Go to source code">getVersions</a>( <span>mixed <var>$mixID</var></span>, <span>boolean <var>$blnOnlyActive</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return a list with all versions for the model with the given Id.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return a list with all versions for the model with the given Id.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the row.</dd>
+					<dt><var>$blnOnlyActive</var></dt>
+					<dd><code>boolean</code><br>$blnOnlyActive If true, only active versions will get returned, if false all
+version will get returned.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.CollectionInterface.html">DcGeneral\Data\CollectionInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVersionActive" id="_setVersionActive">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVersionActive">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#175-184" title="Go to source code">setVersionActive</a>( <span>mixed <var>$mixID</var></span>, <span>mixed <var>$mixVersion</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set a version as active.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set a version as active.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the model.</dd>
+					<dt><var>$mixVersion</var></dt>
+					<dd><code>mixed</code><br>$mixVersion The version number to set active.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getActiveVersion" id="_getActiveVersion">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getActiveVersion">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#186-193" title="Go to source code">getActiveVersion</a>( <span>mixed <var>$mixID</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the current active version for a model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the current active version for a model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the model.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>The current version number of the requested row.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resetFallback" id="_resetFallback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resetFallback">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#195-207" title="Go to source code">resetFallback</a>( <span>string <var>$strField</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Reset the fallback field.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Reset the fallback field.</p>
+
+<p>This clears the given property in all items in the data provider to an empty
+value.</p>
+
+<p>Documentation: Evaluation - fallback =&gt; If true the field can only be
+assigned once per table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strField</var></dt>
+					<dd><code>string</code><br>$strField The field to reset.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isUniqueValue" id="_isUniqueValue">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isUniqueValue">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#209-223" title="Go to source code">isUniqueValue</a>( <span>string <var>$strField</var></span>, <span>mixed <var>$varNew</var></span>, <span>integer <var>$intId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if the value is unique in the data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if the value is unique in the data provider.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strField</var></dt>
+					<dd><code>string</code><br>$strField The field in which to test.</dd>
+					<dt><var>$varNew</var></dt>
+					<dd><code>mixed</code><br>$varNew The value about to be saved.</dd>
+					<dt><var>$intId</var></dt>
+					<dd><code>integer</code><br>$intId The (optional) id of the item currently in scope - pass null for new
+items. Documentation: Evaluation - unique =&gt; If true the field value cannot
+be saved if it exists already.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fieldExists" id="_fieldExists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fieldExists">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#225-232" title="Go to source code">fieldExists</a>( <span>string <var>$strField</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if a property with the given name exists in the data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if a property with the given name exists in the data provider.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strField</var></dt>
+					<dd><code>string</code><br>$strField The name of the property to search.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sameModels" id="_sameModels">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sameModels">#</a>
+		<code><a href="source-class-DcGeneral.Data.DataProviderInterface.html#234-243" title="Go to source code">sameModels</a>( <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objModel1</var></span>, <span><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code> <var>$objModel2</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if two models have the same values in all properties.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if two models have the same values in all properties.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objModel1</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objModel1 The first model to compare.</dd>
+					<dt><var>$objModel2</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Data.ModelInterface.html">DcGeneral\Data\ModelInterface</a></code></code><br>$objModel2 The second model to compare.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True - If both models are same, false if not.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

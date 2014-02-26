@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DcGeneral\Contao\Dca\Builder\Legacy\LegacyDcaDataDefinitionBuilder | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html">DcaReadingDataDefinitionBuilder</a></li>
+				<li><a href="class-DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html">ExtendedLegacyDcaDataDefinitionBuilder</a></li>
+				<li class="active"><a href="class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html">LegacyDcaDataDefinitionBuilder</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html" title="Summary of DcGeneral\Contao\Dca\Builder\Legacy"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class LegacyDcaDataDefinitionBuilder</h1>
+
+
+	<div class="description">
+	
+<p>Build the container config from legacy DCA syntax.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-DcGeneral.DataDefinition.Builder.AbstractEventDrivenDataDefinitionBuilder.html"><span>DcGeneral\DataDefinition\Builder\AbstractEventDrivenDataDefinitionBuilder</span></a>
+			
+			 implements 
+				<a href="class-DcGeneral.DataDefinition.Builder.DataDefinitionBuilderInterface.html"><span>DcGeneral\DataDefinition\Builder\DataDefinitionBuilderInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html"><span>DcGeneral\Contao\Dca\Builder\Legacy\DcaReadingDataDefinitionBuilder</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>DcGeneral\Contao\Dca\Builder\Legacy\LegacyDcaDataDefinitionBuilder</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Contao.html">Contao</a>\<a href="namespace-DcGeneral.Contao.Dca.html">Dca</a>\<a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder</a>\<a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#88-1489" title="Go to source code">Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="build" id="_build">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#95-114" title="Go to source code">build</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span>, <span><code><a href="class-DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code> <var>$event</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Build a data definition and store it into the environments container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build a data definition and store it into the environments container.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The data definition container to populate.</dd>
+					<dt><var>$event</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code></code><br>$event The event that has been triggered.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadAdditionalDefinitions" id="_loadAdditionalDefinitions">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadAdditionalDefinitions">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#116-145" title="Go to source code">loadAdditionalDefinitions</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span>, <span><code><a href="class-DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code> <var>$event</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Load additional definitions, like naming of parent data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Load additional definitions, like naming of parent data provider.</p>
+
+<p>This method will register an event to the populate environment event in which
+the parent data provider container will get loaded.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+					<dt><var>$event</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code></code><br>$event The event being emitted.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseCallbacks" id="_parseCallbacks">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseCallbacks">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#147-357" title="Go to source code">parseCallbacks</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span>, <span>Symfony\Component\EventDispatcher\EventDispatcherInterface <var>$dispatcher</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the basic configuration and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the basic configuration and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+					<dt><var>$dispatcher</var></dt>
+					<dd><code>Symfony\Component\EventDispatcher\EventDispatcherInterface</code><br>$dispatcher The event dispatcher in use.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseBasicMode" id="_parseBasicMode">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseBasicMode">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#359-392" title="Go to source code">parseBasicMode</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the mode, flat, parented or hierarchical.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the mode, flat, parented or hierarchical.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></code><br>$config The basic definition of the data definition.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseBasicFlags" id="_parseBasicFlags">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseBasicFlags">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#394-427" title="Go to source code">parseBasicFlags</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the basic flags.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the basic flags.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></code><br>$config The basic definition of the data definition.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseBasicDefinition" id="_parseBasicDefinition">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseBasicDefinition">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#429-479" title="Go to source code">parseBasicDefinition</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the basic configuration and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the basic configuration and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseDataProvider" id="_parseDataProvider">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseDataProvider">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#481-560" title="Go to source code">parseDataProvider</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method parses all data provider related information from Contao legacy
+data container arrays.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method parses all data provider related information from Contao legacy
+data container arrays.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseRootEntries" id="_parseRootEntries">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseRootEntries">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#562-572" title="Go to source code">parseRootEntries</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method parses the root entries definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method parses the root entries definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootProviderName" id="_getRootProviderName">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootProviderName">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#574-600" title="Go to source code">getRootProviderName</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine the root provider name from the container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine the root provider name from the container.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container from where the name shall be retrieved.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Exception.DcGeneralRuntimeException.html">DcGeneral\Exception\DcGeneralRuntimeException</a></code></code><br>If the root provider can not be determined.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseParentChildConditions" id="_parseParentChildConditions">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseParentChildConditions">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#602-677" title="Go to source code">parseParentChildConditions</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method parses the parent-child conditions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method parses the parent-child conditions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseBackendView" id="_parseBackendView">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseBackendView">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#679-712" title="Go to source code">parseBackendView</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse and build the backend view definition for the old Contao2 backend
+view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse and build the backend view definition for the old Contao2 backend
+view.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Exception.DcGeneralInvalidArgumentException.html">DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></code><br>If the stored backend view definition does not implement the correct interface.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseListing" id="_parseListing">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseListing">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#714-736" title="Go to source code">parseListing</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span>, <span><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code> <var>$view</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the listing configuration.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the listing configuration.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+					<dt><var>$view</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></code><br>$view The view information for the backend view.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseListSorting" id="_parseListSorting">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseListSorting">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#738-799" title="Go to source code">parseListSorting</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code> <var>$listing</var></span>, <span>array <var>$listDca</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the sorting part of listing configuration.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the sorting part of listing configuration.</p>
+
+<p>NOTE: this method currently does NOT support the custom SQL sorting
+information as supported by DC_Table in Contao.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$listing</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code></code><br>$listing The listing configuration definition to populate.</dd>
+					<dt><var>$listDca</var></dt>
+					<dd><code>array</code><br>$listDca The DCA part containing the information to use.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Exception.DcGeneralRuntimeException.html">DcGeneral\Exception\DcGeneralRuntimeException</a></code></code><br>In case unsupported values are encountered.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseListLabel" id="_parseListLabel">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseListLabel">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#801-845" title="Go to source code">parseListLabel</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span>, <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code> <var>$listing</var></span>, <span>array <var>$listDca</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the sorting part of listing configuration.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the sorting part of listing configuration.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+					<dt><var>$listing</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code></code><br>$listing The listing configuration definition to populate.</dd>
+					<dt><var>$listDca</var></dt>
+					<dd><code>array</code><br>$listDca The DCA part containing the information to use.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelFilter" id="_parsePanelFilter">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelFilter">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#847-868" title="Go to source code">parsePanelFilter</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add filter elements to the panel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add filter elements to the panel.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to which the element shall get added to.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelSort" id="_parsePanelSort">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelSort">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#870-896" title="Go to source code">parsePanelSort</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add sort element to the panel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add sort element to the panel.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to which the element shall get added to.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelSearch" id="_parsePanelSearch">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelSearch">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#898-926" title="Go to source code">parsePanelSearch</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add search element to the panel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add search element to the panel.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to which the element shall get added to.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelLimit" id="_parsePanelLimit">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelLimit">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#928-941" title="Go to source code">parsePanelLimit</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add elements to the panel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add elements to the panel.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to which the element shall get added to.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelSubmit" id="_parsePanelSubmit">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelSubmit">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#943-956" title="Go to source code">parsePanelSubmit</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add elements to the panel.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add elements to the panel.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to which the element shall get added to.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanelRow" id="_parsePanelRow">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanelRow">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#958-996" title="Go to source code">parsePanelRow</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code> <var>$row</var></span>, <span>string <var>$elementList</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse a single panel row.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse a single panel row.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">DcGeneral\DataDefinition\Definition\View\PanelRowInterface</a></code></code><br>$row The row to be populated.</dd>
+					<dt><var>$elementList</var></dt>
+					<dd><code>string</code><br>$elementList A comma separated list of elements to be stored in the row.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePanel" id="_parsePanel">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePanel">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#998-1052" title="Go to source code">parsePanel</a>( <span><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code> <var>$view</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the defined palettes and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the defined palettes and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></code><br>$view The listing configuration definition to populate.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseGlobalOperations" id="_parseGlobalOperations">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseGlobalOperations">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1054-1077" title="Go to source code">parseGlobalOperations</a>( <span><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code> <var>$view</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the defined container scoped operations and populate the
+definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the defined container scoped operations and populate the
+definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></code><br>$view The backend view configuration definition to populate.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseModelOperations" id="_parseModelOperations">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseModelOperations">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1079-1102" title="Go to source code">parseModelOperations</a>( <span><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code> <var>$view</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the defined model scoped operations and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the defined model scoped operations and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code><code><a href="class-DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></code><br>$view The backend view configuration definition to populate.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsePalettes" id="_parsePalettes">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsePalettes">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1104-1144" title="Go to source code">parsePalettes</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the defined palettes and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the defined palettes and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseSinglePropertyLabel" id="_parseSinglePropertyLabel">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseSinglePropertyLabel">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1146-1170" title="Go to source code">parseSinglePropertyLabel</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$property</var></span>, <span>string|array <var>$label</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the label of a single property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the label of a single property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$property</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></code><br>$property The property to parse the label for.</dd>
+					<dt><var>$label</var></dt>
+					<dd><code>string|array</code><br>$label The label value.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseSingleProperty" id="_parseSingleProperty">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseSingleProperty">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1182-1250" title="Go to source code">parseSingleProperty</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$property</var></span>, <span>array <var>$propInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseProperties" id="_parseProperties">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseProperties">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1252-1285" title="Go to source code">parseProperties</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse the defined properties and populate the definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the defined properties and populate the definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container where the data shall be stored.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createCommandInstance" id="_createCommandInstance">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.Command.html">DcGeneral\DataDefinition\Definition\View\Command</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.View.CutCommand.html">DcGeneral\DataDefinition\Definition\View\CutCommand</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createCommandInstance">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1287-1305" title="Go to source code">createCommandInstance</a>( <span>string <var>$commandName</var></span>, <span>array <var>$commandDca</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create the correct command instance for the given information.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create the correct command instance for the given information.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$commandName</var></dt>
+					<dd><code>string</code><br>$commandName The name of the command to create.</dd>
+					<dt><var>$commandDca</var></dt>
+					<dd><code>array</code><br>$commandDca The Dca information of the command.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.Command.html">DcGeneral\DataDefinition\Definition\View\Command</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.View.CutCommand.html">DcGeneral\DataDefinition\Definition\View\CutCommand</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createCommand" id="_createCommand">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createCommand">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1307-1387" title="Go to source code">createCommand</a>( <span>string <var>$commandName</var></span>, <span>array <var>$commandDca</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a command from dca.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a command from dca.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$commandName</var></dt>
+					<dd><code>string</code><br>$commandName The name of the command to parse.</dd>
+					<dt><var>$commandDca</var></dt>
+					<dd><code>array</code><br>$commandDca The chunk from the DCA containing the command specification.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evalFlagSorting" id="_evalFlagSorting">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evalFlagSorting">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1389-1413" title="Go to source code">evalFlagSorting</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$config</var></span>, <span>integer <var>$flag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate the contao 2 sorting flag into sorting mode.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate the contao 2 sorting flag into sorting mode.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></code><br>$config The property to evaluate the flag for.</dd>
+					<dt><var>$flag</var></dt>
+					<dd><code>integer</code><br>$flag The flag to be evaluated.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evalFlagGrouping" id="_evalFlagGrouping">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evalFlagGrouping">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1415-1451" title="Go to source code">evalFlagGrouping</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$config</var></span>, <span>integer <var>$flag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate the contao 2 sorting flag into grouping mode.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate the contao 2 sorting flag into grouping mode.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></code><br>$config The property to evaluate the flag for.</dd>
+					<dt><var>$flag</var></dt>
+					<dd><code>integer</code><br>$flag The flag to be evaluated.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evalFlagGroupingLength" id="_evalFlagGroupingLength">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evalFlagGroupingLength">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1453-1472" title="Go to source code">evalFlagGroupingLength</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$config</var></span>, <span>integer <var>$flag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate the contao 2 sorting flag into grouping length.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate the contao 2 sorting flag into grouping length.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></code><br>$config The property to evaluate the flag for.</dd>
+					<dt><var>$flag</var></dt>
+					<dd><code>integer</code><br>$flag The flag to be evaluated.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evalFlag" id="_evalFlag">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evalFlag">#</a>
+		<code><a href="source-class-DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html#1474-1488" title="Go to source code">evalFlag</a>( <span><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code> <var>$config</var></span>, <span>integer <var>$flag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate the contao 2 sorting flag into sorting mode, grouping mode and
+grouping length.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate the contao 2 sorting flag into sorting mode, grouping mode and
+grouping length.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code>|<code><a href="class-DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code></code><br>$config The property to evaluate the flag for.</dd>
+					<dt><var>$flag</var></dt>
+					<dd><code>integer</code><br>$flag The flag to be evaluated.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html#methods">DcGeneral\Contao\Dca\Builder\Legacy\DcaReadingDataDefinitionBuilder</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html#_getFromDca">getFromDca()</a>, 
+			<a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html#_loadDca">loadDca()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.DataDefinition.Builder.AbstractEventDrivenDataDefinitionBuilder.html#methods">DcGeneral\DataDefinition\Builder\AbstractEventDrivenDataDefinitionBuilder</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.DataDefinition.Builder.AbstractEventDrivenDataDefinitionBuilder.html#_process">process()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-DcGeneral.DataDefinition.Builder.AbstractEventDrivenDataDefinitionBuilder.html#constants">DcGeneral\DataDefinition\Builder\AbstractEventDrivenDataDefinitionBuilder</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.DataDefinition.Builder.AbstractEventDrivenDataDefinitionBuilder.html#PRIORITY"><b>PRIORITY</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html#properties">DcGeneral\Contao\Dca\Builder\Legacy\DcaReadingDataDefinitionBuilder</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html#$dca"><var>$dca</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

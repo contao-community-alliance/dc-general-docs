@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\Data\MultiLanguageDataProviderInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.AbstractModel.html">AbstractModel</a></li>
+				<li><a href="class-DcGeneral.Data.DCGE.html">DCGE</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultCollection.html">DefaultCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultConfig.html">DefaultConfig</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultDataProvider.html">DefaultDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformation.html">DefaultLanguageInformation</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformationCollection.html">DefaultLanguageInformationCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultModel.html">DefaultModel</a></li>
+				<li><a href="class-DcGeneral.Data.MultiLanguageDataProvider.html">MultiLanguageDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.NoOpDataProvider.html">NoOpDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBag.html">PropertyValueBag</a></li>
+				<li><a href="class-DcGeneral.Data.TableRowsAsRecordsDataProvider.html">TableRowsAsRecordsDataProvider</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.CollectionInterface.html">CollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ConfigInterface.html">ConfigInterface</a></li>
+				<li><a href="class-DcGeneral.Data.DataProviderInterface.html">DataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationCollectionInterface.html">LanguageInformationCollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationInterface.html">LanguageInformationInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ModelInterface.html">ModelInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.Data.MultiLanguageDataProviderInterface.html">MultiLanguageDataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBagInterface.html">PropertyValueBagInterface</a></li>
+				<li><a href="class-DcGeneral.Data.VersionModelInterface.html">VersionModelInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Data.html" title="Summary of DcGeneral\Data"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface MultiLanguageDataProviderInterface</h1>
+
+
+	<div class="description">
+	
+<p>Interface MultiLanguageDataProviderInterface.</p>
+
+<p>This interface describes how to interface with a multi language data
+provider.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>DcGeneral\Data\MultiLanguageDataProviderInterface</span></b>			
+			 implements 
+				<a href="class-DcGeneral.Data.DataProviderInterface.html"><span>DcGeneral\Data\DataProviderInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.Data.MultiLanguageDataProvider.html">DcGeneral\Data\MultiLanguageDataProvider</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Data.html">Data</a><br />
+		<b>Package:</b> DcGeneral\Data<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Data.MultiLanguageDataProviderInterface.html#15-57" title="Go to source code">Data/MultiLanguageDataProviderInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getLanguages" id="_getLanguages">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.LanguageInformationCollectionInterface.html">DcGeneral\Data\LanguageInformationCollectionInterface</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLanguages">#</a>
+		<code><a href="source-class-DcGeneral.Data.MultiLanguageDataProviderInterface.html#24-31" title="Go to source code">getLanguages</a>( <span>mixed <var>$mixID</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get all available languages of a certain record.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all available languages of a certain record.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the record to retrieve.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.LanguageInformationCollectionInterface.html">DcGeneral\Data\LanguageInformationCollectionInterface</a></code>|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFallbackLanguage" id="_getFallbackLanguage">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.LanguageInformationInterface.html">DcGeneral\Data\LanguageInformationInterface</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFallbackLanguage">#</a>
+		<code><a href="source-class-DcGeneral.Data.MultiLanguageDataProviderInterface.html#33-40" title="Go to source code">getFallbackLanguage</a>( <span>mixed <var>$mixID</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the fallback language of a certain record.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the fallback language of a certain record.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixID</var></dt>
+					<dd><code>mixed</code><br>$mixID The ID of the record to retrieve.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.LanguageInformationInterface.html">DcGeneral\Data\LanguageInformationInterface</a></code>|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCurrentLanguage" id="_setCurrentLanguage">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.Data.DataProviderInterface.html">DcGeneral\Data\DataProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCurrentLanguage">#</a>
+		<code><a href="source-class-DcGeneral.Data.MultiLanguageDataProviderInterface.html#42-49" title="Go to source code">setCurrentLanguage</a>( <span>string <var>$strLanguage</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the current working language for the whole data provider.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the current working language for the whole data provider.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strLanguage</var></dt>
+					<dd><code>string</code><br>$strLanguage The new language, use short tag "2 chars like de, fr etc.".</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.Data.DataProviderInterface.html">DcGeneral\Data\DataProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCurrentLanguage" id="_getCurrentLanguage">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCurrentLanguage">#</a>
+		<code><a href="source-class-DcGeneral.Data.MultiLanguageDataProviderInterface.html#51-56" title="Go to source code">getCurrentLanguage</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the current working language.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the current working language.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Short tag for the current working language like de or fr etc.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Data.DataProviderInterface.html#methods">DcGeneral\Data\DataProviderInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_delete">delete()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_fetch">fetch()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_fetchAll">fetchAll()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_fieldExists">fieldExists()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getActiveVersion">getActiveVersion()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getCount">getCount()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getEmptyCollection">getEmptyCollection()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getEmptyConfig">getEmptyConfig()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getEmptyModel">getEmptyModel()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getFilterOptions">getFilterOptions()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getVersion">getVersion()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_getVersions">getVersions()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_isUniqueValue">isUniqueValue()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_resetFallback">resetFallback()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_sameModels">sameModels()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_save">save()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_saveEach">saveEach()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_saveVersion">saveVersion()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_setBaseConfig">setBaseConfig()</a>, 
+			<a href="class-DcGeneral.Data.DataProviderInterface.html#_setVersionActive">setVersionActive()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

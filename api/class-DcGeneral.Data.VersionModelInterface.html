@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\Data\VersionModelInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.AbstractModel.html">AbstractModel</a></li>
+				<li><a href="class-DcGeneral.Data.DCGE.html">DCGE</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultCollection.html">DefaultCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultConfig.html">DefaultConfig</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultDataProvider.html">DefaultDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformation.html">DefaultLanguageInformation</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultLanguageInformationCollection.html">DefaultLanguageInformationCollection</a></li>
+				<li><a href="class-DcGeneral.Data.DefaultModel.html">DefaultModel</a></li>
+				<li><a href="class-DcGeneral.Data.MultiLanguageDataProvider.html">MultiLanguageDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.NoOpDataProvider.html">NoOpDataProvider</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBag.html">PropertyValueBag</a></li>
+				<li><a href="class-DcGeneral.Data.TableRowsAsRecordsDataProvider.html">TableRowsAsRecordsDataProvider</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Data.CollectionInterface.html">CollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ConfigInterface.html">ConfigInterface</a></li>
+				<li><a href="class-DcGeneral.Data.DataProviderInterface.html">DataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationCollectionInterface.html">LanguageInformationCollectionInterface</a></li>
+				<li><a href="class-DcGeneral.Data.LanguageInformationInterface.html">LanguageInformationInterface</a></li>
+				<li><a href="class-DcGeneral.Data.ModelInterface.html">ModelInterface</a></li>
+				<li><a href="class-DcGeneral.Data.MultiLanguageDataProviderInterface.html">MultiLanguageDataProviderInterface</a></li>
+				<li><a href="class-DcGeneral.Data.PropertyValueBagInterface.html">PropertyValueBagInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.Data.VersionModelInterface.html">VersionModelInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Data.html" title="Summary of DcGeneral\Data"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface VersionModelInterface</h1>
+
+
+	<div class="description">
+	
+<p>Interface ModelInterface.</p>
+
+<p>This interface describes a model used in data providers.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>DcGeneral\Data\VersionModelInterface</span></b>			
+			 implements 
+				<a href="class-DcGeneral.Data.ModelInterface.html"><span>DcGeneral\Data\ModelInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Data.html">Data</a><br />
+		<b>Package:</b> DcGeneral\Data<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Data.VersionModelInterface.html#17-60" title="Go to source code">Data/VersionModelInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#19-24" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the version string of this model version.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the version string of this model version.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isCurrent" id="_isCurrent">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isCurrent">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#26-31" title="Go to source code">isCurrent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determine if this is the current version of the model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if this is the current version of the model.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDateTime" id="_getDateTime">
+
+		<td class="attributes"><code>
+			 public 
+			DateTime
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDateTime">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#33-38" title="Go to source code">getDateTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the data time this version was created.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the data time this version was created.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>DateTime</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAuthorName" id="_getAuthorName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAuthorName">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#40-45" title="Go to source code">getAuthorName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the name of the version's author, at the moment the version was
+created.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the name of the version's author, at the moment the version was
+created.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAuthorUsername" id="_getAuthorUsername">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAuthorUsername">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#47-52" title="Go to source code">getAuthorUsername</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the username of the version's author, at the moment the version was
+created.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the username of the version's author, at the moment the version was
+created.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAuthorEmail" id="_getAuthorEmail">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAuthorEmail">#</a>
+		<code><a href="source-class-DcGeneral.Data.VersionModelInterface.html#54-59" title="Go to source code">getAuthorEmail</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the email of the version's author, at the moment the version was
+created.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the email of the version's author, at the moment the version was
+created.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DcGeneral.Data.ModelInterface.html#methods">DcGeneral\Data\ModelInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DcGeneral.Data.ModelInterface.html#___clone">__clone()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_getId">getId()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_getMeta">getMeta()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_getPropertiesAsArray">getPropertiesAsArray()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_getProperty">getProperty()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_getProviderName">getProviderName()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_hasProperties">hasProperties()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_readFromPropertyValueBag">readFromPropertyValueBag()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_setId">setId()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_setMeta">setMeta()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_setPropertiesAsArray">setPropertiesAsArray()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_setProperty">setProperty()</a>, 
+			<a href="class-DcGeneral.Data.ModelInterface.html#_writeToPropertyValueBag">writeToPropertyValueBag()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from IteratorAggregate</caption>
+	<tr>
+		<td><code>
+getIterator()
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

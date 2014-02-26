@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DcGeneral\Event\AbstractContainerAwareEvent | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Event.AbstractCommandEvent.html">AbstractCommandEvent</a></li>
+				<li class="active"><a href="class-DcGeneral.Event.AbstractContainerAwareEvent.html">AbstractContainerAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractEnvironmentAwareEvent.html">AbstractEnvironmentAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractModelAwareEvent.html">AbstractModelAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractModelCommandEvent.html">AbstractModelCommandEvent</a></li>
+				<li><a href="class-DcGeneral.Event.AbstractViewAwareEvent.html">AbstractViewAwareEvent</a></li>
+				<li><a href="class-DcGeneral.Event.EventPropagator.html">EventPropagator</a></li>
+				<li><a href="class-DcGeneral.Event.PostCreateModelEvent.html">PostCreateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostDeleteModelEvent.html">PostDeleteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostDuplicateModelEvent.html">PostDuplicateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostPasteModelEvent.html">PostPasteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PostPersistModelEvent.html">PostPersistModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreCreateModelEvent.html">PreCreateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreDeleteModelEvent.html">PreDeleteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PreDuplicateModelEvent.html">PreDuplicateModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PrePasteModelEvent.html">PrePasteModelEvent</a></li>
+				<li><a href="class-DcGeneral.Event.PrePersistModelEvent.html">PrePersistModelEvent</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.Event.CommandEventInterface.html">CommandEventInterface</a></li>
+				<li><a href="class-DcGeneral.Event.EventPropagatorInterface.html">EventPropagatorInterface</a></li>
+				<li><a href="class-DcGeneral.Event.ModelCommandEventInterface.html">ModelCommandEventInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.Event.html" title="Summary of DcGeneral\Event"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractContainerAwareEvent</h1>
+
+
+	<div class="description">
+	
+<p>Abstract base class for container aware events.</p>
+
+<p>This class solely implements the ContainerAwareInterface.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Symfony\Component\EventDispatcher\Event
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>DcGeneral\Event\AbstractContainerAwareEvent</span></b>			
+			 implements 
+				<a href="class-DcGeneral.ContainerAwareInterface.html"><span>DcGeneral\ContainerAwareInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.AddConditionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\AddConditionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateConditionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreateConditionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishConditionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\FinishConditionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishLegendEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\FinishLegendEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPaletteCollectionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\FinishPaletteCollectionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPaletteEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\FinishPaletteEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.FinishPropertyEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\FinishPropertyEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetDefaultPaletteConditionClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetDefaultPaletteConditionClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetLegendClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetLegendClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteCollectionClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteCollectionClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPaletteConditionChainClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPaletteConditionChainClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateDefaultPaletteConditionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreateDefaultPaletteConditionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPalettePropertyValueConditionClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPalettePropertyValueConditionClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyConditionChainClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyConditionChainClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.SetPropertyValueConditionClassNameEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\SetPropertyValueConditionClassNameEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UseLegendEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\UseLegendEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePaletteCollectionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\UsePaletteCollectionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePaletteEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\UsePaletteEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.UsePropertyEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\UsePropertyEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreateLegendEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreateLegendEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteCollectionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteCollectionEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteConditionChainEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteConditionChainEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePaletteEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePaletteEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyConditionChainEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePropertyConditionChainEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePropertyEvent</a>, 
+			<a href="class-DcGeneral.DataDefinition.Palette.Builder.Event.CreatePropertyValueConditionEvent.html">DcGeneral\DataDefinition\Palette\Builder\Event\CreatePropertyValueConditionEvent</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.Event.html">Event</a><br />
+		<b>Package:</b> DcGeneral\Event<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.Event.AbstractContainerAwareEvent.html#19-54" title="Go to source code">Event/AbstractContainerAwareEvent.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DcGeneral.Event.AbstractContainerAwareEvent.html#37-45" title="Go to source code">__construct</a>( <span><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code> <var>$container</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new container aware event.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new container aware event.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$container</var></dt>
+					<dd><code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br>$container The container in use.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContainer" id="_getContainer">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContainer">#</a>
+		<code><a href="source-class-DcGeneral.Event.AbstractContainerAwareEvent.html#47-53" title="Go to source code">getContainer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the data definition container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the data definition container.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-DcGeneral.ContainerAwareInterface.html#_getContainer">DcGeneral\ContainerAwareInterface::getContainer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="container" id="$container">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DcGeneral.DataDefinition.ContainerInterface.html">DcGeneral\DataDefinition\ContainerInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DcGeneral.Event.AbstractContainerAwareEvent.html#30-35" title="Go to source code"><var>$container</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$container" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The container in use.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The container in use.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

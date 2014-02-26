@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface DcGeneral\DataDefinition\Definition\View\CommandInterface | contao-community-alliance/dc-general</title>
+
+	<script type="text/javascript" src="resources/combined.js?823466903"></script>
+	<script type="text/javascript" src="elementlist.js?3258307741"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-DcGeneral.html">DcGeneral<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Clipboard.html">Clipboard</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.html">Contao<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Callback.html">Callback</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Compatibility.html">Compatibility</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.html">Dca<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Definition.html">Definition</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.Dca.Populator.html">Populator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Contao.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Contao.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.Controller.html">Controller</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Data.html">Data</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.html">DataDefinition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Builder.html">Builder</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.Properties.html">Properties</a>
+						</li>
+				<li class="active"><a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.ModelRelationship.html">ModelRelationship</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.html">Palette<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.html">Builder<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Builder.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.html">Condition<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Palette.html">Palette</a>
+						</li>
+				<li><a href="namespace-DcGeneral.DataDefinition.Palette.Condition.Property.html">Property</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-DcGeneral.EnvironmentPopulator.html">EnvironmentPopulator</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Event.html">Event</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-DcGeneral.Factory.html">Factory<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.Factory.Event.html">Event</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-DcGeneral.Panel.html">Panel</a>
+						</li>
+				<li><a href="namespace-DcGeneral.View.html">View<span></span></a>
+						<ul>
+				<li><a href="namespace-DcGeneral.View.Event.html">Event</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.Command.html">Command</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.CommandCollection.html">CommandCollection</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.CutCommand.html">CutCommand</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.DefaultListingConfig.html">DefaultListingConfig</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.DefaultModelFormatterConfig.html">DefaultModelFormatterConfig</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.DefaultPanelLayout.html">DefaultPanelLayout</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.DefaultPanelRow.html">DefaultPanelRow</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.DefaultPanelRowCollection.html">DefaultPanelRowCollection</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">CommandCollectionInterface</a></li>
+				<li class="active"><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">CommandInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.CutCommandInterface.html">CutCommandInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">ListingConfigInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.ModelFormatterConfigInterface.html">ModelFormatterConfigInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.PanelLayoutInterface.html">PanelLayoutInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowCollectionInterface.html">PanelRowCollectionInterface</a></li>
+				<li><a href="class-DcGeneral.DataDefinition.Definition.View.PanelRowInterface.html">PanelRowInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DcGeneral.DataDefinition.Definition.View.html" title="Summary of DcGeneral\DataDefinition\Definition\View"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface CommandInterface</h1>
+
+
+	<div class="description">
+	
+<p>Interface CommandInterface.</p>
+
+<p>This interface describes a command that can be applied to a model.</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-DcGeneral.DataDefinition.Definition.View.Command.html">DcGeneral\DataDefinition\Definition\View\Command</a>, 
+			<a href="class-DcGeneral.DataDefinition.Definition.View.CutCommandInterface.html">DcGeneral\DataDefinition\Definition\View\CutCommandInterface</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-DcGeneral.DataDefinition.Definition.View.CutCommand.html">DcGeneral\DataDefinition\Definition\View\CutCommand</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DcGeneral.html">DcGeneral</a>\<a href="namespace-DcGeneral.DataDefinition.html">DataDefinition</a>\<a href="namespace-DcGeneral.DataDefinition.Definition.html">Definition</a>\<a href="namespace-DcGeneral.DataDefinition.Definition.View.html">View</a><br />
+		<b>Package:</b> DcGeneral\DataDefinition\Definition\View<br />
+
+		<b>Located at</b> <a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#16-120" title="Go to source code">DataDefinition/Definition/View/CommandInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#25-32" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the name of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the name of the command.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name The name of the command.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#34-39" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the name of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the name of the command.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParameters" id="_setParameters">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParameters">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#41-48" title="Go to source code">setParameters</a>( <span>ArrayObject <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the action properties of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the action properties of the command.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd><code>ArrayObject</code><br>$parameters The parameters.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameters" id="_getParameters">
+
+		<td class="attributes"><code>
+			 public 
+			ArrayObject
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameters">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#50-55" title="Go to source code">getParameters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the action properties of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the action properties of the command.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>ArrayObject</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLabel" id="_setLabel">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLabel">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#57-64" title="Go to source code">setLabel</a>( <span>string <var>$label</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the label of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the label of the command.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$label</var></dt>
+					<dd><code>string</code><br>$label The label text.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLabel" id="_getLabel">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLabel">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#66-71" title="Go to source code">getLabel</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the label of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the label of the command.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDescription" id="_setDescription">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDescription">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#73-80" title="Go to source code">setDescription</a>( <span>string <var>$description</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the description of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the description of the command.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$description</var></dt>
+					<dd><code>string</code><br>$description The description text.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescription" id="_getDescription">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescription">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#82-87" title="Go to source code">getDescription</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the description of the command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the description of the command.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setExtra" id="_setExtra">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setExtra">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#89-96" title="Go to source code">setExtra</a>( <span>ArrayObject <var>$extra</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set extra information.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set extra information.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$extra</var></dt>
+					<dd><code>ArrayObject</code><br>$extra The extra data.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html">DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExtra" id="_getExtra">
+
+		<td class="attributes"><code>
+			 public 
+			ArrayObject
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExtra">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#98-103" title="Go to source code">getExtra</a>( )</code>
+
+		<div class="description short">
+			
+<p>Fetch extra information.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch extra information.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>ArrayObject</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisabled" id="_setDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisabled">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#105-112" title="Go to source code">setDisabled</a>( <span>boolean <var>$disabled</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the command enabled or disabled (true means disabled).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the command enabled or disabled (true means disabled).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$disabled</var></dt>
+					<dd><code>boolean</code><br>$disabled The flag.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isDisabled" id="_isDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isDisabled">#</a>
+		<code><a href="source-class-DcGeneral.DataDefinition.Definition.View.CommandInterface.html#114-119" title="Go to source code">isDisabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determine if the command is disabled.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if the command is disabled.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		contao-community-alliance/dc-general API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
