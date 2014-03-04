@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Controller\SortingManager</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_getModels" title="getModels() :: Get the collection containing the models to be inserted."><span class="description">Get the collection containing the models to be inserted.</span><pre>getModels()</pre></a></li>
+<li class="method public "><a href="#method_getPreviousModel" title="getPreviousModel() :: Get the model preceding the target position of the first model from the collection."><span class="description">Get the model preceding the target position of the first model from the collection.</span><pre>getPreviousModel()</pre></a></li>
+<li class="method public "><a href="#method_getResults" title="getResults() :: Get the result collection."><span class="description">Get the result collection.</span><pre>getResults()</pre></a></li>
+<li class="method public "><a href="#method_getSortingProperty" title="getSortingProperty() :: Get the name of the sorting property."><span class="description">Get the name of the sorting property.</span><pre>getSortingProperty()</pre></a></li>
+<li class="method public "><a href="#method_setModels" title="setModels() :: Set the collection containing the models to be inserted."><span class="description">Set the collection containing the models to be inserted.</span><pre>setModels()</pre></a></li>
+<li class="method public "><a href="#method_setPreviousModel" title="setPreviousModel() :: Set the model preceding the target position of the first model from the collection."><span class="description">Set the model preceding the target position of the first model from the collection.</span><pre>setPreviousModel()</pre></a></li>
+<li class="method public "><a href="#method_setSiblings" title="setSiblings() :: Set the collection containing the models that are siblings."><span class="description">Set the collection containing the models that are siblings.</span><pre>setSiblings()</pre></a></li>
+<li class="method public "><a href="#method_setSortingProperty" title="setSortingProperty() :: Set the name of the sorting property."><span class="description">Set the name of the sorting property.</span><pre>setSortingProperty()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_calculate" title="calculate() :: Calculate the resulting list."><span class="description">Calculate the resulting list.</span><pre>calculate()</pre></a></li>
+<li class="method protected "><a href="#method_getModelIds" title="getModelIds() :: Retrieve the ids of the models."><span class="description">Retrieve the ids of the models.</span><pre>getModelIds()</pre></a></li>
+<li class="method protected "><a href="#method_scanToDesiredPosition" title="scanToDesiredPosition() :: Scan through the sibling list to the position we want to insert at."><span class="description">Scan through the sibling list to the position we want to insert at.</span><pre>scanToDesiredPosition()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_marker" title="$marker() :: Temporary marker containing the model currently in scope."><span class="description"></span><pre>$marker</pre></a></li>
+<li class="property protected "><a href="#property_models" title="$models() :: The collection containing the models to be inserted."><span class="description"></span><pre>$models</pre></a></li>
+<li class="property protected "><a href="#property_position" title="$position() :: The current position value."><span class="description"></span><pre>$position</pre></a></li>
+<li class="property protected "><a href="#property_previousModel" title="$previousModel() :: The model preceding the target position of the first model from the collection."><span class="description"></span><pre>$previousModel</pre></a></li>
+<li class="property protected "><a href="#property_results" title="$results() :: The result collection."><span class="description"></span><pre>$results</pre></a></li>
+<li class="property protected "><a href="#property_siblings" title="$siblings() :: The collection containing the models that are siblings."><span class="description"></span><pre>$siblings</pre></a></li>
+<li class="property protected "><a href="#property_siblingsCopy" title="$siblingsCopy() :: The collection containing the models that are siblings (working copy)."><span class="description"></span><pre>$siblingsCopy</pre></a></li>
+<li class="property protected "><a href="#property_sortingProperty" title="$sortingProperty() :: The property that is used for sorting."><span class="description"></span><pre>$sortingProperty</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Controller\SortingManager"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Controller.html">Controller</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Controller.SortingManager.html">SortingManager</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Handy helper class to keep manually sorted lists more manageable.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Controller.html">DcGeneral\Controller</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance.</h2>
+<pre>__construct(\DcGeneral\Data\CollectionInterface $models, \DcGeneral\Data\CollectionInterface $siblings, string $sortedBy, \DcGeneral\Data\ModelInterface $previousModel) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$models</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection containing the models to be inserted.</p></div>
+<div class="subelement argument">
+<h4>$siblings</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection containing the models that are siblings.</p></div>
+<div class="subelement argument">
+<h4>$sortedBy</h4>
+<code>string</code><p>The property that is used for sorting.</p></div>
+<div class="subelement argument">
+<h4>$previousModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model preceding the target position of the first model from the
+                                          collection.</p></div>
+</div></div>
+</div>
+<a id="method_getModels"></a><div class="element clickable method public method_getModels" data-toggle="collapse" data-target=".method_getModels .collapse">
+<h2>Get the collection containing the models to be inserted.</h2>
+<pre>getModels() : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getPreviousModel"></a><div class="element clickable method public method_getPreviousModel" data-toggle="collapse" data-target=".method_getPreviousModel .collapse">
+<h2>Get the model preceding the target position of the first model from the collection.</h2>
+<pre>getPreviousModel() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getResults"></a><div class="element clickable method public method_getResults" data-toggle="collapse" data-target=".method_getResults .collapse">
+<h2>Get the result collection.</h2>
+<pre>getResults() : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getSortingProperty"></a><div class="element clickable method public method_getSortingProperty" data-toggle="collapse" data-target=".method_getSortingProperty .collapse">
+<h2>Get the name of the sorting property.</h2>
+<pre>getSortingProperty() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setModels"></a><div class="element clickable method public method_setModels" data-toggle="collapse" data-target=".method_setModels .collapse">
+<h2>Set the collection containing the models to be inserted.</h2>
+<pre>setModels(\DcGeneral\Data\CollectionInterface $models) : <a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$models</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection containing the models to be inserted.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></code></div>
+</div></div>
+</div>
+<a id="method_setPreviousModel"></a><div class="element clickable method public method_setPreviousModel" data-toggle="collapse" data-target=".method_setPreviousModel .collapse">
+<h2>Set the model preceding the target position of the first model from the collection.</h2>
+<pre>setPreviousModel(\DcGeneral\Data\ModelInterface|null $previousModel) : <a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$previousModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><code>null</code><p>The model preceding the target position of the first model from the
+                                          collection.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></code></div>
+</div></div>
+</div>
+<a id="method_setSiblings"></a><div class="element clickable method public method_setSiblings" data-toggle="collapse" data-target=".method_setSiblings .collapse">
+<h2>Set the collection containing the models that are siblings.</h2>
+<pre>setSiblings(\DcGeneral\Data\CollectionInterface $siblings) : <a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$siblings</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection containing the models that are siblings.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></code></div>
+</div></div>
+</div>
+<a id="method_setSortingProperty"></a><div class="element clickable method public method_setSortingProperty" data-toggle="collapse" data-target=".method_setSortingProperty .collapse">
+<h2>Set the name of the sorting property.</h2>
+<pre>setSortingProperty(string $sortingProperty) : <a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sortingProperty</h4>
+<code>string</code><p>The property that is used for sorting.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.SortingManager.html">\DcGeneral\Controller\SortingManager</a></code></div>
+</div></div>
+</div>
+<a id="method_calculate"></a><div class="element clickable method protected method_calculate" data-toggle="collapse" data-target=".method_calculate .collapse">
+<h2>Calculate the resulting list.</h2>
+<pre>calculate() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getModelIds"></a><div class="element clickable method protected method_getModelIds" data-toggle="collapse" data-target=".method_getModelIds .collapse">
+<h2>Retrieve the ids of the models.</h2>
+<pre>getModelIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_scanToDesiredPosition"></a><div class="element clickable method protected method_scanToDesiredPosition" data-toggle="collapse" data-target=".method_scanToDesiredPosition .collapse">
+<h2>Scan through the sibling list to the position we want to insert at.</h2>
+<pre>scanToDesiredPosition() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_marker"> </a><div class="element clickable property protected property_marker" data-toggle="collapse" data-target=".property_marker .collapse">
+<h2>Temporary marker containing the model currently in scope.</h2>
+<pre>$marker : null | <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_models"> </a><div class="element clickable property protected property_models" data-toggle="collapse" data-target=".property_models .collapse">
+<h2>The collection containing the models to be inserted.</h2>
+<pre>$models : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_position"> </a><div class="element clickable property protected property_position" data-toggle="collapse" data-target=".property_position .collapse">
+<h2>The current position value.</h2>
+<pre>$position : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_previousModel"> </a><div class="element clickable property protected property_previousModel" data-toggle="collapse" data-target=".property_previousModel .collapse">
+<h2>The model preceding the target position of the first model from the collection.</h2>
+<pre>$previousModel : null | <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_results"> </a><div class="element clickable property protected property_results" data-toggle="collapse" data-target=".property_results .collapse">
+<h2>The result collection.</h2>
+<pre>$results : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_siblings"> </a><div class="element clickable property protected property_siblings" data-toggle="collapse" data-target=".property_siblings .collapse">
+<h2>The collection containing the models that are siblings.</h2>
+<pre>$siblings : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_siblingsCopy"> </a><div class="element clickable property protected property_siblingsCopy" data-toggle="collapse" data-target=".property_siblingsCopy .collapse">
+<h2>The collection containing the models that are siblings (working copy).</h2>
+<pre>$siblingsCopy : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sortingProperty"> </a><div class="element clickable property protected property_sortingProperty" data-toggle="collapse" data-target=".property_sortingProperty .collapse">
+<h2>The property that is used for sorting.</h2>
+<pre>$sortingProperty : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-03-04T22:51:39+01:00.<br></footer></div>
+</div>
+</body>
+</html>

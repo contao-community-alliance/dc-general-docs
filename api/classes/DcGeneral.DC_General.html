@@ -34,11 +34,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">30</span></a></li>
+                <span class="label label-info">27</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -88,7 +88,6 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected "><a href="#property_arrDCA" title="$arrDCA() :: DCA configuration."><span class="description"></span><pre>$arrDCA</pre></a></li>
 <li class="property protected "><a href="#property_arrFields" title="$arrFields() :: A list with all field for this dca."><span class="description"></span><pre>$arrFields</pre></a></li>
 <li class="property protected "><a href="#property_objEnvironment" title="$objEnvironment() :: The environment attached to this DC."><span class="description"></span><pre>$objEnvironment</pre></a></li>
 </ul>
@@ -130,7 +129,7 @@
 </div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Create a new instance.</h2>
-<pre>__construct(string $strTable, array $arrDCA, bool $blnOnloadCallback) </pre>
+<pre>__construct(string $strTable, array $arrBackendModule) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -139,11 +138,8 @@
 <h4>$strTable</h4>
 <code>string</code><p>The table name.</p></div>
 <div class="subelement argument">
-<h4>$arrDCA</h4>
-<code>array</code><p>The Dca array.</p></div>
-<div class="subelement argument">
-<h4>$blnOnloadCallback</h4>
-<code>bool</code><p>Fire the onload callback.</p></div>
+<h4>$arrBackendModule</h4>
+<code>array</code><p>The backend module information array.</p></div>
 </div></div>
 </div>
 <a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
@@ -241,12 +237,12 @@
 </div>
 <a id="method_getControllerHandler"></a><div class="element clickable method public method_getControllerHandler" data-toggle="collapse" data-target=".method_getControllerHandler .collapse">
 <h2>Retrieve the controller.</h2>
-<pre>getControllerHandler() : <a href="../classes/DcGeneral.Controller.ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></pre>
+<pre>getControllerHandler() : <a href="ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/DcGeneral.Controller.ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></code></div>
+<div class="subelement response"><code><a href="ControllerInterface.html">\DcGeneral\Controller\ControllerInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_getDCA"></a><div class="element clickable method public method_getDCA" data-toggle="collapse" data-target=".method_getDCA .collapse">
@@ -380,12 +376,6 @@ See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCa
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_arrDCA"> </a><div class="element clickable property protected property_arrDCA" data-toggle="collapse" data-target=".property_arrDCA .collapse">
-<h2>DCA configuration.</h2>
-<pre>$arrDCA : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property_arrFields"> </a><div class="element clickable property protected property_arrFields" data-toggle="collapse" data-target=".property_arrFields .collapse">
 <h2>A list with all field for this dca.</h2>
 <pre>$arrFields : array</pre>
@@ -406,7 +396,7 @@ See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCa
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-02-26T16:37:31+01:00.<br></footer></div>
+            generated on 2014-03-04T22:51:33+01:00.<br></footer></div>
 </div>
 </body>
 </html>

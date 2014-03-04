@@ -34,11 +34,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">30</span></a></li>
+                <span class="label label-info">27</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -65,8 +65,7 @@
 <li class="method public "><a href="#method_copyAll" title="copyAll() :: "><span class="description">copyAll()
         </span><pre>copyAll()</pre></a></li>
 <li class="method public "><a href="#method_create" title="create() :: Create a new item."><span class="description">Create a new item.</span><pre>create()</pre></a></li>
-<li class="method public "><a href="#method_cut" title="cut() :: "><span class="description">cut()
-        </span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: Endpoint for cut operation."><span class="description">Endpoint for cut operation.</span><pre>cut()</pre></a></li>
 <li class="method public "><a href="#method_cutAll" title="cutAll() :: "><span class="description">cutAll()
         </span><pre>cutAll()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete() :: Delete a model and redirect the user to the listing."><span class="description">Delete a model and redirect the user to the listing.</span><pre>delete()</pre></a></li>
@@ -81,8 +80,7 @@
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: TODO: Handle an ajax call, this method is currently not implemented."><span class="description">TODO: Handle an ajax call, this method is currently not implemented.</span><pre>handleAjaxCall()</pre></a></li>
 <li class="method public "><a href="#method_move" title="move() :: "><span class="description">move()
         </span><pre>move()</pre></a></li>
-<li class="method public "><a href="#method_paste" title="paste() :: "><span class="description">paste()
-        </span><pre>paste()</pre></a></li>
+<li class="method public "><a href="#method_paste" title="paste() :: Invoked for cut and copy."><span class="description">Invoked for cut and copy.</span><pre>paste()</pre></a></li>
 <li class="method public "><a href="#method_processInput" title="processInput() :: Process input and return all modified properties or null if there is no input."><span class="description">Process input and return all modified properties or null if there is no input.</span><pre>processInput()</pre></a></li>
 <li class="method public "><a href="#method_renderPasteAfterButton" title="renderPasteAfterButton() :: Render the paste after button."><span class="description">Render the paste after button.</span><pre>renderPasteAfterButton()</pre></a></li>
 <li class="method public "><a href="#method_renderPasteIntoButton" title="renderPasteIntoButton() :: Render the paste into button."><span class="description">Render the paste into button.</span><pre>renderPasteIntoButton()</pre></a></li>
@@ -115,6 +113,8 @@
 <li class="method protected "><a href="#method_getEditButtons" title="getEditButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getEditButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getGroupingMode" title="getGroupingMode() :: Retrieve the currently active grouping mode."><span class="description">Retrieve the currently active grouping mode.</span><pre>getGroupingMode()</pre></a></li>
 <li class="method protected "><a href="#method_getLabelForShow" title='getLabelForShow() :: Calculate the label of a property to se in "show" view.'><span class="description">Calculate the label of a property to se in "show" view.</span><pre>getLabelForShow()</pre></a></li>
+<li class="method protected "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: Get the name of the property to use for manual sorting (aka drag drop sorting)."><span class="description">Get the name of the property to use for manual sorting (aka drag drop sorting).</span><pre>getManualSortingProperty()</pre></a></li>
+<li class="method protected "><a href="#method_getModelsFromClipboard" title="getModelsFromClipboard() :: Retrieve model instances for all ids contained in the clipboard."><span class="description">Retrieve model instances for all ids contained in the clipboard.</span><pre>getModelsFromClipboard()</pre></a></li>
 <li class="method protected "><a href="#method_getSelectButtons" title="getSelectButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getSelectButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getTemplate" title="getTemplate() :: Create a new instance of ContaoBackendViewTemplate with the template file of the given name."><span class="description">Create a new instance of ContaoBackendViewTemplate with the template file of the given name.</span><pre>getTemplate()</pre></a></li>
 <li class="method protected "><a href="#method_getViewSection" title="getViewSection() :: Retrieve the view section for this view."><span class="description">Retrieve the view section for this view.</span><pre>getViewSection()</pre></a></li>
@@ -230,16 +230,11 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 </div></div>
 </div>
 <a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
-<h2>cut()
-        </h2>
+<h2>Endpoint for cut operation.</h2>
 <pre>cut() : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>todo</th>
-<td>All</td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -416,11 +411,17 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 </div></div>
 </div>
 <a id="method_paste"></a><div class="element clickable method public method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
-<h2>paste()
-        </h2>
-<pre>paste() </pre>
+<h2>Invoked for cut and copy.</h2>
+<pre>paste() : void</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This performs redirectHome() upon successful execution and throws an exception otherwise.</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When invalid parameters are encountered.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_processInput"></a><div class="element clickable method public method_processInput" data-toggle="collapse" data-target=".method_processInput .collapse">
 <h2>Process input and return all modified properties or null if there is no input.</h2>
@@ -830,6 +831,30 @@ Example:
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_getManualSortingProperty"></a><div class="element clickable method protected method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
+<h2>Get the name of the property to use for manual sorting (aka drag drop sorting).</h2>
+<pre>getManualSortingProperty() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getModelsFromClipboard"></a><div class="element clickable method protected method_getModelsFromClipboard" data-toggle="collapse" data-target=".method_getModelsFromClipboard .collapse">
+<h2>Retrieve model instances for all ids contained in the clipboard.</h2>
+<pre>getModelsFromClipboard(bool $clone) : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clone</h4>
+<code>bool</code><p>True if the models shall be copied, false otherwise.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_getSelectButtons"></a><div class="element clickable method protected method_getSelectButtons" data-toggle="collapse" data-target=".method_getSelectButtons .collapse">
 <h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
 <pre>getSelectButtons() : array</pre>
@@ -988,7 +1013,7 @@ Example:
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-02-26T16:37:30+01:00.<br></footer></div>
+            generated on 2014-03-04T22:51:36+01:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -34,11 +34,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">30</span></a></li>
+                <span class="label label-info">27</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -70,6 +70,7 @@
 <li class="method public "><a href="#method_setID" title="setID() :: Set the id for this object."><span class="description">Set the id for this object.</span><pre>setID()</pre></a></li>
 <li class="method public "><a href="#method_setPropertiesAsArray" title="setPropertiesAsArray() :: Update all properties in the model."><span class="description">Update all properties in the model.</span><pre>setPropertiesAsArray()</pre></a></li>
 <li class="method public "><a href="#method_setProperty" title="setProperty() :: Update the property value in the model."><span class="description">Update the property value in the model.</span><pre>setProperty()</pre></a></li>
+<li class="method public "><a href="#method_setPropertyRaw" title="setPropertyRaw() :: Update the property value in the model."><span class="description">Update the property value in the model.</span><pre>setPropertyRaw()</pre></a></li>
 <li class="method public "><a href="#method_setProviderName" title="setProviderName() :: Sets the provider name in the model."><span class="description">Sets the provider name in the model.</span><pre>setProviderName()</pre></a></li>
 <li class="method public "><a href="#method_writeToPropertyValueBag" title="writeToPropertyValueBag() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>writeToPropertyValueBag()</pre></a></li>
 </ul>
@@ -242,6 +243,21 @@ Normally this should only be called from inside of the implementing provider.</d
 <code>mixed</code><p>The value to be set.</p></div>
 </div></div>
 </div>
+<a id="method_setPropertyRaw"></a><div class="element clickable method public method_setPropertyRaw" data-toggle="collapse" data-target=".method_setPropertyRaw .collapse">
+<h2>Update the property value in the model.</h2>
+<pre>setPropertyRaw(string $strPropertyName, mixed $varValue) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method is not interfaced and MUST only be used for initial values from the data provider.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strPropertyName</h4>
+<code>string</code><p>The property name to be set.</p></div>
+<div class="subelement argument">
+<h4>$varValue</h4>
+<code>mixed</code><p>The value to be set.</p></div>
+</div></div>
+</div>
 <a id="method_setProviderName"></a><div class="element clickable method public method_setProviderName" data-toggle="collapse" data-target=".method_setProviderName .collapse">
 <h2>Sets the provider name in the model.</h2>
 <pre>setProviderName(string $strProviderName) : void</pre>
@@ -295,7 +311,7 @@ to set itself to the model.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-02-26T16:37:25+01:00.<br></footer></div>
+            generated on 2014-03-04T22:51:38+01:00.<br></footer></div>
 </div>
 </body>
 </html>

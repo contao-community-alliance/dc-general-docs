@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \DcGeneral\Contao\View\Contao2BackendView\IdSerializer</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_fromModel" title="fromModel() :: Create an instance from a model."><span class="description">Create an instance from a model.</span><pre>fromModel()</pre></a></li>
+<li class="method public "><a href="#method_fromSerialized" title="fromSerialized() :: Create an instance from an serialized id."><span class="description">Create an instance from an serialized id.</span><pre>fromSerialized()</pre></a></li>
+<li class="method public "><a href="#method_fromValues" title="fromValues() :: Create an instance from the passed values."><span class="description">Create an instance from the passed values.</span><pre>fromValues()</pre></a></li>
+<li class="method public "><a href="#method_getDataProviderName" title="getDataProviderName() :: Retrieve the data provider name."><span class="description">Retrieve the data provider name.</span><pre>getDataProviderName()</pre></a></li>
+<li class="method public "><a href="#method_getId" title="getId() :: Retrieve the id."><span class="description">Retrieve the id.</span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#method_getSerialized" title="getSerialized() :: Serialize the id."><span class="description">Serialize the id.</span><pre>getSerialized()</pre></a></li>
+<li class="method public "><a href="#method_isValid" title="isValid() :: Determine if both, data provider name and id are set and non empty."><span class="description">Determine if both, data provider name and id are set and non empty.</span><pre>isValid()</pre></a></li>
+<li class="method public "><a href="#method_setDataProviderName" title="setDataProviderName() :: Set the data provider name."><span class="description">Set the data provider name.</span><pre>setDataProviderName()</pre></a></li>
+<li class="method public "><a href="#method_setId" title="setId() :: Set the model Id."><span class="description">Set the model Id.</span><pre>setId()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_dataProviderName" title="$dataProviderName() :: The data provider name."><span class="description"></span><pre>$dataProviderName</pre></a></li>
+<li class="property protected "><a href="#property_id" title="$id() :: The id of the model."><span class="description"></span><pre>$id</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\DcGeneral\Contao\View\Contao2BackendView\IdSerializer"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/DcGeneral.html">DcGeneral</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">IdSerializer</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The class IdSerializer provides handy methods to serialize and un-serialize model ids including the data provider
+name into a string.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.html">DcGeneral\Contao\View\Contao2BackendView</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_fromModel"></a><div class="element clickable method public method_fromModel" data-toggle="collapse" data-target=".method_fromModel .collapse">
+<h2>Create an instance from a model.</h2>
+<pre>fromModel(\DcGeneral\Data\ModelInterface $model) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<a id="method_fromSerialized"></a><div class="element clickable method public method_fromSerialized" data-toggle="collapse" data-target=".method_fromSerialized .collapse">
+<h2>Create an instance from an serialized id.</h2>
+<pre>fromSerialized(string $serialized) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$serialized</h4>
+<code>string</code><p>The id.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When invalid data is encountered.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<a id="method_fromValues"></a><div class="element clickable method public method_fromValues" data-toggle="collapse" data-target=".method_fromValues .collapse">
+<h2>Create an instance from the passed values.</h2>
+<pre>fromValues(string $dataProviderName, mixed $id) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProviderName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code><p>The id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<a id="method_getDataProviderName"></a><div class="element clickable method public method_getDataProviderName" data-toggle="collapse" data-target=".method_getDataProviderName .collapse">
+<h2>Retrieve the data provider name.</h2>
+<pre>getDataProviderName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getId"></a><div class="element clickable method public method_getId" data-toggle="collapse" data-target=".method_getId .collapse">
+<h2>Retrieve the id.</h2>
+<pre>getId() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_getSerialized"></a><div class="element clickable method public method_getSerialized" data-toggle="collapse" data-target=".method_getSerialized .collapse">
+<h2>Serialize the id.</h2>
+<pre>getSerialized() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_isValid"></a><div class="element clickable method public method_isValid" data-toggle="collapse" data-target=".method_isValid .collapse">
+<h2>Determine if both, data provider name and id are set and non empty.</h2>
+<pre>isValid() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_setDataProviderName"></a><div class="element clickable method public method_setDataProviderName" data-toggle="collapse" data-target=".method_setDataProviderName .collapse">
+<h2>Set the data provider name.</h2>
+<pre>setDataProviderName(string $dataProviderName) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataProviderName</h4>
+<code>string</code><p>The name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<a id="method_setId"></a><div class="element clickable method public method_setId" data-toggle="collapse" data-target=".method_setId .collapse">
+<h2>Set the model Id.</h2>
+<pre>setId(mixed $id) : <a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code><p>The id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_dataProviderName"> </a><div class="element clickable property protected property_dataProviderName" data-toggle="collapse" data-target=".property_dataProviderName .collapse">
+<h2>The data provider name.</h2>
+<pre>$dataProviderName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property protected property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2>The id of the model.</h2>
+<pre>$id : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-03-04T22:51:39+01:00.<br></footer></div>
+</div>
+</body>
+</html>
