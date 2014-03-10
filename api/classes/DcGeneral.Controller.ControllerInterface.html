@@ -38,7 +38,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">30</span></a></li>
+                <span class="label label-info">28</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -59,10 +59,12 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_assembleAllChildrenFrom" title="assembleAllChildrenFrom() :: Scan for children of a given model."><span class="description">Scan for children of a given model.</span><pre>assembleAllChildrenFrom()</pre></a></li>
+<li class="method public "><a href="#method_createClonedModel" title="createClonedModel() :: Create a cloned version of the passed model."><span class="description">Create a cloned version of the passed model.</span><pre>createClonedModel()</pre></a></li>
 <li class="method public "><a href="#method_getBaseConfig" title="getBaseConfig() :: Retrieve the base config for retrieving data."><span class="description">Retrieve the base config for retrieving data.</span><pre>getBaseConfig()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the attached environment."><span class="description">Retrieve the attached environment.</span><pre>getEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_getSupportedLanguages" title="getSupportedLanguages() :: Return all supported languages from the default data data provider."><span class="description">Return all supported languages from the default data data provider.</span><pre>getSupportedLanguages()</pre></a></li>
 <li class="method public "><a href="#method_isRootModel" title="isRootModel() :: Check if the given model is a root model for the current data definition."><span class="description">Check if the given model is a root model for the current data definition.</span><pre>isRootModel()</pre></a></li>
+<li class="method public "><a href="#method_pasteAfter" title="pasteAfter() :: Paste the content of the clipboard after the given model."><span class="description">Paste the content of the clipboard after the given model.</span><pre>pasteAfter()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: Set the environment."><span class="description">Set the environment.</span><pre>setEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_setParent" title="setParent() :: Set a model as the parent of another model."><span class="description">Set a model as the parent of another model.</span><pre>setParent()</pre></a></li>
 <li class="method public "><a href="#method_setRootModel" title="setRootModel() :: Apply the root condition of the current data definition to the given model."><span class="description">Apply the root condition of the current data definition to the given model.</span><pre>setRootModel()</pre></a></li>
@@ -112,6 +114,21 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_createClonedModel"></a><div class="element clickable method public method_createClonedModel" data-toggle="collapse" data-target=".method_createClonedModel .collapse">
+<h2>Create a cloned version of the passed model.</h2>
+<pre>createClonedModel(\DcGeneral\Data\ModelInterface $model) : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The cloning involves clearing of unknown properties, resetting the fallback and clearing properties defined as
+"doNotCopy".</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to clone.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_getBaseConfig"></a><div class="element clickable method public method_getBaseConfig" data-toggle="collapse" data-target=".method_getBaseConfig .collapse">
 <h2>Retrieve the base config for retrieving data.</h2>
 <pre>getBaseConfig() : <a href="../classes/DcGeneral.Data.ConfigInterface.html">\DcGeneral\Data\ConfigInterface</a></pre>
@@ -158,6 +175,24 @@
 <code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to check.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_pasteAfter"></a><div class="element clickable method public method_pasteAfter" data-toggle="collapse" data-target=".method_pasteAfter .collapse">
+<h2>Paste the content of the clipboard after the given model.</h2>
+<pre>pasteAfter(\DcGeneral\Data\ModelInterface $previousModel, \DcGeneral\Data\CollectionInterface $models, string $sortedBy) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$previousModel</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model after which to paste.</p></div>
+<div class="subelement argument">
+<h4>$models</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The models to be inserted.</p></div>
+<div class="subelement argument">
+<h4>$sortedBy</h4>
+<code>string</code><p>The name of the sorting property.</p></div>
 </div></div>
 </div>
 <a id="method_setEnvironment"></a><div class="element clickable method public method_setEnvironment" data-toggle="collapse" data-target=".method_setEnvironment .collapse">
@@ -250,7 +285,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-02-26T16:37:31+01:00.<br></footer></div>
+            generated on 2014-03-10T16:48:16+01:00.<br></footer></div>
 </div>
 </body>
 </html>
