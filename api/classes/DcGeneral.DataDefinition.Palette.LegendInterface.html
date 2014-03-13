@@ -65,6 +65,8 @@
 <li class="method public "><a href="#method_getName" title='getName() :: Return the name of this legend (e.g. "title", not "title_legend").'><span class="description">Return the name of this legend (e.g. "title", not "title_legend").</span><pre>getName()</pre></a></li>
 <li class="method public "><a href="#method_getPalette" title="getPalette() :: Return the palette this legend belongs to."><span class="description">Return the palette this legend belongs to.</span><pre>getPalette()</pre></a></li>
 <li class="method public "><a href="#method_getProperties" title="getProperties() :: Get all properties in this legend."><span class="description">Get all properties in this legend.</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_getProperty" title="getProperty() :: Get a property by name from this legend."><span class="description">Get a property by name from this legend.</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_hasProperty" title="hasProperty() :: Determine if a property with the name exists in this legend."><span class="description">Determine if a property with the name exists in this legend.</span><pre>hasProperty()</pre></a></li>
 <li class="method public "><a href="#method_isInitialVisible" title="isInitialVisible() :: Determine if this legend's initial state shall be expanded."><span class="description">Determine if this legend's initial state shall be expanded.</span><pre>isInitialVisible()</pre></a></li>
 <li class="method public "><a href="#method_removeProperty" title="removeProperty() :: Remove a property from this legend."><span class="description">Remove a property from this legend.</span><pre>removeProperty()</pre></a></li>
 <li class="method public "><a href="#method_setInitialVisibility" title="setInitialVisibility() :: Set if this legend's initial state is visible (expanded)."><span class="description">Set if this legend's initial state is visible (expanded).</span><pre>setInitialVisibility()</pre></a></li>
@@ -192,6 +194,39 @@
 <div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
 </div></div>
 </div>
+<a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
+<h2>Get a property by name from this legend.</h2>
+<pre>getProperty(string $propertyName) : <a href="../classes/DcGeneral.DataDefinition.Palette.PropertyInterface.html">\DcGeneral\DataDefinition\Palette\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The property name.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/DcGeneral.Exception.DcGeneralRuntimeException.html">\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the this legend does not contain the property.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Palette.PropertyInterface.html">\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_hasProperty"></a><div class="element clickable method public method_hasProperty" data-toggle="collapse" data-target=".method_hasProperty .collapse">
+<h2>Determine if a property with the name exists in this legend.</h2>
+<pre>hasProperty(string $propertyName) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The property name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <a id="method_isInitialVisible"></a><div class="element clickable method public method_isInitialVisible" data-toggle="collapse" data-target=".method_isInitialVisible .collapse">
 <h2>Determine if this legend's initial state shall be expanded.</h2>
 <pre>isInitialVisible() : <a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
@@ -280,7 +315,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-03-13T10:43:34+01:00.<br></footer></div>
+            generated on 2014-03-13T16:39:13+01:00.<br></footer></div>
 </div>
 </body>
 </html>
