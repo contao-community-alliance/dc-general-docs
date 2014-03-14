@@ -68,6 +68,7 @@
 <li class="method public "><a href="#method_isClosed" title="isClosed() :: Boolean flag determining if this data container is closed."><span class="description">Boolean flag determining if this data container is closed.</span><pre>isClosed()</pre></a></li>
 <li class="method public "><a href="#method_isCreatable" title="isCreatable() :: Determines if new entries may be created within this data container."><span class="description">Determines if new entries may be created within this data container.</span><pre>isCreatable()</pre></a></li>
 <li class="method public "><a href="#method_isDeletable" title="isDeletable() :: Boolean flag determining if this data container is deletable."><span class="description">Boolean flag determining if this data container is deletable.</span><pre>isDeletable()</pre></a></li>
+<li class="method public "><a href="#method_isEditOnlyMode" title="isEditOnlyMode() :: Boolean flag determining if this data container is in edit only mode."><span class="description">Boolean flag determining if this data container is in edit only mode.</span><pre>isEditOnlyMode()</pre></a></li>
 <li class="method public "><a href="#method_isEditable" title="isEditable() :: Boolean flag determining if this data container is editable."><span class="description">Boolean flag determining if this data container is editable.</span><pre>isEditable()</pre></a></li>
 <li class="method public "><a href="#method_isSwitchToEditEnabled" title="isSwitchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description">Determines if the view shall switch automatically into edit mode.</span><pre>isSwitchToEditEnabled()</pre></a></li>
 <li class="method public "><a href="#method_setAdditionalFilter" title="setAdditionalFilter() :: Set the additional filters to be used for retrieving elements for the view."><span class="description">Set the additional filters to be used for retrieving elements for the view.</span><pre>setAdditionalFilter()</pre></a></li>
@@ -75,6 +76,7 @@
 <li class="method public "><a href="#method_setCreatable" title="setCreatable() :: Determines if new entries may be created within this data container."><span class="description">Determines if new entries may be created within this data container.</span><pre>setCreatable()</pre></a></li>
 <li class="method public "><a href="#method_setDataProvider" title="setDataProvider() :: Set the name of the data provider which holds the models that we work on."><span class="description">Set the name of the data provider which holds the models that we work on.</span><pre>setDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_setDeletable" title="setDeletable() :: Set boolean flag determining if this data container is deletable."><span class="description">Set boolean flag determining if this data container is deletable.</span><pre>setDeletable()</pre></a></li>
+<li class="method public "><a href="#method_setEditOnlyMode" title="setEditOnlyMode() :: If true, only the edit mode will be shown."><span class="description">If true, only the edit mode will be shown.</span><pre>setEditOnlyMode()</pre></a></li>
 <li class="method public "><a href="#method_setEditable" title="setEditable() :: Boolean flag determining if this data container is editable."><span class="description">Boolean flag determining if this data container is editable.</span><pre>setEditable()</pre></a></li>
 <li class="method public "><a href="#method_setMode" title="setMode() :: Set the mode the data definition is in."><span class="description">Set the mode the data definition is in.</span><pre>setMode()</pre></a></li>
 <li class="method public "><a href="#method_setParentDataProvider" title="setParentDataProvider() :: Set the name of the data provider that holds the parent model."><span class="description">Set the name of the data provider that holds the parent model.</span><pre>setParentDataProvider()</pre></a></li>
@@ -225,6 +227,16 @@ deleted..</div>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
+<a id="method_isEditOnlyMode"></a><div class="element clickable method public method_isEditOnlyMode" data-toggle="collapse" data-target=".method_isEditOnlyMode .collapse">
+<h2>Boolean flag determining if this data container is in edit only mode.</h2>
+<pre>isEditOnlyMode() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">True means, that only the edit mode will shown, irrespective of the given action.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <a id="method_isEditable"></a><div class="element clickable method public method_isEditable" data-toggle="collapse" data-target=".method_isEditable .collapse">
 <h2>Boolean flag determining if this data container is editable.</h2>
 <pre>isEditable() : bool</pre>
@@ -323,12 +335,27 @@ deleted..</div>
 <div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_setEditOnlyMode"></a><div class="element clickable method public method_setEditOnlyMode" data-toggle="collapse" data-target=".method_setEditOnlyMode .collapse">
+<h2>If true, only the edit mode will be shown.</h2>
+<pre>setEditOnlyMode(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This is more or less the opposite to BasicDefinitionInterface::isEditable().</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The flag - true means that only the edit mode will shown, irrespective of the given action.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_setEditable"></a><div class="element clickable method public method_setEditable" data-toggle="collapse" data-target=".method_setEditable .collapse">
 <h2>Boolean flag determining if this data container is editable.</h2>
 <pre>setEditable(bool $value) : <a href="../classes/DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description">This is more or less the opposite to BasicDefinitionInterface::isEditOnlyMode().</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$value</h4>
@@ -434,7 +461,7 @@ Note: This does only apply when in tree mode or parenting mode. For flat mode th
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-03-13T16:39:14+01:00.<br></footer></div>
+            generated on 2014-03-14T16:22:53+01:00.<br></footer></div>
 </div>
 </body>
 </html>
