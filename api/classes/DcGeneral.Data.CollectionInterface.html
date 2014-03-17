@@ -59,15 +59,23 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_add" title="add() :: Alias for push - Append a model to the end of this collection."><span class="description">Alias for push - Append a model to the end of this collection.</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_contains" title="contains() :: Check whether the given model is contained in the collection."><span class="description">Check whether the given model is contained in the collection.</span><pre>contains()</pre></a></li>
+<li class="method public "><a href="#method_containsById" title="containsById() :: Check whether the given model is contained in the collection."><span class="description">Check whether the given model is contained in the collection.</span><pre>containsById()</pre></a></li>
+<li class="method public "><a href="#method_diff" title="diff() :: Computes the difference of the collection."><span class="description">Computes the difference of the collection.</span><pre>diff()</pre></a></li>
 <li class="method public "><a href="#method_get" title="get() :: Get the model at a specific index."><span class="description">Get the model at a specific index.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getModelIds" title="getModelIds() :: Retrieve the ids of the models."><span class="description">Retrieve the ids of the models.</span><pre>getModelIds()</pre></a></li>
 <li class="method public "><a href="#method_insert" title="insert() :: Insert a record at the specific position."><span class="description">Insert a record at the specific position.</span><pre>insert()</pre></a></li>
+<li class="method public "><a href="#method_intersect" title="intersect() :: Intersect the given collection with this collection and return the result."><span class="description">Intersect the given collection with this collection and return the result.</span><pre>intersect()</pre></a></li>
+<li class="method public "><a href="#method_isSubsetOf" title="isSubsetOf() :: Check if the given collection is an subset of the given collection."><span class="description">Check if the given collection is an subset of the given collection.</span><pre>isSubsetOf()</pre></a></li>
 <li class="method public "><a href="#method_length" title="length() :: Get length of this collection."><span class="description">Get length of this collection.</span><pre>length()</pre></a></li>
 <li class="method public "><a href="#method_pop" title="pop() :: Remove the model at the end of the collection and return it."><span class="description">Remove the model at the end of the collection and return it.</span><pre>pop()</pre></a></li>
 <li class="method public "><a href="#method_push" title="push() :: Append a model to the end of this collection."><span class="description">Append a model to the end of this collection.</span><pre>push()</pre></a></li>
 <li class="method public "><a href="#method_remove" title="remove() :: Remove the given index or model from the collection and renew the index."><span class="description">Remove the given index or model from the collection and renew the index.</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_removeById" title="removeById() :: Remove the model with the given id from the collection."><span class="description">Remove the model with the given id from the collection.</span><pre>removeById()</pre></a></li>
 <li class="method public "><a href="#method_reverse" title="reverse() :: Make a reverse sorted collection of this collection."><span class="description">Make a reverse sorted collection of this collection.</span><pre>reverse()</pre></a></li>
 <li class="method public "><a href="#method_shift" title="shift() :: Remove the model from the beginning of the collection and return it."><span class="description">Remove the model from the beginning of the collection and return it.</span><pre>shift()</pre></a></li>
 <li class="method public "><a href="#method_sort" title="sort() :: Sort the records with the given callback and return the new sorted collection."><span class="description">Sort the records with the given callback and return the new sorted collection.</span><pre>sort()</pre></a></li>
+<li class="method public "><a href="#method_union" title="union() :: Compute the union of this collection and the given collection."><span class="description">Compute the union of this collection and the given collection.</span><pre>union()</pre></a></li>
 <li class="method public "><a href="#method_unshift" title="unshift() :: Insert a model at the beginning of the collection."><span class="description">Insert a model at the beginning of the collection.</span><pre>unshift()</pre></a></li>
 </ul>
 </li></ul>
@@ -112,6 +120,50 @@
 </tr></table>
 </div></div>
 </div>
+<a id="method_contains"></a><div class="element clickable method public method_contains" data-toggle="collapse" data-target=".method_contains .collapse">
+<h2>Check whether the given model is contained in the collection.</h2>
+<pre>contains(\DcGeneral\Data\ModelInterface $model) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to search.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_containsById"></a><div class="element clickable method public method_containsById" data-toggle="collapse" data-target=".method_containsById .collapse">
+<h2>Check whether the given model is contained in the collection.</h2>
+<pre>containsById(mixed $modelId) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code>mixed</code><p>The model id to search.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_diff"></a><div class="element clickable method public method_diff" data-toggle="collapse" data-target=".method_diff .collapse">
+<h2>Computes the difference of the collection.</h2>
+<pre>diff(\DcGeneral\Data\CollectionInterface $collection) : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection to compute the difference for.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code>The collection containing all the entries from this collection that are not present
+                            in the given collection.</div>
+</div></div>
+</div>
 <a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
 <h2>Get the model at a specific index.</h2>
 <pre>get(int $intIndex) : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
@@ -124,6 +176,16 @@
 <code>int</code><p>The index of the model to retrieve.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getModelIds"></a><div class="element clickable method public method_getModelIds" data-toggle="collapse" data-target=".method_getModelIds .collapse">
+<h2>Retrieve the ids of the models.</h2>
+<pre>getModelIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_insert"></a><div class="element clickable method public method_insert" data-toggle="collapse" data-target=".method_insert .collapse">
@@ -140,6 +202,34 @@ If $index is out of bounds, just add at the end (does not fill with empty record
 <div class="subelement argument">
 <h4>$objModel</h4>
 <code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code><p>The model to insert.</p></div>
+</div></div>
+</div>
+<a id="method_intersect"></a><div class="element clickable method public method_intersect" data-toggle="collapse" data-target=".method_intersect .collapse">
+<h2>Intersect the given collection with this collection and return the result.</h2>
+<pre>intersect(\DcGeneral\Data\CollectionInterface $collection) : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection to intersect.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_isSubsetOf"></a><div class="element clickable method public method_isSubsetOf" data-toggle="collapse" data-target=".method_isSubsetOf .collapse">
+<h2>Check if the given collection is an subset of the given collection.</h2>
+<pre>isSubsetOf(\DcGeneral\Data\CollectionInterface $collection) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection to check.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_length"></a><div class="element clickable method public method_length" data-toggle="collapse" data-target=".method_length .collapse">
@@ -192,6 +282,18 @@ If $index is out of bounds, just add at the end (does not fill with empty record
 </div>
 </div></div>
 </div>
+<a id="method_removeById"></a><div class="element clickable method public method_removeById" data-toggle="collapse" data-target=".method_removeById .collapse">
+<h2>Remove the model with the given id from the collection.</h2>
+<pre>removeById(mixed $id) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code><p>The id of the model to remove.</p></div>
+</div></div>
+</div>
 <a id="method_reverse"></a><div class="element clickable method public method_reverse" data-toggle="collapse" data-target=".method_reverse .collapse">
 <h2>Make a reverse sorted collection of this collection.</h2>
 <pre>reverse() : <a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></pre>
@@ -226,6 +328,20 @@ If $index is out of bounds, just add at the end (does not fill with empty record
 <div class="subelement response"><code><a href="../classes/DcGeneral.Data.ModelInterface.html">\DcGeneral\Data\ModelInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_union"></a><div class="element clickable method public method_union" data-toggle="collapse" data-target=".method_union .collapse">
+<h2>Compute the union of this collection and the given collection.</h2>
+<pre>union(\DcGeneral\Data\CollectionInterface $collection) : <a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code><p>The collection to intersect.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/DcGeneral.Data.CollectionInterface.html">\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_unshift"></a><div class="element clickable method public method_unshift" data-toggle="collapse" data-target=".method_unshift .collapse">
 <h2>Insert a model at the beginning of the collection.</h2>
 <pre>unshift(\DcGeneral\Data\ModelInterface $objModel) : void</pre>
@@ -246,7 +362,7 @@ If $index is out of bounds, just add at the end (does not fill with empty record
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-03-14T16:22:56+01:00.<br></footer></div>
+            generated on 2014-03-17T14:36:26+01:00.<br></footer></div>
 </div>
 </body>
 </html>
