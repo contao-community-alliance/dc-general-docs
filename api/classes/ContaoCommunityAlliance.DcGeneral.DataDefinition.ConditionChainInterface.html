@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addCondition" title="addCondition() :: Add a condition to this chain."><span class="description">Add a condition to this chain.</span><pre>addCondition()</pre></a></li>
+<li class="method public "><a href="#method_addConditions" title="addConditions() :: Add multiple conditions to this chain."><span class="description">Add multiple conditions to this chain.</span><pre>addConditions()</pre></a></li>
+<li class="method public "><a href="#method_clearConditions" title="clearConditions() :: Clear the chain."><span class="description">Clear the chain.</span><pre>clearConditions()</pre></a></li>
+<li class="method public "><a href="#method_getConditions" title="getConditions() :: Retrieve the conditions contained in the chain."><span class="description">Retrieve the conditions contained in the chain.</span><pre>getConditions()</pre></a></li>
+<li class="method public "><a href="#method_getConjunction" title="getConjunction() :: Retrieve the conjunction."><span class="description">Retrieve the conjunction.</span><pre>getConjunction()</pre></a></li>
+<li class="method public "><a href="#method_removeCondition" title="removeCondition() :: Remove a condition from this chain."><span class="description">Remove a condition from this chain.</span><pre>removeCondition()</pre></a></li>
+<li class="method public "><a href="#method_setConditions" title="setConditions() :: Set the conditions in this chain."><span class="description">Set the conditions in this chain.</span><pre>setConditions()</pre></a></li>
+<li class="method public "><a href="#method_setConjunction" title="setConjunction() :: Set the conjunction."><span class="description">Set the conjunction.</span><pre>setConjunction()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_AND_CONJUNCTION" title="AND_CONJUNCTION() :: All conditions must match."><span class="description">All conditions must match.</span><pre>AND_CONJUNCTION</pre></a></li>
+<li class="constant  "><a href="#constant_OR_CONJUNCTION" title="OR_CONJUNCTION() :: Only one condition must match."><span class="description">Only one condition must match.</span><pre>OR_CONJUNCTION</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">ConditionChainInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">A condition define when a property is visible or editable and when not.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addCondition"></a><div class="element clickable method public method_addCondition" data-toggle="collapse" data-target=".method_addCondition .collapse">
+<h2>Add a condition to this chain.</h2>
+<pre>addCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface $condition) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface</a></code><p>The condition.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_addConditions"></a><div class="element clickable method public method_addConditions" data-toggle="collapse" data-target=".method_addConditions .collapse">
+<h2>Add multiple conditions to this chain.</h2>
+<pre>addConditions(array|\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[] $conditions) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conditions</h4>
+<code>array</code><code><a href="ConditionInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[]</a></code><p>The conditions.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_clearConditions"></a><div class="element clickable method public method_clearConditions" data-toggle="collapse" data-target=".method_clearConditions .collapse">
+<h2>Clear the chain.</h2>
+<pre>clearConditions() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getConditions"></a><div class="element clickable method public method_getConditions" data-toggle="collapse" data-target=".method_getConditions .collapse">
+<h2>Retrieve the conditions contained in the chain.</h2>
+<pre>getConditions() : <a href="ConditionInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="ConditionInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_getConjunction"></a><div class="element clickable method public method_getConjunction" data-toggle="collapse" data-target=".method_getConjunction .collapse">
+<h2>Retrieve the conjunction.</h2>
+<pre>getConjunction() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_removeCondition"></a><div class="element clickable method public method_removeCondition" data-toggle="collapse" data-target=".method_removeCondition .collapse">
+<h2>Remove a condition from this chain.</h2>
+<pre>removeCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface $condition) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface</a></code><p>The condition.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setConditions"></a><div class="element clickable method public method_setConditions" data-toggle="collapse" data-target=".method_setConditions .collapse">
+<h2>Set the conditions in this chain.</h2>
+<pre>setConditions(array|\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[] $conditions) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conditions</h4>
+<code>array</code><code><a href="ConditionInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionInterface[]</a></code><p>The conditions.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setConjunction"></a><div class="element clickable method public method_setConjunction" data-toggle="collapse" data-target=".method_setConjunction .collapse">
+<h2>Set the conjunction.</h2>
+<pre>setConjunction(string $conjunction) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>The conjunction.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_AND_CONJUNCTION"> </a><div class="element clickable constant  constant_AND_CONJUNCTION" data-toggle="collapse" data-target=".constant_AND_CONJUNCTION .collapse">
+<h2>All conditions must match.</h2>
+<pre>AND_CONJUNCTION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OR_CONJUNCTION"> </a><div class="element clickable constant  constant_OR_CONJUNCTION" data-toggle="collapse" data-target=".constant_OR_CONJUNCTION .collapse">
+<h2>Only one condition must match.</h2>
+<pre>OR_CONJUNCTION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:33+02:00.<br></footer></div>
+</div>
+</body>
+</html>

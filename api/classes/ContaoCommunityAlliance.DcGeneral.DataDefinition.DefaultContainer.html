@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\DefaultContainer</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new default container."><span class="description">Create a new default container.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addDefinitions" title="addDefinitions() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>addDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_clearDefinitions" title="clearDefinitions() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>clearDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_getBasicDefinition" title="getBasicDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDataProviderDefinition" title="getDataProviderDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDefinition" title="getDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getDefinitionNames" title="getDefinitionNames() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDefinitionNames()</pre></a></li>
+<li class="method public "><a href="#method_getModelRelationshipDefinition" title="getModelRelationshipDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getPalettesDefinition" title="getPalettesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getPropertiesDefinition" title="getPropertiesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getPropertiesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasBasicDefinition" title="hasBasicDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasDataProviderDefinition" title="hasDataProviderDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasDefinition" title="hasDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasModelRelationshipDefinition" title="hasModelRelationshipDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasPalettesDefinition" title="hasPalettesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_hasPropertiesDefinition" title="hasPropertiesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasPropertiesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_removeDefinition" title="removeDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>removeDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setBasicDefinition" title="setBasicDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setBasicDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDataProviderDefinition" title="setDataProviderDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDataProviderDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDefinition" title="setDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setDefinitions" title="setDefinitions() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDefinitions()</pre></a></li>
+<li class="method public "><a href="#method_setModelRelationshipDefinition" title="setModelRelationshipDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setModelRelationshipDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setPalettesDefinition" title="setPalettesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setPalettesDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setPropertiesDefinition" title="setPropertiesDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setPropertiesDefinition()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_definitions" title="$definitions() :: The contained definition instances."><span class="description"></span><pre>$definitions</pre></a></li>
+<li class="property protected "><a href="#property_name" title="$name() :: The name of the container."><span class="description"></span><pre>$name</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\DefaultContainer"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.DefaultContainer.html">DefaultContainer</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Default implementation of a data definition container.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.html">DcGeneral\DataDefinition</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>__clone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new default container.</h2>
+<pre>__construct(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the container.</p></div>
+</div></div>
+</div>
+<a id="method_addDefinitions"></a><div class="element clickable method public method_addDefinitions" data-toggle="collapse" data-target=".method_addDefinitions .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>addDefinitions(array $definitions) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitions</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>When a passed definition does not implement the DefinitionInterface.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_clearDefinitions"></a><div class="element clickable method public method_clearDefinitions" data-toggle="collapse" data-target=".method_clearDefinitions .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>clearDefinitions() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getBasicDefinition"></a><div class="element clickable method public method_getBasicDefinition" data-toggle="collapse" data-target=".method_getBasicDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getBasicDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDataProviderDefinition"></a><div class="element clickable method public method_getDataProviderDefinition" data-toggle="collapse" data-target=".method_getDataProviderDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDataProviderDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDefinition"></a><div class="element clickable method public method_getDefinition" data-toggle="collapse" data-target=".method_getDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDefinition($definitionName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitionName</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>Is thrown when there is no definition with this name.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getDefinitionNames"></a><div class="element clickable method public method_getDefinitionNames" data-toggle="collapse" data-target=".method_getDefinitionNames .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDefinitionNames() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getModelRelationshipDefinition"></a><div class="element clickable method public method_getModelRelationshipDefinition" data-toggle="collapse" data-target=".method_getModelRelationshipDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getModelRelationshipDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getPalettesDefinition"></a><div class="element clickable method public method_getPalettesDefinition" data-toggle="collapse" data-target=".method_getPalettesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getPalettesDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getPropertiesDefinition"></a><div class="element clickable method public method_getPropertiesDefinition" data-toggle="collapse" data-target=".method_getPropertiesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getPropertiesDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasBasicDefinition"></a><div class="element clickable method public method_hasBasicDefinition" data-toggle="collapse" data-target=".method_hasBasicDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasBasicDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasDataProviderDefinition"></a><div class="element clickable method public method_hasDataProviderDefinition" data-toggle="collapse" data-target=".method_hasDataProviderDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasDataProviderDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasDefinition"></a><div class="element clickable method public method_hasDefinition" data-toggle="collapse" data-target=".method_hasDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasDefinition($definitionName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitionName</h4></div>
+</div></div>
+</div>
+<a id="method_hasModelRelationshipDefinition"></a><div class="element clickable method public method_hasModelRelationshipDefinition" data-toggle="collapse" data-target=".method_hasModelRelationshipDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasModelRelationshipDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasPalettesDefinition"></a><div class="element clickable method public method_hasPalettesDefinition" data-toggle="collapse" data-target=".method_hasPalettesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasPalettesDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasPropertiesDefinition"></a><div class="element clickable method public method_hasPropertiesDefinition" data-toggle="collapse" data-target=".method_hasPropertiesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasPropertiesDefinition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_removeDefinition"></a><div class="element clickable method public method_removeDefinition" data-toggle="collapse" data-target=".method_removeDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>removeDefinition($definitionName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitionName</h4></div>
+</div></div>
+</div>
+<a id="method_setBasicDefinition"></a><div class="element clickable method public method_setBasicDefinition" data-toggle="collapse" data-target=".method_setBasicDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setBasicDefinition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<a id="method_setDataProviderDefinition"></a><div class="element clickable method public method_setDataProviderDefinition" data-toggle="collapse" data-target=".method_setDataProviderDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDataProviderDefinition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<a id="method_setDefinition"></a><div class="element clickable method public method_setDefinition" data-toggle="collapse" data-target=".method_setDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDefinition($definitionName, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitionName</h4></div>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<a id="method_setDefinitions"></a><div class="element clickable method public method_setDefinitions" data-toggle="collapse" data-target=".method_setDefinitions .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDefinitions(array $definitions) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definitions</h4></div>
+</div></div>
+</div>
+<a id="method_setModelRelationshipDefinition"></a><div class="element clickable method public method_setModelRelationshipDefinition" data-toggle="collapse" data-target=".method_setModelRelationshipDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setModelRelationshipDefinition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<a id="method_setPalettesDefinition"></a><div class="element clickable method public method_setPalettesDefinition" data-toggle="collapse" data-target=".method_setPalettesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setPalettesDefinition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\PalettesDefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<a id="method_setPropertiesDefinition"></a><div class="element clickable method public method_setPropertiesDefinition" data-toggle="collapse" data-target=".method_setPropertiesDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setPropertiesDefinition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface $definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_definitions"> </a><div class="element clickable property protected property_definitions" data-toggle="collapse" data-target=".property_definitions .collapse">
+<h2>The contained definition instances.</h2>
+<pre>$definitions : <a href="DefinitionInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DefinitionInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_name"> </a><div class="element clickable property protected property_name" data-toggle="collapse" data-target=".property_name .collapse">
+<h2>The name of the container.</h2>
+<pre>$name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:33+02:00.<br></footer></div>
+</div>
+</body>
+</html>

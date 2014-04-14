@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getChildRecordIds" title="getChildRecordIds() :: Retrieve the ids of the child records of the current model."><span class="description">Retrieve the ids of the child records of the current model.</span><pre>getChildRecordIds()</pre></a></li>
+<li class="method public "><a href="#method_getCircularReference" title="getCircularReference() :: Get determinator if there exists a circular reference."><span class="description">Get determinator if there exists a circular reference.</span><pre>getCircularReference()</pre></a></li>
+<li class="method public "><a href="#method_getCommand" title="getCommand() :: Retrieve the attached command."><span class="description">Retrieve the attached command.</span><pre>getCommand()</pre></a></li>
+<li class="method public "><a href="#method_getHref" title="getHref() :: Retrieve the href for the button."><span class="description">Retrieve the href for the button.</span><pre>getHref()</pre></a></li>
+<li class="method public "><a href="#method_getModel" title="getModel() :: Get the model currently in scope."><span class="description">Get the model currently in scope.</span><pre>getModel()</pre></a></li>
+<li class="method public "><a href="#method_getNext" title="getNext() :: Get the next model in the list, succeeding the current model."><span class="description">Get the next model in the list, succeeding the current model.</span><pre>getNext()</pre></a></li>
+<li class="method public "><a href="#method_getPrevious" title="getPrevious() :: Get the previous model in the list, preceding the current model."><span class="description">Get the previous model in the list, preceding the current model.</span><pre>getPrevious()</pre></a></li>
+<li class="method public "><a href="#method_setChildRecordIds" title="setChildRecordIds() :: Set the ids of the child records of the current model."><span class="description">Set the ids of the child records of the current model.</span><pre>setChildRecordIds()</pre></a></li>
+<li class="method public "><a href="#method_setCircularReference" title="setCircularReference() :: Set determinator if there exists a circular reference."><span class="description">Set determinator if there exists a circular reference.</span><pre>setCircularReference()</pre></a></li>
+<li class="method public "><a href="#method_setCommand" title="setCommand() :: Set the attached command."><span class="description">Set the attached command.</span><pre>setCommand()</pre></a></li>
+<li class="method public "><a href="#method_setHref" title="setHref() :: Set the href for the button."><span class="description">Set the href for the button.</span><pre>setHref()</pre></a></li>
+<li class="method public "><a href="#method_setNext" title="setNext() :: Set the next model in the list, succeeding the current model."><span class="description">Set the next model in the list, succeeding the current model.</span><pre>setNext()</pre></a></li>
+<li class="method public "><a href="#method_setObjModel" title="setObjModel() :: Set the model currently in scope."><span class="description">Set the model currently in scope.</span><pre>setObjModel()</pre></a></li>
+<li class="method public "><a href="#method_setPrevious" title="setPrevious() :: Set the previous model in the list, preceding the current model."><span class="description">Set the previous model in the list, preceding the current model.</span><pre>setPrevious()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_childRecordIds" title="$childRecordIds() :: The ids of any child records of the model."><span class="description"></span><pre>$childRecordIds</pre></a></li>
+<li class="property protected "><a href="#property_circularReference" title="$circularReference() :: Determinator if there is a circular reference from an item in the clipboard to the current model."><span class="description"></span><pre>$circularReference</pre></a></li>
+<li class="property protected "><a href="#property_command" title="$command() :: The command for which the button is being rendered."><span class="description"></span><pre>$command</pre></a></li>
+<li class="property protected "><a href="#property_href" title="$href() :: The href for the command."><span class="description"></span><pre>$href</pre></a></li>
+<li class="property protected "><a href="#property_model" title="$model() :: The model to which the command shall be applied to."><span class="description"></span><pre>$model</pre></a></li>
+<li class="property protected "><a href="#property_next" title="$next() :: The next model succeeding the current model."><span class="description"></span><pre>$next</pre></a></li>
+<li class="property protected "><a href="#property_previous" title="$previous() :: The model preceeding the current model."><span class="description"></span><pre>$previous</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul><li class="constant  "><a href="#constant_NAME" title="NAME() :: "><span class="description">NAME</span><pre>NAME</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html">GetOperationButtonEvent</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class GetOperationButtonEvent.</p>
+<div class="details">
+<div class="long_description">This event gets emitted when an operation button is rendered.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.Event.html">DcGeneral\Contao\View\Contao2BackendView\Event</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getChildRecordIds"></a><div class="element clickable method public method_getChildRecordIds" data-toggle="collapse" data-target=".method_getChildRecordIds .collapse">
+<h2>Retrieve the ids of the child records of the current model.</h2>
+<pre>getChildRecordIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getCircularReference"></a><div class="element clickable method public method_getCircularReference" data-toggle="collapse" data-target=".method_getCircularReference .collapse">
+<h2>Get determinator if there exists a circular reference.</h2>
+<pre>getCircularReference() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This flag determines if there exists a circular reference between the item currently in the clipboard and the
+current model. A circular reference is of relevance when performing a cut and paste operation for example.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getCommand"></a><div class="element clickable method public method_getCommand" data-toggle="collapse" data-target=".method_getCommand .collapse">
+<h2>Retrieve the attached command.</h2>
+<pre>getCommand() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getHref"></a><div class="element clickable method public method_getHref" data-toggle="collapse" data-target=".method_getHref .collapse">
+<h2>Retrieve the href for the button.</h2>
+<pre>getHref() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getModel"></a><div class="element clickable method public method_getModel" data-toggle="collapse" data-target=".method_getModel .collapse">
+<h2>Get the model currently in scope.</h2>
+<pre>getModel() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getNext"></a><div class="element clickable method public method_getNext" data-toggle="collapse" data-target=".method_getNext .collapse">
+<h2>Get the next model in the list, succeeding the current model.</h2>
+<pre>getNext() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getPrevious"></a><div class="element clickable method public method_getPrevious" data-toggle="collapse" data-target=".method_getPrevious .collapse">
+<h2>Get the previous model in the list, preceding the current model.</h2>
+<pre>getPrevious() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setChildRecordIds"></a><div class="element clickable method public method_setChildRecordIds" data-toggle="collapse" data-target=".method_setChildRecordIds .collapse">
+<h2>Set the ids of the child records of the current model.</h2>
+<pre>setChildRecordIds(array $childRecordIds) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$childRecordIds</h4>
+<code>array</code><p>The list of ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setCircularReference"></a><div class="element clickable method public method_setCircularReference" data-toggle="collapse" data-target=".method_setCircularReference .collapse">
+<h2>Set determinator if there exists a circular reference.</h2>
+<pre>setCircularReference(boolean $circularReference) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This flag determines if there exists a circular reference between the item currently in the clipboard and the
+current model. A circular reference is of relevance when performing a cut and paste operation for example.</div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$circularReference</h4>
+<code>boolean</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setCommand"></a><div class="element clickable method public method_setCommand" data-toggle="collapse" data-target=".method_setCommand .collapse">
+<h2>Set the attached command.</h2>
+<pre>setCommand(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $objCommand) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objCommand</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setHref"></a><div class="element clickable method public method_setHref" data-toggle="collapse" data-target=".method_setHref .collapse">
+<h2>Set the href for the button.</h2>
+<pre>setHref(string $href) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$href</h4>
+<code>string</code><p>The href.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setNext"></a><div class="element clickable method public method_setNext" data-toggle="collapse" data-target=".method_setNext .collapse">
+<h2>Set the next model in the list, succeeding the current model.</h2>
+<pre>setNext(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $next) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$next</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The successor.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setObjModel"></a><div class="element clickable method public method_setObjModel" data-toggle="collapse" data-target=".method_setObjModel .collapse">
+<h2>Set the model currently in scope.</h2>
+<pre>setObjModel(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<a id="method_setPrevious"></a><div class="element clickable method public method_setPrevious" data-toggle="collapse" data-target=".method_setPrevious .collapse">
+<h2>Set the previous model in the list, preceding the current model.</h2>
+<pre>setPrevious(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $previous) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$previous</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The id of the predecessor.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetOperationButtonEvent</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_childRecordIds"> </a><div class="element clickable property protected property_childRecordIds" data-toggle="collapse" data-target=".property_childRecordIds .collapse">
+<h2>The ids of any child records of the model.</h2>
+<pre>$childRecordIds : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_circularReference"> </a><div class="element clickable property protected property_circularReference" data-toggle="collapse" data-target=".property_circularReference .collapse">
+<h2>Determinator if there is a circular reference from an item in the clipboard to the current model.</h2>
+<pre>$circularReference : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_command"> </a><div class="element clickable property protected property_command" data-toggle="collapse" data-target=".property_command .collapse">
+<h2>The command for which the button is being rendered.</h2>
+<pre>$command : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_href"> </a><div class="element clickable property protected property_href" data-toggle="collapse" data-target=".property_href .collapse">
+<h2>The href for the command.</h2>
+<pre>$href : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_model"> </a><div class="element clickable property protected property_model" data-toggle="collapse" data-target=".property_model .collapse">
+<h2>The model to which the command shall be applied to.</h2>
+<pre>$model : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_next"> </a><div class="element clickable property protected property_next" data-toggle="collapse" data-target=".property_next .collapse">
+<h2>The next model succeeding the current model.</h2>
+<pre>$next : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_previous"> </a><div class="element clickable property protected property_previous" data-toggle="collapse" data-target=".property_previous .collapse">
+<h2>The model preceeding the current model.</h2>
+<pre>$previous : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_NAME"> </a><div class="element clickable constant  constant_NAME" data-toggle="collapse" data-target=".constant_NAME .collapse">
+<h2>NAME</h2>
+<pre>NAME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:39+02:00.<br></footer></div>
+</div>
+</body>
+</html>

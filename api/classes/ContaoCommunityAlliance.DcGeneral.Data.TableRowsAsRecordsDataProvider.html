@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Data\TableRowsAsRecordsDataProvider</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_delete" title="delete() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_fetch" title="fetch() :: Fetch a single record by id."><span class="description">Fetch a single record by id.</span><pre>fetch()</pre></a></li>
+<li class="method public "><a href="#method_fetchAll" title="fetchAll() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>fetchAll()</pre></a></li>
+<li class="method public "><a href="#method_fieldExists" title="fieldExists() :: Check if the property exists in the table."><span class="description">Check if the property exists in the table.</span><pre>fieldExists()</pre></a></li>
+<li class="method public "><a href="#method_getActiveVersion" title="getActiveVersion() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>getActiveVersion()</pre></a></li>
+<li class="method public "><a href="#method_getCount" title="getCount() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>getCount()</pre></a></li>
+<li class="method public "><a href="#method_getVersion" title="getVersion() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>getVersion()</pre></a></li>
+<li class="method public "><a href="#method_getVersions" title="getVersions() :: Return null as versioning is not supported in this data provider."><span class="description">Return null as versioning is not supported in this data provider.</span><pre>getVersions()</pre></a></li>
+<li class="method public "><a href="#method_isUniqueValue" title="isUniqueValue() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>isUniqueValue()</pre></a></li>
+<li class="method public "><a href="#method_resetFallback" title="resetFallback() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>resetFallback()</pre></a></li>
+<li class="method public "><a href="#method_sameModels" title="sameModels() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>sameModels()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save() :: Save a model to the database."><span class="description">Save a model to the database.</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_saveEach" title="saveEach() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>saveEach()</pre></a></li>
+<li class="method public "><a href="#method_saveVersion" title="saveVersion() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>saveVersion()</pre></a></li>
+<li class="method public "><a href="#method_setBaseConfig" title="setBaseConfig() :: Set base config with source and other necessary parameter."><span class="description">Set base config with source and other necessary parameter.</span><pre>setBaseConfig()</pre></a></li>
+<li class="method public "><a href="#method_setVersionActive" title="setVersionActive() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>setVersionActive()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_insertUndo" title="insertUndo() :: Unsupported in this data provider, throws an Exception."><span class="description">Unsupported in this data provider, throws an Exception.</span><pre>insertUndo()</pre></a></li>
+<li class="method protected "><a href="#method_youShouldNotCallMe" title="youShouldNotCallMe() :: Exception throwing convenience method."><span class="description">Exception throwing convenience method.</span><pre>youShouldNotCallMe()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_strGroupCol" title="$strGroupCol() :: Grouping column to use to tie rows together."><span class="description"></span><pre>$strGroupCol</pre></a></li>
+<li class="property protected "><a href="#property_strSortCol" title="$strSortCol() :: Sorting column to sort the entries by."><span class="description"></span><pre>$strSortCol</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Data\TableRowsAsRecordsDataProvider"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Data.html">Data</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.TableRowsAsRecordsDataProvider.html">TableRowsAsRecordsDataProvider</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class TableRowsAsRecordsDataProvider.</p>
+<div class="details">
+<div class="long_description">This data provider allows to map multiple rows of a SQL table into a single model for usage in a MultiColumnWizard.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Data.html">DcGeneral\Data</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>delete(mixed $item) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$item</h4>
+<code>mixed</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
+<h2>Fetch a single record by id.</h2>
+<pre>fetch(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This data provider only supports retrieving by id so use $objConfig->setId() to populate the config with an Id.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The configuration to use.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>If config object does not contain an Id.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_fetchAll"></a><div class="element clickable method public method_fetchAll" data-toggle="collapse" data-target=".method_fetchAll .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>fetchAll(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_fieldExists"></a><div class="element clickable method public method_fieldExists" data-toggle="collapse" data-target=".method_fieldExists .collapse">
+<h2>Check if the property exists in the table.</h2>
+<pre>fieldExists(string $strField) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This data provider only returns true for the tstamp property.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strField</h4>
+<code>string</code><p>The name of the property to check.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getActiveVersion"></a><div class="element clickable method public method_getActiveVersion" data-toggle="collapse" data-target=".method_getActiveVersion .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>getActiveVersion(mixed $mixID) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getCount"></a><div class="element clickable method public method_getCount" data-toggle="collapse" data-target=".method_getCount .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>getCount(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getVersion"></a><div class="element clickable method public method_getVersion" data-toggle="collapse" data-target=".method_getVersion .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>getVersion(mixed $mixID, mixed $mixVersion) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$mixVersion</h4>
+<code>mixed</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getVersions"></a><div class="element clickable method public method_getVersions" data-toggle="collapse" data-target=".method_getVersions .collapse">
+<h2>Return null as versioning is not supported in this data provider.</h2>
+<pre>getVersions(mixed $mixID, boolean $blnOnlyActive) : null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$blnOnlyActive</h4>
+<code>boolean</code><p>Unused.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a id="method_isUniqueValue"></a><div class="element clickable method public method_isUniqueValue" data-toggle="collapse" data-target=".method_isUniqueValue .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>isUniqueValue(string $strField, mixed $varNew, int $intId) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strField</h4>
+<code>string</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$varNew</h4>
+<code>mixed</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$intId</h4>
+<code>int</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_resetFallback"></a><div class="element clickable method public method_resetFallback" data-toggle="collapse" data-target=".method_resetFallback .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>resetFallback(string $strField) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strField</h4>
+<code>string</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_sameModels"></a><div class="element clickable method public method_sameModels" data-toggle="collapse" data-target=".method_sameModels .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>sameModels(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel1, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel2) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel1</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$objModel2</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>Save a model to the database.</h2>
+<pre>save(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objItem, bool $recursive) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">In general, this method fetches the solely property "rows" from the model and updates the local table against
+these contents.
+
+The parent id (id of the model) will get checked and reflected also for new items.
+
+When rows with duplicate ids are encountered (like from MCW for example), the dupes are inserted as new rows.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objItem</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to save.</p></div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>Ignored as not relevant in this data provider.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>When the passed model does not contain a property named "rows", an Exception is thrown.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code>The passed Model.</div>
+</div></div>
+</div>
+<a id="method_saveEach"></a><div class="element clickable method public method_saveEach" data-toggle="collapse" data-target=".method_saveEach .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>saveEach(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $objItems) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objItems</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_saveVersion"></a><div class="element clickable method public method_saveVersion" data-toggle="collapse" data-target=".method_saveVersion .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>saveVersion(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel, string $strUsername) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$strUsername</h4>
+<code>string</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setBaseConfig"></a><div class="element clickable method public method_setBaseConfig" data-toggle="collapse" data-target=".method_setBaseConfig .collapse">
+<h2>Set base config with source and other necessary parameter.</h2>
+<pre>setBaseConfig(array $arrConfig) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$arrConfig</h4>
+<code>array</code><p>The configuration to use.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>When no source has been defined.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setVersionActive"></a><div class="element clickable method public method_setVersionActive" data-toggle="collapse" data-target=".method_setVersionActive .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>setVersionActive(mixed $mixID, mixed $mixVersion) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$mixVersion</h4>
+<code>mixed</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_insertUndo"></a><div class="element clickable method protected method_insertUndo" data-toggle="collapse" data-target=".method_insertUndo .collapse">
+<h2>Unsupported in this data provider, throws an Exception.</h2>
+<pre>insertUndo(string $strSourceSQL, string $strSaveSQL, string $strTable) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strSourceSQL</h4>
+<code>string</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$strSaveSQL</h4>
+<code>string</code><p>Unused.</p></div>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>Unused.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Always throws exception.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_youShouldNotCallMe"></a><div class="element clickable method protected method_youShouldNotCallMe" data-toggle="collapse" data-target=".method_youShouldNotCallMe .collapse">
+<h2>Exception throwing convenience method.</h2>
+<pre>youShouldNotCallMe(string $strMethod) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Convenience method in this data provider that simply throws an Exception stating that the passed method name
+should not be called on this data provider, as it is only intended to display an edit mask.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strMethod</h4>
+<code>string</code><p>The name of the method being called.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralException</a></code></th>
+<td>Throws always an exception telling that the method (see param $strMethod) must not be
+                           called.</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_strGroupCol"> </a><div class="element clickable property protected property_strGroupCol" data-toggle="collapse" data-target=".property_strGroupCol .collapse">
+<h2>Grouping column to use to tie rows together.</h2>
+<pre>$strGroupCol : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSortCol"> </a><div class="element clickable property protected property_strSortCol" data-toggle="collapse" data-target=".property_strSortCol .collapse">
+<h2>Sorting column to sort the entries by.</h2>
+<pre>$strSortCol : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:32+02:00.<br></footer></div>
+</div>
+</body>
+</html>

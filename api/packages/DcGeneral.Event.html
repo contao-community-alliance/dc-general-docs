@@ -20,8 +20,9 @@
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Namespaces</a></li>
-<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
 <li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
 <li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
 </ul>
@@ -63,29 +64,33 @@
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#EventPropagatorInterface" title="Generic event propagator.">EventPropagatorInterface</a></li>
 <li><a href="#ModelCommandEventInterface" title="This interface describes a command event that references a model.">ModelCommandEventInterface</a></li>
 <li><a href="#CommandEventInterface" title="This interface describes an event referencing an environment and a command.">CommandEventInterface</a></li>
-<li><a href="#EventPropagatorInterface" title="Generic event propagator.">EventPropagatorInterface</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#PrePersistModelEvent" title="This event is emitted just before a model is saved to the data provider.">PrePersistModelEvent</a></li>
-<li><a href="#PostPasteModelEvent" title="This event is emitted after a model has been pasted.">PostPasteModelEvent</a></li>
-<li><a href="#PostCreateModelEvent" title="This event is emitted after a model has been created.">PostCreateModelEvent</a></li>
-<li><a href="#PostPersistModelEvent" title="This event is emitted after a model has been saved to the data provider.">PostPersistModelEvent</a></li>
-<li><a href="#Subscriber" title="Class Subscriber - gateway to the legacy Contao HOOK style callbacks.">Subscriber</a></li>
 <li><a href="#AbstractModelCommandEvent" title="Abstract base class for a command event referencing a model.">AbstractModelCommandEvent</a></li>
-<li><a href="#AbstractCommandEvent" title="This class is the base foundation for a command event.">AbstractCommandEvent</a></li>
-<li><a href="#AbstractViewAwareEvent" title="Abstract event class referencing an environment and a view.">AbstractViewAwareEvent</a></li>
-<li><a href="#PreCreateModelEvent" title="This event is emitted before a model is created.">PreCreateModelEvent</a></li>
-<li><a href="#EventPropagator" title="The generic event propagator implementation.">EventPropagator</a></li>
+<li><a href="#AbstractModelAwareEvent" title="Abstract base class for an event that need an environment and a model.">AbstractModelAwareEvent</a></li>
+<li><a href="#PreEditModelEvent" title="This event is emitted before the edit view will be generated.">PreEditModelEvent</a></li>
+<li><a href="#AbstractEnvironmentAwareEvent" title="Abstract base class for environment aware events">AbstractEnvironmentAwareEvent</a></li>
 <li><a href="#PostDuplicateModelEvent" title="This event is emitted after a model has been duplicated.">PostDuplicateModelEvent</a></li>
+<li><a href="#EventPropagator" title="The generic event propagator implementation.">EventPropagator</a></li>
+<li><a href="#PreDuplicateModelEvent" title="This event is emitted just before a model is duplicated.">PreDuplicateModelEvent</a></li>
+<li><a href="#PrePersistModelEvent" title="This event is emitted just before a model is saved to the data provider.">PrePersistModelEvent</a></li>
+<li><a href="#PostCreateModelEvent" title="This event is emitted after a model has been created.">PostCreateModelEvent</a></li>
+<li><a href="#AbstractActionAwareEvent" title="This class is the base foundation for an action event.">AbstractActionAwareEvent</a></li>
 <li><a href="#PostDeleteModelEvent" title="This event is emitted after a model has been deleted.">PostDeleteModelEvent</a></li>
 <li><a href="#AbstractContainerAwareEvent" title="Abstract base class for container aware events.">AbstractContainerAwareEvent</a></li>
-<li><a href="#AbstractEnvironmentAwareEvent" title="Abstract base class for environment aware events">AbstractEnvironmentAwareEvent</a></li>
-<li><a href="#PreDuplicateModelEvent" title="This event is emitted just before a model is duplicated.">PreDuplicateModelEvent</a></li>
-<li><a href="#AbstractModelAwareEvent" title="Abstract base class for an event that need an environment and a model.">AbstractModelAwareEvent</a></li>
+<li><a href="#PostPersistModelEvent" title="This event is emitted after a model has been saved to the data provider.">PostPersistModelEvent</a></li>
+<li><a href="#AbstractViewAwareEvent" title="Abstract event class referencing an environment and a view.">AbstractViewAwareEvent</a></li>
+<li><a href="#PreCreateModelEvent" title="This event is emitted before a model is created.">PreCreateModelEvent</a></li>
+<li><a href="#ActionEvent" title="This event occurs when an action should handled.">ActionEvent</a></li>
 <li><a href="#PrePasteModelEvent" title="This event is emitted just before a model is pasted.">PrePasteModelEvent</a></li>
+<li><a href="#PostPasteModelEvent" title="This event is emitted after a model has been pasted.">PostPasteModelEvent</a></li>
 <li><a href="#PreDeleteModelEvent" title="This event is emitted just before a model is deleted.">PreDeleteModelEvent</a></li>
+<li><a href="#AbstractCommandEvent" title="This class is the base foundation for a command event.">AbstractCommandEvent</a></li>
+<li><a href="#Subscriber" title="Class Subscriber - gateway to the legacy Contao HOOK style callbacks.">Subscriber</a></li>
+<li><a href="#Action" title="This class is the base foundation for a command event.">Action</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -99,151 +104,179 @@
 <h3>
 <i class="icon-custom icon-class"></i> Classes and interfaces</h3>
 <div id="CommandEventInterface" class="element ajax clickable interface">
-<h1>CommandEventInterface<a href="../classes/DcGeneral.Event.CommandEventInterface.html">¶</a>
+<h1>CommandEventInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.CommandEventInterface.html">¶</a>
 </h1>
 <p class="short_description">This interface describes an event referencing an environment and a command.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.CommandEventInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.CommandEventInterface.html" class="more">« More »</a>
 </div>
 <div id="EventPropagatorInterface" class="element ajax clickable interface">
-<h1>EventPropagatorInterface<a href="../classes/DcGeneral.Event.EventPropagatorInterface.html">¶</a>
+<h1>EventPropagatorInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">¶</a>
 </h1>
 <p class="short_description">Generic event propagator.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.EventPropagatorInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html" class="more">« More »</a>
 </div>
 <div id="ModelCommandEventInterface" class="element ajax clickable interface">
-<h1>ModelCommandEventInterface<a href="../classes/DcGeneral.Event.ModelCommandEventInterface.html">¶</a>
+<h1>ModelCommandEventInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ModelCommandEventInterface.html">¶</a>
 </h1>
 <p class="short_description">This interface describes a command event that references a model.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.ModelCommandEventInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ModelCommandEventInterface.html" class="more">« More »</a>
 </div>
-<div id="Subscriber" class="element ajax clickable class">
-<h1>Subscriber<a href="../classes/DcGeneral.Contao.Event.Subscriber.html">¶</a>
-</h1>
-<p class="short_description">Class Subscriber - gateway to the legacy Contao HOOK style callbacks.</p>
-<div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Event.Subscriber.html" class="more">« More »</a>
-</div>
-<div id="AbstractCommandEvent" class="element ajax clickable class">
-<h1>AbstractCommandEvent<a href="../classes/DcGeneral.Event.AbstractCommandEvent.html">¶</a>
+<div id="Action" class="element ajax clickable class">
+<h1>Action<a href="../classes/ContaoCommunityAlliance.DcGeneral.Action.html">¶</a>
 </h1>
 <p class="short_description">This class is the base foundation for a command event.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractCommandEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Action.html" class="more">« More »</a>
+</div>
+<div id="Subscriber" class="element ajax clickable class">
+<h1>Subscriber<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html">¶</a>
+</h1>
+<p class="short_description">Class Subscriber - gateway to the legacy Contao HOOK style callbacks.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html" class="more">« More »</a>
+</div>
+<div id="AbstractActionAwareEvent" class="element ajax clickable class">
+<h1>AbstractActionAwareEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractActionAwareEvent.html">¶</a>
+</h1>
+<p class="short_description">This class is the base foundation for an action event.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractActionAwareEvent.html" class="more">« More »</a>
+</div>
+<div id="AbstractCommandEvent" class="element ajax clickable class">
+<h1>AbstractCommandEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractCommandEvent.html">¶</a>
+</h1>
+<p class="short_description">This class is the base foundation for a command event.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractCommandEvent.html" class="more">« More »</a>
 </div>
 <div id="AbstractContainerAwareEvent" class="element ajax clickable class">
-<h1>AbstractContainerAwareEvent<a href="../classes/DcGeneral.Event.AbstractContainerAwareEvent.html">¶</a>
+<h1>AbstractContainerAwareEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractContainerAwareEvent.html">¶</a>
 </h1>
 <p class="short_description">Abstract base class for container aware events.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractContainerAwareEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractContainerAwareEvent.html" class="more">« More »</a>
 </div>
 <div id="AbstractEnvironmentAwareEvent" class="element ajax clickable class">
-<h1>AbstractEnvironmentAwareEvent<a href="../classes/DcGeneral.Event.AbstractEnvironmentAwareEvent.html">¶</a>
+<h1>AbstractEnvironmentAwareEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractEnvironmentAwareEvent.html">¶</a>
 </h1>
 <p class="short_description">Abstract base class for environment aware events</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractEnvironmentAwareEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractEnvironmentAwareEvent.html" class="more">« More »</a>
 </div>
 <div id="AbstractModelAwareEvent" class="element ajax clickable class">
-<h1>AbstractModelAwareEvent<a href="../classes/DcGeneral.Event.AbstractModelAwareEvent.html">¶</a>
+<h1>AbstractModelAwareEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractModelAwareEvent.html">¶</a>
 </h1>
 <p class="short_description">Abstract base class for an event that need an environment and a model.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractModelAwareEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractModelAwareEvent.html" class="more">« More »</a>
 </div>
 <div id="AbstractModelCommandEvent" class="element ajax clickable class">
-<h1>AbstractModelCommandEvent<a href="../classes/DcGeneral.Event.AbstractModelCommandEvent.html">¶</a>
+<h1>AbstractModelCommandEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractModelCommandEvent.html">¶</a>
 </h1>
 <p class="short_description">Abstract base class for a command event referencing a model.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractModelCommandEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractModelCommandEvent.html" class="more">« More »</a>
 </div>
 <div id="AbstractViewAwareEvent" class="element ajax clickable class">
-<h1>AbstractViewAwareEvent<a href="../classes/DcGeneral.Event.AbstractViewAwareEvent.html">¶</a>
+<h1>AbstractViewAwareEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractViewAwareEvent.html">¶</a>
 </h1>
 <p class="short_description">Abstract event class referencing an environment and a view.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.AbstractViewAwareEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.AbstractViewAwareEvent.html" class="more">« More »</a>
+</div>
+<div id="ActionEvent" class="element ajax clickable class">
+<h1>ActionEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ActionEvent.html">¶</a>
+</h1>
+<p class="short_description">This event occurs when an action should handled.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ActionEvent.html" class="more">« More »</a>
 </div>
 <div id="EventPropagator" class="element ajax clickable class">
-<h1>EventPropagator<a href="../classes/DcGeneral.Event.EventPropagator.html">¶</a>
+<h1>EventPropagator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagator.html">¶</a>
 </h1>
 <p class="short_description">The generic event propagator implementation.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.EventPropagator.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagator.html" class="more">« More »</a>
 </div>
 <div id="PostCreateModelEvent" class="element ajax clickable class">
-<h1>PostCreateModelEvent<a href="../classes/DcGeneral.Event.PostCreateModelEvent.html">¶</a>
+<h1>PostCreateModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostCreateModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted after a model has been created.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PostCreateModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostCreateModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PostDeleteModelEvent" class="element ajax clickable class">
-<h1>PostDeleteModelEvent<a href="../classes/DcGeneral.Event.PostDeleteModelEvent.html">¶</a>
+<h1>PostDeleteModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostDeleteModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted after a model has been deleted.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PostDeleteModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostDeleteModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PostDuplicateModelEvent" class="element ajax clickable class">
-<h1>PostDuplicateModelEvent<a href="../classes/DcGeneral.Event.PostDuplicateModelEvent.html">¶</a>
+<h1>PostDuplicateModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostDuplicateModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted after a model has been duplicated.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PostDuplicateModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostDuplicateModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PostPasteModelEvent" class="element ajax clickable class">
-<h1>PostPasteModelEvent<a href="../classes/DcGeneral.Event.PostPasteModelEvent.html">¶</a>
+<h1>PostPasteModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostPasteModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted after a model has been pasted.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PostPasteModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostPasteModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PostPersistModelEvent" class="element ajax clickable class">
-<h1>PostPersistModelEvent<a href="../classes/DcGeneral.Event.PostPersistModelEvent.html">¶</a>
+<h1>PostPersistModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostPersistModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted after a model has been saved to the data provider.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PostPersistModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PostPersistModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PreCreateModelEvent" class="element ajax clickable class">
-<h1>PreCreateModelEvent<a href="../classes/DcGeneral.Event.PreCreateModelEvent.html">¶</a>
+<h1>PreCreateModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreCreateModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted before a model is created.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PreCreateModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreCreateModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PreDeleteModelEvent" class="element ajax clickable class">
-<h1>PreDeleteModelEvent<a href="../classes/DcGeneral.Event.PreDeleteModelEvent.html">¶</a>
+<h1>PreDeleteModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreDeleteModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted just before a model is deleted.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PreDeleteModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreDeleteModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PreDuplicateModelEvent" class="element ajax clickable class">
-<h1>PreDuplicateModelEvent<a href="../classes/DcGeneral.Event.PreDuplicateModelEvent.html">¶</a>
+<h1>PreDuplicateModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreDuplicateModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted just before a model is duplicated.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PreDuplicateModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreDuplicateModelEvent.html" class="more">« More »</a>
+</div>
+<div id="PreEditModelEvent" class="element ajax clickable class">
+<h1>PreEditModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreEditModelEvent.html">¶</a>
+</h1>
+<p class="short_description">This event is emitted before the edit view will be generated.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PreEditModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PrePasteModelEvent" class="element ajax clickable class">
-<h1>PrePasteModelEvent<a href="../classes/DcGeneral.Event.PrePasteModelEvent.html">¶</a>
+<h1>PrePasteModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PrePasteModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted just before a model is pasted.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PrePasteModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PrePasteModelEvent.html" class="more">« More »</a>
 </div>
 <div id="PrePersistModelEvent" class="element ajax clickable class">
-<h1>PrePersistModelEvent<a href="../classes/DcGeneral.Event.PrePersistModelEvent.html">¶</a>
+<h1>PrePersistModelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PrePersistModelEvent.html">¶</a>
 </h1>
 <p class="short_description">This event is emitted just before a model is saved to the data provider.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Event.PrePersistModelEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.PrePersistModelEvent.html" class="more">« More »</a>
 </div>
 </div>
 </div>
@@ -252,7 +285,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-03-17T14:36:20+01:00.<br></footer></div>
+            generated on 2014-04-14T20:00:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

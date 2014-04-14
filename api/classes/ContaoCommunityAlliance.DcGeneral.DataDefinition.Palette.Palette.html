@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Palette</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method_addLegend" title="addLegend() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>addLegend()</pre></a></li>
+<li class="method public "><a href="#method_addLegends" title="addLegends() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>addLegends()</pre></a></li>
+<li class="method public "><a href="#method_clearLegends" title="clearLegends() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>clearLegends()</pre></a></li>
+<li class="method public "><a href="#method_containsLegend" title="containsLegend() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>containsLegend()</pre></a></li>
+<li class="method public "><a href="#method_getCondition" title="getCondition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getCondition()</pre></a></li>
+<li class="method public "><a href="#method_getEditableProperties" title="getEditableProperties() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEditableProperties()</pre></a></li>
+<li class="method public "><a href="#method_getLegend" title="getLegend() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getLegend()</pre></a></li>
+<li class="method public "><a href="#method_getLegends" title="getLegends() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getLegends()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getProperties" title="getProperties() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_getProperty" title="getProperty() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_getVisibleProperties" title="getVisibleProperties() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getVisibleProperties()</pre></a></li>
+<li class="method public "><a href="#method_hasLegend" title="hasLegend() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasLegend()</pre></a></li>
+<li class="method public "><a href="#method_removeLegend" title="removeLegend() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>removeLegend()</pre></a></li>
+<li class="method public "><a href="#method_setCondition" title="setCondition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setCondition()</pre></a></li>
+<li class="method public "><a href="#method_setLegends" title="setLegends() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setLegends()</pre></a></li>
+<li class="method public "><a href="#method_setName" title="setName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_condition" title="$condition() :: The condition bound to this palette."><span class="description"></span><pre>$condition</pre></a></li>
+<li class="property protected "><a href="#property_legends" title="$legends() :: List of all legends in this palette."><span class="description"></span><pre>$legends</pre></a></li>
+<li class="property protected "><a href="#property_name" title="$name() :: The name of this palette."><span class="description"></span><pre>$name</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Palette"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.html">Palette</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Palette.html">Palette</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Default implementation of a palette.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>__clone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addLegend"></a><div class="element clickable method public method_addLegend" data-toggle="collapse" data-target=".method_addLegend .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>addLegend(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $legend, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $before) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$legend</h4></div>
+<div class="subelement argument"><h4>$before</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>when the legend passed as $before can not be found.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_addLegends"></a><div class="element clickable method public method_addLegends" data-toggle="collapse" data-target=".method_addLegends .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>addLegends(array $legends, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $before) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$legends</h4></div>
+<div class="subelement argument"><h4>$before</h4></div>
+</div></div>
+</div>
+<a id="method_clearLegends"></a><div class="element clickable method public method_clearLegends" data-toggle="collapse" data-target=".method_clearLegends .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>clearLegends() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_containsLegend"></a><div class="element clickable method public method_containsLegend" data-toggle="collapse" data-target=".method_containsLegend .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>containsLegend(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $legend) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$legend</h4></div>
+</div></div>
+</div>
+<a id="method_getCondition"></a><div class="element clickable method public method_getCondition" data-toggle="collapse" data-target=".method_getCondition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getCondition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEditableProperties"></a><div class="element clickable method public method_getEditableProperties" data-toggle="collapse" data-target=".method_getEditableProperties .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEditableProperties(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method_getLegend"></a><div class="element clickable method public method_getLegend" data-toggle="collapse" data-target=".method_getLegend .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getLegend($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When the legend does not exist.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getLegends"></a><div class="element clickable method public method_getLegends" data-toggle="collapse" data-target=".method_getLegends .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getLegends() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties" data-toggle="collapse" data-target=".method_getProperties .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getProperties(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getProperty($propertyName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$propertyName</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When the palette does not contain the desired property.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getVisibleProperties"></a><div class="element clickable method public method_getVisibleProperties" data-toggle="collapse" data-target=".method_getVisibleProperties .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getVisibleProperties(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method_hasLegend"></a><div class="element clickable method public method_hasLegend" data-toggle="collapse" data-target=".method_hasLegend .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasLegend($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_removeLegend"></a><div class="element clickable method public method_removeLegend" data-toggle="collapse" data-target=".method_removeLegend .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>removeLegend(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $legend) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$legend</h4></div>
+</div></div>
+</div>
+<a id="method_setCondition"></a><div class="element clickable method public method_setCondition" data-toggle="collapse" data-target=".method_setCondition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface $condition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$condition</h4></div>
+</div></div>
+</div>
+<a id="method_setLegends"></a><div class="element clickable method public method_setLegends" data-toggle="collapse" data-target=".method_setLegends .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setLegends(array $legends) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$legends</h4></div>
+</div></div>
+</div>
+<a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setName($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_condition"> </a><div class="element clickable property protected property_condition" data-toggle="collapse" data-target=".property_condition .collapse">
+<h2>The condition bound to this palette.</h2>
+<pre>$condition : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_legends"> </a><div class="element clickable property protected property_legends" data-toggle="collapse" data-target=".property_legends .collapse">
+<h2>List of all legends in this palette.</h2>
+<pre>$legends : array | <a href="LegendInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_name"> </a><div class="element clickable property protected property_name" data-toggle="collapse" data-target=".property_name .collapse">
+<h2>The name of this palette.</h2>
+<pre>$name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Only for backwards compatibility, we will remove palette names in the future!</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:35+02:00.<br></footer></div>
+</div>
+</body>
+</html>

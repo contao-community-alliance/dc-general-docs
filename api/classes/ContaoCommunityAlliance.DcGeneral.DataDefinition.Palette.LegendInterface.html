@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone() :: Create a deep clone of the legend."><span class="description">Create a deep clone of the legend.</span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method_addProperties" title="addProperties() :: Add all properties to this legend."><span class="description">Add all properties to this legend.</span><pre>addProperties()</pre></a></li>
+<li class="method public "><a href="#method_addProperty" title="addProperty() :: Add a property to this legend."><span class="description">Add a property to this legend.</span><pre>addProperty()</pre></a></li>
+<li class="method public "><a href="#method_clearProperties" title="clearProperties() :: Clear all properties from this legend."><span class="description">Clear all properties from this legend.</span><pre>clearProperties()</pre></a></li>
+<li class="method public "><a href="#method_getName" title='getName() :: Return the name of this legend (e.g. "title", not "title_legend").'><span class="description">Return the name of this legend (e.g. "title", not "title_legend").</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getPalette" title="getPalette() :: Return the palette this legend belongs to."><span class="description">Return the palette this legend belongs to.</span><pre>getPalette()</pre></a></li>
+<li class="method public "><a href="#method_getProperties" title="getProperties() :: Get all properties in this legend."><span class="description">Get all properties in this legend.</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_getProperty" title="getProperty() :: Get a property by name from this legend."><span class="description">Get a property by name from this legend.</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_hasProperty" title="hasProperty() :: Determine if a property with the name exists in this legend."><span class="description">Determine if a property with the name exists in this legend.</span><pre>hasProperty()</pre></a></li>
+<li class="method public "><a href="#method_isInitialVisible" title="isInitialVisible() :: Determine if this legend's initial state shall be expanded."><span class="description">Determine if this legend's initial state shall be expanded.</span><pre>isInitialVisible()</pre></a></li>
+<li class="method public "><a href="#method_removeProperty" title="removeProperty() :: Remove a property from this legend."><span class="description">Remove a property from this legend.</span><pre>removeProperty()</pre></a></li>
+<li class="method public "><a href="#method_setInitialVisibility" title="setInitialVisibility() :: Set if this legend's initial state is visible (expanded)."><span class="description">Set if this legend's initial state is visible (expanded).</span><pre>setInitialVisibility()</pre></a></li>
+<li class="method public "><a href="#method_setName" title='setName() :: Set the name of this legend (e.g. "title", not "title_legend").'><span class="description">Set the name of this legend (e.g. "title", not "title_legend").</span><pre>setName()</pre></a></li>
+<li class="method public "><a href="#method_setPalette" title="setPalette() :: Return the palette this legend belongs to."><span class="description">Return the palette this legend belongs to.</span><pre>setPalette()</pre></a></li>
+<li class="method public "><a href="#method_setProperties" title="setProperties() :: Set the properties of this legend."><span class="description">Set the properties of this legend.</span><pre>setProperties()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.html">Palette</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">LegendInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">A legend group a lot of properties.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>Create a deep clone of the legend.</h2>
+<pre>__clone() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addProperties"></a><div class="element clickable method public method_addProperties" data-toggle="collapse" data-target=".method_addProperties .collapse">
+<h2>Add all properties to this legend.</h2>
+<pre>addProperties(array|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[] $properties, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $before) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>array</code><code><a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code><p>The properties.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>The property before the passed properties shall be inserted
+                                             (optional).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_addProperty"></a><div class="element clickable method public method_addProperty" data-toggle="collapse" data-target=".method_addProperty .collapse">
+<h2>Add a property to this legend.</h2>
+<pre>addProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $property, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $before) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>The property.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>The property before the passed property shall be inserted (optional).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_clearProperties"></a><div class="element clickable method public method_clearProperties" data-toggle="collapse" data-target=".method_clearProperties .collapse">
+<h2>Clear all properties from this legend.</h2>
+<pre>clearProperties() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Return the name of this legend (e.g. "title", not "title_legend").</h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPalette"></a><div class="element clickable method public method_getPalette" data-toggle="collapse" data-target=".method_getPalette .collapse">
+<h2>Return the palette this legend belongs to.</h2>
+<pre>getPalette() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties" data-toggle="collapse" data-target=".method_getProperties .collapse">
+<h2>Get all properties in this legend.</h2>
+<pre>getProperties(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) : <a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><code>null</code><p>If given, subpalettes will be evaluated depending on the model.
+                                  If no model is given, all properties will be returned, including subpalette
+                                  properties.</p></div>
+<div class="subelement argument">
+<h4>$input</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code><p>If given, subpalettes will be evaluated depending on the input data.
+                                  If no model and no input data is given, all properties will be returned,
+                                  including subpalette properties.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
+<h2>Get a property by name from this legend.</h2>
+<pre>getProperty(string $propertyName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The property name.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the this legend does not contain the property.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_hasProperty"></a><div class="element clickable method public method_hasProperty" data-toggle="collapse" data-target=".method_hasProperty .collapse">
+<h2>Determine if a property with the name exists in this legend.</h2>
+<pre>hasProperty(string $propertyName) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The property name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isInitialVisible"></a><div class="element clickable method public method_isInitialVisible" data-toggle="collapse" data-target=".method_isInitialVisible .collapse">
+<h2>Determine if this legend's initial state shall be expanded.</h2>
+<pre>isInitialVisible() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_removeProperty"></a><div class="element clickable method public method_removeProperty" data-toggle="collapse" data-target=".method_removeProperty .collapse">
+<h2>Remove a property from this legend.</h2>
+<pre>removeProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $property) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>The property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setInitialVisibility"></a><div class="element clickable method public method_setInitialVisibility" data-toggle="collapse" data-target=".method_setInitialVisibility .collapse">
+<h2>Set if this legend's initial state is visible (expanded).</h2>
+<pre>setInitialVisibility(bool $value) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>bool</code><p>The visibility state.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
+<h2>Set the name of this legend (e.g. "title", not "title_legend").</h2>
+<pre>setName(string $name) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setPalette"></a><div class="element clickable method public method_setPalette" data-toggle="collapse" data-target=".method_setPalette .collapse">
+<h2>Return the palette this legend belongs to.</h2>
+<pre>setPalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface|null $palette) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$palette</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><code>null</code><p>The palette.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setProperties"></a><div class="element clickable method public method_setProperties" data-toggle="collapse" data-target=".method_setProperties .collapse">
+<h2>Set the properties of this legend.</h2>
+<pre>setProperties(array|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[] $properties) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>array</code><code><a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code><p>The properties.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:37+02:00.<br></footer></div>
+</div>
+</body>
+</html>

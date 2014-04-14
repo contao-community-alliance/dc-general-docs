@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollection</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method_addPalette" title="addPalette() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>addPalette()</pre></a></li>
+<li class="method public "><a href="#method_addPalettes" title="addPalettes() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>addPalettes()</pre></a></li>
+<li class="method public "><a href="#method_clearPalettes" title="clearPalettes() :: Remove all palettes from this collection."><span class="description">Remove all palettes from this collection.</span><pre>clearPalettes()</pre></a></li>
+<li class="method public "><a href="#method_findPalette" title="findPalette() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>findPalette()</pre></a></li>
+<li class="method public "><a href="#method_getPaletteByName" title="getPaletteByName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getPaletteByName()</pre></a></li>
+<li class="method public "><a href="#method_getPalettes" title="getPalettes() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getPalettes()</pre></a></li>
+<li class="method public "><a href="#method_hasPalette" title="hasPalette() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasPalette()</pre></a></li>
+<li class="method public "><a href="#method_hasPaletteByName" title="hasPaletteByName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasPaletteByName()</pre></a></li>
+<li class="method public "><a href="#method_removePalette" title="removePalette() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>removePalette()</pre></a></li>
+<li class="method public "><a href="#method_setPalettes" title="setPalettes() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setPalettes()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_palettes" title="$palettes() :: The palettes contained in the collection."><span class="description"></span><pre>$palettes</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollection"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.html">Palette</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollection.html">PaletteCollection</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Default implementation of PaletteCollectionInterface.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>__clone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addPalette"></a><div class="element clickable method public method_addPalette" data-toggle="collapse" data-target=".method_addPalette .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>addPalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palette</h4></div>
+</div></div>
+</div>
+<a id="method_addPalettes"></a><div class="element clickable method public method_addPalettes" data-toggle="collapse" data-target=".method_addPalettes .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>addPalettes(array $palettes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palettes</h4></div>
+</div></div>
+</div>
+<a id="method_clearPalettes"></a><div class="element clickable method public method_clearPalettes" data-toggle="collapse" data-target=".method_clearPalettes .collapse">
+<h2>Remove all palettes from this collection.</h2>
+<pre>clearPalettes() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_findPalette"></a><div class="element clickable method public method_findPalette" data-toggle="collapse" data-target=".method_findPalette .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>findPalette(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+<div class="subelement argument"><h4>$input</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>Is thrown if there is no palette found or more than one palette.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getPaletteByName"></a><div class="element clickable method public method_getPaletteByName" data-toggle="collapse" data-target=".method_getPaletteByName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getPaletteByName($paletteName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$paletteName</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>Is thrown if there is no palette with this name.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getPalettes"></a><div class="element clickable method public method_getPalettes" data-toggle="collapse" data-target=".method_getPalettes .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getPalettes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasPalette"></a><div class="element clickable method public method_hasPalette" data-toggle="collapse" data-target=".method_hasPalette .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasPalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palette</h4></div>
+</div></div>
+</div>
+<a id="method_hasPaletteByName"></a><div class="element clickable method public method_hasPaletteByName" data-toggle="collapse" data-target=".method_hasPaletteByName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasPaletteByName($paletteName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$paletteName</h4></div>
+</div></div>
+</div>
+<a id="method_removePalette"></a><div class="element clickable method public method_removePalette" data-toggle="collapse" data-target=".method_removePalette .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>removePalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palette</h4></div>
+</div></div>
+</div>
+<a id="method_setPalettes"></a><div class="element clickable method public method_setPalettes" data-toggle="collapse" data-target=".method_setPalettes .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setPalettes(array $palettes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palettes</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_palettes"> </a><div class="element clickable property protected property_palettes" data-toggle="collapse" data-target=".property_palettes .collapse">
+<h2>The palettes contained in the collection.</h2>
+<pre>$palettes : array | <a href="PaletteInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:37+02:00.<br></footer></div>
+</div>
+</body>
+</html>

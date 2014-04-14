@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\View\ViewInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_copy" title="copy() :: Endpoint for copying a model (including child models)."><span class="description">Endpoint for copying a model (including child models).</span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_copyAll" title="copyAll() :: Endpoint for copying multiple models (including child models)."><span class="description">Endpoint for copying multiple models (including child models).</span><pre>copyAll()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Endpoint for create operation."><span class="description">Endpoint for create operation.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: Endpoint for cutting a model (including child models)."><span class="description">Endpoint for cutting a model (including child models).</span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_cutAll" title="cutAll() :: Endpoint for cutting multiple models (including child models)."><span class="description">Endpoint for cutting multiple models (including child models).</span><pre>cutAll()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete() :: Delete a model and redirect the user to the listing."><span class="description">Delete a model and redirect the user to the listing.</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_edit" title="edit() :: Endpoint for edit operation."><span class="description">Endpoint for edit operation.</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the attached environment."><span class="description">Retrieve the attached environment.</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax request."><span class="description">Handle an ajax request.</span><pre>handleAjaxCall()</pre></a></li>
+<li class="method public "><a href="#method_move" title="move() :: Endpoint for move operation."><span class="description">Endpoint for move operation.</span><pre>move()</pre></a></li>
+<li class="method public "><a href="#method_paste" title="paste() :: Invoked for cut and copy - inserts the content of the clipboard at the given position."><span class="description">Invoked for cut and copy - inserts the content of the clipboard at the given position.</span><pre>paste()</pre></a></li>
+<li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: Set the environment."><span class="description">Set the environment.</span><pre>setEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_show" title="show() :: Endpoint for show operation."><span class="description">Endpoint for show operation.</span><pre>show()</pre></a></li>
+<li class="method public "><a href="#method_showAll" title="showAll() :: Overview listing over all items in the current scope."><span class="description">Overview listing over all items in the current scope.</span><pre>showAll()</pre></a></li>
+<li class="method public "><a href="#method_undo" title="undo() :: Endpoint for undo operation."><span class="description">Endpoint for undo operation.</span><pre>undo()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\View\ViewInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.View.html">View</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.View.ViewInterface.html">ViewInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">The interface for a view.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/ContaoCommunityAlliance.DcGeneral.View.html">ContaoCommunityAlliance\DcGeneral\View</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>Endpoint for copying a model (including child models).</h2>
+<pre>copy() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_copyAll"></a><div class="element clickable method public method_copyAll" data-toggle="collapse" data-target=".method_copyAll .collapse">
+<h2>Endpoint for copying multiple models (including child models).</h2>
+<pre>copyAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Endpoint for create operation.</h2>
+<pre>create() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
+<h2>Endpoint for cutting a model (including child models).</h2>
+<pre>cut() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cutAll"></a><div class="element clickable method public method_cutAll" data-toggle="collapse" data-target=".method_cutAll .collapse">
+<h2>Endpoint for cutting multiple models (including child models).</h2>
+<pre>cutAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete a model and redirect the user to the listing.</h2>
+<pre>delete() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">NOTE: This method redirects the user to the listing and therefore the script will be ended.</div></div></div>
+</div>
+<a id="method_edit"></a><div class="element clickable method public method_edit" data-toggle="collapse" data-target=".method_edit .collapse">
+<h2>Endpoint for edit operation.</h2>
+<pre>edit() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>Retrieve the attached environment.</h2>
+<pre>getEnvironment() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
+<h2>Handle an ajax request.</h2>
+<pre>handleAjaxCall() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_move"></a><div class="element clickable method public method_move" data-toggle="collapse" data-target=".method_move .collapse">
+<h2>Endpoint for move operation.</h2>
+<pre>move() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_paste"></a><div class="element clickable method public method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
+<h2>Invoked for cut and copy - inserts the content of the clipboard at the given position.</h2>
+<pre>paste() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setEnvironment"></a><div class="element clickable method public method_setEnvironment" data-toggle="collapse" data-target=".method_setEnvironment .collapse">
+<h2>Set the environment.</h2>
+<pre>setEnvironment(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.View.ViewInterface.html">\ContaoCommunityAlliance\DcGeneral\View\ViewInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.View.ViewInterface.html">\ContaoCommunityAlliance\DcGeneral\View\ViewInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_show"></a><div class="element clickable method public method_show" data-toggle="collapse" data-target=".method_show .collapse">
+<h2>Endpoint for show operation.</h2>
+<pre>show() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_showAll"></a><div class="element clickable method public method_showAll" data-toggle="collapse" data-target=".method_showAll .collapse">
+<h2>Overview listing over all items in the current scope.</h2>
+<pre>showAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This is the default action to perform if no other action has been specified in the URL.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_undo"></a><div class="element clickable method public method_undo" data-toggle="collapse" data-target=".method_undo .collapse">
+<h2>Endpoint for undo operation.</h2>
+<pre>undo() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:37+02:00.<br></footer></div>
+</div>
+</body>
+</html>

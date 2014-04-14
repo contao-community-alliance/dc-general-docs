@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_createContainer" title="createContainer() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>createContainer()</pre></a></li>
+<li class="method public "><a href="#method_createDcGeneral" title="createDcGeneral() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>createDcGeneral()</pre></a></li>
+<li class="method public "><a href="#method_createEnvironment" title="createEnvironment() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>createEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_deriveEmptyFromEnvironment" title="deriveEmptyFromEnvironment() :: Create a new factory with basic settings from the environment."><span class="description">Create a new factory with basic settings from the environment.</span><pre>deriveEmptyFromEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_deriveFromEnvironment" title="deriveFromEnvironment() :: Create a new factory with basic settings and same container name as the given environment is build for."><span class="description">Create a new factory with basic settings and same container name as the given environment is build for.</span><pre>deriveFromEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getContainerClassName" title="getContainerClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getContainerClassName()</pre></a></li>
+<li class="method public "><a href="#method_getContainerName" title="getContainerName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getContainerName()</pre></a></li>
+<li class="method public "><a href="#method_getDataContainer" title="getDataContainer() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDataContainer()</pre></a></li>
+<li class="method public "><a href="#method_getDcGeneralClassName" title="getDcGeneralClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDcGeneralClassName()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironmentClassName" title="getEnvironmentClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_getEventPropagator" title="getEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEventPropagator()</pre></a></li>
+<li class="method public "><a href="#method_getTranslator" title="getTranslator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getTranslator()</pre></a></li>
+<li class="method public "><a href="#method_setContainerClassName" title="setContainerClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setContainerClassName()</pre></a></li>
+<li class="method public "><a href="#method_setContainerName" title="setContainerName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setContainerName()</pre></a></li>
+<li class="method public "><a href="#method_setDataContainer" title="setDataContainer() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDataContainer()</pre></a></li>
+<li class="method public "><a href="#method_setDcGeneralClassName" title="setDcGeneralClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDcGeneralClassName()</pre></a></li>
+<li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_setEnvironmentClassName" title="setEnvironmentClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_setEventPropagator" title="setEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEventPropagator()</pre></a></li>
+<li class="method public "><a href="#method_setTranslator" title="setTranslator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setTranslator()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_containerClassName" title="$containerClassName() :: The class name of the class to use for the data definition container."><span class="description"></span><pre>$containerClassName</pre></a></li>
+<li class="property protected "><a href="#property_containerName" title="$containerName() :: The name of the data container."><span class="description"></span><pre>$containerName</pre></a></li>
+<li class="property protected "><a href="#property_dataContainer" title="$dataContainer() :: The data definition container instance."><span class="description"></span><pre>$dataContainer</pre></a></li>
+<li class="property protected "><a href="#property_dcGeneralClassName" title="$dcGeneralClassName() :: The class name of the class to use as DcGeneral."><span class="description"></span><pre>$dcGeneralClassName</pre></a></li>
+<li class="property protected "><a href="#property_environment" title="$environment() :: The environment for the new instance."><span class="description"></span><pre>$environment</pre></a></li>
+<li class="property protected "><a href="#property_environmentClassName" title="$environmentClassName() :: The class name to use for the environment."><span class="description"></span><pre>$environmentClassName</pre></a></li>
+<li class="property protected "><a href="#property_eventPropagator" title="$eventPropagator() :: The event propagator to use."><span class="description"></span><pre>$eventPropagator</pre></a></li>
+<li class="property protected "><a href="#property_translator" title="$translator() :: The translator that shall be used."><span class="description"></span><pre>$translator</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Factory.html">Factory</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html">DcGeneralFactory</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Factory to create a DcGeneral instance.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Factory.html">DcGeneral\Factory</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_createContainer"></a><div class="element clickable method public method_createContainer" data-toggle="collapse" data-target=".method_createContainer .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>createContainer() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no container name or no event propagator is given.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_createDcGeneral"></a><div class="element clickable method public method_createDcGeneral" data-toggle="collapse" data-target=".method_createDcGeneral .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>createDcGeneral() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no container name, no container or no event propagator is given.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_createEnvironment"></a><div class="element clickable method public method_createEnvironment" data-toggle="collapse" data-target=".method_createEnvironment .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>createEnvironment() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no container name, no container, no event propagator or no translator
+                                  is given.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_deriveEmptyFromEnvironment"></a><div class="element clickable method public method_deriveEmptyFromEnvironment" data-toggle="collapse" data-target=".method_deriveEmptyFromEnvironment .collapse">
+<h2>Create a new factory with basic settings from the environment.</h2>
+<pre>deriveEmptyFromEnvironment(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This factory can be used to create a new Container, Environment, DcGeneral with the same base settings as the
+given environment.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment to use as base.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory</a></code></div>
+</div></div>
+</div>
+<a id="method_deriveFromEnvironment"></a><div class="element clickable method public method_deriveFromEnvironment" data-toggle="collapse" data-target=".method_deriveFromEnvironment .collapse">
+<h2>Create a new factory with basic settings and same container name as the given environment is build for.</h2>
+<pre>deriveFromEnvironment(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This factory can be used to create a second Container, Environment, DcGeneral for the same container.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment to use as base.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactory</a></code></div>
+</div></div>
+</div>
+<a id="method_getContainerClassName"></a><div class="element clickable method public method_getContainerClassName" data-toggle="collapse" data-target=".method_getContainerClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getContainerClassName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getContainerName"></a><div class="element clickable method public method_getContainerName" data-toggle="collapse" data-target=".method_getContainerName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getContainerName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDataContainer"></a><div class="element clickable method public method_getDataContainer" data-toggle="collapse" data-target=".method_getDataContainer .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDataContainer() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getDcGeneralClassName"></a><div class="element clickable method public method_getDcGeneralClassName" data-toggle="collapse" data-target=".method_getDcGeneralClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDcGeneralClassName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEnvironment() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEnvironmentClassName"></a><div class="element clickable method public method_getEnvironmentClassName" data-toggle="collapse" data-target=".method_getEnvironmentClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEnvironmentClassName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEventPropagator"></a><div class="element clickable method public method_getEventPropagator" data-toggle="collapse" data-target=".method_getEventPropagator .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEventPropagator() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator" data-toggle="collapse" data-target=".method_getTranslator .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getTranslator() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setContainerClassName"></a><div class="element clickable method public method_setContainerClassName" data-toggle="collapse" data-target=".method_setContainerClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setContainerClassName($containerClassName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$containerClassName</h4></div>
+</div></div>
+</div>
+<a id="method_setContainerName"></a><div class="element clickable method public method_setContainerName" data-toggle="collapse" data-target=".method_setContainerName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setContainerName($containerName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$containerName</h4></div>
+</div></div>
+</div>
+<a id="method_setDataContainer"></a><div class="element clickable method public method_setDataContainer" data-toggle="collapse" data-target=".method_setDataContainer .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDataContainer(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $dataContainer) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dataContainer</h4></div>
+</div></div>
+</div>
+<a id="method_setDcGeneralClassName"></a><div class="element clickable method public method_setDcGeneralClassName" data-toggle="collapse" data-target=".method_setDcGeneralClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDcGeneralClassName($dcGeneralClassName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dcGeneralClassName</h4></div>
+</div></div>
+</div>
+<a id="method_setEnvironment"></a><div class="element clickable method public method_setEnvironment" data-toggle="collapse" data-target=".method_setEnvironment .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEnvironment(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$environment</h4></div>
+</div></div>
+</div>
+<a id="method_setEnvironmentClassName"></a><div class="element clickable method public method_setEnvironmentClassName" data-toggle="collapse" data-target=".method_setEnvironmentClassName .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEnvironmentClassName($environmentClassName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$environmentClassName</h4></div>
+</div></div>
+</div>
+<a id="method_setEventPropagator"></a><div class="element clickable method public method_setEventPropagator" data-toggle="collapse" data-target=".method_setEventPropagator .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEventPropagator(\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface $eventPropagator) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$eventPropagator</h4></div>
+</div></div>
+</div>
+<a id="method_setTranslator"></a><div class="element clickable method public method_setTranslator" data-toggle="collapse" data-target=".method_setTranslator .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setTranslator(\ContaoCommunityAlliance\Translator\TranslatorInterface $translator) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$translator</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_containerClassName"> </a><div class="element clickable property protected property_containerClassName" data-toggle="collapse" data-target=".property_containerClassName .collapse">
+<h2>The class name of the class to use for the data definition container.</h2>
+<pre>$containerClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_containerName"> </a><div class="element clickable property protected property_containerName" data-toggle="collapse" data-target=".property_containerName .collapse">
+<h2>The name of the data container.</h2>
+<pre>$containerName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_dataContainer"> </a><div class="element clickable property protected property_dataContainer" data-toggle="collapse" data-target=".property_dataContainer .collapse">
+<h2>The data definition container instance.</h2>
+<pre>$dataContainer : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_dcGeneralClassName"> </a><div class="element clickable property protected property_dcGeneralClassName" data-toggle="collapse" data-target=".property_dcGeneralClassName .collapse">
+<h2>The class name of the class to use as DcGeneral.</h2>
+<pre>$dcGeneralClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_environment"> </a><div class="element clickable property protected property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
+<h2>The environment for the new instance.</h2>
+<pre>$environment : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_environmentClassName"> </a><div class="element clickable property protected property_environmentClassName" data-toggle="collapse" data-target=".property_environmentClassName .collapse">
+<h2>The class name to use for the environment.</h2>
+<pre>$environmentClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_eventPropagator"> </a><div class="element clickable property protected property_eventPropagator" data-toggle="collapse" data-target=".property_eventPropagator .collapse">
+<h2>The event propagator to use.</h2>
+<pre>$eventPropagator : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_translator"> </a><div class="element clickable property protected property_translator" data-toggle="collapse" data-target=".property_translator .collapse">
+<h2>The translator that shall be used.</h2>
+<pre>$translator : <a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:37+02:00.<br></footer></div>
+</div>
+</body>
+</html>

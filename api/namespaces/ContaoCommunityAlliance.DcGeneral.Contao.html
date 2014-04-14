@@ -1,0 +1,954 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » ContaoCommunityAlliance\DcGeneral\Contao</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html" title="Contao"><i class="icon-th"></i>Contao</a><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Callback.html" title="Callback"><i class="icon-th"></i>Callback</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.html" title="Compatibility"><i class="icon-th"></i>Compatibility</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>DataDefinition</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.html" title="Definition"><i class="icon-th"></i>Definition</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html" title="Dca"><i class="icon-th"></i>Dca</a><ul class="nav nav-list nav-namespaces">
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Builder</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.html" title="Legacy"><i class="icon-th"></i>Legacy</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Definition.html" title="Definition"><i class="icon-th"></i>Definition</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.html" title="Palette"><i class="icon-th"></i>Palette</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.html" title="Populator"><i class="icon-th"></i>Populator</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Event.html" title="Event"><i class="icon-th"></i>Event</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Twig.html" title="Twig"><i class="icon-th"></i>Twig</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>View</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html" title="Contao2BackendView"><i class="icon-th"></i>Contao2BackendView</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.html" title="Event"><i class="icon-th"></i>Event</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="BackendBindings" class="element ajax clickable class">
+<h1>BackendBindings<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.BackendBindings.html">¶</a>
+</h1>
+<p class="short_description">Class BackendBindings.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.BackendBindings.html" class="more">« More »</a>
+</div>
+<div id="InputProvider" class="element ajax clickable class">
+<h1>InputProvider<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.InputProvider.html">¶</a>
+</h1>
+<p class="short_description">Class InputProvider.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.InputProvider.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Callback.html">Callback</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="AbstractCallbackListener" class="element ajax clickable class">
+<h1>AbstractCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="AbstractReturningCallbackListener" class="element ajax clickable class">
+<h1>AbstractReturningCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractReturningCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractReturningCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractReturningCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="AbstractStaticCallbackListener" class="element ajax clickable class">
+<h1>AbstractStaticCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractStaticCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class AbstractStaticCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.AbstractStaticCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="Callbacks" class="element ajax clickable class">
+<h1>Callbacks<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.Callbacks.html">¶</a>
+</h1>
+<p class="short_description">Class Callbacks.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.Callbacks.html" class="more">« More »</a>
+</div>
+<div id="ContainerGetBreadcrumbCallbackListener" class="element ajax clickable class">
+<h1>ContainerGetBreadcrumbCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerGetBreadcrumbCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerGetBreadcrumbCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerGetBreadcrumbCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerGlobalButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerGlobalButtonCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerGlobalButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerGlobalButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerGlobalButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerHeaderCallbackListener" class="element ajax clickable class">
+<h1>ContainerHeaderCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerHeaderCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerHeaderCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerHeaderCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnCopyCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnCopyCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnCopyCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnCopyCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnCopyCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnCutCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnCutCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnCutCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnCutCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnCutCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnDeleteCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnDeleteCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnDeleteCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnDeleteCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnDeleteCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnLoadCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnLoadCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnLoadCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnLoadCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnLoadCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerOnSubmitCallbackListener" class="element ajax clickable class">
+<h1>ContainerOnSubmitCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnSubmitCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerOnSubmitCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerOnSubmitCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerPasteButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerPasteButtonCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerPasteButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerPasteButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerPasteButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ContainerPasteRootButtonCallbackListener" class="element ajax clickable class">
+<h1>ContainerPasteRootButtonCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerPasteRootButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ContainerPasteRootButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ContainerPasteRootButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelChildRecordCallbackListener" class="element ajax clickable class">
+<h1>ModelChildRecordCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelChildRecordCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelChildRecordCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelChildRecordCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelGroupCallbackListener" class="element ajax clickable class">
+<h1>ModelGroupCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelGroupCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelGroupCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelGroupCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelLabelCallbackListener" class="element ajax clickable class">
+<h1>ModelLabelCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelLabelCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelLabelCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelLabelCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelOperationButtonCallbackListener" class="element ajax clickable class">
+<h1>ModelOperationButtonCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelOperationButtonCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelOperationButtonCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelOperationButtonCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="ModelOptionsCallbackListener" class="element ajax clickable class">
+<h1>ModelOptionsCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelOptionsCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class ModelOptionsCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.ModelOptionsCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyInputFieldCallbackListener" class="element ajax clickable class">
+<h1>PropertyInputFieldCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyInputFieldCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyInputFieldCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyInputFieldCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyInputFieldGetWizardCallbackListener" class="element ajax clickable class">
+<h1>PropertyInputFieldGetWizardCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyInputFieldGetWizardCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyInputFieldGetWizardCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyInputFieldGetWizardCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyOnLoadCallbackListener" class="element ajax clickable class">
+<h1>PropertyOnLoadCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyOnLoadCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyOnLoadCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyOnLoadCallbackListener.html" class="more">« More »</a>
+</div>
+<div id="PropertyOnSaveCallbackListener" class="element ajax clickable class">
+<h1>PropertyOnSaveCallbackListener<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyOnSaveCallbackListener.html">¶</a>
+</h1>
+<p class="short_description">Class PropertyOnSaveCallbackListener.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Callback.PropertyOnSaveCallbackListener.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.html">Compatibility</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="ActiveRecord" class="element ajax clickable class">
+<h1>ActiveRecord<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ActiveRecord.html">¶</a>
+</h1>
+<p class="short_description">Class ActiveRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ActiveRecord.html" class="more">« More »</a>
+</div>
+<div id="ClassLoader" class="element ajax clickable class">
+<h1>ClassLoader<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ClassLoader.html">¶</a>
+</h1>
+<p class="short_description">Class ClassLoader</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ClassLoader.html" class="more">« More »</a>
+</div>
+<div id="DcCompat" class="element ajax clickable class">
+<h1>DcCompat<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.DcCompat.html">¶</a>
+</h1>
+<p class="short_description">Class DcCompat</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.DcCompat.html" class="more">« More »</a>
+</div>
+<div id="TemplateLoader" class="element ajax clickable class">
+<h1>TemplateLoader<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.TemplateLoader.html">¶</a>
+</h1>
+<p class="short_description">Class TemplateLoader</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.TemplateLoader.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.html">DataDefinition</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.html">DataDefinition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.html">Definition</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Contao2BackendViewDefinitionInterface" class="element ajax clickable interface">
+<h1>Contao2BackendViewDefinitionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">¶</a>
+</h1>
+<p class="short_description">Interface BasicDefinitionInterface.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html" class="more">« More »</a>
+</div>
+<div id="Contao2BackendViewDefinition" class="element ajax clickable class">
+<h1>Contao2BackendViewDefinition<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinition.html">¶</a>
+</h1>
+<p class="short_description">Interface BasicDefinitionInterface</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinition.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="ContaoDataProviderInformation" class="element ajax clickable class">
+<h1>ContaoDataProviderInformation<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">¶</a>
+</h1>
+<p class="short_description">Class ContaoDataProviderInformation.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.html">Builder</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.html">Builder</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.html">Legacy</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="DcaReadingDataDefinitionBuilder" class="element ajax clickable class">
+<h1>DcaReadingDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html">¶</a>
+</h1>
+<p class="short_description">Build the container config from legacy DCA syntax.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html" class="more">« More »</a>
+</div>
+<div id="ExtendedLegacyDcaDataDefinitionBuilder" class="element ajax clickable class">
+<h1>ExtendedLegacyDcaDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html">¶</a>
+</h1>
+<p class="short_description">Build the container config from legacy DCA syntax.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
+</div>
+<div id="LegacyDcaDataDefinitionBuilder" class="element ajax clickable class">
+<h1>LegacyDcaDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html">¶</a>
+</h1>
+<p class="short_description">Build the container config from legacy DCA syntax.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Definition.html">Definition</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="ExtendedDca" class="element ajax clickable class">
+<h1>ExtendedDca<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Definition.ExtendedDca.html">¶</a>
+</h1>
+<p class="short_description">Class ExtendedDca.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Definition.ExtendedDca.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.html">Palette</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="LegacyPalettesParser" class="element ajax clickable class">
+<h1>LegacyPalettesParser<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.LegacyPalettesParser.html">¶</a>
+</h1>
+<p class="short_description">Class LegacyPalettesParser.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.LegacyPalettesParser.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.html">Populator</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="BackendViewPopulator" class="element ajax clickable class">
+<h1>BackendViewPopulator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.BackendViewPopulator.html">¶</a>
+</h1>
+<p class="short_description">Class BackendViewPopulator</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.BackendViewPopulator.html" class="more">« More »</a>
+</div>
+<div id="DataProviderPopulator" class="element ajax clickable class">
+<h1>DataProviderPopulator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.DataProviderPopulator.html">¶</a>
+</h1>
+<p class="short_description">Class DataProviderPopulator.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.DataProviderPopulator.html" class="more">« More »</a>
+</div>
+<div id="ExtendedLegacyDcaPopulator" class="element ajax clickable class">
+<h1>ExtendedLegacyDcaPopulator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.ExtendedLegacyDcaPopulator.html">¶</a>
+</h1>
+<p class="short_description">Class ExtendedLegacyDcaPopulator.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.ExtendedLegacyDcaPopulator.html" class="more">« More »</a>
+</div>
+<div id="HardCodedPopulator" class="element ajax clickable class">
+<h1>HardCodedPopulator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.HardCodedPopulator.html">¶</a>
+</h1>
+<p class="short_description">Class HardCodedPopulator.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.HardCodedPopulator.html" class="more">« More »</a>
+</div>
+<div id="PickerCompatPopulator" class="element ajax clickable class">
+<h1>PickerCompatPopulator<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.PickerCompatPopulator.html">¶</a>
+</h1>
+<p class="short_description">Compatibility class for Contao to have the $GLOBALS['TL_DCA'] populated for pickers as those are hardcoded within
+the handler files TL_ROOT/contao/*.php.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Populator.PickerCompatPopulator.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Event.html">Event</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Subscriber" class="element ajax clickable class">
+<h1>Subscriber<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html">¶</a>
+</h1>
+<p class="short_description">Class Subscriber - gateway to the legacy Contao HOOK style callbacks.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Twig.html">Twig</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="DcGeneralExtension" class="element ajax clickable class">
+<h1>DcGeneralExtension<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html">¶</a>
+</h1>
+<p class="short_description">Extension for twig template engine.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="BackendViewInterface" class="element ajax clickable interface">
+<h1>BackendViewInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BackendViewInterface.html">¶</a>
+</h1>
+<p class="short_description">Interface BackendViewInterface.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BackendViewInterface.html" class="more">« More »</a>
+</div>
+<div id="BaseView" class="element ajax clickable class">
+<h1>BaseView<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BaseView.html">¶</a>
+</h1>
+<p class="short_description">Class BaseView.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BaseView.html" class="more">« More »</a>
+</div>
+<div id="ContaoBackendViewTemplate" class="element ajax clickable class">
+<h1>ContaoBackendViewTemplate<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoBackendViewTemplate.html">¶</a>
+</h1>
+<p class="short_description">This class is used for the contao backend view as template.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoBackendViewTemplate.html" class="more">« More »</a>
+</div>
+<div id="ContaoWidgetManager" class="element ajax clickable class">
+<h1>ContaoWidgetManager<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html">¶</a>
+</h1>
+<p class="short_description">Class ContaoWidgetManager.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html" class="more">« More »</a>
+</div>
+<div id="IdSerializer" class="element ajax clickable class">
+<h1>IdSerializer<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">¶</a>
+</h1>
+<p class="short_description">The class IdSerializer provides handy methods to serialize and un-serialize model ids including the data provider
+name into a string.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html" class="more">« More »</a>
+</div>
+<div id="ListView" class="element ajax clickable class">
+<h1>ListView<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ListView.html">¶</a>
+</h1>
+<p class="short_description">Class ListView.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ListView.html" class="more">« More »</a>
+</div>
+<div id="ParentView" class="element ajax clickable class">
+<h1>ParentView<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ParentView.html">¶</a>
+</h1>
+<p class="short_description">Class ParentView.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ParentView.html" class="more">« More »</a>
+</div>
+<div id="TreeView" class="element ajax clickable class">
+<h1>TreeView<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.TreeView.html">¶</a>
+</h1>
+<p class="short_description">Class TreeView.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.TreeView.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.html">Event</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="BaseButtonEvent" class="element ajax clickable class">
+<h1>BaseButtonEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BaseButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BaseButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="BaseGetButtonsEvent" class="element ajax clickable class">
+<h1>BaseGetButtonsEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BaseGetButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BaseGetButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BaseGetButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="BuildWidgetEvent" class="element ajax clickable class">
+<h1>BuildWidgetEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BuildWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class BuildWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.BuildWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="DecodePropertyValueForWidgetEvent" class="element ajax clickable class">
+<h1>DecodePropertyValueForWidgetEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.DecodePropertyValueForWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class DecodePropertyValueForWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.DecodePropertyValueForWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="EncodePropertyValueFromWidgetEvent" class="element ajax clickable class">
+<h1>EncodePropertyValueFromWidgetEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class EncodePropertyValueFromWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="GetBreadcrumbEvent" class="element ajax clickable class">
+<h1>GetBreadcrumbEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetBreadcrumbEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetBreadcrumbEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetBreadcrumbEvent.html" class="more">« More »</a>
+</div>
+<div id="GetEditModeButtonsEvent" class="element ajax clickable class">
+<h1>GetEditModeButtonsEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetEditModeButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetEditModeButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetEditModeButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGlobalButtonEvent" class="element ajax clickable class">
+<h1>GetGlobalButtonEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGlobalButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGlobalButtonsEvent" class="element ajax clickable class">
+<h1>GetGlobalButtonsEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGlobalButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetGroupHeaderEvent" class="element ajax clickable class">
+<h1>GetGroupHeaderEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGroupHeaderEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetGroupHeaderEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGroupHeaderEvent.html" class="more">« More »</a>
+</div>
+<div id="GetOperationButtonEvent" class="element ajax clickable class">
+<h1>GetOperationButtonEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetOperationButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetOperationButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetParentHeaderEvent" class="element ajax clickable class">
+<h1>GetParentHeaderEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetParentHeaderEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetParentHeaderEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetParentHeaderEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPasteButtonEvent" class="element ajax clickable class">
+<h1>GetPasteButtonEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPasteButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPasteRootButtonEvent" class="element ajax clickable class">
+<h1>GetPasteRootButtonEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPasteRootButtonEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html" class="more">« More »</a>
+</div>
+<div id="GetPropertyOptionsEvent" class="element ajax clickable class">
+<h1>GetPropertyOptionsEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPropertyOptionsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetPropertyOptionsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPropertyOptionsEvent.html" class="more">« More »</a>
+</div>
+<div id="GetSelectModeButtonsEvent" class="element ajax clickable class">
+<h1>GetSelectModeButtonsEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetSelectModeButtonsEvent.html">¶</a>
+</h1>
+<p class="short_description">Class GetSelectModeButtonsEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetSelectModeButtonsEvent.html" class="more">« More »</a>
+</div>
+<div id="ManipulateWidgetEvent" class="element ajax clickable class">
+<h1>ManipulateWidgetEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ManipulateWidgetEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ManipulateWidgetEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ManipulateWidgetEvent.html" class="more">« More »</a>
+</div>
+<div id="ModelToLabelEvent" class="element ajax clickable class">
+<h1>ModelToLabelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ModelToLabelEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ModelToLabelEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ModelToLabelEvent.html" class="more">« More »</a>
+</div>
+<div id="ParentViewChildRecordEvent" class="element ajax clickable class">
+<h1>ParentViewChildRecordEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ParentViewChildRecordEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ParentViewChildRecordEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ParentViewChildRecordEvent.html" class="more">« More »</a>
+</div>
+<div id="ResolveWidgetErrorMessageEvent" class="element ajax clickable class">
+<h1>ResolveWidgetErrorMessageEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ResolveWidgetErrorMessageEvent.html">¶</a>
+</h1>
+<p class="short_description">Class ResolveWidgetErrorMessageEvent.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.ResolveWidgetErrorMessageEvent.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:29+02:00.<br></footer></div>
+</div>
+</body>
+</html>

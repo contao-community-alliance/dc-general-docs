@@ -20,8 +20,9 @@
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Namespaces</a></li>
-<li><a href="../namespaces/DcGeneral.html"><i class="icon-th"></i> DcGeneral</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
 <li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
 <li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
 </ul>
@@ -63,54 +64,55 @@
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-interface"></i> Interfaces</li>
-<li><a href="#PaletteConditionInterface" title="A condition define when a palette is used or not.">PaletteConditionInterface</a></li>
-<li><a href="#PropertyConditionInterface" title="A condition define when a property is visible or editable and when not.">PropertyConditionInterface</a></li>
-<li><a href="#ViewInterface" title="">ViewInterface</a></li>
-<li><a href="#PaletteCollectionInterface" title="Contains multiple palettes, organised by its name.">PaletteCollectionInterface</a></li>
-<li><a href="#LegendInterface" title="A legend group a lot of properties.">LegendInterface</a></li>
-<li><a href="#PropertyValueBagInterface" title="A generic bag containing properties and their values.">PropertyValueBagInterface</a></li>
-<li><a href="#PaletteInterface" title="A palette contains a set of properties, grouped by legends.">PaletteInterface</a></li>
-<li><a href="#ConditionChainInterface" title="A condition define when a property is visible or editable and when not.">ConditionChainInterface</a></li>
 <li><a href="#VersionModelInterface" title="">VersionModelInterface</a></li>
+<li><a href="#PropertyValueBagInterface" title="A generic bag containing properties and their values.">PropertyValueBagInterface</a></li>
 <li><a href="#LanguageInformationCollectionInterface" title="This represents an iterable collection of Model elements.">LanguageInformationCollectionInterface</a></li>
 <li><a href="#CollectionInterface" title="Interface InterfaceGeneralCollection">CollectionInterface</a></li>
+<li><a href="#ConditionChainInterface" title="A condition define when a property is visible or editable and when not.">ConditionChainInterface</a></li>
+<li><a href="#PaletteConditionInterface" title="A condition define when a palette is used or not.">PaletteConditionInterface</a></li>
+<li><a href="#PropertyConditionInterface" title="A condition define when a property is visible or editable and when not.">PropertyConditionInterface</a></li>
+<li><a href="#PaletteCollectionInterface" title="Contains multiple palettes, organised by its name.">PaletteCollectionInterface</a></li>
+<li><a href="#PaletteInterface" title="A palette contains a set of properties, grouped by legends.">PaletteInterface</a></li>
+<li><a href="#LegendInterface" title="A legend group a lot of properties.">LegendInterface</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#PropertyConditionChain" title="A chain of property conditions.">PropertyConditionChain</a></li>
+<li><a href="#DCGE" title="This class is a holder for all const vars.">DCGE</a></li>
+<li><a href="#PropertyValueBag" title="A generic bag containing properties and their values.">PropertyValueBag</a></li>
+<li><a href="#Palette" title="Default implementation of a palette.">Palette</a></li>
+<li><a href="#PaletteFactory" title="The palette factory.">PaletteFactory</a></li>
 <li><a href="#PaletteBuilder" title="The palette builder is used to build palette collections, palettes, legends, properties and conditions.">PaletteBuilder</a></li>
+<li><a href="#PropertyValueCondition" title="Condition checking that the value of a property is the same as a passed value.">PropertyValueCondition</a></li>
+<li><a href="#DefaultPaletteCondition" title="Condition for the default palette.">DefaultPaletteCondition</a></li>
+<li><a href="#PropertyTrueCondition" title="Condition checking that the value of a property is true.">PropertyTrueCondition</a></li>
+<li><a href="#PaletteConditionChain" title="A chain of palette conditions.">PaletteConditionChain</a></li>
+<li><a href="#PropertyFalseCondition" title="Condition checking that the value of a property is false.">PropertyFalseCondition</a></li>
+<li><a href="#PropertyCallbackCondition" title="Condition using a custom callback function for flexible custom conditions.">PropertyCallbackCondition</a></li>
+<li><a href="#PropertyValueCondition" title="Condition checking that the value of a property is the same as a passed value.">PropertyValueCondition</a></li>
+<li><a href="#PropertyVisibleCondition" title="Condition checking that a property is visible.">PropertyVisibleCondition</a></li>
+<li><a href="#PropertyTrueCondition" title="Condition checking that the value of a property is true.">PropertyTrueCondition</a></li>
+<li><a href="#DumpingPropertyCondition" title="Only for debugging purpose. Call the match() method on the wrapped condition and
+dump the result with a backtrace.">DumpingPropertyCondition</a></li>
+<li><a href="#PropertyFalseCondition" title="Condition checking that the value of a property is false.">PropertyFalseCondition</a></li>
+<li><a href="#PropertyConditionChain" title="A chain of property conditions.">PropertyConditionChain</a></li>
+<li><a href="#BooleanCondition" title="Condition for specifying an explicit boolean value (Useful for determining if a property shall be editable i.e.).">BooleanCondition</a></li>
+<li><a href="#NotCondition" title="Negate a condition.">NotCondition</a></li>
+<li><a href="#Legend" title="Default implementation of a legend.">Legend</a></li>
+<li><a href="#PaletteCollection" title="Default implementation of PaletteCollectionInterface.">PaletteCollection</a></li>
+<li><a href="#DcGeneralExtension" title="Extension for twig template engine.">DcGeneralExtension</a></li>
+<li><a href="#TemplateLoader" title="Class TemplateLoader">TemplateLoader</a></li>
+<li><a href="#DcCompat" title="Class DcCompat">DcCompat</a></li>
+<li><a href="#ActiveRecord" title="Class ActiveRecord">ActiveRecord</a></li>
+<li><a href="#LegacyDcaDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">LegacyDcaDataDefinitionBuilder</a></li>
+<li><a href="#ExtendedLegacyDcaDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">ExtendedLegacyDcaDataDefinitionBuilder</a></li>
+<li><a href="#DcaReadingDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">DcaReadingDataDefinitionBuilder</a></li>
+<li><a href="#DC_General" title="">DC_General</a></li>
 <li><a href="#Ajax3X" title='Class GeneralAjax - General purpose Ajax handler for "executePostActions" in Contao 3.X as we can not use the default
 Contao handling.'>Ajax3X</a></li>
-<li><a href="#PropertyTrueCondition" title="Condition checking that the value of a property is true.">PropertyTrueCondition</a></li>
-<li><a href="#ActiveRecord" title="Class ActiveRecord">ActiveRecord</a></li>
 <li><a href="#Ajax2X" title='Class GeneralAjax - General purpose Ajax handler for "executePostActions" in Contao 2.X as we can not use the default
 Contao handling.'>Ajax2X</a></li>
-<li><a href="#PropertyValueBag" title="A generic bag containing properties and their values.">PropertyValueBag</a></li>
-<li><a href="#DCGE" title="This class is a holder for all const vars.">DCGE</a></li>
-<li><a href="#DC_General" title="">DC_General</a></li>
-<li><a href="#PaletteCollection" title="Default implementation of PaletteCollectionInterface.">PaletteCollection</a></li>
-<li><a href="#DcaReadingDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">DcaReadingDataDefinitionBuilder</a></li>
-<li><a href="#PropertyTrueCondition" title="Condition checking that the value of a property is true.">PropertyTrueCondition</a></li>
-<li><a href="#PropertyFalseCondition" title="Condition checking that the value of a property is false.">PropertyFalseCondition</a></li>
 <li><a href="#DefaultController" title="">DefaultController</a></li>
 <li><a href="#Ajax" title='Class Ajax - General purpose Ajax handler for "executePostActions" as we can not use the default Contao
 handling.'>Ajax</a></li>
-<li><a href="#DumpingPropertyCondition" title="Only for debugging purpose. Call the match() method on the wrapped condition and
-dump the result with a backtrace.">DumpingPropertyCondition</a></li>
-<li><a href="#Palette" title="Default implementation of a palette.">Palette</a></li>
-<li><a href="#BooleanCondition" title="Condition for specifying an explicit boolean value (Useful for determining if a property shall be editable i.e.).">BooleanCondition</a></li>
-<li><a href="#PropertyValueCondition" title="Condition checking that the value of a property is the same as a passed value.">PropertyValueCondition</a></li>
-<li><a href="#PaletteConditionChain" title="A chain of palette conditions.">PaletteConditionChain</a></li>
-<li><a href="#ExtendedLegacyDcaDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">ExtendedLegacyDcaDataDefinitionBuilder</a></li>
-<li><a href="#Legend" title="Default implementation of a legend.">Legend</a></li>
-<li><a href="#PopulateEnvironmentEvent" title="Abstract base class for environment aware events">PopulateEnvironmentEvent</a></li>
-<li><a href="#PropertyValueCondition" title="Condition checking that the value of a property is the same as a passed value.">PropertyValueCondition</a></li>
-<li><a href="#PropertyFalseCondition" title="Condition checking that the value of a property is false.">PropertyFalseCondition</a></li>
-<li><a href="#TemplateLoader" title="Class TemplateLoader">TemplateLoader</a></li>
-<li><a href="#NotCondition" title="Negate a condition.">NotCondition</a></li>
-<li><a href="#LegacyDcaDataDefinitionBuilder" title="Build the container config from legacy DCA syntax.">LegacyDcaDataDefinitionBuilder</a></li>
-<li><a href="#PaletteFactory" title="The palette factory.">PaletteFactory</a></li>
-<li><a href="#DefaultPaletteCondition" title="Condition for the default palette.">DefaultPaletteCondition</a></li>
-<li><a href="#DcCompat" title="Class DcCompat">DcCompat</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -121,302 +123,309 @@ dump the result with a backtrace.">DumpingPropertyCondition</a></li>
 <h3>
 <i class="icon-custom icon-class"></i> Classes and interfaces</h3>
 <div id="ConditionChainInterface" class="element ajax clickable interface">
-<h1>ConditionChainInterface<a href="../classes/DcGeneral.DataDefinition.ConditionChainInterface.html">¶</a>
+<h1>ConditionChainInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">¶</a>
 </h1>
 <p class="short_description">A condition define when a property is visible or editable and when not.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.ConditionChainInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html" class="more">« More »</a>
 </div>
 <div id="PaletteConditionInterface" class="element ajax clickable interface">
-<h1>PaletteConditionInterface<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">¶</a>
+<h1>PaletteConditionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">¶</a>
 </h1>
 <p class="short_description">A condition define when a palette is used or not.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html" class="more">« More »</a>
 </div>
 <div id="PropertyConditionInterface" class="element ajax clickable interface">
-<h1>PropertyConditionInterface<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">¶</a>
+<h1>PropertyConditionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">¶</a>
 </h1>
 <p class="short_description">A condition define when a property is visible or editable and when not.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html" class="more">« More »</a>
 </div>
 <div id="LegendInterface" class="element ajax clickable interface">
-<h1>LegendInterface<a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html">¶</a>
+<h1>LegendInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">¶</a>
 </h1>
 <p class="short_description">A legend group a lot of properties.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.LegendInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html" class="more">« More »</a>
 </div>
 <div id="PaletteCollectionInterface" class="element ajax clickable interface">
-<h1>PaletteCollectionInterface<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">¶</a>
+<h1>PaletteCollectionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">¶</a>
 </h1>
 <p class="short_description">Contains multiple palettes, organised by its name.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html" class="more">« More »</a>
 </div>
 <div id="PaletteInterface" class="element ajax clickable interface">
-<h1>PaletteInterface<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html">¶</a>
+<h1>PaletteInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">¶</a>
 </h1>
 <p class="short_description">A palette contains a set of properties, grouped by legends.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html" class="more">« More »</a>
 </div>
 <div id="CollectionInterface" class="element ajax clickable interface">
-<h1>CollectionInterface<a href="../classes/DcGeneral.Data.CollectionInterface.html">¶</a>
+<h1>CollectionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">¶</a>
 </h1>
 <p class="short_description">Interface InterfaceGeneralCollection</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.CollectionInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html" class="more">« More »</a>
 </div>
 <div id="LanguageInformationCollectionInterface" class="element ajax clickable interface">
-<h1>LanguageInformationCollectionInterface<a href="../classes/DcGeneral.Data.LanguageInformationCollectionInterface.html">¶</a>
+<h1>LanguageInformationCollectionInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.LanguageInformationCollectionInterface.html">¶</a>
 </h1>
 <p class="short_description">This represents an iterable collection of Model elements.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.LanguageInformationCollectionInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.LanguageInformationCollectionInterface.html" class="more">« More »</a>
 </div>
 <div id="PropertyValueBagInterface" class="element ajax clickable interface">
-<h1>PropertyValueBagInterface<a href="../classes/DcGeneral.Data.PropertyValueBagInterface.html">¶</a>
+<h1>PropertyValueBagInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBagInterface.html">¶</a>
 </h1>
 <p class="short_description">A generic bag containing properties and their values.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.PropertyValueBagInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBagInterface.html" class="more">« More »</a>
 </div>
 <div id="VersionModelInterface" class="element ajax clickable interface">
-<h1>VersionModelInterface<a href="../classes/DcGeneral.Data.VersionModelInterface.html">¶</a>
+<h1>VersionModelInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.VersionModelInterface.html">¶</a>
 </h1>
 <p class="short_description"></p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.VersionModelInterface.html" class="more">« More »</a>
-</div>
-<div id="ViewInterface" class="element ajax clickable interface">
-<h1>ViewInterface<a href="../classes/DcGeneral.View.ViewInterface.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/DcGeneral.View.ViewInterface.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.VersionModelInterface.html" class="more">« More »</a>
 </div>
 <div id="ActiveRecord" class="element ajax clickable class">
-<h1>ActiveRecord<a href="../classes/DcGeneral.Contao.Compatibility.ActiveRecord.html">¶</a>
+<h1>ActiveRecord<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ActiveRecord.html">¶</a>
 </h1>
 <p class="short_description">Class ActiveRecord</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Compatibility.ActiveRecord.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ActiveRecord.html" class="more">« More »</a>
 </div>
 <div id="DcCompat" class="element ajax clickable class">
-<h1>DcCompat<a href="../classes/DcGeneral.Contao.Compatibility.DcCompat.html">¶</a>
+<h1>DcCompat<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.DcCompat.html">¶</a>
 </h1>
 <p class="short_description">Class DcCompat</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Compatibility.DcCompat.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.DcCompat.html" class="more">« More »</a>
 </div>
 <div id="TemplateLoader" class="element ajax clickable class">
-<h1>TemplateLoader<a href="../classes/DcGeneral.Contao.Compatibility.TemplateLoader.html">¶</a>
+<h1>TemplateLoader<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.TemplateLoader.html">¶</a>
 </h1>
 <p class="short_description">Class TemplateLoader</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Compatibility.TemplateLoader.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.TemplateLoader.html" class="more">« More »</a>
 </div>
 <div id="DcaReadingDataDefinitionBuilder" class="element ajax clickable class">
-<h1>DcaReadingDataDefinitionBuilder<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html">¶</a>
+<h1>DcaReadingDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html">¶</a>
 </h1>
 <p class="short_description">Build the container config from legacy DCA syntax.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.DcaReadingDataDefinitionBuilder.html" class="more">« More »</a>
 </div>
 <div id="ExtendedLegacyDcaDataDefinitionBuilder" class="element ajax clickable class">
-<h1>ExtendedLegacyDcaDataDefinitionBuilder<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html">¶</a>
+<h1>ExtendedLegacyDcaDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html">¶</a>
 </h1>
 <p class="short_description">Build the container config from legacy DCA syntax.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.ExtendedLegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
 </div>
 <div id="LegacyDcaDataDefinitionBuilder" class="element ajax clickable class">
-<h1>LegacyDcaDataDefinitionBuilder<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html">¶</a>
+<h1>LegacyDcaDataDefinitionBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html">¶</a>
 </h1>
 <p class="short_description">Build the container config from legacy DCA syntax.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
+</div>
+<div id="DcGeneralExtension" class="element ajax clickable class">
+<h1>DcGeneralExtension<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html">¶</a>
+</h1>
+<p class="short_description">Extension for twig template engine.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html" class="more">« More »</a>
 </div>
 <div id="Ajax" class="element ajax clickable class">
-<h1>Ajax<a href="../classes/DcGeneral.Controller.Ajax.html">¶</a>
+<h1>Ajax<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax.html">¶</a>
 </h1>
 <p class="short_description">Class Ajax - General purpose Ajax handler for "executePostActions" as we can not use the default Contao
 handling.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Controller.Ajax.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax.html" class="more">« More »</a>
 </div>
 <div id="Ajax2X" class="element ajax clickable class">
-<h1>Ajax2X<a href="../classes/DcGeneral.Controller.Ajax2X.html">¶</a>
+<h1>Ajax2X<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax2X.html">¶</a>
 </h1>
 <p class="short_description">Class GeneralAjax - General purpose Ajax handler for "executePostActions" in Contao 2.X as we can not use the default
 Contao handling.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Controller.Ajax2X.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax2X.html" class="more">« More »</a>
 </div>
 <div id="Ajax3X" class="element ajax clickable class">
-<h1>Ajax3X<a href="../classes/DcGeneral.Controller.Ajax3X.html">¶</a>
+<h1>Ajax3X<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax3X.html">¶</a>
 </h1>
 <p class="short_description">Class GeneralAjax - General purpose Ajax handler for "executePostActions" in Contao 3.X as we can not use the default
 Contao handling.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Controller.Ajax3X.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax3X.html" class="more">« More »</a>
 </div>
 <div id="DefaultController" class="element ajax clickable class">
-<h1>DefaultController<a href="../classes/DcGeneral.Controller.DefaultController.html">¶</a>
+<h1>DefaultController<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.DefaultController.html">¶</a>
 </h1>
 <p class="short_description"></p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Controller.DefaultController.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.DefaultController.html" class="more">« More »</a>
 </div>
 <div id="DC_General" class="element ajax clickable class">
-<h1>DC_General<a href="../classes/DcGeneral.DC_General.html">¶</a>
+<h1>DC_General<a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html">¶</a>
 </h1>
 <p class="short_description"></p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DC_General.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html" class="more">« More »</a>
 </div>
 <div id="PaletteBuilder" class="element ajax clickable class">
-<h1>PaletteBuilder<a href="../classes/DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">¶</a>
+<h1>PaletteBuilder<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">¶</a>
 </h1>
 <p class="short_description">The palette builder is used to build palette collections, palettes, legends, properties and conditions.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html" class="more">« More »</a>
 </div>
 <div id="DefaultPaletteCondition" class="element ajax clickable class">
-<h1>DefaultPaletteCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.DefaultPaletteCondition.html">¶</a>
+<h1>DefaultPaletteCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.DefaultPaletteCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition for the default palette.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.DefaultPaletteCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.DefaultPaletteCondition.html" class="more">« More »</a>
 </div>
 <div id="PaletteConditionChain" class="element ajax clickable class">
-<h1>PaletteConditionChain<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">¶</a>
+<h1>PaletteConditionChain<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html">¶</a>
 </h1>
 <p class="short_description">A chain of palette conditions.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionChain.html" class="more">« More »</a>
 </div>
 <div id="PropertyFalseCondition" class="element ajax clickable class">
-<h1>PropertyFalseCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyFalseCondition.html">¶</a>
+<h1>PropertyFalseCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyFalseCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is false.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyFalseCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyFalseCondition.html" class="more">« More »</a>
 </div>
 <div id="PropertyTrueCondition" class="element ajax clickable class">
-<h1>PropertyTrueCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyTrueCondition.html">¶</a>
+<h1>PropertyTrueCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyTrueCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is true.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyTrueCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyTrueCondition.html" class="more">« More »</a>
 </div>
 <div id="PropertyValueCondition" class="element ajax clickable class">
-<h1>PropertyValueCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyValueCondition.html">¶</a>
+<h1>PropertyValueCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyValueCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is the same as a passed value.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyValueCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PropertyValueCondition.html" class="more">« More »</a>
 </div>
 <div id="BooleanCondition" class="element ajax clickable class">
-<h1>BooleanCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.BooleanCondition.html">¶</a>
+<h1>BooleanCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.BooleanCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition for specifying an explicit boolean value (Useful for determining if a property shall be editable i.e.).</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.BooleanCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.BooleanCondition.html" class="more">« More »</a>
 </div>
 <div id="DumpingPropertyCondition" class="element ajax clickable class">
-<h1>DumpingPropertyCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.DumpingPropertyCondition.html">¶</a>
+<h1>DumpingPropertyCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.DumpingPropertyCondition.html">¶</a>
 </h1>
 <p class="short_description">Only for debugging purpose. Call the match() method on the wrapped condition and
 dump the result with a backtrace.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.DumpingPropertyCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.DumpingPropertyCondition.html" class="more">« More »</a>
 </div>
 <div id="NotCondition" class="element ajax clickable class">
-<h1>NotCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.NotCondition.html">¶</a>
+<h1>NotCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.NotCondition.html">¶</a>
 </h1>
 <p class="short_description">Negate a condition.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.NotCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.NotCondition.html" class="more">« More »</a>
+</div>
+<div id="PropertyCallbackCondition" class="element ajax clickable class">
+<h1>PropertyCallbackCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyCallbackCondition.html">¶</a>
+</h1>
+<p class="short_description">Condition using a custom callback function for flexible custom conditions.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyCallbackCondition.html" class="more">« More »</a>
 </div>
 <div id="PropertyConditionChain" class="element ajax clickable class">
-<h1>PropertyConditionChain<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionChain.html">¶</a>
+<h1>PropertyConditionChain<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionChain.html">¶</a>
 </h1>
 <p class="short_description">A chain of property conditions.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionChain.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionChain.html" class="more">« More »</a>
 </div>
 <div id="PropertyFalseCondition" class="element ajax clickable class">
-<h1>PropertyFalseCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyFalseCondition.html">¶</a>
+<h1>PropertyFalseCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyFalseCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is false.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyFalseCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyFalseCondition.html" class="more">« More »</a>
 </div>
 <div id="PropertyTrueCondition" class="element ajax clickable class">
-<h1>PropertyTrueCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html">¶</a>
+<h1>PropertyTrueCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is true.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html" class="more">« More »</a>
 </div>
 <div id="PropertyValueCondition" class="element ajax clickable class">
-<h1>PropertyValueCondition<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html">¶</a>
+<h1>PropertyValueCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html">¶</a>
 </h1>
 <p class="short_description">Condition checking that the value of a property is the same as a passed value.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html" class="more">« More »</a>
+</div>
+<div id="PropertyVisibleCondition" class="element ajax clickable class">
+<h1>PropertyVisibleCondition<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyVisibleCondition.html">¶</a>
+</h1>
+<p class="short_description">Condition checking that a property is visible.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyVisibleCondition.html" class="more">« More »</a>
 </div>
 <div id="Legend" class="element ajax clickable class">
-<h1>Legend<a href="../classes/DcGeneral.DataDefinition.Palette.Legend.html">¶</a>
+<h1>Legend<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Legend.html">¶</a>
 </h1>
 <p class="short_description">Default implementation of a legend.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Legend.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Legend.html" class="more">« More »</a>
 </div>
 <div id="Palette" class="element ajax clickable class">
-<h1>Palette<a href="../classes/DcGeneral.DataDefinition.Palette.Palette.html">¶</a>
+<h1>Palette<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Palette.html">¶</a>
 </h1>
 <p class="short_description">Default implementation of a palette.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.Palette.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Palette.html" class="more">« More »</a>
 </div>
 <div id="PaletteCollection" class="element ajax clickable class">
-<h1>PaletteCollection<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteCollection.html">¶</a>
+<h1>PaletteCollection<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollection.html">¶</a>
 </h1>
 <p class="short_description">Default implementation of PaletteCollectionInterface.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteCollection.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollection.html" class="more">« More »</a>
 </div>
 <div id="PaletteFactory" class="element ajax clickable class">
-<h1>PaletteFactory<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteFactory.html">¶</a>
+<h1>PaletteFactory<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteFactory.html">¶</a>
 </h1>
 <p class="short_description">The palette factory.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.DataDefinition.Palette.PaletteFactory.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteFactory.html" class="more">« More »</a>
 </div>
 <div id="DCGE" class="element ajax clickable class">
-<h1>DCGE<a href="../classes/DcGeneral.Data.DCGE.html">¶</a>
+<h1>DCGE<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DCGE.html">¶</a>
 </h1>
 <p class="short_description">This class is a holder for all const vars.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.DCGE.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DCGE.html" class="more">« More »</a>
 </div>
 <div id="PropertyValueBag" class="element ajax clickable class">
-<h1>PropertyValueBag<a href="../classes/DcGeneral.Data.PropertyValueBag.html">¶</a>
+<h1>PropertyValueBag<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">¶</a>
 </h1>
 <p class="short_description">A generic bag containing properties and their values.</p>
 <div class="details collapse"></div>
-<a href="../classes/DcGeneral.Data.PropertyValueBag.html" class="more">« More »</a>
-</div>
-<div id="PopulateEnvironmentEvent" class="element ajax clickable class">
-<h1>PopulateEnvironmentEvent<a href="../classes/DcGeneral.Factory.Event.PopulateEnvironmentEvent.html">¶</a>
-</h1>
-<p class="short_description">Abstract base class for environment aware events</p>
-<div class="details collapse"></div>
-<a href="../classes/DcGeneral.Factory.Event.PopulateEnvironmentEvent.html" class="more">« More »</a>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html" class="more">« More »</a>
 </div>
 </div>
 </div>
@@ -425,7 +434,7 @@ dump the result with a backtrace.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-03-17T14:36:20+01:00.<br></footer></div>
+            generated on 2014-04-14T20:00:32+02:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_clear" title="clear() :: Clear the content of the clipboard."><span class="description">Clear the content of the clipboard.</span><pre>clear()</pre></a></li>
+<li class="method public "><a href="#method_copy" title="copy() :: Set the clipboard to copy mode and copy the given ids."><span class="description">Set the clipboard to copy mode and copy the given ids.</span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Set the clipboard to create mode for a child of the given parent data set."><span class="description">Set the clipboard to create mode for a child of the given parent data set.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_cut" title="cut() :: Set the clipboard to cut mode and cut the given ids."><span class="description">Set the clipboard to cut mode and cut the given ids.</span><pre>cut()</pre></a></li>
+<li class="method public "><a href="#method_getCircularIds" title="getCircularIds() :: Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting."><span class="description">Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting.</span><pre>getCircularIds()</pre></a></li>
+<li class="method public "><a href="#method_getContainedIds" title="getContainedIds() :: Retrieve the ids contained in the clipboard."><span class="description">Retrieve the ids contained in the clipboard.</span><pre>getContainedIds()</pre></a></li>
+<li class="method public "><a href="#method_getMode" title="getMode() :: Retrieve the current mode of the clipboard."><span class="description">Retrieve the current mode of the clipboard.</span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#method_isCopy" title="isCopy() :: Determine if the content in the clipboard shall be copied."><span class="description">Determine if the content in the clipboard shall be copied.</span><pre>isCopy()</pre></a></li>
+<li class="method public "><a href="#method_isCreate" title="isCreate() :: Determine if the content in the clipboard is a new item to be created."><span class="description">Determine if the content in the clipboard is a new item to be created.</span><pre>isCreate()</pre></a></li>
+<li class="method public "><a href="#method_isCut" title="isCut() :: Determine if the content in the clipboard shall be cut."><span class="description">Determine if the content in the clipboard shall be cut.</span><pre>isCut()</pre></a></li>
+<li class="method public "><a href="#method_isEmpty" title="isEmpty() :: Determine if the clipboard is empty."><span class="description">Determine if the clipboard is empty.</span><pre>isEmpty()</pre></a></li>
+<li class="method public "><a href="#method_isNotEmpty" title="isNotEmpty() :: Determine if the clipboard is not empty."><span class="description">Determine if the clipboard is not empty.</span><pre>isNotEmpty()</pre></a></li>
+<li class="method public "><a href="#method_loadFrom" title="loadFrom() :: Load the content of the clipboard from the input provider stored in the environment."><span class="description">Load the content of the clipboard from the input provider stored in the environment.</span><pre>loadFrom()</pre></a></li>
+<li class="method public "><a href="#method_saveTo" title="saveTo() :: Save the content of the clipboard to the input provider stored in the environment."><span class="description">Save the content of the clipboard to the input provider stored in the environment.</span><pre>saveTo()</pre></a></li>
+<li class="method public "><a href="#method_setCircularIds" title="setCircularIds() :: Set the ids ignored in the clipboard as they would create a circular reference when pasting."><span class="description">Set the ids ignored in the clipboard as they would create a circular reference when pasting.</span><pre>setCircularIds()</pre></a></li>
+<li class="method public "><a href="#method_setContainedIds" title="setContainedIds() :: Set the ids contained in the clipboard."><span class="description">Set the ids contained in the clipboard.</span><pre>setContainedIds()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_MODE_COPY" title="MODE_COPY() :: Clipboard is in copy mode."><span class="description">Clipboard is in copy mode.</span><pre>MODE_COPY</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_CREATE" title="MODE_CREATE() :: Clipboard is in create mode."><span class="description">Clipboard is in create mode.</span><pre>MODE_CREATE</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_CUT" title="MODE_CUT() :: Clipboard is in cut mode."><span class="description">Clipboard is in cut mode.</span><pre>MODE_CUT</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Clipboard.html">Clipboard</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">ClipboardInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">Interface ClipboardInterface.</p>
+<div class="details">
+<div class="long_description">This interface describes the internal clipboard of DcGeneral.
+The implementing class will store the values persistent to the input provider stored in the environment.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Clipboard.html">DcGeneral\Clipboard</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_clear"></a><div class="element clickable method public method_clear" data-toggle="collapse" data-target=".method_clear .collapse">
+<h2>Clear the content of the clipboard.</h2>
+<pre>clear() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>Set the clipboard to copy mode and copy the given ids.</h2>
+<pre>copy(array|mixed $ids) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><code>mixed</code><p>The id or ids to be copied.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Set the clipboard to create mode for a child of the given parent data set.</h2>
+<pre>create(mixed $parentId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentId</h4>
+<code>mixed</code><p>The id of the parent data set.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
+<h2>Set the clipboard to cut mode and cut the given ids.</h2>
+<pre>cut(array|mixed $ids) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><code>mixed</code><p>The id or ids to be cut.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getCircularIds"></a><div class="element clickable method public method_getCircularIds" data-toggle="collapse" data-target=".method_getCircularIds .collapse">
+<h2>Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting.</h2>
+<pre>getCircularIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getContainedIds"></a><div class="element clickable method public method_getContainedIds" data-toggle="collapse" data-target=".method_getContainedIds .collapse">
+<h2>Retrieve the ids contained in the clipboard.</h2>
+<pre>getContainedIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getMode"></a><div class="element clickable method public method_getMode" data-toggle="collapse" data-target=".method_getMode .collapse">
+<h2>Retrieve the current mode of the clipboard.</h2>
+<pre>getMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Either cut|paste|mode</div>
+</div></div>
+</div>
+<a id="method_isCopy"></a><div class="element clickable method public method_isCopy" data-toggle="collapse" data-target=".method_isCopy .collapse">
+<h2>Determine if the content in the clipboard shall be copied.</h2>
+<pre>isCopy() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isCreate"></a><div class="element clickable method public method_isCreate" data-toggle="collapse" data-target=".method_isCreate .collapse">
+<h2>Determine if the content in the clipboard is a new item to be created.</h2>
+<pre>isCreate() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isCut"></a><div class="element clickable method public method_isCut" data-toggle="collapse" data-target=".method_isCut .collapse">
+<h2>Determine if the content in the clipboard shall be cut.</h2>
+<pre>isCut() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isEmpty"></a><div class="element clickable method public method_isEmpty" data-toggle="collapse" data-target=".method_isEmpty .collapse">
+<h2>Determine if the clipboard is empty.</h2>
+<pre>isEmpty() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isNotEmpty"></a><div class="element clickable method public method_isNotEmpty" data-toggle="collapse" data-target=".method_isNotEmpty .collapse">
+<h2>Determine if the clipboard is not empty.</h2>
+<pre>isNotEmpty() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_loadFrom"></a><div class="element clickable method public method_loadFrom" data-toggle="collapse" data-target=".method_loadFrom .collapse">
+<h2>Load the content of the clipboard from the input provider stored in the environment.</h2>
+<pre>loadFrom(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objEnvironment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment where the input provider will retrieve the
+                                            values from.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_saveTo"></a><div class="element clickable method public method_saveTo" data-toggle="collapse" data-target=".method_saveTo .collapse">
+<h2>Save the content of the clipboard to the input provider stored in the environment.</h2>
+<pre>saveTo(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objEnvironment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment where the input provider will store the
+                                            values to.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setCircularIds"></a><div class="element clickable method public method_setCircularIds" data-toggle="collapse" data-target=".method_setCircularIds .collapse">
+<h2>Set the ids ignored in the clipboard as they would create a circular reference when pasting.</h2>
+<pre>setCircularIds(array $arrIds) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$arrIds</h4>
+<code>array</code><p>The list of ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setContainedIds"></a><div class="element clickable method public method_setContainedIds" data-toggle="collapse" data-target=".method_setContainedIds .collapse">
+<h2>Set the ids contained in the clipboard.</h2>
+<pre>setContainedIds(array $arrIds) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$arrIds</h4>
+<code>array</code><p>The list of ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_MODE_COPY"> </a><div class="element clickable constant  constant_MODE_COPY" data-toggle="collapse" data-target=".constant_MODE_COPY .collapse">
+<h2>Clipboard is in copy mode.</h2>
+<pre>MODE_COPY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_CREATE"> </a><div class="element clickable constant  constant_MODE_CREATE" data-toggle="collapse" data-target=".constant_MODE_CREATE .collapse">
+<h2>Clipboard is in create mode.</h2>
+<pre>MODE_CREATE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_CUT"> </a><div class="element clickable constant  constant_MODE_CUT" data-toggle="collapse" data-target=".constant_MODE_CUT .collapse">
+<h2>Clipboard is in cut mode.</h2>
+<pre>MODE_CUT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:40+02:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1065 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new palette builder."><span class="description">Create a new palette builder.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addCondition" title="addCondition() :: Add a custom condition to last created property or palette."><span class="description">Add a custom condition to last created property or palette.</span><pre>addCondition()</pre></a></li>
+<li class="method public "><a href="#method_chainDefaultPaletteCondition" title="chainDefaultPaletteCondition() :: Start a new default-palette condition and chain with previous condition."><span class="description">Start a new default-palette condition and chain with previous condition.</span><pre>chainDefaultPaletteCondition()</pre></a></li>
+<li class="method public "><a href="#method_chainPropertyValueCondition" title="chainPropertyValueCondition() :: Start a new property-value condition and chain with previous condition."><span class="description">Start a new property-value condition and chain with previous condition.</span><pre>chainPropertyValueCondition()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Factory method to create a new palette builder."><span class="description">Factory method to create a new palette builder.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_createDefaultPaletteCondition" title="createDefaultPaletteCondition() :: Start a new default-palette condition."><span class="description">Start a new default-palette condition.</span><pre>createDefaultPaletteCondition()</pre></a></li>
+<li class="method public "><a href="#method_createLegend" title="createLegend() :: Start a new legend."><span class="description">Start a new legend.</span><pre>createLegend()</pre></a></li>
+<li class="method public "><a href="#method_createPalette" title="createPalette() :: Start a new palette."><span class="description">Start a new palette.</span><pre>createPalette()</pre></a></li>
+<li class="method public "><a href="#method_createPaletteCollection" title="createPaletteCollection() :: Start a new palette collection."><span class="description">Start a new palette collection.</span><pre>createPaletteCollection()</pre></a></li>
+<li class="method public "><a href="#method_createProperty" title="createProperty() :: Start a new single property or set of properties."><span class="description">Start a new single property or set of properties.</span><pre>createProperty()</pre></a></li>
+<li class="method public "><a href="#method_createPropertyValueCondition" title="createPropertyValueCondition() :: Start a new property-value condition."><span class="description">Start a new property-value condition.</span><pre>createPropertyValueCondition()</pre></a></li>
+<li class="method public "><a href="#method_finishCondition" title="finishCondition() :: Finish the current condition."><span class="description">Finish the current condition.</span><pre>finishCondition()</pre></a></li>
+<li class="method public "><a href="#method_finishLegend" title="finishLegend() :: Finish the current legend."><span class="description">Finish the current legend.</span><pre>finishLegend()</pre></a></li>
+<li class="method public "><a href="#method_finishPalette" title="finishPalette() :: Finish the current palette."><span class="description">Finish the current palette.</span><pre>finishPalette()</pre></a></li>
+<li class="method public "><a href="#method_finishPaletteCollection" title="finishPaletteCollection() :: Finish the current palette collection."><span class="description">Finish the current palette collection.</span><pre>finishPaletteCollection()</pre></a></li>
+<li class="method public "><a href="#method_finishProperty" title="finishProperty() :: Finish the current property or set of properties."><span class="description">Finish the current property or set of properties.</span><pre>finishProperty()</pre></a></li>
+<li class="method public "><a href="#method_getCondition" title="getCondition() :: Return the current condition object."><span class="description">Return the current condition object.</span><pre>getCondition()</pre></a></li>
+<li class="method public "><a href="#method_getContainer" title="getContainer() :: Retrieve the container."><span class="description">Retrieve the container.</span><pre>getContainer()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultPaletteConditionClassName" title="getDefaultPaletteConditionClassName() :: Return the default palette condition class name."><span class="description">Return the default palette condition class name.</span><pre>getDefaultPaletteConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_getLegend" title="getLegend() :: Return the current legend object."><span class="description">Return the current legend object.</span><pre>getLegend()</pre></a></li>
+<li class="method public "><a href="#method_getLegendClassName" title="getLegendClassName() :: Return the legend class name."><span class="description">Return the legend class name.</span><pre>getLegendClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPalette" title="getPalette() :: Return the current palette object."><span class="description">Return the current palette object.</span><pre>getPalette()</pre></a></li>
+<li class="method public "><a href="#method_getPaletteClassName" title="getPaletteClassName() :: Return the palette class name."><span class="description">Return the palette class name.</span><pre>getPaletteClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPaletteCollection" title="getPaletteCollection() :: Return the current palette collection object."><span class="description">Return the current palette collection object.</span><pre>getPaletteCollection()</pre></a></li>
+<li class="method public "><a href="#method_getPaletteCollectionClassName" title="getPaletteCollectionClassName() :: Return the palette collection class name."><span class="description">Return the palette collection class name.</span><pre>getPaletteCollectionClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPaletteConditionChainClassName" title="getPaletteConditionChainClassName() :: Return the palette condition chain class name."><span class="description">Return the palette condition chain class name.</span><pre>getPaletteConditionChainClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPalettePropertyValueConditionClassName" title="getPalettePropertyValueConditionClassName() :: Return the palette property value condition class name."><span class="description">Return the palette property value condition class name.</span><pre>getPalettePropertyValueConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_getProperty" title="getProperty() :: Return the current property object."><span class="description">Return the current property object.</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyClassName" title="getPropertyClassName() :: Return the property class name."><span class="description">Return the property class name.</span><pre>getPropertyClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyConditionChainClassName" title="getPropertyConditionChainClassName() :: Return the property condition chain class name."><span class="description">Return the property condition chain class name.</span><pre>getPropertyConditionChainClassName()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyValueConditionClassName" title="getPropertyValueConditionClassName() :: Return the property value condition class name."><span class="description">Return the property value condition class name.</span><pre>getPropertyValueConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultPaletteConditionClassName" title="setDefaultPaletteConditionClassName() :: Set the default palette condition class name."><span class="description">Set the default palette condition class name.</span><pre>setDefaultPaletteConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_setLegendClassName" title="setLegendClassName() :: Set the legend class name."><span class="description">Set the legend class name.</span><pre>setLegendClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPaletteClassName" title="setPaletteClassName() :: Set the palette class name."><span class="description">Set the palette class name.</span><pre>setPaletteClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPaletteCollectionClassName" title="setPaletteCollectionClassName() :: Set the palette collection class name."><span class="description">Set the palette collection class name.</span><pre>setPaletteCollectionClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPaletteConditionChainClassName" title="setPaletteConditionChainClassName() :: Set the palette condition chain class name."><span class="description">Set the palette condition chain class name.</span><pre>setPaletteConditionChainClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPalettePropertyValueConditionClassName" title="setPalettePropertyValueConditionClassName() :: Set the palette property value condition class name."><span class="description">Set the palette property value condition class name.</span><pre>setPalettePropertyValueConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPropertyClassName" title="setPropertyClassName() :: Set the property class name."><span class="description">Set the property class name.</span><pre>setPropertyClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPropertyConditionChainClassName" title="setPropertyConditionChainClassName() :: Set the property condition chain class name."><span class="description">Set the property condition chain class name.</span><pre>setPropertyConditionChainClassName()</pre></a></li>
+<li class="method public "><a href="#method_setPropertyValueConditionClassName" title="setPropertyValueConditionClassName() :: Set the property value condition class name."><span class="description">Set the property value condition class name.</span><pre>setPropertyValueConditionClassName()</pre></a></li>
+<li class="method public "><a href="#method_useLegend" title="useLegend() :: Reuse an existing legend."><span class="description">Reuse an existing legend.</span><pre>useLegend()</pre></a></li>
+<li class="method public "><a href="#method_usePalette" title="usePalette() :: Reuse an existing palette."><span class="description">Reuse an existing palette.</span><pre>usePalette()</pre></a></li>
+<li class="method public "><a href="#method_usePaletteCollection" title="usePaletteCollection() :: Reuse an existing palette collection."><span class="description">Reuse an existing palette collection.</span><pre>usePaletteCollection()</pre></a></li>
+<li class="method public "><a href="#method_useProperty" title="useProperty() :: Reuse an existing property or set of properties."><span class="description">Reuse an existing property or set of properties.</span><pre>useProperty()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_addPaletteCondition" title="addPaletteCondition() :: Add a custom condition to last created palette."><span class="description">Add a custom condition to last created palette.</span><pre>addPaletteCondition()</pre></a></li>
+<li class="method protected "><a href="#method_addPropertyCondition" title="addPropertyCondition() :: Add a custom condition to last created property."><span class="description">Add a custom condition to last created property.</span><pre>addPropertyCondition()</pre></a></li>
+<li class="method protected "><a href="#method_createPaletteConditionChain" title="createPaletteConditionChain() :: Create a palette condition chain."><span class="description">Create a palette condition chain.</span><pre>createPaletteConditionChain()</pre></a></li>
+<li class="method protected "><a href="#method_createPropertyConditionChain" title="createPropertyConditionChain() :: Create a palette condition chain."><span class="description">Create a palette condition chain.</span><pre>createPropertyConditionChain()</pre></a></li>
+<li class="method protected "><a href="#method_dispatchEvent" title="dispatchEvent() :: Dispatch an event over the global event dispatcher."><span class="description">Dispatch an event over the global event dispatcher.</span><pre>dispatchEvent()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_condition" title="$condition() :: The condition currently working on."><span class="description"></span><pre>$condition</pre></a></li>
+<li class="property protected "><a href="#property_container" title="$container() :: The data definition container."><span class="description"></span><pre>$container</pre></a></li>
+<li class="property protected "><a href="#property_defaultPaletteConditionClass" title="$defaultPaletteConditionClass() :: The the class to use for palette conditions."><span class="description"></span><pre>$defaultPaletteConditionClass</pre></a></li>
+<li class="property protected "><a href="#property_defaultPaletteConditionClassName" title="$defaultPaletteConditionClassName() :: The class name of the class to use for palette conditions."><span class="description"></span><pre>$defaultPaletteConditionClassName</pre></a></li>
+<li class="property protected "><a href="#property_legend" title="$legend() :: The legend currently working on."><span class="description"></span><pre>$legend</pre></a></li>
+<li class="property protected "><a href="#property_legendClass" title="$legendClass() :: The class to use for palette legends."><span class="description"></span><pre>$legendClass</pre></a></li>
+<li class="property protected "><a href="#property_legendClassName" title="$legendClassName() :: The class name of the class to use for palette legends."><span class="description"></span><pre>$legendClassName</pre></a></li>
+<li class="property protected "><a href="#property_palette" title="$palette() :: The palette currently working on."><span class="description"></span><pre>$palette</pre></a></li>
+<li class="property protected "><a href="#property_paletteClass" title="$paletteClass() :: The class to use for palettes."><span class="description"></span><pre>$paletteClass</pre></a></li>
+<li class="property protected "><a href="#property_paletteClassName" title="$paletteClassName() :: The class name of the class to use for palettes."><span class="description"></span><pre>$paletteClassName</pre></a></li>
+<li class="property protected "><a href="#property_paletteCollection" title="$paletteCollection() :: The palette collection currently working on."><span class="description"></span><pre>$paletteCollection</pre></a></li>
+<li class="property protected "><a href="#property_paletteCollectionClass" title="$paletteCollectionClass() :: The class to use for palette collections."><span class="description"></span><pre>$paletteCollectionClass</pre></a></li>
+<li class="property protected "><a href="#property_paletteCollectionClassName" title="$paletteCollectionClassName() :: The class name of the class to use for palette collections."><span class="description"></span><pre>$paletteCollectionClassName</pre></a></li>
+<li class="property protected "><a href="#property_paletteConditionChainClass" title="$paletteConditionChainClass() :: The the class to use for palette condition chains."><span class="description"></span><pre>$paletteConditionChainClass</pre></a></li>
+<li class="property protected "><a href="#property_paletteConditionChainClassName" title="$paletteConditionChainClassName() :: The class name of the class to use for palette condition chains."><span class="description"></span><pre>$paletteConditionChainClassName</pre></a></li>
+<li class="property protected "><a href="#property_palettePropertyValueConditionClass" title="$palettePropertyValueConditionClass() :: The class to use for property value conditions."><span class="description"></span><pre>$palettePropertyValueConditionClass</pre></a></li>
+<li class="property protected "><a href="#property_palettePropertyValueConditionClassName" title="$palettePropertyValueConditionClassName() :: The class name of the class to use for property value conditions."><span class="description"></span><pre>$palettePropertyValueConditionClassName</pre></a></li>
+<li class="property protected "><a href="#property_property" title="$property() :: The property currently working on."><span class="description"></span><pre>$property</pre></a></li>
+<li class="property protected "><a href="#property_propertyClass" title="$propertyClass() :: The class to use for palette properties."><span class="description"></span><pre>$propertyClass</pre></a></li>
+<li class="property protected "><a href="#property_propertyClassName" title="$propertyClassName() :: The class name of the class to use for palette properties."><span class="description"></span><pre>$propertyClassName</pre></a></li>
+<li class="property protected "><a href="#property_propertyConditionChainClass" title="$propertyConditionChainClass() :: The class to use for property condition chains."><span class="description"></span><pre>$propertyConditionChainClass</pre></a></li>
+<li class="property protected "><a href="#property_propertyConditionChainClassName" title="$propertyConditionChainClassName() :: The class name of the class to use for property condition chains."><span class="description"></span><pre>$propertyConditionChainClassName</pre></a></li>
+<li class="property protected "><a href="#property_propertyValueConditionClass" title="$propertyValueConditionClass() :: The the class to use for property value conditions."><span class="description"></span><pre>$propertyValueConditionClass</pre></a></li>
+<li class="property protected "><a href="#property_propertyValueConditionClassName" title="$propertyValueConditionClassName() :: The class name of the class to use for property value conditions."><span class="description"></span><pre>$propertyValueConditionClassName</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_EDITABLE" title="EDITABLE() :: The condition define if the property is editable."><span class="description">The condition define if the property is editable.</span><pre>EDITABLE</pre></a></li>
+<li class="constant  "><a href="#constant_VISIBLE" title="VISIBLE() :: The condition define if the property is viewable."><span class="description">The condition define if the property is viewable.</span><pre>VISIBLE</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.html">Palette</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.html">Builder</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">PaletteBuilder</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The palette builder is used to build palette collections, palettes, legends, properties and conditions.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new palette builder.</h2>
+<pre>__construct(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container for which the palettes shall be built.</p></div>
+</div></div>
+</div>
+<a id="method_addCondition"></a><div class="element clickable method public method_addCondition" data-toggle="collapse" data-target=".method_addCondition .collapse">
+<h2>Add a custom condition to last created property or palette.</h2>
+<pre>addCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface $condition, string $scope) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a></code><p>The condition to add.</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>The scope.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>When an unknown condition type is passed.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_chainDefaultPaletteCondition"></a><div class="element clickable method public method_chainDefaultPaletteCondition" data-toggle="collapse" data-target=".method_chainDefaultPaletteCondition .collapse">
+<h2>Start a new default-palette condition and chain with previous condition.</h2>
+<pre>chainDefaultPaletteCondition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no palette or property has been stored.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_chainPropertyValueCondition"></a><div class="element clickable method public method_chainPropertyValueCondition" data-toggle="collapse" data-target=".method_chainPropertyValueCondition .collapse">
+<h2>Start a new property-value condition and chain with previous condition.</h2>
+<pre>chainPropertyValueCondition(string $propertyName, mixed $propertyValue, bool $strict, string $conjunction) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$propertyValue</h4>
+<code>mixed</code><p>The value of the property.</p></div>
+<div class="subelement argument">
+<h4>$strict</h4>
+<code>bool</code><p>Flag if the comparison shall be strict (type safe).</p>
+</div>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>The conjunction.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If neither a palette nor a property is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Factory method to create a new palette builder.</h2>
+<pre>create(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The data definition container for which the palettes shall get built.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createDefaultPaletteCondition"></a><div class="element clickable method public method_createDefaultPaletteCondition" data-toggle="collapse" data-target=".method_createDefaultPaletteCondition .collapse">
+<h2>Start a new default-palette condition.</h2>
+<pre>createDefaultPaletteCondition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no palette or property has been stored.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createLegend"></a><div class="element clickable method public method_createLegend" data-toggle="collapse" data-target=".method_createLegend .collapse">
+<h2>Start a new legend.</h2>
+<pre>createLegend(string $name) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of the legend.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createPalette"></a><div class="element clickable method public method_createPalette" data-toggle="collapse" data-target=".method_createPalette .collapse">
+<h2>Start a new palette.</h2>
+<pre>createPalette(string|null $name) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><code>null</code><p>Only for backwards compatibility, we will remove palette names in the future (deprecated).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createPaletteCollection"></a><div class="element clickable method public method_createPaletteCollection" data-toggle="collapse" data-target=".method_createPaletteCollection .collapse">
+<h2>Start a new palette collection.</h2>
+<pre>createPaletteCollection() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createProperty"></a><div class="element clickable method public method_createProperty" data-toggle="collapse" data-target=".method_createProperty .collapse">
+<h2>Start a new single property or set of properties.</h2>
+<pre>createProperty(string $propertyName, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $_) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$_</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>Any more subsequent property names to be used.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createPropertyValueCondition"></a><div class="element clickable method public method_createPropertyValueCondition" data-toggle="collapse" data-target=".method_createPropertyValueCondition .collapse">
+<h2>Start a new property-value condition.</h2>
+<pre>createPropertyValueCondition(string $propertyName, mixed $propertyValue, bool $strict) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$propertyValue</h4>
+<code>mixed</code><p>The value of the property.</p></div>
+<div class="subelement argument">
+<h4>$strict</h4>
+<code>bool</code><p>Flag if the comparison shall be strict (type safe).</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If neither a palette nor a property is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_finishCondition"></a><div class="element clickable method public method_finishCondition" data-toggle="collapse" data-target=".method_finishCondition .collapse">
+<h2>Finish the current condition.</h2>
+<pre>finishCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface $condition) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><p>Return the final condition.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If no condition is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_finishLegend"></a><div class="element clickable method public method_finishLegend" data-toggle="collapse" data-target=".method_finishLegend .collapse">
+<h2>Finish the current legend.</h2>
+<pre>finishLegend(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $legend) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legend</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>Return the final legend.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no legend is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_finishPalette"></a><div class="element clickable method public method_finishPalette" data-toggle="collapse" data-target=".method_finishPalette .collapse">
+<h2>Finish the current palette.</h2>
+<pre>finishPalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$palette</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><p>Return the final palette.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no palette is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_finishPaletteCollection"></a><div class="element clickable method public method_finishPaletteCollection" data-toggle="collapse" data-target=".method_finishPaletteCollection .collapse">
+<h2>Finish the current palette collection.</h2>
+<pre>finishPaletteCollection(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface $collection) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code><p>Return the final palette collection.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no collection is stored.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_finishProperty"></a><div class="element clickable method public method_finishProperty" data-toggle="collapse" data-target=".method_finishProperty .collapse">
+<h2>Finish the current property or set of properties.</h2>
+<pre>finishProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[] $property) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><code><a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code><p>Return the final property or set of properties.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no property is stored in the builder.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_getCondition"></a><div class="element clickable method public method_getCondition" data-toggle="collapse" data-target=".method_getCondition .collapse">
+<h2>Return the current condition object.</h2>
+<pre>getCondition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a> | <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getContainer"></a><div class="element clickable method public method_getContainer" data-toggle="collapse" data-target=".method_getContainer .collapse">
+<h2>Retrieve the container.</h2>
+<pre>getContainer() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDefaultPaletteConditionClassName"></a><div class="element clickable method public method_getDefaultPaletteConditionClassName" data-toggle="collapse" data-target=".method_getDefaultPaletteConditionClassName .collapse">
+<h2>Return the default palette condition class name.</h2>
+<pre>getDefaultPaletteConditionClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getLegend"></a><div class="element clickable method public method_getLegend" data-toggle="collapse" data-target=".method_getLegend .collapse">
+<h2>Return the current legend object.</h2>
+<pre>getLegend() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getLegendClassName"></a><div class="element clickable method public method_getLegendClassName" data-toggle="collapse" data-target=".method_getLegendClassName .collapse">
+<h2>Return the legend class name.</h2>
+<pre>getLegendClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPalette"></a><div class="element clickable method public method_getPalette" data-toggle="collapse" data-target=".method_getPalette .collapse">
+<h2>Return the current palette object.</h2>
+<pre>getPalette() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getPaletteClassName"></a><div class="element clickable method public method_getPaletteClassName" data-toggle="collapse" data-target=".method_getPaletteClassName .collapse">
+<h2>Return the palette class name.</h2>
+<pre>getPaletteClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPaletteCollection"></a><div class="element clickable method public method_getPaletteCollection" data-toggle="collapse" data-target=".method_getPaletteCollection .collapse">
+<h2>Return the current palette collection object.</h2>
+<pre>getPaletteCollection() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getPaletteCollectionClassName"></a><div class="element clickable method public method_getPaletteCollectionClassName" data-toggle="collapse" data-target=".method_getPaletteCollectionClassName .collapse">
+<h2>Return the palette collection class name.</h2>
+<pre>getPaletteCollectionClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPaletteConditionChainClassName"></a><div class="element clickable method public method_getPaletteConditionChainClassName" data-toggle="collapse" data-target=".method_getPaletteConditionChainClassName .collapse">
+<h2>Return the palette condition chain class name.</h2>
+<pre>getPaletteConditionChainClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPalettePropertyValueConditionClassName"></a><div class="element clickable method public method_getPalettePropertyValueConditionClassName" data-toggle="collapse" data-target=".method_getPalettePropertyValueConditionClassName .collapse">
+<h2>Return the palette property value condition class name.</h2>
+<pre>getPalettePropertyValueConditionClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
+<h2>Return the current property object.</h2>
+<pre>getProperty() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getPropertyClassName"></a><div class="element clickable method public method_getPropertyClassName" data-toggle="collapse" data-target=".method_getPropertyClassName .collapse">
+<h2>Return the property class name.</h2>
+<pre>getPropertyClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPropertyConditionChainClassName"></a><div class="element clickable method public method_getPropertyConditionChainClassName" data-toggle="collapse" data-target=".method_getPropertyConditionChainClassName .collapse">
+<h2>Return the property condition chain class name.</h2>
+<pre>getPropertyConditionChainClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPropertyValueConditionClassName"></a><div class="element clickable method public method_getPropertyValueConditionClassName" data-toggle="collapse" data-target=".method_getPropertyValueConditionClassName .collapse">
+<h2>Return the property value condition class name.</h2>
+<pre>getPropertyValueConditionClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setDefaultPaletteConditionClassName"></a><div class="element clickable method public method_setDefaultPaletteConditionClassName" data-toggle="collapse" data-target=".method_setDefaultPaletteConditionClassName .collapse">
+<h2>Set the default palette condition class name.</h2>
+<pre>setDefaultPaletteConditionClassName(string $defaultPaletteConditionClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$defaultPaletteConditionClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setLegendClassName"></a><div class="element clickable method public method_setLegendClassName" data-toggle="collapse" data-target=".method_setLegendClassName .collapse">
+<h2>Set the legend class name.</h2>
+<pre>setLegendClassName(string $legendClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legendClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPaletteClassName"></a><div class="element clickable method public method_setPaletteClassName" data-toggle="collapse" data-target=".method_setPaletteClassName .collapse">
+<h2>Set the palette class name.</h2>
+<pre>setPaletteClassName(string $paletteClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPaletteCollectionClassName"></a><div class="element clickable method public method_setPaletteCollectionClassName" data-toggle="collapse" data-target=".method_setPaletteCollectionClassName .collapse">
+<h2>Set the palette collection class name.</h2>
+<pre>setPaletteCollectionClassName(string $paletteCollectionClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteCollectionClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPaletteConditionChainClassName"></a><div class="element clickable method public method_setPaletteConditionChainClassName" data-toggle="collapse" data-target=".method_setPaletteConditionChainClassName .collapse">
+<h2>Set the palette condition chain class name.</h2>
+<pre>setPaletteConditionChainClassName(string $paletteConditionChainClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteConditionChainClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPalettePropertyValueConditionClassName"></a><div class="element clickable method public method_setPalettePropertyValueConditionClassName" data-toggle="collapse" data-target=".method_setPalettePropertyValueConditionClassName .collapse">
+<h2>Set the palette property value condition class name.</h2>
+<pre>setPalettePropertyValueConditionClassName(string $palettePropertyValueConditionClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$palettePropertyValueConditionClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPropertyClassName"></a><div class="element clickable method public method_setPropertyClassName" data-toggle="collapse" data-target=".method_setPropertyClassName .collapse">
+<h2>Set the property class name.</h2>
+<pre>setPropertyClassName(string $propertyClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPropertyConditionChainClassName"></a><div class="element clickable method public method_setPropertyConditionChainClassName" data-toggle="collapse" data-target=".method_setPropertyConditionChainClassName .collapse">
+<h2>Set the property condition chain class name.</h2>
+<pre>setPropertyConditionChainClassName(string $propertyConditionChainClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyConditionChainClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_setPropertyValueConditionClassName"></a><div class="element clickable method public method_setPropertyValueConditionClassName" data-toggle="collapse" data-target=".method_setPropertyValueConditionClassName .collapse">
+<h2>Set the property value condition class name.</h2>
+<pre>setPropertyValueConditionClassName(string $propertyValueConditionClassName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyValueConditionClassName</h4>
+<code>string</code><p>The class name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_useLegend"></a><div class="element clickable method public method_useLegend" data-toggle="collapse" data-target=".method_useLegend .collapse">
+<h2>Reuse an existing legend.</h2>
+<pre>useLegend(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface $legend) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$legend</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a></code><p>The legend.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_usePalette"></a><div class="element clickable method public method_usePalette" data-toggle="collapse" data-target=".method_usePalette .collapse">
+<h2>Reuse an existing palette.</h2>
+<pre>usePalette(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$palette</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><p>The palette to reuse.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_usePaletteCollection"></a><div class="element clickable method public method_usePaletteCollection" data-toggle="collapse" data-target=".method_usePaletteCollection .collapse">
+<h2>Reuse an existing palette collection.</h2>
+<pre>usePaletteCollection(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface $paletteCollection) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteCollection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code><p>The palette collection to reuse.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_useProperty"></a><div class="element clickable method public method_useProperty" data-toggle="collapse" data-target=".method_useProperty .collapse">
+<h2>Reuse an existing property or set of properties.</h2>
+<pre>useProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $property, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface $_) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>The first property.</p></div>
+<div class="subelement argument">
+<h4>$_</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a></code><p>Any more subsequent properties to be used.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_addPaletteCondition"></a><div class="element clickable method protected method_addPaletteCondition" data-toggle="collapse" data-target=".method_addPaletteCondition .collapse">
+<h2>Add a custom condition to last created palette.</h2>
+<pre>addPaletteCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface $condition) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code><p>The condition to add.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the palette is missing.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_addPropertyCondition"></a><div class="element clickable method protected method_addPropertyCondition" data-toggle="collapse" data-target=".method_addPropertyCondition .collapse">
+<h2>Add a custom condition to last created property.</h2>
+<pre>addPropertyCondition(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface $condition, string $scope) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$condition</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a></code><p>The condition to add.</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>The scope.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the the property is missing.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_createPaletteConditionChain"></a><div class="element clickable method protected method_createPaletteConditionChain" data-toggle="collapse" data-target=".method_createPaletteConditionChain .collapse">
+<h2>Create a palette condition chain.</h2>
+<pre>createPaletteConditionChain() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_createPropertyConditionChain"></a><div class="element clickable method protected method_createPropertyConditionChain" data-toggle="collapse" data-target=".method_createPropertyConditionChain .collapse">
+<h2>Create a palette condition chain.</h2>
+<pre>createPropertyConditionChain(string $conjunction) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>The conjunction to use (defaults to AND).</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.PaletteBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\PaletteBuilder</a></code></div>
+</div></div>
+</div>
+<a id="method_dispatchEvent"></a><div class="element clickable method protected method_dispatchEvent" data-toggle="collapse" data-target=".method_dispatchEvent .collapse">
+<h2>Dispatch an event over the global event dispatcher.</h2>
+<pre>dispatchEvent(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent $event) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>internal</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.Event.BuilderEvent.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Builder\Event\BuilderEvent</a></code><p>The event to dispatch.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_condition"> </a><div class="element clickable property protected property_condition" data-toggle="collapse" data-target=".property_condition .collapse">
+<h2>The condition currently working on.</h2>
+<pre>$condition : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyConditionInterface</a> | <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a> | <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ConditionChainInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ConditionChainInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_container"> </a><div class="element clickable property protected property_container" data-toggle="collapse" data-target=".property_container .collapse">
+<h2>The data definition container.</h2>
+<pre>$container : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_defaultPaletteConditionClass"> </a><div class="element clickable property protected property_defaultPaletteConditionClass" data-toggle="collapse" data-target=".property_defaultPaletteConditionClass .collapse">
+<h2>The the class to use for palette conditions.</h2>
+<pre>$defaultPaletteConditionClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_defaultPaletteConditionClassName"> </a><div class="element clickable property protected property_defaultPaletteConditionClassName" data-toggle="collapse" data-target=".property_defaultPaletteConditionClassName .collapse">
+<h2>The class name of the class to use for palette conditions.</h2>
+<pre>$defaultPaletteConditionClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_legend"> </a><div class="element clickable property protected property_legend" data-toggle="collapse" data-target=".property_legend .collapse">
+<h2>The legend currently working on.</h2>
+<pre>$legend : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.LegendInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\LegendInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_legendClass"> </a><div class="element clickable property protected property_legendClass" data-toggle="collapse" data-target=".property_legendClass .collapse">
+<h2>The class to use for palette legends.</h2>
+<pre>$legendClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_legendClassName"> </a><div class="element clickable property protected property_legendClassName" data-toggle="collapse" data-target=".property_legendClassName .collapse">
+<h2>The class name of the class to use for palette legends.</h2>
+<pre>$legendClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_palette"> </a><div class="element clickable property protected property_palette" data-toggle="collapse" data-target=".property_palette .collapse">
+<h2>The palette currently working on.</h2>
+<pre>$palette : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteClass"> </a><div class="element clickable property protected property_paletteClass" data-toggle="collapse" data-target=".property_paletteClass .collapse">
+<h2>The class to use for palettes.</h2>
+<pre>$paletteClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteClassName"> </a><div class="element clickable property protected property_paletteClassName" data-toggle="collapse" data-target=".property_paletteClassName .collapse">
+<h2>The class name of the class to use for palettes.</h2>
+<pre>$paletteClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteCollection"> </a><div class="element clickable property protected property_paletteCollection" data-toggle="collapse" data-target=".property_paletteCollection .collapse">
+<h2>The palette collection currently working on.</h2>
+<pre>$paletteCollection : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteCollectionClass"> </a><div class="element clickable property protected property_paletteCollectionClass" data-toggle="collapse" data-target=".property_paletteCollectionClass .collapse">
+<h2>The class to use for palette collections.</h2>
+<pre>$paletteCollectionClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteCollectionClassName"> </a><div class="element clickable property protected property_paletteCollectionClassName" data-toggle="collapse" data-target=".property_paletteCollectionClassName .collapse">
+<h2>The class name of the class to use for palette collections.</h2>
+<pre>$paletteCollectionClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteConditionChainClass"> </a><div class="element clickable property protected property_paletteConditionChainClass" data-toggle="collapse" data-target=".property_paletteConditionChainClass .collapse">
+<h2>The the class to use for palette condition chains.</h2>
+<pre>$paletteConditionChainClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paletteConditionChainClassName"> </a><div class="element clickable property protected property_paletteConditionChainClassName" data-toggle="collapse" data-target=".property_paletteConditionChainClassName .collapse">
+<h2>The class name of the class to use for palette condition chains.</h2>
+<pre>$paletteConditionChainClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_palettePropertyValueConditionClass"> </a><div class="element clickable property protected property_palettePropertyValueConditionClass" data-toggle="collapse" data-target=".property_palettePropertyValueConditionClass .collapse">
+<h2>The class to use for property value conditions.</h2>
+<pre>$palettePropertyValueConditionClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_palettePropertyValueConditionClassName"> </a><div class="element clickable property protected property_palettePropertyValueConditionClassName" data-toggle="collapse" data-target=".property_palettePropertyValueConditionClassName .collapse">
+<h2>The class name of the class to use for property value conditions.</h2>
+<pre>$palettePropertyValueConditionClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_property"> </a><div class="element clickable property protected property_property" data-toggle="collapse" data-target=".property_property .collapse">
+<h2>The property currently working on.</h2>
+<pre>$property : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyClass"> </a><div class="element clickable property protected property_propertyClass" data-toggle="collapse" data-target=".property_propertyClass .collapse">
+<h2>The class to use for palette properties.</h2>
+<pre>$propertyClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyClassName"> </a><div class="element clickable property protected property_propertyClassName" data-toggle="collapse" data-target=".property_propertyClassName .collapse">
+<h2>The class name of the class to use for palette properties.</h2>
+<pre>$propertyClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyConditionChainClass"> </a><div class="element clickable property protected property_propertyConditionChainClass" data-toggle="collapse" data-target=".property_propertyConditionChainClass .collapse">
+<h2>The class to use for property condition chains.</h2>
+<pre>$propertyConditionChainClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyConditionChainClassName"> </a><div class="element clickable property protected property_propertyConditionChainClassName" data-toggle="collapse" data-target=".property_propertyConditionChainClassName .collapse">
+<h2>The class name of the class to use for property condition chains.</h2>
+<pre>$propertyConditionChainClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyValueConditionClass"> </a><div class="element clickable property protected property_propertyValueConditionClass" data-toggle="collapse" data-target=".property_propertyValueConditionClass .collapse">
+<h2>The the class to use for property value conditions.</h2>
+<pre>$propertyValueConditionClass : <a href="ReflectionClass.html">\ReflectionClass</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_propertyValueConditionClassName"> </a><div class="element clickable property protected property_propertyValueConditionClassName" data-toggle="collapse" data-target=".property_propertyValueConditionClassName .collapse">
+<h2>The class name of the class to use for property value conditions.</h2>
+<pre>$propertyValueConditionClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_EDITABLE"> </a><div class="element clickable constant  constant_EDITABLE" data-toggle="collapse" data-target=".constant_EDITABLE .collapse">
+<h2>The condition define if the property is editable.</h2>
+<pre>EDITABLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_VISIBLE"> </a><div class="element clickable constant  constant_VISIBLE" data-toggle="collapse" data-target=".constant_VISIBLE .collapse">
+<h2>The condition define if the property is viewable.</h2>
+<pre>VISIBLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:36+02:00.<br></footer></div>
+</div>
+</body>
+</html>

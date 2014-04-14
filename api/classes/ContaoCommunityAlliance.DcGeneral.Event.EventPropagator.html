@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Event\EventPropagator</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addListener" title="addListener() :: Adds an event listener that listens on the specified events."><span class="description">Adds an event listener that listens on the specified events.</span><pre>addListener()</pre></a></li>
+<li class="method public "><a href="#method_addSubscriber" title="addSubscriber() :: Adds an event subscriber."><span class="description">Adds an event subscriber.</span><pre>addSubscriber()</pre></a></li>
+<li class="method public "><a href="#method_dispatch" title="dispatch() :: Dispatches an event to all registered listeners."><span class="description">Dispatches an event to all registered listeners.</span><pre>dispatch()</pre></a></li>
+<li class="method public "><a href="#method_getListeners" title="getListeners() :: Gets the listeners of a specific event or all listeners."><span class="description">Gets the listeners of a specific event or all listeners.</span><pre>getListeners()</pre></a></li>
+<li class="method public "><a href="#method_hasListeners" title="hasListeners() :: Checks whether an event has any registered listeners."><span class="description">Checks whether an event has any registered listeners.</span><pre>hasListeners()</pre></a></li>
+<li class="method public "><a href="#method_propagate" title="propagate() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>propagate()</pre></a></li>
+<li class="method public "><a href="#method_propagateExact" title="propagateExact() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>propagateExact()</pre></a></li>
+<li class="method public "><a href="#method_removeListener" title="removeListener() :: Removes an event listener from the specified events."><span class="description">Removes an event listener from the specified events.</span><pre>removeListener()</pre></a></li>
+<li class="method public "><a href="#method_removeSubscriber" title="removeSubscriber() :: Removes an event subscriber."><span class="description">Removes an event subscriber.</span><pre>removeSubscriber()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_dispatcher" title="$dispatcher() :: The attached event dispatcher."><span class="description"></span><pre>$dispatcher</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Event\EventPropagator"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Event.html">Event</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagator.html">EventPropagator</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The generic event propagator implementation.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Event.html">DcGeneral\Event</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance.</h2>
+<pre>__construct(\Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dispatcher</h4>
+<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher to attach.</p></div>
+</div></div>
+</div>
+<a id="method_addListener"></a><div class="element clickable method public method_addListener" data-toggle="collapse" data-target=".method_addListener .collapse">
+<h2>Adds an event listener that listens on the specified events.</h2>
+<pre>addListener(string $eventName, callable $listener, integer $priority) : void</pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The event to listen on.</p></div>
+<div class="subelement argument">
+<h4>$listener</h4>
+<code>callable</code><p>The listener.</p></div>
+<div class="subelement argument">
+<h4>$priority</h4>
+<code>integer</code><p>The higher this value, the earlier an event listener will be triggered in the chain
+                           (defaults to 0).</p>
+</div>
+</div></div>
+</div>
+<a id="method_addSubscriber"></a><div class="element clickable method public method_addSubscriber" data-toggle="collapse" data-target=".method_addSubscriber .collapse">
+<h2>Adds an event subscriber.</h2>
+<pre>addSubscriber(\Symfony\Component\EventDispatcher\EventSubscriberInterface $subscriber) : void</pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The subscriber is asked for all the events he is
+interested in and added as a listener for these events.</div>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subscriber</h4>
+<code><a href="EventSubscriberInterface.html">\Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code><p>The subscriber.</p></div>
+</div></div>
+</div>
+<a id="method_dispatch"></a><div class="element clickable method public method_dispatch" data-toggle="collapse" data-target=".method_dispatch .collapse">
+<h2>Dispatches an event to all registered listeners.</h2>
+<pre>dispatch(string $eventName, \Symfony\Component\EventDispatcher\Event $event) : <a href="Event.html">\Symfony\Component\EventDispatcher\Event</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The name of the event to dispatch. The name of
+                         the event is the name of the method that is
+                         invoked on listeners.</p></div>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="Event.html">\Symfony\Component\EventDispatcher\Event</a></code><p>The event to pass to the event handlers/listeners.
+                         If not supplied, an empty Event instance is created.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="Event.html">\Symfony\Component\EventDispatcher\Event</a></code></div>
+</div></div>
+</div>
+<a id="method_getListeners"></a><div class="element clickable method public method_getListeners" data-toggle="collapse" data-target=".method_getListeners .collapse">
+<h2>Gets the listeners of a specific event or all listeners.</h2>
+<pre>getListeners(string $eventName) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The name of the event.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The event listeners for the specified event, or all event listeners by event name</div>
+</div></div>
+</div>
+<a id="method_hasListeners"></a><div class="element clickable method public method_hasListeners" data-toggle="collapse" data-target=".method_hasListeners .collapse">
+<h2>Checks whether an event has any registered listeners.</h2>
+<pre>hasListeners(string $eventName) : Boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The name of the event.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>Boolean</code>true if the specified event has any listeners, false otherwise</div>
+</div></div>
+</div>
+<a id="method_propagate"></a><div class="element clickable method public method_propagate" data-toggle="collapse" data-target=".method_propagate .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>propagate($eventName, $event, $suffixes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$eventName</h4></div>
+<div class="subelement argument"><h4>$event</h4></div>
+<div class="subelement argument"><h4>$suffixes</h4></div>
+</div></div>
+</div>
+<a id="method_propagateExact"></a><div class="element clickable method public method_propagateExact" data-toggle="collapse" data-target=".method_propagateExact .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>propagateExact($eventName, $event, $suffixes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$eventName</h4></div>
+<div class="subelement argument"><h4>$event</h4></div>
+<div class="subelement argument"><h4>$suffixes</h4></div>
+</div></div>
+</div>
+<a id="method_removeListener"></a><div class="element clickable method public method_removeListener" data-toggle="collapse" data-target=".method_removeListener .collapse">
+<h2>Removes an event listener from the specified events.</h2>
+<pre>removeListener(string|array $eventName, callable $listener) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><code>array</code><p>The event(s) to remove a listener from.</p>
+</div>
+<div class="subelement argument">
+<h4>$listener</h4>
+<code>callable</code><p>The listener to remove.</p></div>
+</div></div>
+</div>
+<a id="method_removeSubscriber"></a><div class="element clickable method public method_removeSubscriber" data-toggle="collapse" data-target=".method_removeSubscriber .collapse">
+<h2>Removes an event subscriber.</h2>
+<pre>removeSubscriber(\Symfony\Component\EventDispatcher\EventSubscriberInterface $subscriber) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subscriber</h4>
+<code><a href="EventSubscriberInterface.html">\Symfony\Component\EventDispatcher\EventSubscriberInterface</a></code><p>The subscriber.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_dispatcher"> </a><div class="element clickable property protected property_dispatcher" data-toggle="collapse" data-target=".property_dispatcher .collapse">
+<h2>The attached event dispatcher.</h2>
+<pre>$dispatcher : <a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:33+02:00.<br></footer></div>
+</div>
+</body>
+</html>

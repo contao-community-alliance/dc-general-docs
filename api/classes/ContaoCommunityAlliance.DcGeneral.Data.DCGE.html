@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Data\DCGE</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_INSERT_AFTER_END" title="INSERT_AFTER_END() :: Move/Insert after End"><span class="description">Move/Insert after End</span><pre>INSERT_AFTER_END</pre></a></li>
+<li class="constant  "><a href="#constant_INSERT_AFTER_START" title="INSERT_AFTER_START() :: Move/Insert after Start"><span class="description">Move/Insert after Start</span><pre>INSERT_AFTER_START</pre></a></li>
+<li class="constant  "><a href="#constant_INSERT_INTO_ROOT" title="INSERT_INTO_ROOT() :: Move/Insert into root"><span class="description">Move/Insert into root</span><pre>INSERT_INTO_ROOT</pre></a></li>
+<li class="constant  "><a href="#constant_LANGUAGE_ML" title="LANGUAGE_ML() :: Multi language"><span class="description">Multi language</span><pre>LANGUAGE_ML</pre></a></li>
+<li class="constant  "><a href="#constant_LANGUAGE_SL" title="LANGUAGE_SL() :: Single language"><span class="description">Single language</span><pre>LANGUAGE_SL</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_BUTTONS" title="MODEL_BUTTONS() :: "><span class="description">MODEL_BUTTONS</span><pre>MODEL_BUTTONS</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_CLASS" title="MODEL_CLASS() :: "><span class="description">MODEL_CLASS</span><pre>MODEL_CLASS</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_EVEN_ODD_CLASS" title="MODEL_EVEN_ODD_CLASS() :: "><span class="description">MODEL_EVEN_ODD_CLASS</span><pre>MODEL_EVEN_ODD_CLASS</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_GROUP_HEADER" title="MODEL_GROUP_HEADER() :: "><span class="description">MODEL_GROUP_HEADER</span><pre>MODEL_GROUP_HEADER</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_GROUP_VALUE" title="MODEL_GROUP_VALUE() :: "><span class="description">MODEL_GROUP_VALUE</span><pre>MODEL_GROUP_VALUE</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_CHANGED" title="MODEL_IS_CHANGED() :: State if the model is changed"><span class="description">State if the model is changed</span><pre>MODEL_IS_CHANGED</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_LABEL_ARGS" title="MODEL_LABEL_ARGS() :: "><span class="description">MODEL_LABEL_ARGS</span><pre>MODEL_LABEL_ARGS</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_LABEL_VALUE" title="MODEL_LABEL_VALUE() :: "><span class="description">MODEL_LABEL_VALUE</span><pre>MODEL_LABEL_VALUE</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_PID" title="MODEL_PID() :: parents id value."><span class="description">parents id value.</span><pre>MODEL_PID</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_PTABLE" title="MODEL_PTABLE() :: parents provider name."><span class="description">parents provider name.</span><pre>MODEL_PTABLE</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_SORTING_ASC" title="MODEL_SORTING_ASC() :: DataProvider sorting order asc"><span class="description">DataProvider sorting order asc</span><pre>MODEL_SORTING_ASC</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_SORTING_DESC" title="MODEL_SORTING_DESC() :: DataProvider sorting order desc"><span class="description">DataProvider sorting order desc</span><pre>MODEL_SORTING_DESC</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_FIXED_FIELD" title="MODE_FIXED_FIELD() :: Sorting by a fixed field."><span class="description">Sorting by a fixed field.</span><pre>MODE_FIXED_FIELD</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_NON_SORTING" title="MODE_NON_SORTING() :: Sorting unsorted."><span class="description">Sorting unsorted.</span><pre>MODE_NON_SORTING</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_PARENT_TREEVIEW" title="MODE_PARENT_TREEVIEW() :: Sorting as a parented tree."><span class="description">Sorting as a parented tree.</span><pre>MODE_PARENT_TREEVIEW</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_PARENT_VIEW" title="MODE_PARENT_VIEW() :: Sorting by the parent record."><span class="description">Sorting by the parent record.</span><pre>MODE_PARENT_VIEW</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_SIMPLE_TREEVIEW" title="MODE_SIMPLE_TREEVIEW() :: Sorting as a simple tree."><span class="description">Sorting as a simple tree.</span><pre>MODE_SIMPLE_TREEVIEW</pre></a></li>
+<li class="constant  "><a href="#constant_MODE_VARIABLE_FIELD" title="MODE_VARIABLE_FIELD() :: Sorting by a variable field."><span class="description">Sorting by a variable field.</span><pre>MODE_VARIABLE_FIELD</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_CHILD_COLLECTION" title="TREE_VIEW_CHILD_COLLECTION() :: Child Collection."><span class="description">Child Collection.</span><pre>TREE_VIEW_CHILD_COLLECTION</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_HAS_CHILDS" title="TREE_VIEW_HAS_CHILDS() :: State if we have children."><span class="description">State if we have children.</span><pre>TREE_VIEW_HAS_CHILDS</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_IS_OPEN" title="TREE_VIEW_IS_OPEN() :: Is the tree item open."><span class="description">Is the tree item open.</span><pre>TREE_VIEW_IS_OPEN</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_LEVEL" title="TREE_VIEW_LEVEL() :: The current level in a tree view."><span class="description">The current level in a tree view.</span><pre>TREE_VIEW_LEVEL</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_TITLE" title="TREE_VIEW_TITLE() :: Title of an item in a tree view."><span class="description">Title of an item in a tree view.</span><pre>TREE_VIEW_TITLE</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Data\DCGE"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Data.html">Data</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DCGE.html">DCGE</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This class is a holder for all const vars.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_INSERT_AFTER_END"> </a><div class="element clickable constant  constant_INSERT_AFTER_END" data-toggle="collapse" data-target=".constant_INSERT_AFTER_END .collapse">
+<h2>Move/Insert after End</h2>
+<pre>INSERT_AFTER_END </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_INSERT_AFTER_START"> </a><div class="element clickable constant  constant_INSERT_AFTER_START" data-toggle="collapse" data-target=".constant_INSERT_AFTER_START .collapse">
+<h2>Move/Insert after Start</h2>
+<pre>INSERT_AFTER_START </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_INSERT_INTO_ROOT"> </a><div class="element clickable constant  constant_INSERT_INTO_ROOT" data-toggle="collapse" data-target=".constant_INSERT_INTO_ROOT .collapse">
+<h2>Move/Insert into root</h2>
+<pre>INSERT_INTO_ROOT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_LANGUAGE_ML"> </a><div class="element clickable constant  constant_LANGUAGE_ML" data-toggle="collapse" data-target=".constant_LANGUAGE_ML .collapse">
+<h2>Multi language</h2>
+<pre>LANGUAGE_ML </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_LANGUAGE_SL"> </a><div class="element clickable constant  constant_LANGUAGE_SL" data-toggle="collapse" data-target=".constant_LANGUAGE_SL .collapse">
+<h2>Single language</h2>
+<pre>LANGUAGE_SL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_BUTTONS"> </a><div class="element clickable constant  constant_MODEL_BUTTONS" data-toggle="collapse" data-target=".constant_MODEL_BUTTONS .collapse">
+<h2>MODEL_BUTTONS</h2>
+<pre>MODEL_BUTTONS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_CLASS"> </a><div class="element clickable constant  constant_MODEL_CLASS" data-toggle="collapse" data-target=".constant_MODEL_CLASS .collapse">
+<h2>MODEL_CLASS</h2>
+<pre>MODEL_CLASS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_EVEN_ODD_CLASS"> </a><div class="element clickable constant  constant_MODEL_EVEN_ODD_CLASS" data-toggle="collapse" data-target=".constant_MODEL_EVEN_ODD_CLASS .collapse">
+<h2>MODEL_EVEN_ODD_CLASS</h2>
+<pre>MODEL_EVEN_ODD_CLASS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_GROUP_HEADER"> </a><div class="element clickable constant  constant_MODEL_GROUP_HEADER" data-toggle="collapse" data-target=".constant_MODEL_GROUP_HEADER .collapse">
+<h2>MODEL_GROUP_HEADER</h2>
+<pre>MODEL_GROUP_HEADER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_GROUP_VALUE"> </a><div class="element clickable constant  constant_MODEL_GROUP_VALUE" data-toggle="collapse" data-target=".constant_MODEL_GROUP_VALUE .collapse">
+<h2>MODEL_GROUP_VALUE</h2>
+<pre>MODEL_GROUP_VALUE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_IS_CHANGED"> </a><div class="element clickable constant  constant_MODEL_IS_CHANGED" data-toggle="collapse" data-target=".constant_MODEL_IS_CHANGED .collapse">
+<h2>State if the model is changed</h2>
+<pre>MODEL_IS_CHANGED </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_LABEL_ARGS"> </a><div class="element clickable constant  constant_MODEL_LABEL_ARGS" data-toggle="collapse" data-target=".constant_MODEL_LABEL_ARGS .collapse">
+<h2>MODEL_LABEL_ARGS</h2>
+<pre>MODEL_LABEL_ARGS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_LABEL_VALUE"> </a><div class="element clickable constant  constant_MODEL_LABEL_VALUE" data-toggle="collapse" data-target=".constant_MODEL_LABEL_VALUE .collapse">
+<h2>MODEL_LABEL_VALUE</h2>
+<pre>MODEL_LABEL_VALUE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_PID"> </a><div class="element clickable constant  constant_MODEL_PID" data-toggle="collapse" data-target=".constant_MODEL_PID .collapse">
+<h2>parents id value.</h2>
+<pre>MODEL_PID </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_PTABLE"> </a><div class="element clickable constant  constant_MODEL_PTABLE" data-toggle="collapse" data-target=".constant_MODEL_PTABLE .collapse">
+<h2>parents provider name.</h2>
+<pre>MODEL_PTABLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_SORTING_ASC"> </a><div class="element clickable constant  constant_MODEL_SORTING_ASC" data-toggle="collapse" data-target=".constant_MODEL_SORTING_ASC .collapse">
+<h2>DataProvider sorting order asc</h2>
+<pre>MODEL_SORTING_ASC </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_SORTING_DESC"> </a><div class="element clickable constant  constant_MODEL_SORTING_DESC" data-toggle="collapse" data-target=".constant_MODEL_SORTING_DESC .collapse">
+<h2>DataProvider sorting order desc</h2>
+<pre>MODEL_SORTING_DESC </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_FIXED_FIELD"> </a><div class="element clickable constant  constant_MODE_FIXED_FIELD" data-toggle="collapse" data-target=".constant_MODE_FIXED_FIELD .collapse">
+<h2>Sorting by a fixed field.</h2>
+<pre>MODE_FIXED_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_NON_SORTING"> </a><div class="element clickable constant  constant_MODE_NON_SORTING" data-toggle="collapse" data-target=".constant_MODE_NON_SORTING .collapse">
+<h2>Sorting unsorted.</h2>
+<pre>MODE_NON_SORTING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_PARENT_TREEVIEW"> </a><div class="element clickable constant  constant_MODE_PARENT_TREEVIEW" data-toggle="collapse" data-target=".constant_MODE_PARENT_TREEVIEW .collapse">
+<h2>Sorting as a parented tree.</h2>
+<pre>MODE_PARENT_TREEVIEW </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_PARENT_VIEW"> </a><div class="element clickable constant  constant_MODE_PARENT_VIEW" data-toggle="collapse" data-target=".constant_MODE_PARENT_VIEW .collapse">
+<h2>Sorting by the parent record.</h2>
+<pre>MODE_PARENT_VIEW </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_SIMPLE_TREEVIEW"> </a><div class="element clickable constant  constant_MODE_SIMPLE_TREEVIEW" data-toggle="collapse" data-target=".constant_MODE_SIMPLE_TREEVIEW .collapse">
+<h2>Sorting as a simple tree.</h2>
+<pre>MODE_SIMPLE_TREEVIEW </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODE_VARIABLE_FIELD"> </a><div class="element clickable constant  constant_MODE_VARIABLE_FIELD" data-toggle="collapse" data-target=".constant_MODE_VARIABLE_FIELD .collapse">
+<h2>Sorting by a variable field.</h2>
+<pre>MODE_VARIABLE_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TREE_VIEW_CHILD_COLLECTION"> </a><div class="element clickable constant  constant_TREE_VIEW_CHILD_COLLECTION" data-toggle="collapse" data-target=".constant_TREE_VIEW_CHILD_COLLECTION .collapse">
+<h2>Child Collection.</h2>
+<pre>TREE_VIEW_CHILD_COLLECTION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TREE_VIEW_HAS_CHILDS"> </a><div class="element clickable constant  constant_TREE_VIEW_HAS_CHILDS" data-toggle="collapse" data-target=".constant_TREE_VIEW_HAS_CHILDS .collapse">
+<h2>State if we have children.</h2>
+<pre>TREE_VIEW_HAS_CHILDS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TREE_VIEW_IS_OPEN"> </a><div class="element clickable constant  constant_TREE_VIEW_IS_OPEN" data-toggle="collapse" data-target=".constant_TREE_VIEW_IS_OPEN .collapse">
+<h2>Is the tree item open.</h2>
+<pre>TREE_VIEW_IS_OPEN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TREE_VIEW_LEVEL"> </a><div class="element clickable constant  constant_TREE_VIEW_LEVEL" data-toggle="collapse" data-target=".constant_TREE_VIEW_LEVEL .collapse">
+<h2>The current level in a tree view.</h2>
+<pre>TREE_VIEW_LEVEL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TREE_VIEW_TITLE"> </a><div class="element clickable constant  constant_TREE_VIEW_TITLE" data-toggle="collapse" data-target=".constant_TREE_VIEW_TITLE .collapse">
+<h2>Title of an item in a tree view.</h2>
+<pre>TREE_VIEW_TITLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:32+02:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DefaultBasicDefinition</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getAdditionalFilter" title="getAdditionalFilter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_getDataProvider" title="getDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getMode" title="getMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#method_getParentDataProvider" title="getParentDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getParentDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getRootDataProvider" title="getRootDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_hasAdditionalFilter" title="hasAdditionalFilter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_isClosed" title="isClosed() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isClosed()</pre></a></li>
+<li class="method public "><a href="#method_isCreatable" title="isCreatable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isCreatable()</pre></a></li>
+<li class="method public "><a href="#method_isDeletable" title="isDeletable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isDeletable()</pre></a></li>
+<li class="method public "><a href="#method_isEditOnlyMode" title="isEditOnlyMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isEditOnlyMode()</pre></a></li>
+<li class="method public "><a href="#method_isEditable" title="isEditable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isEditable()</pre></a></li>
+<li class="method public "><a href="#method_isSwitchToEditEnabled" title="isSwitchToEditEnabled() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isSwitchToEditEnabled()</pre></a></li>
+<li class="method public "><a href="#method_setAdditionalFilter" title="setAdditionalFilter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setAdditionalFilter()</pre></a></li>
+<li class="method public "><a href="#method_setClosed" title="setClosed() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setClosed()</pre></a></li>
+<li class="method public "><a href="#method_setCreatable" title="setCreatable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setCreatable()</pre></a></li>
+<li class="method public "><a href="#method_setDataProvider" title="setDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setDeletable" title="setDeletable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDeletable()</pre></a></li>
+<li class="method public "><a href="#method_setEditOnlyMode" title="setEditOnlyMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEditOnlyMode()</pre></a></li>
+<li class="method public "><a href="#method_setEditable" title="setEditable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEditable()</pre></a></li>
+<li class="method public "><a href="#method_setMode" title="setMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setMode()</pre></a></li>
+<li class="method public "><a href="#method_setParentDataProvider" title="setParentDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setParentDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setRootDataProvider" title="setRootDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setSwitchToEditEnabled" title="setSwitchToEditEnabled() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSwitchToEditEnabled()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_additionalFilter" title="$additionalFilter() :: Array of filter rules."><span class="description"></span><pre>$additionalFilter</pre></a></li>
+<li class="property protected "><a href="#property_isClosed" title="$isClosed() :: If true, adding of further records is prohibited."><span class="description"></span><pre>$isClosed</pre></a></li>
+<li class="property protected "><a href="#property_isCreatable" title="$isCreatable() :: Determines if new entries may be created within this data container."><span class="description"></span><pre>$isCreatable</pre></a></li>
+<li class="property protected "><a href="#property_isDeletable" title="$isDeletable() :: Boolean flag determining if this data container is deletable."><span class="description"></span><pre>$isDeletable</pre></a></li>
+<li class="property protected "><a href="#property_isEditOnlyMode" title="$isEditOnlyMode() :: If true, only edit mode is used."><span class="description"></span><pre>$isEditOnlyMode</pre></a></li>
+<li class="property protected "><a href="#property_isEditable" title="$isEditable() :: Boolean flag determining if this data container is editable."><span class="description"></span><pre>$isEditable</pre></a></li>
+<li class="property protected "><a href="#property_mode" title="$mode() :: The mode."><span class="description"></span><pre>$mode</pre></a></li>
+<li class="property protected "><a href="#property_parentProviderName" title="$parentProviderName() :: The name of the data provider of the parent element."><span class="description"></span><pre>$parentProviderName</pre></a></li>
+<li class="property protected "><a href="#property_providerName" title="$providerName() :: The name of the data provider of the elements being processed."><span class="description"></span><pre>$providerName</pre></a></li>
+<li class="property protected "><a href="#property_rootProviderName" title="$rootProviderName() :: The name of the data provider of the root elements."><span class="description"></span><pre>$rootProviderName</pre></a></li>
+<li class="property protected "><a href="#property_switchToEditEnabled" title="$switchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description"></span><pre>$switchToEditEnabled</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DefaultBasicDefinition"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.DefaultBasicDefinition.html">DefaultBasicDefinition</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Default implementation of the basic information about the data definition.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.html">DcGeneral\DataDefinition\Definition</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getAdditionalFilter"></a><div class="element clickable method public method_getAdditionalFilter" data-toggle="collapse" data-target=".method_getAdditionalFilter .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getAdditionalFilter($dataProvider) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dataProvider</h4></div>
+</div></div>
+</div>
+<a id="method_getDataProvider"></a><div class="element clickable method public method_getDataProvider" data-toggle="collapse" data-target=".method_getDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getDataProvider() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getMode"></a><div class="element clickable method public method_getMode" data-toggle="collapse" data-target=".method_getMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getMode() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getParentDataProvider"></a><div class="element clickable method public method_getParentDataProvider" data-toggle="collapse" data-target=".method_getParentDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getParentDataProvider() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getRootDataProvider"></a><div class="element clickable method public method_getRootDataProvider" data-toggle="collapse" data-target=".method_getRootDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getRootDataProvider() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasAdditionalFilter"></a><div class="element clickable method public method_hasAdditionalFilter" data-toggle="collapse" data-target=".method_hasAdditionalFilter .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>hasAdditionalFilter($dataProvider) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dataProvider</h4></div>
+</div></div>
+</div>
+<a id="method_isClosed"></a><div class="element clickable method public method_isClosed" data-toggle="collapse" data-target=".method_isClosed .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isClosed() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isCreatable"></a><div class="element clickable method public method_isCreatable" data-toggle="collapse" data-target=".method_isCreatable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isCreatable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isDeletable"></a><div class="element clickable method public method_isDeletable" data-toggle="collapse" data-target=".method_isDeletable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isDeletable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isEditOnlyMode"></a><div class="element clickable method public method_isEditOnlyMode" data-toggle="collapse" data-target=".method_isEditOnlyMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isEditOnlyMode() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isEditable"></a><div class="element clickable method public method_isEditable" data-toggle="collapse" data-target=".method_isEditable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isEditable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isSwitchToEditEnabled"></a><div class="element clickable method public method_isSwitchToEditEnabled" data-toggle="collapse" data-target=".method_isSwitchToEditEnabled .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>isSwitchToEditEnabled() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setAdditionalFilter"></a><div class="element clickable method public method_setAdditionalFilter" data-toggle="collapse" data-target=".method_setAdditionalFilter .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setAdditionalFilter($dataProvider, $filter) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dataProvider</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
+</div></div>
+</div>
+<a id="method_setClosed"></a><div class="element clickable method public method_setClosed" data-toggle="collapse" data-target=".method_setClosed .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setClosed($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setCreatable"></a><div class="element clickable method public method_setCreatable" data-toggle="collapse" data-target=".method_setCreatable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setCreatable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setDataProvider"></a><div class="element clickable method public method_setDataProvider" data-toggle="collapse" data-target=".method_setDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDataProvider($providerName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$providerName</h4></div>
+</div></div>
+</div>
+<a id="method_setDeletable"></a><div class="element clickable method public method_setDeletable" data-toggle="collapse" data-target=".method_setDeletable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setDeletable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setEditOnlyMode"></a><div class="element clickable method public method_setEditOnlyMode" data-toggle="collapse" data-target=".method_setEditOnlyMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEditOnlyMode($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setEditable"></a><div class="element clickable method public method_setEditable" data-toggle="collapse" data-target=".method_setEditable .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEditable($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setMode"></a><div class="element clickable method public method_setMode" data-toggle="collapse" data-target=".method_setMode .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setMode($mode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mode</h4></div>
+</div></div>
+</div>
+<a id="method_setParentDataProvider"></a><div class="element clickable method public method_setParentDataProvider" data-toggle="collapse" data-target=".method_setParentDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setParentDataProvider($providerName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$providerName</h4></div>
+</div></div>
+</div>
+<a id="method_setRootDataProvider"></a><div class="element clickable method public method_setRootDataProvider" data-toggle="collapse" data-target=".method_setRootDataProvider .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setRootDataProvider($providerName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$providerName</h4></div>
+</div></div>
+</div>
+<a id="method_setSwitchToEditEnabled"></a><div class="element clickable method public method_setSwitchToEditEnabled" data-toggle="collapse" data-target=".method_setSwitchToEditEnabled .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setSwitchToEditEnabled($switchToEditEnabled) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$switchToEditEnabled</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_additionalFilter"> </a><div class="element clickable property protected property_additionalFilter" data-toggle="collapse" data-target=".property_additionalFilter .collapse">
+<h2>Array of filter rules.</h2>
+<pre>$additionalFilter : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_isClosed"> </a><div class="element clickable property protected property_isClosed" data-toggle="collapse" data-target=".property_isClosed .collapse">
+<h2>If true, adding of further records is prohibited.</h2>
+<pre>$isClosed : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_isCreatable"> </a><div class="element clickable property protected property_isCreatable" data-toggle="collapse" data-target=".property_isCreatable .collapse">
+<h2>Determines if new entries may be created within this data container.</h2>
+<pre>$isCreatable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_isDeletable"> </a><div class="element clickable property protected property_isDeletable" data-toggle="collapse" data-target=".property_isDeletable .collapse">
+<h2>Boolean flag determining if this data container is deletable.</h2>
+<pre>$isDeletable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_isEditOnlyMode"> </a><div class="element clickable property protected property_isEditOnlyMode" data-toggle="collapse" data-target=".property_isEditOnlyMode .collapse">
+<h2>If true, only edit mode is used.</h2>
+<pre>$isEditOnlyMode : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_isEditable"> </a><div class="element clickable property protected property_isEditable" data-toggle="collapse" data-target=".property_isEditable .collapse">
+<h2>Boolean flag determining if this data container is editable.</h2>
+<pre>$isEditable : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mode"> </a><div class="element clickable property protected property_mode" data-toggle="collapse" data-target=".property_mode .collapse">
+<h2>The mode.</h2>
+<pre>$mode : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parentProviderName"> </a><div class="element clickable property protected property_parentProviderName" data-toggle="collapse" data-target=".property_parentProviderName .collapse">
+<h2>The name of the data provider of the parent element.</h2>
+<pre>$parentProviderName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_providerName"> </a><div class="element clickable property protected property_providerName" data-toggle="collapse" data-target=".property_providerName .collapse">
+<h2>The name of the data provider of the elements being processed.</h2>
+<pre>$providerName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_rootProviderName"> </a><div class="element clickable property protected property_rootProviderName" data-toggle="collapse" data-target=".property_rootProviderName .collapse">
+<h2>The name of the data provider of the root elements.</h2>
+<pre>$rootProviderName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_switchToEditEnabled"> </a><div class="element clickable property protected property_switchToEditEnabled" data-toggle="collapse" data-target=".property_switchToEditEnabled .collapse">
+<h2>Determines if the view shall switch automatically into edit mode.</h2>
+<pre>$switchToEditEnabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:33+02:00.<br></footer></div>
+</div>
+</body>
+</html>

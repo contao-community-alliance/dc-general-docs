@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\LegacyPalettesParser</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_createPaletteCondition" title="createPaletteCondition() :: Parse the palette selector and create the corresponding condition."><span class="description">Parse the palette selector and create the corresponding condition.</span><pre>createPaletteCondition()</pre></a></li>
+<li class="method public "><a href="#method_createSubpaletteCondition" title="createSubpaletteCondition() :: Parse the sub palette selector and create the corresponding condition."><span class="description">Parse the sub palette selector and create the corresponding condition.</span><pre>createSubpaletteCondition()</pre></a></li>
+<li class="method public "><a href="#method_createSubpaletteSelectorFieldName" title="createSubpaletteSelectorFieldName() :: Translate a sub palette selector into the real name of a property."><span class="description">Translate a sub palette selector into the real name of a property.</span><pre>createSubpaletteSelectorFieldName()</pre></a></li>
+<li class="method public "><a href="#method_parse" title="parse() :: Parse the palette and sub palette array and create a complete palette collection."><span class="description">Parse the palette and sub palette array and create a complete palette collection.</span><pre>parse()</pre></a></li>
+<li class="method public "><a href="#method_parsePalette" title="parsePalette() :: Parse a single palette."><span class="description">Parse a single palette.</span><pre>parsePalette()</pre></a></li>
+<li class="method public "><a href="#method_parsePalettes" title="parsePalettes() :: Parse the given palettes."><span class="description">Parse the given palettes.</span><pre>parsePalettes()</pre></a></li>
+<li class="method public "><a href="#method_parseSubpalette" title="parseSubpalette() :: Parse the list of sub palette fields into an array of properties."><span class="description">Parse the list of sub palette fields into an array of properties.</span><pre>parseSubpalette()</pre></a></li>
+<li class="method public "><a href="#method_parseSubpalettes" title="parseSubpalettes() :: Parse the sub palettes and return the properties for each selector property."><span class="description">Parse the sub palettes and return the properties for each selector property.</span><pre>parseSubpalettes()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\LegacyPalettesParser"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.html">Palette</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Palette.LegacyPalettesParser.html">LegacyPalettesParser</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class LegacyPalettesParser.</p>
+<div class="details">
+<div class="long_description">This class parses the palettes from a legacy DCA into the palette collection definitions being used in DcGeneral.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.Dca.Palette.html">DcGeneral\Contao\Dca\Palette</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_createPaletteCondition"></a><div class="element clickable method public method_createPaletteCondition" data-toggle="collapse" data-target=".method_createPaletteCondition .collapse">
+<h2>Parse the palette selector and create the corresponding condition.</h2>
+<pre>createPaletteCondition(string $paletteSelector, array $selectorFieldNames) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteSelector</h4>
+<code>string</code><p>Create the condition for the selector.</p></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>The property names to be used as selectors.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Palette.PaletteConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Palette\PaletteConditionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_createSubpaletteCondition"></a><div class="element clickable method public method_createSubpaletteCondition" data-toggle="collapse" data-target=".method_createSubpaletteCondition .collapse">
+<h2>Parse the sub palette selector and create the corresponding condition.</h2>
+<pre>createSubpaletteCondition(string $subPaletteSelector, array $selectorFieldNames) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyTrueCondition</a> | <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyValueCondition</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method supports the following cases for the sub palette selector:
+
+Case 1: the sub palette selector contain a combination of "property name" + '_' + value
+        in which we require that the "property name" is contained within $selectorFieldNames.
+        In this cases a select/radio sub palette is in place.
+
+Case 2: the sub palette selector is only a "property name", the value is then implicated to be true.
+        In this cases a checkbox sub palette is in place.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subPaletteSelector</h4>
+<code>string</code><p>The selector being evaluated.</p></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>The names of the properties to be used as selectors [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyTrueCondition</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyValueCondition.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Condition\Property\PropertyValueCondition</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_createSubpaletteSelectorFieldName"></a><div class="element clickable method public method_createSubpaletteSelectorFieldName" data-toggle="collapse" data-target=".method_createSubpaletteSelectorFieldName .collapse">
+<h2>Translate a sub palette selector into the real name of a property.</h2>
+<pre>createSubpaletteSelectorFieldName(string $subPaletteSelector, array $selectorFieldNames) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method supports the following cases for the sub palette selector:
+
+Case 1: the sub palette selector contain a combination of "property name" + '_' + value
+        in which we require that the "property name" is contained within $selectorFieldNames.
+        In this cases a select/radio sub palette is in place.
+
+Case 2: the sub palette selector is only a "property name", the value is then implicated to be true.
+        In this cases a checkbox sub palette is in place.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subPaletteSelector</h4>
+<code>string</code><p>The selector being evaluated.</p></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>The names of the properties to be used as selectors [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_parse"></a><div class="element clickable method public method_parse" data-toggle="collapse" data-target=".method_parse .collapse">
+<h2>Parse the palette and sub palette array and create a complete palette collection.</h2>
+<pre>parse(array $palettes, array $subpalettes, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface|null $collection) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palettes</h4></div>
+<div class="subelement argument"><h4>$subpalettes</h4></div>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code><code>null</code><p>The palette collection to populate [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_parsePalette"></a><div class="element clickable method public method_parsePalette" data-toggle="collapse" data-target=".method_parsePalette .collapse">
+<h2>Parse a single palette.</h2>
+<pre>parsePalette(string $paletteSelector, string $fields, array $subPaletteProperties, \ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\array(string) $selectorFieldNames, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Palette.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Palette</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paletteSelector</h4>
+<code>string</code><p>The selector for the palette.</p></div>
+<div class="subelement argument">
+<h4>$fields</h4>
+<code>string</code><p>The fields contained within the palette.</p></div>
+<div class="subelement argument"><h4>$subPaletteProperties</h4></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code><a href="array(string).html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\array(string)</a></code><p>The names of all properties being used as
+                                                                selectors [optional].</p>
+</div>
+<div class="subelement argument">
+<h4>$palette</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><p>The palette to be populated [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Palette.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\Palette</a></code></div>
+</div></div>
+</div>
+<a id="method_parsePalettes"></a><div class="element clickable method public method_parsePalettes" data-toggle="collapse" data-target=".method_parsePalettes .collapse">
+<h2>Parse the given palettes.</h2>
+<pre>parsePalettes(array $palettes, array $subPaletteProperties, array $selectorFieldNames, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface $collection) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$palettes</h4></div>
+<div class="subelement argument"><h4>$subPaletteProperties</h4></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>List of names of the properties to be used as selector
+                                                        [optional].</p>
+</div>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code><p>The palette collection to populate [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteCollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_parseSubpalette"></a><div class="element clickable method public method_parseSubpalette" data-toggle="collapse" data-target=".method_parseSubpalette .collapse">
+<h2>Parse the list of sub palette fields into an array of properties.</h2>
+<pre>parseSubpalette(string $subPaletteSelector, string $childFields, array $selectorFieldNames) : <a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subPaletteSelector</h4>
+<code>string</code><p>The selector in use.</p></div>
+<div class="subelement argument">
+<h4>$childFields</h4>
+<code>string</code><p>List of the properties for the sub palette.</p></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>List of the selector properties [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PropertyInterface[]</a></code></div>
+</div></div>
+</div>
+<a id="method_parseSubpalettes"></a><div class="element clickable method public method_parseSubpalettes" data-toggle="collapse" data-target=".method_parseSubpalettes .collapse">
+<h2>Parse the sub palettes and return the properties for each selector property.</h2>
+<pre>parseSubpalettes(array $subpalettes, array $selectorFieldNames) : <a href="array(string.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\array(string</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subpalettes</h4>
+<code>array</code><p>The sub palettes to parse.</p></div>
+<div class="subelement argument">
+<h4>$selectorFieldNames</h4>
+<code>array</code><p>Names of the selector properties [optional].</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="array(string.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\Palette\array(string</a></code>=> PropertyInterface[])</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:39+02:00.<br></footer></div>
+</div>
+</body>
+</html>

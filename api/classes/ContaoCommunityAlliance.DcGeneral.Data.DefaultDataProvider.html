@@ -1,0 +1,615 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance of the data provider."><span class="description">Create a new instance of the data provider.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_fetch" title="fetch() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>fetch()</pre></a></li>
+<li class="method public "><a href="#method_fetchAll" title="fetchAll() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>fetchAll()</pre></a></li>
+<li class="method public "><a href="#method_fieldExists" title="fieldExists() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>fieldExists()</pre></a></li>
+<li class="method public "><a href="#method_getActiveVersion" title="getActiveVersion() :: Retrieve the current active version for a row."><span class="description">Retrieve the current active version for a row.</span><pre>getActiveVersion()</pre></a></li>
+<li class="method public "><a href="#method_getCount" title="getCount() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getCount()</pre></a></li>
+<li class="method public "><a href="#method_getEmptyCollection" title="getEmptyCollection() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEmptyCollection()</pre></a></li>
+<li class="method public "><a href="#method_getEmptyConfig" title="getEmptyConfig() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEmptyConfig()</pre></a></li>
+<li class="method public "><a href="#method_getEmptyModel" title="getEmptyModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEmptyModel()</pre></a></li>
+<li class="method public "><a href="#method_getFilterOptions" title="getFilterOptions() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getFilterOptions()</pre></a></li>
+<li class="method public "><a href="#method_getVersion" title="getVersion() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getVersion()</pre></a></li>
+<li class="method public "><a href="#method_getVersions" title="getVersions() :: Return a list with all versions for the row with the given Id."><span class="description">Return a list with all versions for the row with the given Id.</span><pre>getVersions()</pre></a></li>
+<li class="method public "><a href="#method_isUniqueValue" title="isUniqueValue() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isUniqueValue()</pre></a></li>
+<li class="method public "><a href="#method_resetFallback" title="resetFallback() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>resetFallback()</pre></a></li>
+<li class="method public "><a href="#method_sameModels" title="sameModels() :: Check if two models have the same values in all properties."><span class="description">Check if two models have the same values in all properties.</span><pre>sameModels()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_saveEach" title="saveEach() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>saveEach()</pre></a></li>
+<li class="method public "><a href="#method_saveVersion" title="saveVersion() :: Save a new version of a row."><span class="description">Save a new version of a row.</span><pre>saveVersion()</pre></a></li>
+<li class="method public "><a href="#method_setBaseConfig" title="setBaseConfig() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setBaseConfig()</pre></a></li>
+<li class="method public "><a href="#method_setVersionActive" title="setVersionActive() :: Set a version as active."><span class="description">Set a version as active.</span><pre>setVersionActive()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_buildFieldQuery" title="buildFieldQuery() :: Build the field list."><span class="description">Build the field list.</span><pre>buildFieldQuery()</pre></a></li>
+<li class="method protected "><a href="#method_buildFilterQuery" title="buildFilterQuery() :: Build the WHERE conditions via calculateSubfilter()."><span class="description">Build the WHERE conditions via calculateSubfilter().</span><pre>buildFilterQuery()</pre></a></li>
+<li class="method protected "><a href="#method_buildSortingQuery" title="buildSortingQuery() :: Build the order by part of a query."><span class="description">Build the order by part of a query.</span><pre>buildSortingQuery()</pre></a></li>
+<li class="method protected "><a href="#method_buildWhereQuery" title="buildWhereQuery() :: Build the WHERE clause for a configuration."><span class="description">Build the WHERE clause for a configuration.</span><pre>buildWhereQuery()</pre></a></li>
+<li class="method protected "><a href="#method_calculateSubfilter" title="calculateSubfilter() :: Combine a filter in standard filter array notation."><span class="description">Combine a filter in standard filter array notation.</span><pre>calculateSubfilter()</pre></a></li>
+<li class="method protected "><a href="#method_createModelFromDatabaseResult" title="createModelFromDatabaseResult() :: Create a model from a database result."><span class="description">Create a model from a database result.</span><pre>createModelFromDatabaseResult()</pre></a></li>
+<li class="method protected "><a href="#method_getAndOrFilter" title="getAndOrFilter() :: Build an AND or OR query."><span class="description">Build an AND or OR query.</span><pre>getAndOrFilter()</pre></a></li>
+<li class="method protected "><a href="#method_getFilterForComparingOperator" title="getFilterForComparingOperator() :: Build the sub query for a comparing operator like =,&lt;,&gt;."><span class="description">Build the sub query for a comparing operator like =,&lt;,&gt;.</span><pre>getFilterForComparingOperator()</pre></a></li>
+<li class="method protected "><a href="#method_getFilterForInList" title="getFilterForInList() :: Return the filter query for a &quot;foo IN ('a', 'b')&quot; filter."><span class="description">Return the filter query for a "foo IN ('a', 'b')" filter.</span><pre>getFilterForInList()</pre></a></li>
+<li class="method protected "><a href="#method_getFilterForLike" title="getFilterForLike() :: Return the filter query for a &quot;foo LIKE '%ba_r%'&quot; filter."><span class="description">Return the filter query for a "foo LIKE '%ba_r%'" filter.</span><pre>getFilterForLike()</pre></a></li>
+<li class="method protected "><a href="#method_insertUndo" title="insertUndo() :: Store an undo entry in the table tl_undo."><span class="description">Store an undo entry in the table tl_undo.</span><pre>insertUndo()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_objDatabase" title="$objDatabase() :: The Database instance."><span class="description"></span><pre>$objDatabase</pre></a></li>
+<li class="property protected "><a href="#property_strSource" title="$strSource() :: Name of current source."><span class="description"></span><pre>$strSource</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Data.html">Data</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultDataProvider.html">DefaultDataProvider</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class DefaultDataProvider.</p>
+<div class="details">
+<div class="long_description">Default implementation for a data provider using the Contao default database as backend.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Data.html">DcGeneral\Data</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance of the data provider.</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>delete($item) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$item</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When an unusable object has been passed.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>fetch(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objConfig</h4></div>
+</div></div>
+</div>
+<a id="method_fetchAll"></a><div class="element clickable method public method_fetchAll" data-toggle="collapse" data-target=".method_fetchAll .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>fetchAll(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objConfig</h4></div>
+</div></div>
+</div>
+<a id="method_fieldExists"></a><div class="element clickable method public method_fieldExists" data-toggle="collapse" data-target=".method_fieldExists .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>fieldExists($strField) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strField</h4></div>
+</div></div>
+</div>
+<a id="method_getActiveVersion"></a><div class="element clickable method public method_getActiveVersion" data-toggle="collapse" data-target=".method_getActiveVersion .collapse">
+<h2>Retrieve the current active version for a row.</h2>
+<pre>getActiveVersion(mixed $mixID) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>The ID of the row.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The current version number of the requested row.</div>
+</div></div>
+</div>
+<a id="method_getCount"></a><div class="element clickable method public method_getCount" data-toggle="collapse" data-target=".method_getCount .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getCount(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objConfig</h4></div>
+</div></div>
+</div>
+<a id="method_getEmptyCollection"></a><div class="element clickable method public method_getEmptyCollection" data-toggle="collapse" data-target=".method_getEmptyCollection .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getEmptyCollection() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEmptyConfig"></a><div class="element clickable method public method_getEmptyConfig" data-toggle="collapse" data-target=".method_getEmptyConfig .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getEmptyConfig() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEmptyModel"></a><div class="element clickable method public method_getEmptyModel" data-toggle="collapse" data-target=".method_getEmptyModel .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getEmptyModel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getFilterOptions"></a><div class="element clickable method public method_getFilterOptions" data-toggle="collapse" data-target=".method_getFilterOptions .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getFilterOptions(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objConfig</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>if improper values have been passed (i.e. not exactly one field requested).</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getVersion"></a><div class="element clickable method public method_getVersion" data-toggle="collapse" data-target=".method_getVersion .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getVersion($mixID, $mixVersion) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixID</h4></div>
+<div class="subelement argument"><h4>$mixVersion</h4></div>
+</div></div>
+</div>
+<a id="method_getVersions"></a><div class="element clickable method public method_getVersions" data-toggle="collapse" data-target=".method_getVersions .collapse">
+<h2>Return a list with all versions for the row with the given Id.</h2>
+<pre>getVersions(mixed $mixID, boolean $blnOnlyActive) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>The ID of the row.</p></div>
+<div class="subelement argument">
+<h4>$blnOnlyActive</h4>
+<code>boolean</code><p>If true, only active versions will get returned, if false all version will get
+                              returned.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_isUniqueValue"></a><div class="element clickable method public method_isUniqueValue" data-toggle="collapse" data-target=".method_isUniqueValue .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>isUniqueValue($strField, $varNew, $intId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strField</h4></div>
+<div class="subelement argument"><h4>$varNew</h4></div>
+<div class="subelement argument"><h4>$intId</h4></div>
+</div></div>
+</div>
+<a id="method_resetFallback"></a><div class="element clickable method public method_resetFallback" data-toggle="collapse" data-target=".method_resetFallback .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>resetFallback($strField) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strField</h4></div>
+</div></div>
+</div>
+<a id="method_sameModels"></a><div class="element clickable method public method_sameModels" data-toggle="collapse" data-target=".method_sameModels .collapse">
+<h2>Check if two models have the same values in all properties.</h2>
+<pre>sameModels(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel1, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel2) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel1</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The first model to compare.</p></div>
+<div class="subelement argument">
+<h4>$objModel2</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The second model to compare.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True - If both models are same, false if not.</div>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>save(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objItem) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objItem</h4></div>
+</div></div>
+</div>
+<a id="method_saveEach"></a><div class="element clickable method public method_saveEach" data-toggle="collapse" data-target=".method_saveEach .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>saveEach(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $objItems) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objItems</h4></div>
+</div></div>
+</div>
+<a id="method_saveVersion"></a><div class="element clickable method public method_saveVersion" data-toggle="collapse" data-target=".method_saveVersion .collapse">
+<h2>Save a new version of a row.</h2>
+<pre>saveVersion(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel, string $strUsername) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model for which a new version shall be created.</p></div>
+<div class="subelement argument">
+<h4>$strUsername</h4>
+<code>string</code><p>The username to attach to the version as creator.</p></div>
+</div></div>
+</div>
+<a id="method_setBaseConfig"></a><div class="element clickable method public method_setBaseConfig" data-toggle="collapse" data-target=".method_setBaseConfig .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setBaseConfig(array $arrConfig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$arrConfig</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When no source has been defined.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setVersionActive"></a><div class="element clickable method public method_setVersionActive" data-toggle="collapse" data-target=".method_setVersionActive .collapse">
+<h2>Set a version as active.</h2>
+<pre>setVersionActive(mixed $mixID, mixed $mixVersion) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixID</h4>
+<code>mixed</code><p>The ID of the row.</p></div>
+<div class="subelement argument">
+<h4>$mixVersion</h4>
+<code>mixed</code><p>The version number to set active.</p></div>
+</div></div>
+</div>
+<a id="method_buildFieldQuery"></a><div class="element clickable method protected method_buildFieldQuery" data-toggle="collapse" data-target=".method_buildFieldQuery .collapse">
+<h2>Build the field list.</h2>
+<pre>buildFieldQuery(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Returns all values from $objConfig->getFields() as comma separated list.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The configuration to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_buildFilterQuery"></a><div class="element clickable method protected method_buildFilterQuery" data-toggle="collapse" data-target=".method_buildFilterQuery .collapse">
+<h2>Build the WHERE conditions via calculateSubfilter().</h2>
+<pre>buildFilterQuery(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig, array $arrParams) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The configuration to use.</p></div>
+<div class="subelement argument">
+<h4>$arrParams</h4>
+<code>array</code><p>The query parameters will get stored into this array.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The combined WHERE conditions.</div>
+</div></div>
+</div>
+<a id="method_buildSortingQuery"></a><div class="element clickable method protected method_buildSortingQuery" data-toggle="collapse" data-target=".method_buildSortingQuery .collapse">
+<h2>Build the order by part of a query.</h2>
+<pre>buildSortingQuery(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The configuration to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_buildWhereQuery"></a><div class="element clickable method protected method_buildWhereQuery" data-toggle="collapse" data-target=".method_buildWhereQuery .collapse">
+<h2>Build the WHERE clause for a configuration.</h2>
+<pre>buildWhereQuery(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $objConfig, array $arrParams) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objConfig</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The configuration to use.</p></div>
+<div class="subelement argument">
+<h4>$arrParams</h4>
+<code>array</code><p>The query parameters will get stored into this array.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The combined WHERE clause (including the word "WHERE").</div>
+</div></div>
+</div>
+<a id="method_calculateSubfilter"></a><div class="element clickable method protected method_calculateSubfilter" data-toggle="collapse" data-target=".method_calculateSubfilter .collapse">
+<h2>Combine a filter in standard filter array notation.</h2>
+<pre>calculateSubfilter(array $arrFilter, array $arrParams) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Supported operations are:
+operation      needed arguments     argument type.
+AND
+               'children'           array
+OR
+               'children'           array
+=
+               'property'           string (the name of a property)
+               'value'              literal
+>
+               'property'           string (the name of a property)
+               'value'              literal
+<
+               'property'           string (the name of a property)
+               'value'              literal
+IN
+               'property'           string (the name of a property)
+               'values'             array of literal
+
+LIKE
+               'property'           string (the name of a property)
+               'value'              literal - Wildcards * (Many) ? (One)</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$arrFilter</h4>
+<code>array</code><p>The filter to be combined to a valid SQL filter query.</p></div>
+<div class="subelement argument">
+<h4>$arrParams</h4>
+<code>array</code><p>The query parameters will get stored into this array.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If an invalid filter entry is encountered.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The combined WHERE conditions.</div>
+</div></div>
+</div>
+<a id="method_createModelFromDatabaseResult"></a><div class="element clickable method protected method_createModelFromDatabaseResult" data-toggle="collapse" data-target=".method_createModelFromDatabaseResult .collapse">
+<h2>Create a model from a database result.</h2>
+<pre>createModelFromDatabaseResult(\Database\Result $dbResult) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dbResult</h4>
+<code><a href="Result.html">\Database\Result</a></code><p>The database result to create a model from.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getAndOrFilter"></a><div class="element clickable method protected method_getAndOrFilter" data-toggle="collapse" data-target=".method_getAndOrFilter .collapse">
+<h2>Build an AND or OR query.</h2>
+<pre>getAndOrFilter(array $operation, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$operation</h4>
+<code>array</code><p>The operation to convert.</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>The parameter array for the resulting query.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getFilterForComparingOperator"></a><div class="element clickable method protected method_getFilterForComparingOperator" data-toggle="collapse" data-target=".method_getFilterForComparingOperator .collapse">
+<h2>Build the sub query for a comparing operator like =,&lt;,&gt;.</h2>
+<pre>getFilterForComparingOperator(array $operation, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$operation</h4>
+<code>array</code><p>The operation to apply.</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>The parameters of the entire query.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getFilterForInList"></a><div class="element clickable method protected method_getFilterForInList" data-toggle="collapse" data-target=".method_getFilterForInList .collapse">
+<h2>Return the filter query for a "foo IN ('a', 'b')" filter.</h2>
+<pre>getFilterForInList(array $operation, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$operation</h4>
+<code>array</code><p>The operation to apply.</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>The parameters of the entire query.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getFilterForLike"></a><div class="element clickable method protected method_getFilterForLike" data-toggle="collapse" data-target=".method_getFilterForLike .collapse">
+<h2>Return the filter query for a "foo LIKE '%ba_r%'" filter.</h2>
+<pre>getFilterForLike(array $operation, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The searched value may contain the wildcards '*' and '?' which will get converted to proper SQL.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$operation</h4>
+<code>array</code><p>The operation to apply.</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>The parameters of the entire query.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_insertUndo"></a><div class="element clickable method protected method_insertUndo" data-toggle="collapse" data-target=".method_insertUndo .collapse">
+<h2>Store an undo entry in the table tl_undo.</h2>
+<pre>insertUndo(string $strSourceSQL, string $strSaveSQL, string $strTable) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Currently this only supports delete queries.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strSourceSQL</h4>
+<code>string</code><p>The SQL used to perform the action to be undone.</p></div>
+<div class="subelement argument">
+<h4>$strSaveSQL</h4>
+<code>string</code><p>The SQL query to retrieve the current entries.</p></div>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>The table to be affected by the action.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_objDatabase"> </a><div class="element clickable property protected property_objDatabase" data-toggle="collapse" data-target=".property_objDatabase .collapse">
+<h2>The Database instance.</h2>
+<pre>$objDatabase : <a href="Database.html">\Database</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSource"> </a><div class="element clickable property protected property_strSource" data-toggle="collapse" data-target=".property_strSource .collapse">
+<h2>Name of current source.</h2>
+<pre>$strSource : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:32+02:00.<br></footer></div>
+</div>
+</body>
+</html>

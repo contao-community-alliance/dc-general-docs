@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addProperty" title="addProperty() :: Add a property for sorting."><span class="description">Add a property for sorting.</span><pre>addProperty()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultFlag" title="getDefaultFlag() :: Get the default flag to use when no flag has been defined for a certain property."><span class="description">Get the default flag to use when no flag has been defined for a certain property.</span><pre>getDefaultFlag()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyFlag" title="getPropertyFlag() :: Get the flag to use for a property."><span class="description">Get the flag to use for a property.</span><pre>getPropertyFlag()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyNames" title="getPropertyNames() :: Retrieve the list of properties to allow search on."><span class="description">Retrieve the list of properties to allow search on.</span><pre>getPropertyNames()</pre></a></li>
+<li class="method public "><a href="#method_hasProperty" title="hasProperty() :: Determine if the given property has been marked for sorting in the element."><span class="description">Determine if the given property has been marked for sorting in the element.</span><pre>hasProperty()</pre></a></li>
+<li class="method public "><a href="#method_removeProperty" title="removeProperty() :: Determine if the given property has been marked for sorting in the element."><span class="description">Determine if the given property has been marked for sorting in the element.</span><pre>removeProperty()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultFlag" title="setDefaultFlag() :: Set the default flag to use when no flag has been defined for a certain property."><span class="description">Set the default flag to use when no flag has been defined for a certain property.</span><pre>setDefaultFlag()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_SORTING_FLAG_ASCENDING" title="SORTING_FLAG_ASCENDING() :: Sort ascending."><span class="description">Sort ascending.</span><pre>SORTING_FLAG_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_DAY_ASCENDING" title="SORTING_FLAG_DATE_DAY_ASCENDING() :: Sort by day ascending."><span class="description">Sort by day ascending.</span><pre>SORTING_FLAG_DATE_DAY_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_DAY_DESCENDING" title="SORTING_FLAG_DATE_DAY_DESCENDING() :: Sort by day descending."><span class="description">Sort by day descending.</span><pre>SORTING_FLAG_DATE_DAY_DESCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_MONTH_ASCENDING" title="SORTING_FLAG_DATE_MONTH_ASCENDING() :: Sort by month ascending."><span class="description">Sort by month ascending.</span><pre>SORTING_FLAG_DATE_MONTH_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_MONTH_DESCENDING" title="SORTING_FLAG_DATE_MONTH_DESCENDING() :: Sort by month descending."><span class="description">Sort by month descending.</span><pre>SORTING_FLAG_DATE_MONTH_DESCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_YEAR_ASCENDING" title="SORTING_FLAG_DATE_YEAR_ASCENDING() :: Sort by year ascending."><span class="description">Sort by year ascending.</span><pre>SORTING_FLAG_DATE_YEAR_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DATE_YEAR_DESCENDING" title="SORTING_FLAG_DATE_YEAR_DESCENDING() :: Sort by year descending."><span class="description">Sort by year descending.</span><pre>SORTING_FLAG_DATE_YEAR_DESCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_DESCENDING" title="SORTING_FLAG_DESCENDING() :: Sort descending."><span class="description">Sort descending.</span><pre>SORTING_FLAG_DESCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_FIRST_LETTER_ASCENDING" title="SORTING_FLAG_FIRST_LETTER_ASCENDING() :: Sort by initial letter ascending."><span class="description">Sort by initial letter ascending.</span><pre>SORTING_FLAG_FIRST_LETTER_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_FIRST_LETTER_DESCENDING" title="SORTING_FLAG_FIRST_LETTER_DESCENDING() :: Sort by initial letter descending."><span class="description">Sort by initial letter descending.</span><pre>SORTING_FLAG_FIRST_LETTER_DESCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_NONE" title="SORTING_FLAG_NONE() :: Do not sort."><span class="description">Do not sort.</span><pre>SORTING_FLAG_NONE</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_TWO_LETTERS_ASCENDING" title="SORTING_FLAG_TWO_LETTERS_ASCENDING() :: Sort by initial two letters ascending."><span class="description">Sort by initial two letters ascending.</span><pre>SORTING_FLAG_TWO_LETTERS_ASCENDING</pre></a></li>
+<li class="constant  "><a href="#constant_SORTING_FLAG_TWO_LETTERS_DESCENDING" title="SORTING_FLAG_TWO_LETTERS_DESCENDING() :: Sort by initial two letters descending."><span class="description">Sort by initial two letters descending.</span><pre>SORTING_FLAG_TWO_LETTERS_DESCENDING</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.html">Panel</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">SortElementInformationInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">Interface SortElementInformationInterface.</p>
+<div class="details">
+<div class="long_description">This interface describes a sort panel element information for sorting by properties.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.DataDefinition.Definition.View.Panel.html">DcGeneral\DataDefinition\Definition\View\Panel</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addProperty"></a><div class="element clickable method public method_addProperty" data-toggle="collapse" data-target=".method_addProperty .collapse">
+<h2>Add a property for sorting.</h2>
+<pre>addProperty(string $propertyName, int $flag) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>If the default of 0 is passed, the default flag will get used.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getDefaultFlag"></a><div class="element clickable method public method_getDefaultFlag" data-toggle="collapse" data-target=".method_getDefaultFlag .collapse">
+<h2>Get the default flag to use when no flag has been defined for a certain property.</h2>
+<pre>getDefaultFlag() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_getPropertyFlag"></a><div class="element clickable method public method_getPropertyFlag" data-toggle="collapse" data-target=".method_getPropertyFlag .collapse">
+<h2>Get the flag to use for a property.</h2>
+<pre>getPropertyFlag(string $propertyName) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">When a flag has been defined for a certain property that flag is being used otherwise the the default flag will
+get returned.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_getPropertyNames"></a><div class="element clickable method public method_getPropertyNames" data-toggle="collapse" data-target=".method_getPropertyNames .collapse">
+<h2>Retrieve the list of properties to allow search on.</h2>
+<pre>getPropertyNames() : string[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string[]</code></div>
+</div></div>
+</div>
+<a id="method_hasProperty"></a><div class="element clickable method public method_hasProperty" data-toggle="collapse" data-target=".method_hasProperty .collapse">
+<h2>Determine if the given property has been marked for sorting in the element.</h2>
+<pre>hasProperty(string $propertyName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_removeProperty"></a><div class="element clickable method public method_removeProperty" data-toggle="collapse" data-target=".method_removeProperty .collapse">
+<h2>Determine if the given property has been marked for sorting in the element.</h2>
+<pre>removeProperty(string $propertyName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propertyName</h4>
+<code>string</code><p>The name of the property.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setDefaultFlag"></a><div class="element clickable method public method_setDefaultFlag" data-toggle="collapse" data-target=".method_setDefaultFlag .collapse">
+<h2>Set the default flag to use when no flag has been defined for a certain property.</h2>
+<pre>setDefaultFlag(int $flag) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>int</code><p>The flag to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.SortElementInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\Panel\SortElementInformationInterface</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_SORTING_FLAG_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_ASCENDING .collapse">
+<h2>Sort ascending.</h2>
+<pre>SORTING_FLAG_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_DAY_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_DAY_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_DAY_ASCENDING .collapse">
+<h2>Sort by day ascending.</h2>
+<pre>SORTING_FLAG_DATE_DAY_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_DAY_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_DAY_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_DAY_DESCENDING .collapse">
+<h2>Sort by day descending.</h2>
+<pre>SORTING_FLAG_DATE_DAY_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_MONTH_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_MONTH_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_MONTH_ASCENDING .collapse">
+<h2>Sort by month ascending.</h2>
+<pre>SORTING_FLAG_DATE_MONTH_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_MONTH_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_MONTH_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_MONTH_DESCENDING .collapse">
+<h2>Sort by month descending.</h2>
+<pre>SORTING_FLAG_DATE_MONTH_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_YEAR_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_YEAR_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_YEAR_ASCENDING .collapse">
+<h2>Sort by year ascending.</h2>
+<pre>SORTING_FLAG_DATE_YEAR_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DATE_YEAR_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DATE_YEAR_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DATE_YEAR_DESCENDING .collapse">
+<h2>Sort by year descending.</h2>
+<pre>SORTING_FLAG_DATE_YEAR_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_DESCENDING .collapse">
+<h2>Sort descending.</h2>
+<pre>SORTING_FLAG_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_FIRST_LETTER_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_FIRST_LETTER_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_FIRST_LETTER_ASCENDING .collapse">
+<h2>Sort by initial letter ascending.</h2>
+<pre>SORTING_FLAG_FIRST_LETTER_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_FIRST_LETTER_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_FIRST_LETTER_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_FIRST_LETTER_DESCENDING .collapse">
+<h2>Sort by initial letter descending.</h2>
+<pre>SORTING_FLAG_FIRST_LETTER_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_NONE"> </a><div class="element clickable constant  constant_SORTING_FLAG_NONE" data-toggle="collapse" data-target=".constant_SORTING_FLAG_NONE .collapse">
+<h2>Do not sort.</h2>
+<pre>SORTING_FLAG_NONE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_TWO_LETTERS_ASCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_TWO_LETTERS_ASCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_TWO_LETTERS_ASCENDING .collapse">
+<h2>Sort by initial two letters ascending.</h2>
+<pre>SORTING_FLAG_TWO_LETTERS_ASCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORTING_FLAG_TWO_LETTERS_DESCENDING"> </a><div class="element clickable constant  constant_SORTING_FLAG_TWO_LETTERS_DESCENDING" data-toggle="collapse" data-target=".constant_SORTING_FLAG_TWO_LETTERS_DESCENDING .collapse">
+<h2>Sort by initial two letters descending.</h2>
+<pre>SORTING_FLAG_TWO_LETTERS_DESCENDING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:34+02:00.<br></footer></div>
+</div>
+</body>
+</html>

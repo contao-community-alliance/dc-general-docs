@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeView</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_ajaxTreeView" title="ajaxTreeView() :: Handle ajax rendering of a sub tree."><span class="description">Handle ajax rendering of a sub tree.</span><pre>ajaxTreeView()</pre></a></li>
+<li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>enforceModelRelationship()</pre></a></li>
+<li class="method public "><a href="#method_getTreeCollectionRecursive" title="getTreeCollectionRecursive() :: Recursively retrieve a collection of all complete node hierarchy."><span class="description">Recursively retrieve a collection of all complete node hierarchy.</span><pre>getTreeCollectionRecursive()</pre></a></li>
+<li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax call."><span class="description">Handle an ajax call.</span><pre>handleAjaxCall()</pre></a></li>
+<li class="method public "><a href="#method_loadCollection" title="loadCollection() :: Load the collection of child items and the parent item for the currently selected parent item."><span class="description">Load the collection of child items and the parent item for the currently selected parent item.</span><pre>loadCollection()</pre></a></li>
+<li class="method public "><a href="#method_paste" title="paste() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>paste()</pre></a></li>
+<li class="method public "><a href="#method_renderPasteRootButton" title="renderPasteRootButton() :: Render the paste button for pasting into the root of the tree."><span class="description">Render the paste button for pasting into the root of the tree.</span><pre>renderPasteRootButton()</pre></a></li>
+<li class="method public "><a href="#method_showAll" title="showAll() :: Show all entries from one table."><span class="description">Show all entries from one table.</span><pre>showAll()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_calcLabelFields" title="calcLabelFields() :: Calculate the fields needed by a tree label for the given data provider name."><span class="description">Calculate the fields needed by a tree label for the given data provider name.</span><pre>calcLabelFields()</pre></a></li>
+<li class="method protected "><a href="#method_determineModelState" title="determineModelState() :: Check the state of a model and set the metadata accordingly."><span class="description">Check the state of a model and set the metadata accordingly.</span><pre>determineModelState()</pre></a></li>
+<li class="method protected "><a href="#method_generateTreeView" title="generateTreeView() :: "><span class="description">generateTreeView()
+        </span><pre>generateTreeView()</pre></a></li>
+<li class="method protected "><a href="#method_getOpenElements" title="getOpenElements() :: Retrieve the ids of all tree nodes that are expanded."><span class="description">Retrieve the ids of all tree nodes that are expanded.</span><pre>getOpenElements()</pre></a></li>
+<li class="method protected "><a href="#method_getToggleId" title="getToggleId() :: Retrieve the id for this view."><span class="description">Retrieve the id for this view.</span><pre>getToggleId()</pre></a></li>
+<li class="method protected "><a href="#method_isModelOpen" title="isModelOpen() :: Determine if the passed model is expanded."><span class="description">Determine if the passed model is expanded.</span><pre>isModelOpen()</pre></a></li>
+<li class="method protected "><a href="#method_loadParentModel" title="loadParentModel() :: Load the parent model for the current list."><span class="description">Load the parent model for the current list.</span><pre>loadParentModel()</pre></a></li>
+<li class="method protected "><a href="#method_parseModel" title="parseModel() :: Render a given model."><span class="description">Render a given model.</span><pre>parseModel()</pre></a></li>
+<li class="method protected "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
+<li class="method protected "><a href="#method_treeWalkModel" title='treeWalkModel() :: This "renders" a model for tree view.'><span class="description">This "renders" a model for tree view.</span><pre>treeWalkModel()</pre></a></li>
+<li class="method protected "><a href="#method_viewTree" title="viewTree() :: Render the tree view."><span class="description">Render the tree view.</span><pre>viewTree()</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeView"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.TreeView.html">TreeView</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class TreeView.</p>
+<div class="details">
+<div class="long_description">Implementation for tree displaying.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.View.Contao2BackendView.html">DcGeneral\Contao\View\Contao2BackendView</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_ajaxTreeView"></a><div class="element clickable method public method_ajaxTreeView" data-toggle="collapse" data-target=".method_ajaxTreeView .collapse">
+<h2>Handle ajax rendering of a sub tree.</h2>
+<pre>ajaxTreeView(string $id, string $providerName, int $level) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>Id of the root node.</p></div>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>Name of the data provider where the model is contained within.</p></div>
+<div class="subelement argument">
+<h4>$level</h4>
+<code>int</code><p>Level depth of the model in the whole tree.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_enforceModelRelationship"></a><div class="element clickable method public method_enforceModelRelationship" data-toggle="collapse" data-target=".method_enforceModelRelationship .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>enforceModelRelationship($model) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$model</h4></div>
+</div></div>
+</div>
+<a id="method_getTreeCollectionRecursive"></a><div class="element clickable method public method_getTreeCollectionRecursive" data-toggle="collapse" data-target=".method_getTreeCollectionRecursive .collapse">
+<h2>Recursively retrieve a collection of all complete node hierarchy.</h2>
+<pre>getTreeCollectionRecursive(array $rootId, int $intLevel, string $providerName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rootId</h4>
+<code>array</code><p>The ids of the root node.</p></div>
+<div class="subelement argument">
+<h4>$intLevel</h4>
+<code>int</code><p>The level the items are residing on.</p></div>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider from which the root element originates from.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
+<h2>Handle an ajax call.</h2>
+<pre>handleAjaxCall() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_loadCollection"></a><div class="element clickable method public method_loadCollection" data-toggle="collapse" data-target=".method_loadCollection .collapse">
+<h2>Load the collection of child items and the parent item for the currently selected parent item.</h2>
+<pre>loadCollection(mixed $rootId, int $intLevel, null $providerName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rootId</h4>
+<code>mixed</code><p>The root element (or null to fetch everything).</p>
+</div>
+<div class="subelement argument">
+<h4>$intLevel</h4>
+<code>int</code><p>The current level in the tree (of the optional root element).</p>
+</div>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>null</code><p>The data provider from which the optional root element shall be taken from.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_paste"></a><div class="element clickable method public method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>paste() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_renderPasteRootButton"></a><div class="element clickable method public method_renderPasteRootButton" data-toggle="collapse" data-target=".method_renderPasteRootButton .collapse">
+<h2>Render the paste button for pasting into the root of the tree.</h2>
+<pre>renderPasteRootButton(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteRootButtonEvent $event) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetPasteRootButtonEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPasteRootButtonEvent</a></code><p>The event that has been triggered.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_showAll"></a><div class="element clickable method public method_showAll" data-toggle="collapse" data-target=".method_showAll .collapse">
+<h2>Show all entries from one table.</h2>
+<pre>showAll() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_calcLabelFields"></a><div class="element clickable method protected method_calcLabelFields" data-toggle="collapse" data-target=".method_calcLabelFields .collapse">
+<h2>Calculate the fields needed by a tree label for the given data provider name.</h2>
+<pre>calcLabelFields(string $strTable) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTable</h4>
+<code>string</code><p>The name of the data provider.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_determineModelState"></a><div class="element clickable method protected method_determineModelState" data-toggle="collapse" data-target=".method_determineModelState .collapse">
+<h2>Check the state of a model and set the metadata accordingly.</h2>
+<pre>determineModelState(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, int $level) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model of which the state shall be checked of.</p></div>
+<div class="subelement argument">
+<h4>$level</h4>
+<code>int</code><p>The tree level the model is contained within.</p></div>
+</div></div>
+</div>
+<a id="method_generateTreeView"></a><div class="element clickable method protected method_generateTreeView" data-toggle="collapse" data-target=".method_generateTreeView .collapse">
+<h2>generateTreeView()
+        </h2>
+<pre>generateTreeView(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $objCollection, string $treeClass) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objCollection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code><p>The collection to iterate over.</p></div>
+<div class="subelement argument">
+<h4>$treeClass</h4>
+<code>string</code><p>The class to use for the tree.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getOpenElements"></a><div class="element clickable method protected method_getOpenElements" data-toggle="collapse" data-target=".method_getOpenElements .collapse">
+<h2>Retrieve the ids of all tree nodes that are expanded.</h2>
+<pre>getOpenElements() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getToggleId"></a><div class="element clickable method protected method_getToggleId" data-toggle="collapse" data-target=".method_getToggleId .collapse">
+<h2>Retrieve the id for this view.</h2>
+<pre>getToggleId() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_isModelOpen"></a><div class="element clickable method protected method_isModelOpen" data-toggle="collapse" data-target=".method_isModelOpen .collapse">
+<h2>Determine if the passed model is expanded.</h2>
+<pre>isModelOpen(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to check.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_loadParentModel"></a><div class="element clickable method protected method_loadParentModel" data-toggle="collapse" data-target=".method_loadParentModel .collapse">
+<h2>Load the parent model for the current list.</h2>
+<pre>loadParentModel() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If the parent view requirements are not fulfilled - either no data provider
+                                  defined or no parent model id given.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_parseModel"></a><div class="element clickable method protected method_parseModel" data-toggle="collapse" data-target=".method_parseModel .collapse">
+<h2>Render a given model.</h2>
+<pre>parseModel(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel, string $strToggleID) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to render.</p></div>
+<div class="subelement argument">
+<h4>$strToggleID</h4>
+<code>string</code><p>The id of the toggler.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_toggleModel"></a><div class="element clickable method protected method_toggleModel" data-toggle="collapse" data-target=".method_toggleModel .collapse">
+<h2>Toggle the model with the given id from the given provider.</h2>
+<pre>toggleModel(string $providerName, mixed $id) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code><p>The id of the model.</p></div>
+</div></div>
+</div>
+<a id="method_treeWalkModel"></a><div class="element clickable method protected method_treeWalkModel" data-toggle="collapse" data-target=".method_treeWalkModel .collapse">
+<h2>This "renders" a model for tree view.</h2>
+<pre>treeWalkModel(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel, int $intLevel, array $arrSubTables) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to render.</p></div>
+<div class="subelement argument">
+<h4>$intLevel</h4>
+<code>int</code><p>The current level in the tree hierarchy.</p></div>
+<div class="subelement argument">
+<h4>$arrSubTables</h4>
+<code>array</code><p>The names of data providers that shall be rendered "below" this item.</p>
+</div>
+</div></div>
+</div>
+<a id="method_viewTree"></a><div class="element clickable method protected method_viewTree" data-toggle="collapse" data-target=".method_viewTree .collapse">
+<h2>Render the tree view.</h2>
+<pre>viewTree(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $collection) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code><p>The collection of items.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:39+02:00.<br></footer></div>
+</div>
+</body>
+</html>

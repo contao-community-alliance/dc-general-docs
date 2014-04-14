@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">27</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getClassName" title="getClassName() :: Retrieve the data provider class to use."><span class="description">Retrieve the data provider class to use.</span><pre>getClassName()</pre></a></li>
+<li class="method public "><a href="#method_getInitializationData" title="getInitializationData() :: Retrieve the data to use for initialization of the data provider."><span class="description">Retrieve the data to use for initialization of the data provider.</span><pre>getInitializationData()</pre></a></li>
+<li class="method public "><a href="#method_getTableName" title="getTableName() :: Retrieve the table name of the data provider."><span class="description">Retrieve the table name of the data provider.</span><pre>getTableName()</pre></a></li>
+<li class="method public "><a href="#method_setClassName" title="setClassName() :: Set the data provider class to use, defaults to 'ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider'."><span class="description">Set the data provider class to use, defaults to 'ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider'.</span><pre>setClassName()</pre></a></li>
+<li class="method public "><a href="#method_setInitializationData" title="setInitializationData() :: Set the data to use for initialization of the data provider."><span class="description">Set the data to use for initialization of the data provider.</span><pre>setInitializationData()</pre></a></li>
+<li class="method public "><a href="#method_setTableName" title="setTableName() :: Set the table name of the data provider."><span class="description">Set the table name of the data provider.</span><pre>setTableName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_className" title="$className() :: Name of the provider class to use."><span class="description"></span><pre>$className</pre></a></li>
+<li class="property protected "><a href="#property_initializationData" title="$initializationData() :: Custom initialization data to be passed to the constructor of the data provider class."><span class="description"></span><pre>$initializationData</pre></a></li>
+<li class="property protected "><a href="#property_tableName" title="$tableName() :: The table name to use."><span class="description"></span><pre>$tableName</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.Dca.html">Dca</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">ContaoDataProviderInformation</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class ContaoDataProviderInformation.</p>
+<div class="details">
+<div class="long_description">This Information holds the details of a Contao data provider definition.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Contao.Dca.html">DcGeneral\Contao\Dca</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getClassName"></a><div class="element clickable method public method_getClassName" data-toggle="collapse" data-target=".method_getClassName .collapse">
+<h2>Retrieve the data provider class to use.</h2>
+<pre>getClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getInitializationData"></a><div class="element clickable method public method_getInitializationData" data-toggle="collapse" data-target=".method_getInitializationData .collapse">
+<h2>Retrieve the data to use for initialization of the data provider.</h2>
+<pre>getInitializationData() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_getTableName"></a><div class="element clickable method public method_getTableName" data-toggle="collapse" data-target=".method_getTableName .collapse">
+<h2>Retrieve the table name of the data provider.</h2>
+<pre>getTableName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setClassName"></a><div class="element clickable method public method_setClassName" data-toggle="collapse" data-target=".method_setClassName .collapse">
+<h2>Set the data provider class to use, defaults to 'ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider'.</h2>
+<pre>setClassName(string $className) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The name of the data provider class to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></code></div>
+</div></div>
+</div>
+<a id="method_setInitializationData"></a><div class="element clickable method public method_setInitializationData" data-toggle="collapse" data-target=".method_setInitializationData .collapse">
+<h2>Set the data to use for initialization of the data provider.</h2>
+<pre>setInitializationData(mixed $initializationData) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The nature of this data is subject to the concrete implementation of the data provider defined as the class to use.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$initializationData</h4>
+<code>mixed</code><p>The initialization data the data provider class expects.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></code></div>
+</div></div>
+</div>
+<a id="method_setTableName"></a><div class="element clickable method public method_setTableName" data-toggle="collapse" data-target=".method_setTableName .collapse">
+<h2>Set the table name of the data provider.</h2>
+<pre>setTableName(string $tableName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tableName</h4>
+<code>string</code><p>The name of the table in the database.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_className"> </a><div class="element clickable property protected property_className" data-toggle="collapse" data-target=".property_className .collapse">
+<h2>Name of the provider class to use.</h2>
+<pre>$className : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_initializationData"> </a><div class="element clickable property protected property_initializationData" data-toggle="collapse" data-target=".property_initializationData .collapse">
+<h2>Custom initialization data to be passed to the constructor of the data provider class.</h2>
+<pre>$initializationData : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tableName"> </a><div class="element clickable property protected property_tableName" data-toggle="collapse" data-target=".property_tableName .collapse">
+<h2>The table name to use.</h2>
+<pre>$tableName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-04-14T20:00:39+02:00.<br></footer></div>
+</div>
+</body>
+</html>
