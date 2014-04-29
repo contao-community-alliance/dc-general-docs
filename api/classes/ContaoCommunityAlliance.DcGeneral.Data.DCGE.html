@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">27</span></a></li>
+                <span class="label label-info">38</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -69,11 +69,11 @@
 <li class="constant  "><a href="#constant_MODEL_EVEN_ODD_CLASS" title="MODEL_EVEN_ODD_CLASS() :: "><span class="description">MODEL_EVEN_ODD_CLASS</span><pre>MODEL_EVEN_ODD_CLASS</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_GROUP_HEADER" title="MODEL_GROUP_HEADER() :: "><span class="description">MODEL_GROUP_HEADER</span><pre>MODEL_GROUP_HEADER</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_GROUP_VALUE" title="MODEL_GROUP_VALUE() :: "><span class="description">MODEL_GROUP_VALUE</span><pre>MODEL_GROUP_VALUE</pre></a></li>
-<li class="constant  "><a href="#constant_MODEL_IS_CHANGED" title="MODEL_IS_CHANGED() :: State if the model is changed"><span class="description">State if the model is changed</span><pre>MODEL_IS_CHANGED</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_CHANGED" title="MODEL_IS_CHANGED() :: "><span class="description">MODEL_IS_CHANGED</span><pre>MODEL_IS_CHANGED</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_LABEL_ARGS" title="MODEL_LABEL_ARGS() :: "><span class="description">MODEL_LABEL_ARGS</span><pre>MODEL_LABEL_ARGS</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_LABEL_VALUE" title="MODEL_LABEL_VALUE() :: "><span class="description">MODEL_LABEL_VALUE</span><pre>MODEL_LABEL_VALUE</pre></a></li>
-<li class="constant  "><a href="#constant_MODEL_PID" title="MODEL_PID() :: parents id value."><span class="description">parents id value.</span><pre>MODEL_PID</pre></a></li>
-<li class="constant  "><a href="#constant_MODEL_PTABLE" title="MODEL_PTABLE() :: parents provider name."><span class="description">parents provider name.</span><pre>MODEL_PTABLE</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_PID" title="MODEL_PID() :: "><span class="description">MODEL_PID</span><pre>MODEL_PID</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_PTABLE" title="MODEL_PTABLE() :: "><span class="description">MODEL_PTABLE</span><pre>MODEL_PTABLE</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_SORTING_ASC" title="MODEL_SORTING_ASC() :: DataProvider sorting order asc"><span class="description">DataProvider sorting order asc</span><pre>MODEL_SORTING_ASC</pre></a></li>
 <li class="constant  "><a href="#constant_MODEL_SORTING_DESC" title="MODEL_SORTING_DESC() :: DataProvider sorting order desc"><span class="description">DataProvider sorting order desc</span><pre>MODEL_SORTING_DESC</pre></a></li>
 <li class="constant  "><a href="#constant_MODE_FIXED_FIELD" title="MODE_FIXED_FIELD() :: Sorting by a fixed field."><span class="description">Sorting by a fixed field.</span><pre>MODE_FIXED_FIELD</pre></a></li>
@@ -83,7 +83,7 @@
 <li class="constant  "><a href="#constant_MODE_SIMPLE_TREEVIEW" title="MODE_SIMPLE_TREEVIEW() :: Sorting as a simple tree."><span class="description">Sorting as a simple tree.</span><pre>MODE_SIMPLE_TREEVIEW</pre></a></li>
 <li class="constant  "><a href="#constant_MODE_VARIABLE_FIELD" title="MODE_VARIABLE_FIELD() :: Sorting by a variable field."><span class="description">Sorting by a variable field.</span><pre>MODE_VARIABLE_FIELD</pre></a></li>
 <li class="constant  "><a href="#constant_TREE_VIEW_CHILD_COLLECTION" title="TREE_VIEW_CHILD_COLLECTION() :: Child Collection."><span class="description">Child Collection.</span><pre>TREE_VIEW_CHILD_COLLECTION</pre></a></li>
-<li class="constant  "><a href="#constant_TREE_VIEW_HAS_CHILDS" title="TREE_VIEW_HAS_CHILDS() :: State if we have children."><span class="description">State if we have children.</span><pre>TREE_VIEW_HAS_CHILDS</pre></a></li>
+<li class="constant  "><a href="#constant_TREE_VIEW_HAS_CHILDS" title="TREE_VIEW_HAS_CHILDS() :: "><span class="description">TREE_VIEW_HAS_CHILDS</span><pre>TREE_VIEW_HAS_CHILDS</pre></a></li>
 <li class="constant  "><a href="#constant_TREE_VIEW_IS_OPEN" title="TREE_VIEW_IS_OPEN() :: Is the tree item open."><span class="description">Is the tree item open.</span><pre>TREE_VIEW_IS_OPEN</pre></a></li>
 <li class="constant  "><a href="#constant_TREE_VIEW_LEVEL" title="TREE_VIEW_LEVEL() :: The current level in a tree view."><span class="description">The current level in a tree view.</span><pre>TREE_VIEW_LEVEL</pre></a></li>
 <li class="constant  "><a href="#constant_TREE_VIEW_TITLE" title="TREE_VIEW_TITLE() :: Title of an item in a tree view."><span class="description">Title of an item in a tree view.</span><pre>TREE_VIEW_TITLE</pre></a></li>
@@ -146,61 +146,181 @@
 <h2>MODEL_BUTTONS</h2>
 <pre>MODEL_BUTTONS </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::OPERATION_BUTTONS</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::OPERATION_BUTTONS"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_CLASS"> </a><div class="element clickable constant  constant_MODEL_CLASS" data-toggle="collapse" data-target=".constant_MODEL_CLASS .collapse">
 <h2>MODEL_CLASS</h2>
 <pre>MODEL_CLASS </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::CSS_CLASS</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::CSS_CLASS"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_EVEN_ODD_CLASS"> </a><div class="element clickable constant  constant_MODEL_EVEN_ODD_CLASS" data-toggle="collapse" data-target=".constant_MODEL_EVEN_ODD_CLASS .collapse">
 <h2>MODEL_EVEN_ODD_CLASS</h2>
 <pre>MODEL_EVEN_ODD_CLASS </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::CSS_ROW_CLASS</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::CSS_ROW_CLASS"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_GROUP_HEADER"> </a><div class="element clickable constant  constant_MODEL_GROUP_HEADER" data-toggle="collapse" data-target=".constant_MODEL_GROUP_HEADER .collapse">
 <h2>MODEL_GROUP_HEADER</h2>
 <pre>MODEL_GROUP_HEADER </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::GROUP_HEADER</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::GROUP_HEADER"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_GROUP_VALUE"> </a><div class="element clickable constant  constant_MODEL_GROUP_VALUE" data-toggle="collapse" data-target=".constant_MODEL_GROUP_VALUE .collapse">
 <h2>MODEL_GROUP_VALUE</h2>
 <pre>MODEL_GROUP_VALUE </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::GROUP_VALUE</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::GROUP_VALUE"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_IS_CHANGED"> </a><div class="element clickable constant  constant_MODEL_IS_CHANGED" data-toggle="collapse" data-target=".constant_MODEL_IS_CHANGED .collapse">
-<h2>State if the model is changed</h2>
+<h2>MODEL_IS_CHANGED</h2>
 <pre>MODEL_IS_CHANGED </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::IS_CHANGED</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::IS_CHANGED"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_LABEL_ARGS"> </a><div class="element clickable constant  constant_MODEL_LABEL_ARGS" data-toggle="collapse" data-target=".constant_MODEL_LABEL_ARGS .collapse">
 <h2>MODEL_LABEL_ARGS</h2>
 <pre>MODEL_LABEL_ARGS </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::LABEL_ARGS</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::LABEL_ARGS"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_LABEL_VALUE"> </a><div class="element clickable constant  constant_MODEL_LABEL_VALUE" data-toggle="collapse" data-target=".constant_MODEL_LABEL_VALUE .collapse">
 <h2>MODEL_LABEL_VALUE</h2>
 <pre>MODEL_LABEL_VALUE </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::LABEL_VALUE</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::LABEL_VALUE"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_PID"> </a><div class="element clickable constant  constant_MODEL_PID" data-toggle="collapse" data-target=".constant_MODEL_PID .collapse">
-<h2>parents id value.</h2>
+<h2>MODEL_PID</h2>
 <pre>MODEL_PID </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::PARENT_ID</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::PARENT_ID"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_PTABLE"> </a><div class="element clickable constant  constant_MODEL_PTABLE" data-toggle="collapse" data-target=".constant_MODEL_PTABLE .collapse">
-<h2>parents provider name.</h2>
+<h2>MODEL_PTABLE</h2>
 <pre>MODEL_PTABLE </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::PARENT_PROVIDER_NAME</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::PARENT_PROVIDER_NAME"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_MODEL_SORTING_ASC"> </a><div class="element clickable constant  constant_MODEL_SORTING_ASC" data-toggle="collapse" data-target=".constant_MODEL_SORTING_ASC .collapse">
 <h2>DataProvider sorting order asc</h2>
@@ -257,10 +377,22 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="constant_TREE_VIEW_HAS_CHILDS"> </a><div class="element clickable constant  constant_TREE_VIEW_HAS_CHILDS" data-toggle="collapse" data-target=".constant_TREE_VIEW_HAS_CHILDS .collapse">
-<h2>State if we have children.</h2>
+<h2>TREE_VIEW_HAS_CHILDS</h2>
 <pre>TREE_VIEW_HAS_CHILDS </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td>Use ModelInterface::HAS_CHILDREN</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CData%5CModelInterface::HAS_CHILDREN"></a></td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="constant_TREE_VIEW_IS_OPEN"> </a><div class="element clickable constant  constant_TREE_VIEW_IS_OPEN" data-toggle="collapse" data-target=".constant_TREE_VIEW_IS_OPEN .collapse">
 <h2>Is the tree item open.</h2>
@@ -288,7 +420,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-04-14T20:00:32+02:00.<br></footer></div>
+            generated on 2014-04-29T04:41:44+02:00.<br></footer></div>
 </div>
 </body>
 </html>

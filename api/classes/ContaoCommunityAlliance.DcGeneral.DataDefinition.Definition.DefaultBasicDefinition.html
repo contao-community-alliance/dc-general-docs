@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">27</span></a></li>
+                <span class="label label-info">38</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -65,6 +65,7 @@
 <li class="method public "><a href="#method_getMode" title="getMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getMode()</pre></a></li>
 <li class="method public "><a href="#method_getParentDataProvider" title="getParentDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getParentDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_getRootDataProvider" title="getRootDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getRootEntries" title="getRootEntries() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getRootEntries()</pre></a></li>
 <li class="method public "><a href="#method_hasAdditionalFilter" title="hasAdditionalFilter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasAdditionalFilter()</pre></a></li>
 <li class="method public "><a href="#method_isClosed" title="isClosed() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isClosed()</pre></a></li>
 <li class="method public "><a href="#method_isCreatable" title="isCreatable() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>isCreatable()</pre></a></li>
@@ -82,6 +83,7 @@
 <li class="method public "><a href="#method_setMode" title="setMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setMode()</pre></a></li>
 <li class="method public "><a href="#method_setParentDataProvider" title="setParentDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setParentDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_setRootDataProvider" title="setRootDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setRootEntries" title="setRootEntries() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setRootEntries()</pre></a></li>
 <li class="method public "><a href="#method_setSwitchToEditEnabled" title="setSwitchToEditEnabled() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSwitchToEditEnabled()</pre></a></li>
 </ul>
 </li>
@@ -100,6 +102,7 @@
 <li class="property protected "><a href="#property_mode" title="$mode() :: The mode."><span class="description"></span><pre>$mode</pre></a></li>
 <li class="property protected "><a href="#property_parentProviderName" title="$parentProviderName() :: The name of the data provider of the parent element."><span class="description"></span><pre>$parentProviderName</pre></a></li>
 <li class="property protected "><a href="#property_providerName" title="$providerName() :: The name of the data provider of the elements being processed."><span class="description"></span><pre>$providerName</pre></a></li>
+<li class="property protected "><a href="#property_rootEntries" title="$rootEntries() :: The ids of the root entries."><span class="description"></span><pre>$rootEntries</pre></a></li>
 <li class="property protected "><a href="#property_rootProviderName" title="$rootProviderName() :: The name of the data provider of the root elements."><span class="description"></span><pre>$rootProviderName</pre></a></li>
 <li class="property protected "><a href="#property_switchToEditEnabled" title="$switchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description"></span><pre>$switchToEditEnabled</pre></a></li>
 </ul>
@@ -166,6 +169,12 @@
 <a id="method_getRootDataProvider"></a><div class="element clickable method public method_getRootDataProvider" data-toggle="collapse" data-target=".method_getRootDataProvider .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>getRootDataProvider() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getRootEntries"></a><div class="element clickable method public method_getRootEntries" data-toggle="collapse" data-target=".method_getRootEntries .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getRootEntries() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -316,6 +325,16 @@
 <div class="subelement argument"><h4>$providerName</h4></div>
 </div></div>
 </div>
+<a id="method_setRootEntries"></a><div class="element clickable method public method_setRootEntries" data-toggle="collapse" data-target=".method_setRootEntries .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setRootEntries($entries) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$entries</h4></div>
+</div></div>
+</div>
 <a id="method_setSwitchToEditEnabled"></a><div class="element clickable method public method_setSwitchToEditEnabled" data-toggle="collapse" data-target=".method_setSwitchToEditEnabled .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>setSwitchToEditEnabled($switchToEditEnabled) </pre>
@@ -382,6 +401,12 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_rootEntries"> </a><div class="element clickable property protected property_rootEntries" data-toggle="collapse" data-target=".property_rootEntries .collapse">
+<h2>The ids of the root entries.</h2>
+<pre>$rootEntries : mixed[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_rootProviderName"> </a><div class="element clickable property protected property_rootProviderName" data-toggle="collapse" data-target=".property_rootProviderName .collapse">
 <h2>The name of the data provider of the root elements.</h2>
 <pre>$rootProviderName : string</pre>
@@ -402,7 +427,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-04-14T20:00:33+02:00.<br></footer></div>
+            generated on 2014-04-29T04:41:45+02:00.<br></footer></div>
 </div>
 </body>
 </html>

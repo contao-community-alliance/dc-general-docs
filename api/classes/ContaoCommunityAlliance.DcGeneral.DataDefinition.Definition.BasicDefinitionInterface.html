@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">27</span></a></li>
+                <span class="label label-info">38</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -65,6 +65,7 @@
 <li class="method public "><a href="#method_getMode" title="getMode() :: Get the mode the data definition is in."><span class="description">Get the mode the data definition is in.</span><pre>getMode()</pre></a></li>
 <li class="method public "><a href="#method_getParentDataProvider" title="getParentDataProvider() :: Retrieve the name of data provider that holds the parent model."><span class="description">Retrieve the name of data provider that holds the parent model.</span><pre>getParentDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_getRootDataProvider" title="getRootDataProvider() :: Retrieve the name of data provider that holds the models for the root level."><span class="description">Retrieve the name of data provider that holds the models for the root level.</span><pre>getRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getRootEntries" title="getRootEntries() :: Get the ids of the root elements (only valid when in hierarchical mode)."><span class="description">Get the ids of the root elements (only valid when in hierarchical mode).</span><pre>getRootEntries()</pre></a></li>
 <li class="method public "><a href="#method_hasAdditionalFilter" title="hasAdditionalFilter() :: Determine if additional filters are set for the given data provider."><span class="description">Determine if additional filters are set for the given data provider.</span><pre>hasAdditionalFilter()</pre></a></li>
 <li class="method public "><a href="#method_isClosed" title="isClosed() :: Boolean flag determining if this data container is closed."><span class="description">Boolean flag determining if this data container is closed.</span><pre>isClosed()</pre></a></li>
 <li class="method public "><a href="#method_isCreatable" title="isCreatable() :: Determines if new entries may be created within this data container."><span class="description">Determines if new entries may be created within this data container.</span><pre>isCreatable()</pre></a></li>
@@ -82,6 +83,7 @@
 <li class="method public "><a href="#method_setMode" title="setMode() :: Set the mode the data definition is in."><span class="description">Set the mode the data definition is in.</span><pre>setMode()</pre></a></li>
 <li class="method public "><a href="#method_setParentDataProvider" title="setParentDataProvider() :: Set the name of the data provider that holds the parent model."><span class="description">Set the name of the data provider that holds the parent model.</span><pre>setParentDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_setRootDataProvider" title="setRootDataProvider() :: Set the name of the data provider that holds the models for the root level."><span class="description">Set the name of the data provider that holds the models for the root level.</span><pre>setRootDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_setRootEntries" title="setRootEntries() :: Set the ids of the root elements (only valid when in hierarchical mode)."><span class="description">Set the ids of the root elements (only valid when in hierarchical mode).</span><pre>setRootEntries()</pre></a></li>
 <li class="method public "><a href="#method_setSwitchToEditEnabled" title="setSwitchToEditEnabled() :: Determines if the view shall switch automatically into edit mode."><span class="description">Determines if the view shall switch automatically into edit mode.</span><pre>setSwitchToEditEnabled()</pre></a></li>
 </ul>
 </li>
@@ -180,6 +182,16 @@
 Note: This does only apply when in tree mode or parenting mode. For flat mode this does not make sense.</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getRootEntries"></a><div class="element clickable method public method_getRootEntries" data-toggle="collapse" data-target=".method_getRootEntries .collapse">
+<h2>Get the ids of the root elements (only valid when in hierarchical mode).</h2>
+<pre>getRootEntries() : mixed[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed[]</code></div>
 </div></div>
 </div>
 <a id="method_hasAdditionalFilter"></a><div class="element clickable method public method_hasAdditionalFilter" data-toggle="collapse" data-target=".method_hasAdditionalFilter .collapse">
@@ -415,6 +427,20 @@ Note: This does only apply when in tree mode or parenting mode. For flat mode th
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_setRootEntries"></a><div class="element clickable method public method_setRootEntries" data-toggle="collapse" data-target=".method_setRootEntries .collapse">
+<h2>Set the ids of the root elements (only valid when in hierarchical mode).</h2>
+<pre>setRootEntries(mixed[] $entries) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The here specified elements will filter the root condition.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entries</h4>
+<code>mixed[]</code><p>The ids of the items to be used as root elements.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_setSwitchToEditEnabled"></a><div class="element clickable method public method_setSwitchToEditEnabled" data-toggle="collapse" data-target=".method_setSwitchToEditEnabled .collapse">
 <h2>Determines if the view shall switch automatically into edit mode.</h2>
 <pre>setSwitchToEditEnabled(bool $switchToEditEnabled) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></pre>
@@ -465,7 +491,7 @@ Note: This does only apply when in tree mode or parenting mode. For flat mode th
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-04-14T20:00:34+02:00.<br></footer></div>
+            generated on 2014-04-29T04:41:47+02:00.<br></footer></div>
 </div>
 </body>
 </html>
