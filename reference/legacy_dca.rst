@@ -217,6 +217,7 @@ This is a full **legacy dca** reference example with all known keys and example 
                     array('<class name>', '<method name>')
                 ),
                 'eval'                 => array(
+                    'tl_class'           => 'w50 clr',
                     'helpwizard'         => true,
                     'mandatory'          => true,
                     'maxlength'          => 255,
