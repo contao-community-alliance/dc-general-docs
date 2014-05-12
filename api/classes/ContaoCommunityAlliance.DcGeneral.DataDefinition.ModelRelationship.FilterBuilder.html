@@ -63,6 +63,7 @@
 <li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_checkNotRoot" title="checkNotRoot() :: Check that the builder is not for a root filter."><span class="description">Check that the builder is not for a root filter.</span><pre>checkNotRoot()</pre></a></li>
 <li class="method public "><a href="#method_checkValidOperation" title="checkValidOperation() :: Check that an given argument is a valid operation."><span class="description">Check that an given argument is a valid operation.</span><pre>checkValidOperation()</pre></a></li>
+<li class="method public "><a href="#method_encapsulateOr" title="encapsulateOr() :: Encapsulate the root with an Or condition and return the OR condition."><span class="description">Encapsulate the root with an Or condition and return the OR condition.</span><pre>encapsulateOr()</pre></a></li>
 <li class="method public "><a href="#method_fromArray" title="fromArray() :: Create a new instance from an array."><span class="description">Create a new instance from an array.</span><pre>fromArray()</pre></a></li>
 <li class="method public "><a href="#method_fromArrayForRoot" title="fromArrayForRoot() :: Create a new instance from an array for a root filter."><span class="description">Create a new instance from an array for a root filter.</span><pre>fromArrayForRoot()</pre></a></li>
 <li class="method public "><a href="#method_getAllAsArray" title="getAllAsArray() :: Return the current filters."><span class="description">Return the current filters.</span><pre>getAllAsArray()</pre></a></li>
@@ -78,7 +79,7 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected "><a href="#property_filter" title="$filter() :: The current filter root (always an AND builder)."><span class="description"></span><pre>$filter</pre></a></li>
+<li class="property protected "><a href="#property_filters" title="$filters() :: The current filter root (always an AND builder)."><span class="description"></span><pre>$filters</pre></a></li>
 <li class="property protected "><a href="#property_isRootFilter" title="$isRootFilter() :: Flag determining if the current filter is a root filter or parent child filter."><span class="description"></span><pre>$isRootFilter</pre></a></li>
 </ul>
 </li>
@@ -166,6 +167,12 @@
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ModelRelationship.FilterBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\FilterBuilder</a></code></div>
 </div></div>
+</div>
+<a id="method_encapsulateOr"></a><div class="element clickable method public method_encapsulateOr" data-toggle="collapse" data-target=".method_encapsulateOr .collapse">
+<h2>Encapsulate the root with an Or condition and return the OR condition.</h2>
+<pre>encapsulateOr() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_fromArray"></a><div class="element clickable method public method_fromArray" data-toggle="collapse" data-target=".method_fromArray .collapse">
 <h2>Create a new instance from an array.</h2>
@@ -265,9 +272,9 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_filter"> </a><div class="element clickable property protected property_filter" data-toggle="collapse" data-target=".property_filter .collapse">
+<a id="property_filters"> </a><div class="element clickable property protected property_filters" data-toggle="collapse" data-target=".property_filters .collapse">
 <h2>The current filter root (always an AND builder).</h2>
-<pre>$filter : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ModelRelationship.FilterBuilder.AndFilterBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\FilterBuilder\AndFilterBuilder</a></pre>
+<pre>$filters : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ModelRelationship.FilterBuilder.AndFilterBuilder.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\FilterBuilder\AndFilterBuilder</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -285,7 +292,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-05-05T11:26:41+02:00.<br></footer></div>
+            generated on 2014-05-12T18:52:45+02:00.<br></footer></div>
 </div>
 </body>
 </html>
