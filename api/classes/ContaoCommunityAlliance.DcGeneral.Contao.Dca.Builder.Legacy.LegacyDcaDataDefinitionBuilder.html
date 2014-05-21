@@ -75,6 +75,7 @@
 <li class="method protected "><a href="#method_parseBasicDefinition" title="parseBasicDefinition() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parseBasicDefinition()</pre></a></li>
 <li class="method protected "><a href="#method_parseBasicFlags" title="parseBasicFlags() :: Parse the basic flags."><span class="description">Parse the basic flags.</span><pre>parseBasicFlags()</pre></a></li>
 <li class="method protected "><a href="#method_parseBasicMode" title="parseBasicMode() :: Parse the mode, flat, parented or hierarchical."><span class="description">Parse the mode, flat, parented or hierarchical.</span><pre>parseBasicMode()</pre></a></li>
+<li class="method protected "><a href="#method_parseCallback" title="parseCallback() :: Register the callback handlers for the given legacy callbacks."><span class="description">Register the callback handlers for the given legacy callbacks.</span><pre>parseCallback()</pre></a></li>
 <li class="method protected "><a href="#method_parseCallbacks" title="parseCallbacks() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parseCallbacks()</pre></a></li>
 <li class="method protected "><a href="#method_parseDataProvider" title="parseDataProvider() :: This method parses all data provider related information from Contao legacy data container arrays."><span class="description">This method parses all data provider related information from Contao legacy data container arrays.</span><pre>parseDataProvider()</pre></a></li>
 <li class="method protected "><a href="#method_parseGlobalOperations" title="parseGlobalOperations() :: Parse the defined container scoped operations and populate the definition."><span class="description">Parse the defined container scoped operations and populate the definition.</span><pre>parseGlobalOperations()</pre></a></li>
@@ -92,6 +93,7 @@
 <li class="method protected "><a href="#method_parsePanelSubmit" title="parsePanelSubmit() :: Add  elements to the panel."><span class="description">Add  elements to the panel.</span><pre>parsePanelSubmit()</pre></a></li>
 <li class="method protected "><a href="#method_parseParentChildConditions" title="parseParentChildConditions() :: This method parses the parent-child conditions."><span class="description">This method parses the parent-child conditions.</span><pre>parseParentChildConditions()</pre></a></li>
 <li class="method protected "><a href="#method_parseProperties" title="parseProperties() :: Parse the defined properties and populate the definition."><span class="description">Parse the defined properties and populate the definition.</span><pre>parseProperties()</pre></a></li>
+<li class="method protected "><a href="#method_parsePropertyCallbacks" title="parsePropertyCallbacks() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parsePropertyCallbacks()</pre></a></li>
 <li class="method protected "><a href="#method_parseRootEntries" title="parseRootEntries() :: This method parses the root entries definition."><span class="description">This method parses the root entries definition.</span><pre>parseRootEntries()</pre></a></li>
 <li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: "><span class="description">parseSingleProperty()
         </span><pre>parseSingleProperty()</pre></a></li>
@@ -333,6 +335,30 @@ will get loaded.</div>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.BasicDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\BasicDefinitionInterface</a></code><p>The basic definition of the data definition.</p></div>
 </div></div>
 </div>
+<a id="method_parseCallback"></a><div class="element clickable method protected method_parseCallback" data-toggle="collapse" data-target=".method_parseCallback .collapse">
+<h2>Register the callback handlers for the given legacy callbacks.</h2>
+<pre>parseCallback(\Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher, array $callbacks, string $eventName, array $suffixes, string $listener) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dispatcher</h4>
+<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher.</p></div>
+<div class="subelement argument">
+<h4>$callbacks</h4>
+<code>array</code><p>The callbacks to be handled.</p></div>
+<div class="subelement argument">
+<h4>$eventName</h4>
+<code>string</code><p>The event to be registered to.</p></div>
+<div class="subelement argument">
+<h4>$suffixes</h4>
+<code>array</code><p>The suffixes for the event.</p></div>
+<div class="subelement argument">
+<h4>$listener</h4>
+<code>string</code><p>The listener class to use.</p></div>
+</div></div>
+</div>
 <a id="method_parseCallbacks"></a><div class="element clickable method protected method_parseCallbacks" data-toggle="collapse" data-target=".method_parseCallbacks .collapse">
 <h2>Parse the basic configuration and populate the definition.</h2>
 <pre>parseCallbacks(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher) : void</pre>
@@ -561,6 +587,21 @@ Contao.</div>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
 </div></div>
 </div>
+<a id="method_parsePropertyCallbacks"></a><div class="element clickable method protected method_parsePropertyCallbacks" data-toggle="collapse" data-target=".method_parsePropertyCallbacks .collapse">
+<h2>Parse the basic configuration and populate the definition.</h2>
+<pre>parsePropertyCallbacks(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$container</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
+<div class="subelement argument">
+<h4>$dispatcher</h4>
+<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher in use.</p></div>
+</div></div>
+</div>
 <a id="method_parseRootEntries"></a><div class="element clickable method protected method_parseRootEntries" data-toggle="collapse" data-target=".method_parseRootEntries .collapse">
 <h2>This method parses the root entries definition.</h2>
 <pre>parseRootEntries(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
@@ -616,7 +657,7 @@ Contao.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-05-21T11:18:31+02:00.<br></footer></div>
+            generated on 2014-05-22T01:24:48+02:00.<br></footer></div>
 </div>
 </body>
 </html>
