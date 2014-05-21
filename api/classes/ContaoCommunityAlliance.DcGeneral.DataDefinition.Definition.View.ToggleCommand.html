@@ -61,6 +61,8 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_getToggleProperty" title="getToggleProperty() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getToggleProperty()</pre></a></li>
+<li class="method public "><a href="#method_isInverse" title="isInverse() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isInverse()</pre></a></li>
+<li class="method public "><a href="#method_setInverse" title="setInverse() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setInverse()</pre></a></li>
 <li class="method public "><a href="#method_setToggleProperty" title="setToggleProperty() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setToggleProperty()</pre></a></li>
 </ul>
 </li>
@@ -69,7 +71,10 @@
                     <ul></ul>
 </li>
 <li class="nav-header protected">» Protected
-                    <ul><li class="property protected "><a href="#property_property" title="$property() :: The property name to toggle."><span class="description"></span><pre>$property</pre></a></li></ul>
+                    <ul>
+<li class="property protected "><a href="#property_inverse" title="$inverse() :: The toggle command is an inverse command."><span class="description"></span><pre>$inverse</pre></a></li>
+<li class="property protected "><a href="#property_property" title="$property() :: The property name to toggle."><span class="description"></span><pre>$property</pre></a></li>
+</ul>
 </li>
 </ul>
 </div>
@@ -111,6 +116,22 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="method_isInverse"></a><div class="element clickable method public method_isInverse" data-toggle="collapse" data-target=".method_isInverse .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>isInverse() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setInverse"></a><div class="element clickable method public method_setInverse" data-toggle="collapse" data-target=".method_setInverse .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>setInverse($inverse) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$inverse</h4></div>
+</div></div>
+</div>
 <a id="method_setToggleProperty"></a><div class="element clickable method public method_setToggleProperty" data-toggle="collapse" data-target=".method_setToggleProperty .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>setToggleProperty($property) </pre>
@@ -123,6 +144,12 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_inverse"> </a><div class="element clickable property protected property_inverse" data-toggle="collapse" data-target=".property_inverse .collapse">
+<h2>The toggle command is an inverse command.</h2>
+<pre>$inverse : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">That means, the toggle does not toggle not-published <-> published, but not-disabled <-> disabled.</div></div></div>
+</div>
 <a id="property_property"> </a><div class="element clickable property protected property_property" data-toggle="collapse" data-target=".property_property .collapse">
 <h2>The property name to toggle.</h2>
 <pre>$property : string</pre>
@@ -137,7 +164,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-05-15T14:42:16+02:00.<br></footer></div>
+            generated on 2014-05-21T11:18:30+02:00.<br></footer></div>
 </div>
 </body>
 </html>
