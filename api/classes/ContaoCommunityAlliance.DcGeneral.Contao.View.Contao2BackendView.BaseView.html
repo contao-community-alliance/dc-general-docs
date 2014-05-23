@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">38</span></a></li>
+                <span class="label label-info">37</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -100,7 +100,6 @@
 <li class="method protected "><a href="#method_checkRestoreVersion" title="checkRestoreVersion() :: Check the submitted data if we want to restore a previous version of a model."><span class="description">Check the submitted data if we want to restore a previous version of a model.</span><pre>checkRestoreVersion()</pre></a></li>
 <li class="method protected "><a href="#method_createEditMask" title="createEditMask() :: Create the edit mask."><span class="description">Create the edit mask.</span><pre>createEditMask()</pre></a></li>
 <li class="method protected "><a href="#method_createEmptyModelWithDefaults" title="createEmptyModelWithDefaults() :: Create an empty model using the default values from the definition."><span class="description">Create an empty model using the default values from the definition.</span><pre>createEmptyModelWithDefaults()</pre></a></li>
-<li class="method protected "><a href="#method_dispatchEvent" title="dispatchEvent() :: Dispatch an event to the dispatcher."><span class="description">Dispatch an event to the dispatcher.</span><pre>dispatchEvent()</pre></a></li>
 <li class="method protected "><a href="#method_generateButtons" title="generateButtons() :: Compile buttons from the table configuration array and return them as HTML."><span class="description">Compile buttons from the table configuration array and return them as HTML.</span><pre>generateButtons()</pre></a></li>
 <li class="method protected "><a href="#method_generateHeaderButton" title="generateHeaderButton() :: Render a single header button."><span class="description">Render a single header button.</span><pre>generateHeaderButton()</pre></a></li>
 <li class="method protected "><a href="#method_generateHeaderButtons" title="generateHeaderButtons() :: Generate all buttons for the header of a view."><span class="description">Generate all buttons for the header of a view.</span><pre>generateHeaderButtons()</pre></a></li>
@@ -614,33 +613,6 @@ reload of the page.</div>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_dispatchEvent"></a><div class="element clickable method protected method_dispatchEvent" data-toggle="collapse" data-target=".method_dispatchEvent .collapse">
-<h2>Dispatch an event to the dispatcher.</h2>
-<pre>dispatchEvent(string $eventName, \Symfony\Component\EventDispatcher\Event $event) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">The event will first get triggered with the name of the active data provider within square brackets appended
-and plain afterwards.
-
-Example:
-  Event name: "some-event"
-  DP name:    "tl_table"
-
-  1. dispatch: "some-event[tl_table]"
-  2. dispatch: "some-event"</div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td>Use $this->getEnvironment()->getEventPropagator()->propagate() instead.</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$eventName</h4>
-<code>string</code><p>The name of the event to dispatch.</p></div>
-<div class="subelement argument">
-<h4>$event</h4>
-<code><a href="Event.html">\Symfony\Component\EventDispatcher\Event</a></code><p>The event to dispatch.</p></div>
-</div></div>
-</div>
 <a id="method_generateButtons"></a><div class="element clickable method protected method_generateButtons" data-toggle="collapse" data-target=".method_generateButtons .collapse">
 <h2>Compile buttons from the table configuration array and return them as HTML.</h2>
 <pre>generateButtons(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $previous, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $next) : string</pre>
@@ -974,7 +946,7 @@ Example:
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-05-23T12:29:26+02:00.<br></footer></div>
+            generated on 2014-05-23T17:08:21+02:00.<br></footer></div>
 </div>
 </body>
 </html>
