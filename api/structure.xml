@@ -9911,7 +9911,7 @@ into data understood by the widget.</long-description>
     </class>
     <source>eJytVE1v2zAMPdu/gocC/cDiHIZd+rV0SdcOSIZg6TFAoch0LMyWDYlOFwz976NlOXPcBMOw+ZJQ5Ht8fKJ9/bFMy3B4cRHCBcwf57BBY1Wh4UN9MCqF/C7WCPysUaMR2cQoLnFJUVFamDoH49QoS0poWMhUJUmGBq5lZNtgJLcrJi5RkqnyKMbbPsOCMGH4I6ocLVxbFz6nLhylBeVCZZEs8jfAp7ozI6dKM46aKMo4Gq0Uvd/1kkW5NWqdEkNShBmSmBUxZhYIRR65mkxJ1NaNO32YT5vDRGVoi8pI5HAYhlqwJDYGYVxoEsW4yPNKK9reZRk7IHE5kQ+NWcuJIDHBRHGaTV3ORYZEuPxUqSxGs7zfoKarMKzsfyDzsQ+v/o3U/37RhCbhWVmkX5KnVFnAWjivBPHfXHFhDC8pahBQNsAmV9PaFOPayL19+juHnO8yE9bCZ8foq1wS8Aehji14SIP4GQay0Jbg693sHm7gNJYDv8FRzC0H8a5n5CVHq4YgalQP/PEpjx7UswdueGwnjOoDdzjaCAN9w+rMMAxKUxAvPftz4nFdurFBwV4J0PgCvLFUX06HuBRG5G+od1Tgn8Oq9sDeHC5uwe1JBwzeAZYCvD1RO0O14hcDkkrL2i94fnbWmkrS2VFt7/qde33Pw4DvKDghXqfBrUXy5Wdt3fkVp3kGvs3Ly27LPhHXvXY8XSAB/dmQA24ettEgVUYfWLwj7nRGOdpqf/i2/01nR4LA93U1vRG/IX/m+BU8MqdHHtvInt71b71eVrfzTp2T8Br+AglnDTU=</source>
   </file>
-  <file path="DataContainerInterface.php" generated-path="DataContainerInterface.html" hash="86e26c794ff4866b2381d02be8d2f752" package="generalDriver">
+  <file path="DataContainerInterface.php" generated-path="DataContainerInterface.html" hash="8fa404d176258f6ef65597d4433fb06c" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -9926,6 +9926,7 @@ into data understood by the widget.</long-description>
     <interface namespace="ContaoCommunityAlliance\DcGeneral" line="20" package="DcGeneral">
       <extends>\editable</extends>
       <extends>\listable</extends>
+      <extends>\ContaoCommunityAlliance\DcGeneral\EnvironmentAwareInterface</extends>
       <name>DataContainerInterface</name>
       <full_name>\ContaoCommunityAlliance\DcGeneral\DataContainerInterface</full_name>
       <docblock line="20">
@@ -9933,19 +9934,8 @@ into data understood by the widget.</long-description>
         <long-description></long-description>
         <tag name="package" line="20" description="DcGeneral"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral" line="27" package="DcGeneral">
-        <name>getEnvironment</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\DataContainerInterface::getEnvironment()</full_name>
-        <docblock line="27">
-          <description>Return the Environment for the DC.</description>
-          <long-description></long-description>
-          <tag name="return" line="27" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-        </docblock>
-      </method>
     </interface>
-    <source>eJxlUk1PwzAMPS+/wkeYUHdAnJigaEOANKQJOE5Caeo2hjSpEndiQvx3nE6Mr57y7Pfsl5fOL3vbq9l0qmAK69s1bDEmCh7OcqHstXnVLYJ8LXqM2i0jCWVs6oFtiLkHCxspMWkPj8ZS0ziMMDdF+gKl2VUyuEfDceiKGi/+TnhkbER+i9Rhgnka4bMdYWkDd5pcYUL3T/iUN4tyRV50vEeFE1RWxKeHXSb0u0itZZFYhHtkfR9qdAkYdVeMHEcGfRqvu7pZr/bFhhymMESDAmdKeS2WJBiERfCswyJ03eCJd1fOSQIGN0tzsw/rXH1F+2QpAXnG2GRljclEquSm4jxUL5IL9DFsqSbfgjYGk/gKuYt+SzH4Dj1nP7+e5bBodPY9fqlZj+ZIuneHMr4x+jrBBmtiXTk8gY3LeclRvatJ9jqR+Q/IQ/TAEtP193ZoJPFcWy6KTBupZdxzf/AO+zJhpib9UEmu0AzecP6zWuQf7KPjc/WhPgHmW9U0</source>
+    <source>eJxlUcFOwzAMvfcrfJ5Qd0CcmKDThjakTZq0HSehNHUbQ5pUiTuYEP+Om2lFQE55fnn288vssTNdNp1MMpjAbr2DE4ZI3sHdUCg6pd9UgyCnQYdB2WUgeZJI1bPxYeBgYQJFJuVgrw3VtcUAM53HKyj0uZTGHWoOfZtX+PC3w56xFvkaqcUIs5jgi0mwMJ5bRTbXvv0nPAyTRbkhJzq+oNwKKkri23GW9t05UGNYJAZhi6y2vkIbgVG1eXpjSaOLad3Nare5FGuyGH0fNAqcZplTYkmCQVh4x8ovfNv2jvg8t1YS0Hhc6tUlrPvsGu3BUARyjKEelBVGHaiUTcW5L18lF+iCP1FFrgGlNUbx5QcW3YmCdy06Hvz8+pZxUHL2036pWCVzJOzzWMYPRldFOGJFrEqLN3C0Q17p+vQzaP6uAo667DP7yr4BkbK5Kw==</source>
   </file>
   <file path="DataDefinition/Definition/DefinitionInterface.php" generated-path="DataDefinition.Definition.DefinitionInterface.html" hash="41e58b462f01236d0b9245a8844e96b4" package="generalDriver">
     <docblock line="0">
