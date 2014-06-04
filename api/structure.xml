@@ -39188,6 +39188,716 @@ ConditionChainInterfaces etc.</long-description>
     </interface>
     <source>eJytVUtv2zAMPse/goceuh7Sw7DTii1FgrUD2iFocixQ0DIdaZUlQ5IzBMP++ygpLzfNFmz1yZJIfg/S8tXnVrbF5cVFARcwvZ3CkpxX1sCHuDFqUTzjgoCfBRlyqCdOcUg6xC5I6+IZjKVTPig0MBNS1bUmB1di6DeLkViVXLglEVzXDCv69LLCLFDN6bekGvJw5dPySablSNrQoNJDYZuDxHlE5sw7ZTgv5NVQ82pUqvB+iyVsu3JqIQOnSIJ7CnhvK9IeAmEzTDFaCTI+yb27md7lzVpp8rZzgnh5WRQGmRIbQzC2JqAd26bpjAqra63ZAUGPE3GTzXqcYMAJ1YqP2dTHBPhAGuPKS9V+LIrOn1oop381gVzN8Jy77ttcKg9qsw/S6opVsUhlauuahAZY2i6kXSHRoeDo2DLhwdaA4KwN0ESAqLrX/NPlJIN2RB64JkurUvSWd/GzGETiA8aY0ZrSJgrQAxvOocMYkIKYiMMG0DlcwdkSdUephTkOXMf9gWChJGAzK2DNfMYFzWJPlt8r6Ch0zhzjN4gqBm1X8jhA3RmRiHkKXxLgdeRxnnm84yZsxdycJGaNndQcgVr0oXogh44xMQ71f/crvfWc+iHJQIPP0SnMNr0Yhf+1bJbJnWbXoZLTzNqAvGpU/FzjiMf3/BlD6+xSVa+MmOfrg63Y86ziid/Gp1pv4Eli8Y1rvWbLQy56OvU1i8z9DybtUHt4122rVwki9X3XDZ4TPBiD7FP/IoIzW35PW8myPEZBYgAvUWueNr636S0HCyPnuT3fAvcUzckHUNm2Bf+tzJpSuiQr4rlfU+Fs/iEBCmFdui1Ycoh36daEf1Kevq/AJKg61Flaq4+o4otaSPI9Vb+K33Suehc=</source>
   </file>
+  <file path="Contao/View/Contao2BackendView/TreePicker.php" generated-path="Contao.View.Contao2BackendView.TreePicker.html" hash="89b8be9b0503c363ff1ceee49fada4c5" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="author" line="0" description="Stefan Heimes" link="mailto:stefan_heimes@hotmail.com"/>
+      <tag name="author" line="0" description="Tristan Lins" link="mailto:tristan.lins@bit3.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="40" package="generalDriver">
+      <extends>\Widget</extends>
+      <name>TreePicker</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker</full_name>
+      <docblock line="40">
+        <description>Provide methods to handle input field "tableTree".</description>
+        <long-description></long-description>
+        <tag name="copyright" line="40" description="2014 CyberSpectrum"/>
+        <tag name="author" line="40" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      </docblock>
+      <property static="false" visibility="protected" line="48" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$blnSubmitInput</name>
+        <default>true</default>
+        <docblock line="48">
+          <description>Submit user input.</description>
+          <long-description></long-description>
+          <tag name="var" line="48" description="" type="boolean" variable="">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="55" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$strTemplate</name>
+        <default>'be_widget'</default>
+        <docblock line="55">
+          <description>The template.</description>
+          <long-description></long-description>
+          <tag name="var" line="55" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="62" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$subTemplate</name>
+        <default>'widget_treepicker'</default>
+        <docblock line="62">
+          <description>The sub template to use when generating.</description>
+          <long-description></long-description>
+          <tag name="var" line="62" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="69" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$strAjaxId</name>
+        <default></default>
+        <docblock line="69">
+          <description>The ajax id.</description>
+          <long-description></long-description>
+          <tag name="var" line="69" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="76" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$strAjaxKey</name>
+        <default></default>
+        <docblock line="76">
+          <description>The ajax key.</description>
+          <long-description></long-description>
+          <tag name="var" line="76" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="83" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$strAjaxName</name>
+        <default></default>
+        <docblock line="83">
+          <description>The ajax name.</description>
+          <long-description></long-description>
+          <tag name="var" line="83" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="90" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$dataContainer</name>
+        <default></default>
+        <docblock line="90">
+          <description>The data Container.</description>
+          <long-description></long-description>
+          <tag name="var" line="90" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="97" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$sourceName</name>
+        <default></default>
+        <docblock line="97">
+          <description>The source data container name.</description>
+          <long-description></long-description>
+          <tag name="var" line="97" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="106" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$fieldType</name>
+        <default>'radio'</default>
+        <docblock line="106">
+          <description>The field type to use.</description>
+          <long-description>This may be either "radio" or "checkbox"</long-description>
+          <tag name="var" line="106" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="113" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$titleIcon</name>
+        <default>'system/themes/default/images/page.gif'</default>
+        <docblock line="113">
+          <description>The icon to use in the title section.</description>
+          <long-description></long-description>
+          <tag name="var" line="113" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="120" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$title</name>
+        <default></default>
+        <docblock line="120">
+          <description>The title to display.</description>
+          <long-description></long-description>
+          <tag name="var" line="120" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="127" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$itemContainer</name>
+        <default></default>
+        <docblock line="127">
+          <description>The data container for the item source.</description>
+          <long-description></long-description>
+          <tag name="var" line="127" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="134" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$orderField</name>
+        <default></default>
+        <docblock line="134">
+          <description>The property used for ordering.</description>
+          <long-description></long-description>
+          <tag name="var" line="134" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="145" package="generalDriver">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__construct()</full_name>
+        <docblock line="145">
+          <description>Create a new instance.</description>
+          <long-description></long-description>
+          <tag name="param" line="145" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array" variable="$attributes">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="145" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+          <tag name="internal" line="145" description="param $array"/>
+        </docblock>
+        <argument line="0">
+          <name>$attributes</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$dc</name>
+          <default>null</default>
+          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="159" package="generalDriver">
+        <name>setUp</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::setUp()</full_name>
+        <docblock line="159">
+          <description>Setup all local values and create the dc instance for the referenced data source.</description>
+          <long-description></long-description>
+          <tag name="param" line="159" description="&lt;p&gt;The data container to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+          <tag name="return" line="159" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$dc</name>
+          <default>null</default>
+          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="207" package="generalDriver">
+        <name>updateAjax</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::updateAjax()</full_name>
+        <docblock line="207">
+          <description>Update the value via ajax and redraw the widget.</description>
+          <long-description></long-description>
+          <tag name="param" line="207" description="&lt;p&gt;Not used in here.&lt;/p&gt;" type="string" variable="$ajaxAction">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="207" description="&lt;p&gt;The data container to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+          <tag name="return" line="207" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$ajaxAction</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$dc</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="227" package="generalDriver">
+        <name>getItemContainer</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getItemContainer()</full_name>
+        <docblock line="227">
+          <description>Retrieve the item container.</description>
+          <long-description></long-description>
+          <tag name="return" line="227" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General">
+            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="237" package="generalDriver">
+        <name>getEnvironment</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getEnvironment()</full_name>
+        <docblock line="237">
+          <description>Retrieve the environment of the item data container.</description>
+          <long-description></long-description>
+          <tag name="return" line="237" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="251" package="generalDriver">
+        <name>__set</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__set()</full_name>
+        <docblock line="251">
+          <description>Add specific attributes.</description>
+          <long-description></long-description>
+          <tag name="param" line="251" description="&lt;p&gt;The key to set.&lt;/p&gt;" type="string" variable="$strKey">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="251" description="&lt;p&gt;The value.&lt;/p&gt;" type="mixed" variable="$varValue">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="251" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$strKey</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$varValue</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="298" package="generalDriver">
+        <name>__get</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__get()</full_name>
+        <docblock line="298">
+          <description>Return an object property.</description>
+          <long-description>Supported keys:
+
+* sourceName: the name of the data container for the item elements.
+* fieldType : the input type. Either "radio" or "checkbox".
+* titleIcon:  the icon to use in the title section.
+* mandatory:  the field value must not be empty.</long-description>
+          <tag name="param" line="298" description="&lt;p&gt;The property name.&lt;/p&gt;" type="string" variable="$strKey">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="298" description="The property value." type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$strKey</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="329" package="generalDriver">
+        <name>validator</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::validator()</full_name>
+        <docblock line="329">
+          <description>Skip the field if "change selection" is not checked.</description>
+          <long-description></long-description>
+          <tag name="param" line="329" description="&lt;p&gt;The current value.&lt;/p&gt;" type="array" variable="$varInput">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="329" description="" type="array|string">
+            <type>array</type>
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$varInput</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="344" package="generalDriver">
+        <name>renderItemsPlain</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::renderItemsPlain()</full_name>
+        <docblock line="344">
+          <description>Render the current values for listing.</description>
+          <long-description></long-description>
+          <tag name="return" line="344" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="408" package="generalDriver">
+        <name>generate</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generate()</full_name>
+        <docblock line="408">
+          <description>Generate the widget and return it as string.</description>
+          <long-description></long-description>
+          <tag name="return" line="408" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="455" package="generalDriver">
+        <name>generatePopup</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generatePopup()</full_name>
+        <docblock line="455">
+          <description>Generate when being called from within a popup.</description>
+          <long-description></long-description>
+          <tag name="return" line="455" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="507" package="generalDriver">
+        <name>generateAjax</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generateAjax()</full_name>
+        <docblock line="507">
+          <description>Generate a particular sub part of the page tree and return it as HTML string.</description>
+          <long-description></long-description>
+          <tag name="return" line="507" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="529" package="generalDriver">
+        <name>getToggleId</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getToggleId()</full_name>
+        <docblock line="529">
+          <description>Retrieve the id for this view.</description>
+          <long-description></long-description>
+          <tag name="return" line="529" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="539" package="generalDriver">
+        <name>getSearchSessionKey</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getSearchSessionKey()</full_name>
+        <docblock line="539">
+          <description>Retrieve the id for this view.</description>
+          <long-description></long-description>
+          <tag name="return" line="539" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="549" package="generalDriver">
+        <name>isSearchAvailable</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::isSearchAvailable()</full_name>
+        <docblock line="549">
+          <description>Check if an custom sorting field has been defined.</description>
+          <long-description></long-description>
+          <tag name="return" line="549" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="559" package="generalDriver">
+        <name>getOpenElements</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getOpenElements()</full_name>
+        <docblock line="559">
+          <description>Retrieve the ids of all tree nodes that are expanded.</description>
+          <long-description></long-description>
+          <tag name="return" line="559" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="599" package="generalDriver">
+        <name>toggleModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::toggleModel()</full_name>
+        <docblock line="599">
+          <description>Toggle the model with the given id from the given provider.</description>
+          <long-description></long-description>
+          <tag name="param" line="599" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="599" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$id">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="599" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$providerName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$id</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="628" package="generalDriver">
+        <name>isModelOpen</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::isModelOpen()</full_name>
+        <docblock line="628">
+          <description>Determine if the passed model is expanded.</description>
+          <long-description></long-description>
+          <tag name="param" line="628" description="&lt;p&gt;The model to check.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="return" line="628" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="651" package="generalDriver">
+        <name>determineModelState</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::determineModelState()</full_name>
+        <docblock line="651">
+          <description>Check the state of a model and set the metadata accordingly.</description>
+          <long-description></long-description>
+          <tag name="param" line="651" description="&lt;p&gt;The model of which the state shall be checked of.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="651" description="&lt;p&gt;The tree level the model is contained within.&lt;/p&gt;" type="int" variable="$level">
+            <type>int</type>
+          </tag>
+          <tag name="return" line="651" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$level</name>
+          <default></default>
+          <type>int</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="668" package="generalDriver">
+        <name>treeWalkModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::treeWalkModel()</full_name>
+        <docblock line="668">
+          <description>This "renders" a model for tree view.</description>
+          <long-description></long-description>
+          <tag name="param" line="668" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="668" description="&lt;p&gt;The current level in the tree hierarchy.&lt;/p&gt;" type="int" variable="$intLevel">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="668" description="&lt;p&gt;The names of data providers that shall be rendered &quot;below&quot; this item.&lt;/p&gt;&#10;" type="array" variable="$arrSubTables">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="668" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$objModel</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$intLevel</name>
+          <default></default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$arrSubTables</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="749" package="generalDriver">
+        <name>getTreeCollectionRecursive</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getTreeCollectionRecursive()</full_name>
+        <docblock line="749">
+          <description>Recursively retrieve a collection of all complete node hierarchy.</description>
+          <long-description></long-description>
+          <tag name="param" line="749" description="&lt;p&gt;The ids of the root node.&lt;/p&gt;" type="array" variable="$rootId">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="749" description="&lt;p&gt;The level the items are residing on.&lt;/p&gt;" type="int" variable="$intLevel">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="749" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="749" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$rootId</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$intLevel</name>
+          <default>0</default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$providerName</name>
+          <default>null</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="824" package="generalDriver">
+        <name>loadCollection</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::loadCollection()</full_name>
+        <docblock line="824">
+          <description>Load the collection of child items and the parent item for the currently selected parent item.</description>
+          <long-description></long-description>
+          <tag name="param" line="824" description="&lt;p&gt;The root element (or null to fetch everything).&lt;/p&gt;&#10;" type="mixed" variable="$rootId">
+            <type>mixed</type>
+          </tag>
+          <tag name="param" line="824" description="&lt;p&gt;The current level in the tree (of the optional root element).&lt;/p&gt;&#10;" type="int" variable="$intLevel">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="824" description="&lt;p&gt;The data provider from which the optional root element shall be taken from.&lt;/p&gt;" type="null" variable="$providerName">
+            <type>null</type>
+          </tag>
+          <tag name="return" line="824" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$rootId</name>
+          <default>null</default>
+          <type>mixed</type>
+        </argument>
+        <argument line="0">
+          <name>$intLevel</name>
+          <default>0</default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$providerName</name>
+          <default>null</default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="856" package="generalDriver">
+        <name>getFormatter</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getFormatter()</full_name>
+        <docblock line="856">
+          <description>Retrieve the formatter for the given model.</description>
+          <long-description></long-description>
+          <tag name="param" line="856" description="&lt;p&gt;The model for which the formatter shall be retrieved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="856" description="&lt;p&gt;Flag if we are running in tree mode or not.&lt;/p&gt;" type="bool" variable="$treeMode">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="856" description="" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ModelFormatterConfigInterface">
+            <type link="ModelFormatterConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ModelFormatterConfigInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$treeMode</name>
+          <default></default>
+          <type>bool</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="906" package="generalDriver">
+        <name>formatModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::formatModel()</full_name>
+        <docblock line="906">
+          <description>Format a model accordingly to the current configuration.</description>
+          <long-description>Returns either an array when in tree mode or a string in (parented) list mode.</long-description>
+          <tag name="param" line="906" description="&lt;p&gt;The model that shall be formatted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="906" description="&lt;p&gt;Flag if we are running in tree mode or not (optional, default: true).&lt;/p&gt;&#10;" type="bool" variable="$treeMode">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="906" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$treeMode</name>
+          <default>true</default>
+          <type>bool</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="1004" package="generalDriver">
+        <name>parseModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::parseModel()</full_name>
+        <docblock line="1004">
+          <description>Render a given model.</description>
+          <long-description></long-description>
+          <tag name="param" line="1004" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="1004" description="&lt;p&gt;The id of the toggler.&lt;/p&gt;" type="string" variable="$strToggleID">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1004" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$objModel</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$strToggleID</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="1056" package="generalDriver">
+        <name>generateTreeView</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generateTreeView()</full_name>
+        <docblock line="1056">
+          <description>Generate the tree view for a given collection.</description>
+          <long-description></long-description>
+          <tag name="param" line="1056" description="&lt;p&gt;The collection to iterate over.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$objCollection">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          </tag>
+          <tag name="param" line="1056" description="&lt;p&gt;The class to use for the tree.&lt;/p&gt;" type="string" variable="$treeClass">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1056" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$objCollection</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$treeClass</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <markers>
+      <todo line="372">this is untested.</todo>
+      <todo line="691">hardcoded sorting... NOT GOOD!</todo>
+    </markers>
+    <source>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</source>
+  </file>
   <file path="Data/MultiLanguageDataProvider.php" generated-path="Data.MultiLanguageDataProvider.html" hash="513110ad4b96a5143d7a18c8354c42e6" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -44621,716 +45331,6 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJytk8FO3DAQhs/JU8yBQxbRRWrV067o0gXBYVFXhfa0EnKcSWLVsSN7ErqqePeOnYRuQahCai7JeP4Z//PZWX5q6zY9PT5O4Ri211vo0XllDXwMC6tWyB+iQuCnQoNO6AunWBKToqPaupCDde2UJyUM3MpalaVGB0s591OwkvucG7coyXXNvMCz5x1uCUsuv0bVoIelj+F9HcNVbakRSs+lbV4U3oWduXKjDNfREM01R6tc0YenvaRt905VNXFJjXCDJG5sgdoDoWjmUaOVROPjuJur7WZYLJVGbzsnkcPTNDWCLTEYhLU1JOzaNk1nFO3PtWYCEncX8mqAtRsUu7XQOmeUizTt/FvqbNMKUrnSLOP0EC/e1uS7wofx+/1nNoGmiEuXPRraXSFtnW3R0f5LS3zyPq6z0/FSrLXwHiKqUTBNs2HUYauAKSivhSk0AjFdOyjv5SiFkk9LQBO6gDKAhSLo2cVU+3TTXmUX4ct/mgH8ye/Cw3nuyQlJX5E6Z5SpnivTX2kSZkx4exY5hf1gXriqa5iBj67DyjTGPIhjAft1ooFX6MERxle4aMNXjuwAsFFEWBy0cdEdb+nEPqycpknb5XwPoeyMDB35x6NzV/ls6DlLE/adHNZlHCcGH2C6IKP03RmXXppeOWvCPNnsBA4ykWI244bJbJEmj+kfHN/aQtBfJwmaqYWTo2mk/89iaBNHgpfPUS90h7HN5ClKX8LsrSpeYdnFwUY+J2PPEakqIVP+3nRaZ2MisAmpETdTipiSiaJHGkedKhaHWbJtICIqETTZQPkx/Q1ZSsrW</source>
-  </file>
-  <file path="Contao/View/Contao2BackendView/TreePicker.php" generated-path="Contao.View.Contao2BackendView.TreePicker.html" hash="89b8be9b0503c363ff1ceee49fada4c5" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
-      <tag name="author" line="0" description="Stefan Heimes" link="mailto:stefan_heimes@hotmail.com"/>
-      <tag name="author" line="0" description="Tristan Lins" link="mailto:tristan.lins@bit3.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="40" package="generalDriver">
-      <extends>\Widget</extends>
-      <name>TreePicker</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker</full_name>
-      <docblock line="40">
-        <description>Provide methods to handle input field "tableTree".</description>
-        <long-description></long-description>
-        <tag name="copyright" line="40" description="2014 CyberSpectrum"/>
-        <tag name="author" line="40" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
-      </docblock>
-      <property static="false" visibility="protected" line="48" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$blnSubmitInput</name>
-        <default>true</default>
-        <docblock line="48">
-          <description>Submit user input.</description>
-          <long-description></long-description>
-          <tag name="var" line="48" description="" type="boolean" variable="">
-            <type>boolean</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="55" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$strTemplate</name>
-        <default>'be_widget'</default>
-        <docblock line="55">
-          <description>The template.</description>
-          <long-description></long-description>
-          <tag name="var" line="55" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="62" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$subTemplate</name>
-        <default>'widget_treepicker'</default>
-        <docblock line="62">
-          <description>The sub template to use when generating.</description>
-          <long-description></long-description>
-          <tag name="var" line="62" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="69" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$strAjaxId</name>
-        <default></default>
-        <docblock line="69">
-          <description>The ajax id.</description>
-          <long-description></long-description>
-          <tag name="var" line="69" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="76" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$strAjaxKey</name>
-        <default></default>
-        <docblock line="76">
-          <description>The ajax key.</description>
-          <long-description></long-description>
-          <tag name="var" line="76" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="83" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$strAjaxName</name>
-        <default></default>
-        <docblock line="83">
-          <description>The ajax name.</description>
-          <long-description></long-description>
-          <tag name="var" line="83" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="90" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$dataContainer</name>
-        <default></default>
-        <docblock line="90">
-          <description>The data Container.</description>
-          <long-description></long-description>
-          <tag name="var" line="90" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="97" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$sourceName</name>
-        <default></default>
-        <docblock line="97">
-          <description>The source data container name.</description>
-          <long-description></long-description>
-          <tag name="var" line="97" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="106" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$fieldType</name>
-        <default>'radio'</default>
-        <docblock line="106">
-          <description>The field type to use.</description>
-          <long-description>This may be either "radio" or "checkbox"</long-description>
-          <tag name="var" line="106" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="113" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$titleIcon</name>
-        <default>'system/themes/default/images/page.gif'</default>
-        <docblock line="113">
-          <description>The icon to use in the title section.</description>
-          <long-description></long-description>
-          <tag name="var" line="113" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="120" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$title</name>
-        <default></default>
-        <docblock line="120">
-          <description>The title to display.</description>
-          <long-description></long-description>
-          <tag name="var" line="120" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="127" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$itemContainer</name>
-        <default></default>
-        <docblock line="127">
-          <description>The data container for the item source.</description>
-          <long-description></long-description>
-          <tag name="var" line="127" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="134" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
-        <name>$orderField</name>
-        <default></default>
-        <docblock line="134">
-          <description>The property used for ordering.</description>
-          <long-description></long-description>
-          <tag name="var" line="134" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="145" package="generalDriver">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__construct()</full_name>
-        <docblock line="145">
-          <description>Create a new instance.</description>
-          <long-description></long-description>
-          <tag name="param" line="145" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array" variable="$attributes">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="145" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-          <tag name="internal" line="145" description="param $array"/>
-        </docblock>
-        <argument line="0">
-          <name>$attributes</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$dc</name>
-          <default>null</default>
-          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="159" package="generalDriver">
-        <name>setUp</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::setUp()</full_name>
-        <docblock line="159">
-          <description>Setup all local values and create the dc instance for the referenced data source.</description>
-          <long-description></long-description>
-          <tag name="param" line="159" description="&lt;p&gt;The data container to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-          <tag name="return" line="159" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$dc</name>
-          <default>null</default>
-          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="207" package="generalDriver">
-        <name>updateAjax</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::updateAjax()</full_name>
-        <docblock line="207">
-          <description>Update the value via ajax and redraw the widget.</description>
-          <long-description></long-description>
-          <tag name="param" line="207" description="&lt;p&gt;Not used in here.&lt;/p&gt;" type="string" variable="$ajaxAction">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="207" description="&lt;p&gt;The data container to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DC_General" variable="$dc">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-          <tag name="return" line="207" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$ajaxAction</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$dc</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="227" package="generalDriver">
-        <name>getItemContainer</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getItemContainer()</full_name>
-        <docblock line="227">
-          <description>Retrieve the item container.</description>
-          <long-description></long-description>
-          <tag name="return" line="227" description="" type="\ContaoCommunityAlliance\DcGeneral\DC_General">
-            <type link="DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="237" package="generalDriver">
-        <name>getEnvironment</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getEnvironment()</full_name>
-        <docblock line="237">
-          <description>Retrieve the environment of the item data container.</description>
-          <long-description></long-description>
-          <tag name="return" line="237" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="251" package="generalDriver">
-        <name>__set</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__set()</full_name>
-        <docblock line="251">
-          <description>Add specific attributes.</description>
-          <long-description></long-description>
-          <tag name="param" line="251" description="&lt;p&gt;The key to set.&lt;/p&gt;" type="string" variable="$strKey">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="251" description="&lt;p&gt;The value.&lt;/p&gt;" type="mixed" variable="$varValue">
-            <type>mixed</type>
-          </tag>
-          <tag name="return" line="251" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$strKey</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$varValue</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="298" package="generalDriver">
-        <name>__get</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::__get()</full_name>
-        <docblock line="298">
-          <description>Return an object property.</description>
-          <long-description>Supported keys:
-
-* sourceName: the name of the data container for the item elements.
-* fieldType : the input type. Either "radio" or "checkbox".
-* titleIcon:  the icon to use in the title section.
-* mandatory:  the field value must not be empty.</long-description>
-          <tag name="param" line="298" description="&lt;p&gt;The property name.&lt;/p&gt;" type="string" variable="$strKey">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="298" description="The property value." type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$strKey</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="329" package="generalDriver">
-        <name>validator</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::validator()</full_name>
-        <docblock line="329">
-          <description>Skip the field if "change selection" is not checked.</description>
-          <long-description></long-description>
-          <tag name="param" line="329" description="&lt;p&gt;The current value.&lt;/p&gt;" type="array" variable="$varInput">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="329" description="" type="array|string">
-            <type>array</type>
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$varInput</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="344" package="generalDriver">
-        <name>renderItemsPlain</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::renderItemsPlain()</full_name>
-        <docblock line="344">
-          <description>Render the current values for listing.</description>
-          <long-description></long-description>
-          <tag name="return" line="344" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="408" package="generalDriver">
-        <name>generate</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generate()</full_name>
-        <docblock line="408">
-          <description>Generate the widget and return it as string.</description>
-          <long-description></long-description>
-          <tag name="return" line="408" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="455" package="generalDriver">
-        <name>generatePopup</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generatePopup()</full_name>
-        <docblock line="455">
-          <description>Generate when being called from within a popup.</description>
-          <long-description></long-description>
-          <tag name="return" line="455" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="507" package="generalDriver">
-        <name>generateAjax</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generateAjax()</full_name>
-        <docblock line="507">
-          <description>Generate a particular sub part of the page tree and return it as HTML string.</description>
-          <long-description></long-description>
-          <tag name="return" line="507" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="529" package="generalDriver">
-        <name>getToggleId</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getToggleId()</full_name>
-        <docblock line="529">
-          <description>Retrieve the id for this view.</description>
-          <long-description></long-description>
-          <tag name="return" line="529" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="539" package="generalDriver">
-        <name>getSearchSessionKey</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getSearchSessionKey()</full_name>
-        <docblock line="539">
-          <description>Retrieve the id for this view.</description>
-          <long-description></long-description>
-          <tag name="return" line="539" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="549" package="generalDriver">
-        <name>isSearchAvailable</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::isSearchAvailable()</full_name>
-        <docblock line="549">
-          <description>Check if an custom sorting field has been defined.</description>
-          <long-description></long-description>
-          <tag name="return" line="549" description="" type="bool">
-            <type>bool</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="559" package="generalDriver">
-        <name>getOpenElements</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getOpenElements()</full_name>
-        <docblock line="559">
-          <description>Retrieve the ids of all tree nodes that are expanded.</description>
-          <long-description></long-description>
-          <tag name="return" line="559" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="599" package="generalDriver">
-        <name>toggleModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::toggleModel()</full_name>
-        <docblock line="599">
-          <description>Toggle the model with the given id from the given provider.</description>
-          <long-description></long-description>
-          <tag name="param" line="599" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="599" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$id">
-            <type>mixed</type>
-          </tag>
-          <tag name="return" line="599" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$providerName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$id</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="628" package="generalDriver">
-        <name>isModelOpen</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::isModelOpen()</full_name>
-        <docblock line="628">
-          <description>Determine if the passed model is expanded.</description>
-          <long-description></long-description>
-          <tag name="param" line="628" description="&lt;p&gt;The model to check.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="return" line="628" description="" type="bool">
-            <type>bool</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="651" package="generalDriver">
-        <name>determineModelState</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::determineModelState()</full_name>
-        <docblock line="651">
-          <description>Check the state of a model and set the metadata accordingly.</description>
-          <long-description></long-description>
-          <tag name="param" line="651" description="&lt;p&gt;The model of which the state shall be checked of.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="651" description="&lt;p&gt;The tree level the model is contained within.&lt;/p&gt;" type="int" variable="$level">
-            <type>int</type>
-          </tag>
-          <tag name="return" line="651" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$level</name>
-          <default></default>
-          <type>int</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="668" package="generalDriver">
-        <name>treeWalkModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::treeWalkModel()</full_name>
-        <docblock line="668">
-          <description>This "renders" a model for tree view.</description>
-          <long-description></long-description>
-          <tag name="param" line="668" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="668" description="&lt;p&gt;The current level in the tree hierarchy.&lt;/p&gt;" type="int" variable="$intLevel">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="668" description="&lt;p&gt;The names of data providers that shall be rendered &quot;below&quot; this item.&lt;/p&gt;&#10;" type="array" variable="$arrSubTables">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="668" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$objModel</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$intLevel</name>
-          <default></default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$arrSubTables</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="749" package="generalDriver">
-        <name>getTreeCollectionRecursive</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getTreeCollectionRecursive()</full_name>
-        <docblock line="749">
-          <description>Recursively retrieve a collection of all complete node hierarchy.</description>
-          <long-description></long-description>
-          <tag name="param" line="749" description="&lt;p&gt;The ids of the root node.&lt;/p&gt;" type="array" variable="$rootId">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="749" description="&lt;p&gt;The level the items are residing on.&lt;/p&gt;" type="int" variable="$intLevel">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="749" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="749" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$rootId</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$intLevel</name>
-          <default>0</default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$providerName</name>
-          <default>null</default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="824" package="generalDriver">
-        <name>loadCollection</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::loadCollection()</full_name>
-        <docblock line="824">
-          <description>Load the collection of child items and the parent item for the currently selected parent item.</description>
-          <long-description></long-description>
-          <tag name="param" line="824" description="&lt;p&gt;The root element (or null to fetch everything).&lt;/p&gt;&#10;" type="mixed" variable="$rootId">
-            <type>mixed</type>
-          </tag>
-          <tag name="param" line="824" description="&lt;p&gt;The current level in the tree (of the optional root element).&lt;/p&gt;&#10;" type="int" variable="$intLevel">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="824" description="&lt;p&gt;The data provider from which the optional root element shall be taken from.&lt;/p&gt;" type="null" variable="$providerName">
-            <type>null</type>
-          </tag>
-          <tag name="return" line="824" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$rootId</name>
-          <default>null</default>
-          <type>mixed</type>
-        </argument>
-        <argument line="0">
-          <name>$intLevel</name>
-          <default>0</default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$providerName</name>
-          <default>null</default>
-          <type>null</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="856" package="generalDriver">
-        <name>getFormatter</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::getFormatter()</full_name>
-        <docblock line="856">
-          <description>Retrieve the formatter for the given model.</description>
-          <long-description></long-description>
-          <tag name="param" line="856" description="&lt;p&gt;The model for which the formatter shall be retrieved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="856" description="&lt;p&gt;Flag if we are running in tree mode or not.&lt;/p&gt;" type="bool" variable="$treeMode">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="856" description="" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ModelFormatterConfigInterface">
-            <type link="ModelFormatterConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ModelFormatterConfigInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$treeMode</name>
-          <default></default>
-          <type>bool</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="906" package="generalDriver">
-        <name>formatModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::formatModel()</full_name>
-        <docblock line="906">
-          <description>Format a model accordingly to the current configuration.</description>
-          <long-description>Returns either an array when in tree mode or a string in (parented) list mode.</long-description>
-          <tag name="param" line="906" description="&lt;p&gt;The model that shall be formatted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="906" description="&lt;p&gt;Flag if we are running in tree mode or not (optional, default: true).&lt;/p&gt;&#10;" type="bool" variable="$treeMode">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="906" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$treeMode</name>
-          <default>true</default>
-          <type>bool</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="1004" package="generalDriver">
-        <name>parseModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::parseModel()</full_name>
-        <docblock line="1004">
-          <description>Render a given model.</description>
-          <long-description></long-description>
-          <tag name="param" line="1004" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="1004" description="&lt;p&gt;The id of the toggler.&lt;/p&gt;" type="string" variable="$strToggleID">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="1004" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$objModel</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$strToggleID</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="1056" package="generalDriver">
-        <name>generateTreeView</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreePicker::generateTreeView()</full_name>
-        <docblock line="1056">
-          <description>Generate the tree view for a given collection.</description>
-          <long-description></long-description>
-          <tag name="param" line="1056" description="&lt;p&gt;The collection to iterate over.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$objCollection">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-          </tag>
-          <tag name="param" line="1056" description="&lt;p&gt;The class to use for the tree.&lt;/p&gt;" type="string" variable="$treeClass">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="1056" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$objCollection</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$treeClass</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-    </class>
-    <markers>
-      <todo line="372">this is untested.</todo>
-      <todo line="691">hardcoded sorting... NOT GOOD!</todo>
-    </markers>
-    <source>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</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">
