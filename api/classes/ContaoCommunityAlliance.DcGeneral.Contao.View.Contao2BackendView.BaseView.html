@@ -117,6 +117,7 @@
 <li class="method protected "><a href="#method_getTemplate" title="getTemplate() :: Create a new instance of ContaoBackendViewTemplate with the template file of the given name."><span class="description">Create a new instance of ContaoBackendViewTemplate with the template file of the given name.</span><pre>getTemplate()</pre></a></li>
 <li class="method protected "><a href="#method_getViewSection" title="getViewSection() :: Retrieve the view section for this view."><span class="description">Retrieve the view section for this view.</span><pre>getViewSection()</pre></a></li>
 <li class="method protected "><a href="#method_handleSubmit" title="handleSubmit() :: Handle the submit and determine which button has been triggered."><span class="description">Handle the submit and determine which button has been triggered.</span><pre>handleSubmit()</pre></a></li>
+<li class="method protected "><a href="#method_isIgnoredPanel" title="isIgnoredPanel() :: Check if the current element is in the ignored list."><span class="description">Check if the current element is in the ignored list.</span><pre>isIgnoredPanel()</pre></a></li>
 <li class="method protected "><a href="#method_isMultiLanguage" title="isMultiLanguage() :: Determine if we are currently working in multi language mode."><span class="description">Determine if we are currently working in multi language mode.</span><pre>isMultiLanguage()</pre></a></li>
 <li class="method protected "><a href="#method_isPopup" title="isPopup() :: Determines if this view is opened in a popup frame."><span class="description">Determines if this view is opened in a popup frame.</span><pre>isPopup()</pre></a></li>
 <li class="method protected "><a href="#method_isSelectModeActive" title="isSelectModeActive() :: Determine if the select mode is currently active or not."><span class="description">Determine if the select mode is currently active or not.</span><pre>isSelectModeActive()</pre></a></li>
@@ -836,6 +837,24 @@ reload of the page.</div>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model that has been submitted.</p></div>
 </div></div>
 </div>
+<a id="method_isIgnoredPanel"></a><div class="element clickable method protected method_isIgnoredPanel" data-toggle="collapse" data-target=".method_isIgnoredPanel .collapse">
+<h2>Check if the current element is in the ignored list.</h2>
+<pre>isIgnoredPanel(\ContaoCommunityAlliance\DcGeneral\Panel\PanelElementInterface $objElement, array $ignoredPanels) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objElement</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Panel.PanelElementInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelElementInterface</a></code><p>A panel Element.</p></div>
+<div class="subelement argument">
+<h4>$ignoredPanels</h4>
+<code>array</code><p>A list with ignored elements.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True => Element is on the ignored list. | False => Nope not in the list.</div>
+</div></div>
+</div>
 <a id="method_isMultiLanguage"></a><div class="element clickable method protected method_isMultiLanguage" data-toggle="collapse" data-target=".method_isMultiLanguage .collapse">
 <h2>Determine if we are currently working in multi language mode.</h2>
 <pre>isMultiLanguage(mixed $mixId) : bool</pre>
@@ -872,14 +891,19 @@ reload of the page.</div>
 </div>
 <a id="method_panel"></a><div class="element clickable method protected method_panel" data-toggle="collapse" data-target=".method_panel .collapse">
 <h2>Render the panel.</h2>
-<pre>panel() : string</pre>
+<pre>panel(array $ignoredPanels) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ignoredPanels</h4>
+<code>array</code><p>A list with ignored elements. [Optional]</p>
+</div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
-<td>When no panel has been defined.</td>
+<td></td>
 </tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
@@ -948,7 +972,7 @@ reload of the page.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-06-04T09:24:13+02:00.<br></footer></div>
+            generated on 2014-06-04T15:27:12+02:00.<br></footer></div>
 </div>
 </body>
 </html>
