@@ -7386,7 +7386,7 @@ current model. A circular reference is of relevance when performing a cut and pa
     </interface>
     <source>eJyNUU1Lw0AQvedXzLlgehBPFo2k0AotFFo8FWS7mXQH9yPsTtQg/ncnia1SL+5p35t5M/vezu4b02TTySSDCWyWG3jFmCh4uBGi54pG6Rd1RJBzRI9R2Xkk6RqKqmUTYl+D0kRKTMrDVhuqa4sRZjpPJ1Do7iCzG9QcW5dXeHc5YctYi3yJ5DDBLA3w2QywMIGdIpvr4P4Id/1mUa7Ii45HlFtBxYH4+rxLh6aLdDQsEoOwRlbrUKFNwKhcPvRY0ujTYHe12KxGsiaLKbRRo8BplnklT5JgEMrgWYUyONd64u7BWklA436uF2NY+7liNceapCy57n9dnwjfbrNT+KU8DsSdU76CK+iDImWBPGOs+1W1uBUH5I8gXtFz7PLvT9oZSr86K0w60kFCVOeJbBSDFuEBoU0oROinddLi+gzyy//+r4MhkZ/dvY1y3Pl4JvGd0VcJLgvZR/aZfQHSudej</source>
   </file>
-  <file path="Data/DefaultDataProvider.php" generated-path="Data.DefaultDataProvider.html" hash="317f4d68a01af9b534ce3dd5a208972b" package="generalDriver">
+  <file path="Data/DefaultDataProvider.php" generated-path="Data.DefaultDataProvider.html" hash="56fb392b729043c726f291f1824d1210" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -7478,16 +7478,24 @@ current model. A circular reference is of relevance when performing a cut and pa
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="109" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="103" package="DcGeneral\Data">
+        <name>getEmptyFilterOptionCollection</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getEmptyFilterOptionCollection()</full_name>
+        <docblock line="103">
+          <description>{@inheritDoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="117" package="DcGeneral\Data">
         <name>buildFieldQuery</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::buildFieldQuery()</full_name>
-        <docblock line="109">
+        <docblock line="117">
           <description>Build the field list.</description>
           <long-description>Returns all values from $objConfig-&gt;getFields() as comma separated list.</long-description>
-          <tag name="param" line="109" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="117" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="109" description="" type="string">
+          <tag name="return" line="117" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7497,19 +7505,19 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="139" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="147" package="DcGeneral\Data">
         <name>getAndOrFilter</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getAndOrFilter()</full_name>
-        <docblock line="139">
+        <docblock line="147">
           <description>Build an AND or OR query.</description>
           <long-description></long-description>
-          <tag name="param" line="139" description="&lt;p&gt;The operation to convert.&lt;/p&gt;" type="array" variable="$operation">
+          <tag name="param" line="147" description="&lt;p&gt;The operation to convert.&lt;/p&gt;" type="array" variable="$operation">
             <type>array</type>
           </tag>
-          <tag name="param" line="139" description="&lt;p&gt;The parameter array for the resulting query.&lt;/p&gt;" type="array" variable="$params">
+          <tag name="param" line="147" description="&lt;p&gt;The parameter array for the resulting query.&lt;/p&gt;" type="array" variable="$params">
             <type>array</type>
           </tag>
-          <tag name="return" line="139" description="" type="string">
+          <tag name="return" line="147" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7524,19 +7532,19 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="174" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="182" package="DcGeneral\Data">
         <name>getFilterForComparingOperator</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getFilterForComparingOperator()</full_name>
-        <docblock line="174">
+        <docblock line="182">
           <description>Build the sub query for a comparing operator like =,&lt;,&gt;.</description>
           <long-description></long-description>
-          <tag name="param" line="174" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
+          <tag name="param" line="182" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
             <type>array</type>
           </tag>
-          <tag name="param" line="174" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
+          <tag name="param" line="182" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
             <type>array</type>
           </tag>
-          <tag name="return" line="174" description="" type="string">
+          <tag name="return" line="182" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7551,19 +7559,19 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="190" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="198" package="DcGeneral\Data">
         <name>getFilterForInList</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getFilterForInList()</full_name>
-        <docblock line="190">
+        <docblock line="198">
           <description>Return the filter query for a "foo IN ('a', 'b')" filter.</description>
           <long-description></long-description>
-          <tag name="param" line="190" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
+          <tag name="param" line="198" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
             <type>array</type>
           </tag>
-          <tag name="param" line="190" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
+          <tag name="param" line="198" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
             <type>array</type>
           </tag>
-          <tag name="return" line="190" description="" type="string">
+          <tag name="return" line="198" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7578,19 +7586,19 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="209" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="217" package="DcGeneral\Data">
         <name>getFilterForLike</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getFilterForLike()</full_name>
-        <docblock line="209">
+        <docblock line="217">
           <description>Return the filter query for a "foo LIKE '%ba_r%'" filter.</description>
           <long-description>The searched value may contain the wildcards '*' and '?' which will get converted to proper SQL.</long-description>
-          <tag name="param" line="209" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
+          <tag name="param" line="217" description="&lt;p&gt;The operation to apply.&lt;/p&gt;" type="array" variable="$operation">
             <type>array</type>
           </tag>
-          <tag name="param" line="209" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
+          <tag name="param" line="217" description="&lt;p&gt;The parameters of the entire query.&lt;/p&gt;" type="array" variable="$params">
             <type>array</type>
           </tag>
-          <tag name="return" line="209" description="" type="string">
+          <tag name="return" line="217" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7605,10 +7613,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="251" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="259" package="DcGeneral\Data">
         <name>calculateSubfilter</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::calculateSubfilter()</full_name>
-        <docblock line="251">
+        <docblock line="259">
           <description>Combine a filter in standard filter array notation.</description>
           <long-description>Supported operations are:
 operation      needed arguments     argument type.
@@ -7632,16 +7640,16 @@ IN
 LIKE
                'property'           string (the name of a property)
                'value'              literal - Wildcards * (Many) ? (One)</long-description>
-          <tag name="param" line="251" description="&lt;p&gt;The filter to be combined to a valid SQL filter query.&lt;/p&gt;" type="array" variable="$arrFilter">
+          <tag name="param" line="259" description="&lt;p&gt;The filter to be combined to a valid SQL filter query.&lt;/p&gt;" type="array" variable="$arrFilter">
             <type>array</type>
           </tag>
-          <tag name="param" line="251" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
+          <tag name="param" line="259" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
             <type>array</type>
           </tag>
-          <tag name="return" line="251" description="The combined WHERE conditions." type="string">
+          <tag name="return" line="259" description="The combined WHERE conditions." type="string">
             <type>string</type>
           </tag>
-          <tag name="throws" line="251" description="If an invalid filter entry is encountered." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="259" description="If an invalid filter entry is encountered." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -7656,19 +7664,19 @@ LIKE
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="290" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="298" package="DcGeneral\Data">
         <name>buildWhereQuery</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::buildWhereQuery()</full_name>
-        <docblock line="290">
+        <docblock line="298">
           <description>Build the WHERE clause for a configuration.</description>
           <long-description></long-description>
-          <tag name="param" line="290" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="298" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="param" line="290" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
+          <tag name="param" line="298" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
             <type>array</type>
           </tag>
-          <tag name="return" line="290" description="The combined WHERE clause (including the word &quot;WHERE&quot;)." type="string">
+          <tag name="return" line="298" description="The combined WHERE clause (including the word &quot;WHERE&quot;)." type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7683,19 +7691,19 @@ LIKE
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="312" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="320" package="DcGeneral\Data">
         <name>buildFilterQuery</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::buildFilterQuery()</full_name>
-        <docblock line="312">
+        <docblock line="320">
           <description>Build the WHERE conditions via calculateSubfilter().</description>
           <long-description></long-description>
-          <tag name="param" line="312" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="320" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="param" line="312" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
+          <tag name="param" line="320" description="&lt;p&gt;The query parameters will get stored into this array.&lt;/p&gt;" type="array" variable="$arrParams">
             <type>array</type>
           </tag>
-          <tag name="return" line="312" description="The combined WHERE conditions." type="string">
+          <tag name="return" line="320" description="The combined WHERE conditions." type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7710,16 +7718,16 @@ LIKE
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="334" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="342" package="DcGeneral\Data">
         <name>buildSortingQuery</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::buildSortingQuery()</full_name>
-        <docblock line="334">
+        <docblock line="342">
           <description>Build the order by part of a query.</description>
           <long-description></long-description>
-          <tag name="param" line="334" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="342" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="334" description="" type="string">
+          <tag name="return" line="342" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -7729,13 +7737,13 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="363" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="371" package="DcGeneral\Data">
         <name>delete</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::delete()</full_name>
-        <docblock line="363">
+        <docblock line="371">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="throws" line="363" description="When an unusable object has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="371" description="When an unusable object has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -7745,16 +7753,16 @@ LIKE
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="406" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="414" package="DcGeneral\Data">
         <name>createModelFromDatabaseResult</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::createModelFromDatabaseResult()</full_name>
-        <docblock line="406">
+        <docblock line="414">
           <description>Create a model from a database result.</description>
           <long-description></long-description>
-          <tag name="param" line="406" description="&lt;p&gt;The database result to create a model from.&lt;/p&gt;" type="\Database\Result" variable="$dbResult">
+          <tag name="param" line="414" description="&lt;p&gt;The database result to create a model from.&lt;/p&gt;" type="\Database\Result" variable="$dbResult">
             <type link="Result.html">\Database\Result</type>
           </tag>
-          <tag name="return" line="406" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+          <tag name="return" line="414" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -7764,10 +7772,10 @@ LIKE
           <type>\Database\Result</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="427" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="435" package="DcGeneral\Data">
         <name>fetch</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::fetch()</full_name>
-        <docblock line="427">
+        <docblock line="435">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7777,10 +7785,10 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="471" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="479" package="DcGeneral\Data">
         <name>fetchAll</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::fetchAll()</full_name>
-        <docblock line="471">
+        <docblock line="479">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7790,13 +7798,13 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="518" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="526" package="DcGeneral\Data">
         <name>getFilterOptions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getFilterOptions()</full_name>
-        <docblock line="518">
+        <docblock line="526">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="throws" line="518" description="if improper values have been passed (i.e. not exactly one field requested)." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="526" description="if improper values have been passed (i.e. not exactly one field requested)." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -7806,10 +7814,10 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="552" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="558" package="DcGeneral\Data">
         <name>getCount</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getCount()</full_name>
-        <docblock line="552">
+        <docblock line="558">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7819,10 +7827,10 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="572" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="578" package="DcGeneral\Data">
         <name>isUniqueValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::isUniqueValue()</full_name>
-        <docblock line="572">
+        <docblock line="578">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7842,10 +7850,10 @@ LIKE
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="594" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="600" package="DcGeneral\Data">
         <name>resetFallback</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::resetFallback()</full_name>
-        <docblock line="594">
+        <docblock line="600">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7855,10 +7863,10 @@ LIKE
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="602" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="608" package="DcGeneral\Data">
         <name>save</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::save()</full_name>
-        <docblock line="602">
+        <docblock line="608">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7868,10 +7876,10 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="649" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="655" package="DcGeneral\Data">
         <name>saveEach</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::saveEach()</full_name>
-        <docblock line="649">
+        <docblock line="655">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7881,10 +7889,10 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="660" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="666" package="DcGeneral\Data">
         <name>fieldExists</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::fieldExists()</full_name>
-        <docblock line="660">
+        <docblock line="666">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7894,10 +7902,10 @@ LIKE
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="668" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="674" package="DcGeneral\Data">
         <name>getVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getVersion()</full_name>
-        <docblock line="668">
+        <docblock line="674">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -7912,19 +7920,19 @@ LIKE
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="711" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="717" package="DcGeneral\Data">
         <name>getVersions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getVersions()</full_name>
-        <docblock line="711">
+        <docblock line="717">
           <description>Return a list with all versions for the row with the given Id.</description>
           <long-description></long-description>
-          <tag name="param" line="711" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="717" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="711" description="&lt;p&gt;If true, only active versions will get returned, if false all version will get&#10;                              returned.&lt;/p&gt;" type="boolean" variable="$blnOnlyActive">
+          <tag name="param" line="717" description="&lt;p&gt;If true, only active versions will get returned, if false all version will get&#10;                              returned.&lt;/p&gt;" type="boolean" variable="$blnOnlyActive">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="711" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="717" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
@@ -7939,19 +7947,19 @@ LIKE
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="765" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="771" package="DcGeneral\Data">
         <name>saveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::saveVersion()</full_name>
-        <docblock line="765">
+        <docblock line="771">
           <description>Save a new version of a row.</description>
           <long-description></long-description>
-          <tag name="param" line="765" description="&lt;p&gt;The model for which a new version shall be created.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
+          <tag name="param" line="771" description="&lt;p&gt;The model for which a new version shall be created.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="765" description="&lt;p&gt;The username to attach to the version as creator.&lt;/p&gt;" type="string" variable="$strUsername">
+          <tag name="param" line="771" description="&lt;p&gt;The username to attach to the version as creator.&lt;/p&gt;" type="string" variable="$strUsername">
             <type>string</type>
           </tag>
-          <tag name="return" line="765" description="" type="void">
+          <tag name="return" line="771" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -7966,19 +7974,19 @@ LIKE
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="800" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="806" package="DcGeneral\Data">
         <name>setVersionActive</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::setVersionActive()</full_name>
-        <docblock line="800">
+        <docblock line="806">
           <description>Set a version as active.</description>
           <long-description></long-description>
-          <tag name="param" line="800" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="806" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="800" description="&lt;p&gt;The version number to set active.&lt;/p&gt;" type="mixed" variable="$mixVersion">
+          <tag name="param" line="806" description="&lt;p&gt;The version number to set active.&lt;/p&gt;" type="mixed" variable="$mixVersion">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="800" description="" type="void">
+          <tag name="return" line="806" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -7993,16 +8001,16 @@ LIKE
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="818" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="824" package="DcGeneral\Data">
         <name>getActiveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::getActiveVersion()</full_name>
-        <docblock line="818">
+        <docblock line="824">
           <description>Retrieve the current active version for a row.</description>
           <long-description></long-description>
-          <tag name="param" line="818" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="824" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="818" description="The current version number of the requested row." type="mixed">
+          <tag name="return" line="824" description="The current version number of the requested row." type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -8012,19 +8020,19 @@ LIKE
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="841" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="847" package="DcGeneral\Data">
         <name>sameModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::sameModels()</full_name>
-        <docblock line="841">
+        <docblock line="847">
           <description>Check if two models have the same values in all properties.</description>
           <long-description></long-description>
-          <tag name="param" line="841" description="&lt;p&gt;The first model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel1">
+          <tag name="param" line="847" description="&lt;p&gt;The first model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel1">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="841" description="&lt;p&gt;The second model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel2">
+          <tag name="param" line="847" description="&lt;p&gt;The second model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel2">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="return" line="841" description="True - If both models are same, false if not." type="boolean">
+          <tag name="return" line="847" description="True - If both models are same, false if not." type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -8039,22 +8047,22 @@ LIKE
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="884" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="890" package="DcGeneral\Data">
         <name>insertUndo</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider::insertUndo()</full_name>
-        <docblock line="884">
+        <docblock line="890">
           <description>Store an undo entry in the table tl_undo.</description>
           <long-description>Currently this only supports delete queries.</long-description>
-          <tag name="param" line="884" description="&lt;p&gt;The SQL used to perform the action to be undone.&lt;/p&gt;" type="string" variable="$strSourceSQL">
+          <tag name="param" line="890" description="&lt;p&gt;The SQL used to perform the action to be undone.&lt;/p&gt;" type="string" variable="$strSourceSQL">
             <type>string</type>
           </tag>
-          <tag name="param" line="884" description="&lt;p&gt;The SQL query to retrieve the current entries.&lt;/p&gt;" type="string" variable="$strSaveSQL">
+          <tag name="param" line="890" description="&lt;p&gt;The SQL query to retrieve the current entries.&lt;/p&gt;" type="string" variable="$strSaveSQL">
             <type>string</type>
           </tag>
-          <tag name="param" line="884" description="&lt;p&gt;The table to be affected by the action.&lt;/p&gt;" type="string" variable="$strTable">
+          <tag name="param" line="890" description="&lt;p&gt;The table to be affected by the action.&lt;/p&gt;" type="string" variable="$strTable">
             <type>string</type>
           </tag>
-          <tag name="return" line="884" description="" type="void">
+          <tag name="return" line="890" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -8076,9 +8084,9 @@ LIKE
       </method>
     </class>
     <markers>
-      <fixme line="141">backwards compat - remove when done.</fixme>
+      <fixme line="149">backwards compat - remove when done.</fixme>
     </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Data/DCGE.php" generated-path="Data.DCGE.html" hash="ad0142f13fbddb61d1056af7bcdeec63" package="generalDriver">
     <docblock line="0">
@@ -12536,7 +12544,7 @@ instance.</long-description>
     </class>
     <source>eJytVt9v0zAQfk7+inuoxJhYJoF4Yevo6GBD2tDEEE+VJte5NBaJHdlOR4X2v3O20zZJ29EBeaqd+/V9992lp++rvIqPDw9jOITbq1uYozZCSXjrLkYV4z/YDIGeGUrUrLjQgkz8S1bbXGn3Dsa5FsYKJuGO5yLLCtRwyhOzPIz4YkqBK+RW12WS4lk/wp3FjNyvUJRo4NT4433uj6Nc2ZKJIuGq3HD85jKT57WQ5GfDKSnoNJoK+2aVi6tqocUst+SSI9ygZTcqxcKARVYm3qYQHKXxcK8vb6/DZSYKNKrWHOl4HMeSUUlEDMJYScvUWJVlLYVdnBcFMcBxcsEvA1mTYDH5LvCh+f36A1GKMvVXH+co7Ukc12afYN56cj41VjNuffHnD0xjE2XPIHIutJIluXyWFnVGQPb1vWCWTXzev3K9wEzQa1LXpPXTE3Ht1CNnFCcTs1bwpTLHBTMGLtFealVXV8hS1B62a5Ez+EqUkuYsdXbmTCD3NiCkvytCfJhTsqXLStzPa5cXAd9VTxzhT0v2Bnb0Kf4VR1xJY+HL+c1HGMKLlB81s5X48nhIPA2JkxnaIw/pKEB6QaxEjpaIMDgl81prCgyVVhVquwCrYIqgPSOYQqY2eUmct48wmjMNVCmx487HcURxLM0peQ68yyeBRdpP6t84RkuC51h2MmAGUtdYcu3xzn1jd2YNdwYRtgthR2Vk6Njt1zZnRY09FvYE7F3b8cYamSVkIPGhqywM8luFrZhmJWwbLxjg+hbC+mndbMToThiEZ+CILmD5uBjhZoqOYKI/dfzvaHIIHFBD9xksdfOF9loI7DYcqMx3cKWqkGelKiGJ4CdkFTKW4ifZ7sr43Tdq3bL/knI7yLZeYIuCmyEqFkAjS1+4ZKmNekofBchqyd22gvt7P7y65vYgjqI/tvsVGfX6GTrpXnSo71x4ZvxNu/A4ehlHtD8iQkqx371rV9PJ2iR56aQcDWwuzNHZepiJkGG37ydrs9CK5hn2mnXSC7dkdNifyOixNURfkXpC89LtrlfZzinVaGste4Paa8as2b8e1EHDTeO4AbpXE+3utZb+YZFt1LneZe5fxJPrbAechsQnAG2n+a6BtNp/DkpT/z4jE7bfeh43UW794G3FYtB6wRyEoA2UjsSGrXXbAfmUep6BbU8FhTK3ct2UR9U8xr8B8v+cTA==</source>
   </file>
-  <file path="Data/DataProviderInterface.php" generated-path="Data.DataProviderInterface.html" hash="9a167a060ad56c8a6b967b11f4b1dd9d" package="generalDriver">
+  <file path="Data/DataProviderInterface.php" generated-path="Data.DataProviderInterface.html" hash="945966dfe435f25f49e20a338321619b" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -12611,18 +12619,29 @@ instance.</long-description>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="69" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="63" package="DcGeneral\Data">
+        <name>getEmptyFilterOptionCollection</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getEmptyFilterOptionCollection()</full_name>
+        <docblock line="63">
+          <description>Fetch an empty single filter option collection (new model list).</description>
+          <long-description></long-description>
+          <tag name="return" line="63" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface">
+            <type link="FilterOptionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="76" package="DcGeneral\Data">
         <name>fetch</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::fetch()</full_name>
-        <docblock line="69">
+        <docblock line="76">
           <description>Fetch a single or first record by id or filter.</description>
           <long-description>If the model shall be retrieved by id, use $objConfig-&gt;setId() to populate the config with an Id.
 
 If the model shall be retrieved by filter, use $objConfig-&gt;setFilter() to populate the config with a filter.</long-description>
-          <tag name="param" line="69" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="76" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="69" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+          <tag name="return" line="76" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -12632,17 +12651,17 @@ If the model shall be retrieved by filter, use $objConfig-&gt;setFilter() to pop
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="81" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="88" package="DcGeneral\Data">
         <name>fetchAll</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::fetchAll()</full_name>
-        <docblock line="81">
+        <docblock line="88">
           <description>Fetch all records (optional filtered, sorted and limited).</description>
           <long-description>This returns a collection of all models matching the config object. If idOnly is true, an array containing all
 matching ids is returned.</long-description>
-          <tag name="param" line="81" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="88" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="81" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|array">
+          <tag name="return" line="88" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|array">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
             <type>array</type>
           </tag>
@@ -12653,21 +12672,21 @@ matching ids is returned.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="96" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="103" package="DcGeneral\Data">
         <name>getFilterOptions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getFilterOptions()</full_name>
-        <docblock line="96">
+        <docblock line="103">
           <description>Retrieve all unique values for the given property.</description>
           <long-description>The result set will be an array containing all unique values contained in the data provider.
 Note: this only re-ensembles really used values for at least one data set.
 
 The only information being interpreted from the passed config object is the first property to fetch and the
 filter definition.</long-description>
-          <tag name="param" line="96" description="&lt;p&gt;The filter config options.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="103" description="&lt;p&gt;The filter config options.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="96" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          <tag name="return" line="103" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface">
+            <type link="FilterOptionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface</type>
           </tag>
         </docblock>
         <argument line="0">
@@ -12676,16 +12695,16 @@ filter definition.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="105" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="112" package="DcGeneral\Data">
         <name>getCount</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getCount()</full_name>
-        <docblock line="105">
+        <docblock line="112">
           <description>Return the amount of total items (filtering may be used in the config).</description>
           <long-description></long-description>
-          <tag name="param" line="105" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
+          <tag name="param" line="112" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="105" description="" type="int">
+          <tag name="return" line="112" description="" type="int">
             <type>int</type>
           </tag>
         </docblock>
@@ -12695,17 +12714,17 @@ filter definition.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="117" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="124" package="DcGeneral\Data">
         <name>save</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::save()</full_name>
-        <docblock line="117">
+        <docblock line="124">
           <description>Save an item to the data provider.</description>
           <long-description>If the item does not have an Id yet, the save operation will add it as a new row to the database and
 populate the Id of the model accordingly.</long-description>
-          <tag name="param" line="117" description="&lt;p&gt;The model to save back.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objItem">
+          <tag name="param" line="124" description="&lt;p&gt;The model to save back.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objItem">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="return" line="117" description="The passed model." type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+          <tag name="return" line="124" description="The passed model." type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -12715,16 +12734,16 @@ populate the Id of the model accordingly.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="126" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="133" package="DcGeneral\Data">
         <name>saveEach</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::saveEach()</full_name>
-        <docblock line="126">
+        <docblock line="133">
           <description>Save a collection of items to the data provider.</description>
           <long-description></long-description>
-          <tag name="param" line="126" description="&lt;p&gt;The collection containing all items to be saved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$objItems">
+          <tag name="param" line="133" description="&lt;p&gt;The collection containing all items to be saved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$objItems">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="return" line="126" description="" type="void">
+          <tag name="return" line="133" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -12734,19 +12753,19 @@ populate the Id of the model accordingly.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="139" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="146" package="DcGeneral\Data">
         <name>delete</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::delete()</full_name>
-        <docblock line="139">
+        <docblock line="146">
           <description>Delete an item.</description>
           <long-description>The given value may be either integer, string or an instance of Model</long-description>
-          <tag name="param" line="139" description="&lt;p&gt;Id or the model itself, to delete.&lt;/p&gt;" type="mixed" variable="$item">
+          <tag name="param" line="146" description="&lt;p&gt;Id or the model itself, to delete.&lt;/p&gt;" type="mixed" variable="$item">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="139" description="" type="void">
+          <tag name="return" line="146" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="throws" line="139" description="When an unusable object has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="146" description="When an unusable object has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -12756,19 +12775,19 @@ populate the Id of the model accordingly.</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="150" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="157" package="DcGeneral\Data">
         <name>saveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::saveVersion()</full_name>
-        <docblock line="150">
+        <docblock line="157">
           <description>Save a new version of a model.</description>
           <long-description></long-description>
-          <tag name="param" line="150" description="&lt;p&gt;The model for which a new version shall be created.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
+          <tag name="param" line="157" description="&lt;p&gt;The model for which a new version shall be created.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="150" description="&lt;p&gt;The username to attach to the version as creator.&lt;/p&gt;" type="string" variable="$strUsername">
+          <tag name="param" line="157" description="&lt;p&gt;The username to attach to the version as creator.&lt;/p&gt;" type="string" variable="$strUsername">
             <type>string</type>
           </tag>
-          <tag name="return" line="150" description="" type="void">
+          <tag name="return" line="157" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -12783,19 +12802,19 @@ populate the Id of the model accordingly.</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="161" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="168" package="DcGeneral\Data">
         <name>getVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getVersion()</full_name>
-        <docblock line="161">
+        <docblock line="168">
           <description>Return a model based of the version information.</description>
           <long-description></long-description>
-          <tag name="param" line="161" description="&lt;p&gt;The ID of the record.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="168" description="&lt;p&gt;The ID of the record.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="161" description="&lt;p&gt;The ID of the version.&lt;/p&gt;" type="mixed" variable="$mixVersion">
+          <tag name="param" line="168" description="&lt;p&gt;The ID of the version.&lt;/p&gt;" type="mixed" variable="$mixVersion">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="161" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+          <tag name="return" line="168" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -12810,19 +12829,19 @@ populate the Id of the model accordingly.</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="173" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="180" package="DcGeneral\Data">
         <name>getVersions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getVersions()</full_name>
-        <docblock line="173">
+        <docblock line="180">
           <description>Return a list with all versions for the model with the given Id.</description>
           <long-description></long-description>
-          <tag name="param" line="173" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="180" description="&lt;p&gt;The ID of the row.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="173" description="&lt;p&gt;If true, only active versions will get returned, if false all version will get&#10;                              returned.&lt;/p&gt;" type="boolean" variable="$blnOnlyActive">
+          <tag name="param" line="180" description="&lt;p&gt;If true, only active versions will get returned, if false all version will get&#10;                              returned.&lt;/p&gt;" type="boolean" variable="$blnOnlyActive">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="173" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="180" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
@@ -12837,19 +12856,19 @@ populate the Id of the model accordingly.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="184" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="191" package="DcGeneral\Data">
         <name>setVersionActive</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::setVersionActive()</full_name>
-        <docblock line="184">
+        <docblock line="191">
           <description>Set a version as active.</description>
           <long-description></long-description>
-          <tag name="param" line="184" description="&lt;p&gt;The ID of the model.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="191" description="&lt;p&gt;The ID of the model.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="184" description="&lt;p&gt;The version number to set active.&lt;/p&gt;" type="mixed" variable="$mixVersion">
+          <tag name="param" line="191" description="&lt;p&gt;The version number to set active.&lt;/p&gt;" type="mixed" variable="$mixVersion">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="184" description="" type="void">
+          <tag name="return" line="191" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -12864,16 +12883,16 @@ populate the Id of the model accordingly.</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="193" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="200" package="DcGeneral\Data">
         <name>getActiveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::getActiveVersion()</full_name>
-        <docblock line="193">
+        <docblock line="200">
           <description>Retrieve the current active version for a model.</description>
           <long-description></long-description>
-          <tag name="param" line="193" description="&lt;p&gt;The ID of the model.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="200" description="&lt;p&gt;The ID of the model.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="193" description="The current version number of the requested row." type="mixed">
+          <tag name="return" line="200" description="The current version number of the requested row." type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -12883,19 +12902,19 @@ populate the Id of the model accordingly.</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="207" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="214" package="DcGeneral\Data">
         <name>resetFallback</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::resetFallback()</full_name>
-        <docblock line="207">
+        <docblock line="214">
           <description>Reset the fallback field.</description>
           <long-description>This clears the given property in all items in the data provider to an empty value.
 
 Documentation:
      Evaluation - fallback =&gt; If true the field can only be assigned once per table.</long-description>
-          <tag name="param" line="207" description="&lt;p&gt;The field to reset.&lt;/p&gt;" type="string" variable="$strField">
+          <tag name="param" line="214" description="&lt;p&gt;The field to reset.&lt;/p&gt;" type="string" variable="$strField">
             <type>string</type>
           </tag>
-          <tag name="return" line="207" description="" type="void">
+          <tag name="return" line="214" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -12905,22 +12924,22 @@ Documentation:
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="223" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="230" package="DcGeneral\Data">
         <name>isUniqueValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::isUniqueValue()</full_name>
-        <docblock line="223">
+        <docblock line="230">
           <description>Check if the value is unique in the data provider.</description>
           <long-description></long-description>
-          <tag name="param" line="223" description="&lt;p&gt;The field in which to test.&lt;/p&gt;" type="string" variable="$strField">
+          <tag name="param" line="230" description="&lt;p&gt;The field in which to test.&lt;/p&gt;" type="string" variable="$strField">
             <type>string</type>
           </tag>
-          <tag name="param" line="223" description="&lt;p&gt;The value about to be saved.&lt;/p&gt;" type="mixed" variable="$varNew">
+          <tag name="param" line="230" description="&lt;p&gt;The value about to be saved.&lt;/p&gt;" type="mixed" variable="$varNew">
             <type>mixed</type>
           </tag>
-          <tag name="param" line="223" description="&lt;p&gt;The (optional) id of the item currently in scope - pass null for new items.&#10;Documentation:&#10;     Evaluation - unique =&gt; If true the field value cannot be saved if it exists already.&lt;/p&gt;&#10;" type="int" variable="$intId">
+          <tag name="param" line="230" description="&lt;p&gt;The (optional) id of the item currently in scope - pass null for new items.&#10;Documentation:&#10;     Evaluation - unique =&gt; If true the field value cannot be saved if it exists already.&lt;/p&gt;&#10;" type="int" variable="$intId">
             <type>int</type>
           </tag>
-          <tag name="return" line="223" description="" type="boolean">
+          <tag name="return" line="230" description="" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -12940,16 +12959,16 @@ Documentation:
           <type>int</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="232" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="239" package="DcGeneral\Data">
         <name>fieldExists</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::fieldExists()</full_name>
-        <docblock line="232">
+        <docblock line="239">
           <description>Check if a property with the given name exists in the data provider.</description>
           <long-description></long-description>
-          <tag name="param" line="232" description="&lt;p&gt;The name of the property to search.&lt;/p&gt;" type="string" variable="$strField">
+          <tag name="param" line="239" description="&lt;p&gt;The name of the property to search.&lt;/p&gt;" type="string" variable="$strField">
             <type>string</type>
           </tag>
-          <tag name="return" line="232" description="" type="boolean">
+          <tag name="return" line="239" description="" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -12959,19 +12978,19 @@ Documentation:
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="243" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="250" package="DcGeneral\Data">
         <name>sameModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface::sameModels()</full_name>
-        <docblock line="243">
+        <docblock line="250">
           <description>Check if two models have the same values in all properties.</description>
           <long-description></long-description>
-          <tag name="param" line="243" description="&lt;p&gt;The first model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel1">
+          <tag name="param" line="250" description="&lt;p&gt;The first model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel1">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="243" description="&lt;p&gt;The second model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel2">
+          <tag name="param" line="250" description="&lt;p&gt;The second model to compare.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$objModel2">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="return" line="243" description="True - If both models are same, false if not." type="boolean">
+          <tag name="return" line="250" description="True - If both models are same, false if not." type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -12987,7 +13006,7 @@ Documentation:
         </argument>
       </method>
     </interface>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Contao/Callback/PropertyOnSaveCallbackListener.php" generated-path="Contao.Callback.PropertyOnSaveCallbackListener.html" hash="eccce2d77e2c9ccd81fdab47a4868260" package="generalDriver">
     <docblock line="0">
@@ -13059,7 +13078,7 @@ Documentation:
     </class>
     <source>eJy1U01v2zAMPUe/gocekqBLgQ07JejSpV17SLFg2bpLgEKWaVuYPgxJdhsM/e+jZLsLWnRbD/PFpvge+fhELz7UVc1OplMGU9hcbaBF56U18D4eLGsufvASgZ4SDTquzp0kSEryJlTWxRysKid9kNzAVlSyKBQ6WIiZH4Kl2GdUuEYRXKNnOZ4+rbANWBD9CqVGDwufwtsqhcvKBs2lmgmrnxG/xs7EXEtDvNBFM0XRMpPh3WMvYeu9k2UViFIhXGPg1zZH5SEg17OEUVKg8Wnc9eVm3R0WUqG3jRNI4QljhpMkMgZhZU3gdmW1bowM+zOlyAGBu3Nx2Zm16xC7FVcqIyvnjDX+NTyrax5kJhXBKN3F89cVuZF413+//Ugi0OTp6KJFE3YXRpALG2drdGF/w1WDn5zV32VeYkgQEt3vx0px72HAfjZb3uIw2pp8j32jZxF7xU0et6CgawrktyfsrejBHmwBHOq+0sB5XLcXDUw3IP5BBuA9vXMPZ5kPjovwBUPjjDTlUyT7yUZxvhEJIJCT2GJSzF3ZaJrfP84wyJ9FcCKQYsc1/N1EOML0iqvXfWVIYgC1DAHzg4ouCaXuju/jyQkb1U1GmwlFY0SI/yYVPXOlH3c1J2xEI4wOeX3mzSkhk5rx5BgM3sGwQoeAC9NKZ00cNcIOMun/eHI2DDmeTCZzNnpgv937Vuc8dN61sSlIk4JE/q+edRW1vMcc/vgcdcJSxdQ/76Q+97+1Mn/B/ibN2Vt43Nfsb2Fwyg/G99lk1QP7BWeRzVo=</source>
   </file>
-  <file path="Panel/DefaultFilterElement.php" generated-path="Panel.DefaultFilterElement.html" hash="db810dcd5739647e4c6a372662bd50f4" package="generalDriver">
+  <file path="Panel/DefaultFilterElement.php" generated-path="Panel.DefaultFilterElement.html" hash="7e1000fb399467d49f66d393671d96d5" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -13163,10 +13182,10 @@ Documentation:
           <type>\ContaoCommunityAlliance\DcGeneral\Panel\PanelElementInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="190" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="183" package="DcGeneral\Panel">
         <name>render</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultFilterElement::render()</full_name>
-        <docblock line="190">
+        <docblock line="183">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13176,10 +13195,10 @@ Documentation:
           <type>\ContaoCommunityAlliance\DcGeneral\View\ViewTemplateInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="231" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="224" package="DcGeneral\Panel">
         <name>setPropertyName</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultFilterElement::setPropertyName()</full_name>
-        <docblock line="231">
+        <docblock line="224">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13189,18 +13208,18 @@ Documentation:
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="241" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="234" package="DcGeneral\Panel">
         <name>getPropertyName</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultFilterElement::getPropertyName()</full_name>
-        <docblock line="241">
+        <docblock line="234">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="249" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="242" package="DcGeneral\Panel">
         <name>setValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultFilterElement::setValue()</full_name>
-        <docblock line="249">
+        <docblock line="242">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13210,16 +13229,16 @@ Documentation:
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="259" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="252" package="DcGeneral\Panel">
         <name>getValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultFilterElement::getValue()</full_name>
-        <docblock line="259">
+        <docblock line="252">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
     </class>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="DataDefinition/Definition/DefaultBasicDefinition.php" generated-path="DataDefinition.Definition.DefaultBasicDefinition.html" hash="6a8bc6a03dc68709adf35fa561ec3249" package="generalDriver">
     <docblock line="0">
@@ -32635,7 +32654,7 @@ Resulting Events:
     </class>
     <source>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</source>
   </file>
-  <file path="Data/NoOpDataProvider.php" generated-path="Data.NoOpDataProvider.html" hash="b36b0f151d2c6c434af304356bea9457" package="generalDriver">
+  <file path="Data/NoOpDataProvider.php" generated-path="Data.NoOpDataProvider.html" hash="a96c13049a916f691f0ac27bdf7e1737" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -32707,21 +32726,16 @@ logic at all. It is useful as parent class for drivers that only implement a fra
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="69" package="DcGeneral\Data">
-        <name>fetch</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::fetch()</full_name>
+        <name>getEmptyFilterOptionCollection</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getEmptyFilterOptionCollection()</full_name>
         <docblock line="69">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
-        <argument line="0">
-          <name>$objConfig</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
-        </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="77" package="DcGeneral\Data">
-        <name>fetchAll</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::fetchAll()</full_name>
+        <name>fetch</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::fetch()</full_name>
         <docblock line="77">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
@@ -32733,8 +32747,8 @@ logic at all. It is useful as parent class for drivers that only implement a fra
         </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="85" package="DcGeneral\Data">
-        <name>getFilterOptions</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getFilterOptions()</full_name>
+        <name>fetchAll</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::fetchAll()</full_name>
         <docblock line="85">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
@@ -32746,8 +32760,8 @@ logic at all. It is useful as parent class for drivers that only implement a fra
         </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="93" package="DcGeneral\Data">
-        <name>getCount</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getCount()</full_name>
+        <name>getFilterOptions</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getFilterOptions()</full_name>
         <docblock line="93">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
@@ -32759,9 +32773,22 @@ logic at all. It is useful as parent class for drivers that only implement a fra
         </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="101" package="DcGeneral\Data">
+        <name>getCount</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getCount()</full_name>
+        <docblock line="101">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$objConfig</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="109" package="DcGeneral\Data">
         <name>save</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::save()</full_name>
-        <docblock line="101">
+        <docblock line="109">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32771,10 +32798,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="108" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="116" package="DcGeneral\Data">
         <name>saveEach</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::saveEach()</full_name>
-        <docblock line="108">
+        <docblock line="116">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32784,10 +32811,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="119" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="127" package="DcGeneral\Data">
         <name>delete</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::delete()</full_name>
-        <docblock line="119">
+        <docblock line="127">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32797,10 +32824,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="126" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="134" package="DcGeneral\Data">
         <name>saveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::saveVersion()</full_name>
-        <docblock line="126">
+        <docblock line="134">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32815,10 +32842,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="133" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="141" package="DcGeneral\Data">
         <name>getVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getVersion()</full_name>
-        <docblock line="133">
+        <docblock line="141">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32833,10 +32860,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="141" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="149" package="DcGeneral\Data">
         <name>getVersions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getVersions()</full_name>
-        <docblock line="141">
+        <docblock line="149">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32851,10 +32878,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="149" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="157" package="DcGeneral\Data">
         <name>setVersionActive</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::setVersionActive()</full_name>
-        <docblock line="149">
+        <docblock line="157">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32869,10 +32896,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="156" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="164" package="DcGeneral\Data">
         <name>getActiveVersion</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::getActiveVersion()</full_name>
-        <docblock line="156">
+        <docblock line="164">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32882,10 +32909,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="164" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="172" package="DcGeneral\Data">
         <name>resetFallback</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::resetFallback()</full_name>
-        <docblock line="164">
+        <docblock line="172">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32895,10 +32922,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="171" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="179" package="DcGeneral\Data">
         <name>isUniqueValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::isUniqueValue()</full_name>
-        <docblock line="171">
+        <docblock line="179">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32918,10 +32945,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="179" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="187" package="DcGeneral\Data">
         <name>fieldExists</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::fieldExists()</full_name>
-        <docblock line="179">
+        <docblock line="187">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32931,10 +32958,10 @@ logic at all. It is useful as parent class for drivers that only implement a fra
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="187" package="DcGeneral\Data">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="195" package="DcGeneral\Data">
         <name>sameModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Data\NoOpDataProvider::sameModels()</full_name>
-        <docblock line="187">
+        <docblock line="195">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
@@ -32950,7 +32977,7 @@ logic at all. It is useful as parent class for drivers that only implement a fra
         </argument>
       </method>
     </class>
-    <source>eJzFVk1v2zgQPVu/YgoYqBKkztaLXpo066ydtsamSYBue2mLgJZGFrcUqZKUU6PNf++Q+rClJECqBNhcYg5n5r15Qw15+Fee5sH+7m4Au3Dx9gJWqA1XEl44wyRn0Ve2RKC/JUrUTMw0Jxe/yQqbKu32YJpqbixnEt5HKU8SgRoOo5GpF5NovaDEOUZWF9koxqNuhvcWEwp/izxDA4fGLy9Tv5ykymaMi1GkshuB/zpkijzlkuJsuRoJWk0W3P7ZYEUqX2u+TC2FpAjv0LJ3KkZhwCLLRt5H8Ail8eWevrk4LY0JF2hUoSOk5X4QSEaUSBiEqZKWqanKskJyuz4WghSI8PMselOK9XnGLDsIan2nghkDZ+o8d/YLrVY8Ru1Q3O7fjJB5lgvMkPJa1wWVAJUmFaic8jkTExBTMOR1NFXDTdsGZDAu0xoYGFssAGWcKy4tXHESrrCUde0whVryCBithRjB3LrIwmBSCGAGcqaJCUSedkJ6x775pFhKIUpS/oYvISWaRQ1rIaCRARJkttBo6lKbc9VWyusb3SrSBsjAtn0uLeqEmhH8CAZO5gGld/2NlEz4sihFK+VxFVgnFp0N6xo1ct4+YrJiGpjWbO2W+8GApLR0WDGGIZlda6Y+ITWzgfkx4TJFzW2sous6rljQIYKkkKUUBu0mOPQIPmNp2AkGRHswdKyeHbWA4NWW30EwuP5N4CXakyy36wq5QtJIfZAwo4+rELbce/mS0+kNdx4A4j+kGmOYuRXxl3hVI1UOB832syNSpm7iGX1R4W0ifHpafnhPv/jQin2Z4UGaCIHe1NFli/G2Tw+oBG2UhmUVzRmFoVr81+p8XVFZe0fOvrA0h+6N/HgVE/nXXBDeee7W5v+hMFWFtPeG/qMHiGErDH2H2vnnFrMye5+MJ8wfl7r8m6lNxZyGGJIvhM2Gm9RbBLxXPVI82WbTfUPXv8+PSkVLafiDKvxYPixuk86b9mBorP5gULsLth8OHYAaZpjx7/MZJaX/la1z7ArRc4ZU6cwGYyHkOd2Gx+SyQpp8CRMGHwXONHBl8rvr6lFImbKt2KOwpquepgG9ARZ0z4eur685irgfUW4+SP6twI9MFLhJRhLQpX2GV/SDXjbz2N04RLddAD03sc8cdQgn3+ktabr068y+x73mR4blwzNszv5z2Nt8COP6HqWrkG5IevhZjua5exA0/v6u2Gwem2P3sqgu2FbceDtufHdcFfgPrg1F+IfKZYZ6ieWj5fIrbYQdSjt7cOfmeKch08pZ+F6Gtd07bWZa7e1GGslOv5uJxhMInzRwl7hpDnntQZca/Pzpogb3Dhk3IZ1Un6qAL/DkVTem2XOBjmrJtXtG/Nj1J+XGubwOfgHouEm4</source>
+    <source>eJytVk1v2zgQPVu/YgoYqBKkztaLvTRp1lk7bY1NkwDd9tIWAS2NLG4pUktSTo02/32H1IctJQFSObnEHM7Me3xDDef4zzzNg8P9/QD24erdFaxQG64k/OEMk5xF39gSgf6WKFEzMdOcXPwmK2yqtNuDaaq5sZxJ+BClPEkEajiORqZeTKL1ghLnGFldZKMYT7oZPlhMKPwd8gwNHBu/vE79cpIqmzEuRpHK7gT+45Ap8pxLirPlaiRoNVlw+3uDFal8rfkytRSSIrxHy96rGIUBiywbeR/BI5TGH/f87dV5aUy4QKMKHSEtD4NAMqJEwiBMlbRMTVWWFZLb9akQpECEX2bR21KsLzNm2VFQ6zsVzBi4UJe5s19pteIxaofidv9ihMyzXGCGlNe6KqgE6GhSgcopnzMxATEFQ15H02m4aduADMZlWgMDY4sFoIxzxaWFG07CFZayrh2mUEseAaO1ECOYWxdZGEwKAcxAzjQxgcjTTkjv2BefFEspREnK3/AlpESzqGEtBDQyQILMFhpNfdTmXrWV8vpG94q0ATKwbZ9LizqhYgQ/goGTeUDpXX0jJRO+LErRSnncCawTi+6GdYUaOW8fMVkxDUxrtnbLw2BAUlq6rBjDkMyuNFOfkIrZwPyYcJmi5jZW0W0dVyzoEkFSyFIKg3YTHHoEn7E07AUDoj0YOlYvTlpA8HrL7ygY3P4i8BLtWZbbdYVcIWmkOkiY0cdVCFvuvXrF6faGezuA+A+pxhhmbkX8Jd7USJXDUbP94oSUqYt4QV9UeJ8In5+XH97zrz60Yl9m2EkTIdCbOrpsMd722QHqDRd0QS9zZ3wM7EP+PSgkaKM0LIVsPhMYqsW/rctXi1rK36loX1hqhX2Rdxd+W0PTl8YTFoJSTlUh7aOp/NYDxLAVhr5q7fxzi1mZvU/GM+avUH38u6lNxZx6K5IvhM2Ge0C2CHivutN5ss2m+7Rvf50fHRUtpeE7nfBTOe/cJ503HcDQWP3RoHbvfj8cugA1zDDj3+czSkr/K1unFxSiZ2ur0pkNxkLIS3qkT8llhdSQEyYMPgmcaeDK5A+fq8dBypRtxZ6ENU0g1B1oNFnQ+BG6ur7hKOJ+RLn5KPl/BX5iosBNMpKAZokLvKEfNHDNY/cQEt32AWgKxj691SGcfacR13Tp15l9jXv1jwzLeThs7v5LONh8COP6eacXmh5umkctR/PSzSmNv2+fm81Tc+oGnurdb8WNt+PGD8dVgX/j2lCEn5+uM9RLLGep62+0EXYo7R3Ag5vjvYZMK2fhaxnWdu+06Wm1t2tpJDv9bjoaTyB81sBd46Y45HUAXWrw86eLGjw6ZNyEdFJ9rgK+wrPX3ZhmzwU6qiXX7h3xbdfflDv38jb4HxkSfNI=</source>
   </file>
   <file path="DataDefinition/Palette/Condition/Property/NotCondition.php" generated-path="DataDefinition.Palette.Condition.Property.NotCondition.html" hash="7db435e150b4830e2021774ea0acc8e1" package="generalDriver">
     <docblock line="0">
@@ -45331,6 +45358,133 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJytk8FO3DAQhs/JU8yBQxbRRWrV067o0gXBYVFXhfa0EnKcSWLVsSN7ErqqePeOnYRuQahCai7JeP4Z//PZWX5q6zY9PT5O4Ri211vo0XllDXwMC6tWyB+iQuCnQoNO6AunWBKToqPaupCDde2UJyUM3MpalaVGB0s591OwkvucG7coyXXNvMCz5x1uCUsuv0bVoIelj+F9HcNVbakRSs+lbV4U3oWduXKjDNfREM01R6tc0YenvaRt905VNXFJjXCDJG5sgdoDoWjmUaOVROPjuJur7WZYLJVGbzsnkcPTNDWCLTEYhLU1JOzaNk1nFO3PtWYCEncX8mqAtRsUu7XQOmeUizTt/FvqbNMKUrnSLOP0EC/e1uS7wofx+/1nNoGmiEuXPRraXSFtnW3R0f5LS3zyPq6z0/FSrLXwHiKqUTBNs2HUYauAKSivhSk0AjFdOyjv5SiFkk9LQBO6gDKAhSLo2cVU+3TTXmUX4ct/mgH8ye/Cw3nuyQlJX5E6Z5SpnivTX2kSZkx4exY5hf1gXriqa5iBj67DyjTGPIhjAft1ooFX6MERxle4aMNXjuwAsFFEWBy0cdEdb+nEPqycpknb5XwPoeyMDB35x6NzV/ls6DlLE/adHNZlHCcGH2C6IKP03RmXXppeOWvCPNnsBA4ykWI244bJbJEmj+kfHN/aQtBfJwmaqYWTo2mk/89iaBNHgpfPUS90h7HN5ClKX8LsrSpeYdnFwUY+J2PPEakqIVP+3nRaZ2MisAmpETdTipiSiaJHGkedKhaHWbJtICIqETTZQPkx/Q1ZSsrW</source>
+  </file>
+  <file path="Data/DefaultFilterOptionCollection.php" generated-path="Data.DefaultFilterOptionCollection.html" hash="9fd281ad00a9745faa6534cd1b13ba98" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="author" line="0" description="Stefan Heimes" link="mailto:stefan_heimes@hotmail.com"/>
+      <tag name="author" line="0" description="Tristan Lins" link="mailto:tristan.lins@bit3.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="20" package="DcGeneral\Data">
+      <extends/>
+      <implements>\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface</implements>
+      <name>DefaultFilterOptionCollection</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultFilterOptionCollection</full_name>
+      <docblock line="20">
+        <description>This class is the base implementation for LanguageInformationCollectionInterface.</description>
+        <long-description></long-description>
+        <tag name="package" line="20" description="DcGeneral\Data"/>
+      </docblock>
+      <property static="false" visibility="protected" line="28" namespace="ContaoCommunityAlliance\DcGeneral\Data" package="DcGeneral\Data">
+        <name>$filterValues</name>
+        <default>array()</default>
+        <docblock line="28">
+          <description>The language information stored in this collection.</description>
+          <long-description></long-description>
+          <tag name="var" line="28" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\LanguageInformationInterface[]" variable="">
+            <type link="LanguageInformationInterface[].html">\ContaoCommunityAlliance\DcGeneral\Data\LanguageInformationInterface[]</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="33" package="DcGeneral\Data">
+        <name>add</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultFilterOptionCollection::add()</full_name>
+        <docblock line="33">
+          <description>{@inheritDoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$filterKey</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$filterValue</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="45" package="DcGeneral\Data">
+        <name>getIterator</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultFilterOptionCollection::getIterator()</full_name>
+        <docblock line="45">
+          <description>Get a iterator for this collection.</description>
+          <long-description></long-description>
+          <tag name="return" line="45" description="" type="\IteratorAggregate">
+            <type link="IteratorAggregate.html">\IteratorAggregate</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="55" package="DcGeneral\Data">
+        <name>count</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\DefaultFilterOptionCollection::count()</full_name>
+        <docblock line="55">
+          <description>Count the contained language information.</description>
+          <long-description></long-description>
+          <tag name="return" line="55" description="" type="int">
+            <type>int</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <source>eJx1UsFuGjEQPe9+xRxyANQuh6qn0BQEKkElKlKiXkJUGTO7a9Vrr+zZVCji3zs2sAECe9oZz3vz3rMH3+uyTvu9Xgo9WNwv4BWdV9bA19AY1kL+FQUCfwUadEJPnOKReCgaKq0LZzAunfKkhIFHWao81+hgIDN/KIZys2LiGiW5psrWeHfO8EiYM/weVYUeBj6Wf8pYDktLlVA6k7b6AHwKmxk5V4ZxtKsyzdVwpehLu0vaeuNUURJDSoQHJPFg16g9EIoqizNaSTQ+2p1PF/NdM1cavW2cRC77aWoES+JgEMbWkLBjW1WNUbQZac0JSFxO5HQX1nIiSNymh3yfSuVBauE98A+xipXgbaqqNVbIXBSSz9nYXJii4eBnhqsq9sdWa46P/2aG0OUsIOg7uabTxVHubt2E02w0/VCaob/qU740aRV4uDzSrkzf0iS4SaIdBL0XCupdKXiyDtfcYo/BcUuTBVzEDl/FRZftoueXMNdPk9pZYjTz3eRR22+hG34i30A4JzadLufbSnobKlOiUzSxcnsgaFZ8r5A3JmoAsV539lQ/cfPphLabJmwwuQm6P98d73t+h7zw7mNQEJA4pMYZiMjbNNkeiZoigQDF44KDifd7PZc9z3K2Hx8VhcNCEF5xUyAdRjt79XsKg/9gOQoZtQMXfHXPxI5tYyi+TRletzIc/KVL/ihZGbqiUQbOM3W73lVB2/Q/leiBkA==</source>
+  </file>
+  <file path="Data/FilterOptionCollectionInterface.php" generated-path="Data.FilterOptionCollectionInterface.html" hash="915ed99e990fdc2b9a200d859592cc52" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="author" line="0" description="Stefan Heimes" link="mailto:stefan_heimes@hotmail.com"/>
+      <tag name="author" line="0" description="Tristan Lins" link="mailto:tristan.lins@bit3.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <interface namespace="ContaoCommunityAlliance\DcGeneral\Data" line="18" package="generalDriver">
+      <extends>\IteratorAggregate</extends>
+      <extends>\Countable</extends>
+      <name>FilterOptionCollectionInterface</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface</full_name>
+      <docblock line="18">
+        <description>This represents an iterable collection of Model elements.</description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="30" package="generalDriver">
+        <name>add</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface::add()</full_name>
+        <docblock line="30">
+          <description>Append a key =&gt; value pair.</description>
+          <long-description></long-description>
+          <tag name="param" line="30" description="&lt;p&gt;The key of the filter option. Needed for the system&lt;/p&gt;" type="string" variable="$filterKey">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="30" description="&lt;p&gt;The readable value for humans.&lt;/p&gt;" type="string" variable="$filterValue">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="30" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface">
+            <type link="FilterOptionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\FilterOptionCollectionInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$filterKey</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$filterValue</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </interface>
+    <source>eJyFUstu2zAQPJtfsYccWiNQDkVPcVMbMpoEdVoDCXoyUKyplUSEL/ARVCj6711ScPoCGp243JnZ4axW7/3oxcVyKWAJ+5s9PFGIyll4Wy7WHuUjDgT8DWQpoN4GxZDaxJxGF0oP2jGomBRauJej6ntNAVayiadiLacjC3uSKWTTdHT1t8J9op7pN6QMRVjFWn4da7keXTKodCOd+Yf4UCYzc6cs89JcNZqr9VGlN8+zpPNTUMOYmDIS3FHCO9eRjpAITVMxWkmysT53d73fzZe90hRdDpK4vBDCIlviYAhaZxO61hmTrUrTRmtOQNJhK6/nsA5bTHgpTvk+jCpCIB8okk0R2LVKjDtqAum05nRK9K6H6gxIkynApg5WlrF9mftBaT5+9gXdPvNuT32xoG+JbBfhcFvkkwubYQg0YKJzOLQus22eKb6LRXG2YGsb75kBCI80wbsreEKdCTyq0JR+xfDfENBA5IztAGd9dfGR8XOihcnWEx/nFrjqsIFPRB110PPGSjdOvF3zf9kvdX6RDYRdTWi2VETGbNDG34wFSjnYl3MpMS58PvKeoc92jhu77tWvx5z/4eD1pfghfgK/Fgod</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">
