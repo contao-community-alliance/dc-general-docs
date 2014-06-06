@@ -72,6 +72,7 @@
 <li class="method public "><a href="#method_getEmptyFilterOptionCollection" title="getEmptyFilterOptionCollection() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEmptyFilterOptionCollection()</pre></a></li>
 <li class="method public "><a href="#method_getEmptyModel" title="getEmptyModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEmptyModel()</pre></a></li>
 <li class="method public "><a href="#method_getFilterOptions" title="getFilterOptions() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getFilterOptions()</pre></a></li>
+<li class="method public "><a href="#method_getTimeStampProperty" title="getTimeStampProperty() :: Get the property name that shall get updated with the current time stamp when saving to the database."><span class="description">Get the property name that shall get updated with the current time stamp when saving to the database.</span><pre>getTimeStampProperty()</pre></a></li>
 <li class="method public "><a href="#method_getVersion" title="getVersion() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getVersion()</pre></a></li>
 <li class="method public "><a href="#method_getVersions" title="getVersions() :: Return a list with all versions for the row with the given Id."><span class="description">Return a list with all versions for the row with the given Id.</span><pre>getVersions()</pre></a></li>
 <li class="method public "><a href="#method_isUniqueValue" title="isUniqueValue() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isUniqueValue()</pre></a></li>
@@ -81,6 +82,7 @@
 <li class="method public "><a href="#method_saveEach" title="saveEach() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>saveEach()</pre></a></li>
 <li class="method public "><a href="#method_saveVersion" title="saveVersion() :: Save a new version of a row."><span class="description">Save a new version of a row.</span><pre>saveVersion()</pre></a></li>
 <li class="method public "><a href="#method_setBaseConfig" title="setBaseConfig() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setBaseConfig()</pre></a></li>
+<li class="method public "><a href="#method_setTimeStampProperty" title="setTimeStampProperty() :: Set the property name that shall get updated with the current time stamp when saving to the database."><span class="description">Set the property name that shall get updated with the current time stamp when saving to the database.</span><pre>setTimeStampProperty()</pre></a></li>
 <li class="method public "><a href="#method_setVersionActive" title="setVersionActive() :: Set a version as active."><span class="description">Set a version as active.</span><pre>setVersionActive()</pre></a></li>
 </ul>
 </li>
@@ -107,6 +109,7 @@
                     <ul>
 <li class="property protected "><a href="#property_objDatabase" title="$objDatabase() :: The Database instance."><span class="description"></span><pre>$objDatabase</pre></a></li>
 <li class="property protected "><a href="#property_strSource" title="$strSource() :: Name of current source."><span class="description"></span><pre>$strSource</pre></a></li>
+<li class="property protected "><a href="#property_timeStampProperty" title="$timeStampProperty() :: The property that shall get populated with the current timestamp when saving data."><span class="description"></span><pre>$timeStampProperty</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -252,6 +255,18 @@
 </tr></table>
 </div></div>
 </div>
+<a id="method_getTimeStampProperty"></a><div class="element clickable method public method_getTimeStampProperty" data-toggle="collapse" data-target=".method_getTimeStampProperty .collapse">
+<h2>Get the property name that shall get updated with the current time stamp when saving to the database.</h2>
+<pre>getTimeStampProperty() : string | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
 <a id="method_getVersion"></a><div class="element clickable method public method_getVersion" data-toggle="collapse" data-target=".method_getVersion .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>getVersion($mixID, $mixVersion) </pre>
@@ -369,6 +384,20 @@
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
 <td>When no source has been defined.</td>
 </tr></table>
+</div></div>
+</div>
+<a id="method_setTimeStampProperty"></a><div class="element clickable method public method_setTimeStampProperty" data-toggle="collapse" data-target=".method_setTimeStampProperty .collapse">
+<h2>Set the property name that shall get updated with the current time stamp when saving to the database.</h2>
+<pre>setTimeStampProperty(boolean $timeStampField) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultDataProvider.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timeStampField</h4>
+<code>boolean</code><p>The property name or empty to clear.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultDataProvider.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultDataProvider</a></code></div>
 </div></div>
 </div>
 <a id="method_setVersionActive"></a><div class="element clickable method public method_setVersionActive" data-toggle="collapse" data-target=".method_setVersionActive .collapse">
@@ -608,6 +637,12 @@ LIKE
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_timeStampProperty"> </a><div class="element clickable property protected property_timeStampProperty" data-toggle="collapse" data-target=".property_timeStampProperty .collapse">
+<h2>The property that shall get populated with the current timestamp when saving data.</h2>
+<pre>$timeStampProperty : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -616,7 +651,7 @@ LIKE
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-06-06T01:34:29+02:00.<br></footer></div>
+            generated on 2014-06-06T17:21:23+02:00.<br></footer></div>
 </div>
 </body>
 </html>
