@@ -63,6 +63,7 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
+<li class="method protected "><a href="#method_isSpecialName" title="isSpecialName() :: Test if a data provider name is a special name."><span class="description">Test if a data provider name is a special name.</span><pre>isSpecialName()</pre></a></li>
 <li class="method protected "><a href="#method_loadAdditionalDefinitions" title="loadAdditionalDefinitions() :: Load all additional definitions, like naming of parent data provider etc."><span class="description">Load all additional definitions, like naming of parent data provider etc.</span><pre>loadAdditionalDefinitions()</pre></a></li>
 <li class="method protected "><a href="#method_parseBackendView" title="parseBackendView() :: Parse and build the backend view definition for the old Contao2 backend view."><span class="description">Parse and build the backend view definition for the old Contao2 backend view.</span><pre>parseBackendView()</pre></a></li>
 <li class="method protected "><a href="#method_parseBasicDefinition" title="parseBasicDefinition() :: Ensure that the basic configuration is set in the definition."><span class="description">Ensure that the basic configuration is set in the definition.</span><pre>parseBasicDefinition()</pre></a></li>
@@ -125,6 +126,20 @@ To use it, implement the method build() and register the class to the event disp
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$container</h4></div>
 <div class="subelement argument"><h4>$event</h4></div>
+</div></div>
+</div>
+<a id="method_isSpecialName"></a><div class="element clickable method protected method_isSpecialName" data-toggle="collapse" data-target=".method_isSpecialName .collapse">
+<h2>Test if a data provider name is a special name.</h2>
+<pre>isSpecialName(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name to test.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_loadAdditionalDefinitions"></a><div class="element clickable method protected method_loadAdditionalDefinitions" data-toggle="collapse" data-target=".method_loadAdditionalDefinitions .collapse">
@@ -292,7 +307,7 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_parseSingleDataProvider"></a><div class="element clickable method protected method_parseSingleDataProvider" data-toggle="collapse" data-target=".method_parseSingleDataProvider .collapse">
 <h2>Parse a single data provider information and prepare the definition object for it.</h2>
-<pre>parseSingleDataProvider(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface $providers, array $information) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a> | null</pre>
+<pre>parseSingleDataProvider(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\DataProviderDefinitionInterface $providers, array $information, string|null $name) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a> | null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -306,6 +321,9 @@ To use it, implement the method build() and register the class to the event disp
 <div class="subelement argument">
 <h4>$information</h4>
 <code>array</code><p>The information for the data provider to be parsed.</p></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><code>null</code><p>The name of the data provider to be used within the container.</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.ContaoDataProviderInformation.html">\ContaoCommunityAlliance\DcGeneral\Contao\Dca\ContaoDataProviderInformation</a></code><code>null</code>
@@ -328,7 +346,7 @@ To use it, implement the method build() and register the class to the event disp
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-07-07T18:19:53+02:00.<br></footer></div>
+            generated on 2014-07-08T15:28:41+02:00.<br></footer></div>
 </div>
 </body>
 </html>
