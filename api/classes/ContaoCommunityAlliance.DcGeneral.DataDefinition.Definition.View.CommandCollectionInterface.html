@@ -107,7 +107,7 @@
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_addCommand"></a><div class="element clickable method public method_addCommand" data-toggle="collapse" data-target=".method_addCommand .collapse">
 <h2>Add an command to this collection.</h2>
-<pre>addCommand(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<pre>addCommand(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $command, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $before) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -115,13 +115,17 @@
 <div class="subelement argument">
 <h4>$command</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command to add.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command before the passed command shall be inserted (optional).</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_addCommands"></a><div class="element clickable method public method_addCommands" data-toggle="collapse" data-target=".method_addCommands .collapse">
 <h2>Add commands to this collection.</h2>
-<pre>addCommands(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface[]|array $commands) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
+<pre>addCommands(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface[]|array $commands, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $before) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -129,6 +133,10 @@
 <div class="subelement argument">
 <h4>$commands</h4>
 <code><a href="CommandInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface[]</a></code><code>array</code><p>The commands that shall be added to the collection.</p></div>
+<div class="subelement argument">
+<h4>$before</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code><p>The command before the passed commands shall be inserted (optional).</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandCollectionInterface</a></code></div>
 </div></div>
@@ -266,7 +274,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-07-08T15:59:32+02:00.<br></footer></div>
+            generated on 2014-07-10T18:13:18+02:00.<br></footer></div>
 </div>
 </body>
 </html>
