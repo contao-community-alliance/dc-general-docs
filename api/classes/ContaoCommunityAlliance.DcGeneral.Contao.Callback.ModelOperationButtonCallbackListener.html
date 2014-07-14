@@ -56,13 +56,18 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_getArgs" title="getArgs() :: Retrieve the arguments for the callback."><span class="description">Retrieve the arguments for the callback.</span><pre>getArgs()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: Set the value in the event."><span class="description">Set the value in the event.</span><pre>update()</pre></a></li>
 </ul>
-</li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_buildHref" title="buildHref() :: Build reduced href required by legacy callbacks."><span class="description">Build reduced href required by legacy callbacks.</span><pre>buildHref()</pre></a></li></ul>
+</li>
+</ul>
 </div>
 <div class="span8">
 <a id="\ContaoCommunityAlliance\DcGeneral\Contao\Callback\ModelOperationButtonCallbackListener"></a><ul class="breadcrumb">
@@ -122,6 +127,21 @@
 <code>string</code><p>The value returned by the callback.</p></div>
 </div></div>
 </div>
+<a id="method_buildHref"></a><div class="element clickable method protected method_buildHref" data-toggle="collapse" data-target=".method_buildHref .collapse">
+<h2>Build reduced href required by legacy callbacks.</h2>
+<pre>buildHref(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface $command) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$command</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 </div>
 </div>
 </div>
@@ -130,7 +150,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-07-10T18:13:20+02:00.<br></footer></div>
+            generated on 2014-07-14T23:50:46+02:00.<br></footer></div>
 </div>
 </body>
 </html>
