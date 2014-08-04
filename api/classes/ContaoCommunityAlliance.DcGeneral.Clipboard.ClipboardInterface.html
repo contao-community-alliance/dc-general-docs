@@ -67,6 +67,7 @@
 <li class="method public "><a href="#method_getCircularIds" title="getCircularIds() :: Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting."><span class="description">Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting.</span><pre>getCircularIds()</pre></a></li>
 <li class="method public "><a href="#method_getContainedIds" title="getContainedIds() :: Retrieve the ids contained in the clipboard."><span class="description">Retrieve the ids contained in the clipboard.</span><pre>getContainedIds()</pre></a></li>
 <li class="method public "><a href="#method_getMode" title="getMode() :: Retrieve the current mode of the clipboard."><span class="description">Retrieve the current mode of the clipboard.</span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#method_getParent" title="getParent() :: Retrieve the id of the parent item (if any)."><span class="description">Retrieve the id of the parent item (if any).</span><pre>getParent()</pre></a></li>
 <li class="method public "><a href="#method_isCopy" title="isCopy() :: Determine if the content in the clipboard shall be copied."><span class="description">Determine if the content in the clipboard shall be copied.</span><pre>isCopy()</pre></a></li>
 <li class="method public "><a href="#method_isCreate" title="isCreate() :: Determine if the content in the clipboard is a new item to be created."><span class="description">Determine if the content in the clipboard is a new item to be created.</span><pre>isCreate()</pre></a></li>
 <li class="method public "><a href="#method_isCut" title="isCut() :: Determine if the content in the clipboard shall be cut."><span class="description">Determine if the content in the clipboard shall be cut.</span><pre>isCut()</pre></a></li>
@@ -196,6 +197,18 @@ The implementing class will store the values persistent to the input provider st
 <h3>Returns</h3>
 <div class="subelement response">
 <code>string</code>Either cut|paste|mode</div>
+</div></div>
+</div>
+<a id="method_getParent"></a><div class="element clickable method public method_getParent" data-toggle="collapse" data-target=".method_getParent .collapse">
+<h2>Retrieve the id of the parent item (if any).</h2>
+<pre>getParent() : null | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This is only valid in create mode.</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>string</code>
+</div>
 </div></div>
 </div>
 <a id="method_isCopy"></a><div class="element clickable method public method_isCopy" data-toggle="collapse" data-target=".method_isCopy .collapse">
@@ -334,7 +347,7 @@ The implementing class will store the values persistent to the input provider st
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-08-04T10:37:52+02:00.<br></footer></div>
+            generated on 2014-08-04T12:32:29+02:00.<br></footer></div>
 </div>
 </body>
 </html>
