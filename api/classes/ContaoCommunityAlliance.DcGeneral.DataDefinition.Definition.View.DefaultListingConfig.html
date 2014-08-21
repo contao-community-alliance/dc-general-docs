@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">41</span></a></li>
+                <span class="label label-info">106</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -60,7 +60,9 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_getDefaultSortingFields" title="getDefaultSortingFields() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDefaultSortingFields()</pre></a></li>
+<li class="method public "><a href="#method_getGroupAndSortingDefinition" title="getGroupAndSortingDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getGroupAndSortingDefinition()</pre></a></li>
 <li class="method public "><a href="#method_getGroupingLength" title="getGroupingLength() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getGroupingLength()</pre></a></li>
 <li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getGroupingMode()</pre></a></li>
 <li class="method public "><a href="#method_getHeaderPropertyNames" title="getHeaderPropertyNames() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getHeaderPropertyNames()</pre></a></li>
@@ -72,6 +74,7 @@
 <li class="method public "><a href="#method_getSortingMode" title="getSortingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSortingMode()</pre></a></li>
 <li class="method public "><a href="#method_hasLabelFormatter" title="hasLabelFormatter() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>hasLabelFormatter()</pre></a></li>
 <li class="method public "><a href="#method_setDefaultSortingFields" title="setDefaultSortingFields() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDefaultSortingFields()</pre></a></li>
+<li class="method public "><a href="#method_setGroupAndSortingDefinition" title="setGroupAndSortingDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setGroupAndSortingDefinition()</pre></a></li>
 <li class="method public "><a href="#method_setGroupingLength" title="setGroupingLength() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setGroupingLength()</pre></a></li>
 <li class="method public "><a href="#method_setGroupingMode" title="setGroupingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setGroupingMode()</pre></a></li>
 <li class="method public "><a href="#method_setHeaderPropertyNames" title="setHeaderPropertyNames() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setHeaderPropertyNames()</pre></a></li>
@@ -83,22 +86,22 @@
 <li class="method public "><a href="#method_setSortingMode" title="setSortingMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setSortingMode()</pre></a></li>
 </ul>
 </li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_getOrCreateDefaultGroupAndSortingDefinition" title="getOrCreateDefaultGroupAndSortingDefinition() :: Create a default group and sorting definition if none is present so far."><span class="description">Create a default group and sorting definition if none is present so far.</span><pre>getOrCreateDefaultGroupAndSortingDefinition()</pre></a></li></ul>
+</li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul></ul>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected "><a href="#property_defaultSortingFields" title="$defaultSortingFields() :: The names of the properties that will be used for sorting by default."><span class="description"></span><pre>$defaultSortingFields</pre></a></li>
-<li class="property protected "><a href="#property_groupingLength" title="$groupingLength() :: The grouing length to use."><span class="description"></span><pre>$groupingLength</pre></a></li>
-<li class="property protected "><a href="#property_groupingMode" title="$groupingMode() :: The grouping mode to use."><span class="description"></span><pre>$groupingMode</pre></a></li>
+<li class="property protected "><a href="#property_groupAndSorting" title="$groupAndSorting() :: The grouping and sorting definitions."><span class="description"></span><pre>$groupAndSorting</pre></a></li>
 <li class="property protected "><a href="#property_headerProperties" title="$headerProperties() :: The properties to display in the heder (parented mode only)."><span class="description"></span><pre>$headerProperties</pre></a></li>
 <li class="property protected "><a href="#property_itemCssClass" title="$itemCssClass() :: The CSS class to apply to each item in the listing."><span class="description"></span><pre>$itemCssClass</pre></a></li>
 <li class="property protected "><a href="#property_itemFormatter" title="$itemFormatter() :: The item formatter to use."><span class="description"></span><pre>$itemFormatter</pre></a></li>
 <li class="property protected "><a href="#property_rootIcon" title="$rootIcon() :: The root icon to use (hierarchical mode only)."><span class="description"></span><pre>$rootIcon</pre></a></li>
 <li class="property protected "><a href="#property_rootLabel" title="$rootLabel() :: The root label."><span class="description"></span><pre>$rootLabel</pre></a></li>
 <li class="property protected "><a href="#property_showColumns" title="$showColumns() :: Flag if the properties displayed shall be shown as table layout."><span class="description"></span><pre>$showColumns</pre></a></li>
-<li class="property protected "><a href="#property_sortingMode" title="$sortingMode() :: The default sorting mode."><span class="description"></span><pre>$sortingMode</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -135,9 +138,21 @@
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance.</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_getDefaultSortingFields"></a><div class="element clickable method public method_getDefaultSortingFields" data-toggle="collapse" data-target=".method_getDefaultSortingFields .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>getDefaultSortingFields() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getGroupAndSortingDefinition"></a><div class="element clickable method public method_getGroupAndSortingDefinition" data-toggle="collapse" data-target=".method_getGroupAndSortingDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getGroupAndSortingDefinition() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -222,6 +237,16 @@
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setGroupAndSortingDefinition"></a><div class="element clickable method public method_setGroupAndSortingDefinition" data-toggle="collapse" data-target=".method_setGroupAndSortingDefinition .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setGroupAndSortingDefinition($definition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$definition</h4></div>
 </div></div>
 </div>
 <a id="method_setGroupingLength"></a><div class="element clickable method public method_setGroupingLength" data-toggle="collapse" data-target=".method_setGroupingLength .collapse">
@@ -315,23 +340,21 @@
 <div class="subelement argument"><h4>$value</h4></div>
 </div></div>
 </div>
+<a id="method_getOrCreateDefaultGroupAndSortingDefinition"></a><div class="element clickable method protected method_getOrCreateDefaultGroupAndSortingDefinition" data-toggle="collapse" data-target=".method_getOrCreateDefaultGroupAndSortingDefinition .collapse">
+<h2>Create a default group and sorting definition if none is present so far.</h2>
+<pre>getOrCreateDefaultGroupAndSortingDefinition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_defaultSortingFields"> </a><div class="element clickable property protected property_defaultSortingFields" data-toggle="collapse" data-target=".property_defaultSortingFields .collapse">
-<h2>The names of the properties that will be used for sorting by default.</h2>
-<pre>$defaultSortingFields : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_groupingLength"> </a><div class="element clickable property protected property_groupingLength" data-toggle="collapse" data-target=".property_groupingLength .collapse">
-<h2>The grouing length to use.</h2>
-<pre>$groupingLength : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_groupingMode"> </a><div class="element clickable property protected property_groupingMode" data-toggle="collapse" data-target=".property_groupingMode .collapse">
-<h2>The grouping mode to use.</h2>
-<pre>$groupingMode : string</pre>
+<a id="property_groupAndSorting"> </a><div class="element clickable property protected property_groupAndSorting" data-toggle="collapse" data-target=".property_groupAndSorting .collapse">
+<h2>The grouping and sorting definitions.</h2>
+<pre>$groupAndSorting : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -371,12 +394,6 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_sortingMode"> </a><div class="element clickable property protected property_sortingMode" data-toggle="collapse" data-target=".property_sortingMode .collapse">
-<h2>The default sorting mode.</h2>
-<pre>$sortingMode : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 </div>
 </div>
 </div>
@@ -385,7 +402,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-08-20T22:55:36+02:00.<br></footer></div>
+            generated on 2014-08-21T12:23:28+02:00.<br></footer></div>
 </div>
 </body>
 </html>

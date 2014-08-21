@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">106</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getGroupingLength" title="getGroupingLength() :: The grouping length is used for char or digit grouping."><span class="description">The grouping length is used for char or digit grouping.</span><pre>getGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: Return the grouping mode."><span class="description">Return the grouping mode.</span><pre>getGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_getProperty" title="getProperty() :: Get the property name."><span class="description">Get the property name.</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_getSortingMode" title="getSortingMode() :: Return the list sorting mode."><span class="description">Return the list sorting mode.</span><pre>getSortingMode()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingLength" title="setGroupingLength() :: Set the grouping length."><span class="description">Set the grouping length.</span><pre>setGroupingLength()</pre></a></li>
+<li class="method public "><a href="#method_setGroupingMode" title="setGroupingMode() :: Set the grouping mode."><span class="description">Set the grouping mode.</span><pre>setGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_setProperty" title="setProperty() :: Set the name of the property"><span class="description">Set the name of the property</span><pre>setProperty()</pre></a></li>
+<li class="method public "><a href="#method_setSortingMode" title="setSortingMode() :: Set the list sorting mode."><span class="description">Set the list sorting mode.</span><pre>setSortingMode()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_GROUP_CHAR" title="GROUP_CHAR() :: Group by characters, the max char count depend on the mode length
+(which is 1 by default for char grouping)."><span class="description">Group by characters, the max char count depend on the mode length
+(which is 1 by default for char grouping).</span><pre>GROUP_CHAR</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_DAY" title="GROUP_DAY() :: Sort by day from datetime property."><span class="description">Sort by day from datetime property.</span><pre>GROUP_DAY</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_DIGIT" title="GROUP_DIGIT() :: Group by digits, the max digit count depend on the mode length
+(which is infinity by default for digit grouping)."><span class="description">Group by digits, the max digit count depend on the mode length
+(which is infinity by default for digit grouping).</span><pre>GROUP_DIGIT</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_MONTH" title="GROUP_MONTH() :: Sort by month from datetime property."><span class="description">Sort by month from datetime property.</span><pre>GROUP_MONTH</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_NONE" title="GROUP_NONE() :: Do not group."><span class="description">Do not group.</span><pre>GROUP_NONE</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_WEEK" title="GROUP_WEEK() :: Sort by week of the year from datetime property."><span class="description">Sort by week of the year from datetime property.</span><pre>GROUP_WEEK</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_WEEKDAY" title="GROUP_WEEKDAY() :: Sort by week day from datetime property."><span class="description">Sort by week day from datetime property.</span><pre>GROUP_WEEKDAY</pre></a></li>
+<li class="constant  "><a href="#constant_GROUP_YEAR" title="GROUP_YEAR() :: Sort by year from datetime property."><span class="description">Sort by year from datetime property.</span><pre>GROUP_YEAR</pre></a></li>
+<li class="constant  "><a href="#constant_SORT_ASC" title="SORT_ASC() :: Sort ascending."><span class="description">Sort ascending.</span><pre>SORT_ASC</pre></a></li>
+<li class="constant  "><a href="#constant_SORT_DESC" title="SORT_DESC() :: Sort descending."><span class="description">Sort descending.</span><pre>SORT_DESC</pre></a></li>
+<li class="constant  "><a href="#constant_SORT_RANDOM" title="SORT_RANDOM() :: Shuffle all records instead of sorting."><span class="description">Shuffle all records instead of sorting.</span><pre>SORT_RANDOM</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.html">DataDefinition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.html">Definition</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.html">View</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">GroupAndSortingInformationInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">This interface defines a grouping and sorting information for the view.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getGroupingLength"></a><div class="element clickable method public method_getGroupingLength" data-toggle="collapse" data-target=".method_getGroupingLength .collapse">
+<h2>The grouping length is used for char or digit grouping.</h2>
+<pre>getGroupingLength() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">It defines how many chars or digits should be respected when group mode is GROUP_CHAR.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_getGroupingMode"></a><div class="element clickable method public method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
+<h2>Return the grouping mode.</h2>
+<pre>getGroupingMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
+<h2>Get the property name.</h2>
+<pre>getProperty() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getSortingMode"></a><div class="element clickable method public method_getSortingMode" data-toggle="collapse" data-target=".method_getSortingMode .collapse">
+<h2>Return the list sorting mode.</h2>
+<pre>getSortingMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This sorting is applied after grouping and could also be called "in-group sorting".</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setGroupingLength"></a><div class="element clickable method public method_setGroupingLength" data-toggle="collapse" data-target=".method_setGroupingLength .collapse">
+<h2>Set the grouping length.</h2>
+<pre>setGroupingLength(int $value) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>int</code><p>The new value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setGroupingMode"></a><div class="element clickable method public method_setGroupingMode" data-toggle="collapse" data-target=".method_setGroupingMode .collapse">
+<h2>Set the grouping mode.</h2>
+<pre>setGroupingMode(string $value) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The new mode.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setProperty"></a><div class="element clickable method public method_setProperty" data-toggle="collapse" data-target=".method_setProperty .collapse">
+<h2>Set the name of the property</h2>
+<pre>setProperty(string $property) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The property name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_setSortingMode"></a><div class="element clickable method public method_setSortingMode" data-toggle="collapse" data-target=".method_setSortingMode .collapse">
+<h2>Set the list sorting mode.</h2>
+<pre>setSortingMode(string $value) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The new value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_GROUP_CHAR"> </a><div class="element clickable constant  constant_GROUP_CHAR" data-toggle="collapse" data-target=".constant_GROUP_CHAR .collapse">
+<h2>Group by characters, the max char count depend on the mode length
+(which is 1 by default for char grouping).</h2>
+<pre>GROUP_CHAR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_DAY"> </a><div class="element clickable constant  constant_GROUP_DAY" data-toggle="collapse" data-target=".constant_GROUP_DAY .collapse">
+<h2>Sort by day from datetime property.</h2>
+<pre>GROUP_DAY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_DIGIT"> </a><div class="element clickable constant  constant_GROUP_DIGIT" data-toggle="collapse" data-target=".constant_GROUP_DIGIT .collapse">
+<h2>Group by digits, the max digit count depend on the mode length
+(which is infinity by default for digit grouping).</h2>
+<pre>GROUP_DIGIT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">.</div></div></div>
+</div>
+<a id="constant_GROUP_MONTH"> </a><div class="element clickable constant  constant_GROUP_MONTH" data-toggle="collapse" data-target=".constant_GROUP_MONTH .collapse">
+<h2>Sort by month from datetime property.</h2>
+<pre>GROUP_MONTH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_NONE"> </a><div class="element clickable constant  constant_GROUP_NONE" data-toggle="collapse" data-target=".constant_GROUP_NONE .collapse">
+<h2>Do not group.</h2>
+<pre>GROUP_NONE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_WEEK"> </a><div class="element clickable constant  constant_GROUP_WEEK" data-toggle="collapse" data-target=".constant_GROUP_WEEK .collapse">
+<h2>Sort by week of the year from datetime property.</h2>
+<pre>GROUP_WEEK </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_WEEKDAY"> </a><div class="element clickable constant  constant_GROUP_WEEKDAY" data-toggle="collapse" data-target=".constant_GROUP_WEEKDAY .collapse">
+<h2>Sort by week day from datetime property.</h2>
+<pre>GROUP_WEEKDAY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GROUP_YEAR"> </a><div class="element clickable constant  constant_GROUP_YEAR" data-toggle="collapse" data-target=".constant_GROUP_YEAR .collapse">
+<h2>Sort by year from datetime property.</h2>
+<pre>GROUP_YEAR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORT_ASC"> </a><div class="element clickable constant  constant_SORT_ASC" data-toggle="collapse" data-target=".constant_SORT_ASC .collapse">
+<h2>Sort ascending.</h2>
+<pre>SORT_ASC </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORT_DESC"> </a><div class="element clickable constant  constant_SORT_DESC" data-toggle="collapse" data-target=".constant_SORT_DESC .collapse">
+<h2>Sort descending.</h2>
+<pre>SORT_DESC </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SORT_RANDOM"> </a><div class="element clickable constant  constant_SORT_RANDOM" data-toggle="collapse" data-target=".constant_SORT_RANDOM .collapse">
+<h2>Shuffle all records instead of sorting.</h2>
+<pre>SORT_RANDOM </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-08-21T12:23:30+02:00.<br></footer></div>
+</div>
+</body>
+</html>

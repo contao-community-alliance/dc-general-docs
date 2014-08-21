@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">41</span></a></li>
+                <span class="label label-info">106</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -65,6 +65,7 @@
 <li class="method public "><a href="#method_getFlag" title="getFlag() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getFlag()</pre></a></li>
 <li class="method public "><a href="#method_getPropertyNames" title="getPropertyNames() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getPropertyNames()</pre></a></li>
 <li class="method public "><a href="#method_getSelected" title="getSelected() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getSelected()</pre></a></li>
+<li class="method public "><a href="#method_getSelectedDefinition" title="getSelectedDefinition() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getSelectedDefinition()</pre></a></li>
 <li class="method public "><a href="#method_initialize" title="initialize() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>initialize()</pre></a></li>
 <li class="method public "><a href="#method_render" title="render() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>render()</pre></a></li>
 <li class="method public "><a href="#method_setDefaultFlag" title="setDefaultFlag() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setDefaultFlag()</pre></a></li>
@@ -73,10 +74,10 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="method protected "><a href="#method_flagToDirection" title="flagToDirection() :: Calculate the direction from a flag."><span class="description">Calculate the direction from a flag.</span><pre>flagToDirection()</pre></a></li>
-<li class="method protected "><a href="#method_getAdditionalSorting" title="getAdditionalSorting() :: Retrieve the additional sorting properties from the data definition."><span class="description">Retrieve the additional sorting properties from the data definition.</span><pre>getAdditionalSorting()</pre></a></li>
+<li class="method protected "><a href="#method_getGroupAndSortingDefinition" title="getGroupAndSortingDefinition() :: Retrieve the group and sorting definition."><span class="description">Retrieve the group and sorting definition.</span><pre>getGroupAndSortingDefinition()</pre></a></li>
 <li class="method protected "><a href="#method_getPersistent" title="getPersistent() :: Retrieve the persistent value from the input provider."><span class="description">Retrieve the persistent value from the input provider.</span><pre>getPersistent()</pre></a></li>
-<li class="method protected "><a href="#method_lookupFlag" title="lookupFlag() :: Retrieve the sorting flag to use for a property."><span class="description">Retrieve the sorting flag to use for a property.</span><pre>lookupFlag()</pre></a></li>
+<li class="method protected "><a href="#method_searchDefinitionByName" title="searchDefinitionByName() :: "><span class="description">searchDefinitionByName()
+        </span><pre>searchDefinitionByName()</pre></a></li>
 <li class="method protected "><a href="#method_setPersistent" title="setPersistent() :: Store the persistent value in the input provider."><span class="description">Store the persistent value in the input provider.</span><pre>setPersistent()</pre></a></li>
 </ul>
 </li>
@@ -87,7 +88,7 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected "><a href="#property_arrSorting" title="$arrSorting() :: The sorting properties including the direction."><span class="description"></span><pre>$arrSorting</pre></a></li>
-<li class="property protected "><a href="#property_strSelected" title="$strSelected() :: The selected sorting value."><span class="description"></span><pre>$strSelected</pre></a></li>
+<li class="property protected "><a href="#property_selected" title="$selected() :: "><span class="description"></span><pre>$selected</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -124,6 +125,10 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>not in use anymore.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$strPropertyName</h4></div>
 <div class="subelement argument"><h4>$intFlag</h4></div>
@@ -133,23 +138,47 @@
 <h2>{@inheritDoc}</h2>
 <pre>getDefaultFlag() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>not in use anymore.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getFlag"></a><div class="element clickable method public method_getFlag" data-toggle="collapse" data-target=".method_getFlag .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>getFlag() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>not in use anymore.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getPropertyNames"></a><div class="element clickable method public method_getPropertyNames" data-toggle="collapse" data-target=".method_getPropertyNames .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>getPropertyNames() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>not in use anymore.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getSelected"></a><div class="element clickable method public method_getSelected" data-toggle="collapse" data-target=".method_getSelected .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>getSelected() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSelectedDefinition"></a><div class="element clickable method public method_getSelectedDefinition" data-toggle="collapse" data-target=".method_getSelectedDefinition .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getSelectedDefinition() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -180,42 +209,32 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>not in use anymore.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$intFlag</h4></div>
 </div></div>
 </div>
 <a id="method_setSelected"></a><div class="element clickable method public method_setSelected" data-toggle="collapse" data-target=".method_setSelected .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>setSelected($strPropertyName) </pre>
+<pre>setSelected($name) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$strPropertyName</h4></div>
+<div class="subelement argument"><h4>$name</h4></div>
 </div></div>
 </div>
-<a id="method_flagToDirection"></a><div class="element clickable method protected method_flagToDirection" data-toggle="collapse" data-target=".method_flagToDirection .collapse">
-<h2>Calculate the direction from a flag.</h2>
-<pre>flagToDirection(int $intFlag) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$intFlag</h4>
-<code>int</code><p>The flag.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getAdditionalSorting"></a><div class="element clickable method protected method_getAdditionalSorting" data-toggle="collapse" data-target=".method_getAdditionalSorting .collapse">
-<h2>Retrieve the additional sorting properties from the data definition.</h2>
-<pre>getAdditionalSorting() : array</pre>
+<a id="method_getGroupAndSortingDefinition"></a><div class="element clickable method protected method_getGroupAndSortingDefinition" data-toggle="collapse" data-target=".method_getGroupAndSortingDefinition .collapse">
+<h2>Retrieve the group and sorting definition.</h2>
+<pre>getGroupAndSortingDefinition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_getPersistent"></a><div class="element clickable method protected method_getPersistent" data-toggle="collapse" data-target=".method_getPersistent .collapse">
@@ -228,18 +247,21 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_lookupFlag"></a><div class="element clickable method protected method_lookupFlag" data-toggle="collapse" data-target=".method_lookupFlag .collapse">
-<h2>Retrieve the sorting flag to use for a property.</h2>
-<pre>lookupFlag(string $strProperty) : int</pre>
+<a id="method_searchDefinitionByName"></a><div class="element clickable method protected method_searchDefinitionByName" data-toggle="collapse" data-target=".method_searchDefinitionByName .collapse">
+<h2>searchDefinitionByName()
+        </h2>
+<pre>searchDefinitionByName(string $name) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a> | null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$strProperty</h4>
-<code>string</code><p>The property.</p></div>
+<h4>$name</h4>
+<code>string</code><p>The name.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></code><code>null</code>
+</div>
 </div></div>
 </div>
 <a id="method_setPersistent"></a><div class="element clickable method protected method_setPersistent" data-toggle="collapse" data-target=".method_setPersistent .collapse">
@@ -268,9 +290,9 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_strSelected"> </a><div class="element clickable property protected property_strSelected" data-toggle="collapse" data-target=".property_strSelected .collapse">
-<h2>The selected sorting value.</h2>
-<pre>$strSelected : mixed</pre>
+<a id="property_selected"> </a><div class="element clickable property protected property_selected" data-toggle="collapse" data-target=".property_selected .collapse">
+<h2>$selected</h2>
+<pre>$selected : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -282,7 +304,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-08-20T22:55:36+02:00.<br></footer></div>
+            generated on 2014-08-21T12:23:28+02:00.<br></footer></div>
 </div>
 </body>
 </html>

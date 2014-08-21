@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">41</span></a></li>
+                <span class="label label-info">106</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -94,6 +94,8 @@
 <li class="method protected "><a href="#method_parseParentChildConditions" title="parseParentChildConditions() :: This method parses the parent-child conditions."><span class="description">This method parses the parent-child conditions.</span><pre>parseParentChildConditions()</pre></a></li>
 <li class="method protected "><a href="#method_parseProperties" title="parseProperties() :: Parse the defined properties and populate the definition."><span class="description">Parse the defined properties and populate the definition.</span><pre>parseProperties()</pre></a></li>
 <li class="method protected "><a href="#method_parsePropertyCallbacks" title="parsePropertyCallbacks() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parsePropertyCallbacks()</pre></a></li>
+<li class="method protected "><a href="#method_parsePropertySortingAndGrouping" title="parsePropertySortingAndGrouping() :: Parse the sorting and grouping information for a given property."><span class="description">Parse the sorting and grouping information for a given property.</span><pre>parsePropertySortingAndGrouping()</pre></a></li>
+<li class="method protected "><a href="#method_parsePropertySortingAndGroupings" title="parsePropertySortingAndGroupings() :: Parse the sorting and grouping information for all properties."><span class="description">Parse the sorting and grouping information for all properties.</span><pre>parsePropertySortingAndGroupings()</pre></a></li>
 <li class="method protected "><a href="#method_parseRootEntries" title="parseRootEntries() :: This method parses the root entries definition."><span class="description">This method parses the root entries definition.</span><pre>parseRootEntries()</pre></a></li>
 <li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: "><span class="description">parseSingleProperty()
         </span><pre>parseSingleProperty()</pre></a></li>
@@ -188,14 +190,14 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_evalFlag"></a><div class="element clickable method protected method_evalFlag" data-toggle="collapse" data-target=".method_evalFlag .collapse">
 <h2>Evaluate the contao 2 sorting flag into sorting mode, grouping mode and grouping length.</h2>
-<pre>evalFlag(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<pre>evalFlag(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface $config, int $flag) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code><p>The property to evaluate the flag for.</p></div>
 <div class="subelement argument">
 <h4>$flag</h4>
 <code>int</code><p>The flag to be evaluated.</p></div>
@@ -203,14 +205,14 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_evalFlagGrouping"></a><div class="element clickable method protected method_evalFlagGrouping" data-toggle="collapse" data-target=".method_evalFlagGrouping .collapse">
 <h2>Evaluate the contao 2 sorting flag into grouping mode.</h2>
-<pre>evalFlagGrouping(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<pre>evalFlagGrouping(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface $config, int $flag) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code><p>The property to evaluate the flag for.</p></div>
 <div class="subelement argument">
 <h4>$flag</h4>
 <code>int</code><p>The flag to be evaluated.</p></div>
@@ -218,14 +220,14 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_evalFlagGroupingLength"></a><div class="element clickable method protected method_evalFlagGroupingLength" data-toggle="collapse" data-target=".method_evalFlagGroupingLength .collapse">
 <h2>Evaluate the contao 2 sorting flag into grouping length.</h2>
-<pre>evalFlagGroupingLength(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<pre>evalFlagGroupingLength(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface $config, int $flag) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code><p>The property to evaluate the flag for.</p></div>
 <div class="subelement argument">
 <h4>$flag</h4>
 <code>int</code><p>The flag to be evaluated.</p></div>
@@ -233,14 +235,14 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_evalFlagSorting"></a><div class="element clickable method protected method_evalFlagSorting" data-toggle="collapse" data-target=".method_evalFlagSorting .collapse">
 <h2>Evaluate the contao 2 sorting flag into sorting mode.</h2>
-<pre>evalFlagSorting(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $config, int $flag) : void</pre>
+<pre>evalFlagSorting(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface $config, int $flag) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.ListingConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface</a></code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to evaluate the flag for.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingInformationInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingInformationInterface</a></code><p>The property to evaluate the flag for.</p></div>
 <div class="subelement argument">
 <h4>$flag</h4>
 <code>int</code><p>The flag to be evaluated.</p></div>
@@ -267,7 +269,7 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_loadAdditionalDefinitions"></a><div class="element clickable method protected method_loadAdditionalDefinitions" data-toggle="collapse" data-target=".method_loadAdditionalDefinitions .collapse">
 <h2>Load additional definitions, like naming of parent data provider.</h2>
-<pre>loadAdditionalDefinitions(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \ContaoCommunityAlliance\DcGeneral\Factory\Event\BuildDataDefinitionEvent $event) : void</pre>
+<pre>loadAdditionalDefinitions(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This method will register an event to the populate environment event in which the parent data provider container
@@ -276,9 +278,6 @@ will get loaded.</div>
 <div class="subelement argument">
 <h4>$container</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code><p>The container where the data shall be stored.</p></div>
-<div class="subelement argument">
-<h4>$event</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.Event.BuildDataDefinitionEvent.html">\ContaoCommunityAlliance\DcGeneral\Factory\Event\BuildDataDefinitionEvent</a></code><p>The event being emitted.</p></div>
 </div></div>
 </div>
 <a id="method_parseBackendView"></a><div class="element clickable method protected method_parseBackendView" data-toggle="collapse" data-target=".method_parseBackendView .collapse">
@@ -602,6 +601,36 @@ Contao.</div>
 <code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher in use.</p></div>
 </div></div>
 </div>
+<a id="method_parsePropertySortingAndGrouping"></a><div class="element clickable method protected method_parsePropertySortingAndGrouping" data-toggle="collapse" data-target=".method_parsePropertySortingAndGrouping .collapse">
+<h2>Parse the sorting and grouping information for a given property.</h2>
+<pre>parsePropertySortingAndGrouping(string $propName, array $propInfo, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface $definitions) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propName</h4>
+<code>string</code><p>The property to parse.</p></div>
+<div class="subelement argument">
+<h4>$propInfo</h4>
+<code>array</code><p>The property information.</p></div>
+<div class="subelement argument">
+<h4>$definitions</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface</a></code><p>The definitions.</p></div>
+</div></div>
+</div>
+<a id="method_parsePropertySortingAndGroupings"></a><div class="element clickable method protected method_parsePropertySortingAndGroupings" data-toggle="collapse" data-target=".method_parsePropertySortingAndGroupings .collapse">
+<h2>Parse the sorting and grouping information for all properties.</h2>
+<pre>parsePropertySortingAndGroupings(\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The view information for the backend view.</p></div>
+</div></div>
+</div>
 <a id="method_parseRootEntries"></a><div class="element clickable method protected method_parseRootEntries" data-toggle="collapse" data-target=".method_parseRootEntries .collapse">
 <h2>This method parses the root entries definition.</h2>
 <pre>parseRootEntries(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container) : void</pre>
@@ -657,7 +686,7 @@ Contao.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-08-20T22:55:36+02:00.<br></footer></div>
+            generated on 2014-08-21T12:23:28+02:00.<br></footer></div>
 </div>
 </body>
 </html>
