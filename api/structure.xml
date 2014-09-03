@@ -24949,7 +24949,7 @@ Case 2: the sub palette selector is only a "property name", the value is then im
     </class>
     <source>eJyVVV1P2zAUfU5+hSfxUBArD9OeYKysRYBUtErwiDS5zk1zN8eObCdTh/jvu3aS5qOtBFVVxdf365x7T3r1vciK+OLsLGZnbHW/YhUYi1qxr94wK7j4wzfA6LMBBYbLhUFyCZe8dJk2/o7NM4PWIVfsSWSYphIMuxJT2x5mYrumxAUIZ8p8msD1OMOTg5TC7wFzsOzKhuOvLBxnmXY5RzkVOt8LfPaVKXKJiuJcfZpKOs3W6L7sagldbA1uMkchGbBHcPxRJyAtc8DzafCRKEDZAHd5t1rWxhQlWF0aAXS8iGPFqSUiBthcK8f1XOd5qdBtb6QkBgS8LMRdTdbLiiuQl3Fc2vd4L7jjL+SW4uZBOTApFbl8Z+ytqtBolYNyH459UEXpVkZXmIDpRbd7cbO2znDh2JpTPswLCb4Od35RUppD4WEyqM3W0zbYnhEfgUbe5hSSW7srcVvniKNdFctCUHOx6y5+jSPfXkSF/DzrFlyGtu2D0aPw2FFBwv4i3amp9w8xs4qbOnOXMvKNRYXRjvaUYk70+nc7wUGxwIMIgypNTYPLuGvLWcalZLQ3lPicWW0cqg3jKmESc6TGFJGWd/R5b+0y2Cey7fbZ46IvzTMJIQlQ7hyVT0yRrOISE/9bknpQNcWJCydGmEf7tQONFXcQIP/0rdRufeBkqUAh0O6wHEh/CXOaGSDJQQWst4Chw/4oei2Qf2kUO7SubSvlmnTI0lKJwNAGXM97chpHNPqoyXPiy3y+Jp8wqMlpeJ43YzfNeRB/GUdv74eFXhusaMTRIbs9huywmI5jG/gfRTdAECyjuBGq1xkqmiK6hRZvx4s3pB0q2u3+hxPbNvFQX52emoKjSuzbUHGDhkZtLMH1ZNMKhqaF9C8k8R8EufGikFuvj9yCrEgZNNkwvVq7+8M7Jo72jdDnrieTlkFM2eQTWsI/6bD1/E7JLzhGB689Ad7uHaL9sXdmv99GS1kvTGv9QW+ltp/AXzTKtpt2P0+jk8bYEXgYwXndoV+3MI/9pRm8PcjnLf4Pk8G9Rg==</source>
   </file>
-  <file path="Contao/View/Contao2BackendView/ContaoWidgetManager.php" generated-path="Contao.View.Contao2BackendView.ContaoWidgetManager.html" hash="1bf82aeaaec3ce813d455d630374c57a" package="generalDriver">
+  <file path="Contao/View/Contao2BackendView/ContaoWidgetManager.php" generated-path="Contao.View.Contao2BackendView.ContaoWidgetManager.html" hash="91bfdba900ffb6cb0667b0142df30846" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -25016,19 +25016,22 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="80" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="82" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>encodeValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::encodeValue()</full_name>
-        <docblock line="80">
+        <docblock line="82">
           <description>Encode a value from the widget to native data of the data provider via event.</description>
           <long-description></long-description>
-          <tag name="param" line="80" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="82" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="param" line="80" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
+          <tag name="param" line="82" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="80" description="" type="mixed">
+          <tag name="param" line="82" description="&lt;p&gt;The property value bag the property value originates from.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag" variable="$propertyValues">
+            <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
+          </tag>
+          <tag name="return" line="82" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -25042,20 +25045,25 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <default></default>
           <type>mixed</type>
         </argument>
+        <argument line="0">
+          <name>$propertyValues</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
+        </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="110" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="112" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>decodeValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::decodeValue()</full_name>
-        <docblock line="110">
+        <docblock line="112">
           <description>Decode a value from native data of the data provider to the widget via event.</description>
           <long-description></long-description>
-          <tag name="param" line="110" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="112" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="param" line="110" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
+          <tag name="param" line="112" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="110" description="" type="mixed">
+          <tag name="return" line="112" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -25070,18 +25078,18 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="134" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="136" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>getEnvironment</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::getEnvironment()</full_name>
-        <docblock line="134">
+        <docblock line="136">
           <description>{@inheritdoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="142" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="144" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>hasWidget</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::hasWidget()</full_name>
-        <docblock line="142">
+        <docblock line="144">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -25091,16 +25099,16 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="162" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="164" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>getXLabel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::getXLabel()</full_name>
-        <docblock line="162">
+        <docblock line="164">
           <description>Get special labels.</description>
           <long-description></long-description>
-          <tag name="param" line="162" description="&lt;p&gt;The property for which the X label shall be generated.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface" variable="$propInfo">
+          <tag name="param" line="164" description="&lt;p&gt;The property for which the X label shall be generated.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface" variable="$propInfo">
             <type link="PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</type>
           </tag>
-          <tag name="return" line="162" description="" type="string">
+          <tag name="return" line="164" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -25110,36 +25118,36 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="308" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="310" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>preLoadRichTextEditor</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::preLoadRichTextEditor()</full_name>
-        <docblock line="308">
+        <docblock line="310">
           <description>Function for pre-loading the tiny mce.</description>
           <long-description></long-description>
-          <tag name="return" line="308" description="" type="void">
+          <tag name="return" line="310" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="throws" line="308" description="When the rich text editor config file can not be found." type="\Exception">
+          <tag name="throws" line="310" description="When the rich text editor config file can not be found." type="\Exception">
             <type link="Exception.html">\Exception</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="376" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="378" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>getWidget</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::getWidget()</full_name>
-        <docblock line="376">
+        <docblock line="378">
           <description>Retrieve the instance of a widget for the given property.</description>
           <long-description></long-description>
-          <tag name="param" line="376" description="&lt;p&gt;Name of the property for which the widget shall be retrieved.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="378" description="&lt;p&gt;Name of the property for which the widget shall be retrieved.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="param" line="376" description="&lt;p&gt;The input values to use (optional).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag" variable="$inputValues">
+          <tag name="param" line="378" description="&lt;p&gt;The input values to use (optional).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag" variable="$inputValues">
             <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
           </tag>
-          <tag name="throws" line="376" description="When an unknown property has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException">
+          <tag name="throws" line="378" description="When an unknown property has been passed." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException">
             <type link="DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</type>
           </tag>
-          <tag name="return" line="376" description="" type="\Widget">
+          <tag name="return" line="378" description="" type="\Widget">
             <type link="Widget.html">\Widget</type>
           </tag>
         </docblock>
@@ -25154,16 +25162,16 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="528" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="530" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>buildDatePicker</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::buildDatePicker()</full_name>
-        <docblock line="528">
+        <docblock line="530">
           <description>Build the date picker string.</description>
           <long-description></long-description>
-          <tag name="param" line="528" description="&lt;p&gt;The widget instance to generate the date picker string for.&lt;/p&gt;" type="\Contao\Widget" variable="$objWidget">
+          <tag name="param" line="530" description="&lt;p&gt;The widget instance to generate the date picker string for.&lt;/p&gt;" type="\Contao\Widget" variable="$objWidget">
             <type link="Widget.html">\Contao\Widget</type>
           </tag>
-          <tag name="return" line="528" description="" type="string">
+          <tag name="return" line="530" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -25173,16 +25181,16 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\Contao\Widget</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="593" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="595" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>generateHelpText</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::generateHelpText()</full_name>
-        <docblock line="593">
+        <docblock line="595">
           <description>Generate the help msg for a property.</description>
           <long-description></long-description>
-          <tag name="param" line="593" description="&lt;p&gt;The name of the property.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="595" description="&lt;p&gt;The name of the property.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="return" line="593" description="" type="string">
+          <tag name="return" line="595" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -25192,25 +25200,25 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="622" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="624" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>renderWidget</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::renderWidget()</full_name>
-        <docblock line="622">
+        <docblock line="624">
           <description>Render the widget for the named property.</description>
           <long-description></long-description>
-          <tag name="param" line="622" description="&lt;p&gt;The name of the property for which the widget shall be rendered.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="624" description="&lt;p&gt;The name of the property for which the widget shall be rendered.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="param" line="622" description="&lt;p&gt;Flag if the error property of the widget shall get cleared prior rendering.&lt;/p&gt;" type="bool" variable="$ignoreErrors">
+          <tag name="param" line="624" description="&lt;p&gt;Flag if the error property of the widget shall get cleared prior rendering.&lt;/p&gt;" type="bool" variable="$ignoreErrors">
             <type>bool</type>
           </tag>
-          <tag name="param" line="622" description="&lt;p&gt;The input values to use (optional).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag" variable="$inputValues">
+          <tag name="param" line="624" description="&lt;p&gt;The input values to use (optional).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag" variable="$inputValues">
             <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
           </tag>
-          <tag name="return" line="622" description="" type="string">
+          <tag name="return" line="624" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="throws" line="622" description="For unknown properties." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="624" description="For unknown properties." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -25230,10 +25238,10 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="694" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="696" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>processInput</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::processInput()</full_name>
-        <docblock line="694">
+        <docblock line="696">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -25243,10 +25251,10 @@ Case 2: the sub palette selector is only a "property name", the value is then im
           <type>\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="747" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="749" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>processErrors</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager::processErrors()</full_name>
-        <docblock line="747">
+        <docblock line="749">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -25258,13 +25266,13 @@ Case 2: the sub palette selector is only a "property name", the value is then im
       </method>
     </class>
     <markers>
-      <fixme line="414">TEMPORARY WORKAROUND! To be fixed in the core: Controller::prepareForWidget(..).</fixme>
-      <todo line="461">populate these.</todo>
-      <todo line="531">need better interface to Contao Config class here.</todo>
-      <todo line="600">need better interface to Contao Config class here.</todo>
-      <todo line="671">need 'update' value - (\Input::get('act') == 'overrideAll' &amp;&amp; ($arrData['inputType'] == 'checkbox' || $arrData['inputType'] == 'checkboxWizard') &amp;&amp; $arrData['eval']['multiple'])</todo>
+      <fixme line="416">TEMPORARY WORKAROUND! To be fixed in the core: Controller::prepareForWidget(..).</fixme>
+      <todo line="463">populate these.</todo>
+      <todo line="533">need better interface to Contao Config class here.</todo>
+      <todo line="602">need better interface to Contao Config class here.</todo>
+      <todo line="673">need 'update' value - (\Input::get('act') == 'overrideAll' &amp;&amp; ($arrData['inputType'] == 'checkbox' || $arrData['inputType'] == 'checkboxWizard') &amp;&amp; $arrData['eval']['multiple'])</todo>
     </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Contao/View/Contao2BackendView/Event/BaseButtonEvent.php" generated-path="Contao.View.Contao2BackendView.Event.BaseButtonEvent.html" hash="7f7193fbf7fc3cd5928d6ba98d1d58bf" package="generalDriver">
     <docblock line="0">
@@ -44824,7 +44832,7 @@ given environment.</long-description>
     </class>
     <source>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</source>
   </file>
-  <file path="Contao/View/Contao2BackendView/Event/EncodePropertyValueFromWidgetEvent.php" generated-path="Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html" hash="fcbc7b0252f6444dba443a69a51285b7" package="generalDriver">
+  <file path="Contao/View/Contao2BackendView/Event/EncodePropertyValueFromWidgetEvent.php" generated-path="Contao.View.Contao2BackendView.Event.EncodePropertyValueFromWidgetEvent.html" hash="4ec89494b4035b7f6ae4a2c18fe4516d" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -44877,16 +44885,70 @@ data (presented by the data provider).</long-description>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="51" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+      <property static="false" visibility="protected" line="49" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+        <name>$propertyValues</name>
+        <default></default>
+        <docblock line="49">
+          <description>The property value bag where values are to be retrieved from.</description>
+          <long-description></long-description>
+          <tag name="var" line="49" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag" variable="">
+            <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="60" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::__construct()</full_name>
+        <docblock line="60">
+          <description>Create a new model aware event.</description>
+          <long-description></long-description>
+          <tag name="param" line="60" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EnvironmentInterface" variable="$environment">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EnvironmentInterface</type>
+          </tag>
+          <tag name="param" line="60" description="&lt;p&gt;The model attached to the event.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ModelInterface</type>
+          </tag>
+          <tag name="param" line="60" description="&lt;p&gt;The property value bag the property value originates from.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag" variable="$propertyValues">
+            <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$environment</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EnvironmentInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$propertyValues</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="75" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+        <name>getPropertyValueBag</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::getPropertyValueBag()</full_name>
+        <docblock line="75">
+          <description>Retrieve the property value bag where values are stored.</description>
+          <long-description></long-description>
+          <tag name="return" line="75" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag">
+            <type link="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="87" package="DcGeneral\Contao\View\Contao2BackendView\Event">
         <name>setProperty</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::setProperty()</full_name>
-        <docblock line="51">
+        <docblock line="87">
           <description>Set the name of the property.</description>
           <long-description></long-description>
-          <tag name="param" line="51" description="&lt;p&gt;The name of the property.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="87" description="&lt;p&gt;The name of the property.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="return" line="51" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent">
+          <tag name="return" line="87" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent">
             <type link="DecodePropertyValueForWidgetEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent</type>
           </tag>
         </docblock>
@@ -44896,27 +44958,27 @@ data (presented by the data provider).</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="63" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="99" package="DcGeneral\Contao\View\Contao2BackendView\Event">
         <name>getProperty</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::getProperty()</full_name>
-        <docblock line="63">
+        <docblock line="99">
           <description>Retrieve the name of the property.</description>
           <long-description></long-description>
-          <tag name="return" line="63" description="" type="string">
+          <tag name="return" line="99" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="75" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="111" package="DcGeneral\Contao\View\Contao2BackendView\Event">
         <name>setValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::setValue()</full_name>
-        <docblock line="75">
+        <docblock line="111">
           <description>Set the value in the event.</description>
           <long-description></long-description>
-          <tag name="param" line="75" description="&lt;p&gt;The new value.&lt;/p&gt;" type="mixed" variable="$value">
+          <tag name="param" line="111" description="&lt;p&gt;The new value.&lt;/p&gt;" type="mixed" variable="$value">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="75" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent">
+          <tag name="return" line="111" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent">
             <type link="DecodePropertyValueForWidgetEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\DecodePropertyValueForWidgetEvent</type>
           </tag>
         </docblock>
@@ -44926,19 +44988,19 @@ data (presented by the data provider).</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="87" package="DcGeneral\Contao\View\Contao2BackendView\Event">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event" line="123" package="DcGeneral\Contao\View\Contao2BackendView\Event">
         <name>getValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EncodePropertyValueFromWidgetEvent::getValue()</full_name>
-        <docblock line="87">
+        <docblock line="123">
           <description>Retrieve the value from the event.</description>
           <long-description></long-description>
-          <tag name="return" line="87" description="" type="mixed">
+          <tag name="return" line="123" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
       </method>
     </class>
-    <source>eJytVEtrGzEQPu/+ijkE8gBvoKWnPGrXSZNDUkwT0ouhyNpZr+iutEizdkzJf89IWjt+JOBCffLI8z3mG8nnX5uySU9PTlI4gdHtCGZonTIavviDfiPkHzFF4M8UNVpRXVnFLeFH0VJprP8NhqVVjpTQ8CBLVRQVWjiXmVsWfbmYMHGDkmxbZzlebjM8EBYMv0VVo4NzF8rfZSj7paFaqCqTpt4BPnplRt4pzTiKVVZx1Z8o+rzSkqZZWDUtiSElwj2SuDc5Vg4IRZ2FnkpJ1C6Me3czuouHharQmdZK5PI0TbVgSxwMwtBoEmZo6rrVihaDquIEJI6v5E0Maxw7xk8K5933T984UtR5OLqeoaazNG3dPmShezyYOLJCUjA/mAuLS5Zui8NKOAfXWnLDyJoGLS2eRNXid2vqXyqfIgWEn873P5bKAfoT4C/KuRZzmJeoQUDT4WHmCaAUnJaBCYI0mq8BcWfBrJALEtDqnHdMxuQwWQBxyPOgBkozyNdaEN8eLxoAR41Fx7q4AoRjFp0ppjpeOlxdw38LNqxL7plGmuAzMdzBBwGnf9OEp3YEPwb313ABh7nsdY8im7Eo387gYxJ9ZBg0e8sIeyHCno+rF3M55J0lfmlJ2IKPp0YwRUhilXzB93xeKlm+BeRKUVV+Czl6iTzzDIGlPxMW2L7SU1+fpgnzEL86jvhgSbktG3fb6XqBLb5aPWO+Sxdg61wPvGr6YIw1ykZYUXcm30x9GMAa0iK1VsMV7i7T2I1dRq/thB80FK2W5P/SHNISdLTSPU4TXmxyQPwKepcrNxebcSWddGg7S5OXtbF/Io/C72ef2TuazQ1t2Zyu2ezcrau/mdzysYw/rlPpUGB86Vvhh412G4zB4zzi/mvaofkoymzmHJUv1i7R3glHaPjXeW/Ajmbjzu4GHJ29m27niA28pK/MqFF4</source>
+    <source>eJytVdtu2zAMfba/gg8FlhZLCmzYy9Z26dLuArRDsQ7dS4FCkelYmC0Zkpw0GPbvoy652E66DpifLJnkIQ8P6ZP3dVGnx0dHKRzBzecbmKM2Qkl44y7GNeM/2QyBnhlK1Ky80IJM/EfW2EJp9w0mhRbGCibhlhciz0vUcMJHZnUY8+WUAtfIrW6qUYZn3Qi3FnNy/4yiQgMnxh8fCn8cF8pWTJQjrqqe43eHTJ5XQpKfDadRSafxVNjXayyu6qUWs8KSS4FwjZZdqwxLAxZZNfI2peAojS/36tPNVbjMRYlGNZojHY/TVDJKiYhBmChpmZqoqmqksMvzsiQGON5f8E+BrPtgcX8ncBHfX30gSlFm/upyjtK+S9PGPCeYt74/nxqrGbc++fMF07iKErs4KZkxcCk5GdxoVaO2yztWNvhRq+qHyGZovYerztl/L4QBdDdAL8KYBjNYFCiBQR39Ye4CQMGILQVTBK4kycCSZU5RIWOWQSMz6rFVKoPpEiyRvPBoICQ5ubNkltTjQL3DoNZoCBfXDv6aQOeCQh2uMlzL8N+I9e3iz2QjTfDRkruBPQSnv9KEqjYWvp5fX8IpvMj4MA7FaE6gpE6fxzTkMUKPOVxROPQUDh1dw8DLC+pZ4pqW+C44eioElXsm1sznpPNFIXixIcgUrCxdFzJ0ENnIRfBRxnOmgdIXcubOx2lCcSxNHVF8sArZhQ29jbgOoBOvEo+Y9cN5t26sjmCmbOakpCOIAWIzKkgjpUmyCwrqQLY69YE9UYy3MNtpTDQyiyReiQuoXBOBuS4GjW8B1UyziqQxF1rJir59ISnq3E32AW5u/ZKh0rauekG8Vjbu4TkI4OvHBYn5WMt4QWXEudidWZeEELRd+D7Sbf9a0fYTNIHktGbccdpMae1B3khu3eJ/ePAq1w23gzRJ/krPSzLqlB8Kdx96JXTST5PDNKHBSqhiivX27TZ6CyUGPXxHxgeWVtbwrMPEaV8Uye8tXXyLgtvFzU6d0irTreEiyTZa7hVnh0ia8K7lIFYbA+2so5P1Le1Pu2c39BQTJn/Dw96t0i/qAvsbUunWgtxZpdlUOVjjxjI79W13yA1si4anmvW8Ctprb38znm7CHvqDTIR8Ylz9moxrMRBP+8ef/ivb3ngQYNo8B+TTrc38bIaDq/+V7yowhmn9CPoEh8x2shszogR+p38A4TVotA==</source>
   </file>
   <file path="Contao/Dca/Populator/BackendViewPopulator.php" generated-path="Contao.Dca.Populator.BackendViewPopulator.html" hash="f71f95aa34e13e71175711ab7d3fbddc" package="generalDriver">
     <docblock line="0">

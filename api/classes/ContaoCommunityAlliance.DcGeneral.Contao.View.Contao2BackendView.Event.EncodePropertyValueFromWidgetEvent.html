@@ -60,7 +60,9 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new model aware event."><span class="description">Create a new model aware event.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_getProperty" title="getProperty() :: Retrieve the name of the property."><span class="description">Retrieve the name of the property.</span><pre>getProperty()</pre></a></li>
+<li class="method public "><a href="#method_getPropertyValueBag" title="getPropertyValueBag() :: Retrieve the property value bag where values are stored."><span class="description">Retrieve the property value bag where values are stored.</span><pre>getPropertyValueBag()</pre></a></li>
 <li class="method public "><a href="#method_getValue" title="getValue() :: Retrieve the value from the event."><span class="description">Retrieve the value from the event.</span><pre>getValue()</pre></a></li>
 <li class="method public "><a href="#method_setProperty" title="setProperty() :: Set the name of the property."><span class="description">Set the name of the property.</span><pre>setProperty()</pre></a></li>
 <li class="method public "><a href="#method_setValue" title="setValue() :: Set the value in the event."><span class="description">Set the value in the event.</span><pre>setValue()</pre></a></li>
@@ -73,6 +75,7 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected "><a href="#property_property" title="$property() :: The name of the property for which the data shall be decoded."><span class="description"></span><pre>$property</pre></a></li>
+<li class="property protected "><a href="#property_propertyValues" title="$propertyValues() :: The property value bag where values are to be retrieved from."><span class="description"></span><pre>$propertyValues</pre></a></li>
 <li class="property protected "><a href="#property_value" title="$value() :: The value of the data."><span class="description"></span><pre>$value</pre></a></li>
 </ul>
 </li>
@@ -118,6 +121,24 @@ data (presented by the data provider).</div>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new model aware event.</h2>
+<pre>__construct(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EnvironmentInterface $environment, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag $propertyValues) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\EnvironmentInterface</a></code><p>The environment.</p></div>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ModelInterface</a></code><p>The model attached to the event.</p></div>
+<div class="subelement argument">
+<h4>$propertyValues</h4>
+<code><a href="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</a></code><p>The property value bag the property value originates from.</p></div>
+</div></div>
+</div>
 <a id="method_getProperty"></a><div class="element clickable method public method_getProperty" data-toggle="collapse" data-target=".method_getProperty .collapse">
 <h2>Retrieve the name of the property.</h2>
 <pre>getProperty() : string</pre>
@@ -126,6 +147,16 @@ data (presented by the data provider).</div>
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPropertyValueBag"></a><div class="element clickable method public method_getPropertyValueBag" data-toggle="collapse" data-target=".method_getPropertyValueBag .collapse">
+<h2>Retrieve the property value bag where values are stored.</h2>
+<pre>getPropertyValueBag() : <a href="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</a></code></div>
 </div></div>
 </div>
 <a id="method_getValue"></a><div class="element clickable method public method_getValue" data-toggle="collapse" data-target=".method_getValue .collapse">
@@ -174,6 +205,12 @@ data (presented by the data provider).</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_propertyValues"> </a><div class="element clickable property protected property_propertyValues" data-toggle="collapse" data-target=".property_propertyValues .collapse">
+<h2>The property value bag where values are to be retrieved from.</h2>
+<pre>$propertyValues : <a href="PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\PropertyValueBag</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_value"> </a><div class="element clickable property protected property_value" data-toggle="collapse" data-target=".property_value .collapse">
 <h2>The value of the data.</h2>
 <pre>$value : mixed</pre>
@@ -196,7 +233,7 @@ data (presented by the data provider).</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-08-29T09:24:21+02:00.<br></footer></div>
+            generated on 2014-09-03T23:10:41+02:00.<br></footer></div>
 </div>
 </body>
 </html>
