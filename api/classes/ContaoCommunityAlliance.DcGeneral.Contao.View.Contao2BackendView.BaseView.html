@@ -68,10 +68,11 @@
 <li class="method public "><a href="#method_cutAll" title="cutAll() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>cutAll()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete() :: Delete a model and redirect the user to the listing."><span class="description">Delete a model and redirect the user to the listing.</span><pre>delete()</pre></a></li>
 <li class="method public "><a href="#method_edit" title="edit() :: Generate the view for edit."><span class="description">Generate the view for edit.</span><pre>edit()</pre></a></li>
-<li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: Abstract method to be overridden in the certain child classes."><span class="description">Abstract method to be overridden in the certain child classes.</span><pre>enforceModelRelationship()</pre></a></li>
+<li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>enforceModelRelationship()</pre></a></li>
 <li class="method public "><a href="#method_formatCurrentValue" title="formatCurrentValue() :: Return the formatted value for use in group headers as string."><span class="description">Return the formatted value for use in group headers as string.</span><pre>formatCurrentValue()</pre></a></li>
 <li class="method public "><a href="#method_formatModel" title="formatModel() :: Format a model accordingly to the current configuration."><span class="description">Format a model accordingly to the current configuration.</span><pre>formatModel()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getManualSortingProperty()</pre></a></li>
 <li class="method public "><a href="#method_getPanel" title="getPanel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getPanel()</pre></a></li>
 <li class="method public "><a href="#method_getReadableFieldValue" title="getReadableFieldValue() :: Get for a field the readable value."><span class="description">Get for a field the readable value.</span><pre>getReadableFieldValue()</pre></a></li>
 <li class="method public "><a href="#method_getSubscribedEvents" title="getSubscribedEvents() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getSubscribedEvents()</pre></a></li>
@@ -79,7 +80,6 @@
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax call by passing it to the relevant handler class."><span class="description">Handle an ajax call by passing it to the relevant handler class.</span><pre>handleAjaxCall()</pre></a></li>
 <li class="method public "><a href="#method_move" title="move() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>move()</pre></a></li>
 <li class="method public "><a href="#method_paste" title="paste() :: Invoked for cut and copy."><span class="description">Invoked for cut and copy.</span><pre>paste()</pre></a></li>
-<li class="method public "><a href="#method_processInput" title="processInput() :: Process input and return all modified properties or null if there is no input."><span class="description">Process input and return all modified properties or null if there is no input.</span><pre>processInput()</pre></a></li>
 <li class="method public "><a href="#method_renderPasteAfterButton" title="renderPasteAfterButton() :: Render the paste after button."><span class="description">Render the paste after button.</span><pre>renderPasteAfterButton()</pre></a></li>
 <li class="method public "><a href="#method_renderPasteIntoButton" title="renderPasteIntoButton() :: Render the paste into button."><span class="description">Render the paste into button.</span><pre>renderPasteIntoButton()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setEnvironment()</pre></a></li>
@@ -103,27 +103,21 @@
 <li class="method protected "><a href="#method_generateHeaderButton" title="generateHeaderButton() :: Render a single header button."><span class="description">Render a single header button.</span><pre>generateHeaderButton()</pre></a></li>
 <li class="method protected "><a href="#method_generateHeaderButtons" title="generateHeaderButtons() :: Generate all buttons for the header of a view."><span class="description">Generate all buttons for the header of a view.</span><pre>generateHeaderButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getBackCommand" title='getBackCommand() :: Create the "back" button.'><span class="description">Create the "back" button.</span><pre>getBackCommand()</pre></a></li>
-<li class="method protected "><a href="#method_getButtonLabel" title="getButtonLabel() :: Get the label for a button from the translator."><span class="description">Get the label for a button from the translator.</span><pre>getButtonLabel()</pre></a></li>
 <li class="method protected "><a href="#method_getClearClipboardCommand" title='getClearClipboardCommand() :: Create the "clear clipboard" button.'><span class="description">Create the "clear clipboard" button.</span><pre>getClearClipboardCommand()</pre></a></li>
 <li class="method protected "><a href="#method_getCreateModelCommand" title='getCreateModelCommand() :: Create the "new" button.'><span class="description">Create the "new" button.</span><pre>getCreateModelCommand()</pre></a></li>
 <li class="method protected "><a href="#method_getCurrentSorting" title="getCurrentSorting() :: Retrieve the currently active sorting."><span class="description">Retrieve the currently active sorting.</span><pre>getCurrentSorting()</pre></a></li>
 <li class="method protected "><a href="#method_getDataDefinition" title="getDataDefinition() :: Retrieve the data definition from the environment."><span class="description">Retrieve the data definition from the environment.</span><pre>getDataDefinition()</pre></a></li>
-<li class="method protected "><a href="#method_getEditButtons" title="getEditButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getEditButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getGroupingMode" title="getGroupingMode() :: Retrieve the currently active grouping mode."><span class="description">Retrieve the currently active grouping mode.</span><pre>getGroupingMode()</pre></a></li>
 <li class="method protected "><a href="#method_getLabelForShow" title='getLabelForShow() :: Calculate the label of a property to se in "show" view.'><span class="description">Calculate the label of a property to se in "show" view.</span><pre>getLabelForShow()</pre></a></li>
-<li class="method protected "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: Get the name of the property to use for manual sorting (aka drag drop sorting)."><span class="description">Get the name of the property to use for manual sorting (aka drag drop sorting).</span><pre>getManualSortingProperty()</pre></a></li>
 <li class="method protected "><a href="#method_getModelsFromClipboard" title="getModelsFromClipboard() :: Retrieve model instances for all ids contained in the clipboard."><span class="description">Retrieve model instances for all ids contained in the clipboard.</span><pre>getModelsFromClipboard()</pre></a></li>
-<li class="method protected "><a href="#method_getSelectButtons" title="getSelectButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getSelectButtons()</pre></a></li>
+<li class="method protected "><a href="#method_getSelectButtons" title="getSelectButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area) when in select mode."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area) when in select mode.</span><pre>getSelectButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getTemplate" title="getTemplate() :: Create a new instance of ContaoBackendViewTemplate with the template file of the given name."><span class="description">Create a new instance of ContaoBackendViewTemplate with the template file of the given name.</span><pre>getTemplate()</pre></a></li>
 <li class="method protected "><a href="#method_getViewSection" title="getViewSection() :: Retrieve the view section for this view."><span class="description">Retrieve the view section for this view.</span><pre>getViewSection()</pre></a></li>
-<li class="method protected "><a href="#method_handleSubmit" title="handleSubmit() :: Handle the submit and determine which button has been triggered."><span class="description">Handle the submit and determine which button has been triggered.</span><pre>handleSubmit()</pre></a></li>
 <li class="method protected "><a href="#method_isIgnoredPanel" title="isIgnoredPanel() :: Check if the current element is in the ignored list."><span class="description">Check if the current element is in the ignored list.</span><pre>isIgnoredPanel()</pre></a></li>
 <li class="method protected "><a href="#method_isMultiLanguage" title="isMultiLanguage() :: Determine if we are currently working in multi language mode."><span class="description">Determine if we are currently working in multi language mode.</span><pre>isMultiLanguage()</pre></a></li>
-<li class="method protected "><a href="#method_isPopup" title="isPopup() :: Determines if this view is opened in a popup frame."><span class="description">Determines if this view is opened in a popup frame.</span><pre>isPopup()</pre></a></li>
 <li class="method protected "><a href="#method_isSelectModeActive" title="isSelectModeActive() :: Determine if the select mode is currently active or not."><span class="description">Determine if the select mode is currently active or not.</span><pre>isSelectModeActive()</pre></a></li>
 <li class="method protected "><a href="#method_panel" title="panel() :: Render the panel."><span class="description">Render the panel.</span><pre>panel()</pre></a></li>
 <li class="method protected "><a href="#method_redirectHome" title="redirectHome() :: Redirects to the real back end module."><span class="description">Redirects to the real back end module.</span><pre>redirectHome()</pre></a></li>
-<li class="method protected "><a href="#method_storeVersion" title="storeVersion() :: Update the versioning information in the data provider for a given model (if necessary)."><span class="description">Update the versioning information in the data provider for a given model (if necessary).</span><pre>storeVersion()</pre></a></li>
 <li class="method protected "><a href="#method_translate" title="translate() :: Translate a string via the translator."><span class="description">Translate a string via the translator.</span><pre>translate()</pre></a></li>
 </ul>
 </li>
@@ -268,19 +262,17 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 </div></div>
 </div>
 <a id="method_enforceModelRelationship"></a><div class="element clickable method public method_enforceModelRelationship" data-toggle="collapse" data-target=".method_enforceModelRelationship .collapse">
-<h2>Abstract method to be overridden in the certain child classes.</h2>
-<pre>enforceModelRelationship(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
+<h2>{@inheritDoc}</h2>
+<pre>enforceModelRelationship($model) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This method will update the parent relationship between a model and the parent item.</div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>SuppressWarnings</th>
 <td>(PHPMD.UnusedFormalParameter)</td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to be updated.</p></div>
+<div class="subelement argument"><h4>$model</h4></div>
 </div></div>
 </div>
 <a id="method_formatCurrentValue"></a><div class="element clickable method public method_formatCurrentValue" data-toggle="collapse" data-target=".method_formatCurrentValue .collapse">
@@ -335,6 +327,12 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>getEnvironment() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getManualSortingProperty"></a><div class="element clickable method public method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getManualSortingProperty() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -419,22 +417,6 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
 <td>When invalid parameters are encountered.</td>
 </tr></table>
-</div></div>
-</div>
-<a id="method_processInput"></a><div class="element clickable method public method_processInput" data-toggle="collapse" data-target=".method_processInput .collapse">
-<h2>Process input and return all modified properties or null if there is no input.</h2>
-<pre>processInput(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager $widgetManager) : null | <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$widgetManager</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager</a></code><p>The widget manager in use.</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>null</code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code>
-</div>
 </div></div>
 </div>
 <a id="method_renderPasteAfterButton"></a><div class="element clickable method public method_renderPasteAfterButton" data-toggle="collapse" data-target=".method_renderPasteAfterButton .collapse">
@@ -746,23 +728,6 @@ reload of the page.</div>
 </div>
 </div></div>
 </div>
-<a id="method_getButtonLabel"></a><div class="element clickable method protected method_getButtonLabel" data-toggle="collapse" data-target=".method_getButtonLabel .collapse">
-<h2>Get the label for a button from the translator.</h2>
-<pre>getButtonLabel(string $strButton) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">The fallback is as follows:
-1. Try to translate the button via the data definition name as translation section.
-2. Try to translate the button name with the prefix 'MSC.'.
-3. Return the input value as nothing worked out.</div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$strButton</h4>
-<code>string</code><p>The non translated label for the button.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
 <a id="method_getClearClipboardCommand"></a><div class="element clickable method protected method_getClearClipboardCommand" data-toggle="collapse" data-target=".method_getClearClipboardCommand .collapse">
 <h2>Create the "clear clipboard" button.</h2>
 <pre>getClearClipboardCommand() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a> | null</pre>
@@ -807,16 +772,6 @@ reload of the page.</div>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_getEditButtons"></a><div class="element clickable method protected method_getEditButtons" data-toggle="collapse" data-target=".method_getEditButtons .collapse">
-<h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
-<pre>getEditButtons() : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
 <a id="method_getGroupingMode"></a><div class="element clickable method protected method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
 <h2>Retrieve the currently active grouping mode.</h2>
 <pre>getGroupingMode() : array | null</pre>
@@ -847,16 +802,6 @@ reload of the page.</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_getManualSortingProperty"></a><div class="element clickable method protected method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
-<h2>Get the name of the property to use for manual sorting (aka drag drop sorting).</h2>
-<pre>getManualSortingProperty() : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
 <a id="method_getModelsFromClipboard"></a><div class="element clickable method protected method_getModelsFromClipboard" data-toggle="collapse" data-target=".method_getModelsFromClipboard .collapse">
 <h2>Retrieve model instances for all ids contained in the clipboard.</h2>
 <pre>getModelsFromClipboard(bool $clone) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
@@ -872,7 +817,7 @@ reload of the page.</div>
 </div></div>
 </div>
 <a id="method_getSelectButtons"></a><div class="element clickable method protected method_getSelectButtons" data-toggle="collapse" data-target=".method_getSelectButtons .collapse">
-<h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
+<h2>Retrieve a list of html buttons to use in the bottom panel (submit area) when in select mode.</h2>
 <pre>getSelectButtons() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -905,28 +850,6 @@ reload of the page.</div>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_handleSubmit"></a><div class="element clickable method protected method_handleSubmit" data-toggle="collapse" data-target=".method_handleSubmit .collapse">
-<h2>Handle the submit and determine which button has been triggered.</h2>
-<pre>handleSubmit(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">This method will redirect the client.</div>
-<table class="table table-bordered">
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.Superglobals)</td>
-</tr>
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.CamelCaseVariableName)</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model that has been submitted.</p></div>
-</div></div>
-</div>
 <a id="method_isIgnoredPanel"></a><div class="element clickable method protected method_isIgnoredPanel" data-toggle="collapse" data-target=".method_isIgnoredPanel .collapse">
 <h2>Check if the current element is in the ignored list.</h2>
 <pre>isIgnoredPanel(\ContaoCommunityAlliance\DcGeneral\Panel\PanelElementInterface $objElement, array $ignoredPanels) : boolean</pre>
@@ -955,16 +878,6 @@ reload of the page.</div>
 <div class="subelement argument">
 <h4>$mixId</h4>
 <code>mixed</code><p>The id of the current model.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
-</div></div>
-</div>
-<a id="method_isPopup"></a><div class="element clickable method protected method_isPopup" data-toggle="collapse" data-target=".method_isPopup .collapse">
-<h2>Determines if this view is opened in a popup frame.</h2>
-<pre>isPopup() : bool</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -1004,22 +917,6 @@ reload of the page.</div>
 <pre>redirectHome() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_storeVersion"></a><div class="element clickable method protected method_storeVersion" data-toggle="collapse" data-target=".method_storeVersion .collapse">
-<h2>Update the versioning information in the data provider for a given model (if necessary).</h2>
-<pre>storeVersion(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.LongVariable)</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to update.</p></div>
-</div></div>
 </div>
 <a id="method_translate"></a><div class="element clickable method protected method_translate" data-toggle="collapse" data-target=".method_translate .collapse">
 <h2>Translate a string via the translator.</h2>
@@ -1066,7 +963,7 @@ reload of the page.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-22T14:44:01+02:00.<br></footer></div>
+            generated on 2014-09-22T19:51:29+02:00.<br></footer></div>
 </div>
 </body>
 </html>

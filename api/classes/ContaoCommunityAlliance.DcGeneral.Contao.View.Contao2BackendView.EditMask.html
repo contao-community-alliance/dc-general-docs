@@ -1,0 +1,459 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\EditMask</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">109</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create the edit mask."><span class="description">Create the edit mask.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_execute" title="execute() :: Create the edit mask."><span class="description">Create the edit mask.</span><pre>execute()</pre></a></li>
+<li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the environment."><span class="description">Retrieve the environment.</span><pre>getEnvironment()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_buildFieldSet" title="buildFieldSet() :: Build the field sets."><span class="description">Build the field sets.</span><pre>buildFieldSet()</pre></a></li>
+<li class="method protected "><a href="#method_checkCreatable" title="checkCreatable() :: Ensure the view is editable and throw an Exception if not."><span class="description">Ensure the view is editable and throw an Exception if not.</span><pre>checkCreatable()</pre></a></li>
+<li class="method protected "><a href="#method_checkEditable" title="checkEditable() :: Ensure the view is editable and throw an Exception if not."><span class="description">Ensure the view is editable and throw an Exception if not.</span><pre>checkEditable()</pre></a></li>
+<li class="method protected "><a href="#method_doPersist" title="doPersist() :: Handle the persisting of the currently loaded model."><span class="description">Handle the persisting of the currently loaded model.</span><pre>doPersist()</pre></a></li>
+<li class="method protected "><a href="#method_ensurePropertyExists" title="ensurePropertyExists() :: Ensure a property is defined in the data definition and raise an exception if it is unknown."><span class="description">Ensure a property is defined in the data definition and raise an exception if it is unknown.</span><pre>ensurePropertyExists()</pre></a></li>
+<li class="method protected "><a href="#method_getButtonLabel" title="getButtonLabel() :: Get the label for a button from the translator."><span class="description">Get the label for a button from the translator.</span><pre>getButtonLabel()</pre></a></li>
+<li class="method protected "><a href="#method_getDataDefinition" title="getDataDefinition() :: Retrieve the data definition from the environment."><span class="description">Retrieve the data definition from the environment.</span><pre>getDataDefinition()</pre></a></li>
+<li class="method protected "><a href="#method_getEditButtons" title="getEditButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getEditButtons()</pre></a></li>
+<li class="method protected "><a href="#method_getHeadline" title="getHeadline() :: Determine the headline to use."><span class="description">Determine the headline to use.</span><pre>getHeadline()</pre></a></li>
+<li class="method protected "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: Retrieve the manual sorting property if any is defined."><span class="description">Retrieve the manual sorting property if any is defined.</span><pre>getManualSortingProperty()</pre></a></li>
+<li class="method protected "><a href="#method_handlePostPersist" title="handlePostPersist() :: Trigger the post persist event and handle the postPersist function if available."><span class="description">Trigger the post persist event and handle the postPersist function if available.</span><pre>handlePostPersist()</pre></a></li>
+<li class="method protected "><a href="#method_handlePrePersist" title="handlePrePersist() :: Trigger the pre persist event and handle the prePersist function if available."><span class="description">Trigger the pre persist event and handle the prePersist function if available.</span><pre>handlePrePersist()</pre></a></li>
+<li class="method protected "><a href="#method_handleSubmit" title="handleSubmit() :: Handle the submit and determine which button has been triggered."><span class="description">Handle the submit and determine which button has been triggered.</span><pre>handleSubmit()</pre></a></li>
+<li class="method protected "><a href="#method_isPopup" title="isPopup() :: Determines if this view is opened in a popup frame."><span class="description">Determines if this view is opened in a popup frame.</span><pre>isPopup()</pre></a></li>
+<li class="method protected "><a href="#method_processInput" title="processInput() :: Process input and return all modified properties or null if there is no input."><span class="description">Process input and return all modified properties or null if there is no input.</span><pre>processInput()</pre></a></li>
+<li class="method protected "><a href="#method_storeVersion" title="storeVersion() :: Update the versioning information in the data provider for a given model (if necessary)."><span class="description">Update the versioning information in the data provider for a given model (if necessary).</span><pre>storeVersion()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_errors" title="$errors() :: The errors from the widgets."><span class="description"></span><pre>$errors</pre></a></li>
+<li class="property protected "><a href="#property_model" title="$model() :: The model to be manipulated."><span class="description"></span><pre>$model</pre></a></li>
+<li class="property protected "><a href="#property_originalModel" title="$originalModel() :: The original model from the database."><span class="description"></span><pre>$originalModel</pre></a></li>
+<li class="property protected "><a href="#property_postFunction" title="$postFunction() :: The method to be executed after the model is persisted."><span class="description"></span><pre>$postFunction</pre></a></li>
+<li class="property protected "><a href="#property_preFunction" title="$preFunction() :: The method to be executed before the model is persisted."><span class="description"></span><pre>$preFunction</pre></a></li>
+<li class="property protected "><a href="#property_view" title="$view() :: The environment."><span class="description"></span><pre>$view</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\EditMask"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.html">Contao</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">Contao2BackendView</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.EditMask.html">EditMask</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This class manages the displaying of the edit/create mask containing the widgets.</p>
+<div class="details">
+<div class="long_description">It also handles the persisting of the model.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.html">ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create the edit mask.</h2>
+<pre>__construct(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\BackendViewInterface $view, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $originalModel, callable $preFunction, callable $postFunction) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BackendViewInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\BackendViewInterface</a></code><p>The view in use.</p></div>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model with the current data.</p></div>
+<div class="subelement argument">
+<h4>$originalModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The data from the original data.</p></div>
+<div class="subelement argument">
+<h4>$preFunction</h4>
+<code>callable</code><p>The function to call before saving an item.</p></div>
+<div class="subelement argument">
+<h4>$postFunction</h4>
+<code>callable</code><p>The function to call after saving an item.</p></div>
+</div></div>
+</div>
+<a id="method_execute"></a><div class="element clickable method public method_execute" data-toggle="collapse" data-target=".method_execute .collapse">
+<h2>Create the edit mask.</h2>
+<pre>execute() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code><a href="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\DcGeneralRuntimeException</a></code></th>
+<td>If the data container is not editable, closed.</td>
+</tr>
+<tr>
+<th><code><a href="DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\DcGeneralInvalidArgumentException</a></code></th>
+<td>If an unknown property is encountered in the palette.</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
+<h2>Retrieve the environment.</h2>
+<pre>getEnvironment() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_buildFieldSet"></a><div class="element clickable method protected method_buildFieldSet" data-toggle="collapse" data-target=".method_buildFieldSet .collapse">
+<h2>Build the field sets.</h2>
+<pre>buildFieldSet(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager $widgetManager, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface $palette, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $propertyValues) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$widgetManager</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager</a></code><p>The widget manager in use.</p></div>
+<div class="subelement argument">
+<h4>$palette</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.PaletteInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Palette\PaletteInterface</a></code><p>The palette to use.</p></div>
+<div class="subelement argument">
+<h4>$propertyValues</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code><p>The property values.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_checkCreatable"></a><div class="element clickable method protected method_checkCreatable" data-toggle="collapse" data-target=".method_checkCreatable .collapse">
+<h2>Ensure the view is editable and throw an Exception if not.</h2>
+<pre>checkCreatable(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to be edited, if this is given, we are not in create mode.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\DcGeneralRuntimeException</a></code></th>
+<td>When the definition is not editable.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_checkEditable"></a><div class="element clickable method protected method_checkEditable" data-toggle="collapse" data-target=".method_checkEditable .collapse">
+<h2>Ensure the view is editable and throw an Exception if not.</h2>
+<pre>checkEditable(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to be edited.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\DcGeneralRuntimeException</a></code></th>
+<td>When the definition is not editable.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_doPersist"></a><div class="element clickable method protected method_doPersist" data-toggle="collapse" data-target=".method_doPersist .collapse">
+<h2>Handle the persisting of the currently loaded model.</h2>
+<pre>doPersist() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_ensurePropertyExists"></a><div class="element clickable method protected method_ensurePropertyExists" data-toggle="collapse" data-target=".method_ensurePropertyExists .collapse">
+<h2>Ensure a property is defined in the data definition and raise an exception if it is unknown.</h2>
+<pre>ensurePropertyExists(string $property, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface $propertyDefinitions) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The property name to check.</p></div>
+<div class="subelement argument">
+<h4>$propertyDefinitions</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.PropertiesDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\PropertiesDefinitionInterface</a></code><p>The property definitions.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\DcGeneralInvalidArgumentException</a></code></th>
+<td>When the property is not registered in the definition.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getButtonLabel"></a><div class="element clickable method protected method_getButtonLabel" data-toggle="collapse" data-target=".method_getButtonLabel .collapse">
+<h2>Get the label for a button from the translator.</h2>
+<pre>getButtonLabel(string $buttonLabel) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The fallback is as follows:
+1. Try to translate the button via the data definition name as translation section.
+2. Try to translate the button name with the prefix 'MSC.'.
+3. Return the input value as nothing worked out.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$buttonLabel</h4>
+<code>string</code><p>The non translated label for the button.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getDataDefinition"></a><div class="element clickable method protected method_getDataDefinition" data-toggle="collapse" data-target=".method_getDataDefinition .collapse">
+<h2>Retrieve the data definition from the environment.</h2>
+<pre>getDataDefinition() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getEditButtons"></a><div class="element clickable method protected method_getEditButtons" data-toggle="collapse" data-target=".method_getEditButtons .collapse">
+<h2>Retrieve a list of html buttons to use in the bottom panel (submit area).</h2>
+<pre>getEditButtons() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getHeadline"></a><div class="element clickable method protected method_getHeadline" data-toggle="collapse" data-target=".method_getHeadline .collapse">
+<h2>Determine the headline to use.</h2>
+<pre>getHeadline() : <a href="string..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\string.</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="string..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\string.</a></code></div>
+</div></div>
+</div>
+<a id="method_getManualSortingProperty"></a><div class="element clickable method protected method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
+<h2>Retrieve the manual sorting property if any is defined.</h2>
+<pre>getManualSortingProperty() : string | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_handlePostPersist"></a><div class="element clickable method protected method_handlePostPersist" data-toggle="collapse" data-target=".method_handlePostPersist .collapse">
+<h2>Trigger the post persist event and handle the postPersist function if available.</h2>
+<pre>handlePostPersist() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_handlePrePersist"></a><div class="element clickable method protected method_handlePrePersist" data-toggle="collapse" data-target=".method_handlePrePersist .collapse">
+<h2>Trigger the pre persist event and handle the prePersist function if available.</h2>
+<pre>handlePrePersist() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_handleSubmit"></a><div class="element clickable method protected method_handleSubmit" data-toggle="collapse" data-target=".method_handleSubmit .collapse">
+<h2>Handle the submit and determine which button has been triggered.</h2>
+<pre>handleSubmit(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method will redirect the client.</div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model that has been submitted.</p></div>
+</div></div>
+</div>
+<a id="method_isPopup"></a><div class="element clickable method protected method_isPopup" data-toggle="collapse" data-target=".method_isPopup .collapse">
+<h2>Determines if this view is opened in a popup frame.</h2>
+<pre>isPopup() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_processInput"></a><div class="element clickable method protected method_processInput" data-toggle="collapse" data-target=".method_processInput .collapse">
+<h2>Process input and return all modified properties or null if there is no input.</h2>
+<pre>processInput(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager $widgetManager) : null | <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$widgetManager</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ContaoWidgetManager.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoWidgetManager</a></code><p>The widget manager in use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_storeVersion"></a><div class="element clickable method protected method_storeVersion" data-toggle="collapse" data-target=".method_storeVersion .collapse">
+<h2>Update the versioning information in the data provider for a given model (if necessary).</h2>
+<pre>storeVersion(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to update.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_errors"> </a><div class="element clickable property protected property_errors" data-toggle="collapse" data-target=".property_errors .collapse">
+<h2>The errors from the widgets.</h2>
+<pre>$errors : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_model"> </a><div class="element clickable property protected property_model" data-toggle="collapse" data-target=".property_model .collapse">
+<h2>The model to be manipulated.</h2>
+<pre>$model : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_originalModel"> </a><div class="element clickable property protected property_originalModel" data-toggle="collapse" data-target=".property_originalModel .collapse">
+<h2>The original model from the database.</h2>
+<pre>$originalModel : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_postFunction"> </a><div class="element clickable property protected property_postFunction" data-toggle="collapse" data-target=".property_postFunction .collapse">
+<h2>The method to be executed after the model is persisted.</h2>
+<pre>$postFunction : callable | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_preFunction"> </a><div class="element clickable property protected property_preFunction" data-toggle="collapse" data-target=".property_preFunction .collapse">
+<h2>The method to be executed before the model is persisted.</h2>
+<pre>$preFunction : callable | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_view"> </a><div class="element clickable property protected property_view" data-toggle="collapse" data-target=".property_view .collapse">
+<h2>The environment.</h2>
+<pre>$view : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.BackendViewInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\BackendViewInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-09-22T19:51:33+02:00.<br></footer></div>
+</div>
+</body>
+</html>

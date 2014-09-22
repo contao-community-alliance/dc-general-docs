@@ -66,7 +66,9 @@
 <li class="method public "><a href="#method_cutAll" title="cutAll() :: Endpoint for cutting multiple models (including child models)."><span class="description">Endpoint for cutting multiple models (including child models).</span><pre>cutAll()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete() :: Delete a model and redirect the user to the listing."><span class="description">Delete a model and redirect the user to the listing.</span><pre>delete()</pre></a></li>
 <li class="method public "><a href="#method_edit" title="edit() :: Endpoint for edit operation."><span class="description">Endpoint for edit operation.</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: Abstract method to be overridden in the certain child classes."><span class="description">Abstract method to be overridden in the certain child classes.</span><pre>enforceModelRelationship()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the attached environment."><span class="description">Retrieve the attached environment.</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: Get the name of the defined property to use for manual sorting (aka drag drop sorting) if any is defined."><span class="description">Get the name of the defined property to use for manual sorting (aka drag drop sorting) if any is defined.</span><pre>getManualSortingProperty()</pre></a></li>
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax request."><span class="description">Handle an ajax request.</span><pre>handleAjaxCall()</pre></a></li>
 <li class="method public "><a href="#method_move" title="move() :: Endpoint for move operation."><span class="description">Endpoint for move operation.</span><pre>move()</pre></a></li>
 <li class="method public "><a href="#method_paste" title="paste() :: Invoked for cut and copy - inserts the content of the clipboard at the given position."><span class="description">Invoked for cut and copy - inserts the content of the clipboard at the given position.</span><pre>paste()</pre></a></li>
@@ -169,6 +171,18 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_enforceModelRelationship"></a><div class="element clickable method public method_enforceModelRelationship" data-toggle="collapse" data-target=".method_enforceModelRelationship .collapse">
+<h2>Abstract method to be overridden in the certain child classes.</h2>
+<pre>enforceModelRelationship(\ContaoCommunityAlliance\DcGeneral\View\ModelInterface $model) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method will update the parent relationship between a model and the parent item.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\View\ModelInterface</a></code><p>The model to be updated.</p></div>
+</div></div>
+</div>
 <a id="method_getEnvironment"></a><div class="element clickable method public method_getEnvironment" data-toggle="collapse" data-target=".method_getEnvironment .collapse">
 <h2>Retrieve the attached environment.</h2>
 <pre>getEnvironment() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
@@ -177,6 +191,18 @@
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getManualSortingProperty"></a><div class="element clickable method public method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
+<h2>Get the name of the defined property to use for manual sorting (aka drag drop sorting) if any is defined.</h2>
+<pre>getManualSortingProperty() : string | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This method evaluates the panel if the currently selected property is marked for manual sorting.</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
 </div></div>
 </div>
 <a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
@@ -253,7 +279,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-22T14:43:56+02:00.<br></footer></div>
+            generated on 2014-09-22T19:51:24+02:00.<br></footer></div>
 </div>
 </body>
 </html>
