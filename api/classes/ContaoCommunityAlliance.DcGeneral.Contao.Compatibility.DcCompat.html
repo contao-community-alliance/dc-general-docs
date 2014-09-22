@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">107</span></a></li>
+                <span class="label label-info">109</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -61,8 +61,7 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method___get" title="__get() :: "><span class="description">__get()
-        </span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>__get()</pre></a></li>
 <li class="method public "><a href="#method___set" title="__set() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>__set()</pre></a></li>
 <li class="method public "><a href="#method_getModel" title="getModel() :: Retrieve the current model."><span class="description">Retrieve the current model.</span><pre>getModel()</pre></a></li>
 <li class="method public "><a href="#method_getPropertyName" title="getPropertyName() :: Retrieve the current property."><span class="description">Retrieve the current property.</span><pre>getPropertyName()</pre></a></li>
@@ -104,9 +103,9 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Class DcCompat</p>
+<p class="short_description">Small compatibility layer for callbacks, that expect a "full featured" DC instance.</p>
 <div class="details">
-<div class="long_description">Small compatibility layer for callbacks, that expect a "full featured" DC instance.</div>
+<div class="long_description"></div>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
@@ -130,14 +129,22 @@
 </div></div>
 </div>
 <a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
-<h2>__get()
-        </h2>
+<h2>{@inheritdoc}</h2>
 <pre>__get($name) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CyclomaticComplexity)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$name</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When an unknown key is encountered.</td>
+</tr></table>
 </div></div>
 </div>
 <a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
@@ -228,7 +235,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-20T14:41:48+02:00.<br></footer></div>
+            generated on 2014-09-22T14:44:04+02:00.<br></footer></div>
 </div>
 </body>
 </html>

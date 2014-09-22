@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">107</span></a></li>
+                <span class="label label-info">109</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -97,8 +97,7 @@
 <li class="method protected "><a href="#method_parsePropertySortingAndGrouping" title="parsePropertySortingAndGrouping() :: Parse the sorting and grouping information for a given property."><span class="description">Parse the sorting and grouping information for a given property.</span><pre>parsePropertySortingAndGrouping()</pre></a></li>
 <li class="method protected "><a href="#method_parsePropertySortingAndGroupings" title="parsePropertySortingAndGroupings() :: Parse the sorting and grouping information for all properties."><span class="description">Parse the sorting and grouping information for all properties.</span><pre>parsePropertySortingAndGroupings()</pre></a></li>
 <li class="method protected "><a href="#method_parseRootEntries" title="parseRootEntries() :: This method parses the root entries definition."><span class="description">This method parses the root entries definition.</span><pre>parseRootEntries()</pre></a></li>
-<li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: "><span class="description">parseSingleProperty()
-        </span><pre>parseSingleProperty()</pre></a></li>
+<li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: Parse a single property."><span class="description">Parse a single property.</span><pre>parseSingleProperty()</pre></a></li>
 <li class="method protected "><a href="#method_parseSinglePropertyLabel" title="parseSinglePropertyLabel() :: Parse the label of a single property."><span class="description">Parse the label of a single property.</span><pre>parseSinglePropertyLabel()</pre></a></li>
 </ul>
 </li>
@@ -469,6 +468,10 @@ Contao.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$container</h4>
@@ -644,15 +647,22 @@ Contao.</div>
 </div></div>
 </div>
 <a id="method_parseSingleProperty"></a><div class="element clickable method protected method_parseSingleProperty" data-toggle="collapse" data-target=".method_parseSingleProperty .collapse">
-<h2>parseSingleProperty()
-        </h2>
-<pre>parseSingleProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, array $propInfo) </pre>
+<h2>Parse a single property.</h2>
+<pre>parseSingleProperty(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, array $propInfo) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CyclomaticComplexity)</td>
+</tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$property</h4></div>
-<div class="subelement argument"><h4>$propInfo</h4></div>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to parse.</p></div>
+<div class="subelement argument">
+<h4>$propInfo</h4>
+<code>array</code><p>The property information.</p></div>
 </div></div>
 </div>
 <a id="method_parseSinglePropertyLabel"></a><div class="element clickable method protected method_parseSinglePropertyLabel" data-toggle="collapse" data-target=".method_parseSinglePropertyLabel .collapse">
@@ -686,7 +696,7 @@ Contao.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-20T14:41:47+02:00.<br></footer></div>
+            generated on 2014-09-22T14:44:03+02:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">107</span></a></li>
+                <span class="label label-info">109</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,7 +62,7 @@
                     <ul><li class="method public "><a href="#method_populate" title="populate() :: Create a controller instance in the environment if none has been defined yet."><span class="description">Create a controller instance in the environment if none has been defined yet.</span><pre>populate()</pre></a></li></ul>
 </li>
 <li class="nav-header protected">» Protected
-                    <ul><li class="method protected "><a href="#method_populateFilePickers" title="populateFilePickers() :: Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy as it uses hard coded array access."><span class="description">Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy as it uses hard coded array access.</span><pre>populateFilePickers()</pre></a></li></ul>
+                    <ul><li class="method protected "><a href="#method_populateFilePickers" title="populateFilePickers() :: Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy."><span class="description">Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy.</span><pre>populateFilePickers()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants
@@ -121,11 +121,22 @@ static method "process" to the event dispatcher.</div>
 </div></div>
 </div>
 <a id="method_populateFilePickers"></a><div class="element clickable method protected method_populateFilePickers" data-toggle="collapse" data-target=".method_populateFilePickers .collapse">
-<h2>Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy as it uses hard coded array access.</h2>
+<h2>Populate the file picker $GLOBALS['TL_DCA'] to make the contao/file.php happy.</h2>
 <pre>populateFilePickers(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">.</div>
+<div class="long_description">The backend file contao/file.php is using hard coded direct array access on the TL_DCA array therefore we need to
+dump all of this there.</div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$environment</h4>
@@ -148,7 +159,7 @@ static method "process" to the event dispatcher.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-20T14:41:40+02:00.<br></footer></div>
+            generated on 2014-09-22T14:43:55+02:00.<br></footer></div>
 </div>
 </body>
 </html>

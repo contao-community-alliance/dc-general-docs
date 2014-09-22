@@ -39,7 +39,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">107</span></a></li>
+                <span class="label label-info">109</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -75,8 +75,7 @@
 <li class="method public "><a href="#method_getPanel" title="getPanel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getPanel()</pre></a></li>
 <li class="method public "><a href="#method_getReadableFieldValue" title="getReadableFieldValue() :: Get for a field the readable value."><span class="description">Get for a field the readable value.</span><pre>getReadableFieldValue()</pre></a></li>
 <li class="method public "><a href="#method_getSubscribedEvents" title="getSubscribedEvents() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getSubscribedEvents()</pre></a></li>
-<li class="method public "><a href="#method_handleAction" title="handleAction() :: "><span class="description">handleAction()
-        </span><pre>handleAction()</pre></a></li>
+<li class="method public "><a href="#method_handleAction" title="handleAction() :: Handle the given action."><span class="description">Handle the given action.</span><pre>handleAction()</pre></a></li>
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax call by passing it to the relevant handler class."><span class="description">Handle an ajax call by passing it to the relevant handler class.</span><pre>handleAjaxCall()</pre></a></li>
 <li class="method public "><a href="#method_move" title="move() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>move()</pre></a></li>
 <li class="method public "><a href="#method_paste" title="paste() :: Invoked for cut and copy."><span class="description">Invoked for cut and copy.</span><pre>paste()</pre></a></li>
@@ -107,7 +106,7 @@
 <li class="method protected "><a href="#method_getButtonLabel" title="getButtonLabel() :: Get the label for a button from the translator."><span class="description">Get the label for a button from the translator.</span><pre>getButtonLabel()</pre></a></li>
 <li class="method protected "><a href="#method_getClearClipboardCommand" title='getClearClipboardCommand() :: Create the "clear clipboard" button.'><span class="description">Create the "clear clipboard" button.</span><pre>getClearClipboardCommand()</pre></a></li>
 <li class="method protected "><a href="#method_getCreateModelCommand" title='getCreateModelCommand() :: Create the "new" button.'><span class="description">Create the "new" button.</span><pre>getCreateModelCommand()</pre></a></li>
-<li class="method protected "><a href="#method_getCurrentSorting" title="getCurrentSorting() :: Retrieve the currently active"><span class="description">Retrieve the currently active</span><pre>getCurrentSorting()</pre></a></li>
+<li class="method protected "><a href="#method_getCurrentSorting" title="getCurrentSorting() :: Retrieve the currently active sorting."><span class="description">Retrieve the currently active sorting.</span><pre>getCurrentSorting()</pre></a></li>
 <li class="method protected "><a href="#method_getDataDefinition" title="getDataDefinition() :: Retrieve the data definition from the environment."><span class="description">Retrieve the data definition from the environment.</span><pre>getDataDefinition()</pre></a></li>
 <li class="method protected "><a href="#method_getEditButtons" title="getEditButtons() :: Retrieve a list of html buttons to use in the bottom panel (submit area)."><span class="description">Retrieve a list of html buttons to use in the bottom panel (submit area).</span><pre>getEditButtons()</pre></a></li>
 <li class="method protected "><a href="#method_getGroupingMode" title="getGroupingMode() :: Retrieve the currently active grouping mode."><span class="description">Retrieve the currently active grouping mode.</span><pre>getGroupingMode()</pre></a></li>
@@ -184,6 +183,10 @@ Name      Type   Description
 clipboard bool   Flag determining if the clipboard shall get cleared.
 act       string Action to perform, either paste, cut or create.
 id        mixed  The Id of the item to copy. In mode cut this is the id of the item to be moved.</div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.ShortVariable)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$action</h4>
@@ -270,6 +273,10 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This method will update the parent relationship between a model and the parent item.</div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.UnusedFormalParameter)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$model</h4>
@@ -282,6 +289,16 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$field</h4>
@@ -354,14 +371,29 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_handleAction"></a><div class="element clickable method public method_handleAction" data-toggle="collapse" data-target=".method_handleAction .collapse">
-<h2>handleAction()
-        </h2>
-<pre>handleAction(\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent $event) </pre>
+<h2>Handle the given action.</h2>
+<pre>handleAction(\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent $event) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CyclomaticComplexity)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$event</h4></div>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ActionEvent.html">\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent</a></code><p>The event.</p></div>
 </div></div>
 </div>
 <a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
@@ -525,6 +557,16 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -564,7 +606,19 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <h2>Check if the data provider is multi language and prepare the data provider with the selected language.</h2>
 <pre>checkLanguage() : void</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
+</div></div>
 </div>
 <a id="method_checkRestoreVersion"></a><div class="element clickable method protected method_checkRestoreVersion" data-toggle="collapse" data-target=".method_checkRestoreVersion .collapse">
 <h2>Check the submitted data if we want to restore a previous version of a model.</h2>
@@ -573,6 +627,10 @@ id        mixed  The Id of the item to copy. In mode cut this is the id of the i
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">If so, the model will get loaded and marked as active version in the data provider and the client will perform a
 reload of the page.</div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
@@ -586,6 +644,10 @@ reload of the page.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$model</h4>
@@ -726,10 +788,14 @@ reload of the page.</div>
 </div></div>
 </div>
 <a id="method_getCurrentSorting"></a><div class="element clickable method protected method_getCurrentSorting" data-toggle="collapse" data-target=".method_getCurrentSorting .collapse">
-<h2>Retrieve the currently active</h2>
-<pre>getCurrentSorting() </pre>
+<h2>Retrieve the currently active sorting.</h2>
+<pre>getCurrentSorting() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description">@return GroupAndSortingDefinitionInterface</div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></code></div>
+</div></div>
 </div>
 <a id="method_getDataDefinition"></a><div class="element clickable method protected method_getDataDefinition" data-toggle="collapse" data-target=".method_getDataDefinition .collapse">
 <h2>Retrieve the data definition from the environment.</h2>
@@ -845,6 +911,16 @@ reload of the page.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This method will redirect the client.</div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.Superglobals)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$model</h4>
@@ -935,6 +1011,10 @@ reload of the page.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.LongVariable)</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$model</h4>
@@ -986,7 +1066,7 @@ reload of the page.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-09-20T14:41:45+02:00.<br></footer></div>
+            generated on 2014-09-22T14:44:01+02:00.<br></footer></div>
 </div>
 </body>
 </html>
