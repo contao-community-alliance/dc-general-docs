@@ -10987,6 +10987,84 @@ To use it, implement the method build() and register the class to the event disp
     </class>
     <source>eJydVdtu2zgQfddXTIGgsQOv87DYl1y6VmzHDaBcELstFklh0NTIIkJRAkmlFoL8e4eUfE9229WLxOHM4ZmZM+LZ30VaBMdHRwEcwd3nO3hGbUSu4C8yOFuvYPyJzRHomaNCzeRAC/Lym6y0aa7dHvRTLYwVTMGYpyJJJGo4412zXPR4NSPsArnVZdaN8dMuwthiQuGfUWRo4Mz45TT1y16a24wJ2eV5thc4cSdTZCQUxdl61ZW06s2E/XN1Fs+LSot5aikkRbhGy67zGKUBiyzreh8pOCrj041Gd1FtTIREk5eaIy2Pg0AxokSFQejnyrK8n2dZqYStQimpAhwfB3xUF+ux9iADe7wohYxRP0Y4Z7w6DYLSvI/QxF0IFQs1N816+IzKmtPfiqxjvFnnUjoCOYsHzDLvKYind/lfqOOK+pR5xIipeUlSuaRq/QLgukSOygATQdskvVWZwpmxmnHrsbzo1LZn41gfM66yJFcV8cyKXFFEzXAgqFGWp4S3s75SFnVCTaRGNAPgAcGSNviyMu4rEXNIdJ6B9I2DQT8EU5HDouv1wBqiwCUzBqjV98hcld6kC7iwqGIDv5pf8BIETo+epHsc0SQhpIQGwLElQt1ma+nRe2YamNasaizH/l3o3NIEYgwHMWene8AvPaGoNsLGOX/dhRyXRaHRmG9MK6eBFv0wrgddMqOey3zGpGn/l3OfRkf2mcGvTAs2k3hDhvY2x3JGUwhJqbirAkinVs5ajrHz7sB7naSkVsYa86VGpufApsL88Ykw4BxUKeXpegsdnv+kLfwBb8/HBoGEUsX2BsL6XDqi+W5tjuzJSf/2ZnJ/G0XD+2l0Gw6mg3ASTp0xvLoZ3ncaFu2mJ+4RCbSEMUgnj6LbizAaPxxOoil1+/D7w5LM93Z7I8u9TP8tcs3/NdgtxroQe2O9qsNvFmD8z3gyvK6Tj8Kb0ZdwNJxeXkXDt3LXaEutNnP5cL7Zt9c96bqZ89Pg7hiRCNK4KWdATNJ6et0eAe1NSsE0y4BmkWQKB97fXQ/bgSRAsDnRYvEeQMM1EwuMd/eE06Zi8p0pXIl8jvaSzvI6dyfvyZenpXoy1BdcFJJurdbh8WEHiHRWB3SADO2tlhBlL+l1ETcK/COlfkKrVQOTl/9ZTA1d17YxGpLWsuq7InPa/EDqnPowL4k2fPzYoDxhNcUF3cOmgep4Ou09rW60ensmd1S5Sujcvx5q1LcVvJSOz7feew1+AodZxGQ=</source>
   </file>
+  <file path="Contao/View/Contao2BackendView/TreeSelect.php" generated-path="Contao.View.Contao2BackendView.TreeSelect.html" hash="32933091b0ce6bb2cde07e5a6084d417" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <constant namespace="" line="90" package="generalDriver">
+      <name>CURRENT_ID</name>
+      <full_name>\\CURRENT_ID</full_name>
+      <value>$strTable ? \Session::getInstance()-&gt;get('CURRENT_ID') : \Input::get('id')</value>
+      <docblock line="90">
+        <description></description>
+        <long-description></long-description>
+      </docblock>
+    </constant>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="26" package="generalDriver">
+      <extends/>
+      <name>TreeSelect</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeSelect</full_name>
+      <docblock line="26">
+        <description>Class TreeSelect.</description>
+        <long-description>Back end tree picker for usage in generaltree.php.</long-description>
+      </docblock>
+      <property static="false" visibility="protected" line="33" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$objAjax</name>
+        <default></default>
+        <docblock line="33">
+          <description>Current ajax object.</description>
+          <long-description></long-description>
+          <tag name="var" line="33" description="" type="object" variable="">
+            <type>object</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="40" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" package="generalDriver">
+        <name>$itemContainer</name>
+        <default></default>
+        <docblock line="40">
+          <description>The DcGeneral Object.</description>
+          <long-description></long-description>
+          <tag name="var" line="40" description="" type="\ContaoCommunityAlliance\DcGeneral\DcGeneral" variable="">
+            <type link="DcGeneral.html">\ContaoCommunityAlliance\DcGeneral\DcGeneral</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="52" package="generalDriver">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeSelect::__construct()</full_name>
+        <docblock line="52">
+          <description>Initialize the controller.</description>
+          <long-description>Sequence is:
+1. Import the user.
+2. Call the parent constructor
+3. Authenticate the user
+4. Load the language files
+DO NOT CHANGE THIS ORDER!</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="73" package="generalDriver">
+        <name>run</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeSelect::run()</full_name>
+        <docblock line="73">
+          <description>Run the controller and parse the template.</description>
+          <long-description></long-description>
+          <tag name="return" line="73" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="SuppressWarnings" line="73" description="(PHPMD.Superglobals)"/>
+          <tag name="SuppressWarnings" line="73" description="(PHPMD.CamelCaseVariableName)"/>
+        </docblock>
+      </method>
+    </class>
+    <source>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</source>
+  </file>
   <file path="Contao/View/Contao2BackendView/Event/GetPasteButtonEvent.php" generated-path="Contao.View.Contao2BackendView.Event.GetPasteButtonEvent.html" hash="6e3485a864081b8b8a8bf4a240f5f4d0" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -47500,84 +47578,6 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJy1U8Fu2zAMvfsreOghDjoX2LBTmi5dWrSHFAvWbacAhSIztjBZMiTaXTD030fJStYl6IYexotM6vGJfKTPP7R1m52NxxmMYXm7hB6dV9bAew6E2KwV8ruoENgqNOiEvnKKUfFSdFRbF+5gXjvlSQkD97JWm41GB+ey8DtnJrdr5m5RkuuaosSLQ4Z7wg2n36Jq0MO5j+5DHd1ZbakRShfSNkeJX8LLnLlQhvNo8ArN3myt6N3+LWnbrVNVTZxSI9whiTtbovZAKJoiYrSSaHxsd3GzXAzBjdLobecksnuWZUZwSSwMwtwaEnZum6YziraXWrMCEldX8mYQazUgVnOh9ZqlnGRZ51+TZ5tWkForzTC+HvzJ60i+KXxM328/chFoyhi67tHQ6gZp6WyLjrafWuLh+xjnStNezLXwHqJUCbDrZsFSh6eKtC23wpQagVhdOyAfZILChqcloAksoAxgqQh6rqI43LQXtYviy38WA/iDz9LD5dqTE5I+I3XOKFMdIrOfWRh0bDPYGBjqFPZDC8JVXcNK+Fh7iOyaKRJ+l8a1O9HAC0rCCcYjLN3wtUauBrBRRFgekblYLz/vxDYFz+LZdmveT9h0RgZ2/iHp0lV+NPDnETO0FOw5zWgfDWbwEXarlJLfXDDZtemVsyb0PMpP4dlN1HuU53uafBI/n7JDBb+2paA/VgA0yx1GTrv+/698A1lsG47tpBe6w0i2qy9CX5pCb1X51yF0seEk42niP5yF2sAovTydTsF0WufPrn+Pa7KPJWljzWkQHikJk8jyyTGGbBtUFJUIyNF+UE/ZL0gD3TE=</source>
-  </file>
-  <file path="Contao/View/Contao2BackendView/TreeSelect.php" generated-path="Contao.View.Contao2BackendView.TreeSelect.html" hash="abd14cef112a92a2f453550bdcbfe492" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <constant namespace="" line="90" package="generalDriver">
-      <name>CURRENT_ID</name>
-      <full_name>\\CURRENT_ID</full_name>
-      <value>$strTable ? \Session::getInstance()-&gt;get('CURRENT_ID') : \Input::get('id')</value>
-      <docblock line="90">
-        <description></description>
-        <long-description></long-description>
-      </docblock>
-    </constant>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View" line="26" package="generalDriver">
-      <extends/>
-      <name>TreeSelect</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\TreeSelect</full_name>
-      <docblock line="26">
-        <description>Class TreeSelect.</description>
-        <long-description>Back end tree picker for usage in generaltree.php.</long-description>
-      </docblock>
-      <property static="false" visibility="protected" line="33" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View" package="generalDriver">
-        <name>$objAjax</name>
-        <default></default>
-        <docblock line="33">
-          <description>Current ajax object.</description>
-          <long-description></long-description>
-          <tag name="var" line="33" description="" type="object" variable="">
-            <type>object</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="40" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View" package="generalDriver">
-        <name>$itemContainer</name>
-        <default></default>
-        <docblock line="40">
-          <description>The DcGeneral Object.</description>
-          <long-description></long-description>
-          <tag name="var" line="40" description="" type="\ContaoCommunityAlliance\DcGeneral\DcGeneral" variable="">
-            <type link="DcGeneral.html">\ContaoCommunityAlliance\DcGeneral\DcGeneral</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View" line="52" package="generalDriver">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\TreeSelect::__construct()</full_name>
-        <docblock line="52">
-          <description>Initialize the controller.</description>
-          <long-description>Sequence is:
-1. Import the user.
-2. Call the parent constructor
-3. Authenticate the user
-4. Load the language files
-DO NOT CHANGE THIS ORDER!</long-description>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View" line="73" package="generalDriver">
-        <name>run</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\TreeSelect::run()</full_name>
-        <docblock line="73">
-          <description>Run the controller and parse the template.</description>
-          <long-description></long-description>
-          <tag name="return" line="73" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="SuppressWarnings" line="73" description="(PHPMD.Superglobals)"/>
-          <tag name="SuppressWarnings" line="73" description="(PHPMD.CamelCaseVariableName)"/>
-        </docblock>
-      </method>
-    </class>
-    <source>eJylWG1vGzcM/u5foQFB71zUDrqXL06T1rXz4s1JjNhpBzSBId/RtlpZd5N0abyh/32U7v0tTbegaGyRIinyIfUob96G27Bz+PJlh7wks4sZeQCpWCDIb7hg1t6F1PtCN0DwZwMCJOVjyVDLCmmkt4E0MjLaSqY0o4LMvS1brzlI8sbrq/TLO2+/QtsheFpGu74PJ9aCF4R7yTZbTchiC+QSNL0MfOCKaKC7vtXhzAOhbAjT89k0XlwzDiqIpAf49bDTEXQHCoMFMgqEpsEo2O0iwfR+yDlG5cHd2DuPD3AXa9x9YPD1qNOJ1A/sQZWQarZiHNVQHH8/eqaR7NNzN5w+gNDx/zMZhHRDdSCfu/mMeqi9z1eShaf3LyQVihs/6ZmnVGyGUtJ9Lnq2ifzjaEuZwHQnYBtxqhRZSIA5cARFPwHce8QbAeETjSISMu8LAmmNIIuUgSETKQyNvI/o7dv6exVznX86Bi/WmflBh5GUmEZCP9NHEqw+xz6tLFV590BlIkqWDu3vUAYa18AnBygdogE8R8W8QW+WaHLdbj9TanPBNOxsZhmq1R1NMNWMcvY3EI0+PdSUAccOq3qbw18RYDkIU4N07XWfTHZhILXdizXMdpGf+2REObeCkNpUoW2F3WpAk2r90idDbHqUMo9qyMyk8l/7ZBpQ365zxE1kimZ7NdUYX5Or6wUZXQyvzk/J4mIyJ9c349Obn8r5iFbY9mQdCU+bebRcZsG4XasRF9j83BnMIGRuMY7BYAN6gpoGiG73KFfClK7Zpl0+B2UmX7vCmGq6ogpqGs8JpHdCC2kr75rvFZZ8MOCYuGmSszNMmev4sKYR104xjMTHYKBAzzXOIu9WcpVG+q2Gl5tIVIBCKLYXlljF5UPfIXYo1NAqQUdSkIeA+VXRPApDiQn7SKVgYqNcvDsux31cBrnhwYpy1f2e8ggnNh9hQj9QyeiKwxUudJ9EgYxErfoHafzJ92Mi4GuWpkUidJ0VLONpUsxmtrl3ssN+w82OUyjN4SEx3U6kaSWV9nMswKvLx9NgCYRPpa8mGxFIwK/YXD3yETAM7ObZ9XxBqOfh8ckWJOQm2Jq4B0srf/GC3J2KByYDsUOIWOi4DlPG903s2ul2252eCj8zmyfGns9OuyQlxpx7NxFhhC7CQKEPavOKxo/q23on8AhepGEmYWj1VLEfvuVpOsDGXJgKoqfUvj2CNoulfKPmGQPuVzXXZtHplnM/hjXOwBi9yfSejPMM+lbsOqPbm5vTq8VyMnZeYU6zYN62NXXvxPos7OuSQTkehsF0i+Ec+AzphfawiBj7wfn0+v1wOv/keOmkdu4/OWAu6l6u6dznR8eWjC8A7PfdOhB7yyUCkV3w42xb9XvJedIaNqYw4wRJjStMwS1sLB1GZ9dysrFyT7ulHslkOMV83zX6DZyg5KzkbR3zjiLCErdValL2u2Wqd1K6Dk3qE2slwPZOcBpmWmaQ5Djo1jWLQeena1Cs5TPPeFXbk4BzJDtQacQfMIEUZkftEDsmLjWZ6+YgWkyX49EQEZQFjWCyLaGSRds09+X2uMRZC+Qr01vbIkUfaxns7KKPlxbJMNovQwek3puMmkRXTlPKekWGDVKYVm41ESg2V6VtXmaiadKYxe4ZqGfp7d0sCUWEwCNWL0ZTdqA4PiNoLYFpVMpNw8YvCIMX594YsQbLy0ffMWHLtNiHxkLBRGG5WLVsCPzQKyX5/HNyqdklw3VnMT02rDSnvkF5RlRlcePl2Ht/ujw7m5qTZK5z0869W6rJ3UfmY3rtkBxqLdkK7wd1hmgbe7SsWs3Yq7o0LWldZBtkibxRg3ThMeT4JnSdVzjfS1MaSxCBGdQ/ZDxrsroonknxo85tGkB19JdBW4nkf9krIN0Qkd+Hf9aJiGERTOGkcu2djSyhQgAq5Tf+TI01WDbw9L2PFCG9+P/LQVrIQoVyJT/HT4Q6C8IodJtpGw65XU79cnaM0SyMqGWbIfK56wb2ZRRamGL2ronDLk7xKT5qbofnp6WxUQiWaZ4Ha/4Ygi85b4tU3K2ZMR15OR+ZX+apm3DX++aQrA3QpCGk0fXV2cRaM0p4d4Kcg24JEK/3OVDpbVsqoqzQ9lXjfpVubk5N4UyxZlsYMd1PzNAdDnaFjNdtqJPM+HGjJTsh8jo/xQeb8KfjbCTb/gAkKG2vB4GIkM84eF7My3hPSw5WyCd8T0a7Vc1iwhVq8eKsBbYRKYHgDPNiLzm8aMXGfMyNtnhNznEhYd30GPLjl316Ws7El8qLphZUwWJtOLX6tYwlODQDwvyN561D+gUYfMdJnzgvUPkoNGPj+LXTOIbwNPiuMfQO3xGraEOCSOPFQij+4xwpU3HKtjSU3Wj+XGnJwxofvdCY1Nh0/kT/1vkXkn1zfg==</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">
