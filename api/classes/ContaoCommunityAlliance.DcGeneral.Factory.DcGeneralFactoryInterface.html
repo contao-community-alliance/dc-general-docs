@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">111</span></a></li>
+                <span class="label label-info">123</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -69,6 +69,7 @@
 <li class="method public "><a href="#method_getDcGeneralClassName" title="getDcGeneralClassName() :: Retrieve the class name to use as DcGeneral."><span class="description">Retrieve the class name to use as DcGeneral.</span><pre>getDcGeneralClassName()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the environment to use."><span class="description">Retrieve the environment to use.</span><pre>getEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironmentClassName" title="getEnvironmentClassName() :: Retrieve the class name to use as environment."><span class="description">Retrieve the class name to use as environment.</span><pre>getEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_getEventDispatcher" title="getEventDispatcher() :: Get the event dispatcher to use."><span class="description">Get the event dispatcher to use.</span><pre>getEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_getEventPropagator" title="getEventPropagator() :: Retrieve the event propagator."><span class="description">Retrieve the event propagator.</span><pre>getEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_getTranslator" title="getTranslator() :: Get the translator to use."><span class="description">Get the translator to use.</span><pre>getTranslator()</pre></a></li>
 <li class="method public "><a href="#method_setContainerClassName" title="setContainerClassName() :: Set the class name to use as data definition container."><span class="description">Set the class name to use as data definition container.</span><pre>setContainerClassName()</pre></a></li>
@@ -77,6 +78,7 @@
 <li class="method public "><a href="#method_setDcGeneralClassName" title="setDcGeneralClassName() :: Set the class name to use as DcGeneral."><span class="description">Set the class name to use as DcGeneral.</span><pre>setDcGeneralClassName()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: Set the environment to use."><span class="description">Set the environment to use.</span><pre>setEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironmentClassName" title="setEnvironmentClassName() :: Set the class name to use as environment."><span class="description">Set the class name to use as environment.</span><pre>setEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_setEventDispatcher" title="setEventDispatcher() :: Set the event dispatcher to use."><span class="description">Set the event dispatcher to use.</span><pre>setEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_setEventPropagator" title="setEventPropagator() :: Set the event propagator to use."><span class="description">Set the event propagator to use.</span><pre>setEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_setTranslator" title="setTranslator() :: Set the translator to use."><span class="description">Set the translator to use.</span><pre>setTranslator()</pre></a></li>
 </ul>
@@ -198,12 +200,27 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_getEventDispatcher"></a><div class="element clickable method public method_getEventDispatcher" data-toggle="collapse" data-target=".method_getEventDispatcher .collapse">
+<h2>Get the event dispatcher to use.</h2>
+<pre>getEventDispatcher() : <a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_getEventPropagator"></a><div class="element clickable method public method_getEventPropagator" data-toggle="collapse" data-target=".method_getEventPropagator .collapse">
 <h2>Retrieve the event propagator.</h2>
 <pre>getEventPropagator() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></code></div>
 </div></div>
@@ -302,12 +319,31 @@
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactoryInterface.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactoryInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_setEventDispatcher"></a><div class="element clickable method public method_setEventDispatcher" data-toggle="collapse" data-target=".method_setEventDispatcher .collapse">
+<h2>Set the event dispatcher to use.</h2>
+<pre>setEventDispatcher(\Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactoryInterface.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactoryInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dispatcher</h4>
+<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactoryInterface.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactoryInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_setEventPropagator"></a><div class="element clickable method public method_setEventPropagator" data-toggle="collapse" data-target=".method_setEventPropagator .collapse">
 <h2>Set the event propagator to use.</h2>
 <pre>setEventPropagator(\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface $eventPropagator) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactoryInterface.html">\ContaoCommunityAlliance\DcGeneral\Factory\DcGeneralFactoryInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$eventPropagator</h4>
@@ -338,7 +374,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-09T11:55:14+02:00.<br></footer></div>
+            generated on 2014-10-14T00:40:36+02:00.<br></footer></div>
 </div>
 </body>
 </html>

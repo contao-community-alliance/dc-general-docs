@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">111</span></a></li>
+                <span class="label label-info">123</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -68,6 +68,7 @@
 <li class="method public "><a href="#method_getDataDefinition" title="getDataDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_getDataDriver" title="getDataDriver() :: Retrieve the data provider for the named source."><span class="description">Retrieve the data provider for the named source.</span><pre>getDataDriver()</pre></a></li>
 <li class="method public "><a href="#method_getDataProvider" title="getDataProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDataProvider()</pre></a></li>
+<li class="method public "><a href="#method_getEventDispatcher" title="getEventDispatcher() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_getEventPropagator" title="getEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_getInputProvider" title="getInputProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_getPanelContainer" title="getPanelContainer() :: Retrieve the panel container."><span class="description">Retrieve the panel container.</span><pre>getPanelContainer()</pre></a></li>
@@ -81,6 +82,7 @@
 <li class="method public "><a href="#method_setClipboard" title="setClipboard() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setClipboard()</pre></a></li>
 <li class="method public "><a href="#method_setController" title="setController() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setController()</pre></a></li>
 <li class="method public "><a href="#method_setDataDefinition" title="setDataDefinition() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDataDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setEventDispatcher" title="setEventDispatcher() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_setEventPropagator" title="setEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_setInputProvider" title="setInputProvider() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_setPanelContainer" title="setPanelContainer() :: Store the panel container in the view."><span class="description">Store the panel container in the view.</span><pre>setPanelContainer()</pre></a></li>
@@ -97,6 +99,7 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected "><a href="#property_arrDataProvider" title="$arrDataProvider() :: The registered data providers."><span class="description"></span><pre>$arrDataProvider</pre></a></li>
+<li class="property protected "><a href="#property_eventDispatcher" title="$eventDispatcher() :: The event propagator in use."><span class="description"></span><pre>$eventDispatcher</pre></a></li>
 <li class="property protected "><a href="#property_eventPropagator" title="$eventPropagator() :: The event propagator in use."><span class="description"></span><pre>$eventPropagator</pre></a></li>
 <li class="property protected "><a href="#property_objClipboard" title="$objClipboard() :: The clipboard in use."><span class="description"></span><pre>$objClipboard</pre></a></li>
 <li class="property protected "><a href="#property_objController" title="$objController() :: The controller."><span class="description"></span><pre>$objController</pre></a></li>
@@ -223,11 +226,24 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 </tr></table>
 </div></div>
 </div>
+<a id="method_getEventDispatcher"></a><div class="element clickable method public method_getEventDispatcher" data-toggle="collapse" data-target=".method_getEventDispatcher .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEventDispatcher() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_getEventPropagator"></a><div class="element clickable method public method_getEventPropagator" data-toggle="collapse" data-target=".method_getEventPropagator .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>getEventPropagator() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getInputProvider"></a><div class="element clickable method public method_getInputProvider" data-toggle="collapse" data-target=".method_getInputProvider .collapse">
 <h2>{@inheritdoc}</h2>
@@ -346,12 +362,27 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="subelement argument"><h4>$objDataDefinition</h4></div>
 </div></div>
 </div>
+<a id="method_setEventDispatcher"></a><div class="element clickable method public method_setEventDispatcher" data-toggle="collapse" data-target=".method_setEventDispatcher .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEventDispatcher($dispatcher) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dispatcher</h4></div>
+</div></div>
+</div>
 <a id="method_setEventPropagator"></a><div class="element clickable method public method_setEventPropagator" data-toggle="collapse" data-target=".method_setEventPropagator .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>setEventPropagator($propagator) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$propagator</h4></div>
 </div></div>
@@ -437,6 +468,12 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_eventDispatcher"> </a><div class="element clickable property protected property_eventDispatcher" data-toggle="collapse" data-target=".property_eventDispatcher .collapse">
+<h2>The event propagator in use.</h2>
+<pre>$eventDispatcher : <a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_eventPropagator"> </a><div class="element clickable property protected property_eventPropagator" data-toggle="collapse" data-target=".property_eventPropagator .collapse">
 <h2>The event propagator in use.</h2>
 <pre>$eventPropagator : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></pre>
@@ -499,7 +536,7 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-09T11:55:12+02:00.<br></footer></div>
+            generated on 2014-10-14T00:40:34+02:00.<br></footer></div>
 </div>
 </body>
 </html>

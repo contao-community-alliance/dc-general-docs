@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">111</span></a></li>
+                <span class="label label-info">123</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -87,10 +87,17 @@
 <div class="long_description">The event propagator is used to dispatch an event to the attached event dispatcher.
 
 When propagating an event, one can pass an array of suffixes that will get appended to the event name in a loop.</div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/DcGeneral.Event.html">DcGeneral\Event</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr>
+</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_propagate"></a><div class="element clickable method public method_propagate" data-toggle="collapse" data-target=".method_propagate .collapse">
@@ -111,6 +118,11 @@ Resulting Events:
   1. dc-general.some.event[param1][param2]
   2. dc-general.some.event[param1]
   3. dc-general.some.event</div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$eventName</h4>
@@ -132,6 +144,11 @@ Resulting Events:
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">The given suffixes will get appended to the event name and the resulting event name will get fired.</div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$eventName</h4>
@@ -154,7 +171,7 @@ Resulting Events:
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-09T11:55:14+02:00.<br></footer></div>
+            generated on 2014-10-14T00:40:36+02:00.<br></footer></div>
 </div>
 </body>
 </html>

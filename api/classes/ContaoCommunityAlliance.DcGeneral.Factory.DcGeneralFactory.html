@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">111</span></a></li>
+                <span class="label label-info">123</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -72,6 +72,7 @@
 <li class="method public "><a href="#method_getDcGeneralClassName" title="getDcGeneralClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getDcGeneralClassName()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironmentClassName" title="getEnvironmentClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_getEventDispatcher" title="getEventDispatcher() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_getEventPropagator" title="getEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_getTranslator" title="getTranslator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getTranslator()</pre></a></li>
 <li class="method public "><a href="#method_setContainerClassName" title="setContainerClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setContainerClassName()</pre></a></li>
@@ -80,6 +81,7 @@
 <li class="method public "><a href="#method_setDcGeneralClassName" title="setDcGeneralClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDcGeneralClassName()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironment" title="setEnvironment() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEnvironment()</pre></a></li>
 <li class="method public "><a href="#method_setEnvironmentClassName" title="setEnvironmentClassName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEnvironmentClassName()</pre></a></li>
+<li class="method public "><a href="#method_setEventDispatcher" title="setEventDispatcher() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEventDispatcher()</pre></a></li>
 <li class="method public "><a href="#method_setEventPropagator" title="setEventPropagator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_setTranslator" title="setTranslator() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setTranslator()</pre></a></li>
 </ul>
@@ -96,6 +98,7 @@
 <li class="property protected "><a href="#property_dcGeneralClassName" title="$dcGeneralClassName() :: The class name of the class to use as DcGeneral."><span class="description"></span><pre>$dcGeneralClassName</pre></a></li>
 <li class="property protected "><a href="#property_environment" title="$environment() :: The environment for the new instance."><span class="description"></span><pre>$environment</pre></a></li>
 <li class="property protected "><a href="#property_environmentClassName" title="$environmentClassName() :: The class name to use for the environment."><span class="description"></span><pre>$environmentClassName</pre></a></li>
+<li class="property protected "><a href="#property_eventDispatcher" title="$eventDispatcher() :: The event dispatcher to use."><span class="description"></span><pre>$eventDispatcher</pre></a></li>
 <li class="property protected "><a href="#property_eventPropagator" title="$eventPropagator() :: The event propagator to use."><span class="description"></span><pre>$eventPropagator</pre></a></li>
 <li class="property protected "><a href="#property_translator" title="$translator() :: The translator that shall be used."><span class="description"></span><pre>$translator</pre></a></li>
 </ul>
@@ -243,11 +246,24 @@ given environment.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="method_getEventDispatcher"></a><div class="element clickable method public method_getEventDispatcher" data-toggle="collapse" data-target=".method_getEventDispatcher .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>getEventDispatcher() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_getEventPropagator"></a><div class="element clickable method public method_getEventPropagator" data-toggle="collapse" data-target=".method_getEventPropagator .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>getEventPropagator() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator" data-toggle="collapse" data-target=".method_getTranslator .collapse">
 <h2>{@inheritdoc}</h2>
@@ -315,12 +331,27 @@ given environment.</div>
 <div class="subelement argument"><h4>$environmentClassName</h4></div>
 </div></div>
 </div>
+<a id="method_setEventDispatcher"></a><div class="element clickable method public method_setEventDispatcher" data-toggle="collapse" data-target=".method_setEventDispatcher .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>setEventDispatcher($dispatcher) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dispatcher</h4></div>
+</div></div>
+</div>
 <a id="method_setEventPropagator"></a><div class="element clickable method public method_setEventPropagator" data-toggle="collapse" data-target=".method_setEventPropagator .collapse">
 <h2>{@inheritdoc}</h2>
 <pre>setEventPropagator(\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface $eventPropagator) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
+            listener if you want to handle the event.</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$eventPropagator</h4></div>
 </div></div>
@@ -373,6 +404,12 @@ given environment.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_eventDispatcher"> </a><div class="element clickable property protected property_eventDispatcher" data-toggle="collapse" data-target=".property_eventDispatcher .collapse">
+<h2>The event dispatcher to use.</h2>
+<pre>$eventDispatcher : <a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_eventPropagator"> </a><div class="element clickable property protected property_eventPropagator" data-toggle="collapse" data-target=".property_eventPropagator .collapse">
 <h2>The event propagator to use.</h2>
 <pre>$eventPropagator : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></pre>
@@ -393,7 +430,7 @@ given environment.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-09T11:55:18+02:00.<br></footer></div>
+            generated on 2014-10-14T00:40:40+02:00.<br></footer></div>
 </div>
 </body>
 </html>
