@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">123</span></a></li>
+                <span class="label label-info">124</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -77,6 +77,11 @@
                     <ul>
 <li class="method protected "><a href="#method_buildDatePicker" title="buildDatePicker() :: Build the date picker string."><span class="description">Build the date picker string.</span><pre>buildDatePicker()</pre></a></li>
 <li class="method protected "><a href="#method_generateHelpText" title="generateHelpText() :: Generate the help msg for a property."><span class="description">Generate the help msg for a property.</span><pre>generateHelpText()</pre></a></li>
+<li class="method protected "><a href="#method_getFileTree" title="getFileTree() :: Get the popup file manager."><span class="description">Get the popup file manager.</span><pre>getFileTree()</pre></a></li>
+<li class="method protected "><a href="#method_getHelpWizard" title="getHelpWizard() :: Get the help wizard."><span class="description">Get the help wizard.</span><pre>getHelpWizard()</pre></a></li>
+<li class="method protected "><a href="#method_getListWizard" title="getListWizard() :: Get the list import wizard."><span class="description">Get the list import wizard.</span><pre>getListWizard()</pre></a></li>
+<li class="method protected "><a href="#method_getOptionsForWidget" title="getOptionsForWidget() :: Get special labels."><span class="description">Get special labels.</span><pre>getOptionsForWidget()</pre></a></li>
+<li class="method protected "><a href="#method_getTableWizard" title="getTableWizard() :: Get the table import wizard."><span class="description">Get the table import wizard.</span><pre>getTableWizard()</pre></a></li>
 <li class="method protected "><a href="#method_getXLabel" title="getXLabel() :: Get special labels."><span class="description">Get special labels.</span><pre>getXLabel()</pre></a></li>
 </ul>
 </li>
@@ -352,6 +357,71 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_getFileTree"></a><div class="element clickable method protected method_getFileTree" data-toggle="collapse" data-target=".method_getFileTree .collapse">
+<h2>Get the popup file manager.</h2>
+<pre>getFileTree() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Contao 2.11 only.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getHelpWizard"></a><div class="element clickable method protected method_getHelpWizard" data-toggle="collapse" data-target=".method_getHelpWizard .collapse">
+<h2>Get the help wizard.</h2>
+<pre>getHelpWizard(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propInfo</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the wizard shall be generated.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getListWizard"></a><div class="element clickable method protected method_getListWizard" data-toggle="collapse" data-target=".method_getListWizard .collapse">
+<h2>Get the list import wizard.</h2>
+<pre>getListWizard() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getOptionsForWidget"></a><div class="element clickable method protected method_getOptionsForWidget" data-toggle="collapse" data-target=".method_getOptionsForWidget .collapse">
+<h2>Get special labels.</h2>
+<pre>getOptionsForWidget(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$propInfo</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the X label shall be generated.</p></div>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getTableWizard"></a><div class="element clickable method protected method_getTableWizard" data-toggle="collapse" data-target=".method_getTableWizard .collapse">
+<h2>Get the table import wizard.</h2>
+<pre>getTableWizard() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a id="method_getXLabel"></a><div class="element clickable method protected method_getXLabel" data-toggle="collapse" data-target=".method_getXLabel .collapse">
 <h2>Get special labels.</h2>
 <pre>getXLabel(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo) : string</pre>
@@ -388,7 +458,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-15T04:57:45+02:00.<br></footer></div>
+            generated on 2014-10-15T13:15:34+02:00.<br></footer></div>
 </div>
 </body>
 </html>

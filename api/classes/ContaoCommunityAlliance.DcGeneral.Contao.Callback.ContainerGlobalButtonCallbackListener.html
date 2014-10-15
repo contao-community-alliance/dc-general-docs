@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">123</span></a></li>
+                <span class="label label-info">124</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -57,13 +57,24 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_getArgs" title="getArgs() :: Retrieve the arguments for the callback."><span class="description">Retrieve the arguments for the callback.</span><pre>getArgs()</pre></a></li>
+<li class="method public "><a href="#method_setRestrictions" title="setRestrictions() :: Set the restrictions for this callback."><span class="description">Set the restrictions for this callback.</span><pre>setRestrictions()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: Update the event with the information returned by the callback."><span class="description">Update the event with the information returned by the callback.</span><pre>update()</pre></a></li>
+<li class="method public "><a href="#method_wantToExecute" title="wantToExecute() :: Check the restrictions against the information within the event and determine if the callback shall be executed."><span class="description">Check the restrictions against the information within the event and determine if the callback shall be executed.</span><pre>wantToExecute()</pre></a></li>
 </ul>
-</li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_operationName" title="$operationName() :: The name of the operation button to limit execution on."><span class="description"></span><pre>$operationName</pre></a></li></ul>
+</li>
+</ul>
 </div>
 <div class="span8">
 <a id="\ContaoCommunityAlliance\DcGeneral\Contao\Callback\ContainerGlobalButtonCallbackListener"></a><ul class="breadcrumb">
@@ -108,6 +119,21 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_setRestrictions"></a><div class="element clickable method public method_setRestrictions" data-toggle="collapse" data-target=".method_setRestrictions .collapse">
+<h2>Set the restrictions for this callback.</h2>
+<pre>setRestrictions(null|string $dataContainerName, null|string $operationName) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dataContainerName</h4>
+<code>null</code><code>string</code><p>The name of the data container to limit execution on.</p></div>
+<div class="subelement argument">
+<h4>$operationName</h4>
+<code>null</code><code>string</code><p>The name of the operation button to limit execution on.</p></div>
+</div></div>
+</div>
 <a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
 <h2>Update the event with the information returned by the callback.</h2>
 <pre>update(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetGlobalButtonEvent $event, string $value) : void</pre>
@@ -123,6 +149,28 @@
 <code>string</code><p>The HTML representation of the button.</p></div>
 </div></div>
 </div>
+<a id="method_wantToExecute"></a><div class="element clickable method public method_wantToExecute" data-toggle="collapse" data-target=".method_wantToExecute .collapse">
+<h2>Check the restrictions against the information within the event and determine if the callback shall be executed.</h2>
+<pre>wantToExecute(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetGlobalButtonEvent $event) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$event</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Event.GetGlobalButtonEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetGlobalButtonEvent</a></code><p>The Event for which the callback shall be invoked.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_operationName"> </a><div class="element clickable property protected property_operationName" data-toggle="collapse" data-target=".property_operationName .collapse">
+<h2>The name of the operation button to limit execution on.</h2>
+<pre>$operationName : null | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -131,7 +179,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-15T04:57:46+02:00.<br></footer></div>
+            generated on 2014-10-15T13:15:36+02:00.<br></footer></div>
 </div>
 </body>
 </html>
