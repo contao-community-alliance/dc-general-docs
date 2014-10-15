@@ -64,6 +64,7 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
+<li class="method protected "><a href="#method_getModelFromSerializedId" title="getModelFromSerializedId() :: Retrieve a model from a serialized id."><span class="description">Retrieve a model from a serialized id.</span><pre>getModelFromSerializedId()</pre></a></li>
 <li class="method protected "><a href="#method_getTreeValue" title="getTreeValue() :: Retrieve the value as serialized array."><span class="description">Retrieve the value as serialized array.</span><pre>getTreeValue()</pre></a></li>
 <li class="method protected "><a href="#method_loadFiletree" title="loadFiletree() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>loadFiletree()</pre></a></li>
 <li class="method protected "><a href="#method_loadPagetree" title="loadPagetree() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>loadPagetree()</pre></a></li>
@@ -111,6 +112,20 @@ Contao handling.</p>
 </table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getModelFromSerializedId"></a><div class="element clickable method protected method_getModelFromSerializedId" data-toggle="collapse" data-target=".method_getModelFromSerializedId .collapse">
+<h2>Retrieve a model from a serialized id.</h2>
+<pre>getModelFromSerializedId(string $serializedId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Exits the script if no model has been found.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$serializedId</h4>
+<code>string</code><p>The serialized id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_getTreeValue"></a><div class="element clickable method protected method_getTreeValue" data-toggle="collapse" data-target=".method_getTreeValue .collapse">
 <h2>Retrieve the value as serialized array.</h2>
 <pre>getTreeValue(string $strType, string $varValue) : string</pre>
@@ -132,7 +147,7 @@ Contao handling.</p>
 </div>
 <a id="method_loadFiletree"></a><div class="element clickable method protected method_loadFiletree" data-toggle="collapse" data-target=".method_loadFiletree .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>loadFiletree(\ContaoCommunityAlliance\DcGeneral\DataContainerInterface $objDc) </pre>
+<pre>loadFiletree() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -146,13 +161,11 @@ Contao handling.</p>
 <td>(PHPMD.CamelCaseVariableName)</td>
 </tr>
 </table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$objDc</h4></div>
 </div></div>
 </div>
 <a id="method_loadPagetree"></a><div class="element clickable method protected method_loadPagetree" data-toggle="collapse" data-target=".method_loadPagetree .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>loadPagetree(\ContaoCommunityAlliance\DcGeneral\DataContainerInterface $objDc) </pre>
+<pre>loadPagetree() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -166,33 +179,23 @@ Contao handling.</p>
 <td>(PHPMD.CamelCaseVariableName)</td>
 </tr>
 </table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$objDc</h4></div>
 </div></div>
 </div>
 <a id="method_reloadFiletree"></a><div class="element clickable method protected method_reloadFiletree" data-toggle="collapse" data-target=".method_reloadFiletree .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>reloadFiletree(\ContaoCommunityAlliance\DcGeneral\DataContainerInterface $objDc) </pre>
+<pre>reloadFiletree() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$objDc</h4></div>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_reloadPagetree"></a><div class="element clickable method protected method_reloadPagetree" data-toggle="collapse" data-target=".method_reloadPagetree .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>reloadPagetree(\ContaoCommunityAlliance\DcGeneral\DataContainerInterface $objDc) </pre>
+<pre>reloadPagetree() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$objDc</h4></div>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_reloadTree"></a><div class="element clickable method protected method_reloadTree" data-toggle="collapse" data-target=".method_reloadTree .collapse">
 <h2>Reload the file tree.</h2>
-<pre>reloadTree(string $strType, \ContaoCommunityAlliance\DcGeneral\DataContainerInterface $objDc) : void</pre>
+<pre>reloadTree(string $strType) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -210,9 +213,6 @@ Contao handling.</p>
 <div class="subelement argument">
 <h4>$strType</h4>
 <code>string</code><p>The type.</p></div>
-<div class="subelement argument">
-<h4>$objDc</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataContainerInterface</a></code><p>The data container.</p></div>
 </div></div>
 </div>
 </div>
@@ -223,7 +223,7 @@ Contao handling.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-14T17:23:02+02:00.<br></footer></div>
+            generated on 2014-10-15T04:57:38+02:00.<br></footer></div>
 </div>
 </body>
 </html>
