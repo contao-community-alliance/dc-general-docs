@@ -31179,7 +31179,7 @@ These buttons include "edit multiple", "override" etc.</long-description>
     </interface>
     <source>eJy1VE1v2zAMvftX8DCgXTA4h2GndVuCZEgLtEWw9tYMgyLTtlBZMiS6qLHuv4+WY7vLR9t9+WKRIp8eHymdfCrzMhqPRhGMYHm6hDt0XlkD79jR+CalkLciQ+AvQ4NO6LlTHBU2RUW5dc0ezHKnPClh4ErmKk01OjiRse+MiazXjF2iJFcVcYIftxGuCFNOP0VVoIcTH8xveTAnuaVCKB1LW+wkXjcnc+a5MpxHrRVrtiZrRW/7s6Qta6eynDglR7hAEhc2Qe2BUBRxiNFKovGh3PPF8rx1pkqjt5WTyOY4ioxgSiwMwswaEnZmi6Iyiuqp1qyAxNVcLlqxVnNBYo6p4m3WdTUs30dR5f8KYbV0tkRHCn23rM8MoUuZGsNv2nqdKw+q80OCXjq1ZomJRUgYnF0dJPsEQW514kFoDeUGlvNT6wrRxMTbo/ECqkG3gcNAfAjpmQPeExomsGfvDazOeCnIummWOcwEYfQ9atoVqm2+Uehu0yOwaVtkDxRvQsbhL63xBJfTi8/wAY7KntQRi7cFuUB6LAgHdVBdxMQhVc7ATiduvj4I50T9y9FlteZRg7QyMuieIQ2iHL9+lkAdCjxIwvMtMNlvnlxfNpD7Dp8mCYi9wwBkD0jcUyqFE8WuLPCqx2v6dQhcJMkzSu+foidrZtCOz3FPY0/dX7Cwd3io9NTZ4g+Lf2gbtKXBY3B+22hrjPtYlsUFZv9emRb3ReLMcpS3oNLH8uA9P767U9mq0NUcatq+ox3EoZLW1uonmefCD7Qb5EOXaGC7bm/R/6C70/GX3sGe+4/oJ4+NbXM=</source>
   </file>
-  <file path="Panel/DefaultLimitElement.php" generated-path="Panel.DefaultLimitElement.html" hash="5557d36c4def7f3a9d03c8e679351ec1" package="generalDriver">
+  <file path="Panel/DefaultLimitElement.php" generated-path="Panel.DefaultLimitElement.html" hash="f09bdd6c1c726fcbab327157912064c9" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -31234,30 +31234,54 @@ These buttons include "edit multiple", "override" etc.</long-description>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="52" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="55" package="DcGeneral\Panel">
+        <name>getItemsPerPage</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::getItemsPerPage()</full_name>
+        <docblock line="55">
+          <description>Retrieve the amount of items to display per page.</description>
+          <long-description></long-description>
+          <tag name="return" line="55" description="" type="int">
+            <type>int</type>
+          </tag>
+          <tag name="SuppressWarnings" line="55" description="(PHPMD.Superglobals)"/>
+          <tag name="SuppressWarnings" line="55" description="(PHPMD.CamelCaseVariableName)"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="68" package="DcGeneral\Panel">
+        <name>calculateTotal</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::calculateTotal()</full_name>
+        <docblock line="68">
+          <description>Calculate the total amount of items.</description>
+          <long-description></long-description>
+          <tag name="return" line="68" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="90" package="DcGeneral\Panel">
         <name>getPersistent</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::getPersistent()</full_name>
-        <docblock line="52">
+        <docblock line="90">
           <description>Retrieve the persistent value from the input provider.</description>
           <long-description></long-description>
-          <tag name="return" line="52" description="" type="array">
+          <tag name="return" line="90" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="75" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="113" package="DcGeneral\Panel">
         <name>setPersistent</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::setPersistent()</full_name>
-        <docblock line="75">
+        <docblock line="113">
           <description>Store the persistent value in the input provider.</description>
           <long-description></long-description>
-          <tag name="param" line="75" description="&lt;p&gt;The offset.&lt;/p&gt;" type="int" variable="$intOffset">
+          <tag name="param" line="113" description="&lt;p&gt;The offset.&lt;/p&gt;" type="int" variable="$intOffset">
             <type>int</type>
           </tag>
-          <tag name="param" line="75" description="&lt;p&gt;The amount of items to show.&lt;/p&gt;" type="int" variable="$intAmount">
+          <tag name="param" line="113" description="&lt;p&gt;The amount of items to show.&lt;/p&gt;" type="int" variable="$intAmount">
             <type>int</type>
           </tag>
-          <tag name="return" line="75" description="" type="void">
+          <tag name="return" line="113" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -31272,14 +31296,12 @@ These buttons include "edit multiple", "override" etc.</long-description>
           <type>int</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="104" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="139" package="DcGeneral\Panel">
         <name>initialize</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::initialize()</full_name>
-        <docblock line="104">
+        <docblock line="139">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="SuppressWarnings" line="104" description="(PHPMD.Superglobals)"/>
-          <tag name="SuppressWarnings" line="104" description="(PHPMD.CamelCaseVariableName)"/>
         </docblock>
         <argument line="0">
           <name>$objConfig</name>
@@ -31292,14 +31314,14 @@ These buttons include "edit multiple", "override" etc.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Panel\PanelElementInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="155" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="184" package="DcGeneral\Panel">
         <name>render</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::render()</full_name>
-        <docblock line="155">
+        <docblock line="184">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="SuppressWarnings" line="155" description="(PHPMD.Superglobals)"/>
-          <tag name="SuppressWarnings" line="155" description="(PHPMD.CamelCaseVariableName)"/>
+          <tag name="SuppressWarnings" line="184" description="(PHPMD.Superglobals)"/>
+          <tag name="SuppressWarnings" line="184" description="(PHPMD.CamelCaseVariableName)"/>
         </docblock>
         <argument line="0">
           <name>$objTemplate</name>
@@ -31307,10 +31329,10 @@ These buttons include "edit multiple", "override" etc.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\View\ViewTemplateInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="206" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="235" package="DcGeneral\Panel">
         <name>setOffset</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::setOffset()</full_name>
-        <docblock line="206">
+        <docblock line="235">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -31320,18 +31342,18 @@ These buttons include "edit multiple", "override" etc.</long-description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="216" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="245" package="DcGeneral\Panel">
         <name>getOffset</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::getOffset()</full_name>
-        <docblock line="216">
+        <docblock line="245">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="224" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="253" package="DcGeneral\Panel">
         <name>setAmount</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::setAmount()</full_name>
-        <docblock line="224">
+        <docblock line="253">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -31341,19 +31363,16 @@ These buttons include "edit multiple", "override" etc.</long-description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="234" package="DcGeneral\Panel">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Panel" line="263" package="DcGeneral\Panel">
         <name>getAmount</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Panel\DefaultLimitElement::getAmount()</full_name>
-        <docblock line="234">
+        <docblock line="263">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
     </class>
-    <markers>
-      <todo line="115">we need to determine the perPage some better way.</todo>
-    </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="DataDefinition/Definition/View/DefaultGroupAndSortingInformation.php" generated-path="DataDefinition.Definition.View.DefaultGroupAndSortingInformation.html" hash="8c8d0891da46fc8a3426633f736246b0" package="generalDriver">
     <docblock line="0">
