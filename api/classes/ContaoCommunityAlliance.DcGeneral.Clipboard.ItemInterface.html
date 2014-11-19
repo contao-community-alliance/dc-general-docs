@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">162</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getAction" title="getAction() :: Retrieve the current action of the clipboard."><span class="description">Retrieve the current action of the clipboard.</span><pre>getAction()</pre></a></li>
+<li class="method public "><a href="#method_getModelId" title="getModelId() :: Retrieve the id of the model from this item."><span class="description">Retrieve the id of the model from this item.</span><pre>getModelId()</pre></a></li>
+<li class="method public "><a href="#method_getParentId" title="getParentId() :: Retrieve the id of the parent model from this item."><span class="description">Retrieve the id of the parent model from this item.</span><pre>getParentId()</pre></a></li>
+<li class="method public "><a href="#method_isCopy" title="isCopy() :: Determine if the content in the clipboard shall be copied."><span class="description">Determine if the content in the clipboard shall be copied.</span><pre>isCopy()</pre></a></li>
+<li class="method public "><a href="#method_isCreate" title="isCreate() :: Determine if the content in the clipboard is a new item to be created."><span class="description">Determine if the content in the clipboard is a new item to be created.</span><pre>isCreate()</pre></a></li>
+<li class="method public "><a href="#method_isCut" title="isCut() :: Determine if the content in the clipboard shall be cut."><span class="description">Determine if the content in the clipboard shall be cut.</span><pre>isCut()</pre></a></li>
+<li class="method public "><a href="#method_isDeepCopy" title="isDeepCopy() :: Determine if the content in the clipboard shall be copied with all children."><span class="description">Determine if the content in the clipboard shall be copied with all children.</span><pre>isDeepCopy()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_COPY" title="COPY() :: Item is in copy action."><span class="description">Item is in copy action.</span><pre>COPY</pre></a></li>
+<li class="constant  "><a href="#constant_CREATE" title="CREATE() :: Item is in create action."><span class="description">Item is in create action.</span><pre>CREATE</pre></a></li>
+<li class="constant  "><a href="#constant_CUT" title="CUT() :: Item is in cut action."><span class="description">Item is in cut action.</span><pre>CUT</pre></a></li>
+<li class="constant  "><a href="#constant_DEEP_COPY" title="DEEP_COPY() :: Item is in deep copy action."><span class="description">Item is in deep copy action.</span><pre>DEEP_COPY</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Clipboard.html">Clipboard</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ItemInterface.html">ItemInterface</a>
+</li>
+</ul>
+<div class="element interface">
+<p class="short_description">Interface ItemInterface.</p>
+<div class="details">
+<div class="long_description">A single clipboard action item.</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/DcGeneral.Clipboard.html">DcGeneral\Clipboard</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getAction"></a><div class="element clickable method public method_getAction" data-toggle="collapse" data-target=".method_getAction .collapse">
+<h2>Retrieve the current action of the clipboard.</h2>
+<pre>getAction() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>One of ItemInterface::CREATE, ItemInterface::CUT, ItemInterface::COPY</div>
+</div></div>
+</div>
+<a id="method_getModelId"></a><div class="element clickable method public method_getModelId" data-toggle="collapse" data-target=".method_getModelId .collapse">
+<h2>Retrieve the id of the model from this item.</h2>
+<pre>getModelId() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code></div>
+</div></div>
+</div>
+<a id="method_getParentId"></a><div class="element clickable method public method_getParentId" data-toggle="collapse" data-target=".method_getParentId .collapse">
+<h2>Retrieve the id of the parent model from this item.</h2>
+<pre>getParentId() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_isCopy"></a><div class="element clickable method public method_isCopy" data-toggle="collapse" data-target=".method_isCopy .collapse">
+<h2>Determine if the content in the clipboard shall be copied.</h2>
+<pre>isCopy() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isCreate"></a><div class="element clickable method public method_isCreate" data-toggle="collapse" data-target=".method_isCreate .collapse">
+<h2>Determine if the content in the clipboard is a new item to be created.</h2>
+<pre>isCreate() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isCut"></a><div class="element clickable method public method_isCut" data-toggle="collapse" data-target=".method_isCut .collapse">
+<h2>Determine if the content in the clipboard shall be cut.</h2>
+<pre>isCut() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_isDeepCopy"></a><div class="element clickable method public method_isDeepCopy" data-toggle="collapse" data-target=".method_isDeepCopy .collapse">
+<h2>Determine if the content in the clipboard shall be copied with all children.</h2>
+<pre>isDeepCopy() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_COPY"> </a><div class="element clickable constant  constant_COPY" data-toggle="collapse" data-target=".constant_COPY .collapse">
+<h2>Item is in copy action.</h2>
+<pre>COPY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CREATE"> </a><div class="element clickable constant  constant_CREATE" data-toggle="collapse" data-target=".constant_CREATE .collapse">
+<h2>Item is in create action.</h2>
+<pre>CREATE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CUT"> </a><div class="element clickable constant  constant_CUT" data-toggle="collapse" data-target=".constant_CUT .collapse">
+<h2>Item is in cut action.</h2>
+<pre>CUT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEEP_COPY"> </a><div class="element clickable constant  constant_DEEP_COPY" data-toggle="collapse" data-target=".constant_DEEP_COPY .collapse">
+<h2>Item is in deep copy action.</h2>
+<pre>DEEP_COPY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2014-11-19T17:13:25+01:00.<br></footer></div>
+</div>
+</body>
+</html>

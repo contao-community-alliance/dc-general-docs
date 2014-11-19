@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">124</span></a></li>
+                <span class="label label-info">162</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -80,6 +80,7 @@
 <li><a href="#GroupAndSortingDefinitionInterface" title="This interface defines a grouping and sorting information for the view.">GroupAndSortingDefinitionInterface</a></li>
 <li><a href="#LanguageInformationCollectionInterface" title="This represents an iterable collection of Model elements.">LanguageInformationCollectionInterface</a></li>
 <li><a href="#CollectionInterface" title="This interface represents an iterable collection of Model elements.">CollectionInterface</a></li>
+<li><a href="#SessionStorageInterface" title="The session storage.">SessionStorageInterface</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-class"></i> Classes</li>
 <li><a href="#PropertyConditionChain" title="A chain of property conditions.">PropertyConditionChain</a></li>
@@ -124,6 +125,13 @@ dump the result with a backtrace.">DumpingPropertyCondition</a></li>
 <li><a href="#PaletteFactory" title="The palette factory.">PaletteFactory</a></li>
 <li><a href="#DefaultPaletteCondition" title="Condition for the default palette.">DefaultPaletteCondition</a></li>
 <li><a href="#DcCompat" title='Small compatibility layer for callbacks, that expect a "full featured" DC instance.'>DcCompat</a></li>
+<li><a href="#DcGeneralViews" title="This class holds all build-in view names.">DcGeneralViews</a></li>
+<li><a href="#Item" title="{@inheritdoc}">Item</a></li>
+<li><a href="#SessionStorage" title="{@inheritdoc}">SessionStorage</a></li>
+<li><a href="#ViewHelpers" title="">ViewHelpers</a></li>
+<li><a href="#ClipboardView" title="Class ClipboardView">ClipboardView</a></li>
+<li><a href="#FormatModelLabelEvent" title="This event is emitted when the model label must be formatted.">FormatModelLabelEvent</a></li>
+<li><a href="#ViewEvent" title="This event occurs when a view should rendered.">ViewEvent</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_CURRENT_ID" title="CURRENT_ID() :: "><span class="description">CURRENT_ID</span><pre>CURRENT_ID</pre></a></li>
@@ -241,6 +249,20 @@ dump the result with a backtrace.">DumpingPropertyCondition</a></li>
 <div class="details collapse"></div>
 <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.VersionModelInterface.html" class="more">« More »</a>
 </div>
+<div id="SessionStorageInterface" class="element ajax clickable interface">
+<h1>SessionStorageInterface<a href="../classes/ContaoCommunityAlliance.DcGeneral.SessionStorageInterface.html">¶</a>
+</h1>
+<p class="short_description">The session storage.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.SessionStorageInterface.html" class="more">« More »</a>
+</div>
+<div id="Item" class="element ajax clickable class">
+<h1>Item<a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Item.html">¶</a>
+</h1>
+<p class="short_description">{@inheritdoc}</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Item.html" class="more">« More »</a>
+</div>
 <div id="ActiveRecord" class="element ajax clickable class">
 <h1>ActiveRecord<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Compatibility.ActiveRecord.html">¶</a>
 </h1>
@@ -276,12 +298,26 @@ dump the result with a backtrace.">DumpingPropertyCondition</a></li>
 <div class="details collapse"></div>
 <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html" class="more">« More »</a>
 </div>
+<div id="SessionStorage" class="element ajax clickable class">
+<h1>SessionStorage<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.SessionStorage.html">¶</a>
+</h1>
+<p class="short_description">{@inheritdoc}</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.SessionStorage.html" class="more">« More »</a>
+</div>
 <div id="DcGeneralExtension" class="element ajax clickable class">
 <h1>DcGeneralExtension<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html">¶</a>
 </h1>
 <p class="short_description">Extension for twig template engine.</p>
 <div class="details collapse"></div>
 <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.Twig.DcGeneralExtension.html" class="more">« More »</a>
+</div>
+<div id="ClipboardView" class="element ajax clickable class">
+<h1>ClipboardView<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ClipboardView.html">¶</a>
+</h1>
+<p class="short_description">Class ClipboardView</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ClipboardView.html" class="more">« More »</a>
 </div>
 <div id="TreePicker" class="element ajax clickable class">
 <h1>TreePicker<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.TreePicker.html">¶</a>
@@ -296,6 +332,13 @@ dump the result with a backtrace.">DumpingPropertyCondition</a></li>
 <p class="short_description">Class TreeSelect.</p>
 <div class="details collapse"></div>
 <a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.TreeSelect.html" class="more">« More »</a>
+</div>
+<div id="ViewHelpers" class="element ajax clickable class">
+<h1>ViewHelpers<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ViewHelpers.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.ViewHelpers.html" class="more">« More »</a>
 </div>
 <div id="Ajax" class="element ajax clickable class">
 <h1>Ajax<a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.Ajax.html">¶</a>
@@ -511,6 +554,27 @@ dump the result with a backtrace.</p>
 <div class="details collapse"></div>
 <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html" class="more">« More »</a>
 </div>
+<div id="DcGeneralViews" class="element ajax clickable class">
+<h1>DcGeneralViews<a href="../classes/ContaoCommunityAlliance.DcGeneral.DcGeneralViews.html">¶</a>
+</h1>
+<p class="short_description">This class holds all build-in view names.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.DcGeneralViews.html" class="more">« More »</a>
+</div>
+<div id="FormatModelLabelEvent" class="element ajax clickable class">
+<h1>FormatModelLabelEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.FormatModelLabelEvent.html">¶</a>
+</h1>
+<p class="short_description">This event is emitted when the model label must be formatted.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.FormatModelLabelEvent.html" class="more">« More »</a>
+</div>
+<div id="ViewEvent" class="element ajax clickable class">
+<h1>ViewEvent<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ViewEvent.html">¶</a>
+</h1>
+<p class="short_description">This event occurs when a view should rendered.</p>
+<div class="details collapse"></div>
+<a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ViewEvent.html" class="more">« More »</a>
+</div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
 <a id="constant_CURRENT_ID"> </a><div class="element clickable constant  constant_CURRENT_ID" data-toggle="collapse" data-target=".constant_CURRENT_ID .collapse">
@@ -526,7 +590,7 @@ dump the result with a backtrace.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-31T21:32:12+01:00.<br></footer></div>
+            generated on 2014-11-19T17:13:12+01:00.<br></footer></div>
 </div>
 </body>
 </html>

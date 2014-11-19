@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">124</span></a></li>
+                <span class="label label-info">162</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -70,6 +70,7 @@
 <li class="method public "><a href="#method_getInputProvider" title="getInputProvider() :: Retrieve the input provider."><span class="description">Retrieve the input provider.</span><pre>getInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_getParentDataDefinition" title="getParentDataDefinition() :: Retrieve the data definition for the parent container. This applies only when in parented mode."><span class="description">Retrieve the data definition for the parent container. This applies only when in parented mode.</span><pre>getParentDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_getRootDataDefinition" title="getRootDataDefinition() :: Retrieve the data definition for the root container. This applies only when in hierarchical mode."><span class="description">Retrieve the data definition for the root container. This applies only when in hierarchical mode.</span><pre>getRootDataDefinition()</pre></a></li>
+<li class="method public "><a href="#method_getSessionStorage" title="getSessionStorage() :: Retrieve the session storage."><span class="description">Retrieve the session storage.</span><pre>getSessionStorage()</pre></a></li>
 <li class="method public "><a href="#method_getTranslator" title="getTranslator() :: Retrieve the translation manager to use."><span class="description">Retrieve the translation manager to use.</span><pre>getTranslator()</pre></a></li>
 <li class="method public "><a href="#method_getView" title="getView() :: Retrieve the View from the current setup."><span class="description">Retrieve the View from the current setup.</span><pre>getView()</pre></a></li>
 <li class="method public "><a href="#method_hasDataProvider" title="hasDataProvider() :: Determine if the data provider with the given name exists."><span class="description">Determine if the data provider with the given name exists.</span><pre>hasDataProvider()</pre></a></li>
@@ -82,6 +83,7 @@
 <li class="method public "><a href="#method_setInputProvider" title="setInputProvider() :: Set the input provider to use."><span class="description">Set the input provider to use.</span><pre>setInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_setParentDataDefinition" title="setParentDataDefinition() :: Set the data definition of the parent container."><span class="description">Set the data definition of the parent container.</span><pre>setParentDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_setRootDataDefinition" title="setRootDataDefinition() :: Set the data definition of the root container."><span class="description">Set the data definition of the root container.</span><pre>setRootDataDefinition()</pre></a></li>
+<li class="method public "><a href="#method_setSessionStorage" title="setSessionStorage() :: Set the session storage to use."><span class="description">Set the session storage to use.</span><pre>setSessionStorage()</pre></a></li>
 <li class="method public "><a href="#method_setTranslator" title="setTranslator() :: Set the translation manager to use."><span class="description">Set the translation manager to use.</span><pre>setTranslator()</pre></a></li>
 <li class="method public "><a href="#method_setView" title="setView() :: Set the View for the current setup."><span class="description">Set the View for the current setup.</span><pre>setView()</pre></a></li>
 </ul>
@@ -227,6 +229,16 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.ContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface</a></code></div>
+</div></div>
+</div>
+<a id="method_getSessionStorage"></a><div class="element clickable method public method_getSessionStorage" data-toggle="collapse" data-target=".method_getSessionStorage .collapse">
+<h2>Retrieve the session storage.</h2>
+<pre>getSessionStorage() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.SessionStorageInterface.html">\ContaoCommunityAlliance\DcGeneral\SessionStorageInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.SessionStorageInterface.html">\ContaoCommunityAlliance\DcGeneral\SessionStorageInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator" data-toggle="collapse" data-target=".method_getTranslator .collapse">
@@ -394,6 +406,20 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_setSessionStorage"></a><div class="element clickable method public method_setSessionStorage" data-toggle="collapse" data-target=".method_setSessionStorage .collapse">
+<h2>Set the session storage to use.</h2>
+<pre>setSessionStorage(\ContaoCommunityAlliance\DcGeneral\SessionStorageInterface $sessionStorage) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sessionStorage</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.SessionStorageInterface.html">\ContaoCommunityAlliance\DcGeneral\SessionStorageInterface</a></code><p>The session storage to use.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
+</div></div>
+</div>
 <a id="method_setTranslator"></a><div class="element clickable method public method_setTranslator" data-toggle="collapse" data-target=".method_setTranslator .collapse">
 <h2>Set the translation manager to use.</h2>
 <pre>setTranslator(\ContaoCommunityAlliance\Translator\TranslatorInterface $manager) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
@@ -430,7 +456,7 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-10-31T21:32:17+01:00.<br></footer></div>
+            generated on 2014-11-19T17:13:17+01:00.<br></footer></div>
 </div>
 </body>
 </html>
