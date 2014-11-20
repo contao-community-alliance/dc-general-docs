@@ -40,7 +40,7 @@
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">162</span></a></li>
+                <span class="label label-info">124</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -75,7 +75,6 @@
 <li><a href="#Contao/View/Contao2BackendView/TreeView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/TreeView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/ParentView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/ParentView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/EditMask.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/EditMask.php</a></li>
-<li><a href="#Clipboard/Clipboard.php"><i class="icon-file"></i>Clipboard/Clipboard.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -121,7 +120,7 @@
 </div>
 <div class="package-contents">
 <a name="Controller/DefaultController.php" id="Controller/DefaultController.php"></a><h3>
-<i class="icon-file"></i>Controller/DefaultController.php<small style="float: right;padding-right: 10px;">3</small>
+<i class="icon-file"></i>Controller/DefaultController.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -131,17 +130,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>264</td>
+<td>263</td>
 <td>This might return a lot of models, we definately want to use some lazy approach rather than this.</td>
 </tr>
 <tr>
-<td>fixme</td>
-<td>116</td>
-<td>can we stop propagate with eventName[x][y] syntax here?</td>
-</tr>
-<tr>
 <td>todo</td>
-<td>299</td>
+<td>298</td>
 <td>TL dnk how to handle this without highjacking the view.</td>
 </tr>
 </table></div>
@@ -307,52 +301,52 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>380</td>
+<td>414</td>
 <td>refactor foreignKey is yet undefined.</td>
 </tr>
 <tr>
-<td>todo</td>
-<td>577</td>
-<td>remove clear and allow adding multiple items</td>
+<td>fixme</td>
+<td>598</td>
+<td>this can return ids originating from another data provider, we have to alter this to</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>651</td>
+<td>721</td>
 <td>copy unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>665</td>
+<td>735</td>
 <td>copyAll unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>740</td>
+<td>810</td>
 <td>cutAll unimplemented.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>903</td>
+<td>973</td>
 <td>recursive copy is not implemented yet!</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1008</td>
+<td>1078</td>
 <td>See DefaultController::delete() - we need to delete the children of this item as well over all data providers.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1067</td>
+<td>1137</td>
 <td>move unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1080</td>
+<td>1150</td>
 <td>undo unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1739</td>
+<td>1807</td>
 <td>Shall we interface this option?</td>
 </tr>
 </table></div>
@@ -430,7 +424,7 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>712</td>
+<td>711</td>
 <td>hardcoded sorting... NOT GOOD!</td>
 </tr>
 </table></div>
@@ -491,27 +485,27 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>206</td>
+<td>204</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>280</td>
+<td>278</td>
 <td>hardcoded sorting... NOT GOOD!</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>459</td>
+<td>457</td>
 <td>add real tree mode here - intMode.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>471</td>
+<td>469</td>
 <td>add real tree mode here.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>653</td>
+<td>651</td>
 <td>set real tree mode here.</td>
 </tr>
 </table></div>
@@ -528,12 +522,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>110</td>
+<td>106</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>249</td>
+<td>245</td>
 <td>foreignKey is not implemented yet.</td>
 </tr>
 </table></div>
@@ -555,28 +549,6 @@
 </tr>
 </table></div>
 </div>
-<div class="package-contents">
-<a name="Clipboard/Clipboard.php" id="Clipboard/Clipboard.php"></a><h3>
-<i class="icon-file"></i>Clipboard/Clipboard.php<small style="float: right;padding-right: 10px;">2</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>fixme</td>
-<td>40</td>
-<td>use another serialisation method</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>52</td>
-<td>use another serialisation method</td>
-</tr>
-</table></div>
-</div>
 </div>
 </div>
 </div>
@@ -584,7 +556,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-11-19T17:13:26+01:00.<br></footer></div>
+            generated on 2014-11-20T08:56:25+01:00.<br></footer></div>
 </div>
 </body>
 </html>

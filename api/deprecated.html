@@ -40,7 +40,7 @@
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">162</span></a></li>
+                <span class="label label-info">124</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,11 +62,9 @@
 <li><a href="#DC_General.php"><i class="icon-file"></i>DC_General.php</a></li>
 <li><a href="#DataDefinition/Palette/PaletteCollectionInterface.php"><i class="icon-file"></i>DataDefinition/Palette/PaletteCollectionInterface.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/Event/GetPasteButtonEvent.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/Event/GetPasteButtonEvent.php</a></li>
-<li><a href="#InputProviderInterface.php"><i class="icon-file"></i>InputProviderInterface.php</a></li>
 <li><a href="#Controller/Ajax.php"><i class="icon-file"></i>Controller/Ajax.php</a></li>
 <li><a href="#EnvironmentInterface.php"><i class="icon-file"></i>EnvironmentInterface.php</a></li>
 <li><a href="#DataDefinition/Palette/Palette.php"><i class="icon-file"></i>DataDefinition/Palette/Palette.php</a></li>
-<li><a href="#Clipboard/ClipboardInterface.php"><i class="icon-file"></i>Clipboard/ClipboardInterface.php</a></li>
 <li><a href="#DefaultEnvironment.php"><i class="icon-file"></i>DefaultEnvironment.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/ContaoWidgetManager.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/ContaoWidgetManager.php</a></li>
 <li><a href="#DataDefinition/Definition/BasicDefinitionInterface.php"><i class="icon-file"></i>DataDefinition/Definition/BasicDefinitionInterface.php</a></li>
@@ -84,7 +82,6 @@
 <li><a href="#DataDefinition/Palette/PaletteFactory.php"><i class="icon-file"></i>DataDefinition/Palette/PaletteFactory.php</a></li>
 <li><a href="#Data/CollectionInterface.php"><i class="icon-file"></i>Data/CollectionInterface.php</a></li>
 <li><a href="#Factory/DcGeneralFactory.php"><i class="icon-file"></i>Factory/DcGeneralFactory.php</a></li>
-<li><a href="#Clipboard/Clipboard.php"><i class="icon-file"></i>Clipboard/Clipboard.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -355,52 +352,52 @@
 </tr>
 <tr>
 <td>deprecated</td>
-<td>153</td>
+<td>151</td>
 <td>magic access is deprecated.</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>244</td>
+<td>242</td>
 <td>Only here as requirement of \editable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>256</td>
+<td>254</td>
 <td>Only here as requirement of \editable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>268</td>
+<td>266</td>
 <td>Only here as requirement of \editable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>280</td>
+<td>278</td>
 <td>Only here as requirement of \listable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>292</td>
+<td>290</td>
 <td>Only here as requirement of \editable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>304</td>
+<td>302</td>
 <td>Only here as requirement of \editable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>316</td>
+<td>314</td>
 <td>Only here as requirement of \listable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>328</td>
+<td>326</td>
 <td>Only here as requirement of \listable</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>340</td>
+<td>338</td>
 <td>Only here as requirement of \listable</td>
 </tr>
 </table></div>
@@ -439,31 +436,6 @@
 <td>Use isCircularReference().</td>
 </tr>
 </table></div>
-<a name="InputProviderInterface.php" id="InputProviderInterface.php"></a><h3>
-<i class="icon-file"></i>InputProviderInterface.php<small style="float: right;padding-right: 10px;">3</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>134</td>
-<td>Use Environment::getSessionStorage()->get() instead.</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>149</td>
-<td>Use Environment::getSessionStorage()->set() instead.</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>162</td>
-<td>Use Environment::getSessionStorage()->has() instead.</td>
-</tr>
-</table></div>
 <a name="Controller/Ajax.php" id="Controller/Ajax.php"></a><h3>
 <i class="icon-file"></i>Controller/Ajax.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
@@ -500,13 +472,13 @@
 </tr>
 <tr>
 <td>deprecated</td>
-<td>231</td>
+<td>215</td>
 <td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
             listener if you want to handle the event.</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>241</td>
+<td>225</td>
 <td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
             listener if you want to handle the event.</td>
 </tr>
@@ -526,91 +498,6 @@
 <td>Only for backwards compatibility, we will remove palette names in the future!</td>
 </tr>
 </table></div>
-<a name="Clipboard/ClipboardInterface.php" id="Clipboard/ClipboardInterface.php"></a><h3>
-<i class="icon-file"></i>Clipboard/ClipboardInterface.php<small style="float: right;padding-right: 10px;">15</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>123</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>130</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>137</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>146</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>155</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>164</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>175</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>186</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>197</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>208</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>217</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>228</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>237</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>246</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>257</td>
-<td></td>
-</tr>
-</table></div>
 <a name="DefaultEnvironment.php" id="DefaultEnvironment.php"></a><h3>
 <i class="icon-file"></i>DefaultEnvironment.php<small style="float: right;padding-right: 10px;">7</small>
 </h3>
@@ -622,38 +509,38 @@
 </tr>
 <tr>
 <td>deprecated</td>
-<td>316</td>
+<td>291</td>
 <td>Use getDataProvider() instead!</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>336</td>
+<td>311</td>
 <td>Use addDataProvider() instead!</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>357</td>
+<td>332</td>
 <td>use removeDataProvider() instead!</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>379</td>
+<td>354</td>
 <td>use the proper interface in the view!</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>406</td>
+<td>381</td>
 <td>use the proper interface in the view!</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>469</td>
+<td>444</td>
 <td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
             listener if you want to handle the event.</td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>483</td>
+<td>458</td>
 <td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
             listener if you want to handle the event.</td>
 </tr>
@@ -834,7 +721,7 @@
 </tr>
 </table></div>
 <a name="Contao/View/Contao2BackendView/BaseView.php" id="Contao/View/Contao2BackendView/BaseView.php"></a><h3>
-<i class="icon-file"></i>Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">6</small>
+<i class="icon-file"></i>Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -844,32 +731,12 @@
 </tr>
 <tr>
 <td>deprecated</td>
-<td>1275</td>
+<td>1345</td>
 <td></td>
 </tr>
 <tr>
 <td>deprecated</td>
-<td>2121</td>
-<td>Dispatch a FormatModelLabelEvent instead!</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>2144</td>
-<td>Use ViewHelpers::getReadableFieldValue($environment, $property, $model, $value) instead!</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>326</td>
-<td>Use ViewHelpers::getCurrentSorting($environment) instead!</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>340</td>
-<td>Use ViewHelpers::getGroupingMode($environment) instead!</td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>606</td>
+<td>676</td>
 <td>Use AbstractHandler::checkLanguage instead.</td>
 </tr>
 </table></div>
@@ -1126,96 +993,6 @@
             listener if you want to handle the event.</td>
 </tr>
 </table></div>
-<a name="Clipboard/Clipboard.php" id="Clipboard/Clipboard.php"></a><h3>
-<i class="icon-file"></i>Clipboard/Clipboard.php<small style="float: right;padding-right: 10px;">16</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>192</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>201</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>210</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>219</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>226</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>236</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>246</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>256</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>274</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>292</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>307</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>319</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>329</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>341</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>351</td>
-<td></td>
-</tr>
-<tr>
-<td>deprecated</td>
-<td>361</td>
-<td></td>
-</tr>
-</table></div>
 </div>
 </div>
 </div>
@@ -1223,7 +1000,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-11-19T17:13:26+01:00.<br></footer></div>
+            generated on 2014-11-20T08:56:25+01:00.<br></footer></div>
 </div>
 </body>
 </html>

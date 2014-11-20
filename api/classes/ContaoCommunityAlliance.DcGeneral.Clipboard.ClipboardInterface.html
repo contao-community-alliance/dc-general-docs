@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">162</span></a></li>
+                <span class="label label-info">124</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -61,11 +61,10 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_clear" title="clear() :: Clear the complete clipboard."><span class="description">Clear the complete clipboard.</span><pre>clear()</pre></a></li>
+<li class="method public "><a href="#method_clear" title="clear() :: Clear the content of the clipboard."><span class="description">Clear the content of the clipboard.</span><pre>clear()</pre></a></li>
 <li class="method public "><a href="#method_copy" title="copy() :: Set the clipboard to copy mode and copy the given ids."><span class="description">Set the clipboard to copy mode and copy the given ids.</span><pre>copy()</pre></a></li>
 <li class="method public "><a href="#method_create" title="create() :: Set the clipboard to create mode for a child of the given parent data set."><span class="description">Set the clipboard to create mode for a child of the given parent data set.</span><pre>create()</pre></a></li>
 <li class="method public "><a href="#method_cut" title="cut() :: Set the clipboard to cut mode and cut the given ids."><span class="description">Set the clipboard to cut mode and cut the given ids.</span><pre>cut()</pre></a></li>
-<li class="method public "><a href="#method_fetch" title="fetch() :: Get all items from the clipboard."><span class="description">Get all items from the clipboard.</span><pre>fetch()</pre></a></li>
 <li class="method public "><a href="#method_getCircularIds" title="getCircularIds() :: Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting."><span class="description">Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting.</span><pre>getCircularIds()</pre></a></li>
 <li class="method public "><a href="#method_getContainedIds" title="getContainedIds() :: Retrieve the ids contained in the clipboard."><span class="description">Retrieve the ids contained in the clipboard.</span><pre>getContainedIds()</pre></a></li>
 <li class="method public "><a href="#method_getMode" title="getMode() :: Retrieve the current mode of the clipboard."><span class="description">Retrieve the current mode of the clipboard.</span><pre>getMode()</pre></a></li>
@@ -76,8 +75,6 @@
 <li class="method public "><a href="#method_isEmpty" title="isEmpty() :: Determine if the clipboard is empty."><span class="description">Determine if the clipboard is empty.</span><pre>isEmpty()</pre></a></li>
 <li class="method public "><a href="#method_isNotEmpty" title="isNotEmpty() :: Determine if the clipboard is not empty."><span class="description">Determine if the clipboard is not empty.</span><pre>isNotEmpty()</pre></a></li>
 <li class="method public "><a href="#method_loadFrom" title="loadFrom() :: Load the content of the clipboard from the input provider stored in the environment."><span class="description">Load the content of the clipboard from the input provider stored in the environment.</span><pre>loadFrom()</pre></a></li>
-<li class="method public "><a href="#method_push" title="push() :: Push an item to the clipboard."><span class="description">Push an item to the clipboard.</span><pre>push()</pre></a></li>
-<li class="method public "><a href="#method_remove" title="remove() :: Remove an item from the clipboard."><span class="description">Remove an item from the clipboard.</span><pre>remove()</pre></a></li>
 <li class="method public "><a href="#method_saveTo" title="saveTo() :: Save the content of the clipboard to the input provider stored in the environment."><span class="description">Save the content of the clipboard to the input provider stored in the environment.</span><pre>saveTo()</pre></a></li>
 <li class="method public "><a href="#method_setCircularIds" title="setCircularIds() :: Set the ids ignored in the clipboard as they would create a circular reference when pasting."><span class="description">Set the ids ignored in the clipboard as they would create a circular reference when pasting.</span><pre>setCircularIds()</pre></a></li>
 <li class="method public "><a href="#method_setContainedIds" title="setContainedIds() :: Set the ids contained in the clipboard."><span class="description">Set the ids contained in the clipboard.</span><pre>setContainedIds()</pre></a></li>
@@ -121,13 +118,13 @@ The implementing class will store the values persistent to the input provider st
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_clear"></a><div class="element clickable method public method_clear" data-toggle="collapse" data-target=".method_clear .collapse">
-<h2>Clear the complete clipboard.</h2>
-<pre>clear() : static</pre>
+<h2>Clear the content of the clipboard.</h2>
+<pre>clear() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>static</code></div>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
@@ -136,10 +133,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$ids</h4>
@@ -154,10 +147,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$parentId</h4>
@@ -172,10 +161,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$ids</h4>
@@ -184,39 +169,12 @@ The implementing class will store the values persistent to the input provider st
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
-<h2>Get all items from the clipboard.</h2>
-<pre>fetch(string|null $modelProviderName, string|null|bool $parentProviderName, string|null|bool $parentModelId) : <a href="ItemInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface[]</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$modelProviderName</h4>
-<code>string</code><code>null</code><p>If given, only return items that contain model IDs that are derived
-                                            from this provider.</p></div>
-<div class="subelement argument">
-<h4>$parentProviderName</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, only return items that have this parent provider name.
-                                            Use null for items without a parent.</p></div>
-<div class="subelement argument">
-<h4>$parentModelId</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, only return items that have this parent model id.
-                                            Use null for items without a parent.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="ItemInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface[]</a></code></div>
-</div></div>
-</div>
 <a id="method_getCircularIds"></a><div class="element clickable method public method_getCircularIds" data-toggle="collapse" data-target=".method_getCircularIds .collapse">
 <h2>Retrieve the ids ignored in the clipboard as they would create a circular reference when pasting.</h2>
 <pre>getCircularIds() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -227,10 +185,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -241,10 +195,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>string</code>Either cut|paste|mode</div>
@@ -256,10 +206,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This is only valid in create mode.</div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>null</code><code>string</code>
@@ -272,10 +218,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -286,10 +228,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -300,63 +238,33 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_isEmpty"></a><div class="element clickable method public method_isEmpty" data-toggle="collapse" data-target=".method_isEmpty .collapse">
 <h2>Determine if the clipboard is empty.</h2>
-<pre>isEmpty(string|null $modelProviderName, string|null|bool $parentProviderName, string|null|bool $parentModelId) : bool</pre>
+<pre>isEmpty() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$modelProviderName</h4>
-<code>string</code><code>null</code><p>If given, check for items that contain model IDs that are derived
-                                            from this model provider.</p></div>
-<div class="subelement argument">
-<h4>$parentProviderName</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, check for items that have this parent provider name.
-                                            Use null for items without a parent.</p></div>
-<div class="subelement argument">
-<h4>$parentModelId</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, check for items that have this parent model id.
-                                            Use null for items without a parent.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_isNotEmpty"></a><div class="element clickable method public method_isNotEmpty" data-toggle="collapse" data-target=".method_isNotEmpty .collapse">
 <h2>Determine if the clipboard is not empty.</h2>
-<pre>isNotEmpty(string|null $modelProviderName, string|null|bool $parentProviderName, string|null|bool $parentModelId) : bool</pre>
+<pre>isNotEmpty() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$modelProviderName</h4>
-<code>string</code><code>null</code><p>If given, check for items that contain model IDs that are derived
-                                            from this model provider.</p></div>
-<div class="subelement argument">
-<h4>$parentProviderName</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, check for items that have this parent provider name.
-                                            Use null for items without a parent.</p></div>
-<div class="subelement argument">
-<h4>$parentModelId</h4>
-<code>string</code><code>null</code><code>bool</code><p>If given, check for items that have this parent model id.
-                                            Use null for items without a parent.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_loadFrom"></a><div class="element clickable method public method_loadFrom" data-toggle="collapse" data-target=".method_loadFrom .collapse">
 <h2>Load the content of the clipboard from the input provider stored in the environment.</h2>
-<pre>loadFrom(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : static</pre>
+<pre>loadFrom(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -366,40 +274,12 @@ The implementing class will store the values persistent to the input provider st
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment where the input provider will retrieve the
                                             values from.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>static</code></div>
-</div></div>
-</div>
-<a id="method_push"></a><div class="element clickable method public method_push" data-toggle="collapse" data-target=".method_push .collapse">
-<h2>Push an item to the clipboard.</h2>
-<pre>push(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item) : static</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$item</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ItemInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface</a></code><p>The item.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>static</code></div>
-</div></div>
-</div>
-<a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
-<h2>Remove an item from the clipboard.</h2>
-<pre>remove(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item) : static</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$item</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ItemInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface</a></code><p>The item.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>static</code></div>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_saveTo"></a><div class="element clickable method public method_saveTo" data-toggle="collapse" data-target=".method_saveTo .collapse">
 <h2>Save the content of the clipboard to the input provider stored in the environment.</h2>
-<pre>saveTo(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : static</pre>
+<pre>saveTo(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $objEnvironment) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -409,7 +289,7 @@ The implementing class will store the values persistent to the input provider st
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment where the input provider will store the
                                             values to.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>static</code></div>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ClipboardInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ClipboardInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_setCircularIds"></a><div class="element clickable method public method_setCircularIds" data-toggle="collapse" data-target=".method_setCircularIds .collapse">
@@ -418,10 +298,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$arrIds</h4>
@@ -436,10 +312,6 @@ The implementing class will store the values persistent to the input provider st
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$arrIds</h4>
@@ -454,37 +326,19 @@ The implementing class will store the values persistent to the input provider st
 <h2>Clipboard is in copy mode.</h2>
 <pre>MODE_COPY </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="constant_MODE_CREATE"> </a><div class="element clickable constant  constant_MODE_CREATE" data-toggle="collapse" data-target=".constant_MODE_CREATE .collapse">
 <h2>Clipboard is in create mode.</h2>
 <pre>MODE_CREATE </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="constant_MODE_CUT"> </a><div class="element clickable constant  constant_MODE_CUT" data-toggle="collapse" data-target=".constant_MODE_CUT .collapse">
 <h2>Clipboard is in cut mode.</h2>
 <pre>MODE_CUT </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td></td>
-</tr></table>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 </div>
 </div>
@@ -494,7 +348,7 @@ The implementing class will store the values persistent to the input provider st
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-11-19T17:13:18+01:00.<br></footer></div>
+            generated on 2014-11-20T08:56:18+01:00.<br></footer></div>
 </div>
 </body>
 </html>
