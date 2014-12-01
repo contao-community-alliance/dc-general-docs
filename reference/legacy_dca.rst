@@ -128,6 +128,7 @@ This is a full **legacy dca** reference example with all known keys and example 
                 'panelLayout'           => 'filter;search,limit',
                 'fields'                => array('published DESC', 'title', 'author'),
                 'headerFields'          => array('title', 'headline', 'author', 'inColumn', 'tstamp', 'showTeaser', 'published', 'start', 'stop'),
+                'header_callback'       => array('<class name>', '<method name>'),
                 'icon'                  => 'path/to/icon.png',
                 'root'                  => 6,
                 'filter'                => array(array('status=?', 'active')),

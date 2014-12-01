@@ -749,6 +749,7 @@ DCA mapping reference
 |                 'panelLayout'           => 'filter;search,limit',                      |    -> `Panel layout mapping`_               |
 |                 'fields'                => array('published DESC', 'title', 'author'), |    -> `Listing mapping`_                    |
 |                 'headerFields'          => array('title', 'headline', 'author'),       |       ^                                     |
+|                 'header_callback'       => array('<class name>', '<method name>'),     |       ^                                     |
 |                 'icon'                  => 'path/to/icon.png',                         |       ^                                     |
 |                 'root'                  => 6,                                          |    ->                                       |
 |                 'filter'                => array(array('status=?', 'active')),         |    ->                                       |
