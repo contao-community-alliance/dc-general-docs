@@ -1,0 +1,1039 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Clipboard\Filter</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">94</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_accepts" title="accepts() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>accepts()</pre></a></li>
+<li class="method public "><a href="#method_andActionIs" title="andActionIs() :: And action is."><span class="description">And action is.</span><pre>andActionIs()</pre></a></li>
+<li class="method public "><a href="#method_andActionIsIn" title="andActionIsIn() :: And action is in."><span class="description">And action is in.</span><pre>andActionIsIn()</pre></a></li>
+<li class="method public "><a href="#method_andActionIsNot" title="andActionIsNot() :: And action is."><span class="description">And action is.</span><pre>andActionIsNot()</pre></a></li>
+<li class="method public "><a href="#method_andActionIsNotIn" title="andActionIsNotIn() :: And action is not in."><span class="description">And action is not in.</span><pre>andActionIsNotIn()</pre></a></li>
+<li class="method public "><a href="#method_andHasNoParent" title="andHasNoParent() :: And has no parent."><span class="description">And has no parent.</span><pre>andHasNoParent()</pre></a></li>
+<li class="method public "><a href="#method_andModelIs" title="andModelIs() :: And model is."><span class="description">And model is.</span><pre>andModelIs()</pre></a></li>
+<li class="method public "><a href="#method_andModelIsFromProvider" title="andModelIsFromProvider() :: And model is from provider."><span class="description">And model is from provider.</span><pre>andModelIsFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_andModelIsNot" title="andModelIsNot() :: And model is not."><span class="description">And model is not.</span><pre>andModelIsNot()</pre></a></li>
+<li class="method public "><a href="#method_andModelIsNotFromProvider" title="andModelIsNotFromProvider() :: And model is not from provider."><span class="description">And model is not from provider.</span><pre>andModelIsNotFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_andParentIs" title="andParentIs() :: And parent is."><span class="description">And parent is.</span><pre>andParentIs()</pre></a></li>
+<li class="method public "><a href="#method_andParentIsFromProvider" title="andParentIsFromProvider() :: And parent is from provider."><span class="description">And parent is from provider.</span><pre>andParentIsFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_andParentIsIn" title="andParentIsIn() :: And parent is in."><span class="description">And parent is in.</span><pre>andParentIsIn()</pre></a></li>
+<li class="method public "><a href="#method_andParentIsNot" title="andParentIsNot() :: And parent is not."><span class="description">And parent is not.</span><pre>andParentIsNot()</pre></a></li>
+<li class="method public "><a href="#method_andParentIsNotFromProvider" title="andParentIsNotFromProvider() :: And parent is not from provider."><span class="description">And parent is not from provider.</span><pre>andParentIsNotFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_andParentIsNotIn" title="andParentIsNotIn() :: And parent is not in."><span class="description">And parent is not in.</span><pre>andParentIsNotIn()</pre></a></li>
+<li class="method public "><a href="#method_andSub" title="andSub() :: And sub filter."><span class="description">And sub filter.</span><pre>andSub()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Factory method."><span class="description">Factory method.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_getExpression" title="getExpression() :: Return the expression."><span class="description">Return the expression.</span><pre>getExpression()</pre></a></li>
+<li class="method public "><a href="#method_getVariables" title="getVariables() :: Return the variables."><span class="description">Return the variables.</span><pre>getVariables()</pre></a></li>
+<li class="method public "><a href="#method_orActionIs" title="orActionIs() :: Or action is."><span class="description">Or action is.</span><pre>orActionIs()</pre></a></li>
+<li class="method public "><a href="#method_orActionIsIn" title="orActionIsIn() :: Or action is in."><span class="description">Or action is in.</span><pre>orActionIsIn()</pre></a></li>
+<li class="method public "><a href="#method_orActionIsNot" title="orActionIsNot() :: Or action is."><span class="description">Or action is.</span><pre>orActionIsNot()</pre></a></li>
+<li class="method public "><a href="#method_orActionIsNotIn" title="orActionIsNotIn() :: Or action is not in."><span class="description">Or action is not in.</span><pre>orActionIsNotIn()</pre></a></li>
+<li class="method public "><a href="#method_orHasNoParent" title="orHasNoParent() :: Or has no parent."><span class="description">Or has no parent.</span><pre>orHasNoParent()</pre></a></li>
+<li class="method public "><a href="#method_orModelIs" title="orModelIs() :: Or model is."><span class="description">Or model is.</span><pre>orModelIs()</pre></a></li>
+<li class="method public "><a href="#method_orModelIsFromProvider" title="orModelIsFromProvider() :: Or model is from provider."><span class="description">Or model is from provider.</span><pre>orModelIsFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_orModelIsNot" title="orModelIsNot() :: Or model is not."><span class="description">Or model is not.</span><pre>orModelIsNot()</pre></a></li>
+<li class="method public "><a href="#method_orModelIsNotFromProvider" title="orModelIsNotFromProvider() :: Or model is not from provider."><span class="description">Or model is not from provider.</span><pre>orModelIsNotFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_orParentIs" title="orParentIs() :: Or parent is."><span class="description">Or parent is.</span><pre>orParentIs()</pre></a></li>
+<li class="method public "><a href="#method_orParentIsFromProvider" title="orParentIsFromProvider() :: Or parent is from provider."><span class="description">Or parent is from provider.</span><pre>orParentIsFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_orParentIsIn" title="orParentIsIn() :: Or parent is in."><span class="description">Or parent is in.</span><pre>orParentIsIn()</pre></a></li>
+<li class="method public "><a href="#method_orParentIsNot" title="orParentIsNot() :: Or parent is not."><span class="description">Or parent is not.</span><pre>orParentIsNot()</pre></a></li>
+<li class="method public "><a href="#method_orParentIsNotFromProvider" title="orParentIsNotFromProvider() :: Or parent is not from provider."><span class="description">Or parent is not from provider.</span><pre>orParentIsNotFromProvider()</pre></a></li>
+<li class="method public "><a href="#method_orParentIsNotIn" title="orParentIsNotIn() :: Or parent is not in."><span class="description">Or parent is not in.</span><pre>orParentIsNotIn()</pre></a></li>
+<li class="method public "><a href="#method_orSub" title="orSub() :: Or sub filter."><span class="description">Or sub filter.</span><pre>orSub()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_actionIs" title="actionIs() :: Add action is."><span class="description">Add action is.</span><pre>actionIs()</pre></a></li>
+<li class="method private "><a href="#method_actionIsIn" title="actionIsIn() :: Add action is in."><span class="description">Add action is in.</span><pre>actionIsIn()</pre></a></li>
+<li class="method private "><a href="#method_actionIsNot" title="actionIsNot() :: Add action is."><span class="description">Add action is.</span><pre>actionIsNot()</pre></a></li>
+<li class="method private "><a href="#method_actionIsNotIn" title="actionIsNotIn() :: Add action is not in."><span class="description">Add action is not in.</span><pre>actionIsNotIn()</pre></a></li>
+<li class="method private "><a href="#method_hasNoParent" title="hasNoParent() :: Add has no parent."><span class="description">Add has no parent.</span><pre>hasNoParent()</pre></a></li>
+<li class="method private "><a href="#method_modelIs" title="modelIs() :: Add model is."><span class="description">Add model is.</span><pre>modelIs()</pre></a></li>
+<li class="method private "><a href="#method_modelIsFromProvider" title="modelIsFromProvider() :: Add model is from provider fragment."><span class="description">Add model is from provider fragment.</span><pre>modelIsFromProvider()</pre></a></li>
+<li class="method private "><a href="#method_modelIsNot" title="modelIsNot() :: Add model is not."><span class="description">Add model is not.</span><pre>modelIsNot()</pre></a></li>
+<li class="method private "><a href="#method_modelIsNotFromProvider" title="modelIsNotFromProvider() :: Add model is not from provider."><span class="description">Add model is not from provider.</span><pre>modelIsNotFromProvider()</pre></a></li>
+<li class="method private "><a href="#method_parentIs" title="parentIs() :: Add parent is."><span class="description">Add parent is.</span><pre>parentIs()</pre></a></li>
+<li class="method private "><a href="#method_parentIsFromProvider" title="parentIsFromProvider() :: Add parent is from provider."><span class="description">Add parent is from provider.</span><pre>parentIsFromProvider()</pre></a></li>
+<li class="method private "><a href="#method_parentIsIn" title="parentIsIn() :: Add parent is in."><span class="description">Add parent is in.</span><pre>parentIsIn()</pre></a></li>
+<li class="method private "><a href="#method_parentIsNot" title="parentIsNot() :: Add parent is not."><span class="description">Add parent is not.</span><pre>parentIsNot()</pre></a></li>
+<li class="method private "><a href="#method_parentIsNotFromProvider" title="parentIsNotFromProvider() :: And parent is not from provider."><span class="description">And parent is not from provider.</span><pre>parentIsNotFromProvider()</pre></a></li>
+<li class="method private "><a href="#method_parentIsNotIn" title="parentIsNotIn() :: Add parent is not in."><span class="description">Add parent is not in.</span><pre>parentIsNotIn()</pre></a></li>
+<li class="method private "><a href="#method_sub" title="sub() :: Add sub filter."><span class="description">Add sub filter.</span><pre>sub()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_compiled" title="$compiled() :: Pre-compiled expression."><span class="description"></span><pre>$compiled</pre></a></li>
+<li class="property private "><a href="#property_expression" title="$expression() :: The expression parts."><span class="description"></span><pre>$expression</pre></a></li>
+<li class="property private "><a href="#property_variables" title="$variables() :: The expression variables."><span class="description"></span><pre>$variables</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_ACTION_IS_EXPRESSION" title="ACTION_IS_EXPRESSION() :: "><span class="description">ACTION_IS_EXPRESSION</span><pre>ACTION_IS_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_ACTION_IS_NOT_EXPRESSION" title="ACTION_IS_NOT_EXPRESSION() :: "><span class="description">ACTION_IS_NOT_EXPRESSION</span><pre>ACTION_IS_NOT_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_HAS_NO_PARENT_EXPRESSION" title="HAS_NO_PARENT_EXPRESSION() :: "><span class="description">HAS_NO_PARENT_EXPRESSION</span><pre>HAS_NO_PARENT_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_EXPRESSION" title="MODEL_IS_EXPRESSION() :: "><span class="description">MODEL_IS_EXPRESSION</span><pre>MODEL_IS_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_FROM_PROVIDER_EXPRESSION" title="MODEL_IS_FROM_PROVIDER_EXPRESSION() :: "><span class="description">MODEL_IS_FROM_PROVIDER_EXPRESSION</span><pre>MODEL_IS_FROM_PROVIDER_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_NOT_EXPRESSION" title="MODEL_IS_NOT_EXPRESSION() :: "><span class="description">MODEL_IS_NOT_EXPRESSION</span><pre>MODEL_IS_NOT_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION" title="MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION() :: "><span class="description">MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION</span><pre>MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_PARENT_IS_EXPRESSION" title="PARENT_IS_EXPRESSION() :: "><span class="description">PARENT_IS_EXPRESSION</span><pre>PARENT_IS_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_PARENT_IS_FROM_PROVIDER_EXPRESSION" title="PARENT_IS_FROM_PROVIDER_EXPRESSION() :: "><span class="description">PARENT_IS_FROM_PROVIDER_EXPRESSION</span><pre>PARENT_IS_FROM_PROVIDER_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_PARENT_IS_NOT_EXPRESSION" title="PARENT_IS_NOT_EXPRESSION() :: "><span class="description">PARENT_IS_NOT_EXPRESSION</span><pre>PARENT_IS_NOT_EXPRESSION</pre></a></li>
+<li class="constant  "><a href="#constant_PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION" title="PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION() :: "><span class="description">PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION</span><pre>PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Clipboard.html">Clipboard</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Filter.html">Filter</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Class Filter.</p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_accepts"></a><div class="element clickable method public method_accepts" data-toggle="collapse" data-target=".method_accepts .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>accepts(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.UnusedLocalVariable)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.EvalExpression)</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$item</h4></div>
+</div></div>
+</div>
+<a id="method_andActionIs"></a><div class="element clickable method public method_andActionIs" data-toggle="collapse" data-target=".method_andActionIs .collapse">
+<h2>And action is.</h2>
+<pre>andActionIs(string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andActionIsIn"></a><div class="element clickable method public method_andActionIsIn" data-toggle="collapse" data-target=".method_andActionIsIn .collapse">
+<h2>And action is in.</h2>
+<pre>andActionIsIn(array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andActionIsNot"></a><div class="element clickable method public method_andActionIsNot" data-toggle="collapse" data-target=".method_andActionIsNot .collapse">
+<h2>And action is.</h2>
+<pre>andActionIsNot(string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andActionIsNotIn"></a><div class="element clickable method public method_andActionIsNotIn" data-toggle="collapse" data-target=".method_andActionIsNotIn .collapse">
+<h2>And action is not in.</h2>
+<pre>andActionIsNotIn(array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andHasNoParent"></a><div class="element clickable method public method_andHasNoParent" data-toggle="collapse" data-target=".method_andHasNoParent .collapse">
+<h2>And has no parent.</h2>
+<pre>andHasNoParent() : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andModelIs"></a><div class="element clickable method public method_andModelIs" data-toggle="collapse" data-target=".method_andModelIs .collapse">
+<h2>And model is.</h2>
+<pre>andModelIs(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andModelIsFromProvider"></a><div class="element clickable method public method_andModelIsFromProvider" data-toggle="collapse" data-target=".method_andModelIsFromProvider .collapse">
+<h2>And model is from provider.</h2>
+<pre>andModelIsFromProvider(string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andModelIsNot"></a><div class="element clickable method public method_andModelIsNot" data-toggle="collapse" data-target=".method_andModelIsNot .collapse">
+<h2>And model is not.</h2>
+<pre>andModelIsNot(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andModelIsNotFromProvider"></a><div class="element clickable method public method_andModelIsNotFromProvider" data-toggle="collapse" data-target=".method_andModelIsNotFromProvider .collapse">
+<h2>And model is not from provider.</h2>
+<pre>andModelIsNotFromProvider(string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIs"></a><div class="element clickable method public method_andParentIs" data-toggle="collapse" data-target=".method_andParentIs .collapse">
+<h2>And parent is.</h2>
+<pre>andParentIs(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIsFromProvider"></a><div class="element clickable method public method_andParentIsFromProvider" data-toggle="collapse" data-target=".method_andParentIsFromProvider .collapse">
+<h2>And parent is from provider.</h2>
+<pre>andParentIsFromProvider(string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIsIn"></a><div class="element clickable method public method_andParentIsIn" data-toggle="collapse" data-target=".method_andParentIsIn .collapse">
+<h2>And parent is in.</h2>
+<pre>andParentIsIn(array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIsNot"></a><div class="element clickable method public method_andParentIsNot" data-toggle="collapse" data-target=".method_andParentIsNot .collapse">
+<h2>And parent is not.</h2>
+<pre>andParentIsNot(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIsNotFromProvider"></a><div class="element clickable method public method_andParentIsNotFromProvider" data-toggle="collapse" data-target=".method_andParentIsNotFromProvider .collapse">
+<h2>And parent is not from provider.</h2>
+<pre>andParentIsNotFromProvider(string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andParentIsNotIn"></a><div class="element clickable method public method_andParentIsNotIn" data-toggle="collapse" data-target=".method_andParentIsNotIn .collapse">
+<h2>And parent is not in.</h2>
+<pre>andParentIsNotIn(array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_andSub"></a><div class="element clickable method public method_andSub" data-toggle="collapse" data-target=".method_andSub .collapse">
+<h2>And sub filter.</h2>
+<pre>andSub(\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter $filter) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filter</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Filter.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter</a></code><p>The sub filter.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Factory method.</h2>
+<pre>create() : static</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_getExpression"></a><div class="element clickable method public method_getExpression" data-toggle="collapse" data-target=".method_getExpression .collapse">
+<h2>Return the expression.</h2>
+<pre>getExpression() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>internal</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getVariables"></a><div class="element clickable method public method_getVariables" data-toggle="collapse" data-target=".method_getVariables .collapse">
+<h2>Return the variables.</h2>
+<pre>getVariables() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>internal</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_orActionIs"></a><div class="element clickable method public method_orActionIs" data-toggle="collapse" data-target=".method_orActionIs .collapse">
+<h2>Or action is.</h2>
+<pre>orActionIs(string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orActionIsIn"></a><div class="element clickable method public method_orActionIsIn" data-toggle="collapse" data-target=".method_orActionIsIn .collapse">
+<h2>Or action is in.</h2>
+<pre>orActionIsIn(array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orActionIsNot"></a><div class="element clickable method public method_orActionIsNot" data-toggle="collapse" data-target=".method_orActionIsNot .collapse">
+<h2>Or action is.</h2>
+<pre>orActionIsNot(string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orActionIsNotIn"></a><div class="element clickable method public method_orActionIsNotIn" data-toggle="collapse" data-target=".method_orActionIsNotIn .collapse">
+<h2>Or action is not in.</h2>
+<pre>orActionIsNotIn(array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orHasNoParent"></a><div class="element clickable method public method_orHasNoParent" data-toggle="collapse" data-target=".method_orHasNoParent .collapse">
+<h2>Or has no parent.</h2>
+<pre>orHasNoParent() : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orModelIs"></a><div class="element clickable method public method_orModelIs" data-toggle="collapse" data-target=".method_orModelIs .collapse">
+<h2>Or model is.</h2>
+<pre>orModelIs(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orModelIsFromProvider"></a><div class="element clickable method public method_orModelIsFromProvider" data-toggle="collapse" data-target=".method_orModelIsFromProvider .collapse">
+<h2>Or model is from provider.</h2>
+<pre>orModelIsFromProvider(string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orModelIsNot"></a><div class="element clickable method public method_orModelIsNot" data-toggle="collapse" data-target=".method_orModelIsNot .collapse">
+<h2>Or model is not.</h2>
+<pre>orModelIsNot(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orModelIsNotFromProvider"></a><div class="element clickable method public method_orModelIsNotFromProvider" data-toggle="collapse" data-target=".method_orModelIsNotFromProvider .collapse">
+<h2>Or model is not from provider.</h2>
+<pre>orModelIsNotFromProvider(string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIs"></a><div class="element clickable method public method_orParentIs" data-toggle="collapse" data-target=".method_orParentIs .collapse">
+<h2>Or parent is.</h2>
+<pre>orParentIs(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIsFromProvider"></a><div class="element clickable method public method_orParentIsFromProvider" data-toggle="collapse" data-target=".method_orParentIsFromProvider .collapse">
+<h2>Or parent is from provider.</h2>
+<pre>orParentIsFromProvider(string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIsIn"></a><div class="element clickable method public method_orParentIsIn" data-toggle="collapse" data-target=".method_orParentIsIn .collapse">
+<h2>Or parent is in.</h2>
+<pre>orParentIsIn(array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIsNot"></a><div class="element clickable method public method_orParentIsNot" data-toggle="collapse" data-target=".method_orParentIsNot .collapse">
+<h2>Or parent is not.</h2>
+<pre>orParentIsNot(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIsNotFromProvider"></a><div class="element clickable method public method_orParentIsNotFromProvider" data-toggle="collapse" data-target=".method_orParentIsNotFromProvider .collapse">
+<h2>Or parent is not from provider.</h2>
+<pre>orParentIsNotFromProvider(string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orParentIsNotIn"></a><div class="element clickable method public method_orParentIsNotIn" data-toggle="collapse" data-target=".method_orParentIsNotIn .collapse">
+<h2>Or parent is not in.</h2>
+<pre>orParentIsNotIn(array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_orSub"></a><div class="element clickable method public method_orSub" data-toggle="collapse" data-target=".method_orSub .collapse">
+<h2>Or sub filter.</h2>
+<pre>orSub(\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter $filter) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filter</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Filter.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter</a></code><p>The sub filter.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_actionIs"></a><div class="element clickable method private method_actionIs" data-toggle="collapse" data-target=".method_actionIs .collapse">
+<h2>Add action is.</h2>
+<pre>actionIs(string $conjunction, string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_actionIsIn"></a><div class="element clickable method private method_actionIsIn" data-toggle="collapse" data-target=".method_actionIsIn .collapse">
+<h2>Add action is in.</h2>
+<pre>actionIsIn(string $conjunction, array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_actionIsNot"></a><div class="element clickable method private method_actionIsNot" data-toggle="collapse" data-target=".method_actionIsNot .collapse">
+<h2>Add action is.</h2>
+<pre>actionIsNot(string $conjunction, string $action) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>The action name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_actionIsNotIn"></a><div class="element clickable method private method_actionIsNotIn" data-toggle="collapse" data-target=".method_actionIsNotIn .collapse">
+<h2>Add action is not in.</h2>
+<pre>actionIsNotIn(string $conjunction, array|string[] $actions) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><code>string[]</code><p>The action names.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_hasNoParent"></a><div class="element clickable method private method_hasNoParent" data-toggle="collapse" data-target=".method_hasNoParent .collapse">
+<h2>Add has no parent.</h2>
+<pre>hasNoParent(string $conjunction) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_modelIs"></a><div class="element clickable method private method_modelIs" data-toggle="collapse" data-target=".method_modelIs .collapse">
+<h2>Add model is.</h2>
+<pre>modelIs(string $conjunction, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_modelIsFromProvider"></a><div class="element clickable method private method_modelIsFromProvider" data-toggle="collapse" data-target=".method_modelIsFromProvider .collapse">
+<h2>Add model is from provider fragment.</h2>
+<pre>modelIsFromProvider(string $conjunction, string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_modelIsNot"></a><div class="element clickable method private method_modelIsNot" data-toggle="collapse" data-target=".method_modelIsNot .collapse">
+<h2>Add model is not.</h2>
+<pre>modelIsNot(string $conjunction, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The model id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_modelIsNotFromProvider"></a><div class="element clickable method private method_modelIsNotFromProvider" data-toggle="collapse" data-target=".method_modelIsNotFromProvider .collapse">
+<h2>Add model is not from provider.</h2>
+<pre>modelIsNotFromProvider(string $conjunction, string $modelProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$modelProviderName</h4>
+<code>string</code><p>The provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIs"></a><div class="element clickable method private method_parentIs" data-toggle="collapse" data-target=".method_parentIs .collapse">
+<h2>Add parent is.</h2>
+<pre>parentIs(string $conjunction, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIsFromProvider"></a><div class="element clickable method private method_parentIsFromProvider" data-toggle="collapse" data-target=".method_parentIsFromProvider .collapse">
+<h2>Add parent is from provider.</h2>
+<pre>parentIsFromProvider(string $conjunction, string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIsIn"></a><div class="element clickable method private method_parentIsIn" data-toggle="collapse" data-target=".method_parentIsIn .collapse">
+<h2>Add parent is in.</h2>
+<pre>parentIsIn(string $conjunction, array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIsNot"></a><div class="element clickable method private method_parentIsNot" data-toggle="collapse" data-target=".method_parentIsNot .collapse">
+<h2>Add parent is not.</h2>
+<pre>parentIsNot(string $conjunction, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIsNotFromProvider"></a><div class="element clickable method private method_parentIsNotFromProvider" data-toggle="collapse" data-target=".method_parentIsNotFromProvider .collapse">
+<h2>And parent is not from provider.</h2>
+<pre>parentIsNotFromProvider(string $conjunction, string $parentProviderName) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentProviderName</h4>
+<code>string</code><p>The parent provider name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_parentIsNotIn"></a><div class="element clickable method private method_parentIsNotIn" data-toggle="collapse" data-target=".method_parentIsNotIn .collapse">
+<h2>Add parent is not in.</h2>
+<pre>parentIsNotIn(string $conjunction, array|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[] $parentModelIds) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$parentModelIds</h4>
+<code>array</code><code><a href="IdSerializer%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer[]</a></code><p>The parent ids.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<a id="method_sub"></a><div class="element clickable method private method_sub" data-toggle="collapse" data-target=".method_sub .collapse">
+<h2>Add sub filter.</h2>
+<pre>sub(string $conjunction, \ContaoCommunityAlliance\DcGeneral\Clipboard\Filter $filter) : static</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conjunction</h4>
+<code>string</code><p>AND or OR.</p></div>
+<div class="subelement argument">
+<h4>$filter</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.Filter.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\Filter</a></code><p>The sub filter.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>static</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_compiled"> </a><div class="element clickable property private property_compiled" data-toggle="collapse" data-target=".property_compiled .collapse">
+<h2>Pre-compiled expression.</h2>
+<pre>$compiled : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_expression"> </a><div class="element clickable property private property_expression" data-toggle="collapse" data-target=".property_expression .collapse">
+<h2>The expression parts.</h2>
+<pre>$expression : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_variables"> </a><div class="element clickable property private property_variables" data-toggle="collapse" data-target=".property_variables .collapse">
+<h2>The expression variables.</h2>
+<pre>$variables : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ACTION_IS_EXPRESSION"> </a><div class="element clickable constant  constant_ACTION_IS_EXPRESSION" data-toggle="collapse" data-target=".constant_ACTION_IS_EXPRESSION .collapse">
+<h2>ACTION_IS_EXPRESSION</h2>
+<pre>ACTION_IS_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ACTION_IS_NOT_EXPRESSION"> </a><div class="element clickable constant  constant_ACTION_IS_NOT_EXPRESSION" data-toggle="collapse" data-target=".constant_ACTION_IS_NOT_EXPRESSION .collapse">
+<h2>ACTION_IS_NOT_EXPRESSION</h2>
+<pre>ACTION_IS_NOT_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HAS_NO_PARENT_EXPRESSION"> </a><div class="element clickable constant  constant_HAS_NO_PARENT_EXPRESSION" data-toggle="collapse" data-target=".constant_HAS_NO_PARENT_EXPRESSION .collapse">
+<h2>HAS_NO_PARENT_EXPRESSION</h2>
+<pre>HAS_NO_PARENT_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_IS_EXPRESSION"> </a><div class="element clickable constant  constant_MODEL_IS_EXPRESSION" data-toggle="collapse" data-target=".constant_MODEL_IS_EXPRESSION .collapse">
+<h2>MODEL_IS_EXPRESSION</h2>
+<pre>MODEL_IS_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_IS_FROM_PROVIDER_EXPRESSION"> </a><div class="element clickable constant  constant_MODEL_IS_FROM_PROVIDER_EXPRESSION" data-toggle="collapse" data-target=".constant_MODEL_IS_FROM_PROVIDER_EXPRESSION .collapse">
+<h2>MODEL_IS_FROM_PROVIDER_EXPRESSION</h2>
+<pre>MODEL_IS_FROM_PROVIDER_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_IS_NOT_EXPRESSION"> </a><div class="element clickable constant  constant_MODEL_IS_NOT_EXPRESSION" data-toggle="collapse" data-target=".constant_MODEL_IS_NOT_EXPRESSION .collapse">
+<h2>MODEL_IS_NOT_EXPRESSION</h2>
+<pre>MODEL_IS_NOT_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION"> </a><div class="element clickable constant  constant_MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION" data-toggle="collapse" data-target=".constant_MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION .collapse">
+<h2>MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION</h2>
+<pre>MODEL_IS_NOT_FROM_PROVIDER_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PARENT_IS_EXPRESSION"> </a><div class="element clickable constant  constant_PARENT_IS_EXPRESSION" data-toggle="collapse" data-target=".constant_PARENT_IS_EXPRESSION .collapse">
+<h2>PARENT_IS_EXPRESSION</h2>
+<pre>PARENT_IS_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PARENT_IS_FROM_PROVIDER_EXPRESSION"> </a><div class="element clickable constant  constant_PARENT_IS_FROM_PROVIDER_EXPRESSION" data-toggle="collapse" data-target=".constant_PARENT_IS_FROM_PROVIDER_EXPRESSION .collapse">
+<h2>PARENT_IS_FROM_PROVIDER_EXPRESSION</h2>
+<pre>PARENT_IS_FROM_PROVIDER_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PARENT_IS_NOT_EXPRESSION"> </a><div class="element clickable constant  constant_PARENT_IS_NOT_EXPRESSION" data-toggle="collapse" data-target=".constant_PARENT_IS_NOT_EXPRESSION .collapse">
+<h2>PARENT_IS_NOT_EXPRESSION</h2>
+<pre>PARENT_IS_NOT_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION"> </a><div class="element clickable constant  constant_PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION" data-toggle="collapse" data-target=".constant_PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION .collapse">
+<h2>PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION</h2>
+<pre>PARENT_IS_NOT_FROM_PROVIDER_EXPRESSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2015-01-10T06:04:07+01:00.<br></footer></div>
+</div>
+</body>
+</html>

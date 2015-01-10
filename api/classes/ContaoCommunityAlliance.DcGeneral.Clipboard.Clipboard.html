@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">162</span></a></li>
+                <span class="label label-info">94</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -70,6 +70,8 @@
 <li class="method public "><a href="#method_getContainedIds" title="getContainedIds() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getContainedIds()</pre></a></li>
 <li class="method public "><a href="#method_getMode" title="getMode() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getMode()</pre></a></li>
 <li class="method public "><a href="#method_getParent" title="getParent() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getParent()</pre></a></li>
+<li class="method public "><a href="#method_has" title="has() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>has()</pre></a></li>
+<li class="method public "><a href="#method_hasId" title="hasId() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>hasId()</pre></a></li>
 <li class="method public "><a href="#method_isCopy" title="isCopy() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isCopy()</pre></a></li>
 <li class="method public "><a href="#method_isCreate" title="isCreate() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isCreate()</pre></a></li>
 <li class="method public "><a href="#method_isCut" title="isCut() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isCut()</pre></a></li>
@@ -78,13 +80,11 @@
 <li class="method public "><a href="#method_loadFrom" title="loadFrom() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>loadFrom()</pre></a></li>
 <li class="method public "><a href="#method_push" title="push() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>push()</pre></a></li>
 <li class="method public "><a href="#method_remove" title="remove() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_removeById" title="removeById() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>removeById()</pre></a></li>
 <li class="method public "><a href="#method_saveTo" title="saveTo() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>saveTo()</pre></a></li>
 <li class="method public "><a href="#method_setCircularIds" title="setCircularIds() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setCircularIds()</pre></a></li>
 <li class="method public "><a href="#method_setContainedIds" title="setContainedIds() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setContainedIds()</pre></a></li>
 </ul>
-</li>
-<li class="nav-header private">» Private
-                    <ul><li class="method private "><a href="#method_isItemAccepted" title="isItemAccepted() :: Determine if an item is accepted by the filter settings."><span class="description">Determine if an item is accepted by the filter settings.</span><pre>isItemAccepted()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
@@ -179,14 +179,12 @@
 </div>
 <a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>fetch($modelProviderName, $parentProviderName, $parentModelId) </pre>
+<pre>fetch(\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$modelProviderName</h4></div>
-<div class="subelement argument"><h4>$parentProviderName</h4></div>
-<div class="subelement argument"><h4>$parentModelId</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
 </div></div>
 </div>
 <a id="method_getCircularIds"></a><div class="element clickable method public method_getCircularIds" data-toggle="collapse" data-target=".method_getCircularIds .collapse">
@@ -237,6 +235,26 @@
 </tr></table>
 </div></div>
 </div>
+<a id="method_has"></a><div class="element clickable method public method_has" data-toggle="collapse" data-target=".method_has .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>has(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$item</h4></div>
+</div></div>
+</div>
+<a id="method_hasId"></a><div class="element clickable method public method_hasId" data-toggle="collapse" data-target=".method_hasId .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>hasId(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$modelId</h4></div>
+</div></div>
+</div>
 <a id="method_isCopy"></a><div class="element clickable method public method_isCopy" data-toggle="collapse" data-target=".method_isCopy .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>isCopy() </pre>
@@ -275,26 +293,22 @@
 </div>
 <a id="method_isEmpty"></a><div class="element clickable method public method_isEmpty" data-toggle="collapse" data-target=".method_isEmpty .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>isEmpty($modelProviderName, $parentProviderName, $parentModelId) </pre>
+<pre>isEmpty(\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$modelProviderName</h4></div>
-<div class="subelement argument"><h4>$parentProviderName</h4></div>
-<div class="subelement argument"><h4>$parentModelId</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
 </div></div>
 </div>
 <a id="method_isNotEmpty"></a><div class="element clickable method public method_isNotEmpty" data-toggle="collapse" data-target=".method_isNotEmpty .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>isNotEmpty($modelProviderName, $parentProviderName, $parentModelId) </pre>
+<pre>isNotEmpty(\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$modelProviderName</h4></div>
-<div class="subelement argument"><h4>$parentProviderName</h4></div>
-<div class="subelement argument"><h4>$parentModelId</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
 </div></div>
 </div>
 <a id="method_loadFrom"></a><div class="element clickable method public method_loadFrom" data-toggle="collapse" data-target=".method_loadFrom .collapse">
@@ -325,6 +339,16 @@
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$item</h4></div>
+</div></div>
+</div>
+<a id="method_removeById"></a><div class="element clickable method public method_removeById" data-toggle="collapse" data-target=".method_removeById .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>removeById(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$modelId</h4></div>
 </div></div>
 </div>
 <a id="method_saveTo"></a><div class="element clickable method public method_saveTo" data-toggle="collapse" data-target=".method_saveTo .collapse">
@@ -363,29 +387,6 @@
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$arrIds</h4></div>
-</div></div>
-</div>
-<a id="method_isItemAccepted"></a><div class="element clickable method private method_isItemAccepted" data-toggle="collapse" data-target=".method_isItemAccepted .collapse">
-<h2>Determine if an item is accepted by the filter settings.</h2>
-<pre>isItemAccepted(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item, string|null $modelProviderName, string|null|bool $parentProviderName, string|null|bool $parentModelId) : bool</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$item</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.ItemInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface</a></code><p>The item object.</p></div>
-<div class="subelement argument">
-<h4>$modelProviderName</h4>
-<code>string</code><code>null</code><p>The model provider name.</p></div>
-<div class="subelement argument">
-<h4>$parentProviderName</h4>
-<code>string</code><code>null</code><code>bool</code><p>The parent model provider name.</p></div>
-<div class="subelement argument">
-<h4>$parentModelId</h4>
-<code>string</code><code>null</code><code>bool</code><p>The parent model id.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <h3>
@@ -452,7 +453,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-11-19T17:13:25+01:00.<br></footer></div>
+            generated on 2015-01-10T06:04:07+01:00.<br></footer></div>
 </div>
 </body>
 </html>

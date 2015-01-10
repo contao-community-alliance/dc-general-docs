@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">124</span></a></li>
+                <span class="label label-info">94</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,11 +62,16 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___call" title="__call() :: Throw an exception that an unknown method has been called."><span class="description">Throw an exception that an unknown method has been called.</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method_applyClipboardActions" title="applyClipboardActions() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>applyClipboardActions()</pre></a></li>
 <li class="method public "><a href="#method_assembleAllChildrenFrom" title="assembleAllChildrenFrom() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>assembleAllChildrenFrom()</pre></a></li>
 <li class="method public "><a href="#method_createClonedModel" title="createClonedModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>createClonedModel()</pre></a></li>
+<li class="method public "><a href="#method_createEmptyModelWithDefaults" title="createEmptyModelWithDefaults() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>createEmptyModelWithDefaults()</pre></a></li>
 <li class="method public "><a href="#method_fetchModelFromProvider" title="fetchModelFromProvider() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>fetchModelFromProvider()</pre></a></li>
 <li class="method public "><a href="#method_getBaseConfig" title="getBaseConfig() :: Retrieve the base data provider config for the current data definition."><span class="description">Retrieve the base data provider config for the current data definition.</span><pre>getBaseConfig()</pre></a></li>
 <li class="method public "><a href="#method_getEnvironment" title="getEnvironment() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getEnvironment()</pre></a></li>
+<li class="method public "><a href="#method_getModelFromClipboardItem" title="getModelFromClipboardItem() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getModelFromClipboardItem()</pre></a></li>
+<li class="method public "><a href="#method_getModelsFromClipboard" title="getModelsFromClipboard() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getModelsFromClipboard()</pre></a></li>
+<li class="method public "><a href="#method_getModelsFromClipboardItems" title="getModelsFromClipboardItems() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getModelsFromClipboardItems()</pre></a></li>
 <li class="method public "><a href="#method_getSupportedLanguages" title="getSupportedLanguages() :: Return all supported languages from the default data data provider."><span class="description">Return all supported languages from the default data data provider.</span><pre>getSupportedLanguages()</pre></a></li>
 <li class="method public "><a href="#method_handle" title="handle() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>handle()</pre></a></li>
 <li class="method public "><a href="#method_isRootModel" title="isRootModel() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>isRootModel()</pre></a></li>
@@ -84,9 +89,20 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="method protected "><a href="#method_addParentFilter" title="addParentFilter() :: Add the filter for the item with the given id from the parent data provider to the given config."><span class="description">Add the filter for the item with the given id from the parent data provider to the given config.</span><pre>addParentFilter()</pre></a></li>
 <li class="method protected "><a href="#method_assembleChildrenFor" title="assembleChildrenFor() :: Retrieve children of a given model."><span class="description">Retrieve children of a given model.</span><pre>assembleChildrenFor()</pre></a></li>
 <li class="method protected "><a href="#method_assembleSiblingsFor" title="assembleSiblingsFor() :: Retrieve all siblings of a given model."><span class="description">Retrieve all siblings of a given model.</span><pre>assembleSiblingsFor()</pre></a></li>
+<li class="method protected "><a href="#method_doDeepCopy" title="doDeepCopy() :: Do deep copy."><span class="description">Do deep copy.</span><pre>doDeepCopy()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_applyAction" title="applyAction() :: Apply the action onto the model."><span class="description">Apply the action onto the model.</span><pre>applyAction()</pre></a></li>
+<li class="method private "><a href="#method_doActions" title="doActions() :: Effectively do the actions."><span class="description">Effectively do the actions.</span><pre>doActions()</pre></a></li>
+<li class="method private "><a href="#method_doCloneAction" title="doCloneAction() :: Effectively do the clone action on the model."><span class="description">Effectively do the clone action on the model.</span><pre>doCloneAction()</pre></a></li>
+<li class="method private "><a href="#method_ensureSameGrouping" title="ensureSameGrouping() :: Ensure all models have the same grouping."><span class="description">Ensure all models have the same grouping.</span><pre>ensureSameGrouping()</pre></a></li>
+<li class="method private "><a href="#method_fetchModelsFromClipboard" title="fetchModelsFromClipboard() :: Fetch actions from the clipboard."><span class="description">Fetch actions from the clipboard.</span><pre>fetchModelsFromClipboard()</pre></a></li>
+<li class="method private "><a href="#method_getActionsFromSource" title="getActionsFromSource() :: Fetch actions from source."><span class="description">Fetch actions from source.</span><pre>getActionsFromSource()</pre></a></li>
+<li class="method private "><a href="#method_sortAndPersistModels" title="sortAndPersistModels() :: Apply sorting and persist all models."><span class="description">Apply sorting and persist all models.</span><pre>sortAndPersistModels()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -94,12 +110,10 @@
                     <ul></ul>
 </li>
 <li class="nav-header protected">» Protected
-                    <ul>
-<li class="property protected "><a href="#property_arrColSort" title="$arrColSort() :: Field for the function sortCollection."><span class="description"></span><pre>$arrColSort</pre></a></li>
-<li class="property protected "><a href="#property_arrInsertIDs" title="$arrInsertIDs() :: A list with all current IDs."><span class="description"></span><pre>$arrInsertIDs</pre></a></li>
-<li class="property protected "><a href="#property_environment" title="$environment() :: The attached environment."><span class="description"></span><pre>$environment</pre></a></li>
-<li class="property protected "><a href="#property_notImplMsg" title="$notImplMsg() :: Error message."><span class="description"></span><pre>$notImplMsg</pre></a></li>
-</ul>
+                    <ul><li class="property protected "><a href="#property_notImplMsg" title="$notImplMsg() :: Error message."><span class="description"></span><pre>$notImplMsg</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_environment" title="$environment() :: The attached environment."><span class="description"></span><pre>$environment</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -149,6 +163,21 @@
 </tr></table>
 </div></div>
 </div>
+<a id="method_applyClipboardActions"></a><div class="element clickable method public method_applyClipboardActions" data-toggle="collapse" data-target=".method_applyClipboardActions .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>applyClipboardActions(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $source, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $into, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId, \ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter, array $items) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$source</h4></div>
+<div class="subelement argument"><h4>$after</h4></div>
+<div class="subelement argument"><h4>$into</h4></div>
+<div class="subelement argument"><h4>$parentModelId</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
+<div class="subelement argument"><h4>$items</h4></div>
+</div></div>
+</div>
 <a id="method_assembleAllChildrenFrom"></a><div class="element clickable method public method_assembleAllChildrenFrom" data-toggle="collapse" data-target=".method_assembleAllChildrenFrom .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>assembleAllChildrenFrom($objModel, $strDataProvider) </pre>
@@ -175,6 +204,12 @@
 </tr></table>
 </div></div>
 </div>
+<a id="method_createEmptyModelWithDefaults"></a><div class="element clickable method public method_createEmptyModelWithDefaults" data-toggle="collapse" data-target=".method_createEmptyModelWithDefaults .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>createEmptyModelWithDefaults() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_fetchModelFromProvider"></a><div class="element clickable method public method_fetchModelFromProvider" data-toggle="collapse" data-target=".method_fetchModelFromProvider .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>fetchModelFromProvider($modelId, $providerName) </pre>
@@ -188,10 +223,24 @@
 </div>
 <a id="method_getBaseConfig"></a><div class="element clickable method public method_getBaseConfig" data-toggle="collapse" data-target=".method_getBaseConfig .collapse">
 <h2>Retrieve the base data provider config for the current data definition.</h2>
-<pre>getBaseConfig() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></pre>
+<pre>getBaseConfig(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This includes parent filter when in parented list mode and the additional filters from the data definition.</div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CController%5CBaseConfigRegistryInterface::getBaseConfig()"></a></td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Use EnvironmentInterface::getBaseConfigRegistry->getBaseConfig()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parentId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The optional parent to use.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code></div>
 </div></div>
@@ -201,6 +250,36 @@
 <pre>getEnvironment() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getModelFromClipboardItem"></a><div class="element clickable method public method_getModelFromClipboardItem" data-toggle="collapse" data-target=".method_getModelFromClipboardItem .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getModelFromClipboardItem(\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface $item) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$item</h4></div>
+</div></div>
+</div>
+<a id="method_getModelsFromClipboard"></a><div class="element clickable method public method_getModelsFromClipboard" data-toggle="collapse" data-target=".method_getModelsFromClipboard .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getModelsFromClipboard(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parentModelId</h4></div>
+</div></div>
+</div>
+<a id="method_getModelsFromClipboardItems"></a><div class="element clickable method public method_getModelsFromClipboardItems" data-toggle="collapse" data-target=".method_getModelsFromClipboardItems .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getModelsFromClipboardItems(array $items) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$items</h4></div>
+</div></div>
 </div>
 <a id="method_getSupportedLanguages"></a><div class="element clickable method public method_getSupportedLanguages" data-toggle="collapse" data-target=".method_getSupportedLanguages .collapse">
 <h2>Return all supported languages from the default data data provider.</h2>
@@ -267,13 +346,14 @@
 </div>
 <a id="method_pasteTop"></a><div class="element clickable method public method_pasteTop" data-toggle="collapse" data-target=".method_pasteTop .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>pasteTop(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $models, $sortedBy) </pre>
+<pre>pasteTop(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $models, $sortedBy, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentId) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$models</h4></div>
 <div class="subelement argument"><h4>$sortedBy</h4></div>
+<div class="subelement argument"><h4>$parentId</h4></div>
 </div></div>
 </div>
 <a id="method_searchParentOf"></a><div class="element clickable method public method_searchParentOf" data-toggle="collapse" data-target=".method_searchParentOf .collapse">
@@ -356,28 +436,6 @@
 <div class="subelement argument"><h4>$propertyValues</h4></div>
 </div></div>
 </div>
-<a id="method_addParentFilter"></a><div class="element clickable method protected method_addParentFilter" data-toggle="collapse" data-target=".method_addParentFilter .collapse">
-<h2>Add the filter for the item with the given id from the parent data provider to the given config.</h2>
-<pre>addParentFilter(mixed $idParent, \ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $config) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$idParent</h4>
-<code>mixed</code><p>The id of the parent item.</p></div>
-<div class="subelement argument">
-<h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The config to add the filter to.</p></div>
-<h3>Exceptions</h3>
-<table class="table table-bordered"><tr>
-<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
-<td>When the parent item is not found.</td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code></div>
-</div></div>
-</div>
 <a id="method_assembleChildrenFor"></a><div class="element clickable method protected method_assembleChildrenFor" data-toggle="collapse" data-target=".method_assembleChildrenFor .collapse">
 <h2>Retrieve children of a given model.</h2>
 <pre>assembleChildrenFor(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, string|null $sortingProperty) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
@@ -402,7 +460,7 @@
 </div>
 <a id="method_assembleSiblingsFor"></a><div class="element clickable method protected method_assembleSiblingsFor" data-toggle="collapse" data-target=".method_assembleSiblingsFor .collapse">
 <h2>Retrieve all siblings of a given model.</h2>
-<pre>assembleSiblingsFor(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, string|null $sortingProperty) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
+<pre>assembleSiblingsFor(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, string|null $sortingProperty, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -417,6 +475,10 @@
 <div class="subelement argument">
 <h4>$sortingProperty</h4>
 <code>string</code><code>null</code><p>The property name to use for sorting.</p></div>
+<div class="subelement argument">
+<h4>$parentId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The (optional) parent id to use.</p>
+</div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
@@ -426,29 +488,167 @@
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_doDeepCopy"></a><div class="element clickable method protected method_doDeepCopy" data-toggle="collapse" data-target=".method_doDeepCopy .collapse">
+<h2>Do deep copy.</h2>
+<pre>doDeepCopy(array $deepCopyList) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$deepCopyList</h4>
+<code>array</code><p>The deep copy list.</p></div>
+</div></div>
+</div>
+<a id="method_applyAction"></a><div class="element clickable method private method_applyAction" data-toggle="collapse" data-target=".method_applyAction .collapse">
+<h2>Apply the action onto the model.</h2>
+<pre>applyAction(array $action, array $deepCopyList, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $parentModel) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">This will create or clone the model in the action.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>array</code><p>The action, containing a model and an item.</p></div>
+<div class="subelement argument">
+<h4>$deepCopyList</h4>
+<code>array</code><p>A list of models that need deep copy.</p></div>
+<div class="subelement argument">
+<h4>$parentModel</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The parent model.</p></div>
+</div></div>
+</div>
+<a id="method_doActions"></a><div class="element clickable method private method_doActions" data-toggle="collapse" data-target=".method_doActions .collapse">
+<h2>Effectively do the actions.</h2>
+<pre>doActions(array $actions, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $into, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId, array $items) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><p>The actions collection.</p></div>
+<div class="subelement argument">
+<h4>$after</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The previous model id.</p></div>
+<div class="subelement argument">
+<h4>$into</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The hierarchical parent model id.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent model id.</p></div>
+<div class="subelement argument">
+<h4>$items</h4>
+<code>array</code><p>Write-back clipboard items.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_doCloneAction"></a><div class="element clickable method private method_doCloneAction" data-toggle="collapse" data-target=".method_doCloneAction .collapse">
+<h2>Effectively do the clone action on the model.</h2>
+<pre>doCloneAction(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to clone.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code>Return the cloned model.</div>
+</div></div>
+</div>
+<a id="method_ensureSameGrouping"></a><div class="element clickable method private method_ensureSameGrouping" data-toggle="collapse" data-target=".method_ensureSameGrouping .collapse">
+<h2>Ensure all models have the same grouping.</h2>
+<pre>ensureSameGrouping(array $actions, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><p>The actions collection.</p></div>
+<div class="subelement argument">
+<h4>$after</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The previous model id.</p></div>
+</div></div>
+</div>
+<a id="method_fetchModelsFromClipboard"></a><div class="element clickable method private method_fetchModelsFromClipboard" data-toggle="collapse" data-target=".method_fetchModelsFromClipboard .collapse">
+<h2>Fetch actions from the clipboard.</h2>
+<pre>fetchModelsFromClipboard(\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface|null $filter, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filter</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.FilterInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface</a></code><code>null</code><p>The clipboard filter.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getActionsFromSource"></a><div class="element clickable method private method_getActionsFromSource" data-toggle="collapse" data-target=".method_getActionsFromSource .collapse">
+<h2>Fetch actions from source.</h2>
+<pre>getActionsFromSource(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $source, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer|null $parentModelId) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$source</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The source id.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><code>null</code><p>The parent id.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_sortAndPersistModels"></a><div class="element clickable method private method_sortAndPersistModels" data-toggle="collapse" data-target=".method_sortAndPersistModels .collapse">
+<h2>Apply sorting and persist all models.</h2>
+<pre>sortAndPersistModels(array $actions, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $into, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId, array $items) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultCollection.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$actions</h4>
+<code>array</code><p>The actions collection.</p></div>
+<div class="subelement argument">
+<h4>$after</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The previous model id.</p></div>
+<div class="subelement argument">
+<h4>$into</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The hierarchical parent model id.</p></div>
+<div class="subelement argument">
+<h4>$parentModelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent model id.</p></div>
+<div class="subelement argument">
+<h4>$items</h4>
+<code>array</code><p>Write-back clipboard items.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultCollection.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection</a></code><code><a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></code>
+</div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_arrColSort"> </a><div class="element clickable property protected property_arrColSort" data-toggle="collapse" data-target=".property_arrColSort .collapse">
-<h2>Field for the function sortCollection.</h2>
-<pre>$arrColSort : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_arrInsertIDs"> </a><div class="element clickable property protected property_arrInsertIDs" data-toggle="collapse" data-target=".property_arrInsertIDs .collapse">
-<h2>A list with all current IDs.</h2>
-<pre>$arrInsertIDs : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_environment"> </a><div class="element clickable property protected property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
-<h2>The attached environment.</h2>
-<pre>$environment : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property_notImplMsg"> </a><div class="element clickable property protected property_notImplMsg" data-toggle="collapse" data-target=".property_notImplMsg .collapse">
 <h2>Error message.</h2>
 <pre>$notImplMsg : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_environment"> </a><div class="element clickable property private property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
+<h2>The attached environment.</h2>
+<pre>$environment : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -460,7 +660,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-12-09T17:49:01+01:00.<br></footer></div>
+            generated on 2015-01-10T06:03:59+01:00.<br></footer></div>
 </div>
 </body>
 </html>

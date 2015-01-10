@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">124</span></a></li>
+                <span class="label label-info">94</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,8 +62,6 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_ajaxTreeView" title="ajaxTreeView() :: Handle ajax rendering of a sub tree."><span class="description">Handle ajax rendering of a sub tree.</span><pre>ajaxTreeView()</pre></a></li>
-<li class="method public "><a href="#method_copy" title="copy() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>copy()</pre></a></li>
-<li class="method public "><a href="#method_cut" title="cut() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>cut()</pre></a></li>
 <li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>enforceModelRelationship()</pre></a></li>
 <li class="method public "><a href="#method_getTreeCollectionRecursive" title="getTreeCollectionRecursive() :: Recursively retrieve a collection of all complete node hierarchy."><span class="description">Recursively retrieve a collection of all complete node hierarchy.</span><pre>getTreeCollectionRecursive()</pre></a></li>
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax call."><span class="description">Handle an ajax call.</span><pre>handleAjaxCall()</pre></a></li>
@@ -143,18 +141,6 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
-<h2>{@inheritdoc}</h2>
-<pre>copy() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_cut"></a><div class="element clickable method public method_cut" data-toggle="collapse" data-target=".method_cut .collapse">
-<h2>{@inheritdoc}</h2>
-<pre>cut() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="method_enforceModelRelationship"></a><div class="element clickable method public method_enforceModelRelationship" data-toggle="collapse" data-target=".method_enforceModelRelationship .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>enforceModelRelationship($model) </pre>
@@ -227,9 +213,13 @@
 </div>
 <a id="method_paste"></a><div class="element clickable method public method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
 <h2>{@inheritDoc}</h2>
-<pre>paste() </pre>
+<pre>paste(\ContaoCommunityAlliance\DcGeneral\Action $action) </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$action</h4></div>
+</div></div>
 </div>
 <a id="method_renderPasteRootButton"></a><div class="element clickable method public method_renderPasteRootButton" data-toggle="collapse" data-target=".method_renderPasteRootButton .collapse">
 <h2>Render the paste button for pasting into the root of the tree.</h2>
@@ -247,10 +237,12 @@
 </div>
 <a id="method_showAll"></a><div class="element clickable method public method_showAll" data-toggle="collapse" data-target=".method_showAll .collapse">
 <h2>Show all entries from one table.</h2>
-<pre>showAll() : string</pre>
+<pre>showAll(\ContaoCommunityAlliance\DcGeneral\Action $action) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$action</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -436,7 +428,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-12-09T17:49:09+01:00.<br></footer></div>
+            generated on 2015-01-10T06:04:05+01:00.<br></footer></div>
 </div>
 </body>
 </html>

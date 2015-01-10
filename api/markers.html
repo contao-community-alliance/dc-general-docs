@@ -40,7 +40,7 @@
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">124</span></a></li>
+                <span class="label label-info">94</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -57,6 +57,7 @@
 <li class="nav-header">Navigation</li>
 <li><a href="#Data/ModelInterface.php"><i class="icon-file"></i>Data/ModelInterface.php</a></li>
 <li><a href="#Data/DCGE.php"><i class="icon-file"></i>Data/DCGE.php</a></li>
+<li><a href="#Contao/View/Contao2BackendView/ListView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/ListView.php</a></li>
 <li><a href="#Controller/DefaultController.php"><i class="icon-file"></i>Controller/DefaultController.php</a></li>
 <li><a href="#Contao/Callback/ContainerOnDeleteCallbackListener.php"><i class="icon-file"></i>Contao/Callback/ContainerOnDeleteCallbackListener.php</a></li>
 <li><a href="#Data/ConfigInterface.php"><i class="icon-file"></i>Data/ConfigInterface.php</a></li>
@@ -75,6 +76,8 @@
 <li><a href="#Contao/View/Contao2BackendView/TreeView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/TreeView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/ParentView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/ParentView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/EditMask.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/EditMask.php</a></li>
+<li><a href="#Contao/View/Contao2BackendView/Controller/ClipboardController.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/Controller/ClipboardController.php</a></li>
+<li><a href="#Clipboard/Clipboard.php"><i class="icon-file"></i>Clipboard/Clipboard.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -119,8 +122,25 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="Contao/View/Contao2BackendView/ListView.php" id="Contao/View/Contao2BackendView/ListView.php"></a><h3>
+<i class="icon-file"></i>Contao/View/Contao2BackendView/ListView.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>266</td>
+<td>this will never be used anymore!</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="Controller/DefaultController.php" id="Controller/DefaultController.php"></a><h3>
-<i class="icon-file"></i>Controller/DefaultController.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>Controller/DefaultController.php<small style="float: right;padding-right: 10px;">4</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -130,13 +150,23 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>263</td>
+<td>250</td>
 <td>This might return a lot of models, we definately want to use some lazy approach rather than this.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>298</td>
+<td>288</td>
 <td>TL dnk how to handle this without highjacking the view.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>744</td>
+<td>to be discussed, this allow cut&paste over groupings with custom sorting</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>906</td>
+<td>too many parameters, this is just crazy! :-(</td>
 </tr>
 </table></div>
 </div>
@@ -291,7 +321,7 @@
 </div>
 <div class="package-contents">
 <a name="Contao/View/Contao2BackendView/BaseView.php" id="Contao/View/Contao2BackendView/BaseView.php"></a><h3>
-<i class="icon-file"></i>Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">10</small>
+<i class="icon-file"></i>Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">5</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -301,52 +331,27 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>414</td>
+<td>297</td>
 <td>refactor foreignKey is yet undefined.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>598</td>
-<td>this can return ids originating from another data provider, we have to alter this to</td>
-</tr>
-<tr>
-<td>todo</td>
-<td>721</td>
-<td>copy unimplemented.</td>
-</tr>
-<tr>
-<td>todo</td>
-<td>735</td>
-<td>copyAll unimplemented.</td>
-</tr>
-<tr>
-<td>todo</td>
-<td>810</td>
-<td>cutAll unimplemented.</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>973</td>
-<td>recursive copy is not implemented yet!</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>1078</td>
+<td>596</td>
 <td>See DefaultController::delete() - we need to delete the children of this item as well over all data providers.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1137</td>
+<td>655</td>
 <td>move unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1150</td>
+<td>668</td>
 <td>undo unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1807</td>
+<td>1236</td>
 <td>Shall we interface this option?</td>
 </tr>
 </table></div>
@@ -380,12 +385,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>226</td>
+<td>153</td>
 <td>this is view related, should be moved there?</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>235</td>
+<td>162</td>
 <td>this is view related, should be moved there?</td>
 </tr>
 </table></div>
@@ -424,7 +429,7 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>711</td>
+<td>712</td>
 <td>hardcoded sorting... NOT GOOD!</td>
 </tr>
 </table></div>
@@ -485,34 +490,34 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>204</td>
+<td>209</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>278</td>
+<td>283</td>
 <td>hardcoded sorting... NOT GOOD!</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>457</td>
+<td>470</td>
 <td>add real tree mode here - intMode.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>469</td>
+<td>482</td>
 <td>add real tree mode here.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>651</td>
+<td>673</td>
 <td>set real tree mode here.</td>
 </tr>
 </table></div>
 </div>
 <div class="package-contents">
 <a name="Contao/View/Contao2BackendView/ParentView.php" id="Contao/View/Contao2BackendView/ParentView.php"></a><h3>
-<i class="icon-file"></i>Contao/View/Contao2BackendView/ParentView.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>Contao/View/Contao2BackendView/ParentView.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -522,13 +527,18 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>106</td>
+<td>113</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>245</td>
+<td>265</td>
 <td>foreignKey is not implemented yet.</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>661</td>
+<td>this will never be used anymore!</td>
 </tr>
 </table></div>
 </div>
@@ -549,6 +559,45 @@
 </tr>
 </table></div>
 </div>
+<div class="package-contents">
+<a name="Contao/View/Contao2BackendView/Controller/ClipboardController.php" id="Contao/View/Contao2BackendView/Controller/ClipboardController.php"></a><h3>
+<i class="icon-file"></i>Contao/View/Contao2BackendView/Controller/ClipboardController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>178</td>
+<td>remove clear and allow adding multiple items</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="Clipboard/Clipboard.php" id="Clipboard/Clipboard.php"></a><h3>
+<i class="icon-file"></i>Clipboard/Clipboard.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>42</td>
+<td>use another serialisation method</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>54</td>
+<td>use another serialisation method</td>
+</tr>
+</table></div>
+</div>
 </div>
 </div>
 </div>
@@ -556,7 +605,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-12-09T17:49:11+01:00.<br></footer></div>
+            generated on 2015-01-10T06:04:07+01:00.<br></footer></div>
 </div>
 </body>
 </html>

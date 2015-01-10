@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">162</span></a></li>
+                <span class="label label-info">94</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,7 +62,9 @@
                     <ul>
 <li class="method public "><a href="#method_getCurrentSorting" title="getCurrentSorting() :: Retrieve the currently active sorting."><span class="description">Retrieve the currently active sorting.</span><pre>getCurrentSorting()</pre></a></li>
 <li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: Retrieve the currently active grouping mode."><span class="description">Retrieve the currently active grouping mode.</span><pre>getGroupingMode()</pre></a></li>
+<li class="method public "><a href="#method_getManualSortingProperty" title="getManualSortingProperty() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>getManualSortingProperty()</pre></a></li>
 <li class="method public "><a href="#method_getReadableFieldValue" title="getReadableFieldValue() :: Get for a field the readable value."><span class="description">Get for a field the readable value.</span><pre>getReadableFieldValue()</pre></a></li>
+<li class="method public "><a href="#method_redirectHome" title="redirectHome() :: Redirects to the real back end module."><span class="description">Redirects to the real back end module.</span><pre>redirectHome()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -89,7 +91,7 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description"></p>
+<p class="short_description">Helper class that provides static methods used in views.</p>
 <div class="details">
 <div class="long_description"></div>
 <h3>
@@ -101,7 +103,9 @@
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$environment</h4></div>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionInterface</a></code></div>
 </div></div>
@@ -113,32 +117,55 @@
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$environment</h4></div>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment.</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>array</code><code>null</code>
 </div>
 </div></div>
 </div>
-<a id="method_getReadableFieldValue"></a><div class="element clickable method public method_getReadableFieldValue" data-toggle="collapse" data-target=".method_getReadableFieldValue .collapse">
-<h2>Get for a field the readable value.</h2>
-<pre>getReadableFieldValue(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, mixed $value) : mixed</pre>
+<a id="method_getManualSortingProperty"></a><div class="element clickable method public method_getManualSortingProperty" data-toggle="collapse" data-target=".method_getManualSortingProperty .collapse">
+<h2>{@inheritDoc}</h2>
+<pre>getManualSortingProperty(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$environment</h4></div>
+</div></div>
+</div>
+<a id="method_getReadableFieldValue"></a><div class="element clickable method public method_getReadableFieldValue" data-toggle="collapse" data-target=".method_getReadableFieldValue .collapse">
+<h2>Get for a field the readable value.</h2>
+<pre>getReadableFieldValue(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : mixed</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment.</p></div>
 <div class="subelement argument">
 <h4>$property</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to be rendered.</p></div>
 <div class="subelement argument">
 <h4>$model</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model from which the property value shall be retrieved from.</p></div>
-<div class="subelement argument">
-<h4>$value</h4>
-<code>mixed</code><p>The value for the property.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_redirectHome"></a><div class="element clickable method public method_redirectHome" data-toggle="collapse" data-target=".method_redirectHome .collapse">
+<h2>Redirects to the real back end module.</h2>
+<pre>redirectHome(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$environment</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code><p>The environment.</p></div>
 </div></div>
 </div>
 </div>
@@ -149,7 +176,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2014-11-19T17:13:25+01:00.<br></footer></div>
+            generated on 2015-01-10T06:04:06+01:00.<br></footer></div>
 </div>
 </body>
 </html>
