@@ -63,7 +63,6 @@
                     <ul>
 <li class="method public "><a href="#method_ajaxTreeView" title="ajaxTreeView() :: Handle ajax rendering of a sub tree."><span class="description">Handle ajax rendering of a sub tree.</span><pre>ajaxTreeView()</pre></a></li>
 <li class="method public "><a href="#method_enforceModelRelationship" title="enforceModelRelationship() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>enforceModelRelationship()</pre></a></li>
-<li class="method public "><a href="#method_getTreeCollectionRecursive" title="getTreeCollectionRecursive() :: Recursively retrieve a collection of all complete node hierarchy."><span class="description">Recursively retrieve a collection of all complete node hierarchy.</span><pre>getTreeCollectionRecursive()</pre></a></li>
 <li class="method public "><a href="#method_handleAjaxCall" title="handleAjaxCall() :: Handle an ajax call."><span class="description">Handle an ajax call.</span><pre>handleAjaxCall()</pre></a></li>
 <li class="method public "><a href="#method_loadCollection" title="loadCollection() :: Load the collection of child items and the parent item for the currently selected parent item."><span class="description">Load the collection of child items and the parent item for the currently selected parent item.</span><pre>loadCollection()</pre></a></li>
 <li class="method public "><a href="#method_paste" title="paste() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>paste()</pre></a></li>
@@ -73,18 +72,21 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="method protected "><a href="#method_addParentFilter" title="addParentFilter() :: Add the parent filtering to the given data config if any defined."><span class="description">Add the parent filtering to the given data config if any defined.</span><pre>addParentFilter()</pre></a></li>
 <li class="method protected "><a href="#method_calcLabelFields" title="calcLabelFields() :: Calculate the fields needed by a tree label for the given data provider name."><span class="description">Calculate the fields needed by a tree label for the given data provider name.</span><pre>calcLabelFields()</pre></a></li>
-<li class="method protected "><a href="#method_determineModelState" title="determineModelState() :: Check the state of a model and set the metadata accordingly."><span class="description">Check the state of a model and set the metadata accordingly.</span><pre>determineModelState()</pre></a></li>
 <li class="method protected "><a href="#method_generateTreeView" title="generateTreeView() :: Render the tree view and return it as string."><span class="description">Render the tree view and return it as string.</span><pre>generateTreeView()</pre></a></li>
-<li class="method protected "><a href="#method_getOpenElements" title="getOpenElements() :: Retrieve the ids of all tree nodes that are expanded."><span class="description">Retrieve the ids of all tree nodes that are expanded.</span><pre>getOpenElements()</pre></a></li>
 <li class="method protected "><a href="#method_getToggleId" title="getToggleId() :: Retrieve the id for this view."><span class="description">Retrieve the id for this view.</span><pre>getToggleId()</pre></a></li>
+<li class="method protected "><a href="#method_getTreeNodeStates" title="getTreeNodeStates() :: Create a tree states instance."><span class="description">Create a tree states instance.</span><pre>getTreeNodeStates()</pre></a></li>
 <li class="method protected "><a href="#method_isModelOpen" title="isModelOpen() :: Determine if the passed model is expanded."><span class="description">Determine if the passed model is expanded.</span><pre>isModelOpen()</pre></a></li>
 <li class="method protected "><a href="#method_loadParentModel" title="loadParentModel() :: Load the parent model for the current list."><span class="description">Load the parent model for the current list.</span><pre>loadParentModel()</pre></a></li>
 <li class="method protected "><a href="#method_parseModel" title="parseModel() :: Render a given model."><span class="description">Render a given model.</span><pre>parseModel()</pre></a></li>
-<li class="method protected "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
-<li class="method protected "><a href="#method_treeWalkModel" title='treeWalkModel() :: This "renders" a model for tree view.'><span class="description">This "renders" a model for tree view.</span><pre>treeWalkModel()</pre></a></li>
+<li class="method protected "><a href="#method_saveTreeNodeStates" title="saveTreeNodeStates() :: Save a tree node states instance to the session."><span class="description">Save a tree node states instance to the session.</span><pre>saveTreeNodeStates()</pre></a></li>
 <li class="method protected "><a href="#method_viewTree" title="viewTree() :: Render the tree view."><span class="description">Render the tree view.</span><pre>viewTree()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_handleNodeStateChanges" title="handleNodeStateChanges() :: Check the get parameters if there is any node toggling."><span class="description">Check the get parameters if there is any node toggling.</span><pre>handleNodeStateChanges()</pre></a></li>
+<li class="method private "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -149,26 +151,6 @@
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$model</h4></div>
-</div></div>
-</div>
-<a id="method_getTreeCollectionRecursive"></a><div class="element clickable method public method_getTreeCollectionRecursive" data-toggle="collapse" data-target=".method_getTreeCollectionRecursive .collapse">
-<h2>Recursively retrieve a collection of all complete node hierarchy.</h2>
-<pre>getTreeCollectionRecursive(array $rootId, int $intLevel, string $providerName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$rootId</h4>
-<code>array</code><p>The ids of the root node.</p></div>
-<div class="subelement argument">
-<h4>$intLevel</h4>
-<code>int</code><p>The level the items are residing on.</p></div>
-<div class="subelement argument">
-<h4>$providerName</h4>
-<code>string</code><p>The data provider from which the root element originates from.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_handleAjaxCall"></a><div class="element clickable method public method_handleAjaxCall" data-toggle="collapse" data-target=".method_handleAjaxCall .collapse">
@@ -247,18 +229,6 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_addParentFilter"></a><div class="element clickable method protected method_addParentFilter" data-toggle="collapse" data-target=".method_addParentFilter .collapse">
-<h2>Add the parent filtering to the given data config if any defined.</h2>
-<pre>addParentFilter(\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface $config) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$config</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code><p>The data config.</p></div>
-</div></div>
-</div>
 <a id="method_calcLabelFields"></a><div class="element clickable method protected method_calcLabelFields" data-toggle="collapse" data-target=".method_calcLabelFields .collapse">
 <h2>Calculate the fields needed by a tree label for the given data provider name.</h2>
 <pre>calcLabelFields(string $strTable) : array</pre>
@@ -271,21 +241,6 @@
 <code>string</code><p>The name of the data provider.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_determineModelState"></a><div class="element clickable method protected method_determineModelState" data-toggle="collapse" data-target=".method_determineModelState .collapse">
-<h2>Check the state of a model and set the metadata accordingly.</h2>
-<pre>determineModelState(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, int $level) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model of which the state shall be checked of.</p></div>
-<div class="subelement argument">
-<h4>$level</h4>
-<code>int</code><p>The tree level the model is contained within.</p></div>
 </div></div>
 </div>
 <a id="method_generateTreeView"></a><div class="element clickable method protected method_generateTreeView" data-toggle="collapse" data-target=".method_generateTreeView .collapse">
@@ -305,16 +260,6 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_getOpenElements"></a><div class="element clickable method protected method_getOpenElements" data-toggle="collapse" data-target=".method_getOpenElements .collapse">
-<h2>Retrieve the ids of all tree nodes that are expanded.</h2>
-<pre>getOpenElements() : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
 <a id="method_getToggleId"></a><div class="element clickable method protected method_getToggleId" data-toggle="collapse" data-target=".method_getToggleId .collapse">
 <h2>Retrieve the id for this view.</h2>
 <pre>getToggleId() : string</pre>
@@ -323,6 +268,16 @@
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getTreeNodeStates"></a><div class="element clickable method protected method_getTreeNodeStates" data-toggle="collapse" data-target=".method_getTreeNodeStates .collapse">
+<h2>Create a tree states instance.</h2>
+<pre>getTreeNodeStates() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
 </div></div>
 </div>
 <a id="method_isModelOpen"></a><div class="element clickable method protected method_isModelOpen" data-toggle="collapse" data-target=".method_isModelOpen .collapse">
@@ -372,38 +327,16 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_toggleModel"></a><div class="element clickable method protected method_toggleModel" data-toggle="collapse" data-target=".method_toggleModel .collapse">
-<h2>Toggle the model with the given id from the given provider.</h2>
-<pre>toggleModel(string $providerName, mixed $modelId) : void</pre>
+<a id="method_saveTreeNodeStates"></a><div class="element clickable method protected method_saveTreeNodeStates" data-toggle="collapse" data-target=".method_saveTreeNodeStates .collapse">
+<h2>Save a tree node states instance to the session.</h2>
+<pre>saveTreeNodeStates(\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates $states) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$providerName</h4>
-<code>string</code><p>The data provider name.</p></div>
-<div class="subelement argument">
-<h4>$modelId</h4>
-<code>mixed</code><p>The id of the model.</p></div>
-</div></div>
-</div>
-<a id="method_treeWalkModel"></a><div class="element clickable method protected method_treeWalkModel" data-toggle="collapse" data-target=".method_treeWalkModel .collapse">
-<h2>This "renders" a model for tree view.</h2>
-<pre>treeWalkModel(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $objModel, int $intLevel, array $arrSubTables) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$objModel</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to render.</p></div>
-<div class="subelement argument">
-<h4>$intLevel</h4>
-<code>int</code><p>The current level in the tree hierarchy.</p></div>
-<div class="subelement argument">
-<h4>$arrSubTables</h4>
-<code>array</code><p>The names of data providers that shall be rendered "below" this item.</p>
-</div>
+<h4>$states</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code><p>The instance to be saved.</p></div>
 </div></div>
 </div>
 <a id="method_viewTree"></a><div class="element clickable method protected method_viewTree" data-toggle="collapse" data-target=".method_viewTree .collapse">
@@ -420,6 +353,27 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_handleNodeStateChanges"></a><div class="element clickable method private method_handleNodeStateChanges" data-toggle="collapse" data-target=".method_handleNodeStateChanges .collapse">
+<h2>Check the get parameters if there is any node toggling.</h2>
+<pre>handleNodeStateChanges() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">CAUTION: If there has been any action, the browser will get redirected and the script therefore exited.</div></div></div>
+</div>
+<a id="method_toggleModel"></a><div class="element clickable method private method_toggleModel" data-toggle="collapse" data-target=".method_toggleModel .collapse">
+<h2>Toggle the model with the given id from the given provider.</h2>
+<pre>toggleModel(string $providerName, mixed $modelId) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code>mixed</code><p>The id of the model.</p></div>
+</div></div>
+</div>
 </div>
 </div>
 </div>
@@ -428,7 +382,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-10T06:04:05+01:00.<br></footer></div>
+            generated on 2015-01-10T19:31:04+01:00.<br></footer></div>
 </div>
 </body>
 </html>

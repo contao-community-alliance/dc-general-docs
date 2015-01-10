@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>contao-community-alliance/dc-general » \ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">contao-community-alliance/dc-general</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html"><i class="icon-th"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ContaoCommunityAlliance.html"><i class="icon-folder-open"></i> ContaoCommunityAlliance</a></li>
+<li><a href="../packages/DcGeneral.html"><i class="icon-folder-open"></i> DcGeneral</a></li>
+<li><a href="../packages/generalDriver.html"><i class="icon-folder-open"></i> generalDriver</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">94</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_getStates" title="getStates() :: Retrieve the states as array."><span class="description">Retrieve the states as array.</span><pre>getStates()</pre></a></li>
+<li class="method public "><a href="#method_isAllOpen" title='isAllOpen() :: Retrieve the flag if all nodes shall be shown in "open" state.'><span class="description">Retrieve the flag if all nodes shall be shown in "open" state.</span><pre>isAllOpen()</pre></a></li>
+<li class="method public "><a href="#method_isModelOpen" title="isModelOpen() :: Determine if the model is expanded."><span class="description">Determine if the model is expanded.</span><pre>isModelOpen()</pre></a></li>
+<li class="method public "><a href="#method_resetAll" title="resetAll() :: This will reset all the information and therefore close all models."><span class="description">This will reset all the information and therefore close all models.</span><pre>resetAll()</pre></a></li>
+<li class="method public "><a href="#method_setAllOpen" title="setAllOpen() :: Set the flag if all elements shall be expanded or not."><span class="description">Set the flag if all elements shall be expanded or not.</span><pre>setAllOpen()</pre></a></li>
+<li class="method public "><a href="#method_setModelState" title="setModelState() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>setModelState()</pre></a></li>
+<li class="method public "><a href="#method_setStates" title="setStates() :: Set the native states."><span class="description">Set the native states.</span><pre>setStates()</pre></a></li>
+<li class="method public "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_states" title="$states() :: The states of the nodes."><span class="description"></span><pre>$states</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ContaoCommunityAlliance.html">ContaoCommunityAlliance</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.html">DcGeneral</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ContaoCommunityAlliance.DcGeneral.Controller.html">Controller</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">TreeNodeStates</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Wrapper class for tree node states.</p>
+<div class="details">
+<div class="long_description">This class encapsulates the open/closed states for a tree of models.</div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Create a new instance.</h2>
+<pre>__construct(array $states) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$states</h4>
+<code>array</code><p>The initial state array (optional, if not given, the state information will be empty).</p>
+</div>
+</div></div>
+</div>
+<a id="method_getStates"></a><div class="element clickable method public method_getStates" data-toggle="collapse" data-target=".method_getStates .collapse">
+<h2>Retrieve the states as array.</h2>
+<pre>getStates() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The returned array may be stored to session or other persistent storage and imported again via constructor
+argument or a call to setStates().</div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CController%5CgetStates()."></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_isAllOpen"></a><div class="element clickable method public method_isAllOpen" data-toggle="collapse" data-target=".method_isAllOpen .collapse">
+<h2>Retrieve the flag if all nodes shall be shown in "open" state.</h2>
+<pre>isAllOpen() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isModelOpen"></a><div class="element clickable method public method_isModelOpen" data-toggle="collapse" data-target=".method_isModelOpen .collapse">
+<h2>Determine if the model is expanded.</h2>
+<pre>isModelOpen(string $providerName, mixed $modelId, bool $ignoreAllState) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code>mixed</code><p>The id of the model.</p></div>
+<div class="subelement argument">
+<h4>$ignoreAllState</h4>
+<code>bool</code><p>If this is true, the "all open" flag will be ignored.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_resetAll"></a><div class="element clickable method public method_resetAll" data-toggle="collapse" data-target=".method_resetAll .collapse">
+<h2>This will reset all the information and therefore close all models.</h2>
+<pre>resetAll() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
+<a id="method_setAllOpen"></a><div class="element clickable method public method_setAllOpen" data-toggle="collapse" data-target=".method_setAllOpen .collapse">
+<h2>Set the flag if all elements shall be expanded or not.</h2>
+<pre>setAllOpen(boolean $allOpen) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">If this flag is set, all tree nodes will be handled in "open" state - if this flag is not set, the visibility
+states will get read from the open flags per driver.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$allOpen</h4>
+<code>boolean</code><p>The flag.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
+<a id="method_setModelState"></a><div class="element clickable method public method_setModelState" data-toggle="collapse" data-target=".method_setModelState .collapse">
+<h2>Toggle the model with the given id from the given provider.</h2>
+<pre>setModelState(string $providerName, mixed $modelId, bool $state) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code>mixed</code><p>The id of the model.</p></div>
+<div class="subelement argument">
+<h4>$state</h4>
+<code>bool</code><p>The new state for the model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
+<a id="method_setStates"></a><div class="element clickable method public method_setStates" data-toggle="collapse" data-target=".method_setStates .collapse">
+<h2>Set the native states.</h2>
+<pre>setStates(array $states) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The states must be created via the getStates() method.</div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CController%5CgetStates()"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$states</h4>
+<code>array</code><p>The state array.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
+<a id="method_toggleModel"></a><div class="element clickable method public method_toggleModel" data-toggle="collapse" data-target=".method_toggleModel .collapse">
+<h2>Toggle the model with the given id from the given provider.</h2>
+<pre>toggleModel(string $providerName, mixed $modelId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$providerName</h4>
+<code>string</code><p>The data provider name.</p></div>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code>mixed</code><p>The id of the model.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_states"> </a><div class="element clickable property private property_states" data-toggle="collapse" data-target=".property_states .collapse">
+<h2>The states of the nodes.</h2>
+<pre>$states : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2015-01-10T19:31:05+01:00.<br></footer></div>
+</div>
+</body>
+</html>

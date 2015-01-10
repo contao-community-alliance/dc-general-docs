@@ -71,6 +71,7 @@
 <li class="method public "><a href="#method_getSetters" title="getSetters() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSetters()</pre></a></li>
 <li class="method public "><a href="#method_getSourceName" title="getSourceName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>getSourceName()</pre></a></li>
 <li class="method public "><a href="#method_matches" title="matches() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>matches()</pre></a></li>
+<li class="method public "><a href="#method_neededProperties" title="neededProperties() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>neededProperties()</pre></a></li>
 <li class="method public "><a href="#method_parseFilter" title="parseFilter() :: Apply the filter values for a given model to the given rule."><span class="description">Apply the filter values for a given model to the given rule.</span><pre>parseFilter()</pre></a></li>
 <li class="method public "><a href="#method_setDestinationName" title="setDestinationName() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setDestinationName()</pre></a></li>
 <li class="method public "><a href="#method_setFilterArray" title="setFilterArray() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>setFilterArray()</pre></a></li>
@@ -81,6 +82,9 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul><li class="method protected "><a href="#method_prepareRule" title="prepareRule() :: Prepare a filter rule to be checked via checkCondition()."><span class="description">Prepare a filter rule to be checked via checkCondition().</span><pre>prepareRule()</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_extractNeededProperties" title="extractNeededProperties() :: Return the names of the needed properties for filtering."><span class="description">Return the names of the needed properties for filtering.</span><pre>extractNeededProperties()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
@@ -94,6 +98,9 @@
 <li class="property protected "><a href="#property_setOn" title="$setOn() :: The values to use when enforcing a root condition."><span class="description"></span><pre>$setOn</pre></a></li>
 <li class="property protected "><a href="#property_sourceProvider" title="$sourceProvider() :: The name of the source provider (parent)."><span class="description"></span><pre>$sourceProvider</pre></a></li>
 </ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_neededProperties" title="$neededProperties() :: Local cache property for the needed properties for filtering."><span class="description"></span><pre>$neededProperties</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -224,6 +231,12 @@
 <div class="subelement argument"><h4>$objChild</h4></div>
 </div></div>
 </div>
+<a id="method_neededProperties"></a><div class="element clickable method public method_neededProperties" data-toggle="collapse" data-target=".method_neededProperties .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>neededProperties() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_parseFilter"></a><div class="element clickable method public method_parseFilter" data-toggle="collapse" data-target=".method_parseFilter .collapse">
 <h2>Apply the filter values for a given model to the given rule.</h2>
 <pre>parseFilter(array $filter, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : array</pre>
@@ -308,6 +321,25 @@
 <div class="subelement response"><code><a href="array..html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\array.</a></code></div>
 </div></div>
 </div>
+<a id="method_extractNeededProperties"></a><div class="element clickable method private method_extractNeededProperties" data-toggle="collapse" data-target=".method_extractNeededProperties .collapse">
+<h2>Return the names of the needed properties for filtering.</h2>
+<pre>extractNeededProperties(array $rule) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rule</h4>
+<code>array</code><p>The filter rule from which the properties shall be extracted from.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="RuntimeException.html">\RuntimeException</a></code></th>
+<td>When an unexpected filter rule is encountered.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_destinationProvider"> </a><div class="element clickable property protected property_destinationProvider" data-toggle="collapse" data-target=".property_destinationProvider .collapse">
@@ -340,6 +372,12 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_neededProperties"> </a><div class="element clickable property private property_neededProperties" data-toggle="collapse" data-target=".property_neededProperties .collapse">
+<h2>Local cache property for the needed properties for filtering.</h2>
+<pre>$neededProperties : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -348,7 +386,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-10T06:04:03+01:00.<br></footer></div>
+            generated on 2015-01-10T19:31:02+01:00.<br></footer></div>
 </div>
 </body>
 </html>
