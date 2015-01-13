@@ -13548,7 +13548,7 @@ current model. A circular reference is of relevance when performing a cut and pa
     </class>
     <source>eJytVMFu2zAMvfsreCjQLliUw7BLm3bpkqIdkAzB2t0CBIpMx8JkyZDodMXQfx8t21njdAOGTZeYIvke+Uhl/KHMy2Q0GCQwgOXdEnbog3YW3vNFfTcppfomtwh8tmjRSzPzmqOiU1aUO1/7YJp7HUhLC/cq11lm0MNYidAZE/W0YewSFfmqECle9RHuCTNOv0NdYIBxiOY6j+Ykd1RIbYRyxVHiQ83MmXNtOY8aSxi2JhtN7/ZcypVPXm9z4pQcYYEkFy5FE4BQFiLGGK3Qhtju/HY5by4zbTC4yitkc5QkVnJJLAzC1FmSbuqKorKanq6NYQUUrmbqthFrNZMkZ5hpdrOuq6U0SISrj5U2KfrVzQ4tXSRJFf4DWGu35sW/gc6R551+soQ+41a5xnZNHnIdAOu6eSOIPwvN8Sk85mhBgol5wDFMn4r+Hv2dMlFvZWQI8DVgU1J0AH4n/g7QhjfRP5J6cMrZQPD5enEDl3CaqmG7uCJlxmG6pxRlQyk2DYbggodN+afcbg0VW67PIK5M11snimidXcxkJz30hGt9o/hbekf8AlitkwbrmGfqURKykBYfmane5VeISull0afqQKE7L2reoLbbbiSvYR0uD8BJeXhRY7VX0ArG5dWI4rDFasOPCLLKqlpkWK/jPHyl6Ow39b7tk/e430TgZrj1OSFeweFV29nlLy27AO6I1+H8/CV3H7OJfj7S/wvyPwivN9BevCPFPFLl7Z8n3ZOBn0oTftbvpgU7aKor7jn5CRB7zZI=</source>
   </file>
-  <file path="Controller/DefaultController.php" generated-path="Controller.DefaultController.html" hash="053988647a4189240f30ecb7c61706c1" package="generalDriver">
+  <file path="Controller/DefaultController.php" generated-path="Controller.DefaultController.html" hash="3f59c72c75d8702797eecb0dcaba4fc5" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -13714,29 +13714,26 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="250" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="247" package="generalDriver">
         <name>assembleSiblingsFor</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::assembleSiblingsFor()</full_name>
-        <docblock line="250">
+        <docblock line="247">
           <description>Retrieve all siblings of a given model.</description>
           <long-description></long-description>
-          <tag name="param" line="250" description="&lt;p&gt;The model for which the siblings shall be retrieved from.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+          <tag name="param" line="247" description="&lt;p&gt;The model for which the siblings shall be retrieved from.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="250" description="&lt;p&gt;The property name to use for sorting.&lt;/p&gt;" type="string|null" variable="$sortingProperty">
+          <tag name="param" line="247" description="&lt;p&gt;The property name to use for sorting.&lt;/p&gt;" type="string|null" variable="$sortingProperty">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="param" line="250" description="&lt;p&gt;The (optional) parent id to use.&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentId">
+          <tag name="param" line="247" description="&lt;p&gt;The (optional) parent id to use.&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="return" line="250" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="247" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="throws" line="250" description="When no parent model can be located." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
-            <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
-          </tag>
-          <tag name="todo" line="250" description="This might return a lot of models, we definately want to use some lazy approach rather than this."/>
+          <tag name="todo" line="247" description="This might return a lot of models, we definately want to use some lazy approach rather than this."/>
         </docblock>
         <argument line="0">
           <name>$model</name>
@@ -13754,23 +13751,23 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="327" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="324" package="generalDriver">
         <name>assembleChildrenFor</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::assembleChildrenFor()</full_name>
-        <docblock line="327">
+        <docblock line="324">
           <description>Retrieve children of a given model.</description>
           <long-description></long-description>
-          <tag name="param" line="327" description="&lt;p&gt;The model for which the children shall be retrieved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+          <tag name="param" line="324" description="&lt;p&gt;The model for which the children shall be retrieved.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="327" description="&lt;p&gt;The property name to use for sorting.&lt;/p&gt;" type="string|null" variable="$sortingProperty">
+          <tag name="param" line="324" description="&lt;p&gt;The property name to use for sorting.&lt;/p&gt;" type="string|null" variable="$sortingProperty">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="327" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="324" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="throws" line="327" description="When not in hierarchical mode." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="324" description="When not in hierarchical mode." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -13785,10 +13782,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>string|null</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="354" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="351" package="generalDriver">
         <name>updateModelFromPropertyBag</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::updateModelFromPropertyBag()</full_name>
-        <docblock line="354">
+        <docblock line="351">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13803,16 +13800,16 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="409" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="406" package="generalDriver">
         <name>getSupportedLanguages</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getSupportedLanguages()</full_name>
-        <docblock line="409">
+        <docblock line="406">
           <description>Return all supported languages from the default data data provider.</description>
           <long-description></long-description>
-          <tag name="param" line="409" description="&lt;p&gt;The id of the item for which to retrieve the valid languages.&lt;/p&gt;" type="mixed" variable="$mixID">
+          <tag name="param" line="406" description="&lt;p&gt;The id of the item for which to retrieve the valid languages.&lt;/p&gt;" type="mixed" variable="$mixID">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="409" description="" type="array">
+          <tag name="return" line="406" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
@@ -13822,20 +13819,20 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="455" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="452" package="generalDriver">
         <name>getBaseConfig</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getBaseConfig()</full_name>
-        <docblock line="455">
+        <docblock line="452">
           <description>Retrieve the base data provider config for the current data definition.</description>
           <long-description>This includes parent filter when in parented list mode and the additional filters from the data definition.</long-description>
-          <tag name="param" line="455" description="&lt;p&gt;The optional parent to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentId">
+          <tag name="param" line="452" description="&lt;p&gt;The optional parent to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="return" line="455" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
+          <tag name="return" line="452" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="see" line="455" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\BaseConfigRegistryInterface::getBaseConfig()"/>
-          <tag name="deprecated" line="455" description="Use EnvironmentInterface::getBaseConfigRegistry-&gt;getBaseConfig()"/>
+          <tag name="see" line="452" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\BaseConfigRegistryInterface::getBaseConfig()"/>
+          <tag name="deprecated" line="452" description="Use EnvironmentInterface::getBaseConfigRegistry-&gt;getBaseConfig()"/>
         </docblock>
         <argument line="0">
           <name>$parentId</name>
@@ -13843,13 +13840,13 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="465" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="462" package="generalDriver">
         <name>createClonedModel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::createClonedModel()</full_name>
-        <docblock line="465">
+        <docblock line="462">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="throws" line="465" description="For constraint violations." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+          <tag name="throws" line="462" description="For constraint violations." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
             <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
           </tag>
         </docblock>
@@ -13859,10 +13856,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="512" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="509" package="generalDriver">
         <name>fetchModelFromProvider</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::fetchModelFromProvider()</full_name>
-        <docblock line="512">
+        <docblock line="509">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13877,18 +13874,18 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="531" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="528" package="generalDriver">
         <name>createEmptyModelWithDefaults</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::createEmptyModelWithDefaults()</full_name>
-        <docblock line="531">
+        <docblock line="528">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="554" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="551" package="generalDriver">
         <name>getModelFromClipboardItem</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getModelFromClipboardItem()</full_name>
-        <docblock line="554">
+        <docblock line="551">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13898,10 +13895,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Clipboard\ItemInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="568" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="565" package="generalDriver">
         <name>getModelsFromClipboardItems</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getModelsFromClipboardItems()</full_name>
-        <docblock line="568">
+        <docblock line="565">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13911,10 +13908,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="588" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="585" package="generalDriver">
         <name>getModelsFromClipboard</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getModelsFromClipboard()</full_name>
-        <docblock line="588">
+        <docblock line="585">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13924,10 +13921,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="610" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="607" package="generalDriver">
         <name>applyClipboardActions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::applyClipboardActions()</full_name>
-        <docblock line="610">
+        <docblock line="607">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -13962,20 +13959,20 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="635" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="632" package="generalDriver">
         <name>getActionsFromSource</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::getActionsFromSource()</full_name>
-        <docblock line="635">
+        <docblock line="632">
           <description>Fetch actions from source.</description>
           <long-description></long-description>
-          <tag name="param" line="635" description="&lt;p&gt;The source id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$source">
+          <tag name="param" line="632" description="&lt;p&gt;The source id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$source">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="635" description="&lt;p&gt;The parent id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer|null" variable="$parentModelId">
+          <tag name="param" line="632" description="&lt;p&gt;The parent id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer|null" variable="$parentModelId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="635" description="" type="array">
+          <tag name="return" line="632" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
@@ -13990,20 +13987,20 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer|null</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="665" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="662" package="generalDriver">
         <name>fetchModelsFromClipboard</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::fetchModelsFromClipboard()</full_name>
-        <docblock line="665">
+        <docblock line="662">
           <description>Fetch actions from the clipboard.</description>
           <long-description></long-description>
-          <tag name="param" line="665" description="&lt;p&gt;The clipboard filter.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface|null" variable="$filter">
+          <tag name="param" line="662" description="&lt;p&gt;The clipboard filter.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface|null" variable="$filter">
             <type link="FilterInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface</type>
             <type>null</type>
           </tag>
-          <tag name="param" line="665" description="&lt;p&gt;The parent id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
+          <tag name="param" line="662" description="&lt;p&gt;The parent id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="return" line="665" description="" type="array">
+          <tag name="return" line="662" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
@@ -14018,28 +14015,28 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="718" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="715" package="generalDriver">
         <name>doActions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::doActions()</full_name>
-        <docblock line="718">
+        <docblock line="715">
           <description>Effectively do the actions.</description>
           <long-description></long-description>
-          <tag name="param" line="718" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
+          <tag name="param" line="715" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
             <type>array</type>
           </tag>
-          <tag name="param" line="718" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
+          <tag name="param" line="715" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="718" description="&lt;p&gt;The hierarchical parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$into">
+          <tag name="param" line="715" description="&lt;p&gt;The hierarchical parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$into">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="718" description="&lt;p&gt;The parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
+          <tag name="param" line="715" description="&lt;p&gt;The parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="718" description="&lt;p&gt;Write-back clipboard items.&lt;/p&gt;&#10;" type="array" variable="$items">
+          <tag name="param" line="715" description="&lt;p&gt;Write-back clipboard items.&lt;/p&gt;&#10;" type="array" variable="$items">
             <type>array</type>
           </tag>
-          <tag name="return" line="718" description="" type="mixed">
+          <tag name="return" line="715" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -14069,22 +14066,22 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="767" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="764" package="generalDriver">
         <name>applyAction</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::applyAction()</full_name>
-        <docblock line="767">
+        <docblock line="764">
           <description>Apply the action onto the model.</description>
           <long-description>This will create or clone the model in the action.</long-description>
-          <tag name="param" line="767" description="&lt;p&gt;The action, containing a model and an item.&lt;/p&gt;" type="array" variable="$action">
+          <tag name="param" line="764" description="&lt;p&gt;The action, containing a model and an item.&lt;/p&gt;" type="array" variable="$action">
             <type>array</type>
           </tag>
-          <tag name="param" line="767" description="&lt;p&gt;A list of models that need deep copy.&lt;/p&gt;" type="array" variable="$deepCopyList">
+          <tag name="param" line="764" description="&lt;p&gt;A list of models that need deep copy.&lt;/p&gt;" type="array" variable="$deepCopyList">
             <type>array</type>
           </tag>
-          <tag name="param" line="767" description="&lt;p&gt;The parent model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
+          <tag name="param" line="764" description="&lt;p&gt;The parent model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="return" line="767" description="" type="void">
+          <tag name="return" line="764" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -14104,16 +14101,16 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="812" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="809" package="generalDriver">
         <name>doCloneAction</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::doCloneAction()</full_name>
-        <docblock line="812">
+        <docblock line="809">
           <description>Effectively do the clone action on the model.</description>
           <long-description></long-description>
-          <tag name="param" line="812" description="&lt;p&gt;The model to clone.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+          <tag name="param" line="809" description="&lt;p&gt;The model to clone.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="return" line="812" description="Return the cloned model." type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+          <tag name="return" line="809" description="Return the cloned model." type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -14123,19 +14120,19 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="847" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="844" package="generalDriver">
         <name>ensureSameGrouping</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::ensureSameGrouping()</full_name>
-        <docblock line="847">
+        <docblock line="844">
           <description>Ensure all models have the same grouping.</description>
           <long-description></long-description>
-          <tag name="param" line="847" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
+          <tag name="param" line="844" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
             <type>array</type>
           </tag>
-          <tag name="param" line="847" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
+          <tag name="param" line="844" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="return" line="847" description="" type="void">
+          <tag name="return" line="844" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -14150,28 +14147,28 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="877" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="874" package="generalDriver">
         <name>sortAndPersistModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::sortAndPersistModels()</full_name>
-        <docblock line="877">
+        <docblock line="874">
           <description>Apply sorting and persist all models.</description>
           <long-description></long-description>
-          <tag name="param" line="877" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
+          <tag name="param" line="874" description="&lt;p&gt;The actions collection.&lt;/p&gt;" type="array" variable="$actions">
             <type>array</type>
           </tag>
-          <tag name="param" line="877" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
+          <tag name="param" line="874" description="&lt;p&gt;The previous model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$after">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="877" description="&lt;p&gt;The hierarchical parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$into">
+          <tag name="param" line="874" description="&lt;p&gt;The hierarchical parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$into">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="877" description="&lt;p&gt;The parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
+          <tag name="param" line="874" description="&lt;p&gt;The parent model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer" variable="$parentModelId">
             <type link="IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
           </tag>
-          <tag name="param" line="877" description="&lt;p&gt;Write-back clipboard items.&lt;/p&gt;&#10;" type="array" variable="$items">
+          <tag name="param" line="874" description="&lt;p&gt;Write-back clipboard items.&lt;/p&gt;&#10;" type="array" variable="$items">
             <type>array</type>
           </tag>
-          <tag name="return" line="877" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]">
+          <tag name="return" line="874" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]">
             <type link="DefaultCollection.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection</type>
             <type link="ModelInterface[].html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</type>
           </tag>
@@ -14202,16 +14199,16 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="949" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="952" package="generalDriver">
         <name>doDeepCopy</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::doDeepCopy()</full_name>
-        <docblock line="949">
+        <docblock line="952">
           <description>Do deep copy.</description>
           <long-description></long-description>
-          <tag name="param" line="949" description="&lt;p&gt;The deep copy list.&lt;/p&gt;" type="array" variable="$deepCopyList">
+          <tag name="param" line="952" description="&lt;p&gt;The deep copy list.&lt;/p&gt;" type="array" variable="$deepCopyList">
             <type>array</type>
           </tag>
-          <tag name="return" line="949" description="" type="void">
+          <tag name="return" line="952" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -14221,10 +14218,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1035" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1038" package="generalDriver">
         <name>pasteTop</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::pasteTop()</full_name>
-        <docblock line="1035">
+        <docblock line="1038">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14244,13 +14241,13 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1052" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1055" package="generalDriver">
         <name>pasteAfter</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::pasteAfter()</full_name>
-        <docblock line="1052">
+        <docblock line="1055">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
-          <tag name="throws" line="1052" description="When no models have been passed." type="\RuntimeException">
+          <tag name="throws" line="1055" description="When no models have been passed." type="\RuntimeException">
             <type link="RuntimeException.html">\RuntimeException</type>
           </tag>
         </docblock>
@@ -14270,10 +14267,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1094" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1097" package="generalDriver">
         <name>pasteInto</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::pasteInto()</full_name>
-        <docblock line="1094">
+        <docblock line="1097">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14293,10 +14290,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1113" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1116" package="generalDriver">
         <name>isRootModel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::isRootModel()</full_name>
-        <docblock line="1113">
+        <docblock line="1116">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14306,10 +14303,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1135" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1138" package="generalDriver">
         <name>setRootModel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::setRootModel()</full_name>
-        <docblock line="1135">
+        <docblock line="1138">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14319,10 +14316,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1151" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1154" package="generalDriver">
         <name>setParent</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::setParent()</full_name>
-        <docblock line="1151">
+        <docblock line="1154">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14337,10 +14334,10 @@ current model. A circular reference is of relevance when performing a cut and pa
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1164" package="generalDriver">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="1167" package="generalDriver">
         <name>setSameParent</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\DefaultController::setSameParent()</full_name>
-        <docblock line="1164">
+        <docblock line="1167">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
@@ -14362,11 +14359,11 @@ current model. A circular reference is of relevance when performing a cut and pa
       </method>
     </class>
     <markers>
-      <todo line="288">TL dnk how to handle this without highjacking the view.</todo>
-      <todo line="744">to be discussed, this allow cut&amp;paste over groupings with custom sorting</todo>
-      <fixme line="906">too many parameters, this is just crazy! :-(</fixme>
+      <todo line="285">TL dnk how to handle this without highjacking the view.</todo>
+      <todo line="741">to be discussed, this allow cut&amp;paste over groupings with custom sorting</todo>
+      <fixme line="903">too many parameters, this is just crazy! :-(</fixme>
     </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="DataDefinition/Palette/Builder/Event/UsePaletteEvent.php" generated-path="DataDefinition.Palette.Builder.Event.UsePaletteEvent.html" hash="20f3574c19abc5bdef4bba2f9a2a5714" package="generalDriver">
     <docblock line="0">
@@ -14829,7 +14826,7 @@ receives a ContaoCommunityAlliance\DcGeneral\Event\ViewEvent instance.</long-des
     </interface>
     <source>eJy1U02L2zAQvftXzCGwaSjOofTU0GbJwm4hC6HpsVBkeWyL1YeRxqGh9L93JCcbNlkHF7q6mJnRe/Pmjbz40jZtls1nswxmsHnYwA59UM7CR07E3LIV8knUCHxqtOiFvvOKb6Wi6KhxPtZg1XgVSAkLW9moqtLoYSHzcAyWcl8wd4uSfGfyEj+fM2wJK4Y/oDIYYBFS+LNJ4bJxZITSuXTmAvg9dmbkWlnGUR/lmqNloejDcy/p2r1XdUMMaRAekcSjK1EHIBQmT3e0kmhDGnd9v1n3yUppDK7zEjmcZ5kVLImNQVg5S8KtnDGdVbS/1ZodkPjjTt73Zn16dje2DBiSu4GcZ1Pzg8mvlKBxugRlK+eNIC7cBGjjbtgWS1wAOoHyJEtZQl9FVds+ve2pvh7z2e8szpX0xDPjpaF8CqAqYPsEsXVFRwgqQImVsljmh5tHAD8HLwyL9MrWMIlGJPUnbExdoDxS5y0UzulDbp6+bVew4VB1VsYZoRFhmkjfsW9nWr8ljvBC6f+VZ9QvLK/qq5EG9W2R/l3cGHU9LIkDmOyE7s6HSrmhqfhnICWvjhWOY70/8F+zX+tT5zDUVHgv9ld7Ms900MVh/t6MRA+T0z24TRlXjdA2whCPreYfZnrR51VjjNvhW77LUYKjiMG3udIo/NjdjWgnI19c35/sLweb10w=</source>
   </file>
-  <file path="Data/DataProviderInterface.php" generated-path="Data.DataProviderInterface.html" hash="638374943bbd8fac1867063e650439bc" package="generalDriver">
+  <file path="Data/DataProviderInterface.php" generated-path="Data.DataProviderInterface.html" hash="cc6d58b96d6bb07563ac50825d4114f0" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -14946,9 +14943,9 @@ matching ids is returned.</long-description>
           <tag name="param" line="89" description="&lt;p&gt;The configuration to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$objConfig">
             <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
-          <tag name="return" line="89" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|array">
+          <tag name="return" line="89" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-            <type>array</type>
+            <type link="ModelInterface[].html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</type>
           </tag>
         </docblock>
         <argument line="0">
@@ -15291,7 +15288,7 @@ Documentation:
         </argument>
       </method>
     </interface>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Contao/Callback/PropertyOnSaveCallbackListener.php" generated-path="Contao.Callback.PropertyOnSaveCallbackListener.html" hash="349d153688ab16c33420cb50bcde859b" package="generalDriver">
     <docblock line="0">
@@ -19972,7 +19969,7 @@ will get returned, the default is to be determined via: getEnvironment()-&gt;get
     </interface>
     <source>eJydkk1rG0EMhu/zK3QLmLI+hJzitg52SAJ2MCRHQxnPaj0i87HMaEtM6X+vZvxFkhZK9jIrvZJGejST773t1Xg0UjCC1f0KfmLKFANciaP4pr02L3qLIN8WAybt5okkqop6YBtT0WBmE2UmHeDJWOo6hwkmpslHY2p2G6ndo+E0+KbFb+8rPDF2kn6P5DHDJFfzh63m1Eb2mlxjov+Q+FxulswFBcnjvdU4saYb4svTXSb2u0Rby5JiEZbIehlbdBkYtW9qjCODIddxF3erxd7ZkcMch2RQzLFSQUtLAgZhFgPrOIveD4F4d+OcEDC4npu7Paz1XLOeY0ciC9f1+fdaqSF/osJKO2TG4zmLzglTUR4CY+qkK6l82OizpQx09EOL2STaCF0N/T5dfMfKzWHl0gJ4FLqtxCWEDVLYSlxZewtdih5Y8PWiBS7S6YIMZkjF63bN+/fzH0Qq3HO3hwHzOeA0IeArY5D+/qJ9gX+TUb9U2WylU75RfQhlnRC7OtUbHDVkXE8TQ2Z4vFnewle4OMDLF9fqt/oDbcYaWA==</source>
   </file>
-  <file path="Data/ConfigInterface.php" generated-path="Data.ConfigInterface.html" hash="67317582b7a6969ff3e223aa65237327" package="generalDriver">
+  <file path="Data/ConfigInterface.php" generated-path="Data.ConfigInterface.html" hash="ccc89d6566f7b88549770d8d448380a7" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -20206,8 +20203,8 @@ provider.</long-description>
           <tag name="param" line="159" description="&lt;p&gt;The sorting array to use.&lt;/p&gt;" type="array" variable="$arrSorting">
             <type>array</type>
           </tag>
-          <tag name="return" line="159" description="" type="array">
-            <type>array</type>
+          <tag name="return" line="159" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
+            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
         </docblock>
         <argument line="0">
@@ -20296,7 +20293,7 @@ provider.</long-description>
     <markers>
       <todo line="177">make a property bag out of this.</todo>
     </markers>
-    <source>eJy9V0tv4zYQvvtXzMFAnKBwDkUv23TXqd3NBk02QR20lwUKShpZbPgQSMpZo+l/7/DhR+zIj43bHCKQIme+x3BEX3yoq7pzfnbWgTO4/3QPUzSWawU/0ISfG9Qsf2QTBPqboELDxMhwWhVessZV2vh3MKwMt44zBeO84mUp0MBF3rfzwSCfZRS7xtyZRvYLfL8eYeywpO2fkEu0cGHD8M8qDAeVdpJx0c+13Nj44DPTzhuuaJ+Lo76g0SDj7vtFrlzXM8MnlaMtFcItOnarCxQWHDLZD2sEz1HZQPfm6v4mTpZcoNWNyZGG552OYgSJhEEYauWYHmopG8Xd7FIIUiDHL6P8Kor1ZcQc+7Ezl/haOTRl2lnyyWLcT3o/VNwCX6wq0OaGZ6SHI8R52NMY5rxFOvuLxKQ3GhpC/FShAoNEH6dcTUBGakwVtE8IWkqbLJRGS2BQECyfrzZ6ygs0/XW/XzIIvHkb+M7fHS9Y4Oj/zshLwph7wJbszp32CcKr+YqB04V+B4WGJ8LOlPM8HhFrYkoSZFixKSfNP3hJTAE1M24GT1wIUNrBo9JPSRNjiBvkglnPdvbEZhu5SJbGKJD8KxZp8jw86yYjx8FGuGWjgkpkAHe9U7JtjdYVOvAlzEtazYuD8ywSTNBdF69lGFMGtpoDSqpyKm4UKDGqlOHcZ9yEQDoxGRFAlx7XRSh2CqTLINi+gRKXdau3sbKBVczaop6gw+mRrDC0+0JhxrDZblltm67flDvqGVJDlx4UPwg6D3YA/oOltL2U8RVCv8WYpWAT4CVoJWYBi610I4qEh1a0w8m0Fuuvxk1dG7T2D2YUNRHbo2/C7aj/My1FpshAapqVLj5TAzzd7cQdgWozIwD3tZ3Q+AKl5S36e6zQzYSKQSEBilFI/gJJVMkVUokzF9W4DmowahgrYsQ2mdOs75Eluryipt07PZpngfMSacsx8AdRl6XFcA6p/RhHvc1V6zDi58Curfft3ktXswlX4WPQBp9a9i6bxj55m0v/Oc5oL8GELv0LWOBzI+mq4A9XyQ2dspWOFWkdyazIfJF3i1WCS+5StdpGOLuNP5O6UbE3OJR2Cft4nl2GFNtM+38Qv3QvogrdMUWMNXAkuxLpZaathtlYqFRCwvliqsP1502flo8h1HbV90y7/lWJoaN0YTL3F0vue3AInMJNmWiwlcSBeiY6y/S79KT68N20wJL7Tmq1cf4bsVlZ83br0Uc64d6W+d4AJ3TlrNFf5vw1+gR+eg8nl+Ph8+iX8fCE5mhja8XsZdM44trp0wF0IgnZ0K43kFg3PQENGVL29Hb7udmtgl2qsJJoD39LjuLIF7KPIeQ+buyZfPPshG2XYYLCvLDmeIclsFjmW/A5h4e70d07kOyRCmWZPaObiW5cvHbzhOMV6VlRcJ+FCWqk1G/ltlZLv6Z8lXTp+SvOQuV4lvO7/UqA1MSDhlt/p8DzM6hGiF0+9lLSLUa+hQp8M5nVXzzQnTLzu++SIVzol/Hmotu7yoGlMBfiu2Uy0uSfzr8xtCU+</source>
+    <source>eJy9V0tv4zYQvvtXzMFAnKBwDkUv23TXqd3NBk02QR20lwUKShpZbPgQSMpZo+l/7/DhR+zIj43bHCKQIme+x3BEX3yoq7pzfnbWgTO4/3QPUzSWawU/0ISfG9Qsf2QTBPqboELDxMhwWhVessZV2vh3MKwMt44zBeO84mUp0MBF3rfzwSCfZRS7xtyZRvYLfL8eYeywpO2fkEu0cGHD8M8qDAeVdpJx0c+13Nj44DPTzhuuaJ+Lo76g0SDj7vtFrlzXM8MnlaMtFcItOnarCxQWHDLZD2sEz1HZQPfm6v4mTpZcoNWNyZGG552OYgSJhEEYauWYHmopG8Xd7FIIUiDHL6P8Kor1ZcQc+7Ezl/haOTRl2lnyyWLcT3o/VNwCX6wq0OaGZ6SHI8R52NMY5rxFOvuLxKQ3GhpC/FShAoNEH6dcTUBGakwVtE8IWkqbLJRGS2BQECyfrzZ6ygs0/XW/XzIIvHkb+M7fHS9Y4Oj/zshLwph7wJbszp32CcKr+YqB04V+B4WGJ8LOlPM8HhFrYkoSZFixKSfNP3hJTAE1M24GT1wIUNrBo9JPSRNjiBvkglnPdvbEZhu5SJbGKJD8KxZp8jw86yYjx8FGuGWjgkpkAHe9U7JtjdYVOvAlzEtazYuD8ywSTNBdF69lGFMGtpoDSqpyKm4UKDGqlOHcZ9yEQDoxGRFAlx7XRSh2CqTLINi+gRKXdau3sbKBVczaop6gw+mRrDC0+0JhxrDZblltm67flDvqGVJDlx4UPwg6D3YA/oOltL2U8RVCv8WYpWAT4CVoJWYBi610I4qEh1a0w8m0Fuuvxk1dG7T2D2YUNRHbo2/C7aj/My1FpshAapqVLj5TAzzd7cQdgWozIwD3tZ3Q+AKl5S36e6zQzYSKQSEBilFI/gJJVMkVUokzF9W4DmowahgrYsQ2mdOs75Eluryipt07PZpngfMSacsx8AdRl6XFcA6p/RhHvc1V6zDi58Curfft3ktXswlX4WPQBp9a9i6bxj55m0v/Oc5oL8GELv0LWOBzI+mq4A9XyQ2dspWOFWkdyazIfJF3i1WCS+5StdpGOLuNP5O6UbE3OJR2Cft4nl2GFNtM+38Qv3QvogrdMUWMNXAkuxLpZaathtlYqFRCwvliqsP1502flo8h1HbV90y7/lWJoaN0YTL3F0vue3AInMJNmWiwlcSBeiY6y/S79KT68N20wJL7Tmq1cf4bsVlZ83br0Uc64d6W+d4AJ3TlrNFf5vw1+gR+eg8nl+Ph8+iX8fCE5mhja8XsZdM44trp0wF0IgnZ0K43kFg3PQENGVL29Pao52aux0rKPZwuOYojX80+hpD7+LJn8s1TFLZdhgkK88Kk4x2bwGKZb8HnHB7uRnfvQLJHKpll9ozuKLpx8QLOE45XpGdFwX0WJqilUueV25ou/a7y9dKl5684CzXkWc5v+SsBUjsPGm79xQLPz6AaIXb52EtJtxj5FirwzWRWf/tAd8rM775fhnChc8Y7jG7vLweWwlyI75bJSJN/Ov8CrzcpBg==</source>
   </file>
   <file path="DataDefinition/Palette/Condition/Property/BooleanCondition.php" generated-path="DataDefinition.Palette.Condition.Property.BooleanCondition.html" hash="72b5c2ea63e3bb1a0e911afc78b384a3" package="generalDriver">
     <docblock line="0">
@@ -39635,6 +39632,385 @@ If no country code has been set, the language code only will get returned.</long
     </interface>
     <source>eJyVUU1rGzEQvetXzLHxYX0oOcW0W+ySBJxiSOjJUGR5ZA3VxyLNtpiS/56R1jYluSS6SG9m3pvRm8XXwQ1qPpspmMHmbgN/MBdKEa4lUGP9oM1vfUCQc8CIWftVJqlqST2yS7nmYOkyFSYd4dE4stZjhoXpyhn05rgT7QEN5zF0e/zyWuGR0Qr9DilggUVp8JdrsHeJgybfmRTeEJ9qZ2GuKQqPJ9R5Qf2O+POll0nDMdPBsVAcwgOyfkh79AUYdehajSeDsbTvrm836yloyWNJYzYocK5U1DKSGIOwTJF1WqYQxkh8/Oa9OGBwuzK3k1nblWa9QkuSFl+3/z1/Ev7dbnREf6POK7iPjNlW5e8eA0a+jzbloCvhkutOu3lyVIAujD0Wk2kn3ulpVWRgqPKAk5bUXsS61/v92MTNB3rPsOqfqma2/9Uza95XByFZYHmfputO+XNZn5HHHKHIQuPhFJ23exh3siewYzS1l/yWf4jgp6sb9axeAHTI7Jk=</source>
   </file>
+  <file path="Controller/TreeCollector.php" generated-path="Controller.TreeCollector.html" hash="5deb73178067e54149fd915244337cbb" package="DcGeneral">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="DcGeneral"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="copyright" line="0" description="The Contao Community Alliance."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="29" package="DcGeneral">
+      <extends/>
+      <implements>\ContaoCommunityAlliance\DcGeneral\EnvironmentAwareInterface</implements>
+      <name>TreeCollector</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector</full_name>
+      <docblock line="29">
+        <description>Generic class to retrieve a tree collection for tree views.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="private" line="36" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
+        <name>$environment</name>
+        <default></default>
+        <docblock line="36">
+          <description>The environment.</description>
+          <long-description></long-description>
+          <tag name="var" line="36" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="43" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
+        <name>$panel</name>
+        <default></default>
+        <docblock line="43">
+          <description>The panel container in use.</description>
+          <long-description></long-description>
+          <tag name="var" line="43" description="" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface" variable="">
+            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="50" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
+        <name>$sorting</name>
+        <default></default>
+        <docblock line="50">
+          <description>The sorting information.</description>
+          <long-description></long-description>
+          <tag name="var" line="50" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="57" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
+        <name>$states</name>
+        <default></default>
+        <docblock line="57">
+          <description>The tree node states that represent the current flags for the tree nodes.</description>
+          <long-description></long-description>
+          <tag name="var" line="57" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates" variable="">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="70" package="DcGeneral">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::__construct()</full_name>
+        <docblock line="70">
+          <description>Create a new instance.</description>
+          <long-description></long-description>
+          <tag name="param" line="70" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+          </tag>
+          <tag name="param" line="70" description="&lt;p&gt;The panel.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface" variable="$panel">
+            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
+          </tag>
+          <tag name="param" line="70" description="&lt;p&gt;The sorting information.&lt;/p&gt;" type="array" variable="$sorting">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="70" description="&lt;p&gt;The tree node states to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates" variable="$states">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$environment</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$panel</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$sorting</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$states</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="87" package="DcGeneral">
+        <name>getEnvironment</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getEnvironment()</full_name>
+        <docblock line="87">
+          <description>Retrieve the environment.</description>
+          <long-description></long-description>
+          <tag name="return" line="87" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="97" package="DcGeneral">
+        <name>getPanel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getPanel()</full_name>
+        <docblock line="97">
+          <description>Retrieve the panel.</description>
+          <long-description></long-description>
+          <tag name="return" line="97" description="" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface">
+            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="107" package="DcGeneral">
+        <name>getSorting</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getSorting()</full_name>
+        <docblock line="107">
+          <description>Retrieve the sorting information.</description>
+          <long-description></long-description>
+          <tag name="return" line="107" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="121" package="DcGeneral">
+        <name>determineModelState</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::determineModelState()</full_name>
+        <docblock line="121">
+          <description>Check the state of a model and set the metadata accordingly.</description>
+          <long-description></long-description>
+          <tag name="param" line="121" description="&lt;p&gt;The model of which the state shall be checked of.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="121" description="&lt;p&gt;The tree level the model is contained within.&lt;/p&gt;" type="int" variable="$level">
+            <type>int</type>
+          </tag>
+          <tag name="return" line="121" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$level</name>
+          <default></default>
+          <type>int</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="139" package="DcGeneral">
+        <name>getChildProvidersOf</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildProvidersOf()</full_name>
+        <docblock line="139">
+          <description>Retrieve the child data provider names for the passed parent provider.</description>
+          <long-description></long-description>
+          <tag name="param" line="139" description="&lt;p&gt;The name of the parent provider.&lt;/p&gt;" type="string" variable="$parentProvider">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="139" description="&lt;p&gt;The relationship information (optional).&lt;/p&gt;&#10;" type="null|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface" variable="$relationships">
+            <type>null</type>
+            <type link="ModelRelationshipDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</type>
+          </tag>
+          <tag name="return" line="139" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$parentProvider</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$relationships</name>
+          <default>null</default>
+          <type>null|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="164" package="DcGeneral">
+        <name>getChildrenOfModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildrenOfModel()</full_name>
+        <docblock line="164">
+          <description>Retrieve the children of a model (if any exist).</description>
+          <long-description></long-description>
+          <tag name="param" line="164" description="&lt;p&gt;The data provider.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface" variable="$dataProvider">
+            <type link="DataProviderInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface</type>
+          </tag>
+          <tag name="param" line="164" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="164" description="&lt;p&gt;The condition.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface" variable="$childCondition">
+            <type link="ParentChildConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</type>
+          </tag>
+          <tag name="return" line="164" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|null">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$dataProvider</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$childCondition</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="203" package="DcGeneral">
+        <name>treeWalkModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::treeWalkModel()</full_name>
+        <docblock line="203">
+          <description>This "renders" a model for tree view.</description>
+          <long-description></long-description>
+          <tag name="param" line="203" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="param" line="203" description="&lt;p&gt;The current level in the tree hierarchy.&lt;/p&gt;" type="int" variable="$intLevel">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="203" description="&lt;p&gt;The names of data providers that shall be rendered &quot;below&quot; this item.&lt;/p&gt;&#10;" type="array" variable="$subTables">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="203" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$intLevel</name>
+          <default></default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$subTables</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="261" package="DcGeneral">
+        <name>addParentFilter</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::addParentFilter()</full_name>
+        <docblock line="261">
+          <description>Add the parent filtering to the given data config if any defined.</description>
+          <long-description></long-description>
+          <tag name="param" line="261" description="&lt;p&gt;The data config.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$config">
+            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
+          </tag>
+          <tag name="param" line="261" description="&lt;p&gt;The parent model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="return" line="261" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="261" description="When the parent provider does not match." type="\RuntimeException">
+            <type link="RuntimeException.html">\RuntimeException</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$config</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
+        </argument>
+        <argument line="0">
+          <name>$parentModel</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="303" package="DcGeneral">
+        <name>calculateRootConfig</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::calculateRootConfig()</full_name>
+        <docblock line="303">
+          <description>Put the base filter and sorting into a config.</description>
+          <long-description></long-description>
+          <tag name="return" line="303" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
+            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="326" package="DcGeneral">
+        <name>getTreeCollectionRecursive</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getTreeCollectionRecursive()</full_name>
+        <docblock line="326">
+          <description>Recursively retrieve a collection of all complete node hierarchy.</description>
+          <long-description></long-description>
+          <tag name="param" line="326" description="&lt;p&gt;The ids of the root node.&lt;/p&gt;" type="array" variable="$rootId">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="326" description="&lt;p&gt;The level the items are residing on.&lt;/p&gt;" type="int" variable="$level">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="326" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="326" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$rootId</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$level</name>
+          <default>0</default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$providerName</name>
+          <default>null</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="353" package="DcGeneral">
+        <name>getChildrenOf</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildrenOf()</full_name>
+        <docblock line="353">
+          <description>Collect all items from real root - without root id.</description>
+          <long-description></long-description>
+          <tag name="param" line="353" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="353" description="&lt;p&gt;The level in the tree (TODO: isn't this always 0?).&lt;/p&gt;&#10;" type="int" variable="$level">
+            <type>int</type>
+          </tag>
+          <tag name="param" line="353" description="&lt;p&gt;The optional parent model (mode 4 parent).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="return" line="353" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$providerName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$level</name>
+          <default>0</default>
+          <type>int</type>
+        </argument>
+        <argument line="0">
+          <name>$parentModel</name>
+          <default>null</default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+      </method>
+    </class>
+    <markers>
+      <todo line="181">hardcoded sorting... NOT GOOD!</todo>
+    </markers>
+    <source>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</source>
+  </file>
   <file path="DataDefinition/ModelRelationship/FilterBuilder/PropertyValueInFilterBuilder.php" generated-path="DataDefinition.ModelRelationship.FilterBuilder.PropertyValueInFilterBuilder.html" hash="7fdde9a08f9b9ae613223d08a8506550" package="DcGeneral">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -41208,6 +41584,226 @@ will be populated with the information from the builder's data source.</long-des
       </method>
     </class>
     <source>eJyVVUtPGzEQvu+vmANSExTCoeqJR0MTClTQIuBSKVLleGezFl57ZXtBEeK/d2zvJrt58Mglsj2Pb775Zvb4e5mXSXK4v5/APtxe3sITGiu0gm904e9GJeOPbI5AvzkqNExOjCCr8Mgql2vj32CcG2GdYArueS6yTKKBYz60zWHEFzOKXSJ3piqGKZ6uR7h3mJH7JYoCLRzbcPyXh+Mo165gQg65LjYcH3xm8rwWivxcPA0lnUYz4b4uc3FdLoyY545ccoQbdOxGpygtOGTFMNhIwVHZUO71xe11vMyERKsrw5GOh0miGEEiYhDGWjmmx7ooKiXc4kxKYoDjdMIvIlnTCXNsgpmgZ+J1+qMSMkVzlCSV/Yj7T8adNovp+RMqF727EcPDUYh2vygyrRZTildq5e3D40QQVsdzNOvnK+XQZFTH0VIDY8mshbOZdYYyR3vfb9XNWpcxrFXS2MOMEQ4eYmTUHWpKSn6QLh1h1vV80OChCzcAUZQSC0oIjrpTIPU3jea9PkVKweCcWku68u8xidPhgB4npMvChuvqfa8foa+sqYJ/ioQVcAtbDZY0Jy+JF1ag2v9o5IzQhjoPOguFSF+gCgVEg1+VdUAVYeDTMi+TART+doagaRCfyZ98YLZYAWE+exPjMPxzrcjn9u7qz93Vw184AVVJSX1fA/SwhU3glTF0JRfAGUlUzZvQjdfoiRnYJa4OjNJoRysAU9hbJdgOw09Zw4vPSz4B2dbk1CrCtStV8PtN8TYz3SF50ntI01FQN4lBVxn12SKzSvEg+zm2vHr9YBbV4H918D2XC3tw2ibGv76+DbrN09J1F1d1pjfp2go6PW84fAd9i+vt4McGmaMNT8uBVrTzC8/DF86izMKgExSO1pLNcrjXC/ECYc6xUOr6jnmhNa4eP7+cg4NQrba+NvmehZR+4kpdVpJ5lp6FywM+oWg0izBykBldhMt6zX2xEVz8emx0o2SGFbBrq9e6jSSvBpN2Xk3QjnixubD5W80BbEzYB2Pv0n97nHcskbg6aN3vEuWTFmlXktWMvsdUD5HLV7KsEfbe4W3QqnfQxreu3726WR2uaEHic5261z/aMG4J3Rvvrcm+a9qi4WTL4qsHJG6ytz8hK7A1R91E8XMZwRyc0vwuJd3rN3z0m8F8Tf4DJqQsNw==</source>
+  </file>
+  <file path="Controller/TreeNodeStates.php" generated-path="Controller.TreeNodeStates.html" hash="dbcae6f884f49487872d85047c629277" package="DcGeneral">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="DcGeneral"/>
+      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="copyright" line="0" description="The Contao Community Alliance."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="19" package="DcGeneral">
+      <extends/>
+      <name>TreeNodeStates</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</full_name>
+      <docblock line="19">
+        <description>Wrapper class for tree node states.</description>
+        <long-description>This class encapsulates the open/closed states for a tree of models.</long-description>
+      </docblock>
+      <property static="false" visibility="private" line="26" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
+        <name>$states</name>
+        <default></default>
+        <docblock line="26">
+          <description>The states of the nodes.</description>
+          <long-description></long-description>
+          <tag name="var" line="26" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="33" package="DcGeneral">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::__construct()</full_name>
+        <docblock line="33">
+          <description>Create a new instance.</description>
+          <long-description></long-description>
+          <tag name="param" line="33" description="&lt;p&gt;The initial state array (optional, if not given, the state information will be empty).&lt;/p&gt;&#10;" type="array" variable="$states">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$states</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="49" package="DcGeneral">
+        <name>setStates</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setStates()</full_name>
+        <docblock line="49">
+          <description>Set the native states.</description>
+          <long-description>The states must be created via the getStates() method.</long-description>
+          <tag name="param" line="49" description="&lt;p&gt;The state array.&lt;/p&gt;" type="array" variable="$states">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="49" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+          <tag name="see" line="49" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\getStates()"/>
+        </docblock>
+        <argument line="0">
+          <name>$states</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="66" package="DcGeneral">
+        <name>getStates</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::getStates()</full_name>
+        <docblock line="66">
+          <description>Retrieve the states as array.</description>
+          <long-description>The returned array may be stored to session or other persistent storage and imported again via constructor
+argument or a call to setStates().</long-description>
+          <tag name="return" line="66" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="see" line="66" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\getStates()."/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="76" package="DcGeneral">
+        <name>isAllOpen</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::isAllOpen()</full_name>
+        <docblock line="76">
+          <description>Retrieve the flag if all nodes shall be shown in "open" state.</description>
+          <long-description></long-description>
+          <tag name="return" line="76" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="91" package="DcGeneral">
+        <name>setAllOpen</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setAllOpen()</full_name>
+        <docblock line="91">
+          <description>Set the flag if all elements shall be expanded or not.</description>
+          <long-description>If this flag is set, all tree nodes will be handled in "open" state - if this flag is not set, the visibility
+states will get read from the open flags per driver.</long-description>
+          <tag name="param" line="91" description="&lt;p&gt;The flag.&lt;/p&gt;" type="boolean" variable="$allOpen">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="91" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$allOpen</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="103" package="DcGeneral">
+        <name>resetAll</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::resetAll()</full_name>
+        <docblock line="103">
+          <description>This will reset all the information and therefore close all models.</description>
+          <long-description></long-description>
+          <tag name="return" line="103" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="121" package="DcGeneral">
+        <name>isModelOpen</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::isModelOpen()</full_name>
+        <docblock line="121">
+          <description>Determine if the model is expanded.</description>
+          <long-description></long-description>
+          <tag name="param" line="121" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="121" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
+            <type>mixed</type>
+          </tag>
+          <tag name="param" line="121" description="&lt;p&gt;If this is true, the &quot;all open&quot; flag will be ignored.&lt;/p&gt;&#10;" type="bool" variable="$ignoreAllState">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="121" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$providerName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <argument line="0">
+          <name>$ignoreAllState</name>
+          <default>false</default>
+          <type>bool</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="139" package="DcGeneral">
+        <name>toggleModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::toggleModel()</full_name>
+        <docblock line="139">
+          <description>Toggle the model with the given id from the given provider.</description>
+          <long-description></long-description>
+          <tag name="param" line="139" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="139" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="139" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$providerName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="159" package="DcGeneral">
+        <name>setModelState</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setModelState()</full_name>
+        <docblock line="159">
+          <description>Toggle the model with the given id from the given provider.</description>
+          <long-description></long-description>
+          <tag name="param" line="159" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="159" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
+            <type>mixed</type>
+          </tag>
+          <tag name="param" line="159" description="&lt;p&gt;The new state for the model.&lt;/p&gt;" type="bool" variable="$state">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="159" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
+            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$providerName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <argument line="0">
+          <name>$state</name>
+          <default></default>
+          <type>bool</type>
+        </argument>
+      </method>
+    </class>
+    <source>eJzlV99v3DYMfr+/gg2C9i5IE+xhT2myDCnQFei6YAmwh7YodDbPFmZLhiRfGhT530dSluP74csF3cOAHRIcIpGfyI8fKeXNL03ZTE6PjiZwBNe/XcMSndfWwM+0wGuXjcr+VgUCfd5m79CgU5VsqDaU1vE6XJVO+6CVgZus1ItFhQ7eZCc+/XGZ3c8Jt8EsuLY+yfFCEDLb3DtdlAHgtkS4siYoS1913Rod7uHXqiLMDE/EutIZGi+BfHh3/SEuLnSF3rYuQ/rzdDIxqkZPISe0Hixhfe6T+MwWzlYU39kkUfCXU01D0WeV8h4WlF9wiGBsjuCDCuhPOmJuS+07MzSZanxb8TYEysQ2aE6zynrMOy+BUhHMLqAmvEqgTicR45Z2PtLqjZhPvk84TwmKP0dCUAdF/nwIx8QQsp/MLpeKznFO3Xcrp/LdOL0kXziMEJTvGvyVQ95XYPAOtCGzyPsqeKOcqiN8gpLANDGsVRUD7PantgkkJFUdg15QsAEKvURzLLFHQ22IlVqxGdzpqoI5AtZNuJ+drEbfzqn4sGhNJrZfv2aWQnRtFqYpjPN47HQ2E5fIH38OAxXq9YXHEKlNHrMzMXnYoOIGQ+SXAlsOqr5CxaAcdesDR54JhTkstRL/oj9xBjVSr+R78zngccPHYWidWdfLmpFH6ZNBCDsJ3SRnhMTE9aqO+NOFJYZjzP6JwWkkTsMje8pvz5NpiJhEaWSopt85O1pHa8FS2F5mFbWWJUgHDQ8vH9AEseKxpUwOum6s49KoQmkjBeoFZF06UbmirdlVOjVTpEc5o6dwrBTDdttRgd2aXi/V963MphLsxfCiUgX3HmciwwJ8qWKX+dLeGeo/OOBRdRCLMZbf3NoKldkZvvY0YP8grLHwp4wyW83i0ysK59WXpxpxmAdWyDUapILfGqoxFZfKRlNmPYn3PCxpUkcQz/U8FqR+rvt+9pQEVBHSGi/wmk9fQeFxJkgc31J7PdcVXTLp0E7bgkuFJQ5UDgtn6/52ECTPgoWcZjO6kdnQcQ+HKtIrfcG+z5oLo12fipbgd/Z9Vy5q/1TMzuuZY0BuTuHGIcUQq1GuXgfcttzSSEs0WvkqFbv+4vzR5OVoSn9Dr+ujLl4rkjqcX6Ttgd5nz0z/LQZ0tTYYVYUxJ1ZVkvKIFmhgaVPAYePsUufoPtJbB+LTKVdBQVoHfgSNYNT6GwkcDuXM93mKWy7xPL0sZHOHIJklXRiqDJEgXPdtRj80VjE2xgFXLDaSNE7qs+i7meZg3jwxbH7nCKNyh2wc94kdb0R4DgtVeVwvN9Vg+mLd9uVLOoP0Md2m/xlvb92B83P4aTYboA80wbSc9RsPG5qZbjtxJbsvn1J2W2MYtR196dzaoqhwoME7Hcr4duGnGiuiH1pxJR3xHIX+uD73UefzJ0CQ7EVJYyraKpan67QhgV3Gjy/XXep4fMVKwJLeuPZf9FNqj0ZhYf4/NLI6weLdDo/u/K9PXJT/+/5Fqe1ZthjSf0B0+w2WwUNALJ+4Bx8m/wBcDOAl</source>
   </file>
   <file path="Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php" generated-path="Contao.Dca.Builder.Legacy.LegacyDcaDataDefinitionBuilder.html" hash="9801697b85f607d233a924ad617dfb69" package="generalDriver">
     <docblock line="0">
@@ -44998,7 +45594,7 @@ The default language will be initialized to "en".</long-description>
     </class>
     <source>eJy9VdtqGzEQfd+v0EMgTsAbaOlT4tSunSYFp4Qm9MlQtPKsV1QrLdKsU1P67x1J6/ulTqBZAtFlLufMHI2vPlZFlVycnyfsnD3cPbApWCeNZh/owJ91Ky5+8gkw+iagwXI1sJKswiWvsTDW37F+YaVDyTV7FIXMcwWWXYnUzTddMcsodgUCbV2mY7jejPCIkJP7HcgSHLtyYfujCNtuYbDkUqXClFuOTz4zeQ6lJj+Mu1TRrptJfL/IJUw1s3JSILkUwO4B+b0Zg3IMgZdpsFFSgHaB7vD2YRgPc6nAmdoKoO1FkmhOkKgwwPpGIzd9U5a1ljjrKUUVEDAaiNtYrFG0GH2X8Nys332ikoIeh6ObKWi8TJLaHRNswJEPIJd0TU0arSxDsMDms7ElRwRL4XI5+aJpmRPWyyNzBESjXubQcoEhZO+ZW5gjbcTSV9w5Fq6fzJBnoIJB2ujmqZCOgT8h2SAtS0mYxuy5AM04K70fcwVXimXAKJV2insDNIxaWWCpmIXKgqMQ3FNMNxX5shqHzondoBn8QjJ2bA/r5HfiBSGMdsi+9u5vWIedjkW7eRDplLKQMkPiLCZOA8M2mrbyaU6pcD5EKJ7/zoMEwx3LScdIu+CSNvdLMyok/XFvRo1lhFDqia+T76fUbOoqOsG8dbbp251y29g3Rxfhf2UN0jukap8EBIfASR3z+qFALwq9WnbmOSi+venprQ73Q+B2UpfUADenG+ST1VKNQw2WJbSmDNu1Iu3Eya3ls314KKHbhvIIGILvhhNVgHNA9CS5mndpXcLks7A6iLPilpcRacS0Xo0tewtYW70t7HWadUbTjeW1FgGMA+xR6FZIcBZMos79d4Kku/Z1yN1Zq4v/mnzB6DKc/tkq2jcgbjQB3rZyDbIdTd5gP2nYbxJfpRb57yM4V8X/fsRRDI1HfLAr7/NwHV6siGDZiln2aCLm7azPjmNVcftGRWuw7Bp+20KIpA8roSF7jBSOGpmxqweH5sp4fOlAfm37F1Bay9z7ZLDA1tme48fKYW1IvJLfcb85211fcv1H55fcIok/yV8uNnB1</source>
   </file>
-  <file path="Data/DefaultConfig.php" generated-path="Data.DefaultConfig.html" hash="9cb08fb52a2a7ccf9908fb3310e33647" package="generalDriver">
+  <file path="Data/DefaultConfig.php" generated-path="Data.DefaultConfig.html" hash="dba95983cccc2caec7ce84f07e0f63df" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -45345,8 +45941,8 @@ The default language will be initialized to "en".</long-description>
           <tag name="param" line="290" description="&lt;p&gt;The sorting array to use.&lt;/p&gt;" type="array" variable="$arrSorting">
             <type>array</type>
           </tag>
-          <tag name="return" line="290" description="" type="array">
-            <type>array</type>
+          <tag name="return" line="290" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
+            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
           </tag>
         </docblock>
         <argument line="0">
@@ -45435,9 +46031,9 @@ The default language will be initialized to "en".</long-description>
     <markers>
       <todo line="321">make a property bag out of this.</todo>
     </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
-  <file path="Contao/View/Contao2BackendView/TreeView.php" generated-path="Contao.View.Contao2BackendView.TreeView.html" hash="dc4355190fde07b854bcb6fd8d08976b" package="generalDriver">
+  <file path="Contao/View/Contao2BackendView/TreeView.php" generated-path="Contao.View.Contao2BackendView.TreeView.html" hash="db1c59d475b463d56c40dcdfe427c754" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
@@ -45742,13 +46338,16 @@ The default language will be initialized to "en".</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Action</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="558" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="560" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>showAll</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeView::showAll()</full_name>
-        <docblock line="558">
+        <docblock line="560">
           <description>Show all entries from one table.</description>
           <long-description></long-description>
-          <tag name="return" line="558" description="" type="string">
+          <tag name="param" line="560" description="&lt;p&gt;The action being performed.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Action" variable="$action">
+            <type link="Action.html">\ContaoCommunityAlliance\DcGeneral\Action</type>
+          </tag>
+          <tag name="return" line="560" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -45758,35 +46357,35 @@ The default language will be initialized to "en".</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Action</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="598" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="600" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>handleAjaxCall</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeView::handleAjaxCall()</full_name>
-        <docblock line="598">
+        <docblock line="600">
           <description>Handle an ajax call.</description>
           <long-description></long-description>
-          <tag name="return" line="598" description="" type="void">
+          <tag name="return" line="600" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="SuppressWarnings" line="598" description="(PHPMD.Superglobals)"/>
-          <tag name="SuppressWarnings" line="598" description="(PHPMD.CamelCaseVariableName)"/>
+          <tag name="SuppressWarnings" line="600" description="(PHPMD.Superglobals)"/>
+          <tag name="SuppressWarnings" line="600" description="(PHPMD.CamelCaseVariableName)"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="630" package="DcGeneral\Contao\View\Contao2BackendView">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView" line="632" package="DcGeneral\Contao\View\Contao2BackendView">
         <name>ajaxTreeView</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\TreeView::ajaxTreeView()</full_name>
-        <docblock line="630">
+        <docblock line="632">
           <description>Handle ajax rendering of a sub tree.</description>
           <long-description></long-description>
-          <tag name="param" line="630" description="&lt;p&gt;Id of the root node.&lt;/p&gt;" type="string" variable="$rootId">
+          <tag name="param" line="632" description="&lt;p&gt;Id of the root node.&lt;/p&gt;" type="string" variable="$rootId">
             <type>string</type>
           </tag>
-          <tag name="param" line="630" description="&lt;p&gt;Name of the data provider where the model is contained within.&lt;/p&gt;" type="string" variable="$providerName">
+          <tag name="param" line="632" description="&lt;p&gt;Name of the data provider where the model is contained within.&lt;/p&gt;" type="string" variable="$providerName">
             <type>string</type>
           </tag>
-          <tag name="param" line="630" description="&lt;p&gt;Level depth of the model in the whole tree.&lt;/p&gt;" type="int" variable="$level">
+          <tag name="param" line="632" description="&lt;p&gt;Level depth of the model in the whole tree.&lt;/p&gt;" type="int" variable="$level">
             <type>int</type>
           </tag>
-          <tag name="return" line="630" description="" type="string">
+          <tag name="return" line="632" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -45813,7 +46412,7 @@ The default language will be initialized to "en".</long-description>
       <fixme line="285">add real tree mode here.</fixme>
       <fixme line="476">set real tree mode here.</fixme>
     </markers>
-    <source>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</source>
+    <source>eJy9PNty27iS7/4KjMsZSlnFzu6pyYMcObElJVatfClLyWxVPKWiSEjihCJ1SMqXnZN/P90NkARAUJdkcvRiEwQaje5G39Dg23erxerg5OXLA/aS3V7esgeepEEcsd+gAdver1zvqzvnDH5zHvHEDXtJAL3opbvOFnGC71h3kQRpFrgRG3mLYDYLecLeesdp/vDee54C7BX3smS9PPb5mQlhlPEZDL/kwZKn7G1Kj5MFPb5fxNnSDcJjL15WBo5xZhg5DCIYl4mn4xCe3k+D7B/FXF68ek6C+SKDIQvOrnjmXsU+D1OWcXd5TH3CwONRSssdfrwdisZZEPI0Xiceh8eTg4PIBZSAMJx14yhz4268XK6jIHs+D0OggMfve95HQax70eP+c8Af5f//cwEk5ZGPTacHB+u0HowcfBFEfhDNU/ncf+BRlp7uNVKMuZdT35/7/jj+lITU/F2QBkuQinuxyoxfZstdYJVkOfcyELNde3fDYDWN3cS//xCEGU92HreR+GIpsIbs1gVpu4vj7GKdZXG010qwRxKHIOL344TzLv7rZfFeOCrjr0EiRxmQdAuDSwA9N3Pv5bRA00EEBJqBcO41vtf92N9rAO2c/efK/9tFhsthglEf4mTpZjTx0J3y/QSu/+TxFdKnbLtbRxkol+INbEapCbuhm6YM2YFycix14WC5CvkS5nSxN5uB+smgC/ODdBW6z7A7jk2tuasokl7xtFkZf8rgbcou3JQaDv46QLVEKOLvJbvjoOz4A2cZqLPAFxgtgpQ9CKypV975fcKzdRKxFMZEc9l6Qn9XSZyB8HCAsI5IiEDXZ+N4Pg/5wG80qZOYHX8S0BFO9eoMevajhyCJIyRNo0ktKCI9PguAGQBNNl6D2mw02TFzJkg355Qgfjswl9VNOMg/cwV1U9oMDLR5hiytW5a+d3ZZnjagssijlKdoCUewlZGTnY3rHWmdG83TEk684lFfyE0Kzx0TMo1vlMBLsgOUAkwwY41fgnTiJon73NCANpsK2tUpO0yMUXD6dmDyMgJ5Mwiiz1HHq5H7UHAqgsEmu1gWk3TKNVe4t3ITd2lMDRQSf9FKq4CmAAfm8+tk4CEO/G2cRwDGSu2z/zSBMNmf1rC/lWMiAEoxreVEd8G9r0Rr6M2Irhy0c4qiA60JkDJlbvQs2JThNEJjaaTsnn8aD26u22yQj1q4KRCeRzTWJSK2aJppEj+m4OU9BmFIcybcDxJBbjfyBdu9JFhlAhJoJw5KLcj2YmDwgLqgYN8CIIclt7rwPLft3iBarbMtPBpgn9skfgh8nqgsws3WOFqShfMRCEGjMbc5XRvOKps7sPd+/ZU1jlYSCqq4+gGyE4yqbFkp8SrCpoI61UacnEiOC/Yy3K0nXhiDMXSBHwXXQNvP50B9n4Fx+HOdZrBbaWXHGjhccrniDnMAiGNiWXTM5TJIwdLewMyNyoqMlb06SzgIOnQ3FyKkuXaYGERzWKfVgX1j4M5zCyqSrCT2nFwInWmw2eTqTYgH2iMa4ksermBjtdu5wF/GYNjkDLwUM03jKrCUTSt2OzGQpofNlC3EJoYgKyKjnsRLpSVHukaTCuvOdIFEPeqDRS4GM4xgaiAsgycQloIcAv+xcDDiWYnq9+/hXZhg7mdBXIvyrt8vu3G7Vp/2cNMug4jnO2wF3hlQRvAJdCl/WoEysigzQUfdQZYTEiHFf2DPPNzAdXScxnG4zZgFKc0idgeB3eqrValUBSIUl0IvMkblq0Fvgx0axq7Q/V4RkqDceIsg9Bko/2VaWAcgFGwTapS+K4xaJ9gYPoPLEIrlKt02yuxRAhFcLrFEaWwAjUA+DGvADNE6JMrPeOYtGLjOyTNQJpo3awAHMI6sSTaEzmEBWGLJQmoNIkKdnKBGnOtjXLkbajjUTUNobd20pAkeF4G3qJ+BpQtU/+ApZS4EFzSmTsIsMaMucOtpGHiltIXA2XJMIyd3h9BvKVTqsNctZtpE7FTZ1oq2ZPXWWnGekCIiAcVogAKgCDwKk66hoEKBACPMeyGUEqqYfLnKnoXaaFr2guKWH3l5uE+PncKRLtIADd3OK/i29DfF0m/dCCeue40WaCRZILAbYuItmkNUOQvmeQDGZ+46zEZxgq8+BDz003qY1lgIf1ogM/2z5D5STfBfA/lOoUgBuRx1x2HjpEDnXHgUqWnpbGlqcNsm3C6qE9iCNzOdwBX2tqqvixmrr0xxMlzEV2fgV6keXeCDk/QupyRukFtSVlJ4AG8Ue20eM6qTlKgGcdM/kXgo0HUiqmxGw2vB0YQDPnQM3omI87WKSI7ML8VA6oQp0oZuyNrty/PRpHs5GPbu+tdWty+3OcoKNvpUGBi4oNQalskxL9Vuj+/6/cnnQf93MfGkezMc9rsYqDQZOLr68mwoaVMoUiwHj9ZTmrfWiVWW8upstU4XDW3YNo/WWPBGAlWDcx3nrXZXmkvhZRhmlYWgK+rsgc5os1O2wHiP1WbPZMSYT48pKFjAP9fgIYtEBLRD7JmBPQlnEDKCwX7FeIChITTrpi6fdPvPxySTCG4AiLZ08FfJZc6XW+tFVbbtJiu1wUjpyRqwPgRTRJBbFYsRKqJiqWwuYgGZmFouVLWhUyQUI859YAOSAOKXwq3ycyK2WAqBzAKniCNKF8gX75yqqvxvU6nl/yryewTLgMUP/BFPAjcM/p8n7TZ6JMWzX1LJQkCQe8EX1VZvsfiBX2kVVlsxauV//wkC607cT6N1QawButMWQpUHDShv5AGTvH8AhmgErHBCh20S7eSEXceGL7+OYIVLOmtbYIaQUhEwFy+TP+Xo39F1dqNUgADP3xMJ4CAj9RWvwfWlYx+ZA3SnIaUDy0ZQK4symVVCHt/0btrSJX6EcMAlbTN1AxloH0qsSS0h0ofvKmZUJ2pFJCsOY9UQlxAonQHRkyr0Fl4qer8cW5v3c0NvHSK9UPvOyNMjSQQVN33Oc7MhHpgU1kCkEnZOCeRJBfg7JuJjbIL984SABqnOvFAaepsu9mA1dLgjXdZizq2B7W5+sYBNB0moaEvwuZ8PGzd7Ro1RZNyqJL/jEVLMlXS0p0PsWQDVL9NyAQnB3MyAQqgQa5En7hmpGZHyqOXBboc/MGmap01yhFvarFUT+SCMI+pO6zmdJT/WKsmhxhmVfmKLIZBeAEoC9JZQYb580lWyccTYbn+4ubs6H0+ubnr94WR4ftEfGmEQ4a6GPJpSlQ5pKh3Soqndvrnt352jEzq5+DQe31yPWqU4imNxcZycloOaRkBVD5wQnXw+H37qtySKpQDrZ0PkR/LlipSAlkGWjQ3H96Z8Ius36PAN3bMJwEyenUpAst0LH4wmsPiq938kxG8cZOG2A5IxanxALiZWZvIJUMU4z12lFI86LeZcjbqOqiZtGd6/Y16RzqubVaG2mGskTjY6LF3BlsqMMNSRZ7vHeHLjodW9mc3woKd5mmsu2UMK6zE6oRBPoC/RQPQBB6bbM+eve0du73unfe+8SO8B03sn8LVHNeehvaBcldaCyqdo+NY8NVwPdcMbbzQRocOqDe+NTOKGniRsIKwoqpPsYUIoO8YQsOsfBv931W8z1/cZxvrCxOFqGB1ZvcK8HULVCfjGvscFTfNiGKnDtAIZg7erbN4B5liogGfbv7rL1WnOBEs/nRrWTMsG8d2kBtXqoHb74rz7v/3r3uS815uMbyaf7oYtc606GWBSbZ2vzlwkQqlEFJXstOqwbGnqqLkZYk4YRzEFmwBsZf3x5vmkWMB0b/bCU9kIjm4I9wFTjRwKdlicfoNXRGl4MDcQdVVQ0EOFzctStKbT0pToXtRRFWIJRzwbgE6tTm7++tUZeR5bHa8i2U5JBjxNkMAgYnBT6eTUuFKWpLeZ2hzrhxfgnEFUg+acxQ+7umiShZj9pKoe/BFcegKQWLWUu+PY7UfLdYTDkYeiRp6rpaBScd3AL8fyPbVQpHi5JW9mTZoBv9j7Bzep932xhlKjk+rPdjbqS6oeIqVa0rZo0vVxr2FmOPOlfvmjdBJ28HUteVKL2VJ8Ny1DigUCP+BSEd7f6+DRoZtjSU/i+sDbIL4DRMcx1ljh/c9Jy5qoHHdMD3oXgbZlXy3q1LRv+c9mlZR04K62qRbc9xmPTeAux1dDCUpS7rsRw9hXXaH96LdGhRe01fZVvUIv2WNhVK7CYSQg0ji8jw5bBeRdLMIKi3jZlEIuUq3YgDoZrL4oQqOD0jxQtulcocprCoLzIBfVuPgvW7iZpdJmH1UujlixsEU9aRXJAAOJxma8TL1OaqqMG5GKoD5/6ciTWGM35tbYHGCWsBC7jXx4Oabu1BZWTnErPlgyk3UxmeF249qRl8evzUDFlhOuKT+1OdwqqYKUaAwuNm4Nv1rYVJi3Su07OwqwKF78LxlcoKi8qifZfpkO/Ok+/+Dq/GN/8rE/nqCKqDqKGNlU0K4C1ck9OZ4HM4uDqnHW/tohd6dzCEIefT10Kn10RWWqllwmS9LVCGbx7/68+Rl82Z0nO/JDEX07KzawYRMLtM1gKmJ7XoO9ddki4bPO4Yv0kGUYK4h/X6RnL9K3J+5ZZW+WjINxZviCF4ICN/QWYCcaxTKMTk4ceaAmv3YOa9Mqh+a0VqExN/9uEcY+kYRXG0aA3aHqpx9z9BEfyhEpM1U8er9QfaJBdRlN1aho6VDkywsadvbJritwpm4aeOUcVL1QPNHYC72HNlorCWI7VgUVu7LAfGv+WJH4kxM2AEzoSI59Bkks3qSPARaKNd6AjJiLkLU16DY1mi9PTDvhuRDhvWlbHNEicAHHGx8mT1nkO1Uvdgr+99dK1S/B/U2H64tqn10mc+yK84QJA/1fbOAVZfpMmEaQzBBrA6V80OLRB8lT0Vgv/NpS0Sz28pg/oWp1el2p6kIqkGLK7Rf2Kcxgv2YactY8rwG0DiXrGjctBRe9dSXYCVeyAs2yjNeg3Ukd74qzHF4ztz3XLI845bkKPWiCL96DZx/5ItpO9dNcYytWD8ybphskTibN43PE2wbrttK76jCpSMrjTANL+5xbk/4K3Es3vY4F8DrX4IQhsWWUQLbU8P/M4/L8zqGokb2OxSlvQ05ruXUDAWo+xnr+XgI0NnXutWhJZ3a0zv8zfcl1matWVN/ubqIlNWx1FTckwfOf1UtQf47rZR0iOiXGkfCdF4DDa3r0ZBkfNNV4mLRgQ/PaDhK0/ioritoHF8srBtUySPWXR59OSwbFBpggwbP2hKDYo+xq62Yn92iqRHId6RFa47xGjR00Kw4UgBVc6KiR/LBCiMrEchV16q7HQzMXdmJlEVYpzGXDeZF+eZH+gRRVcGu3r8+v8GzTytym3tlco3U+K3QdSEUzI41pgQNMEhS+hj0Ar8GoVu2bwJ0a4/ujUYuVGhujkJrIQ7NVTcNFulhjBX8mUzul9tSyk9XfHvlKNVOpp5H0RDpBdbLQSATXDkbJJStWomQVujoAmgWXALYEpXYA5LZIAGrbhnHILisxzfyoty05WgFdiGcgZd8U2VOV/fLgLaWLfhsO3vRp5IkbQH+jSxPYFnJwfS9ZL6cttMGPXBSLxZEKDpC6KPqVBCjHmjf3jBG/2BNeOppTbQYNwLYKrZ0Pr/56H0RAqiDrxd43WxawCPJ4NIsTT5xK3PGQrpuni2BVc8dn1/rUor+4HFlI1JbaVGWgV5QQWgeqFYZmUYm8EanXz6PgOVVPSsrj5rpR6xVLCdBQ9BjfleLlyvsqEPAtuRvRXWWeZGWamCQbc8WWK5LYqTzut4ULBqHIhOKukmdMS0vBeP2tRVmf2NEh1tVuInK2wx4DG+knC1Ra+ST1OXrCrp6J7iyjO60mF6mdJOw7GJkDNex+GmAea74rQQiK/Z5DDulf/9JBBanCLNnJfij3c3mccjfxFoJVN7MSlb+fvbpaDtM41z9qOT/M4Qd5HktpL8pHG0BWN3puHu+w7UV1uykv+8q67YY1ATZkZl/y1N3V3V1/U7jTEJ+4gX1gT9L955R2EZTalbYalqqicLtOF8BSxjHsze9U5DqyAGrnt84WHOugtgSvTdR2V66Wl1i+OhNdGmS162J50Oc+xzyKKy/Csq9R/Aiuz4onILxLFmERaihYsYtMSoVD+mAPW0UAFdyDVHy9xH4hXroNQuTabbnQXEI2XpLKxwjZqg7RyTPCmwVky9wEP80g7tJSNQsatxjr4B+DVKGMXk+dwni8q6/PY/n8B86D1fVYShrwVNxRxRsN5HTXZM71nUGJcvnvlKNOljz8npPU8jsfcgWbdyGxz15wbD1DrCSukeN90Iw3UfgsMsF1J6tyFui7mXuyY92HLiyXT2WOvbyDaL8XiGfpdwIZa63PycuqZNceG1Qz4OgM/aanECzGrsDhi7PCe66OVooTVS9QlIZKrRpCS0V32cQ9jmAO251uigOE9Fhb8kC8o1u1xddwih7G8db99g9JEaD7YbAMMvl1nOL4x0hh7Q4NCVkBVsDSeG4hIDNJWFm2VQq+OCKdkao8yOPKSwh/eJLXr2OsLTtPXKcOWuw/EzYlNOtpVfWosVrzIWDWqp1L2hxonNw/3Se8NLLL5yiKV6P1apXwNP3dTSL8pl3j9vL2qncMzTyZh/HUDWWV3IbOXbALYRc/zeWCKysTDPkou0oSW/ocMO66oeWa4Xd9s6YYnh9VKSb4sxuuecMR2qZqu+gkySlkcVhWoDvVk6QFCUTDQZFGFTl+XvE2y/hTdrLIluEpoyNcnomK54/Dm4vz4eiLMx5OujfXHwYfnT++ONgFkOHJiGfOHxZXlnuLOF8+crbIblR6lgRTV4ruX02hQqWvWie/+yhrRXp9d+H5VDrblv4UZEagUjnVU6xE7g6YMrVtx+B2EclNNLTgy7ssXU83VUPll7+0j2sMigtHVFMVlbX2O32Q5rru7hh7pAL+8ns44Nh5ee6edH1Q9w0x8akOdhQWH+qAn/gehc9XYCTUj9fkn+x4XMTh/vW3xr7WJLX8sIHxwRnCq+a7Nps+VCM/D7Cn3S/RCOXHFYxvYSgoqEfESob6R8++f6sqkY3H0flPHntXAf4dh+k7bzBMAsqy6P1TrhWvWgLLd+e3g38DYJ6W8w==</source>
   </file>
   <file path="Contao/Callback/ModelChildRecordCallbackListener.php" generated-path="Contao.Callback.ModelChildRecordCallbackListener.html" hash="780fd6f127eda35cae9c6d8146336ac6" package="generalDriver">
     <docblock line="0">
@@ -50696,605 +51295,6 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJy1U8Fu2zAMvfsreOghDjoX2LBTmi5dWrSHFAvWbacAhSIztjBZMiQ6XTD030fJctYl6IYexotMinzie6TPP7R1m52NxxmMYXm7hC06r6yB9xwIsVkr5HdRIbBVaNAJfeUUZ8VL0VFtXbiDee2UJyUM3MtabTYaHZzLwg/OTO7WjN2iJNc1RYkXhwj3hBsuv0XVoIdzH92HOrqz2lIjlC6kbY4Kv4SXuXKhDNdR7xWavdla0bv9W9K2O6eqmrikRrhDEne2RO2BUDRFzNFKovGR7uJmueiDG6XR285JZPcsy4zgllgYhLk1JOzcNk1nFO0utWYFJK6u5E0v1qrPWM2F1muWcpJlnX9NnW1aQWqtNKfxde9PXgfyTeFj+n77kZtAU8bQ9RYNrW6Qls626Gj3qSUevo9x7jTtxVwL7yFKlRIGNguWOjxVpG25FabUCMTq2j7zQaZU2PC0BDQBBZQBLBXBlrsoDjftRe2i+PKfzQD+4LP0cLn25ISkz0idM8pUA83DiuxnFgYe6QYbA5c4hdueinBV17AiPnIIkYFUkfKHMubgRAMvKAonGI+wfP3XGrkrwEYRYXkE5mLf/LwTuxQ8i2fbrXlPYdMZGdD5x6RLV/lRj5/HnJ5SsOcwo300mMFHGFYqFb+5YLBrs1XOmsB5lJ/Cs5uo+yjP9zD5JH4+ZYcKfm1LQX+sAmiWO4yeBv7/V74eLNKGYzvZCt1hBBv6i6kvTWFrVfnXIXSRcJLxNOEfzkJtYJRenk6nYDqt82fXv8c12ceStLHnNAiPlIRJYPnkOIdsG1QUlQiZo/2gnrJfne/glg==</source>
-  </file>
-  <file path="Controller/TreeNodeStates.php" generated-path="Controller.TreeNodeStates.html" hash="dbcae6f884f49487872d85047c629277" package="DcGeneral">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="DcGeneral"/>
-      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
-      <tag name="copyright" line="0" description="The Contao Community Alliance."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="19" package="DcGeneral">
-      <extends/>
-      <name>TreeNodeStates</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</full_name>
-      <docblock line="19">
-        <description>Wrapper class for tree node states.</description>
-        <long-description>This class encapsulates the open/closed states for a tree of models.</long-description>
-      </docblock>
-      <property static="false" visibility="private" line="26" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
-        <name>$states</name>
-        <default></default>
-        <docblock line="26">
-          <description>The states of the nodes.</description>
-          <long-description></long-description>
-          <tag name="var" line="26" description="" type="array" variable="">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="33" package="DcGeneral">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::__construct()</full_name>
-        <docblock line="33">
-          <description>Create a new instance.</description>
-          <long-description></long-description>
-          <tag name="param" line="33" description="&lt;p&gt;The initial state array (optional, if not given, the state information will be empty).&lt;/p&gt;&#10;" type="array" variable="$states">
-            <type>array</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$states</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="49" package="DcGeneral">
-        <name>setStates</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setStates()</full_name>
-        <docblock line="49">
-          <description>Set the native states.</description>
-          <long-description>The states must be created via the getStates() method.</long-description>
-          <tag name="param" line="49" description="&lt;p&gt;The state array.&lt;/p&gt;" type="array" variable="$states">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="49" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-          <tag name="see" line="49" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\getStates()"/>
-        </docblock>
-        <argument line="0">
-          <name>$states</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="66" package="DcGeneral">
-        <name>getStates</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::getStates()</full_name>
-        <docblock line="66">
-          <description>Retrieve the states as array.</description>
-          <long-description>The returned array may be stored to session or other persistent storage and imported again via constructor
-argument or a call to setStates().</long-description>
-          <tag name="return" line="66" description="" type="array">
-            <type>array</type>
-          </tag>
-          <tag name="see" line="66" description="" link="\ContaoCommunityAlliance\DcGeneral\Controller\getStates()."/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="76" package="DcGeneral">
-        <name>isAllOpen</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::isAllOpen()</full_name>
-        <docblock line="76">
-          <description>Retrieve the flag if all nodes shall be shown in "open" state.</description>
-          <long-description></long-description>
-          <tag name="return" line="76" description="" type="boolean">
-            <type>boolean</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="91" package="DcGeneral">
-        <name>setAllOpen</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setAllOpen()</full_name>
-        <docblock line="91">
-          <description>Set the flag if all elements shall be expanded or not.</description>
-          <long-description>If this flag is set, all tree nodes will be handled in "open" state - if this flag is not set, the visibility
-states will get read from the open flags per driver.</long-description>
-          <tag name="param" line="91" description="&lt;p&gt;The flag.&lt;/p&gt;" type="boolean" variable="$allOpen">
-            <type>boolean</type>
-          </tag>
-          <tag name="return" line="91" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$allOpen</name>
-          <default></default>
-          <type>boolean</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="103" package="DcGeneral">
-        <name>resetAll</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::resetAll()</full_name>
-        <docblock line="103">
-          <description>This will reset all the information and therefore close all models.</description>
-          <long-description></long-description>
-          <tag name="return" line="103" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="121" package="DcGeneral">
-        <name>isModelOpen</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::isModelOpen()</full_name>
-        <docblock line="121">
-          <description>Determine if the model is expanded.</description>
-          <long-description></long-description>
-          <tag name="param" line="121" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="121" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
-            <type>mixed</type>
-          </tag>
-          <tag name="param" line="121" description="&lt;p&gt;If this is true, the &quot;all open&quot; flag will be ignored.&lt;/p&gt;&#10;" type="bool" variable="$ignoreAllState">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="121" description="" type="bool">
-            <type>bool</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$providerName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-        <argument line="0">
-          <name>$ignoreAllState</name>
-          <default>false</default>
-          <type>bool</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="139" package="DcGeneral">
-        <name>toggleModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::toggleModel()</full_name>
-        <docblock line="139">
-          <description>Toggle the model with the given id from the given provider.</description>
-          <long-description></long-description>
-          <tag name="param" line="139" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="139" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
-            <type>mixed</type>
-          </tag>
-          <tag name="return" line="139" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$providerName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="159" package="DcGeneral">
-        <name>setModelState</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates::setModelState()</full_name>
-        <docblock line="159">
-          <description>Toggle the model with the given id from the given provider.</description>
-          <long-description></long-description>
-          <tag name="param" line="159" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="159" description="&lt;p&gt;The id of the model.&lt;/p&gt;" type="mixed" variable="$modelId">
-            <type>mixed</type>
-          </tag>
-          <tag name="param" line="159" description="&lt;p&gt;The new state for the model.&lt;/p&gt;" type="bool" variable="$state">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="159" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$providerName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-        <argument line="0">
-          <name>$state</name>
-          <default></default>
-          <type>bool</type>
-        </argument>
-      </method>
-    </class>
-    <source>eJzlV99v3DYMfr+/gg2C9i5IE+xhT2myDCnQFei6YAmwh7YodDbPFmZLhiRfGhT530dSluP74csF3cOAHRIcIpGfyI8fKeXNL03ZTE6PjiZwBNe/XcMSndfWwM+0wGuXjcr+VgUCfd5m79CgU5VsqDaU1vE6XJVO+6CVgZus1ItFhQ7eZCc+/XGZ3c8Jt8EsuLY+yfFCEDLb3DtdlAHgtkS4siYoS1913Rod7uHXqiLMDE/EutIZGi+BfHh3/SEuLnSF3rYuQ/rzdDIxqkZPISe0Hixhfe6T+MwWzlYU39kkUfCXU01D0WeV8h4WlF9wiGBsjuCDCuhPOmJuS+07MzSZanxb8TYEysQ2aE6zynrMOy+BUhHMLqAmvEqgTicR45Z2PtLqjZhPvk84TwmKP0dCUAdF/nwIx8QQsp/MLpeKznFO3Xcrp/LdOL0kXziMEJTvGvyVQ95XYPAOtCGzyPsqeKOcqiN8gpLANDGsVRUD7PantgkkJFUdg15QsAEKvURzLLFHQ22IlVqxGdzpqoI5AtZNuJ+drEbfzqn4sGhNJrZfv2aWQnRtFqYpjPN47HQ2E5fIH38OAxXq9YXHEKlNHrMzMXnYoOIGQ+SXAlsOqr5CxaAcdesDR54JhTkstRL/oj9xBjVSr+R78zngccPHYWidWdfLmpFH6ZNBCDsJ3SRnhMTE9aqO+NOFJYZjzP6JwWkkTsMje8pvz5NpiJhEaWSopt85O1pHa8FS2F5mFbWWJUgHDQ8vH9AEseKxpUwOum6s49KoQmkjBeoFZF06UbmirdlVOjVTpEc5o6dwrBTDdttRgd2aXi/V963MphLsxfCiUgX3HmciwwJ8qWKX+dLeGeo/OOBRdRCLMZbf3NoKldkZvvY0YP8grLHwp4wyW83i0ysK59WXpxpxmAdWyDUapILfGqoxFZfKRlNmPYn3PCxpUkcQz/U8FqR+rvt+9pQEVBHSGi/wmk9fQeFxJkgc31J7PdcVXTLp0E7bgkuFJQ5UDgtn6/52ECTPgoWcZjO6kdnQcQ+HKtIrfcG+z5oLo12fipbgd/Z9Vy5q/1TMzuuZY0BuTuHGIcUQq1GuXgfcttzSSEs0WvkqFbv+4vzR5OVoSn9Dr+ujLl4rkjqcX6Ttgd5nz0z/LQZ0tTYYVYUxJ1ZVkvKIFmhgaVPAYePsUufoPtJbB+LTKVdBQVoHfgSNYNT6GwkcDuXM93mKWy7xPL0sZHOHIJklXRiqDJEgXPdtRj80VjE2xgFXLDaSNE7qs+i7meZg3jwxbH7nCKNyh2wc94kdb0R4DgtVeVwvN9Vg+mLd9uVLOoP0Md2m/xlvb92B83P4aTYboA80wbSc9RsPG5qZbjtxJbsvn1J2W2MYtR196dzaoqhwoME7Hcr4duGnGiuiH1pxJR3xHIX+uD73UefzJ0CQ7EVJYyraKpan67QhgV3Gjy/XXep4fMVKwJLeuPZf9FNqj0ZhYf4/NLI6weLdDo/u/K9PXJT/+/5Fqe1ZthjSf0B0+w2WwUNALJ+4Bx8m/wBcDOAl</source>
-  </file>
-  <file path="Controller/TreeCollector.php" generated-path="Controller.TreeCollector.html" hash="5deb73178067e54149fd915244337cbb" package="DcGeneral">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="DcGeneral"/>
-      <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
-      <tag name="copyright" line="0" description="The Contao Community Alliance."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="29" package="DcGeneral">
-      <extends/>
-      <implements>\ContaoCommunityAlliance\DcGeneral\EnvironmentAwareInterface</implements>
-      <name>TreeCollector</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector</full_name>
-      <docblock line="29">
-        <description>Generic class to retrieve a tree collection for tree views.</description>
-        <long-description></long-description>
-      </docblock>
-      <property static="false" visibility="private" line="36" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
-        <name>$environment</name>
-        <default></default>
-        <docblock line="36">
-          <description>The environment.</description>
-          <long-description></long-description>
-          <tag name="var" line="36" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="43" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
-        <name>$panel</name>
-        <default></default>
-        <docblock line="43">
-          <description>The panel container in use.</description>
-          <long-description></long-description>
-          <tag name="var" line="43" description="" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface" variable="">
-            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="50" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
-        <name>$sorting</name>
-        <default></default>
-        <docblock line="50">
-          <description>The sorting information.</description>
-          <long-description></long-description>
-          <tag name="var" line="50" description="" type="array" variable="">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="private" line="57" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral">
-        <name>$states</name>
-        <default></default>
-        <docblock line="57">
-          <description>The tree node states that represent the current flags for the tree nodes.</description>
-          <long-description></long-description>
-          <tag name="var" line="57" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates" variable="">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="70" package="DcGeneral">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::__construct()</full_name>
-        <docblock line="70">
-          <description>Create a new instance.</description>
-          <long-description></long-description>
-          <tag name="param" line="70" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-          <tag name="param" line="70" description="&lt;p&gt;The panel.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface" variable="$panel">
-            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
-          </tag>
-          <tag name="param" line="70" description="&lt;p&gt;The sorting information.&lt;/p&gt;" type="array" variable="$sorting">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="70" description="&lt;p&gt;The tree node states to use.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates" variable="$states">
-            <type link="TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$environment</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$panel</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$sorting</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$states</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="87" package="DcGeneral">
-        <name>getEnvironment</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getEnvironment()</full_name>
-        <docblock line="87">
-          <description>Retrieve the environment.</description>
-          <long-description></long-description>
-          <tag name="return" line="87" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="97" package="DcGeneral">
-        <name>getPanel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getPanel()</full_name>
-        <docblock line="97">
-          <description>Retrieve the panel.</description>
-          <long-description></long-description>
-          <tag name="return" line="97" description="" type="\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface">
-            <type link="PanelContainerInterface.html">\ContaoCommunityAlliance\DcGeneral\Panel\PanelContainerInterface</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="107" package="DcGeneral">
-        <name>getSorting</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getSorting()</full_name>
-        <docblock line="107">
-          <description>Retrieve the sorting information.</description>
-          <long-description></long-description>
-          <tag name="return" line="107" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="121" package="DcGeneral">
-        <name>determineModelState</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::determineModelState()</full_name>
-        <docblock line="121">
-          <description>Check the state of a model and set the metadata accordingly.</description>
-          <long-description></long-description>
-          <tag name="param" line="121" description="&lt;p&gt;The model of which the state shall be checked of.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="121" description="&lt;p&gt;The tree level the model is contained within.&lt;/p&gt;" type="int" variable="$level">
-            <type>int</type>
-          </tag>
-          <tag name="return" line="121" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$level</name>
-          <default></default>
-          <type>int</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="139" package="DcGeneral">
-        <name>getChildProvidersOf</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildProvidersOf()</full_name>
-        <docblock line="139">
-          <description>Retrieve the child data provider names for the passed parent provider.</description>
-          <long-description></long-description>
-          <tag name="param" line="139" description="&lt;p&gt;The name of the parent provider.&lt;/p&gt;" type="string" variable="$parentProvider">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="139" description="&lt;p&gt;The relationship information (optional).&lt;/p&gt;&#10;" type="null|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface" variable="$relationships">
-            <type>null</type>
-            <type link="ModelRelationshipDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</type>
-          </tag>
-          <tag name="return" line="139" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$parentProvider</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$relationships</name>
-          <default>null</default>
-          <type>null|\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\ModelRelationshipDefinitionInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="164" package="DcGeneral">
-        <name>getChildrenOfModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildrenOfModel()</full_name>
-        <docblock line="164">
-          <description>Retrieve the children of a model (if any exist).</description>
-          <long-description></long-description>
-          <tag name="param" line="164" description="&lt;p&gt;The data provider.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface" variable="$dataProvider">
-            <type link="DataProviderInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface</type>
-          </tag>
-          <tag name="param" line="164" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="164" description="&lt;p&gt;The condition.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface" variable="$childCondition">
-            <type link="ParentChildConditionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</type>
-          </tag>
-          <tag name="return" line="164" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface|null">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-            <type>null</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$dataProvider</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$childCondition</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\DataDefinition\ModelRelationship\ParentChildConditionInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="203" package="DcGeneral">
-        <name>treeWalkModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::treeWalkModel()</full_name>
-        <docblock line="203">
-          <description>This "renders" a model for tree view.</description>
-          <long-description></long-description>
-          <tag name="param" line="203" description="&lt;p&gt;The model to render.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="param" line="203" description="&lt;p&gt;The current level in the tree hierarchy.&lt;/p&gt;" type="int" variable="$intLevel">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="203" description="&lt;p&gt;The names of data providers that shall be rendered &quot;below&quot; this item.&lt;/p&gt;&#10;" type="array" variable="$subTables">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="203" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$intLevel</name>
-          <default></default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$subTables</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="261" package="DcGeneral">
-        <name>addParentFilter</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::addParentFilter()</full_name>
-        <docblock line="261">
-          <description>Add the parent filtering to the given data config if any defined.</description>
-          <long-description></long-description>
-          <tag name="param" line="261" description="&lt;p&gt;The data config.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface" variable="$config">
-            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
-          </tag>
-          <tag name="param" line="261" description="&lt;p&gt;The parent model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="return" line="261" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="throws" line="261" description="When the parent provider does not match." type="\RuntimeException">
-            <type link="RuntimeException.html">\RuntimeException</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$config</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
-        </argument>
-        <argument line="0">
-          <name>$parentModel</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="303" package="DcGeneral">
-        <name>calculateRootConfig</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::calculateRootConfig()</full_name>
-        <docblock line="303">
-          <description>Put the base filter and sorting into a config.</description>
-          <long-description></long-description>
-          <tag name="return" line="303" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface">
-            <type link="ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="326" package="DcGeneral">
-        <name>getTreeCollectionRecursive</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getTreeCollectionRecursive()</full_name>
-        <docblock line="326">
-          <description>Recursively retrieve a collection of all complete node hierarchy.</description>
-          <long-description></long-description>
-          <tag name="param" line="326" description="&lt;p&gt;The ids of the root node.&lt;/p&gt;" type="array" variable="$rootId">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="326" description="&lt;p&gt;The level the items are residing on.&lt;/p&gt;" type="int" variable="$level">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="326" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="326" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$rootId</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$level</name>
-          <default>0</default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$providerName</name>
-          <default>null</default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="353" package="DcGeneral">
-        <name>getChildrenOf</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\TreeCollector::getChildrenOf()</full_name>
-        <docblock line="353">
-          <description>Collect all items from real root - without root id.</description>
-          <long-description></long-description>
-          <tag name="param" line="353" description="&lt;p&gt;The data provider from which the root element originates from.&lt;/p&gt;" type="string" variable="$providerName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="353" description="&lt;p&gt;The level in the tree (TODO: isn't this always 0?).&lt;/p&gt;&#10;" type="int" variable="$level">
-            <type>int</type>
-          </tag>
-          <tag name="param" line="353" description="&lt;p&gt;The optional parent model (mode 4 parent).&lt;/p&gt;&#10;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$parentModel">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="return" line="353" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
-            <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$providerName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$level</name>
-          <default>0</default>
-          <type>int</type>
-        </argument>
-        <argument line="0">
-          <name>$parentModel</name>
-          <default>null</default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-      </method>
-    </class>
-    <markers>
-      <todo line="181">hardcoded sorting... NOT GOOD!</todo>
-    </markers>
-    <source>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</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">

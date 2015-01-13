@@ -71,6 +71,7 @@
 <li><a href="#Data/TableRowsAsRecordsDataProvider.php"><i class="icon-file"></i>Data/TableRowsAsRecordsDataProvider.php</a></li>
 <li><a href="#Clipboard/Clipboard.php"><i class="icon-file"></i>Clipboard/Clipboard.php</a></li>
 <li><a href="#DataDefinition/Definition/Properties/PropertyInterface.php"><i class="icon-file"></i>DataDefinition/Definition/Properties/PropertyInterface.php</a></li>
+<li><a href="#Controller/TreeCollector.php"><i class="icon-file"></i>Controller/TreeCollector.php</a></li>
 <li><a href="#Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php"><i class="icon-file"></i>Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/TreePicker.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/TreePicker.php</a></li>
 <li><a href="#Data/MultiLanguageDataProvider.php"><i class="icon-file"></i>Data/MultiLanguageDataProvider.php</a></li>
@@ -78,7 +79,6 @@
 <li><a href="#Contao/View/Contao2BackendView/TreeView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/TreeView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/ParentView.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/ParentView.php</a></li>
 <li><a href="#Contao/View/Contao2BackendView/EditMask.php"><i class="icon-file"></i>Contao/View/Contao2BackendView/EditMask.php</a></li>
-<li><a href="#Controller/TreeCollector.php"><i class="icon-file"></i>Controller/TreeCollector.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -151,22 +151,22 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>250</td>
+<td>247</td>
 <td>This might return a lot of models, we definately want to use some lazy approach rather than this.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>288</td>
+<td>285</td>
 <td>TL dnk how to handle this without highjacking the view.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>744</td>
+<td>741</td>
 <td>to be discussed, this allow cut&paste over groupings with custom sorting</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>906</td>
+<td>903</td>
 <td>too many parameters, this is just crazy! :-(</td>
 </tr>
 </table></div>
@@ -436,6 +436,23 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="Controller/TreeCollector.php" id="Controller/TreeCollector.php"></a><h3>
+<i class="icon-file"></i>Controller/TreeCollector.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>181</td>
+<td>hardcoded sorting... NOT GOOD!</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php" id="Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php"></a><h3>
 <i class="icon-file"></i>Contao/Dca/Builder/Legacy/LegacyDcaDataDefinitionBuilder.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -594,23 +611,6 @@
 </tr>
 </table></div>
 </div>
-<div class="package-contents">
-<a name="Controller/TreeCollector.php" id="Controller/TreeCollector.php"></a><h3>
-<i class="icon-file"></i>Controller/TreeCollector.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>todo</td>
-<td>181</td>
-<td>hardcoded sorting... NOT GOOD!</td>
-</tr>
-</table></div>
-</div>
 </div>
 </div>
 </div>
@@ -618,7 +618,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-10T19:31:06+01:00.<br></footer></div>
+            generated on 2015-01-13T06:35:46+01:00.<br></footer></div>
 </div>
 </body>
 </html>
