@@ -79,6 +79,12 @@
 <li class="method protected "><a href="#method_scanToDesiredPosition" title="scanToDesiredPosition() :: Scan through the sibling list to the position we want to insert at."><span class="description">Scan through the sibling list to the position we want to insert at.</span><pre>scanToDesiredPosition()</pre></a></li>
 </ul>
 </li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_determineDelta" title="determineDelta() :: Determine delta value: ((next sorting - current sorting) / amount of insert models)."><span class="description">Determine delta value: ((next sorting - current sorting) / amount of insert models).</span><pre>determineDelta()</pre></a></li>
+<li class="method private "><a href="#method_updateSorting" title="updateSorting() :: Update the sorting property values of all models."><span class="description">Update the sorting property values of all models.</span><pre>updateSorting()</pre></a></li>
+</ul>
+</li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul></ul>
@@ -248,7 +254,14 @@
 <h2>Calculate the resulting list.</h2>
 <pre>calculate() : void</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="RuntimeException.html">\RuntimeException</a></code></th>
+<td>When no sorting property has been defined.</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_getModelIds"></a><div class="element clickable method protected method_getModelIds" data-toggle="collapse" data-target=".method_getModelIds .collapse">
 <h2>Retrieve the ids of the models.</h2>
@@ -263,6 +276,24 @@
 <a id="method_scanToDesiredPosition"></a><div class="element clickable method protected method_scanToDesiredPosition" data-toggle="collapse" data-target=".method_scanToDesiredPosition .collapse">
 <h2>Scan through the sibling list to the position we want to insert at.</h2>
 <pre>scanToDesiredPosition() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_determineDelta"></a><div class="element clickable method private method_determineDelta" data-toggle="collapse" data-target=".method_determineDelta .collapse">
+<h2>Determine delta value: ((next sorting - current sorting) / amount of insert models).</h2>
+<pre>determineDelta() : float | int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code><code>int</code>
+</div>
+</div></div>
+</div>
+<a id="method_updateSorting"></a><div class="element clickable method private method_updateSorting" data-toggle="collapse" data-target=".method_updateSorting .collapse">
+<h2>Update the sorting property values of all models.</h2>
+<pre>updateSorting() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -324,7 +355,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-13T06:35:45+01:00.<br></footer></div>
+            generated on 2015-01-15T05:16:56+01:00.<br></footer></div>
 </div>
 </body>
 </html>
