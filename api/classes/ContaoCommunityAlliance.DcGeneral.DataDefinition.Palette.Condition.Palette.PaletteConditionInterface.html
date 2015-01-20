@@ -104,10 +104,15 @@
 </div>
 <a id="method_getMatchCount"></a><div class="element clickable method public method_getMatchCount" data-toggle="collapse" data-target=".method_getMatchCount .collapse">
 <h2>Calculate how "strong" (aka "count of matches") this condition match the model and input parameters.</h2>
-<pre>getMatchCount(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) : int</pre>
+<pre>getMatchCount(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null $model, \ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag $input) : bool | int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">If a value is present in the input parameter, that one overrides any existing value in the model.</div>
+<div class="long_description">If a value is present in the input parameter, that one overrides any existing value in the model.
+
+When the condition does not match at all or has not enough information for a decision, false must be returned.
+
+When the condition does match, it must return a numeric value, the value may be negative or positive and even
+zero.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$model</h4>
@@ -116,7 +121,9 @@
 <h4>$input</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code><p>If given, selectors will be evaluated depending on the input data.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response">
+<code>bool</code><code>int</code>
+</div>
 </div></div>
 </div>
 </div>
@@ -127,7 +134,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-16T14:59:03+01:00.<br></footer></div>
+            generated on 2015-01-20T20:46:46+01:00.<br></footer></div>
 </div>
 </body>
 </html>
