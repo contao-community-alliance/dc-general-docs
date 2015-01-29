@@ -102,6 +102,7 @@
 <li class="method private "><a href="#method_ensureSameGrouping" title="ensureSameGrouping() :: Ensure all models have the same grouping."><span class="description">Ensure all models have the same grouping.</span><pre>ensureSameGrouping()</pre></a></li>
 <li class="method private "><a href="#method_fetchModelsFromClipboard" title="fetchModelsFromClipboard() :: Fetch actions from the clipboard."><span class="description">Fetch actions from the clipboard.</span><pre>fetchModelsFromClipboard()</pre></a></li>
 <li class="method private "><a href="#method_getActionsFromSource" title="getActionsFromSource() :: Fetch actions from source."><span class="description">Fetch actions from source.</span><pre>getActionsFromSource()</pre></a></li>
+<li class="method private "><a href="#method_handleClonedModelProperty" title="handleClonedModelProperty() :: Handle a property in a cloned model."><span class="description">Handle a property in a cloned model.</span><pre>handleClonedModelProperty()</pre></a></li>
 <li class="method private "><a href="#method_sortAndPersistModels" title="sortAndPersistModels() :: Apply sorting and persist all models."><span class="description">Apply sorting and persist all models.</span><pre>sortAndPersistModels()</pre></a></li>
 </ul>
 </li>
@@ -609,6 +610,24 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_handleClonedModelProperty"></a><div class="element clickable method private method_handleClonedModelProperty" data-toggle="collapse" data-target=".method_handleClonedModelProperty .collapse">
+<h2>Handle a property in a cloned model.</h2>
+<pre>handleClonedModelProperty(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property, \ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface $dataProvider) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The cloned model.</p></div>
+<div class="subelement argument">
+<h4>$property</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to handle.</p></div>
+<div class="subelement argument">
+<h4>$dataProvider</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DataProviderInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\DataProviderInterface</a></code><p>The data provider the model originates from.</p></div>
+</div></div>
+</div>
 <a id="method_sortAndPersistModels"></a><div class="element clickable method private method_sortAndPersistModels" data-toggle="collapse" data-target=".method_sortAndPersistModels .collapse">
 <h2>Apply sorting and persist all models.</h2>
 <pre>sortAndPersistModels(array $actions, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $into, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId, array $items) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.DefaultCollection.html">\ContaoCommunityAlliance\DcGeneral\Data\DefaultCollection</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
@@ -665,7 +684,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-27T13:53:04+01:00.<br></footer></div>
+            generated on 2015-01-29T05:20:49+01:00.<br></footer></div>
 </div>
 </body>
 </html>

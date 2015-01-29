@@ -84,7 +84,10 @@
                     <ul><li class="method protected "><a href="#method_prepareRule" title="prepareRule() :: Prepare a filter rule to be checked via checkCondition()."><span class="description">Prepare a filter rule to be checked via checkCondition().</span><pre>prepareRule()</pre></a></li></ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="method private "><a href="#method_extractNeededProperties" title="extractNeededProperties() :: Return the names of the needed properties for filtering."><span class="description">Return the names of the needed properties for filtering.</span><pre>extractNeededProperties()</pre></a></li></ul>
+                    <ul>
+<li class="method private "><a href="#method_extractNeededProperties" title="extractNeededProperties() :: Return the names of the needed properties for filtering."><span class="description">Return the names of the needed properties for filtering.</span><pre>extractNeededProperties()</pre></a></li>
+<li class="method private "><a href="#method_isValidSetter" title="isValidSetter() :: Check if the passed value is a valid setter."><span class="description">Check if the passed value is a valid setter.</span><pre>isValidSetter()</pre></a></li>
+</ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
@@ -340,6 +343,20 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_isValidSetter"></a><div class="element clickable method private method_isValidSetter" data-toggle="collapse" data-target=".method_isValidSetter .collapse">
+<h2>Check if the passed value is a valid setter.</h2>
+<pre>isValidSetter(array $setter) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$setter</h4>
+<code>array</code><p>The setter.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_destinationProvider"> </a><div class="element clickable property protected property_destinationProvider" data-toggle="collapse" data-target=".property_destinationProvider .collapse">
@@ -386,7 +403,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-01-27T13:53:01+01:00.<br></footer></div>
+            generated on 2015-01-29T05:20:45+01:00.<br></footer></div>
 </div>
 </body>
 </html>
