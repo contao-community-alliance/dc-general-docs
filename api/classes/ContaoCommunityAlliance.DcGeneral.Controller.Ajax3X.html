@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">99</span></a></li>
+                <span class="label label-info">98</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -66,6 +66,7 @@
                     <ul>
 <li class="method protected "><a href="#method_getModelFromSerializedId" title="getModelFromSerializedId() :: Retrieve a model from a serialized id."><span class="description">Retrieve a model from a serialized id.</span><pre>getModelFromSerializedId()</pre></a></li>
 <li class="method protected "><a href="#method_getTreeValue" title="getTreeValue() :: Retrieve the value as serialized array."><span class="description">Retrieve the value as serialized array.</span><pre>getTreeValue()</pre></a></li>
+<li class="method protected "><a href="#method_getWidget" title="getWidget() :: Get the widget instance."><span class="description">Get the widget instance.</span><pre>getWidget()</pre></a></li>
 <li class="method protected "><a href="#method_loadFiletree" title="loadFiletree() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>loadFiletree()</pre></a></li>
 <li class="method protected "><a href="#method_loadPagetree" title="loadPagetree() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>loadPagetree()</pre></a></li>
 <li class="method protected "><a href="#method_reloadFiletree" title="reloadFiletree() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>reloadFiletree()</pre></a></li>
@@ -145,6 +146,26 @@ Contao handling.</p>
 <code>string</code>The value array.</div>
 </div></div>
 </div>
+<a id="method_getWidget"></a><div class="element clickable method protected method_getWidget" data-toggle="collapse" data-target=".method_getWidget .collapse">
+<h2>Get the widget instance.</h2>
+<pre>getWidget(string $fieldName, string $serializedId, string $propertyValue) : <a href="Widget.html">\Widget</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>The property name.</p></div>
+<div class="subelement argument">
+<h4>$serializedId</h4>
+<code>string</code><p>The serialized id of the model.</p></div>
+<div class="subelement argument">
+<h4>$propertyValue</h4>
+<code>string</code><p>The property value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="Widget.html">\Widget</a></code></div>
+</div></div>
+</div>
 <a id="method_loadFiletree"></a><div class="element clickable method protected method_loadFiletree" data-toggle="collapse" data-target=".method_loadFiletree .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>loadFiletree() </pre>
@@ -195,25 +216,9 @@ Contao handling.</p>
 </div>
 <a id="method_reloadTree"></a><div class="element clickable method protected method_reloadTree" data-toggle="collapse" data-target=".method_reloadTree .collapse">
 <h2>Reload the file tree.</h2>
-<pre>reloadTree(string $strType) : void</pre>
+<pre>reloadTree() : void</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.Superglobals)</td>
-</tr>
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.CamelCaseVariableName)</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$strType</h4>
-<code>string</code><p>The type.</p></div>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 </div>
 </div>
@@ -223,7 +228,7 @@ Contao handling.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-03-21T09:07:24+01:00.<br></footer></div>
+            generated on 2015-03-24T06:09:39+01:00.<br></footer></div>
 </div>
 </body>
 </html>
