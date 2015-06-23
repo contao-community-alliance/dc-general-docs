@@ -446,7 +446,7 @@ will get loaded.</div>
 </div>
 <a id="method_parseListSorting"></a><div class="element clickable method protected method_parseListSorting" data-toggle="collapse" data-target=".method_parseListSorting .collapse">
 <h2>Parse the sorting part of listing configuration.</h2>
-<pre>parseListSorting(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface $listing, array $listDca) : void</pre>
+<pre>parseListSorting(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ListingConfigInterface $listing, array $listDca) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">NOTE: this method currently does NOT support the custom SQL sorting information as supported by DC_Table in
@@ -463,11 +463,13 @@ Contao.</div>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
 <td>In case unsupported values are encountered.</td>
 </tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_parseListing"></a><div class="element clickable method protected method_parseListing" data-toggle="collapse" data-target=".method_parseListing .collapse">
 <h2>Parse the listing configuration.</h2>
-<pre>parseListing(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<pre>parseListing(\ContaoCommunityAlliance\DcGeneral\DataDefinition\ContainerInterface $container, \ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -478,6 +480,8 @@ Contao.</div>
 <div class="subelement argument">
 <h4>$view</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The view information for the backend view.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_parseModelOperations"></a><div class="element clickable method protected method_parseModelOperations" data-toggle="collapse" data-target=".method_parseModelOperations .collapse">
@@ -636,7 +640,7 @@ Contao.</div>
 </div>
 <a id="method_parsePropertySortingAndGrouping"></a><div class="element clickable method protected method_parsePropertySortingAndGrouping" data-toggle="collapse" data-target=".method_parsePropertySortingAndGrouping .collapse">
 <h2>Parse the sorting and grouping information for a given property.</h2>
-<pre>parsePropertySortingAndGrouping(string $propName, array $propInfo, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface $definitions) : void</pre>
+<pre>parsePropertySortingAndGrouping(string $propName, array $propInfo, \ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface $definitions, array $parsedProperties) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -650,11 +654,14 @@ Contao.</div>
 <div class="subelement argument">
 <h4>$definitions</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\GroupAndSortingDefinitionCollectionInterface</a></code><p>The definitions.</p></div>
+<div class="subelement argument">
+<h4>$parsedProperties</h4>
+<code>array</code><p>A list of properties already parsed.</p></div>
 </div></div>
 </div>
 <a id="method_parsePropertySortingAndGroupings"></a><div class="element clickable method protected method_parsePropertySortingAndGroupings" data-toggle="collapse" data-target=".method_parsePropertySortingAndGroupings .collapse">
 <h2>Parse the sorting and grouping information for all properties.</h2>
-<pre>parsePropertySortingAndGroupings(\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view) : void</pre>
+<pre>parsePropertySortingAndGroupings(\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface $view, array $parsedProperties) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -662,6 +669,9 @@ Contao.</div>
 <div class="subelement argument">
 <h4>$view</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.DataDefinition.Definition.Contao2BackendViewDefinitionInterface.html">\ContaoCommunityAlliance\DcGeneral\Contao\DataDefinition\Definition\Contao2BackendViewDefinitionInterface</a></code><p>The view information for the backend view.</p></div>
+<div class="subelement argument">
+<h4>$parsedProperties</h4>
+<code>array</code><p>A list of properties already parsed.</p></div>
 </div></div>
 </div>
 <a id="method_parseRootEntries"></a><div class="element clickable method protected method_parseRootEntries" data-toggle="collapse" data-target=".method_parseRootEntries .collapse">
@@ -726,7 +736,7 @@ Contao.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-06-23T17:31:59+02:00.<br></footer></div>
+            generated on 2015-06-23T17:34:05+02:00.<br></footer></div>
 </div>
 </body>
 </html>
