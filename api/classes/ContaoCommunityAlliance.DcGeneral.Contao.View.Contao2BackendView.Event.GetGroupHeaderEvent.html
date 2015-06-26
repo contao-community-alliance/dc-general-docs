@@ -63,6 +63,7 @@
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: Create a new group header event."><span class="description">Create a new group header event.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_getGroupField" title="getGroupField() :: Retrieve the property name to be rendered."><span class="description">Retrieve the property name to be rendered.</span><pre>getGroupField()</pre></a></li>
+<li class="method public "><a href="#method_getGroupingLength" title="getGroupingLength() :: Get the grouping length in use as defined in the listing config."><span class="description">Get the grouping length in use as defined in the listing config.</span><pre>getGroupingLength()</pre></a></li>
 <li class="method public "><a href="#method_getGroupingMode" title="getGroupingMode() :: Get the grouping mode in use as defined in the listing config."><span class="description">Get the grouping mode in use as defined in the listing config.</span><pre>getGroupingMode()</pre></a></li>
 <li class="method public "><a href="#method_getValue" title="getValue() :: Retrieve the value to use in the group header."><span class="description">Retrieve the value to use in the group header.</span><pre>getValue()</pre></a></li>
 <li class="method public "><a href="#method_setValue" title="setValue() :: Set the value to use in the group header."><span class="description">Set the value to use in the group header.</span><pre>setValue()</pre></a></li>
@@ -75,6 +76,7 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected "><a href="#property_groupField" title="$groupField() :: The current property to be rendered for the group header."><span class="description"></span><pre>$groupField</pre></a></li>
+<li class="property protected "><a href="#property_groupingLength" title="$groupingLength() :: The grouping length in use as defined in the listing config."><span class="description"></span><pre>$groupingLength</pre></a></li>
 <li class="property protected "><a href="#property_groupingMode" title="$groupingMode() :: The grouping mode in use as defined in the listing config."><span class="description"></span><pre>$groupingMode</pre></a></li>
 <li class="property protected "><a href="#property_value" title="$value() :: The value to be rendered."><span class="description"></span><pre>$value</pre></a></li>
 </ul>
@@ -122,7 +124,7 @@
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Create a new group header event.</h2>
-<pre>__construct(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, string $propertyName, mixed $propertyValue, string $groupingMode) </pre>
+<pre>__construct(\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface $environment, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model, string $propertyName, mixed $propertyValue, string $groupingMode, int $groupingLength) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -142,6 +144,9 @@
 <div class="subelement argument">
 <h4>$groupingMode</h4>
 <code>string</code><p>The grouping mode currently active.</p></div>
+<div class="subelement argument">
+<h4>$groupingLength</h4>
+<code>int</code><p>The grouping length currently active.</p></div>
 </div></div>
 </div>
 <a id="method_getGroupField"></a><div class="element clickable method public method_getGroupField" data-toggle="collapse" data-target=".method_getGroupField .collapse">
@@ -152,6 +157,20 @@
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getGroupingLength"></a><div class="element clickable method public method_getGroupingLength" data-toggle="collapse" data-target=".method_getGroupingLength .collapse">
+<h2>Get the grouping length in use as defined in the listing config.</h2>
+<pre>getGroupingLength() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CDataDefinition%5CDefinition%5CView%5CListingConfigInterface"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
 </div></div>
 </div>
 <a id="method_getGroupingMode"></a><div class="element clickable method public method_getGroupingMode" data-toggle="collapse" data-target=".method_getGroupingMode .collapse">
@@ -200,6 +219,18 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_groupingLength"> </a><div class="element clickable property protected property_groupingLength" data-toggle="collapse" data-target=".property_groupingLength .collapse">
+<h2>The grouping length in use as defined in the listing config.</h2>
+<pre>$groupingLength : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CContaoCommunityAlliance%5CDcGeneral%5CDataDefinition%5CDefinition%5CView%5CListingConfigInterface"></a></td>
+</tr></table>
+</div></div>
+</div>
 <a id="property_groupingMode"> </a><div class="element clickable property protected property_groupingMode" data-toggle="collapse" data-target=".property_groupingMode .collapse">
 <h2>The grouping mode in use as defined in the listing config.</h2>
 <pre>$groupingMode : string</pre>
@@ -234,7 +265,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-06-25T16:05:37+02:00.<br></footer></div>
+            generated on 2015-06-26T20:50:52+02:00.<br></footer></div>
 </div>
 </body>
 </html>
