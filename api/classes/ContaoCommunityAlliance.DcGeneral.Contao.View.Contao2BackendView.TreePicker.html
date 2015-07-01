@@ -72,6 +72,7 @@
 <li class="method public "><a href="#method_getItemContainer" title="getItemContainer() :: Retrieve the item container."><span class="description">Retrieve the item container.</span><pre>getItemContainer()</pre></a></li>
 <li class="method public "><a href="#method_getSearchSessionKey" title="getSearchSessionKey() :: Retrieve the id for this view."><span class="description">Retrieve the id for this view.</span><pre>getSearchSessionKey()</pre></a></li>
 <li class="method public "><a href="#method_getTreeCollectionRecursive" title="getTreeCollectionRecursive() :: Recursively retrieve a collection of all complete node hierarchy."><span class="description">Recursively retrieve a collection of all complete node hierarchy.</span><pre>getTreeCollectionRecursive()</pre></a></li>
+<li class="method public "><a href="#method_getTreeNodeStates" title="getTreeNodeStates() :: Create a tree states instance."><span class="description">Create a tree states instance.</span><pre>getTreeNodeStates()</pre></a></li>
 <li class="method public "><a href="#method_isSearchAvailable" title="isSearchAvailable() :: Check if an custom sorting field has been defined."><span class="description">Check if an custom sorting field has been defined.</span><pre>isSearchAvailable()</pre></a></li>
 <li class="method public "><a href="#method_loadCollection" title="loadCollection() :: Load the collection of child items and the parent item for the currently selected parent item."><span class="description">Load the collection of child items and the parent item for the currently selected parent item.</span><pre>loadCollection()</pre></a></li>
 <li class="method public "><a href="#method_renderItemsPlain" title="renderItemsPlain() :: Render the current values for listing."><span class="description">Render the current values for listing.</span><pre>renderItemsPlain()</pre></a></li>
@@ -83,14 +84,17 @@
 <li class="method protected "><a href="#method_determineModelState" title="determineModelState() :: Check the state of a model and set the metadata accordingly."><span class="description">Check the state of a model and set the metadata accordingly.</span><pre>determineModelState()</pre></a></li>
 <li class="method protected "><a href="#method_generateTreeView" title="generateTreeView() :: Generate the tree view for a given collection."><span class="description">Generate the tree view for a given collection.</span><pre>generateTreeView()</pre></a></li>
 <li class="method protected "><a href="#method_getFormatter" title="getFormatter() :: Retrieve the formatter for the given model."><span class="description">Retrieve the formatter for the given model.</span><pre>getFormatter()</pre></a></li>
-<li class="method protected "><a href="#method_getOpenElements" title="getOpenElements() :: Retrieve the ids of all tree nodes that are expanded."><span class="description">Retrieve the ids of all tree nodes that are expanded.</span><pre>getOpenElements()</pre></a></li>
 <li class="method protected "><a href="#method_getToggleId" title="getToggleId() :: Retrieve the id for this view."><span class="description">Retrieve the id for this view.</span><pre>getToggleId()</pre></a></li>
-<li class="method protected "><a href="#method_isModelOpen" title="isModelOpen() :: Determine if the passed model is expanded."><span class="description">Determine if the passed model is expanded.</span><pre>isModelOpen()</pre></a></li>
 <li class="method protected "><a href="#method_parseModel" title="parseModel() :: Render a given model."><span class="description">Render a given model.</span><pre>parseModel()</pre></a></li>
 <li class="method protected "><a href="#method_setUp" title="setUp() :: Setup all local values and create the dc instance for the referenced data source."><span class="description">Setup all local values and create the dc instance for the referenced data source.</span><pre>setUp()</pre></a></li>
-<li class="method protected "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
 <li class="method protected "><a href="#method_treeWalkModel" title='treeWalkModel() :: This "renders" a model for tree view.'><span class="description">This "renders" a model for tree view.</span><pre>treeWalkModel()</pre></a></li>
 <li class="method protected "><a href="#method_validator" title='validator() :: Skip the field if "change selection" is not checked.'><span class="description">Skip the field if "change selection" is not checked.</span><pre>validator()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_determineParentsOfValues" title="determineParentsOfValues() :: Determine all parents of all selected values."><span class="description">Determine all parents of all selected values.</span><pre>determineParentsOfValues()</pre></a></li>
+<li class="method private "><a href="#method_parentsOf" title="parentsOf() :: Fetch all parents of the passed model."><span class="description">Fetch all parents of the passed model.</span><pre>parentsOf()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -103,6 +107,7 @@
 <li class="property protected "><a href="#property_dataContainer" title="$dataContainer() :: The data Container."><span class="description"></span><pre>$dataContainer</pre></a></li>
 <li class="property protected "><a href="#property_fieldType" title="$fieldType() :: The field type to use."><span class="description"></span><pre>$fieldType</pre></a></li>
 <li class="property protected "><a href="#property_itemContainer" title="$itemContainer() :: The data container for the item source."><span class="description"></span><pre>$itemContainer</pre></a></li>
+<li class="property protected "><a href="#property_nodeStates" title="$nodeStates() :: The tree nodes to be handled."><span class="description"></span><pre>$nodeStates</pre></a></li>
 <li class="property protected "><a href="#property_orderField" title="$orderField() :: The property used for ordering."><span class="description"></span><pre>$orderField</pre></a></li>
 <li class="property protected "><a href="#property_sourceName" title="$sourceName() :: The source data container name."><span class="description"></span><pre>$sourceName</pre></a></li>
 <li class="property protected "><a href="#property_strAjaxId" title="$strAjaxId() :: The ajax id."><span class="description"></span><pre>$strAjaxId</pre></a></li>
@@ -327,6 +332,16 @@
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code></div>
 </div></div>
 </div>
+<a id="method_getTreeNodeStates"></a><div class="element clickable method public method_getTreeNodeStates" data-toggle="collapse" data-target=".method_getTreeNodeStates .collapse">
+<h2>Create a tree states instance.</h2>
+<pre>getTreeNodeStates() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
 <a id="method_isSearchAvailable"></a><div class="element clickable method public method_isSearchAvailable" data-toggle="collapse" data-target=".method_isSearchAvailable .collapse">
 <h2>Check if an custom sorting field has been defined.</h2>
 <pre>isSearchAvailable() : bool</pre>
@@ -445,16 +460,6 @@
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.ModelFormatterConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\ModelFormatterConfigInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_getOpenElements"></a><div class="element clickable method protected method_getOpenElements" data-toggle="collapse" data-target=".method_getOpenElements .collapse">
-<h2>Retrieve the ids of all tree nodes that are expanded.</h2>
-<pre>getOpenElements() : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
 <a id="method_getToggleId"></a><div class="element clickable method protected method_getToggleId" data-toggle="collapse" data-target=".method_getToggleId .collapse">
 <h2>Retrieve the id for this view.</h2>
 <pre>getToggleId() : string</pre>
@@ -463,20 +468,6 @@
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_isModelOpen"></a><div class="element clickable method protected method_isModelOpen" data-toggle="collapse" data-target=".method_isModelOpen .collapse">
-<h2>Determine if the passed model is expanded.</h2>
-<pre>isModelOpen(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : bool</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model to check.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_parseModel"></a><div class="element clickable method protected method_parseModel" data-toggle="collapse" data-target=".method_parseModel .collapse">
@@ -506,21 +497,6 @@
 <div class="subelement argument">
 <h4>$dataContainer</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</a></code><p>The data container to use.</p></div>
-</div></div>
-</div>
-<a id="method_toggleModel"></a><div class="element clickable method protected method_toggleModel" data-toggle="collapse" data-target=".method_toggleModel .collapse">
-<h2>Toggle the model with the given id from the given provider.</h2>
-<pre>toggleModel(string $providerName, mixed $modelId) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$providerName</h4>
-<code>string</code><p>The data provider name.</p></div>
-<div class="subelement argument">
-<h4>$modelId</h4>
-<code>mixed</code><p>The id of the model.</p></div>
 </div></div>
 </div>
 <a id="method_treeWalkModel"></a><div class="element clickable method protected method_treeWalkModel" data-toggle="collapse" data-target=".method_treeWalkModel .collapse">
@@ -558,6 +534,31 @@
 </div>
 </div></div>
 </div>
+<a id="method_determineParentsOfValues"></a><div class="element clickable method private method_determineParentsOfValues" data-toggle="collapse" data-target=".method_determineParentsOfValues .collapse">
+<h2>Determine all parents of all selected values.</h2>
+<pre>determineParentsOfValues() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_parentsOf"></a><div class="element clickable method private method_parentsOf" data-toggle="collapse" data-target=".method_parentsOf .collapse">
+<h2>Fetch all parents of the passed model.</h2>
+<pre>parentsOf(\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $value, string[] $parents) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model.</p></div>
+<div class="subelement argument">
+<h4>$parents</h4>
+<code>string[]</code><p>The ids of all detected parents so far.</p></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_blnSubmitInput"> </a><div class="element clickable property protected property_blnSubmitInput" data-toggle="collapse" data-target=".property_blnSubmitInput .collapse">
@@ -581,6 +582,12 @@
 <a id="property_itemContainer"> </a><div class="element clickable property protected property_itemContainer" data-toggle="collapse" data-target=".property_itemContainer .collapse">
 <h2>The data container for the item source.</h2>
 <pre>$itemContainer : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_nodeStates"> </a><div class="element clickable property protected property_nodeStates" data-toggle="collapse" data-target=".property_nodeStates .collapse">
+<h2>The tree nodes to be handled.</h2>
+<pre>$nodeStates : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -646,7 +653,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-01T04:09:25+02:00.<br></footer></div>
+            generated on 2015-07-01T15:35:27+02:00.<br></footer></div>
 </div>
 </body>
 </html>

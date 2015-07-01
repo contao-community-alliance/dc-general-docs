@@ -62,11 +62,13 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: Create a new instance."><span class="description">Create a new instance.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_getImplicitOpen" title="getImplicitOpen() :: Retrieve the list of implicit open nodes."><span class="description">Retrieve the list of implicit open nodes.</span><pre>getImplicitOpen()</pre></a></li>
 <li class="method public "><a href="#method_getStates" title="getStates() :: Retrieve the states as array."><span class="description">Retrieve the states as array.</span><pre>getStates()</pre></a></li>
 <li class="method public "><a href="#method_isAllOpen" title='isAllOpen() :: Retrieve the flag if all nodes shall be shown in "open" state.'><span class="description">Retrieve the flag if all nodes shall be shown in "open" state.</span><pre>isAllOpen()</pre></a></li>
 <li class="method public "><a href="#method_isModelOpen" title="isModelOpen() :: Determine if the model is expanded."><span class="description">Determine if the model is expanded.</span><pre>isModelOpen()</pre></a></li>
 <li class="method public "><a href="#method_resetAll" title="resetAll() :: This will reset all the information and therefore close all models."><span class="description">This will reset all the information and therefore close all models.</span><pre>resetAll()</pre></a></li>
 <li class="method public "><a href="#method_setAllOpen" title="setAllOpen() :: Set the flag if all elements shall be expanded or not."><span class="description">Set the flag if all elements shall be expanded or not.</span><pre>setAllOpen()</pre></a></li>
+<li class="method public "><a href="#method_setImplicitOpen" title="setImplicitOpen() :: Set the list of implicit open nodes."><span class="description">Set the list of implicit open nodes.</span><pre>setImplicitOpen()</pre></a></li>
 <li class="method public "><a href="#method_setModelState" title="setModelState() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>setModelState()</pre></a></li>
 <li class="method public "><a href="#method_setStates" title="setStates() :: Set the native states."><span class="description">Set the native states.</span><pre>setStates()</pre></a></li>
 <li class="method public "><a href="#method_toggleModel" title="toggleModel() :: Toggle the model with the given id from the given provider."><span class="description">Toggle the model with the given id from the given provider.</span><pre>toggleModel()</pre></a></li>
@@ -77,7 +79,10 @@
                     <ul></ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property_states" title="$states() :: The states of the nodes."><span class="description"></span><pre>$states</pre></a></li></ul>
+                    <ul>
+<li class="property private "><a href="#property_implicitOpen" title="$implicitOpen() :: List of implicit open nodes (selected values i.e.)."><span class="description"></span><pre>$implicitOpen</pre></a></li>
+<li class="property private "><a href="#property_states" title="$states() :: The states of the nodes."><span class="description"></span><pre>$states</pre></a></li>
+</ul>
 </li>
 </ul>
 </div>
@@ -105,7 +110,7 @@
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Create a new instance.</h2>
-<pre>__construct(array $states) </pre>
+<pre>__construct(array $states, array $implicitOpen) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -114,6 +119,22 @@
 <h4>$states</h4>
 <code>array</code><p>The initial state array (optional, if not given, the state information will be empty).</p>
 </div>
+<div class="subelement argument">
+<h4>$implicitOpen</h4>
+<code>array</code><p>List of implicit open nodes (selected values, if not given, the state information will
+                           be empty).</p>
+</div>
+</div></div>
+</div>
+<a id="method_getImplicitOpen"></a><div class="element clickable method public method_getImplicitOpen" data-toggle="collapse" data-target=".method_getImplicitOpen .collapse">
+<h2>Retrieve the list of implicit open nodes.</h2>
+<pre>getImplicitOpen() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">The returned array may be stored to session or other persistent storage and imported again via constructor
+argument or a call to setStates().</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_getStates"></a><div class="element clickable method public method_getStates" data-toggle="collapse" data-target=".method_getStates .collapse">
@@ -187,6 +208,20 @@ states will get read from the open flags per driver.</div>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
 </div></div>
 </div>
+<a id="method_setImplicitOpen"></a><div class="element clickable method public method_setImplicitOpen" data-toggle="collapse" data-target=".method_setImplicitOpen .collapse">
+<h2>Set the list of implicit open nodes.</h2>
+<pre>setImplicitOpen(array $implicitOpen) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$implicitOpen</h4>
+<code>array</code><p>The state array.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></code></div>
+</div></div>
+</div>
 <a id="method_setModelState"></a><div class="element clickable method public method_setModelState" data-toggle="collapse" data-target=".method_setModelState .collapse">
 <h2>Toggle the model with the given id from the given provider.</h2>
 <pre>setModelState(string $providerName, mixed $modelId, bool $state) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Controller.TreeNodeStates.html">\ContaoCommunityAlliance\DcGeneral\Controller\TreeNodeStates</a></pre>
@@ -244,6 +279,12 @@ states will get read from the open flags per driver.</div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_implicitOpen"> </a><div class="element clickable property private property_implicitOpen" data-toggle="collapse" data-target=".property_implicitOpen .collapse">
+<h2>List of implicit open nodes (selected values i.e.).</h2>
+<pre>$implicitOpen : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_states"> </a><div class="element clickable property private property_states" data-toggle="collapse" data-target=".property_states .collapse">
 <h2>The states of the nodes.</h2>
 <pre>$states : array</pre>
@@ -258,7 +299,7 @@ states will get read from the open flags per driver.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-01T04:09:33+02:00.<br></footer></div>
+            generated on 2015-07-01T15:35:35+02:00.<br></footer></div>
 </div>
 </body>
 </html>
