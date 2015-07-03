@@ -10786,6 +10786,108 @@ with the information from the builder's data source.</long-description>
     </class>
     <source>eJxtUcFuwjAMvfcrfOZQDtNOq7YiNsEkkNDYEWkKrttkpE6VpINq2r/PtAI0Rm7PL8/Pfs6eGt0k49EogRGs5iv4Ih+MY7iXwrGWNwp3qiKQVxGTV/bZG/nVk6qN2vkjB1PtTYhGMaxRm7K05CHDNJxAjt1WejeE0bd1WtDjdYd1pFLkczI1BchCDz90D3PtYq2MTdHV/4TvR2dRLgyLLg4otYLyrYl3t7wmXHhSAV6DUjvIFBdd+qk8FXnlXGXprxe6pvOm0lG8NMGSolq6gmyASKpO+z/WIHHoc1rMVouhWBpLwbUeSeA4SVjJLpIowdRxVG7q6rplE7uJtRId0uYZZ0PKm5cDUhPlFg/J6UDnEkTt3Z7BlCB7k/ey1l4b1ICCHdsOtgSla7kQBL7lKCmCQ2x9AMNwtkmv73xjgH52tCqEC/s2tLxMRIdIXATYXDPJd/KT/ALghs2Z</source>
   </file>
+  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/AbstractWidget.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.AbstractWidget.html" hash="51d0ac6305808624cf0567d2b73611a5" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="true" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="24" package="generalDriver">
+      <extends>\Widget</extends>
+      <name>AbstractWidget</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</full_name>
+      <docblock line="24">
+        <description>Abstract widget class as base for dc general backend widgets.</description>
+        <long-description>This widget is only prepared to run in DcCompat mode!</long-description>
+      </docblock>
+      <property static="false" visibility="protected" line="31" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$blnSubmitInput</name>
+        <default>true</default>
+        <docblock line="31">
+          <description>Submit user input.</description>
+          <long-description></long-description>
+          <tag name="var" line="31" description="" type="boolean" variable="">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="38" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$strTemplate</name>
+        <default>'be_widget'</default>
+        <docblock line="38">
+          <description>The template.</description>
+          <long-description></long-description>
+          <tag name="var" line="38" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="45" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$dataContainer</name>
+        <default></default>
+        <docblock line="45">
+          <description>The data Container.</description>
+          <long-description></long-description>
+          <tag name="var" line="45" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat" variable="">
+            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="54" package="generalDriver">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::__construct()</full_name>
+        <docblock line="54">
+          <description>Create a new instance.</description>
+          <long-description></long-description>
+          <tag name="param" line="54" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array|null" variable="$attributes">
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="param" line="54" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null" variable="$dataContainer">
+            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$attributes</name>
+          <default>null</default>
+          <type>array|null</type>
+        </argument>
+        <argument line="0">
+          <name>$dataContainer</name>
+          <default>null</default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="66" package="generalDriver">
+        <name>getEnvironment</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::getEnvironment()</full_name>
+        <docblock line="66">
+          <description>Get the environment.</description>
+          <long-description></long-description>
+          <tag name="return" line="66" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
+            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="76" package="generalDriver">
+        <name>getModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::getModel()</full_name>
+        <docblock line="76">
+          <description>Get the model.</description>
+          <long-description></long-description>
+          <tag name="return" line="76" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <source>eJyVVF1P2zAUfc+vuJOQgGoUadJe+CyjE0MCCW1oe6mEHOe29ebYkX1d6Db++66dhELaDpqX1vfrnHt8kqPTalpl+71eBj24+XIDM3ReWQMfORBjg0rIX2KCwM8EDTqhh05xVUqKQFPrYg6GYqYKuLZaGQwejop47pfNeWCQfpdCTqlf4EnqlbaaOzWZEsDtFOEaSVzbArUHQlH2U41WEo1P4FcXN1d1cKw0ehucRD7uZ5kRJXqmiXBuDQl7bssyGEXzM62VMBJHQ3lRUx/VFaPvCu+b/x8+8YJoihT6oYoJ0mGWBb/BNC6pBKlcaS7jdH0+fOOQoSAxSptfGkI35kXe2vrZzJSzpkRDm/c+SKyIr3oR+xoMqRKfMqxD44yz3JMTkuA+CQRSC+9BeMgFg43ZAoVs7cGxJGhT6/uNk26nyrf9/M8aPYfKYSUcFkAWXDCgDLTyQcmSvEs3LFr0GrYlU18W4AMxmofm8rI/WbRLIh6fHnwLeakIWBbHAFWgfpNpCwYz4SC3VqMwTWw//VbOEkpiflu5NvWcyzgBjoFcYK27WNHJhGWlBeFKGKauzGQdCmdvm26G2M7xrhZsezVSwdapr5pfMrcSr5VzHWIc8TRhGeXcYeQiwOA9i+cpumgJiO9QlCCcE/O/Jmgdw1uCeNU8EPp4jHRl8GS57imxZlDLuZ71kuJib9ndu9kt5PzVgHEwMnoY7u64kHUNknaeczqGOP39wm8dnDq/m2bWlkrT2a2GDg7WTN1tFEwCEBt+76Q7tQNzetAW2vznUIrD1P+4dBEX7HTi1XHxyi+p55CCM7Dqq/Bfidhgz3p2ujs3Y1fts3fS7X2Nf3yr9TrmL7+Cr3FO1Ruzbbpano/ZP+D1MRY=</source>
+  </file>
   <file path="ContaoCommunityAlliance/DcGeneral/DataDefinition/Definition/View/Panel/DefaultSearchElementInformation.php" generated-path="ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.Panel.DefaultSearchElementInformation.html" hash="05c6717a66a42e1d7614496ba8a1aef7" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -30334,6 +30436,369 @@ name into a string.</description>
     </interface>
     <source>eJyVUcFOwzAMvecrfIQeugPitAmKVjQmbagSE6dd0sxtLdKkSlLQhPh3nLarECfIJbGf34v9vLrvmk4skkRAAsVTAe/oPFkDt5yIuayT6k3WCHxqNOikzh1x1QDKPjTWRQzWjSMfSBp4UQ1VlUYHK5X6S5Cpc8naHarg+jY94d1vhUMUYP6OjIdVGKNUc5SVFG5mirLd2VHdBKY0CHsMcm9PqD0ElG061GhSaPzQ9W5T7MZkRRq97Z1CDhdCGNmi5/kQ1tYEade2bXtD4fygNQ+i8JirzTjzMZdB5lgRw2zP8cfzlfDjWEiDeikuTm5NQFdF5UeNLZqwNZV1rYyEGUsniw8NeaCZcUKvHJXoQY6Ok4IuygOOWlw7i6W/1/S/jgcf6C/Nik8RzRzmiycZvI8Ogq0g8HvqLp3wS1nmMPTOgOeFmnrKLoa760veE1S9UfEvnjY8s+DV9VJ8iW+xXdlG</source>
   </file>
+  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/FileTree.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.FileTree.html" hash="c3064105695569bd489d2fd2ec9cae24" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="29" package="generalDriver">
+      <extends>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</extends>
+      <name>FileTree</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree</full_name>
+      <docblock line="29">
+        <description>File tree widget being compatible with the dc general.</description>
+        <long-description>This widget is only prepared to run in DcCompat mode!</long-description>
+        <tag name="see" line="29" description="" link="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\https://github.com/contao/core/blob/master/system/modules/core/widgets/FileTree.php"/>
+      </docblock>
+      <property static="false" visibility="private" line="36" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$subTemplate</name>
+        <default>'widget_filetree'</default>
+        <docblock line="36">
+          <description>The widget sub template.</description>
+          <long-description></long-description>
+          <tag name="var" line="36" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="43" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$orderId</name>
+        <default></default>
+        <docblock line="43">
+          <description>Css ID of the order field.</description>
+          <long-description></long-description>
+          <tag name="var" line="43" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="50" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$orderField</name>
+        <default></default>
+        <docblock line="50">
+          <description>The order field attribute name.</description>
+          <long-description></long-description>
+          <tag name="var" line="50" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\string." variable="">
+            <type link="string..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\string.</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="57" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$orderFieldValue</name>
+        <default></default>
+        <docblock line="57">
+          <description>The order field value.</description>
+          <long-description></long-description>
+          <tag name="var" line="57" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\array." variable="">
+            <type link="array..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\array.</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="66" package="generalDriver">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::__construct()</full_name>
+        <docblock line="66">
+          <description>Create a new instance.</description>
+          <long-description></long-description>
+          <tag name="param" line="66" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array|null" variable="$attributes">
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="param" line="66" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null" variable="$dataContainer">
+            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$attributes</name>
+          <default>null</default>
+          <type>array|null</type>
+        </argument>
+        <argument line="0">
+          <name>$dataContainer</name>
+          <default>null</default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="80" package="generalDriver">
+        <name>setUp</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::setUp()</full_name>
+        <docblock line="80">
+          <description>Setup the file tree widget.</description>
+          <long-description></long-description>
+          <tag name="return" line="80" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="SuppressWarnings" line="80" description="(PHPMD.Superglobals)"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="107" package="generalDriver">
+        <name>validator</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::validator()</full_name>
+        <docblock line="107">
+          <description>Process the validation.</description>
+          <long-description></long-description>
+          <tag name="param" line="107" description="&lt;p&gt;The input value.&lt;/p&gt;" type="mixed" variable="$inputValue">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="107" description="" type="array|string">
+            <type>array</type>
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$inputValue</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="137" package="generalDriver">
+        <name>renderList</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderList()</full_name>
+        <docblock line="137">
+          <description>Render the file list.</description>
+          <long-description></long-description>
+          <tag name="param" line="137" description="&lt;p&gt;The selected values.&lt;/p&gt;" type="array" variable="$values">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="137" description="&lt;p&gt;The generated icons.&lt;/p&gt;" type="array" variable="$icons">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="137" description="&lt;p&gt;The files collection.&lt;/p&gt;" type="\Model\Collection|null" variable="$collection">
+            <type link="Collection.html">\Model\Collection</type>
+            <type>null</type>
+          </tag>
+          <tag name="param" line="137" description="&lt;p&gt;If true subfolders get rendered.&lt;/p&gt;" type="bool" variable="$followSubDirs">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="137" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$values</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$icons</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0">
+          <name>$collection</name>
+          <default>null</default>
+          <type>\Model\Collection|null</type>
+        </argument>
+        <argument line="0">
+          <name>$followSubDirs</name>
+          <default>false</default>
+          <type>bool</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="173" package="generalDriver">
+        <name>isAllowedDownload</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::isAllowedDownload()</full_name>
+        <docblock line="173">
+          <description>Check if an extension is in the allowed downloads.</description>
+          <long-description></long-description>
+          <tag name="param" line="173" description="&lt;p&gt;The file extension.&lt;/p&gt;" type="string" variable="$extension">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="173" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$extension</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="191" package="generalDriver">
+        <name>renderFileInfo</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderFileInfo()</full_name>
+        <docblock line="191">
+          <description>Render the file info.</description>
+          <long-description></long-description>
+          <tag name="param" line="191" description="&lt;p&gt;The file.&lt;/p&gt;" type="\File" variable="$file">
+            <type link="File.html">\File</type>
+          </tag>
+          <tag name="return" line="191" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$file</name>
+          <default></default>
+          <type>\File</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="210" package="generalDriver">
+        <name>renderIcon</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderIcon()</full_name>
+        <docblock line="210">
+          <description>Render the image of a file.</description>
+          <long-description></long-description>
+          <tag name="param" line="210" description="&lt;p&gt;The file model.&lt;/p&gt;" type="\FilesModel" variable="$model">
+            <type link="FilesModel.html">\FilesModel</type>
+          </tag>
+          <tag name="param" line="210" description="&lt;p&gt;If true only images are rendered.&lt;/p&gt;" type="bool" variable="$imagesOnly">
+            <type>bool</type>
+          </tag>
+          <tag name="param" line="210" description="&lt;p&gt;If true file extension has to be in the allowed downloads list.&lt;/p&gt;" type="bool" variable="$downloads">
+            <type>bool</type>
+          </tag>
+          <tag name="return" line="210" description="" type="false|string">
+            <type>false</type>
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\FilesModel</type>
+        </argument>
+        <argument line="0">
+          <name>$imagesOnly</name>
+          <default>false</default>
+          <type>bool</type>
+        </argument>
+        <argument line="0">
+          <name>$downloads</name>
+          <default>false</default>
+          <type>bool</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="258" package="generalDriver">
+        <name>applySorting</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::applySorting()</full_name>
+        <docblock line="258">
+          <description>Apply the sorting to the icons.</description>
+          <long-description></long-description>
+          <tag name="param" line="258" description="&lt;p&gt;The file icons.&lt;/p&gt;" type="array" variable="$icons">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="258" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$icons</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="287" package="generalDriver">
+        <name>generateLink</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::generateLink()</full_name>
+        <docblock line="287">
+          <description>Generate the adjust selection link.</description>
+          <long-description></long-description>
+          <tag name="param" line="287" description="&lt;p&gt;The selected files.&lt;/p&gt;" type="array" variable="$values">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="287" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$values</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="313" package="generalDriver">
+        <name>generate</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::generate()</full_name>
+        <docblock line="313">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <property final="false" static="false" visibility="public" line="29">
+        <name/>
+        <default/>
+        <docblock>
+          <description>strField    The field name.</description>
+          <long-description/>
+          <tag name="var" description="&lt;p&gt;strField    The field name.&lt;/p&gt;" type="string" line="29">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag name="magic" line="29"/>
+          <tag name="property" line="29" description="strField    The field name." type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29">
+        <name/>
+        <default/>
+        <docblock>
+          <description>mandatory   If true the field is required.</description>
+          <long-description/>
+          <tag name="var" description="&lt;p&gt;mandatory   If true the field is required.&lt;/p&gt;" type="bool" line="29">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag name="magic" line="29"/>
+          <tag name="property" line="29" description="mandatory   If true the field is required." type="bool" variable="">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29">
+        <name/>
+        <default/>
+        <docblock>
+          <description>multiple    If true multiple values are allowed.</description>
+          <long-description/>
+          <tag name="var" description="&lt;p&gt;multiple    If true multiple values are allowed.&lt;/p&gt;" type="bool" line="29">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag name="magic" line="29"/>
+          <tag name="property" line="29" description="multiple    If true multiple values are allowed." type="bool" variable="">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29">
+        <name/>
+        <default/>
+        <docblock>
+          <description>isGallery   If true the a image gallery is rendered.</description>
+          <long-description/>
+          <tag name="var" description="&lt;p&gt;isGallery   If true the a image gallery is rendered.&lt;/p&gt;" type="bool" line="29">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag name="magic" line="29"/>
+          <tag name="property" line="29" description="isGallery   If true the a image gallery is rendered." type="bool" variable="">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29">
+        <name/>
+        <default/>
+        <docblock>
+          <description>isDownloads If true only allowed download files are listed.</description>
+          <long-description/>
+          <tag name="var" description="&lt;p&gt;isDownloads If true only allowed download files are listed.&lt;/p&gt;" type="bool" line="29">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag name="magic" line="29"/>
+          <tag name="property" line="29" description="isDownloads If true only allowed download files are listed." type="bool" variable="">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <source>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</source>
+  </file>
   <file path="ContaoCommunityAlliance/DcGeneral/DataDefinition/Palette/Condition/Property/PropertyTrueCondition.php" generated-path="ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Condition.Property.PropertyTrueCondition.html" hash="fd841e8bd0fecb1381adb99bfec94444" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -37816,6 +38281,73 @@ These buttons include "edit multiple", "override" etc.</long-description>
       </method>
     </class>
     <source>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</source>
+  </file>
+  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/FileTreeOrder.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.FileTreeOrder.html" hash="8aae1fe8f89fe4e183004c1f9a23037b" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="19" package="generalDriver">
+      <extends>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</extends>
+      <name>FileTreeOrder</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder</full_name>
+      <docblock line="19">
+        <description>This widget is a supporting widget to store the file tree orderings.</description>
+        <long-description>The ContaoWidgetManager does not allow input values without a widget. This is used as helper widget instead.</long-description>
+      </docblock>
+      <property static="false" visibility="protected" line="26" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
+        <name>$strTemplate</name>
+        <default>'widget_filetree_order'</default>
+        <docblock line="26">
+          <description>The template.</description>
+          <long-description></long-description>
+          <tag name="var" line="26" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="31" package="generalDriver">
+        <name>validator</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::validator()</full_name>
+        <docblock line="31">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$inputValue</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="43" package="generalDriver">
+        <name>generate</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::generate()</full_name>
+        <docblock line="43">
+          <description>Generate the widget and return it as string.</description>
+          <long-description></long-description>
+          <tag name="return" line="43" description="The widget markup" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="55" package="generalDriver">
+        <name>getSerializedValue</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::getSerializedValue()</full_name>
+        <docblock line="55">
+          <description>Get the value serialized as string.</description>
+          <long-description></long-description>
+          <tag name="return" line="55" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <source>eJyNU9tO3DAQfc9XzEOlLIhmpUp9AUqXi0of2BaJLX1BQiYeNhaOHdnj5Sb+veNLyhaKWmuljWcmM+ecOdn9PHRDNd3crGATTr+ewgqdV9bARw7E2GwQ7Y1YIvBZokEn9JFTXJWSIlBnXczBkVgpCXOrlcHgYVfGe9OX+8wgPfSi7aiRuJfebe1w79SyI4BFhzBHEnMrUXsgFH2TarRq0fg0/OT49CQHr5VGb4Nrka/TqjKiR88wEQ6tIWEPbd8Ho+h+X2slTIsXR+1xhn6RKy7OFd6W5w8HTBCNTKGfSi6RdqpRkUWnPNymIPCTAB+GwTpSZjmGyYIn6xCISURoQA4RrJPouMw3RcjIMU/MQ+bCsKwOpEUPxhIIre0tKDMEgpXQAeNklpevogxrMiD+BY8ShIcO9cBNRojGs3aySbq0WngPXxjRggF9j3gA74ipeti/8uRESxlK9VhFhRPneDJYwn7QgrApwTE3WwnHlCO5Epqm/8FZwpYY1zvOLsrb8AnqjO4yihO1uUza1Kzyi6mPM2U6Vo2kbZ/e6H0dTEvRoCyRkoKVn7xLmp1HyTZSdaYTz1qKgQjnxP1lL4ZJfZbwb2+HoOTCHihTb5U0oyR0E7wbNLtxUm9xZn3CxkYBHo9DCs6s53dS7ukVt2xAyjYp6xJGjh0UxW1mVV8JXmpyNu2mNOiFuwnDn0qFK/5onmValrmTl9JMp/DNUhc7soWlZSs5bGCeWkaLKbOO9dkNL8nX9ducKbVIbgbPm+WdPWTj/g/Vf1mAcZ39bprUf8VylLdf2+ZfbHClzML+YC/EZbMo/v0eu7wsfKT3VP0CHt6bKQ==</source>
   </file>
   <file path="ContaoCommunityAlliance/DcGeneral/Clipboard/Item.php" generated-path="ContaoCommunityAlliance.DcGeneral.Clipboard.Item.html" hash="6fe8f777872f20cf12323e0b3c254f2b" package="generalDriver">
     <docblock line="0">
@@ -51813,538 +52345,6 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJytVE1v2zAMvftX8FCgXbA4h2GXNu3SJUU3IBmCrbsFKBSZjoXJsiHR6YKh/72ULAeJg3UYNl1sfujx8ZH2+ENd1MloMEhgAMtPS9iidaoy8J4d3jephfwhNgh8NmjQCj2zirNCUDRUVNbHYFpY5UgJA99kofJco4WxTF1nTORuzdg1SrJNmWZ400d48AB8f66MgzG1VqrZmqwVvdtfkVW9s2pTEF8pEBZIYlFlqB0QijINOVpJNC6wnt8v560zVxpd1ViJbI6SxIgSHfeHMK0MiWpalWVjFO1uteZGJK5m8r7teTUTJGaYKw6zPKul0EiEq4+N0hna1d0WDV0lSeP+A1i0o3n1b6Dx+dkQ2px7ZZJx3A+FcoCeOE+W+LVUnJjBU4EGBNTtReAkJpCl/YX4O22C4lIL5+C7w5gSIoA/CU3mIOa36b8SPztZGUfw5XZxB9dwnslhXME045LDbF8zjWTTdYuRMuNh9J1zxx4rdO3PIKxNdyP6utBkKyz0NYvBUXjWtiJeYhbqLGKcFphaFCydAINPwAtMflYnpWphRXlSbA8L8bzG9ggiCsiRDqLzHEBAlIhp+bmmx701a/5yIG+M9LLC42OYgG0kXfyW59t+/V71NwG6Hag/Z8SLN7zp+Fwf6NilcFu8BJeXh/X7qG3284n2X5F/HbzWQK/oZpEaa/4w6J4Y/JHE/It+SxHuuLOO4HPyAqgZu3g=</source>
-  </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/AbstractWidget.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.AbstractWidget.html" hash="51d0ac6305808624cf0567d2b73611a5" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="true" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="24" package="generalDriver">
-      <extends>\Widget</extends>
-      <name>AbstractWidget</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</full_name>
-      <docblock line="24">
-        <description>Abstract widget class as base for dc general backend widgets.</description>
-        <long-description>This widget is only prepared to run in DcCompat mode!</long-description>
-      </docblock>
-      <property static="false" visibility="protected" line="31" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$blnSubmitInput</name>
-        <default>true</default>
-        <docblock line="31">
-          <description>Submit user input.</description>
-          <long-description></long-description>
-          <tag name="var" line="31" description="" type="boolean" variable="">
-            <type>boolean</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="38" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$strTemplate</name>
-        <default>'be_widget'</default>
-        <docblock line="38">
-          <description>The template.</description>
-          <long-description></long-description>
-          <tag name="var" line="38" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="45" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$dataContainer</name>
-        <default></default>
-        <docblock line="45">
-          <description>The data Container.</description>
-          <long-description></long-description>
-          <tag name="var" line="45" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat" variable="">
-            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="54" package="generalDriver">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::__construct()</full_name>
-        <docblock line="54">
-          <description>Create a new instance.</description>
-          <long-description></long-description>
-          <tag name="param" line="54" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array|null" variable="$attributes">
-            <type>array</type>
-            <type>null</type>
-          </tag>
-          <tag name="param" line="54" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null" variable="$dataContainer">
-            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
-            <type>null</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$attributes</name>
-          <default>null</default>
-          <type>array|null</type>
-        </argument>
-        <argument line="0">
-          <name>$dataContainer</name>
-          <default>null</default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="66" package="generalDriver">
-        <name>getEnvironment</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::getEnvironment()</full_name>
-        <docblock line="66">
-          <description>Get the environment.</description>
-          <long-description></long-description>
-          <tag name="return" line="66" description="" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface">
-            <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="76" package="generalDriver">
-        <name>getModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget::getModel()</full_name>
-        <docblock line="76">
-          <description>Get the model.</description>
-          <long-description></long-description>
-          <tag name="return" line="76" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-        </docblock>
-      </method>
-    </class>
-    <source>eJyVVF1P2zAUfc+vuJOQgGoUadJe+CyjE0MCCW1oe6mEHOe29ebYkX1d6Db++66dhELaDpqX1vfrnHt8kqPTalpl+71eBj24+XIDM3ReWQMfORBjg0rIX2KCwM8EDTqhh05xVUqKQFPrYg6GYqYKuLZaGQwejop47pfNeWCQfpdCTqlf4EnqlbaaOzWZEsDtFOEaSVzbArUHQlH2U41WEo1P4FcXN1d1cKw0ehucRD7uZ5kRJXqmiXBuDQl7bssyGEXzM62VMBJHQ3lRUx/VFaPvCu+b/x8+8YJoihT6oYoJ0mGWBb/BNC6pBKlcaS7jdH0+fOOQoSAxSptfGkI35kXe2vrZzJSzpkRDm/c+SKyIr3oR+xoMqRKfMqxD44yz3JMTkuA+CQRSC+9BeMgFg43ZAoVs7cGxJGhT6/uNk26nyrf9/M8aPYfKYSUcFkAWXDCgDLTyQcmSvEs3LFr0GrYlU18W4AMxmofm8rI/WbRLIh6fHnwLeakIWBbHAFWgfpNpCwYz4SC3VqMwTWw//VbOEkpiflu5NvWcyzgBjoFcYK27WNHJhGWlBeFKGKauzGQdCmdvm26G2M7xrhZsezVSwdapr5pfMrcSr5VzHWIc8TRhGeXcYeQiwOA9i+cpumgJiO9QlCCcE/O/Jmgdw1uCeNU8EPp4jHRl8GS57imxZlDLuZ71kuJib9ndu9kt5PzVgHEwMnoY7u64kHUNknaeczqGOP39wm8dnDq/m2bWlkrT2a2GDg7WTN1tFEwCEBt+76Q7tQNzetAW2vznUIrD1P+4dBEX7HTi1XHxyi+p55CCM7Dqq/Bfidhgz3p2ujs3Y1fts3fS7X2Nf3yr9TrmL7+Cr3FO1Ruzbbpano/ZP+D1MRY=</source>
-  </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/FileTree.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.FileTree.html" hash="06cb3b567370f264087df278530b1d45" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="29" package="generalDriver">
-      <extends>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</extends>
-      <name>FileTree</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree</full_name>
-      <docblock line="29">
-        <description>File tree widget being compatible with the dc general.</description>
-        <long-description>This widget is only prepared to run in DcCompat mode!</long-description>
-        <tag name="see" line="29" description="" link="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\https://github.com/contao/core/blob/master/system/modules/core/widgets/FileTree.php"/>
-      </docblock>
-      <property static="false" visibility="private" line="36" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$subTemplate</name>
-        <default>'widget_filetree'</default>
-        <docblock line="36">
-          <description>The widget sub template.</description>
-          <long-description></long-description>
-          <tag name="var" line="36" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="43" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$orderId</name>
-        <default></default>
-        <docblock line="43">
-          <description>Css ID of the order field.</description>
-          <long-description></long-description>
-          <tag name="var" line="43" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="50" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$orderField</name>
-        <default></default>
-        <docblock line="50">
-          <description>The order field attribute name.</description>
-          <long-description></long-description>
-          <tag name="var" line="50" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\string." variable="">
-            <type link="string..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\string.</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="57" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$orderFieldValue</name>
-        <default></default>
-        <docblock line="57">
-          <description>The order field value.</description>
-          <long-description></long-description>
-          <tag name="var" line="57" description="" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\array." variable="">
-            <type link="array..html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\array.</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="66" package="generalDriver">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::__construct()</full_name>
-        <docblock line="66">
-          <description>Create a new instance.</description>
-          <long-description></long-description>
-          <tag name="param" line="66" description="&lt;p&gt;The custom attributes.&lt;/p&gt;" type="array|null" variable="$attributes">
-            <type>array</type>
-            <type>null</type>
-          </tag>
-          <tag name="param" line="66" description="&lt;p&gt;The data container.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null" variable="$dataContainer">
-            <type link="DcCompat.html">\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat</type>
-            <type>null</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$attributes</name>
-          <default>null</default>
-          <type>array|null</type>
-        </argument>
-        <argument line="0">
-          <name>$dataContainer</name>
-          <default>null</default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Contao\Compatibility\DcCompat|null</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="80" package="generalDriver">
-        <name>setUp</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::setUp()</full_name>
-        <docblock line="80">
-          <description>Setup the file tree widget.</description>
-          <long-description></long-description>
-          <tag name="return" line="80" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="SuppressWarnings" line="80" description="(PHPMD.Superglobals)"/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="107" package="generalDriver">
-        <name>validator</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::validator()</full_name>
-        <docblock line="107">
-          <description>Process the validation.</description>
-          <long-description></long-description>
-          <tag name="param" line="107" description="&lt;p&gt;The input value.&lt;/p&gt;" type="mixed" variable="$inputValue">
-            <type>mixed</type>
-          </tag>
-          <tag name="return" line="107" description="" type="array|string">
-            <type>array</type>
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$inputValue</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="137" package="generalDriver">
-        <name>renderList</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderList()</full_name>
-        <docblock line="137">
-          <description>Render the file list.</description>
-          <long-description></long-description>
-          <tag name="param" line="137" description="&lt;p&gt;The selected values.&lt;/p&gt;" type="array" variable="$values">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="137" description="&lt;p&gt;The generated icons.&lt;/p&gt;" type="array" variable="$icons">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="137" description="&lt;p&gt;The files collection.&lt;/p&gt;" type="\Model\Collection|null" variable="$collection">
-            <type link="Collection.html">\Model\Collection</type>
-            <type>null</type>
-          </tag>
-          <tag name="param" line="137" description="&lt;p&gt;If true subfolders get rendered.&lt;/p&gt;" type="bool" variable="$followSubDirs">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="137" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$values</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$icons</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-        <argument line="0">
-          <name>$collection</name>
-          <default>null</default>
-          <type>\Model\Collection|null</type>
-        </argument>
-        <argument line="0">
-          <name>$followSubDirs</name>
-          <default>false</default>
-          <type>bool</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="173" package="generalDriver">
-        <name>isAllowedDownload</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::isAllowedDownload()</full_name>
-        <docblock line="173">
-          <description>Check if an extension is in the allowed downloads.</description>
-          <long-description></long-description>
-          <tag name="param" line="173" description="&lt;p&gt;The file extension.&lt;/p&gt;" type="string" variable="$extension">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="173" description="" type="bool">
-            <type>bool</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$extension</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="191" package="generalDriver">
-        <name>renderFileInfo</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderFileInfo()</full_name>
-        <docblock line="191">
-          <description>Render the file info.</description>
-          <long-description></long-description>
-          <tag name="param" line="191" description="&lt;p&gt;The file.&lt;/p&gt;" type="\File" variable="$file">
-            <type link="File.html">\File</type>
-          </tag>
-          <tag name="return" line="191" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$file</name>
-          <default></default>
-          <type>\File</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="209" package="generalDriver">
-        <name>renderIcon</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::renderIcon()</full_name>
-        <docblock line="209">
-          <description>Render the image of a file.</description>
-          <long-description></long-description>
-          <tag name="param" line="209" description="&lt;p&gt;The file model.&lt;/p&gt;" type="\FilesModel" variable="$model">
-            <type link="FilesModel.html">\FilesModel</type>
-          </tag>
-          <tag name="param" line="209" description="&lt;p&gt;If true only images are rendered.&lt;/p&gt;" type="bool" variable="$imagesOnly">
-            <type>bool</type>
-          </tag>
-          <tag name="param" line="209" description="&lt;p&gt;If true file extension has to be in the allowed downloads list.&lt;/p&gt;" type="bool" variable="$downloads">
-            <type>bool</type>
-          </tag>
-          <tag name="return" line="209" description="" type="false|string">
-            <type>false</type>
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\FilesModel</type>
-        </argument>
-        <argument line="0">
-          <name>$imagesOnly</name>
-          <default>false</default>
-          <type>bool</type>
-        </argument>
-        <argument line="0">
-          <name>$downloads</name>
-          <default>false</default>
-          <type>bool</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="257" package="generalDriver">
-        <name>applySorting</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::applySorting()</full_name>
-        <docblock line="257">
-          <description>Apply the sorting to the icons.</description>
-          <long-description></long-description>
-          <tag name="param" line="257" description="&lt;p&gt;The file icons.&lt;/p&gt;" type="array" variable="$icons">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="257" description="" type="array">
-            <type>array</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$icons</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="286" package="generalDriver">
-        <name>generateLink</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::generateLink()</full_name>
-        <docblock line="286">
-          <description>Generate the adjust selection link.</description>
-          <long-description></long-description>
-          <tag name="param" line="286" description="&lt;p&gt;The selected files.&lt;/p&gt;" type="array" variable="$values">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="286" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$values</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="312" package="generalDriver">
-        <name>generate</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTree::generate()</full_name>
-        <docblock line="312">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-      </method>
-      <property final="false" static="false" visibility="public" line="29">
-        <name/>
-        <default/>
-        <docblock>
-          <description>strField    The field name.</description>
-          <long-description/>
-          <tag name="var" description="&lt;p&gt;strField    The field name.&lt;/p&gt;" type="string" line="29">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag name="magic" line="29"/>
-          <tag name="property" line="29" description="strField    The field name." type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="29">
-        <name/>
-        <default/>
-        <docblock>
-          <description>mandatory   If true the field is required.</description>
-          <long-description/>
-          <tag name="var" description="&lt;p&gt;mandatory   If true the field is required.&lt;/p&gt;" type="bool" line="29">
-            <type by_reference="false">bool</type>
-          </tag>
-          <tag name="magic" line="29"/>
-          <tag name="property" line="29" description="mandatory   If true the field is required." type="bool" variable="">
-            <type>bool</type>
-          </tag>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="29">
-        <name/>
-        <default/>
-        <docblock>
-          <description>multiple    If true multiple values are allowed.</description>
-          <long-description/>
-          <tag name="var" description="&lt;p&gt;multiple    If true multiple values are allowed.&lt;/p&gt;" type="bool" line="29">
-            <type by_reference="false">bool</type>
-          </tag>
-          <tag name="magic" line="29"/>
-          <tag name="property" line="29" description="multiple    If true multiple values are allowed." type="bool" variable="">
-            <type>bool</type>
-          </tag>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="29">
-        <name/>
-        <default/>
-        <docblock>
-          <description>isGallery   If true the a image gallery is rendered.</description>
-          <long-description/>
-          <tag name="var" description="&lt;p&gt;isGallery   If true the a image gallery is rendered.&lt;/p&gt;" type="bool" line="29">
-            <type by_reference="false">bool</type>
-          </tag>
-          <tag name="magic" line="29"/>
-          <tag name="property" line="29" description="isGallery   If true the a image gallery is rendered." type="bool" variable="">
-            <type>bool</type>
-          </tag>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="29">
-        <name/>
-        <default/>
-        <docblock>
-          <description>isDownloads If true only allowed download files are listed.</description>
-          <long-description/>
-          <tag name="var" description="&lt;p&gt;isDownloads If true only allowed download files are listed.&lt;/p&gt;" type="bool" line="29">
-            <type by_reference="false">bool</type>
-          </tag>
-          <tag name="magic" line="29"/>
-          <tag name="property" line="29" description="isDownloads If true only allowed download files are listed." type="bool" variable="">
-            <type>bool</type>
-          </tag>
-        </docblock>
-      </property>
-    </class>
-    <source>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</source>
-  </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/Widget/FileTreeOrder.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Widget.FileTreeOrder.html" hash="8aae1fe8f89fe4e183004c1f9a23037b" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="19" package="generalDriver">
-      <extends>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\AbstractWidget</extends>
-      <name>FileTreeOrder</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder</full_name>
-      <docblock line="19">
-        <description>This widget is a supporting widget to store the file tree orderings.</description>
-        <long-description>The ContaoWidgetManager does not allow input values without a widget. This is used as helper widget instead.</long-description>
-      </docblock>
-      <property static="false" visibility="protected" line="26" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" package="generalDriver">
-        <name>$strTemplate</name>
-        <default>'widget_filetree_order'</default>
-        <docblock line="26">
-          <description>The template.</description>
-          <long-description></long-description>
-          <tag name="var" line="26" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="31" package="generalDriver">
-        <name>validator</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::validator()</full_name>
-        <docblock line="31">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0">
-          <name>$inputValue</name>
-          <default></default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="43" package="generalDriver">
-        <name>generate</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::generate()</full_name>
-        <docblock line="43">
-          <description>Generate the widget and return it as string.</description>
-          <long-description></long-description>
-          <tag name="return" line="43" description="The widget markup" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget" line="55" package="generalDriver">
-        <name>getSerializedValue</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Widget\FileTreeOrder::getSerializedValue()</full_name>
-        <docblock line="55">
-          <description>Get the value serialized as string.</description>
-          <long-description></long-description>
-          <tag name="return" line="55" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-    </class>
-    <source>eJyNU9tO3DAQfc9XzEOlLIhmpUp9AUqXi0of2BaJLX1BQiYeNhaOHdnj5Sb+veNLyhaKWmuljWcmM+ecOdn9PHRDNd3crGATTr+ewgqdV9bARw7E2GwQ7Y1YIvBZokEn9JFTXJWSIlBnXczBkVgpCXOrlcHgYVfGe9OX+8wgPfSi7aiRuJfebe1w79SyI4BFhzBHEnMrUXsgFH2TarRq0fg0/OT49CQHr5VGb4Nrka/TqjKiR88wEQ6tIWEPbd8Ho+h+X2slTIsXR+1xhn6RKy7OFd6W5w8HTBCNTKGfSi6RdqpRkUWnPNymIPCTAB+GwTpSZjmGyYIn6xCISURoQA4RrJPouMw3RcjIMU/MQ+bCsKwOpEUPxhIIre0tKDMEgpXQAeNklpevogxrMiD+BY8ShIcO9cBNRojGs3aySbq0WngPXxjRggF9j3gA74ipeti/8uRESxlK9VhFhRPneDJYwn7QgrApwTE3WwnHlCO5Epqm/8FZwpYY1zvOLsrb8AnqjO4yihO1uUza1Kzyi6mPM2U6Vo2kbZ/e6H0dTEvRoCyRkoKVn7xLmp1HyTZSdaYTz1qKgQjnxP1lL4ZJfZbwb2+HoOTCHihTb5U0oyR0E7wbNLtxUm9xZn3CxkYBHo9DCs6s53dS7ukVt2xAyjYp6xJGjh0UxW1mVV8JXmpyNu2mNOiFuwnDn0qFK/5onmValrmTl9JMp/DNUhc7soWlZSs5bGCeWkaLKbOO9dkNL8nX9ducKbVIbgbPm+WdPWTj/g/Vf1mAcZ39bprUf8VylLdf2+ZfbHClzML+YC/EZbMo/v0eu7wsfKT3VP0CHt6bKQ==</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">
