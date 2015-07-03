@@ -57,14 +57,28 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Construct."><span class="description">Construct.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_get" title="get() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getTranslator" title="getTranslator() :: Get the translator."><span class="description">Get the translator.</span><pre>getTranslator()</pre></a></li>
 <li class="method public "><a href="#method_set" title="set() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>set()</pre></a></li>
 <li class="method public "><a href="#method_setData" title="setData() :: {@inheritDoc}"><span class="description">{@inheritDoc}</span><pre>setData()</pre></a></li>
+<li class="method public "><a href="#method_setTranslator" title="setTranslator() :: Set the translator."><span class="description">Set the translator.</span><pre>setTranslator()</pre></a></li>
+<li class="method public "><a href="#method_translate" title="translate() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>translate()</pre></a></li>
+<li class="method public "><a href="#method_translatePluralized" title="translatePluralized() :: {@inheritdoc}"><span class="description">{@inheritdoc}</span><pre>translatePluralized()</pre></a></li>
 </ul>
-</li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_translator" title="$translator() :: The translator."><span class="description"></span><pre>$translator</pre></a></li></ul>
+</li>
+</ul>
 </div>
 <div class="span8">
 <a id="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoBackendViewTemplate"></a><ul class="breadcrumb">
@@ -98,6 +112,21 @@
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Construct.</h2>
+<pre>__construct(string $strTemplate, string $strContentType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTemplate</h4>
+<code>string</code><p>The template name.</p></div>
+<div class="subelement argument">
+<h4>$strContentType</h4>
+<code>string</code><p>the content type.</p></div>
+</div></div>
+</div>
 <a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
 <h2>{@inheritDoc}</h2>
 <pre>get($name) </pre>
@@ -106,6 +135,16 @@
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator" data-toggle="collapse" data-target=".method_getTranslator .collapse">
+<h2>Get the translator.</h2>
+<pre>getTranslator() : <a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse">
@@ -129,6 +168,59 @@
 <div class="subelement argument"><h4>$data</h4></div>
 </div></div>
 </div>
+<a id="method_setTranslator"></a><div class="element clickable method public method_setTranslator" data-toggle="collapse" data-target=".method_setTranslator .collapse">
+<h2>Set the translator.</h2>
+<pre>setTranslator(\ContaoCommunityAlliance\Translator\TranslatorInterface $translator) : \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoBackendViewTemplate</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$translator</h4>
+<code><a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></code><p>The translator.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\ContaoBackendViewTemplate</code></div>
+</div></div>
+</div>
+<a id="method_translate"></a><div class="element clickable method public method_translate" data-toggle="collapse" data-target=".method_translate .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>translate($string, $domain, array $parameters, $locale) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+<div class="subelement argument"><h4>$domain</h4></div>
+<div class="subelement argument"><h4>$parameters</h4></div>
+<div class="subelement argument"><h4>$locale</h4></div>
+</div></div>
+</div>
+<a id="method_translatePluralized"></a><div class="element clickable method public method_translatePluralized" data-toggle="collapse" data-target=".method_translatePluralized .collapse">
+<h2>{@inheritdoc}</h2>
+<pre>translatePluralized($string, $number, $domain, array $parameters, $locale) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+<div class="subelement argument"><h4>$number</h4></div>
+<div class="subelement argument"><h4>$domain</h4></div>
+<div class="subelement argument"><h4>$parameters</h4></div>
+<div class="subelement argument"><h4>$locale</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_translator"> </a><div class="element clickable property protected property_translator" data-toggle="collapse" data-target=".property_translator .collapse">
+<h2>The translator.</h2>
+<pre>$translator : <a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -137,7 +229,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-03T15:05:25+02:00.<br></footer></div>
+            generated on 2015-07-03T15:17:16+02:00.<br></footer></div>
 </div>
 </body>
 </html>
