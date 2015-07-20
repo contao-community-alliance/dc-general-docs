@@ -9274,6 +9274,165 @@ current model. A circular reference is of relevance when performing a cut and pa
     </class>
     <source>eJxtUk1P6zAQvOdX7A2pEubw9E4USFQQPKl9igRHJLS1N7HBH5G9ASrEf8d24UAhJ8+OZ3d2nOXFpKfmZLFoYAH9TQ/PFJMJHv7mQqm1E8onHAnyN5KniPYymnyrkjizDrFwsNLRJDbo4VZqMwyWIiylSF+glbtt7j2R5Dg7oej8sMMt05DlN2QcJVimCh90ha0O7NBYIYP7Ibwrk7NybXzW8R4Jm1G7Nfznt1mdV5Ewwb+E+ARL9GonHjGSascQRkvfZ8kw7aIZNedZmmBDjJugyCZgQifqHWsk+VRzWl/3631xMJZSmKOkDE+axmPeJSdKsAqeMayCc7M3vOuszdFJur+U1/uU76+eyfNp8/U4d9okoFKDcnCGmRQ8zolhS0OIBAiumCr0hDk9JQ7f8KB59SQtpgR9pL5o6lqVBHpl8ipBt00cUXKlupcc0l781pRdZfDZwf9ucwVncKTk8edPIqoXMUU6rmaOTpv35gOug8yJ</source>
   </file>
+  <file path="ContaoCommunityAlliance/DcGeneral/Data/ModelId.php" generated-path="ContaoCommunityAlliance.DcGeneral.Data.ModelId.html" hash="7ab90bb7715385e75b087360446b94d7" package="generalDriver">
+    <docblock line="0">
+      <description>PHP version 5</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="generalDriver"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="26" package="DcGeneral\Contao\View\Contao2BackendView">
+      <extends/>
+      <implements>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</implements>
+      <name>ModelId</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId</full_name>
+      <docblock line="26">
+        <description>The class ModelId implements the ModelIdInterface.</description>
+        <long-description>It is the successor of the previous used ModelIdSerializer in the Contao2BackendView.</long-description>
+        <tag name="package" line="26" description="DcGeneral\Contao\View\Contao2BackendView"/>
+      </docblock>
+      <property static="false" visibility="protected" line="33" namespace="ContaoCommunityAlliance\DcGeneral\Data" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>$dataProviderName</name>
+        <default></default>
+        <docblock line="33">
+          <description>The data provider name.</description>
+          <long-description></long-description>
+          <tag name="var" line="33" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" line="40" namespace="ContaoCommunityAlliance\DcGeneral\Data" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>$modelId</name>
+        <default></default>
+        <docblock line="40">
+          <description>The id of the model.</description>
+          <long-description></long-description>
+          <tag name="var" line="40" description="" type="mixed" variable="">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="50" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>__construct</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::__construct()</full_name>
+        <docblock line="50">
+          <description>Construct.</description>
+          <long-description></long-description>
+          <tag name="param" line="50" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$dataProviderName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="50" description="&lt;p&gt;The model id.&lt;/p&gt;" type="mixed" variable="$modelId">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="50" description="If an invalid data provider name or model id is given." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException">
+            <type link="DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$dataProviderName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="69" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>getDataProviderName</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getDataProviderName()</full_name>
+        <docblock line="69">
+          <description>Retrieve the data provider name.</description>
+          <long-description></long-description>
+          <tag name="return" line="69" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="77" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>getId</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getId()</full_name>
+        <docblock line="77">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="85" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>fromValues</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromValues()</full_name>
+        <docblock line="85">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$dataProviderName</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="93" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>fromModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromModel()</full_name>
+        <docblock line="93">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="101" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>fromSerialized</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromSerialized()</full_name>
+        <docblock line="101">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$serialized</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="127" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>getSerialized</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getSerialized()</full_name>
+        <docblock line="127">
+          <description>Serialize the id.</description>
+          <long-description></long-description>
+          <tag name="return" line="127" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="139" package="DcGeneral\Contao\View\Contao2BackendView">
+        <name>equals</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::equals()</full_name>
+        <docblock line="139">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+        </argument>
+      </method>
+    </class>
+    <source>eJy1Vtty2zYQfedXwDPOiPLIUptpOh0pcpzabqpM7LqxnJcqo4HBlYSGBFkAlO0k/vcuwIt4taw0xYsoYC9nd88u8PJVtIqcwcGBQw7I5e+XZA1S8VCQF7hh9o4jyj7RJRBcSxAgqX8qOUrZQxrrVSjNGTmla+6R89DnAmJFXnrmfz9I/x8L0J8Dyla678GR1WVhdC/5cqUJma6AnIOm56EHviIaaNC3Mj5nIJR1/u7N5btkc8F9UGEsGeDfgeMIGoBCmEBOQqFpeBIGQSy4vn/t+5wKBrNT9iaBPjulmo4cJ1ZPFZ5ZTBNvIjTIBToZ7a68q+rZHYNIYxU2exOxpj73XstlHIDQucR/MPk+FpoHUDCV8cCUg/lUKZIGT3gQ+WAcY3FMrSo56adkmWjCEwkVMwZKITfChd2IJKx5iMRAvF5m4Aokx7A+gyRcWLEkkue/IulAeB843ParRNwElQjPjNSsrmjJ0RpGNQTni2NYZjNgVpIFD4uI0EOkMmI0ROunx5nU8ZpKorTkYpluDewvKmlgGmPdN0YuUxsXaAIT3eAKmydNVWCgNfoJ+B14bW6CJKK6dUwNAoyZrtmMqKRBir6Oc0sGMnULiuT+Sb6mWSwYW821XsnwVpGtBCeTBaEC6WGPG+AQ5FjmxbBvicNJ9MtJim9wkJBFLJg1OZ+zLCVuLepeHknXKie8MIsviAtBpO/rSt1uQc4sGx4RcLs9QrdzQsWsg62DmCj2JNWFvJGLsCnoJMpOd5R7fXCagGah/K/48vQ/impfr7g6PKrRZFygbkW2xshxUzcV/BRY/x6Q1rAG21JP6GMJOpaisZUr9FmCPq2AcKtcSa21xNGG+csxFyucidoL2cM2DBNvi9dSVr/BGVZbF30uZBh8oH4MapeuSTEZqiUGH1X+rmDtjHfLd3DqqgWlAn8xHBYDtdKHR5jvcr0zzPbIlOL7Qs9vRs/dV/l3FXXhCFtD0ttY+h4wxFXSGrUorHTgz7HV8ckwr6v1yNnFdP7n9R/Ts6se6VxPfzv8xbT2xhhbxeKTQkNwF/lGuzMcdnqk7Lo0lViIjw43VeySvfGYPH/CaKo+VdzOtcDLR9EbHwgIg9wz82dtijYkHdLHTzlHWKHU5Zhw6kO3fWzucTUXOP+k4WkC868fP9bG536SLu/KPkMxAzdUwc8/5VncaI4a9d4qrLMZfX/jR65VMppCLSSwkHO0bGdhwdqrYQVVY4wN3Zha/OFjj9Rw19mcE9PO1YaLfac5WqB5021bLEZpptUKknmN0KteuJ1najh8pgwZmydwrzIkmxmxu9WUBwknXVvd9LsawLfPizyB8E9MfeVWn7Kto3gwSF/ocEeZ9u+Tl7q5V7lXyrvFSsbjzdXckm9D0ccyt+eWtBBA/U1JJRAR6iSaMtmTlDXet3Z2ZOhaZJp8Z28V9Yjfr18Lrs1srzvLL1+z8lI+OP8C86ieTw==</source>
+  </file>
   <file path="ContaoCommunityAlliance/DcGeneral/Panel/DefaultFilterElement.php" generated-path="ContaoCommunityAlliance.DcGeneral.Panel.DefaultFilterElement.html" hash="2502737f6cd269aa89081c6a9149ba0f" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
@@ -32711,45 +32870,46 @@ use.</long-description>
     </class>
     <source>eJy1Vstu2zAQvOsreAiQ1GiVQ9FTHnVhA2mApDCaHHOhqJXFliIFkjKSFvn3LkkpViTKcZNWF4Ov3ZnZ4dKnn+uyTo5ns4TMyOrrimxAG64k+YQTbm5eU/aTroHgtwYJmoql5rjLL9LGlkq7NbIoNTeWU0luWMmLQoAmpyw13WDOHjKMXQOzuqnSHM6HEW5dADx/xaUhpzaMUoGjecbtx6cjTNUPmq9Li0dKINdg6bXKQRhigVap3yM4A2k86quL1VWYLLgAoxrNAIfHSSJpBQb5AVkoaalaqKpqJLcPX4RAIgzuluwicL4LO3CCniRJY/Y5sqSWLqHguIyK+uFKqw3PQV/KQumKunkM18q/ENSYNu7E5rStym3JDenNk1KJHPmjHDnKwVELVRDaBiM5RiN1Gw53dJjSYZFjfL1W7GVsBO4tSEQxsZ78Tlw5PFn3zXz1LM0EEFcJYhVBYdN2tds031BNDLpBrtupY/+LdCx6CXJy4GN8wxCo5SCFm3VSOGWeBAhkXp3OH/eBz8jhfja4Qx/QRti+NIdjtIvGWFURXx0q+K+gq68eos2QAmZGCDhwhJiSiLRhFi9Qy/F5pT3SKMOK30M+RfB5fod5DPUGrE/Yq18Mwih5TTWtWoF7lfNe6EcJcbl8CpnRSLE02EbL3b58zrLJsDWQopHMa2vA3nYYjrZw3vnNwbDuO7B44T6cb+GejV3nvhaP337iZx9Hyn0HJA8beJV8bYKYQQfM1n1mQz59nD1aU5C7Ykfc1V6j966rOIf7ibfcihccs718Q8dMg/svtll0QI62mCZs028Y281vsc3fc93PMVtSux3TI7GHYwIygtIOW9s+ng91xuxtpfHl8/vx1zTZD+xZvX7IECe2jaoWUAFWdzJLeAWx29HwbHYadlljUgYn+tYZa5IeabR3T1QM7t2/oXGD/hf2vBzBO4pAnjBshNvZjmfh9RZ+mzM6oSKP2djaEUF2ezxGN/B6TP4AYEV8mA==</source>
   </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Contao/Event/Subscriber.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html" hash="5e633574ea97f2795fdea612bc091b7b" package="generalDriver">
+  <file path="ContaoCommunityAlliance/DcGeneral/Contao/Event/Subscriber.php" generated-path="ContaoCommunityAlliance.DcGeneral.Contao.Event.Subscriber.html" hash="d2669b0fa6e54f39848001d59c7c5839" package="generalDriver">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
       <tag name="package" line="0" description="generalDriver"/>
       <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
       <tag name="author" line="0" description="Tristan Lins" link="mailto:tristan.lins@bit3.de"/>
+      <tag name="author" line="0" description="Sven Baumann" link="mailto:baumann.sv@gmail.com"/>
       <tag name="copyright" line="0" description="The MetaModels team."/>
       <tag name="license" line="0" description="LGPL."/>
       <tag name="filesource" line="0" description=""/>
     </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="44" package="DcGeneral\Event">
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="45" package="DcGeneral\Event">
       <extends/>
       <implements>\Symfony\Component\EventDispatcher\EventSubscriberInterface</implements>
       <name>Subscriber</name>
       <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber</full_name>
-      <docblock line="44">
+      <docblock line="45">
         <description>Class Subscriber - gateway to the legacy Contao HOOK style callbacks.</description>
         <long-description></long-description>
-        <tag name="package" line="44" description="DcGeneral\Event"/>
+        <tag name="package" line="45" description="DcGeneral\Event"/>
       </docblock>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="49" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="50" package="DcGeneral\Event">
         <name>getSubscribedEvents</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::getSubscribedEvents()</full_name>
-        <docblock line="49">
+        <docblock line="50">
           <description>{@inheritDoc}</description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="68" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="69" package="DcGeneral\Event">
         <name>getPanelElementTemplate</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::getPanelElementTemplate()</full_name>
-        <docblock line="68">
+        <docblock line="69">
           <description>Create a template instance for the default panel elements if none has been created yet.</description>
           <long-description></long-description>
-          <tag name="param" line="68" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPanelElementTemplateEvent" variable="$event">
+          <tag name="param" line="69" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPanelElementTemplateEvent" variable="$event">
             <type link="GetPanelElementTemplateEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPanelElementTemplateEvent</type>
           </tag>
-          <tag name="return" line="68" description="" type="void">
+          <tag name="return" line="69" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -32759,16 +32919,16 @@ use.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\GetPanelElementTemplateEvent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="96" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="97" package="DcGeneral\Event">
         <name>resolveWidgetErrorMessage</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::resolveWidgetErrorMessage()</full_name>
-        <docblock line="96">
+        <docblock line="97">
           <description>Resolve a widget error message.</description>
           <long-description></long-description>
-          <tag name="param" line="96" description="&lt;p&gt;The event being processed.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ResolveWidgetErrorMessageEvent" variable="$event">
+          <tag name="param" line="97" description="&lt;p&gt;The event being processed.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ResolveWidgetErrorMessageEvent" variable="$event">
             <type link="ResolveWidgetErrorMessageEvent.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ResolveWidgetErrorMessageEvent</type>
           </tag>
-          <tag name="return" line="96" description="" type="void">
+          <tag name="return" line="97" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -32778,22 +32938,22 @@ use.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\ResolveWidgetErrorMessageEvent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="124" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="125" package="DcGeneral\Event">
         <name>getOptions</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::getOptions()</full_name>
-        <docblock line="124">
+        <docblock line="125">
           <description>Fetch the options for a certain property.</description>
           <long-description></long-description>
-          <tag name="param" line="124" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
+          <tag name="param" line="125" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
             <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
           </tag>
-          <tag name="param" line="124" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+          <tag name="param" line="125" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="124" description="&lt;p&gt;The property.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface" variable="$property">
+          <tag name="param" line="125" description="&lt;p&gt;The property.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface" variable="$property">
             <type link="PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</type>
           </tag>
-          <tag name="return" line="124" description="" type="array">
+          <tag name="return" line="125" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
@@ -32813,25 +32973,25 @@ use.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="153" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="154" package="DcGeneral\Event">
         <name>decodeValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::decodeValue()</full_name>
-        <docblock line="153">
+        <docblock line="154">
           <description>Decode a value from native data of the data provider to the widget via event.</description>
           <long-description></long-description>
-          <tag name="param" line="153" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
+          <tag name="param" line="154" description="&lt;p&gt;The environment.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface" variable="$environment">
             <type link="EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</type>
           </tag>
-          <tag name="param" line="153" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+          <tag name="param" line="154" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
-          <tag name="param" line="153" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
+          <tag name="param" line="154" description="&lt;p&gt;The property.&lt;/p&gt;" type="string" variable="$property">
             <type>string</type>
           </tag>
-          <tag name="param" line="153" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
+          <tag name="param" line="154" description="&lt;p&gt;The value of the property.&lt;/p&gt;" type="mixed" variable="$value">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="153" description="" type="mixed">
+          <tag name="return" line="154" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
@@ -32856,22 +33016,22 @@ use.</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="176" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="177" package="DcGeneral\Event">
         <name>parseDateTime</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::parseDateTime()</full_name>
-        <docblock line="176">
+        <docblock line="177">
           <description>Render a timestamp using the given format.</description>
           <long-description></long-description>
-          <tag name="param" line="176" description="&lt;p&gt;The Event dispatcher.&lt;/p&gt;" type="\Symfony\Component\EventDispatcher\EventDispatcherInterface" variable="$dispatcher">
+          <tag name="param" line="177" description="&lt;p&gt;The Event dispatcher.&lt;/p&gt;" type="\Symfony\Component\EventDispatcher\EventDispatcherInterface" variable="$dispatcher">
             <type link="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</type>
           </tag>
-          <tag name="param" line="176" description="&lt;p&gt;The date format to use.&lt;/p&gt;" type="string" variable="$dateFormat">
+          <tag name="param" line="177" description="&lt;p&gt;The date format to use.&lt;/p&gt;" type="string" variable="$dateFormat">
             <type>string</type>
           </tag>
-          <tag name="param" line="176" description="&lt;p&gt;The timestamp.&lt;/p&gt;" type="int" variable="$timeStamp">
+          <tag name="param" line="177" description="&lt;p&gt;The timestamp.&lt;/p&gt;" type="int" variable="$timeStamp">
             <type>int</type>
           </tag>
-          <tag name="return" line="176" description="" type="string">
+          <tag name="return" line="177" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -32891,20 +33051,20 @@ use.</long-description>
           <type>int</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="194" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="195" package="DcGeneral\Event">
         <name>renderReadablePropertyValue</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::renderReadablePropertyValue()</full_name>
-        <docblock line="194">
+        <docblock line="195">
           <description>Render a property value to readable text.</description>
           <long-description></long-description>
-          <tag name="param" line="194" description="&lt;p&gt;The event being processed.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\View\Event\RenderReadablePropertyValueEvent" variable="$event">
+          <tag name="param" line="195" description="&lt;p&gt;The event being processed.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\View\Event\RenderReadablePropertyValueEvent" variable="$event">
             <type link="RenderReadablePropertyValueEvent.html">\ContaoCommunityAlliance\DcGeneral\View\Event\RenderReadablePropertyValueEvent</type>
           </tag>
-          <tag name="return" line="194" description="" type="void">
+          <tag name="return" line="195" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="SuppressWarnings" line="194" description="(PHPMD.Superglobals)"/>
-          <tag name="SuppressWarnings" line="194" description="(PHPMD.CamelCaseVariableName)"/>
+          <tag name="SuppressWarnings" line="195" description="(PHPMD.Superglobals)"/>
+          <tag name="SuppressWarnings" line="195" description="(PHPMD.CamelCaseVariableName)"/>
         </docblock>
         <argument line="0">
           <name>$event</name>
@@ -32912,16 +33072,16 @@ use.</long-description>
           <type>\ContaoCommunityAlliance\DcGeneral\View\Event\RenderReadablePropertyValueEvent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="307" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="309" package="DcGeneral\Event">
         <name>initTwig</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::initTwig()</full_name>
-        <docblock line="307">
+        <docblock line="309">
           <description>Add custom twig extension.</description>
           <long-description></long-description>
-          <tag name="param" line="307" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoTwigInitializeEvent" variable="$event">
+          <tag name="param" line="309" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoTwigInitializeEvent" variable="$event">
             <type link="ContaoTwigInitializeEvent.html">\ContaoTwigInitializeEvent</type>
           </tag>
-          <tag name="return" line="307" description="" type="void">
+          <tag name="return" line="309" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -32931,16 +33091,16 @@ use.</long-description>
           <type>\ContaoTwigInitializeEvent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="322" package="DcGeneral\Event">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Contao\Event" line="324" package="DcGeneral\Event">
         <name>initializePanels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Contao\Event\Subscriber::initializePanels()</full_name>
-        <docblock line="322">
+        <docblock line="324">
           <description>Initialize the panels so that they always know there state.</description>
           <long-description></long-description>
-          <tag name="param" line="322" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent" variable="$event">
+          <tag name="param" line="324" description="&lt;p&gt;The event.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent" variable="$event">
             <type link="ActionEvent.html">\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent</type>
           </tag>
-          <tag name="return" line="322" description="" type="void">
+          <tag name="return" line="324" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
@@ -32952,9 +33112,9 @@ use.</long-description>
       </method>
     </class>
     <markers>
-      <todo line="211">refactor - foreign key handling is not yet supported.</todo>
+      <todo line="212">refactor - foreign key handling is not yet supported.</todo>
     </markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="ContaoCommunityAlliance/DcGeneral/Factory/DcGeneralFactory.php" generated-path="ContaoCommunityAlliance.DcGeneral.Factory.DcGeneralFactory.html" hash="99d672c03d3ffb8f9ed8f5f4fcfba660" package="generalDriver">
     <docblock line="0">
@@ -37422,6 +37582,152 @@ LIKE
       </docblock>
     </interface>
     <source>eJyVUk1Lw0AQvedXzLmHeBBPFo20YgsVCoqngkw3k+zofoTdqVrE/+4k1eIXojntm5n33u6bjE872xUHo1EBI1jOlvBAKXMMcKSFvlZ1aO6xJdCvpUAJ3TSxTg1N3IiNqe/BxCbOwhjgylhuGkcJxqbM76Ay27Vqd2QkbXxZ08lXhSuhRukzYk8ZxnmAt3aAlY3ikV1pov9GvO6dlbngoDzZodIpqtYshz95nYU6EWaYZ8R7GGOot+UdJqqrNsbW0WcvE7tt4taKelmCSxK8jDW5DELoy2HGsaGQh5wWF8vFrtiwoxw3yZDCg6IIqG/RRAkmMQjGSfR+E1i2Z85pdIZWU3OxS3k1RcEpNaxtXcjqw/GG6XG1xEDuuHjf3TwIpaZXXrBnOdcnUJB5aGLy2LP2A+XbZq8tZ+A9raZsEq81eQTXS0DXOwDtlHRyL1V+/Tf+d+khCv7zfYGehEKd4ZeZ4rl4KV4BDwv0Gw==</source>
+  </file>
+  <file path="ContaoCommunityAlliance/DcGeneral/Data/ModelIdInterface.php" generated-path="ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html" hash="9a694bb31009c9df97b21b1668bbaf66" package="MetaModels">
+    <docblock line="0">
+      <description>The MetaModels extension allows the creation of multiple collections of custom items,
+each with its own unique set of selectable attributes, with attribute extendability.</description>
+      <long-description>The Front-End modules allow you to build powerful listing and filtering of the
+data in each collection.
+
+PHP version 5</long-description>
+      <tag name="package" line="0" description="MetaModels"/>
+      <tag name="subpackage" line="0" description="Core"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
+      <tag name="copyright" line="0" description="The MetaModels team."/>
+      <tag name="license" line="0" description="LGPL."/>
+      <tag name="filesource" line="0" description=""/>
+    </docblock>
+    <interface namespace="ContaoCommunityAlliance\DcGeneral\Data" line="29" package="ContaoCommunityAlliance\DcGeneral\Data">
+      <name>ModelIdInterface</name>
+      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</full_name>
+      <docblock line="29">
+        <description>Interface ModelIdInterface.</description>
+        <long-description>This interface the model id which identifies an model.</long-description>
+        <tag name="package" line="29" description="ContaoCommunityAlliance\DcGeneral\Data"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="36" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>getDataProviderName</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getDataProviderName()</full_name>
+        <docblock line="36">
+          <description>Retrieve the data provider name.</description>
+          <long-description></long-description>
+          <tag name="return" line="36" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="43" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>getId</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getId()</full_name>
+        <docblock line="43">
+          <description>Retrieve the id.</description>
+          <long-description></long-description>
+          <tag name="return" line="43" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="54" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>fromValues</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromValues()</full_name>
+        <docblock line="54">
+          <description>Create an instance from the passed values.</description>
+          <long-description></long-description>
+          <tag name="param" line="54" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$dataProviderName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="54" description="&lt;p&gt;The id.&lt;/p&gt;" type="mixed" variable="$modelId">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="54" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
+            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$dataProviderName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="63" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>fromModel</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromModel()</full_name>
+        <docblock line="63">
+          <description>Create an instance from a model.</description>
+          <long-description></long-description>
+          <tag name="param" line="63" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
+            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+          </tag>
+          <tag name="return" line="63" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
+            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$model</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="74" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>fromSerialized</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromSerialized()</full_name>
+        <docblock line="74">
+          <description>Create an instance from an serialized id.</description>
+          <long-description></long-description>
+          <tag name="param" line="74" description="&lt;p&gt;The id.&lt;/p&gt;" type="string" variable="$serialized">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="74" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
+            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+          </tag>
+          <tag name="throws" line="74" description="When invalid data is encountered." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
+            <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$serialized</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="81" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>getSerialized</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getSerialized()</full_name>
+        <docblock line="81">
+          <description>Serialize the id.</description>
+          <long-description></long-description>
+          <tag name="return" line="81" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="90" package="ContaoCommunityAlliance\DcGeneral\Data">
+        <name>equals</name>
+        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::equals()</full_name>
+        <docblock line="90">
+          <description>Determine if this id, is equals to the other id.</description>
+          <long-description></long-description>
+          <tag name="param" line="90" description="&lt;p&gt;The other model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface" variable="$modelId">
+            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+          </tag>
+          <tag name="return" line="90" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$modelId</name>
+          <default></default>
+          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
+        </argument>
+      </method>
+    </interface>
+    <source>eJylVUtvGjEQvu+vmEMOFFFy6qlRSxXSNFJSoRS1l1zMemCt+rHxA0Kq/vfOeGGhBBLS7gHk8Ty+75uxffaxruritNstoAvjCuEGo7hxEnUAfIhog3IWhNZuESDSfulRRLa5KZiko6o1GZ3WWLI5sL1MIToDKqIJPU6MoqxgoWJFNvJYWEhW3SeEgJEDAnK4mFAqEaNXkxQx9JqI1tDgkWKitIrL/hrwZ+9sfHthJRgnk8bQoIWlSxAdTJLSEmq3QD9NGrQKUdkZCPKfKh3R84ogEDfOKEUUoGyDeEOLq/H26MsI5uizKO9WtkEtyp9ihkDfRr28E9JkvXnufC4wEClWzrMzDMVcSbhxWllMAc4kr/tmtR5YjI+GcMS+xA85tnT10qtZFWG3VxGFyZIMtCqpaxnN9eXoujESVQwu+ZIxnBaFFQYDQWNcNgp37oyhlsTlJ62VsCXeDctLtOiFvhuSJO+LIoVjnC8eSqxZsY3tNtmoDLY7lGs1b1eW9J8yisziSraGtd7jSgVqx9qNB9CwK5Bui0pRj5RESj9V3HfbbPZ3G3Mcx6yMOgip+FWwphk6f124RZpMnDew8uDU3lEH0QPr21/5rd0HHmPyFkLkmVtZT/N/nSbUNpgmm6cNZhgZ0WiV7itl67wh3Z4DQJNzoKBRDyhfqncl91U459OOrKyyIbJoMPV0tLlgLUJACXOhE4YntWvhhVlxhRO5wyaP7xGSNVkyAYAT07QE2m/8LO8nHdwjAZGK20owu++ZUecJ6F6L4BVKiXYm9zFrILYz1+TPtPZH/SezHNfZW/Q1lGiG6d4UWj1SW/bo/3fvt3z/qV+tW6w8v0IHLxb4USFjpYmk66G5yekVs6VLnBLbwi/q9K2F3NmCv0ei1vGFI3jcmd8qu6fWEImEoacBFD9XfDHKXmZ4nwQ/AS6DcPTjD3dlV+TNqRq3wesr9hCbiXP6WS4Nos7BWsTud/EHC4Gjeg==</source>
   </file>
   <file path="ContaoCommunityAlliance/DcGeneral/DataDefinition/Definition/View/GroupAndSortingDefinitionInterface.php" generated-path="ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.GroupAndSortingDefinitionInterface.html" hash="45370c52c08ee2bed2c7efdf990e35ac" package="generalDriver">
     <docblock line="0">
@@ -52487,311 +52793,6 @@ been properly coded. This class will then be removed from the code base.</long-d
       </method>
     </class>
     <source>eJytVE1v2zAMvftX8FCgXbA4h2GXNu3SJUU3IBmCrbsFKBSZjoXJsiHR6YKh/72ULAeJg3UYNl1sfujx8ZH2+ENd1MloMEhgAMtPS9iidaoy8J4d3jephfwhNgh8NmjQCj2zirNCUDRUVNbHYFpY5UgJA99kofJco4WxTF1nTORuzdg1SrJNmWZ400d48AB8f66MgzG1VqrZmqwVvdtfkVW9s2pTEF8pEBZIYlFlqB0QijINOVpJNC6wnt8v560zVxpd1ViJbI6SxIgSHfeHMK0MiWpalWVjFO1uteZGJK5m8r7teTUTJGaYKw6zPKul0EiEq4+N0hna1d0WDV0lSeP+A1i0o3n1b6Dx+dkQ2px7ZZJx3A+FcoCeOE+W+LVUnJjBU4EGBNTtReAkJpCl/YX4O22C4lIL5+C7w5gSIoA/CU3mIOa36b8SPztZGUfw5XZxB9dwnslhXME045LDbF8zjWTTdYuRMuNh9J1zxx4rdO3PIKxNdyP6utBkKyz0NYvBUXjWtiJeYhbqLGKcFphaFCydAINPwAtMflYnpWphRXlSbA8L8bzG9ggiCsiRDqLzHEBAlIhp+bmmx701a/5yIG+M9LLC42OYgG0kXfyW59t+/V71NwG6Hag/Z8SLN7zp+Fwf6NilcFu8BJeXh/X7qG3284n2X5F/HbzWQK/oZpEaa/4w6J4Y/JHE/It+SxHuuLOO4HPyAqgZu3g=</source>
-  </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Data/ModelId.php" generated-path="ContaoCommunityAlliance.DcGeneral.Data.ModelId.html" hash="7ab90bb7715385e75b087360446b94d7" package="generalDriver">
-    <docblock line="0">
-      <description>PHP version 5</description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="generalDriver"/>
-      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="26" package="DcGeneral\Contao\View\Contao2BackendView">
-      <extends/>
-      <implements>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</implements>
-      <name>ModelId</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId</full_name>
-      <docblock line="26">
-        <description>The class ModelId implements the ModelIdInterface.</description>
-        <long-description>It is the successor of the previous used ModelIdSerializer in the Contao2BackendView.</long-description>
-        <tag name="package" line="26" description="DcGeneral\Contao\View\Contao2BackendView"/>
-      </docblock>
-      <property static="false" visibility="protected" line="33" namespace="ContaoCommunityAlliance\DcGeneral\Data" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>$dataProviderName</name>
-        <default></default>
-        <docblock line="33">
-          <description>The data provider name.</description>
-          <long-description></long-description>
-          <tag name="var" line="33" description="" type="string" variable="">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="protected" line="40" namespace="ContaoCommunityAlliance\DcGeneral\Data" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>$modelId</name>
-        <default></default>
-        <docblock line="40">
-          <description>The id of the model.</description>
-          <long-description></long-description>
-          <tag name="var" line="40" description="" type="mixed" variable="">
-            <type>mixed</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="50" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>__construct</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::__construct()</full_name>
-        <docblock line="50">
-          <description>Construct.</description>
-          <long-description></long-description>
-          <tag name="param" line="50" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$dataProviderName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="50" description="&lt;p&gt;The model id.&lt;/p&gt;" type="mixed" variable="$modelId">
-            <type>mixed</type>
-          </tag>
-          <tag name="throws" line="50" description="If an invalid data provider name or model id is given." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException">
-            <type link="DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$dataProviderName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="69" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>getDataProviderName</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getDataProviderName()</full_name>
-        <docblock line="69">
-          <description>Retrieve the data provider name.</description>
-          <long-description></long-description>
-          <tag name="return" line="69" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="77" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>getId</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getId()</full_name>
-        <docblock line="77">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="85" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>fromValues</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromValues()</full_name>
-        <docblock line="85">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0">
-          <name>$dataProviderName</name>
-          <default></default>
-          <type/>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="93" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>fromModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromModel()</full_name>
-        <docblock line="93">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="101" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>fromSerialized</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::fromSerialized()</full_name>
-        <docblock line="101">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0">
-          <name>$serialized</name>
-          <default></default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="127" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>getSerialized</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::getSerialized()</full_name>
-        <docblock line="127">
-          <description>Serialize the id.</description>
-          <long-description></long-description>
-          <tag name="return" line="127" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="139" package="DcGeneral\Contao\View\Contao2BackendView">
-        <name>equals</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelId::equals()</full_name>
-        <docblock line="139">
-          <description>{@inheritdoc}</description>
-          <long-description></long-description>
-        </docblock>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-        </argument>
-      </method>
-    </class>
-    <source>eJy1Vtty2zYQfedXwDPOiPLIUptpOh0pcpzabqpM7LqxnJcqo4HBlYSGBFkAlO0k/vcuwIt4taw0xYsoYC9nd88u8PJVtIqcwcGBQw7I5e+XZA1S8VCQF7hh9o4jyj7RJRBcSxAgqX8qOUrZQxrrVSjNGTmla+6R89DnAmJFXnrmfz9I/x8L0J8Dyla678GR1WVhdC/5cqUJma6AnIOm56EHviIaaNC3Mj5nIJR1/u7N5btkc8F9UGEsGeDfgeMIGoBCmEBOQqFpeBIGQSy4vn/t+5wKBrNT9iaBPjulmo4cJ1ZPFZ5ZTBNvIjTIBToZ7a68q+rZHYNIYxU2exOxpj73XstlHIDQucR/MPk+FpoHUDCV8cCUg/lUKZIGT3gQ+WAcY3FMrSo56adkmWjCEwkVMwZKITfChd2IJKx5iMRAvF5m4Aokx7A+gyRcWLEkkue/IulAeB843ParRNwElQjPjNSsrmjJ0RpGNQTni2NYZjNgVpIFD4uI0EOkMmI0ROunx5nU8ZpKorTkYpluDewvKmlgGmPdN0YuUxsXaAIT3eAKmydNVWCgNfoJ+B14bW6CJKK6dUwNAoyZrtmMqKRBir6Oc0sGMnULiuT+Sb6mWSwYW821XsnwVpGtBCeTBaEC6WGPG+AQ5FjmxbBvicNJ9MtJim9wkJBFLJg1OZ+zLCVuLepeHknXKie8MIsviAtBpO/rSt1uQc4sGx4RcLs9QrdzQsWsg62DmCj2JNWFvJGLsCnoJMpOd5R7fXCagGah/K/48vQ/impfr7g6PKrRZFygbkW2xshxUzcV/BRY/x6Q1rAG21JP6GMJOpaisZUr9FmCPq2AcKtcSa21xNGG+csxFyucidoL2cM2DBNvi9dSVr/BGVZbF30uZBh8oH4MapeuSTEZqiUGH1X+rmDtjHfLd3DqqgWlAn8xHBYDtdKHR5jvcr0zzPbIlOL7Qs9vRs/dV/l3FXXhCFtD0ttY+h4wxFXSGrUorHTgz7HV8ckwr6v1yNnFdP7n9R/Ts6se6VxPfzv8xbT2xhhbxeKTQkNwF/lGuzMcdnqk7Lo0lViIjw43VeySvfGYPH/CaKo+VdzOtcDLR9EbHwgIg9wz82dtijYkHdLHTzlHWKHU5Zhw6kO3fWzucTUXOP+k4WkC868fP9bG536SLu/KPkMxAzdUwc8/5VncaI4a9d4qrLMZfX/jR65VMppCLSSwkHO0bGdhwdqrYQVVY4wN3Zha/OFjj9Rw19mcE9PO1YaLfac5WqB5021bLEZpptUKknmN0KteuJ1najh8pgwZmydwrzIkmxmxu9WUBwknXVvd9LsawLfPizyB8E9MfeVWn7Kto3gwSF/ocEeZ9u+Tl7q5V7lXyrvFSsbjzdXckm9D0ccyt+eWtBBA/U1JJRAR6iSaMtmTlDXet3Z2ZOhaZJp8Z28V9Yjfr18Lrs1srzvLL1+z8lI+OP8C86ieTw==</source>
-  </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Data/ModelIdInterface.php" generated-path="ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html" hash="9a694bb31009c9df97b21b1668bbaf66" package="MetaModels">
-    <docblock line="0">
-      <description>The MetaModels extension allows the creation of multiple collections of custom items,
-each with its own unique set of selectable attributes, with attribute extendability.</description>
-      <long-description>The Front-End modules allow you to build powerful listing and filtering of the
-data in each collection.
-
-PHP version 5</long-description>
-      <tag name="package" line="0" description="MetaModels"/>
-      <tag name="subpackage" line="0" description="Core"/>
-      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
-      <tag name="copyright" line="0" description="The MetaModels team."/>
-      <tag name="license" line="0" description="LGPL."/>
-      <tag name="filesource" line="0" description=""/>
-    </docblock>
-    <interface namespace="ContaoCommunityAlliance\DcGeneral\Data" line="29" package="ContaoCommunityAlliance\DcGeneral\Data">
-      <name>ModelIdInterface</name>
-      <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</full_name>
-      <docblock line="29">
-        <description>Interface ModelIdInterface.</description>
-        <long-description>This interface the model id which identifies an model.</long-description>
-        <tag name="package" line="29" description="ContaoCommunityAlliance\DcGeneral\Data"/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="36" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>getDataProviderName</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getDataProviderName()</full_name>
-        <docblock line="36">
-          <description>Retrieve the data provider name.</description>
-          <long-description></long-description>
-          <tag name="return" line="36" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="43" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>getId</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getId()</full_name>
-        <docblock line="43">
-          <description>Retrieve the id.</description>
-          <long-description></long-description>
-          <tag name="return" line="43" description="" type="mixed">
-            <type>mixed</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="54" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>fromValues</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromValues()</full_name>
-        <docblock line="54">
-          <description>Create an instance from the passed values.</description>
-          <long-description></long-description>
-          <tag name="param" line="54" description="&lt;p&gt;The data provider name.&lt;/p&gt;" type="string" variable="$dataProviderName">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="54" description="&lt;p&gt;The id.&lt;/p&gt;" type="mixed" variable="$modelId">
-            <type>mixed</type>
-          </tag>
-          <tag name="return" line="54" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
-            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$dataProviderName</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>mixed</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="63" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>fromModel</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromModel()</full_name>
-        <docblock line="63">
-          <description>Create an instance from a model.</description>
-          <long-description></long-description>
-          <tag name="param" line="63" description="&lt;p&gt;The model.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$model">
-            <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-          </tag>
-          <tag name="return" line="63" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
-            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$model</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="74" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>fromSerialized</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::fromSerialized()</full_name>
-        <docblock line="74">
-          <description>Create an instance from an serialized id.</description>
-          <long-description></long-description>
-          <tag name="param" line="74" description="&lt;p&gt;The id.&lt;/p&gt;" type="string" variable="$serialized">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="74" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface">
-            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-          </tag>
-          <tag name="throws" line="74" description="When invalid data is encountered." type="\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException">
-            <type link="DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$serialized</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="81" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>getSerialized</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::getSerialized()</full_name>
-        <docblock line="81">
-          <description>Serialize the id.</description>
-          <long-description></long-description>
-          <tag name="return" line="81" description="" type="string">
-            <type>string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Data" line="90" package="ContaoCommunityAlliance\DcGeneral\Data">
-        <name>equals</name>
-        <full_name>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface::equals()</full_name>
-        <docblock line="90">
-          <description>Determine if this id, is equals to the other id.</description>
-          <long-description></long-description>
-          <tag name="param" line="90" description="&lt;p&gt;The other model id.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface" variable="$modelId">
-            <type link="ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-          </tag>
-          <tag name="return" line="90" description="" type="bool">
-            <type>bool</type>
-          </tag>
-        </docblock>
-        <argument line="0">
-          <name>$modelId</name>
-          <default></default>
-          <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</type>
-        </argument>
-      </method>
-    </interface>
-    <source>eJylVUtvGjEQvu+vmEMOFFFy6qlRSxXSNFJSoRS1l1zMemCt+rHxA0Kq/vfOeGGhBBLS7gHk8Ty+75uxffaxruritNstoAvjCuEGo7hxEnUAfIhog3IWhNZuESDSfulRRLa5KZiko6o1GZ3WWLI5sL1MIToDKqIJPU6MoqxgoWJFNvJYWEhW3SeEgJEDAnK4mFAqEaNXkxQx9JqI1tDgkWKitIrL/hrwZ+9sfHthJRgnk8bQoIWlSxAdTJLSEmq3QD9NGrQKUdkZCPKfKh3R84ogEDfOKEUUoGyDeEOLq/H26MsI5uizKO9WtkEtyp9ihkDfRr28E9JkvXnufC4wEClWzrMzDMVcSbhxWllMAc4kr/tmtR5YjI+GcMS+xA85tnT10qtZFWG3VxGFyZIMtCqpaxnN9eXoujESVQwu+ZIxnBaFFQYDQWNcNgp37oyhlsTlJ62VsCXeDctLtOiFvhuSJO+LIoVjnC8eSqxZsY3tNtmoDLY7lGs1b1eW9J8yisziSraGtd7jSgVqx9qNB9CwK5Bui0pRj5RESj9V3HfbbPZ3G3Mcx6yMOgip+FWwphk6f124RZpMnDew8uDU3lEH0QPr21/5rd0HHmPyFkLkmVtZT/N/nSbUNpgmm6cNZhgZ0WiV7itl67wh3Z4DQJNzoKBRDyhfqncl91U459OOrKyyIbJoMPV0tLlgLUJACXOhE4YntWvhhVlxhRO5wyaP7xGSNVkyAYAT07QE2m/8LO8nHdwjAZGK20owu++ZUecJ6F6L4BVKiXYm9zFrILYz1+TPtPZH/SezHNfZW/Q1lGiG6d4UWj1SW/bo/3fvt3z/qV+tW6w8v0IHLxb4USFjpYmk66G5yekVs6VLnBLbwi/q9K2F3NmCv0ei1vGFI3jcmd8qu6fWEImEoacBFD9XfDHKXmZ4nwQ/AS6DcPTjD3dlV+TNqRq3wesr9hCbiXP6WS4Nos7BWsTud/EHC4Gjeg==</source>
   </file>
   <package name="ContaoCommunityAlliance" full_name="ContaoCommunityAlliance">
     <package name="DcGeneral" full_name="ContaoCommunityAlliance\DcGeneral">
