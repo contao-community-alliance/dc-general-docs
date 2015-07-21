@@ -93,7 +93,9 @@
 </li>
 <li class="nav-header private">» Private
                     <ul>
+<li class="method private "><a href="#method_convertValue" title="convertValue() :: Convert the value according to the configured fieldtype."><span class="description">Convert the value according to the configured fieldtype.</span><pre>convertValue()</pre></a></li>
 <li class="method private "><a href="#method_determineParentsOfValues" title="determineParentsOfValues() :: Determine all parents of all selected values."><span class="description">Determine all parents of all selected values.</span><pre>determineParentsOfValues()</pre></a></li>
+<li class="method private "><a href="#method_getRootIds" title="getRootIds() :: Determine the root ids."><span class="description">Determine the root ids.</span><pre>getRootIds()</pre></a></li>
 <li class="method private "><a href="#method_parentsOf" title="parentsOf() :: Fetch all parents of the passed model."><span class="description">Fetch all parents of the passed model.</span><pre>parentsOf()</pre></a></li>
 </ul>
 </li>
@@ -103,10 +105,13 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
+<li class="property protected "><a href="#property_alwaysSave" title="$alwaysSave() :: Flag determining if the value shall always be saved."><span class="description"></span><pre>$alwaysSave</pre></a></li>
 <li class="property protected "><a href="#property_blnSubmitInput" title="$blnSubmitInput() :: Submit user input."><span class="description"></span><pre>$blnSubmitInput</pre></a></li>
 <li class="property protected "><a href="#property_dataContainer" title="$dataContainer() :: The data Container."><span class="description"></span><pre>$dataContainer</pre></a></li>
 <li class="property protected "><a href="#property_fieldType" title="$fieldType() :: The field type to use."><span class="description"></span><pre>$fieldType</pre></a></li>
 <li class="property protected "><a href="#property_itemContainer" title="$itemContainer() :: The data container for the item source."><span class="description"></span><pre>$itemContainer</pre></a></li>
+<li class="property protected "><a href="#property_maxLevel" title="$maxLevel() :: The maximum level for items to be selectable."><span class="description"></span><pre>$maxLevel</pre></a></li>
+<li class="property protected "><a href="#property_minLevel" title="$minLevel() :: The minimum level for items to be selectable."><span class="description"></span><pre>$minLevel</pre></a></li>
 <li class="property protected "><a href="#property_nodeStates" title="$nodeStates() :: The tree nodes to be handled."><span class="description"></span><pre>$nodeStates</pre></a></li>
 <li class="property protected "><a href="#property_orderField" title="$orderField() :: The property used for ordering."><span class="description"></span><pre>$orderField</pre></a></li>
 <li class="property protected "><a href="#property_sourceName" title="$sourceName() :: The source data container name."><span class="description"></span><pre>$sourceName</pre></a></li>
@@ -165,10 +170,6 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>internal</th>
-<td>param $array</td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$attributes</h4>
@@ -176,6 +177,11 @@
 <div class="subelement argument">
 <h4>$dataContainer</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</a></code><p>The data container.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When not in Backend mode.</td>
+</tr></table>
 </div></div>
 </div>
 <a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
@@ -534,9 +540,38 @@
 </div>
 </div></div>
 </div>
+<a id="method_convertValue"></a><div class="element clickable method private method_convertValue" data-toggle="collapse" data-target=".method_convertValue .collapse">
+<h2>Convert the value according to the configured fieldtype.</h2>
+<pre>convertValue(mixed $varValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$varValue</h4>
+<code>mixed</code><p>The value to convert.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="RuntimeException.html">\RuntimeException</a></code></th>
+<td>When an unknown field type is encountered.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
 <a id="method_determineParentsOfValues"></a><div class="element clickable method private method_determineParentsOfValues" data-toggle="collapse" data-target=".method_determineParentsOfValues .collapse">
 <h2>Determine all parents of all selected values.</h2>
 <pre>determineParentsOfValues() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getRootIds"></a><div class="element clickable method private method_getRootIds" data-toggle="collapse" data-target=".method_getRootIds .collapse">
+<h2>Determine the root ids.</h2>
+<pre>getRootIds() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -561,6 +596,12 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_alwaysSave"> </a><div class="element clickable property protected property_alwaysSave" data-toggle="collapse" data-target=".property_alwaysSave .collapse">
+<h2>Flag determining if the value shall always be saved.</h2>
+<pre>$alwaysSave : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_blnSubmitInput"> </a><div class="element clickable property protected property_blnSubmitInput" data-toggle="collapse" data-target=".property_blnSubmitInput .collapse">
 <h2>Submit user input.</h2>
 <pre>$blnSubmitInput : boolean</pre>
@@ -582,6 +623,18 @@
 <a id="property_itemContainer"> </a><div class="element clickable property protected property_itemContainer" data-toggle="collapse" data-target=".property_itemContainer .collapse">
 <h2>The data container for the item source.</h2>
 <pre>$itemContainer : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DC_General.html">\ContaoCommunityAlliance\DcGeneral\DC_General</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_maxLevel"> </a><div class="element clickable property protected property_maxLevel" data-toggle="collapse" data-target=".property_maxLevel .collapse">
+<h2>The maximum level for items to be selectable.</h2>
+<pre>$maxLevel : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_minLevel"> </a><div class="element clickable property protected property_minLevel" data-toggle="collapse" data-target=".property_minLevel .collapse">
+<h2>The minimum level for items to be selectable.</h2>
+<pre>$minLevel : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -653,7 +706,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-21T05:38:43+02:00.<br></footer></div>
+            generated on 2015-07-21T11:52:12+02:00.<br></footer></div>
 </div>
 </body>
 </html>
