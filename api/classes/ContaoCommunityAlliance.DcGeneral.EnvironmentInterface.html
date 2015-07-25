@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">101</span></a></li>
+                <span class="label label-info">89</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -67,7 +67,6 @@
 <li class="method public "><a href="#method_getDataDefinition" title="getDataDefinition() :: Retrieve the data definition for this instance."><span class="description">Retrieve the data definition for this instance.</span><pre>getDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_getDataProvider" title="getDataProvider() :: Retrieve the data provider for the named source."><span class="description">Retrieve the data provider for the named source.</span><pre>getDataProvider()</pre></a></li>
 <li class="method public "><a href="#method_getEventDispatcher" title="getEventDispatcher() :: Get the event dispatcher to use."><span class="description">Get the event dispatcher to use.</span><pre>getEventDispatcher()</pre></a></li>
-<li class="method public "><a href="#method_getEventPropagator" title="getEventPropagator() :: Retrieve the event propagator to use."><span class="description">Retrieve the event propagator to use.</span><pre>getEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_getInputProvider" title="getInputProvider() :: Retrieve the input provider."><span class="description">Retrieve the input provider.</span><pre>getInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_getParentDataDefinition" title="getParentDataDefinition() :: Retrieve the data definition for the parent container. This applies only when in parented mode."><span class="description">Retrieve the data definition for the parent container. This applies only when in parented mode.</span><pre>getParentDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_getRootDataDefinition" title="getRootDataDefinition() :: Retrieve the data definition for the root container. This applies only when in hierarchical mode."><span class="description">Retrieve the data definition for the root container. This applies only when in hierarchical mode.</span><pre>getRootDataDefinition()</pre></a></li>
@@ -81,7 +80,6 @@
 <li class="method public "><a href="#method_setController" title="setController() :: Set the Controller for the current setup."><span class="description">Set the Controller for the current setup.</span><pre>setController()</pre></a></li>
 <li class="method public "><a href="#method_setDataDefinition" title="setDataDefinition() :: Set the data definition for this instance."><span class="description">Set the data definition for this instance.</span><pre>setDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_setEventDispatcher" title="setEventDispatcher() :: Set the event dispatcher to use."><span class="description">Set the event dispatcher to use.</span><pre>setEventDispatcher()</pre></a></li>
-<li class="method public "><a href="#method_setEventPropagator" title="setEventPropagator() :: Set the event propagator to use."><span class="description">Set the event propagator to use.</span><pre>setEventPropagator()</pre></a></li>
 <li class="method public "><a href="#method_setInputProvider" title="setInputProvider() :: Set the input provider to use."><span class="description">Set the input provider to use.</span><pre>setInputProvider()</pre></a></li>
 <li class="method public "><a href="#method_setParentDataDefinition" title="setParentDataDefinition() :: Set the data definition of the parent container."><span class="description">Set the data definition of the parent container.</span><pre>setParentDataDefinition()</pre></a></li>
 <li class="method public "><a href="#method_setRootDataDefinition" title="setRootDataDefinition() :: Set the data definition of the root container."><span class="description">Set the data definition of the root container.</span><pre>setRootDataDefinition()</pre></a></li>
@@ -196,21 +194,6 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code></div>
-</div></div>
-</div>
-<a id="method_getEventPropagator"></a><div class="element clickable method public method_getEventPropagator" data-toggle="collapse" data-target=".method_getEventPropagator .collapse">
-<h2>Retrieve the event propagator to use.</h2>
-<pre>getEventPropagator() : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
-            listener if you want to handle the event.</td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_getInputProvider"></a><div class="element clickable method public method_getInputProvider" data-toggle="collapse" data-target=".method_getInputProvider .collapse">
@@ -371,25 +354,6 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
 </div></div>
 </div>
-<a id="method_setEventPropagator"></a><div class="element clickable method public method_setEventPropagator" data-toggle="collapse" data-target=".method_setEventPropagator .collapse">
-<h2>Set the event propagator to use.</h2>
-<pre>setEventPropagator(\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface $propagator) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>deprecated</th>
-<td>Event propagation turned out to be not very effective. Use plain event dispatching and check in the
-            listener if you want to handle the event.</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$propagator</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.EventPropagatorInterface.html">\ContaoCommunityAlliance\DcGeneral\Event\EventPropagatorInterface</a></code><p>The event propagator to use.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></code></div>
-</div></div>
-</div>
 <a id="method_setInputProvider"></a><div class="element clickable method public method_setInputProvider" data-toggle="collapse" data-target=".method_setInputProvider .collapse">
 <h2>Set the input provider to use.</h2>
 <pre>setInputProvider(\ContaoCommunityAlliance\DcGeneral\InputProviderInterface $objInputProvider) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.EnvironmentInterface.html">\ContaoCommunityAlliance\DcGeneral\EnvironmentInterface</a></pre>
@@ -482,7 +446,7 @@ will get returned, the default is to be determined via: getEnvironment()->getDat
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-25T02:12:53+02:00.<br></footer></div>
+            generated on 2015-07-25T06:13:48+02:00.<br></footer></div>
 </div>
 </body>
 </html>

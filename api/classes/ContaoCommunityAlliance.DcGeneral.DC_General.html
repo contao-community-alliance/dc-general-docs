@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">101</span></a></li>
+                <span class="label label-info">89</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -423,16 +423,24 @@ See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCa
 </div>
 <a id="method_save"></a><div class="element clickable method protected method_save" data-toggle="collapse" data-target=".method_save .collapse">
 <h2>Do not use.</h2>
-<pre>save($varValue) : void</pre>
+<pre>save(mixed $varValue) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>deprecated</th>
 <td>Only here as requirement of \DataContainer</td>
-</tr></table>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.UnusedFormalParameter)</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$varValue</h4></div>
+<div class="subelement argument">
+<h4>$varValue</h4>
+<code>mixed</code><p>Ignored.</p></div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
@@ -489,10 +497,16 @@ See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCa
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>SuppressWarnings</th>
 <td>(PHPMD.Superglobals)</td>
-</tr></table>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="TranslatorInterface.html">\ContaoCommunityAlliance\Translator\TranslatorInterface</a></code></div>
 </div></div>
@@ -513,7 +527,7 @@ See the implementation in constructor and ExtendedLegacyDcaPopulator::populateCa
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-25T02:12:52+02:00.<br></footer></div>
+            generated on 2015-07-25T06:13:47+02:00.<br></footer></div>
 </div>
 </body>
 </html>

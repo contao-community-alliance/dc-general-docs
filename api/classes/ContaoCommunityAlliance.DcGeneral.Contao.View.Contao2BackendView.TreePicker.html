@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">101</span></a></li>
+                <span class="label label-info">89</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -97,6 +97,7 @@
 <li class="method private "><a href="#method_determineParentsOfValues" title="determineParentsOfValues() :: Determine all parents of all selected values."><span class="description">Determine all parents of all selected values.</span><pre>determineParentsOfValues()</pre></a></li>
 <li class="method private "><a href="#method_getRootIds" title="getRootIds() :: Determine the root ids."><span class="description">Determine the root ids.</span><pre>getRootIds()</pre></a></li>
 <li class="method private "><a href="#method_parentsOf" title="parentsOf() :: Fetch all parents of the passed model."><span class="description">Fetch all parents of the passed model.</span><pre>parentsOf()</pre></a></li>
+<li class="method private "><a href="#method_sortValues" title="sortValues() :: Sort the passed value array by the defined order field (if defined)."><span class="description">Sort the passed value array by the defined order field (if defined).</span><pre>sortValues()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -266,7 +267,13 @@
 <h2>Generate a particular sub part of the page tree and return it as HTML string.</h2>
 <pre>generateAjax() : void</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.ExitExpression)</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_generatePopup"></a><div class="element clickable method public method_generatePopup" data-toggle="collapse" data-target=".method_generatePopup .collapse">
 <h2>Generate when being called from within a popup.</h2>
@@ -404,6 +411,10 @@
 <tr>
 <th>SuppressWarnings</th>
 <td>(PHPMD.CamelCaseVariableName)</td>
+</tr>
+<tr>
+<th>SuppressWarnings</th>
+<td>(PHPMD.ExitExpression)</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -594,6 +605,20 @@
 <code>string[]</code><p>The ids of all detected parents so far.</p></div>
 </div></div>
 </div>
+<a id="method_sortValues"></a><div class="element clickable method private method_sortValues" data-toggle="collapse" data-target=".method_sortValues .collapse">
+<h2>Sort the passed value array by the defined order field (if defined).</h2>
+<pre>sortValues(array $values) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$values</h4>
+<code>array</code><p>The values.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_alwaysSave"> </a><div class="element clickable property protected property_alwaysSave" data-toggle="collapse" data-target=".property_alwaysSave .collapse">
@@ -706,7 +731,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-25T02:12:52+02:00.<br></footer></div>
+            generated on 2015-07-25T06:13:47+02:00.<br></footer></div>
 </div>
 </body>
 </html>

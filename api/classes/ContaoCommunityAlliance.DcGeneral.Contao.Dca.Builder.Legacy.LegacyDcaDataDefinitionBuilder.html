@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">101</span></a></li>
+                <span class="label label-info">89</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -77,7 +77,6 @@
 <li class="method protected "><a href="#method_parseBasicFlags" title="parseBasicFlags() :: Parse the basic flags."><span class="description">Parse the basic flags.</span><pre>parseBasicFlags()</pre></a></li>
 <li class="method protected "><a href="#method_parseBasicMode" title="parseBasicMode() :: Parse the mode, flat, parented or hierarchical."><span class="description">Parse the mode, flat, parented or hierarchical.</span><pre>parseBasicMode()</pre></a></li>
 <li class="method protected "><a href="#method_parseCallback" title="parseCallback() :: Register the callback handlers for the given legacy callbacks."><span class="description">Register the callback handlers for the given legacy callbacks.</span><pre>parseCallback()</pre></a></li>
-<li class="method protected "><a href="#method_parseCallbackPropagated" title="parseCallbackPropagated() :: Register the callback handlers for the given legacy callbacks."><span class="description">Register the callback handlers for the given legacy callbacks.</span><pre>parseCallbackPropagated()</pre></a></li>
 <li class="method protected "><a href="#method_parseCallbacks" title="parseCallbacks() :: Parse the basic configuration and populate the definition."><span class="description">Parse the basic configuration and populate the definition.</span><pre>parseCallbacks()</pre></a></li>
 <li class="method protected "><a href="#method_parseDataProvider" title="parseDataProvider() :: This method parses all data provider related information from Contao legacy data container arrays."><span class="description">This method parses all data provider related information from Contao legacy data container arrays.</span><pre>parseDataProvider()</pre></a></li>
 <li class="method protected "><a href="#method_parseGlobalOperations" title="parseGlobalOperations() :: Parse the defined container scoped operations and populate the definition."><span class="description">Parse the defined container scoped operations and populate the definition.</span><pre>parseGlobalOperations()</pre></a></li>
@@ -102,6 +101,9 @@
 <li class="method protected "><a href="#method_parseSingleProperty" title="parseSingleProperty() :: Parse a single property."><span class="description">Parse a single property.</span><pre>parseSingleProperty()</pre></a></li>
 <li class="method protected "><a href="#method_parseSinglePropertyLabel" title="parseSinglePropertyLabel() :: Parse the label of a single property."><span class="description">Parse the label of a single property.</span><pre>parseSinglePropertyLabel()</pre></a></li>
 </ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_hasSubmit" title="hasSubmit() :: Check if the rows is somewhere a submit element."><span class="description">Check if the rows is somewhere a submit element.</span><pre>hasSubmit()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants
@@ -176,7 +178,7 @@ To use it, implement the method build() and register the class to the event disp
 </div>
 <a id="method_createCommandInstance"></a><div class="element clickable method protected method_createCommandInstance" data-toggle="collapse" data-target=".method_createCommandInstance .collapse">
 <h2>Create the correct command instance for the given information.</h2>
-<pre>createCommandInstance(string $commandName, array $commandDca) : string</pre>
+<pre>createCommandInstance(string $commandName, array $commandDca) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -188,7 +190,7 @@ To use it, implement the method build() and register the class to the event disp
 <h4>$commandDca</h4>
 <code>array</code><p>The Dca information of the command.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
+<div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.CommandInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\CommandInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_evalFlag"></a><div class="element clickable method protected method_evalFlag" data-toggle="collapse" data-target=".method_evalFlag .collapse">
@@ -356,30 +358,6 @@ will get loaded.</div>
 <div class="subelement argument">
 <h4>$arguments</h4>
 <code>array</code><p>The arguments to pass to the constructor.</p></div>
-<div class="subelement argument">
-<h4>$listener</h4>
-<code>string</code><p>The listener class to use.</p></div>
-</div></div>
-</div>
-<a id="method_parseCallbackPropagated"></a><div class="element clickable method protected method_parseCallbackPropagated" data-toggle="collapse" data-target=".method_parseCallbackPropagated .collapse">
-<h2>Register the callback handlers for the given legacy callbacks.</h2>
-<pre>parseCallbackPropagated(\Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher, array $callbacks, string $eventName, array $suffixes, string $listener) : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$dispatcher</h4>
-<code><a href="EventDispatcherInterface.html">\Symfony\Component\EventDispatcher\EventDispatcherInterface</a></code><p>The event dispatcher.</p></div>
-<div class="subelement argument">
-<h4>$callbacks</h4>
-<code>array</code><p>The callbacks to be handled.</p></div>
-<div class="subelement argument">
-<h4>$eventName</h4>
-<code>string</code><p>The event to be registered to.</p></div>
-<div class="subelement argument">
-<h4>$suffixes</h4>
-<code>array</code><p>The suffixes for the event.</p></div>
 <div class="subelement argument">
 <h4>$listener</h4>
 <code>string</code><p>The listener class to use.</p></div>
@@ -718,6 +696,20 @@ Contao.</div>
 <code>string</code><code>array</code><p>The label value.</p></div>
 </div></div>
 </div>
+<a id="method_hasSubmit"></a><div class="element clickable method private method_hasSubmit" data-toggle="collapse" data-target=".method_hasSubmit .collapse">
+<h2>Check if the rows is somewhere a submit element.</h2>
+<pre>hasSubmit(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\PanelRowCollectionInterface $rows) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rows</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.View.PanelRowCollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\View\PanelRowCollectionInterface</a></code><p>The panel rows.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
 <a id="constant_PRIORITY"> </a><div class="element clickable constant  constant_PRIORITY" data-toggle="collapse" data-target=".constant_PRIORITY .collapse">
@@ -734,7 +726,7 @@ Contao.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-25T02:12:52+02:00.<br></footer></div>
+            generated on 2015-07-25T06:13:47+02:00.<br></footer></div>
 </div>
 </body>
 </html>

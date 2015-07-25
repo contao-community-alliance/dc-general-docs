@@ -40,7 +40,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">101</span></a></li>
+                <span class="label label-info">89</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -114,23 +114,23 @@
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_applyClipboardActions"></a><div class="element clickable method public method_applyClipboardActions" data-toggle="collapse" data-target=".method_applyClipboardActions .collapse">
 <h2>Evaluate clipboard items, then return the corresponding models.</h2>
-<pre>applyClipboardActions(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $source, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $after, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $into, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId, \ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter, array $items) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
+<pre>applyClipboardActions(\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $source, \ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $after, \ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $into, \ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $parentModelId, \ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface $filter, array $items) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$source</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The source model id.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The source model id.</p></div>
 <div class="subelement argument">
 <h4>$after</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The previous model id.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The previous model id.</p></div>
 <div class="subelement argument">
 <h4>$into</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The hierarchical parent model id.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The hierarchical parent model id.</p></div>
 <div class="subelement argument">
 <h4>$parentModelId</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent model id.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The parent model id.</p></div>
 <div class="subelement argument">
 <h4>$filter</h4>
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Clipboard.FilterInterface.html">\ContaoCommunityAlliance\DcGeneral\Clipboard\FilterInterface</a></code><p>Clipboard filter.</p></div>
@@ -190,25 +190,25 @@ conditions.</div>
 </div>
 <a id="method_fetchModelFromProvider"></a><div class="element clickable method public method_fetchModelFromProvider" data-toggle="collapse" data-target=".method_fetchModelFromProvider .collapse">
 <h2>Fetch a certain model from its provider.</h2>
-<pre>fetchModelFromProvider(string|\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $modelId, string|null $providerName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
+<pre>fetchModelFromProvider(string|\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $modelId, string|null $providerName) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$modelId</h4>
-<code>string</code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>This is either the id of the model or a serialized id.</p></div>
+<code>string</code><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>This is either the id of the model or a serialized id.</p></div>
 <div class="subelement argument">
 <h4>$providerName</h4>
-<code>string</code><code>null</code><p>The name of the provider, if this is empty, the id will be deserialized
-                                         and the provider name will get extracted from there.</p></div>
+<code>string</code><code>null</code><p>The name of the provider, if this is empty, the id will be
+                                             deserialized and the provider name will get extracted from there.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code></div>
 </div></div>
 </div>
 <a id="method_getBaseConfig"></a><div class="element clickable method public method_getBaseConfig" data-toggle="collapse" data-target=".method_getBaseConfig .collapse">
 <h2>Retrieve the base config for retrieving data.</h2>
-<pre>getBaseConfig(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></pre>
+<pre>getBaseConfig(\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $parentId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This includes all auxiliary filters from DCA etc. but excludes the filters from panels.</div>
@@ -225,7 +225,7 @@ conditions.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$parentId</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent ID.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The parent ID.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ConfigInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ConfigInterface</a></code></div>
 </div></div>
@@ -256,14 +256,14 @@ conditions.</div>
 </div>
 <a id="method_getModelsFromClipboard"></a><div class="element clickable method public method_getModelsFromClipboard" data-toggle="collapse" data-target=".method_getModelsFromClipboard .collapse">
 <h2>Retrieve models from the clipboard.</h2>
-<pre>getModelsFromClipboard(\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentModelId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
+<pre>getModelsFromClipboard(\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $parentModelId) : <a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a> | <a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">This will only return models, that are compatible with the current environment.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$parentModelId</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The optional parent id. If not given, the models must not have a parent.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The optional parent id. If not given, the models must not have a parent.</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</a></code><code><a href="ModelInterface%5B%5D.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface[]</a></code>
@@ -366,7 +366,7 @@ conditions.</div>
 </div>
 <a id="method_pasteTop"></a><div class="element clickable method public method_pasteTop" data-toggle="collapse" data-target=".method_pasteTop .collapse">
 <h2>Paste the content of the clipboard onto the top.</h2>
-<pre>pasteTop(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $models, string $sortedBy, \ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer $parentId) : void</pre>
+<pre>pasteTop(\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface $models, string $sortedBy, \ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $parentId) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -379,7 +379,7 @@ conditions.</div>
 <code>string</code><p>The name of the sorting property.</p></div>
 <div class="subelement argument">
 <h4>$parentId</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.IdSerializer.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\IdSerializer</a></code><p>The parent model ID.</p></div>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The parent model ID.</p></div>
 </div></div>
 </div>
 <a id="method_searchParentOf"></a><div class="element clickable method public method_searchParentOf" data-toggle="collapse" data-target=".method_searchParentOf .collapse">
@@ -503,7 +503,7 @@ conditions.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-25T02:12:53+02:00.<br></footer></div>
+            generated on 2015-07-25T06:13:47+02:00.<br></footer></div>
 </div>
 </body>
 </html>
