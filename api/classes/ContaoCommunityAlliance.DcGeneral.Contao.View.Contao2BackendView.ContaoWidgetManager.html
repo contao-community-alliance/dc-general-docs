@@ -77,12 +77,6 @@
                     <ul>
 <li class="method protected "><a href="#method_buildDatePicker" title="buildDatePicker() :: Build the date picker string."><span class="description">Build the date picker string.</span><pre>buildDatePicker()</pre></a></li>
 <li class="method protected "><a href="#method_generateHelpText" title="generateHelpText() :: Generate the help msg for a property."><span class="description">Generate the help msg for a property.</span><pre>generateHelpText()</pre></a></li>
-<li class="method protected "><a href="#method_getHelpWizard" title="getHelpWizard() :: Get the help wizard."><span class="description">Get the help wizard.</span><pre>getHelpWizard()</pre></a></li>
-<li class="method protected "><a href="#method_getListWizard" title="getListWizard() :: Get the list import wizard."><span class="description">Get the list import wizard.</span><pre>getListWizard()</pre></a></li>
-<li class="method protected "><a href="#method_getOptionsForWidget" title="getOptionsForWidget() :: Get special labels."><span class="description">Get special labels.</span><pre>getOptionsForWidget()</pre></a></li>
-<li class="method protected "><a href="#method_getTableWizard" title="getTableWizard() :: Get the table import wizard."><span class="description">Get the table import wizard.</span><pre>getTableWizard()</pre></a></li>
-<li class="method protected "><a href="#method_getWidgetClass" title="getWidgetClass() :: Try to resolve the class name for the widget."><span class="description">Try to resolve the class name for the widget.</span><pre>getWidgetClass()</pre></a></li>
-<li class="method protected "><a href="#method_getXLabel" title="getXLabel() :: Get special labels."><span class="description">Get special labels.</span><pre>getXLabel()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -93,7 +87,6 @@
                     <ul>
 <li class="property protected "><a href="#property_environment" title="$environment() :: The environment in use."><span class="description"></span><pre>$environment</pre></a></li>
 <li class="property protected "><a href="#property_model" title="$model() :: The model for which widgets shall be generated."><span class="description"></span><pre>$model</pre></a></li>
-<li class="property protected "><a href="#property_widgetMapping" title="$widgetMapping() :: Mapping list of widget types where the DC General has it own widgets."><span class="description"></span><pre>$widgetMapping</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -213,10 +206,20 @@
 <code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.PropertyValueBag.html">\ContaoCommunityAlliance\DcGeneral\Data\PropertyValueBag</a></code><p>The input values to use (optional).</p>
 </div>
 <h3>Exceptions</h3>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
 <td>When an unknown property has been passed.</td>
-</tr></table>
+</tr>
+<tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>When No widget could be build.</td>
+</tr>
+<tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralInvalidArgumentException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralInvalidArgumentException</a></code></th>
+<td>When property is not defined in the property definitions.</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="Widget.html">\Widget</a></code></div>
 </div></div>
@@ -358,95 +361,6 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_getHelpWizard"></a><div class="element clickable method protected method_getHelpWizard" data-toggle="collapse" data-target=".method_getHelpWizard .collapse">
-<h2>Get the help wizard.</h2>
-<pre>getHelpWizard(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$propInfo</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the wizard shall be generated.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getListWizard"></a><div class="element clickable method protected method_getListWizard" data-toggle="collapse" data-target=".method_getListWizard .collapse">
-<h2>Get the list import wizard.</h2>
-<pre>getListWizard() : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getOptionsForWidget"></a><div class="element clickable method protected method_getOptionsForWidget" data-toggle="collapse" data-target=".method_getOptionsForWidget .collapse">
-<h2>Get special labels.</h2>
-<pre>getOptionsForWidget(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo, \ContaoCommunityAlliance\DcGeneral\Data\ModelInterface $model) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$propInfo</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the X label shall be generated.</p></div>
-<div class="subelement argument">
-<h4>$model</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</a></code><p>The model.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getTableWizard"></a><div class="element clickable method protected method_getTableWizard" data-toggle="collapse" data-target=".method_getTableWizard .collapse">
-<h2>Get the table import wizard.</h2>
-<pre>getTableWizard() : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getWidgetClass"></a><div class="element clickable method protected method_getWidgetClass" data-toggle="collapse" data-target=".method_getWidgetClass .collapse">
-<h2>Try to resolve the class name for the widget.</h2>
-<pre>getWidgetClass(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $property) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.Superglobals)</td>
-</tr>
-<tr>
-<th>SuppressWarnings</th>
-<td>(PHPMD.CamelCaseVariableName)</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$property</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property to get the widget class name for.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getXLabel"></a><div class="element clickable method protected method_getXLabel" data-toggle="collapse" data-target=".method_getXLabel .collapse">
-<h2>Get special labels.</h2>
-<pre>getXLabel(\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface $propInfo) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$propInfo</h4>
-<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.DataDefinition.Definition.Properties.PropertyInterface.html">\ContaoCommunityAlliance\DcGeneral\DataDefinition\Definition\Properties\PropertyInterface</a></code><p>The property for which the X label shall be generated.</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_environment"> </a><div class="element clickable property protected property_environment" data-toggle="collapse" data-target=".property_environment .collapse">
@@ -461,12 +375,6 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_widgetMapping"> </a><div class="element clickable property protected property_widgetMapping" data-toggle="collapse" data-target=".property_widgetMapping .collapse">
-<h2>Mapping list of widget types where the DC General has it own widgets.</h2>
-<pre>$widgetMapping : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 </div>
 </div>
 </div>
@@ -475,7 +383,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-21T12:33:27+02:00.<br></footer></div>
+            generated on 2015-07-25T02:12:49+02:00.<br></footer></div>
 </div>
 </body>
 </html>
