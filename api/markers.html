@@ -81,6 +81,9 @@
 <li><a href="#ContaoCommunityAlliance/DcGeneral/Data/MultiLanguageDataProvider.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Data/MultiLanguageDataProvider.php</a></li>
 <li><a href="#ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/EditMask.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/EditMask.php</a></li>
 <li><a href="#ContaoCommunityAlliance/DcGeneral/Data/ConfigInterface.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Data/ConfigInterface.php</a></li>
+<li><a href="#ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/DeleteHandler.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/DeleteHandler.php</a></li>
+<li><a href="#ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/SelectHandler.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/SelectHandler.php</a></li>
+<li><a href="#ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/CopyHandler.php"><i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/CopyHandler.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -146,7 +149,7 @@
 </div>
 <div class="package-contents">
 <a name="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/BaseView.php" id="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/BaseView.php"></a><h3>
-<i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">4</small>
+<i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/BaseView.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -155,23 +158,18 @@
 <th>Description</th>
 </tr>
 <tr>
-<td>fixme</td>
-<td>503</td>
-<td>See DefaultController::delete() - we need to delete the children of this item as well over all data providers.</td>
-</tr>
-<tr>
 <td>todo</td>
-<td>558</td>
+<td>469</td>
 <td>move unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>571</td>
+<td>482</td>
 <td>undo unimplemented.</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1095</td>
+<td>1006</td>
 <td>Shall we interface this option?</td>
 </tr>
 </table></div>
@@ -188,12 +186,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>96</td>
+<td>90</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>240</td>
+<td>234</td>
 <td>foreignKey is not implemented yet.</td>
 </tr>
 </table></div>
@@ -266,7 +264,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>430</td>
+<td>431</td>
 <td>this only takes array('name', 'value') into account. Add support for: array('name=?', 'value').</td>
 </tr>
 </table></div>
@@ -283,22 +281,22 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>218</td>
+<td>221</td>
 <td>shall we rather bail with "parent not found"?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>273</td>
+<td>276</td>
 <td>add real tree mode here - intMode.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>285</td>
+<td>289</td>
 <td>add real tree mode here.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>475</td>
+<td>482</td>
 <td>set real tree mode here.</td>
 </tr>
 </table></div>
@@ -637,6 +635,62 @@
 </tr>
 </table></div>
 </div>
+<div class="package-contents">
+<a name="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/DeleteHandler.php" id="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/DeleteHandler.php"></a><h3>
+<i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/DeleteHandler.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>103</td>
+<td>See DefaultController::delete() - we need to delete the children of this item as well over all</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/SelectHandler.php" id="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/SelectHandler.php"></a><h3>
+<i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/SelectHandler.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>116</td>
+<td>How to handle errors for one item? Abort and roll back or just log it and print the messages?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>136</td>
+<td>Protect against cut in no tree and no manual sorting view.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/CopyHandler.php" id="ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/CopyHandler.php"></a><h3>
+<i class="icon-file"></i>ContaoCommunityAlliance/DcGeneral/Contao/View/Contao2BackendView/ActionHandler/CopyHandler.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>100</td>
+<td>Copy each language multi language models.</td>
+</tr>
+</table></div>
+</div>
 </div>
 </div>
 </div>
@@ -644,7 +698,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-29T01:33:39+02:00.<br></footer></div>
+            generated on 2015-08-01T03:26:17+02:00.<br></footer></div>
 </div>
 </body>
 </html>

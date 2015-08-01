@@ -69,6 +69,9 @@
                     <ul>
 <li class="method protected "><a href="#method_getEnvironment" title="getEnvironment() :: Retrieve the environment."><span class="description">Retrieve the environment.</span><pre>getEnvironment()</pre></a></li>
 <li class="method protected "><a href="#method_getEvent" title="getEvent() :: Retrieve the environment."><span class="description">Retrieve the environment.</span><pre>getEvent()</pre></a></li>
+<li class="method protected "><a href="#method_guardNotEditOnly" title="guardNotEditOnly() :: Guard that the data container is not in edit only mode."><span class="description">Guard that the data container is not in edit only mode.</span><pre>guardNotEditOnly()</pre></a></li>
+<li class="method protected "><a href="#method_guardValidEnvironment" title="guardValidEnvironment() :: Guard that the environment is prepared for models data definition."><span class="description">Guard that the environment is prepared for models data definition.</span><pre>guardValidEnvironment()</pre></a></li>
+<li class="method protected "><a href="#method_isEditOnlyResponse" title="isEditOnlyResponse() :: Get response from edit action if we are in edit only mode."><span class="description">Get response from edit action if we are in edit only mode.</span><pre>isEditOnlyResponse()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -157,6 +160,50 @@
 <div class="subelement response"><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Event.ActionEvent.html">\ContaoCommunityAlliance\DcGeneral\Event\ActionEvent</a></code></div>
 </div></div>
 </div>
+<a id="method_guardNotEditOnly"></a><div class="element clickable method protected method_guardNotEditOnly" data-toggle="collapse" data-target=".method_guardNotEditOnly .collapse">
+<h2>Guard that the data container is not in edit only mode.</h2>
+<pre>guardNotEditOnly(\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $modelId) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The model id.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Contao.View.Contao2BackendView.Exception.EditOnlyModeException.html">\ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Exception\EditOnlyModeException</a></code></th>
+<td>If data container is in edit only mode.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_guardValidEnvironment"></a><div class="element clickable method protected method_guardValidEnvironment" data-toggle="collapse" data-target=".method_guardValidEnvironment .collapse">
+<h2>Guard that the environment is prepared for models data definition.</h2>
+<pre>guardValidEnvironment(\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface $modelId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$modelId</h4>
+<code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Data.ModelIdInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelIdInterface</a></code><p>The model id.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/ContaoCommunityAlliance.DcGeneral.Exception.DcGeneralRuntimeException.html">\ContaoCommunityAlliance\DcGeneral\Exception\DcGeneralRuntimeException</a></code></th>
+<td>If data provider name of modelId and definition does not match.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isEditOnlyResponse"></a><div class="element clickable method protected method_isEditOnlyResponse" data-toggle="collapse" data-target=".method_isEditOnlyResponse .collapse">
+<h2>Get response from edit action if we are in edit only mode.</h2>
+<pre>isEditOnlyResponse() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">It returns true if the data definition is in edit only mode.</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_event"> </a><div class="element clickable property private property_event" data-toggle="collapse" data-target=".property_event .collapse">
@@ -173,7 +220,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2015-07-29T01:33:29+02:00.<br></footer></div>
+            generated on 2015-08-01T03:26:06+02:00.<br></footer></div>
 </div>
 </body>
 </html>
