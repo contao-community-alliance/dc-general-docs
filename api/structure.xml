@@ -3965,131 +3965,132 @@ Contao handling.</description>
     </class>
     <source>eJyVVE1P20AQvftXzAEJEhVzqHqhgSYKCJBIGxWOSGizHsdb7F1rdxwaUf57Z9c2xE4odC/J7Hy+N289+lZmZXQ0HEYwhPnlHFZonTIavvCFvxuXQj6IJQKfJWq0Ij+ziqOCU1SUGet9MM2scqSEhhuZqTTN0cJIxq41xnK94NolSrJVESd42q9wQ5hy+iWqAh2MXDDvs2COM0OFUHksTbGVeOs7c+a10pxHtRXnbI0Xij7v6jXRiUXh4MoJ8QAjoZN1/EtYTMZLY5Y5dntJU66tWmbEvTKEGZKYmQRzB4SiiENMriRqF3i6vphf15epytGZykpk8yiKtGAszCjC1GgSZmqKotKK1pM8Z+ok3p3Ji5rlu/MVavoaRZX7SPSZIHEXhrrShDblHl8/mHquV8oaXXC7jdxWFLeZcoB+FvB/CkWECYiUA0FA4TtCxkwuEDU4sWInGSCmKeGRoLRmpRK0cV9PPaCBH5kL52BuHM29DB0FQMEP+JtQJw4mC0dWyNo1eeSd1flPkadeGu0Ivk9m53AC+4k8bDQbh0HjkksflnXtfcboUwJOf4ZhuYYXrbTIG2iCSMjsFVRgIm4S2rzxSljokv9HV3ne+I/CLzNBLH4utdf2CCnbY0xZmoTMrsbHdgwP9I3mpbCigF1bhD18vYVavBs3b1TqAoH67NVztMdX+h+CdlUOFEGPje4O+CEzESYNlet+B836giD1ttAGcZf1asEvE9JKS/Lftfv7IBFbSTqIWjTvcvfpJbRHTk3L2+4uthN4UcUAnl6SmBzucXy8OVune9Nm0Egl7IP4XR6e9uv3peVDn7cE9hOpsjV3/6C6v8SZWPMrDxCAmZRBpVubtnXtd19Dby9LpB+box8MQtgrSU3dXbhbmM/RX8ceKbg=</source>
   </file>
-  <file path="ContaoCommunityAlliance/DcGeneral/Controller/SortingManager.php" generated-path="ContaoCommunityAlliance.DcGeneral.Controller.SortingManager.html" hash="66db0792e63f539adf2c24096bc49b81" package="DcGeneral">
+  <file path="ContaoCommunityAlliance/DcGeneral/Controller/SortingManager.php" generated-path="ContaoCommunityAlliance.DcGeneral.Controller.SortingManager.html" hash="67415d61e28b8d1794d004589f6e7b53" package="DcGeneral">
     <docblock line="0">
       <description>PHP version 5</description>
       <long-description></long-description>
       <tag name="package" line="0" description="DcGeneral"/>
       <tag name="author" line="0" description="Christian Schiffler" link="mailto:c.schiffler@cyberspectrum.de"/>
+      <tag name="author" line="0" description="David Molineus" link="mailto:david.molineus@netzmacht.de"/>
       <tag name="copyright" line="0" description="The Contao Community Alliance."/>
       <tag name="license" line="0" description="LGPL."/>
       <tag name="filesource" line="0" description=""/>
     </docblock>
-    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="22" package="DcGeneral\Controller">
+    <class final="false" abstract="false" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="23" package="DcGeneral\Controller">
       <extends/>
       <name>SortingManager</name>
       <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager</full_name>
-      <docblock line="22">
+      <docblock line="23">
         <description>Handy helper class to keep manually sorted lists more manageable.</description>
         <long-description></long-description>
-        <tag name="package" line="22" description="DcGeneral\Controller"/>
+        <tag name="package" line="23" description="DcGeneral\Controller"/>
       </docblock>
-      <property static="false" visibility="protected" line="29" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="30" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$models</name>
         <default></default>
-        <docblock line="29">
+        <docblock line="30">
           <description>The collection containing the models to be inserted.</description>
           <long-description></long-description>
-          <tag name="var" line="29" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
+          <tag name="var" line="30" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="36" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="37" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$siblings</name>
         <default></default>
-        <docblock line="36">
+        <docblock line="37">
           <description>The collection containing the models that are siblings.</description>
           <long-description></long-description>
-          <tag name="var" line="36" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
+          <tag name="var" line="37" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="43" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="44" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$siblingsCopy</name>
         <default></default>
-        <docblock line="43">
+        <docblock line="44">
           <description>The collection containing the models that are siblings (working copy).</description>
           <long-description></long-description>
-          <tag name="var" line="43" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
+          <tag name="var" line="44" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="50" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="51" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$results</name>
         <default></default>
-        <docblock line="50">
+        <docblock line="51">
           <description>The result collection.</description>
           <long-description></long-description>
-          <tag name="var" line="50" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
+          <tag name="var" line="51" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="57" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="58" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$previousModel</name>
         <default></default>
-        <docblock line="57">
+        <docblock line="58">
           <description>The model preceding the target position of the first model from the collection.</description>
           <long-description></long-description>
-          <tag name="var" line="57" description="" type="null|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="">
+          <tag name="var" line="58" description="" type="null|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="">
             <type>null</type>
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="64" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="65" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$sortingProperty</name>
         <default></default>
-        <docblock line="64">
+        <docblock line="65">
           <description>The property that is used for sorting.</description>
           <long-description></long-description>
-          <tag name="var" line="64" description="" type="string" variable="">
+          <tag name="var" line="65" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="71" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="72" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$marker</name>
         <default></default>
-        <docblock line="71">
+        <docblock line="72">
           <description>Temporary marker containing the model currently in scope.</description>
           <long-description></long-description>
-          <tag name="var" line="71" description="" type="null|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="">
+          <tag name="var" line="72" description="" type="null|\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="">
             <type>null</type>
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" line="78" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
+      <property static="false" visibility="protected" line="79" namespace="ContaoCommunityAlliance\DcGeneral\Controller" package="DcGeneral\Controller">
         <name>$position</name>
         <default></default>
-        <docblock line="78">
+        <docblock line="79">
           <description>The current position value.</description>
           <long-description></long-description>
-          <tag name="var" line="78" description="" type="int" variable="">
+          <tag name="var" line="79" description="" type="int" variable="">
             <type>int</type>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="92" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="93" package="DcGeneral\Controller">
         <name>__construct</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::__construct()</full_name>
-        <docblock line="92">
+        <docblock line="93">
           <description>Create a new instance.</description>
           <long-description></long-description>
-          <tag name="param" line="92" description="&lt;p&gt;The collection containing the models to be inserted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$models">
+          <tag name="param" line="93" description="&lt;p&gt;The collection containing the models to be inserted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$models">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="param" line="92" description="&lt;p&gt;The collection containing the models that are siblings.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$siblings">
+          <tag name="param" line="93" description="&lt;p&gt;The collection containing the models that are siblings.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$siblings">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="param" line="92" description="&lt;p&gt;The property that is used for sorting.&lt;/p&gt;" type="string" variable="$sortedBy">
+          <tag name="param" line="93" description="&lt;p&gt;The property that is used for sorting.&lt;/p&gt;" type="string" variable="$sortedBy">
             <type>string</type>
           </tag>
-          <tag name="param" line="92" description="&lt;p&gt;The model preceding the target position of the first model from the&#10;                                          collection.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$previousModel">
+          <tag name="param" line="93" description="&lt;p&gt;The model preceding the target position of the first model from the&#10;                                          collection.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface" variable="$previousModel">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
           </tag>
         </docblock>
@@ -4114,16 +4115,16 @@ Contao handling.</description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="122" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="123" package="DcGeneral\Controller">
         <name>setModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::setModels()</full_name>
-        <docblock line="122">
+        <docblock line="123">
           <description>Set the collection containing the models to be inserted.</description>
           <long-description></long-description>
-          <tag name="param" line="122" description="&lt;p&gt;The collection containing the models to be inserted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$models">
+          <tag name="param" line="123" description="&lt;p&gt;The collection containing the models to be inserted.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$models">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="return" line="122" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
+          <tag name="return" line="123" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
             <type link="SortingManager.html">\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager</type>
           </tag>
         </docblock>
@@ -4133,28 +4134,28 @@ Contao handling.</description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="135" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="136" package="DcGeneral\Controller">
         <name>getModels</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::getModels()</full_name>
-        <docblock line="135">
+        <docblock line="136">
           <description>Get the collection containing the models to be inserted.</description>
           <long-description></long-description>
-          <tag name="return" line="135" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="136" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="148" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="149" package="DcGeneral\Controller">
         <name>setPreviousModel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::setPreviousModel()</full_name>
-        <docblock line="148">
+        <docblock line="149">
           <description>Set the model preceding the target position of the first model from the collection.</description>
           <long-description></long-description>
-          <tag name="param" line="148" description="&lt;p&gt;The model preceding the target position of the first model from the&#10;                                          collection.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null" variable="$previousModel">
+          <tag name="param" line="149" description="&lt;p&gt;The model preceding the target position of the first model from the&#10;                                          collection.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null" variable="$previousModel">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="148" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
+          <tag name="return" line="149" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
             <type link="SortingManager.html">\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager</type>
           </tag>
         </docblock>
@@ -4164,39 +4165,39 @@ Contao handling.</description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="161" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="162" package="DcGeneral\Controller">
         <name>getPreviousModel</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::getPreviousModel()</full_name>
-        <docblock line="161">
+        <docblock line="162">
           <description>Get the model preceding the target position of the first model from the collection.</description>
           <long-description></long-description>
-          <tag name="return" line="161" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null">
+          <tag name="return" line="162" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface|null">
             <type link="ModelInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\ModelInterface</type>
             <type>null</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="171" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="172" package="DcGeneral\Controller">
         <name>getResults</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::getResults()</full_name>
-        <docblock line="171">
+        <docblock line="172">
           <description>Get the result collection.</description>
           <long-description></long-description>
-          <tag name="return" line="171" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
+          <tag name="return" line="172" description="" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="185" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="186" package="DcGeneral\Controller">
         <name>setSiblings</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::setSiblings()</full_name>
-        <docblock line="185">
+        <docblock line="186">
           <description>Set the collection containing the models that are siblings.</description>
           <long-description></long-description>
-          <tag name="param" line="185" description="&lt;p&gt;The collection containing the models that are siblings.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$siblings">
+          <tag name="param" line="186" description="&lt;p&gt;The collection containing the models that are siblings.&lt;/p&gt;" type="\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface" variable="$siblings">
             <type link="CollectionInterface.html">\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
           </tag>
-          <tag name="return" line="185" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
+          <tag name="return" line="186" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
             <type link="SortingManager.html">\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager</type>
           </tag>
         </docblock>
@@ -4206,16 +4207,16 @@ Contao handling.</description>
           <type>\ContaoCommunityAlliance\DcGeneral\Data\CollectionInterface</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="200" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="201" package="DcGeneral\Controller">
         <name>setSortingProperty</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::setSortingProperty()</full_name>
-        <docblock line="200">
+        <docblock line="201">
           <description>Set the name of the sorting property.</description>
           <long-description></long-description>
-          <tag name="param" line="200" description="&lt;p&gt;The property that is used for sorting.&lt;/p&gt;" type="string" variable="$sortingProperty">
+          <tag name="param" line="201" description="&lt;p&gt;The property that is used for sorting.&lt;/p&gt;" type="string" variable="$sortingProperty">
             <type>string</type>
           </tag>
-          <tag name="return" line="200" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
+          <tag name="return" line="201" description="" type="\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager">
             <type link="SortingManager.html">\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager</type>
           </tag>
         </docblock>
@@ -4225,78 +4226,78 @@ Contao handling.</description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="213" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="214" package="DcGeneral\Controller">
         <name>getSortingProperty</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::getSortingProperty()</full_name>
-        <docblock line="213">
+        <docblock line="214">
           <description>Get the name of the sorting property.</description>
           <long-description></long-description>
-          <tag name="return" line="213" description="" type="string">
+          <tag name="return" line="214" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="223" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="224" package="DcGeneral\Controller">
         <name>getModelIds</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::getModelIds()</full_name>
-        <docblock line="223">
+        <docblock line="224">
           <description>Retrieve the ids of the models.</description>
           <long-description></long-description>
-          <tag name="return" line="223" description="" type="array">
+          <tag name="return" line="224" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="240" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="241" package="DcGeneral\Controller">
         <name>scanToDesiredPosition</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::scanToDesiredPosition()</full_name>
-        <docblock line="240">
+        <docblock line="241">
           <description>Scan through the sibling list to the position we want to insert at.</description>
           <long-description></long-description>
-          <tag name="return" line="240" description="" type="void">
+          <tag name="return" line="241" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="281" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="284" package="DcGeneral\Controller">
         <name>determineDelta</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::determineDelta()</full_name>
-        <docblock line="281">
-          <description>Determine delta value: ((next sorting - current sorting) / amount of insert models).</description>
-          <long-description></long-description>
-          <tag name="return" line="281" description="" type="float|int">
+        <docblock line="284">
+          <description>Determine delta value.</description>
+          <long-description>Delta value will be between 2 and a multiple 128 which is large enough to contain all models being moved.</long-description>
+          <tag name="return" line="284" description="" type="float|int">
             <type>float</type>
             <type>int</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="299" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="304" package="DcGeneral\Controller">
         <name>updateSorting</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::updateSorting()</full_name>
-        <docblock line="299">
+        <docblock line="304">
           <description>Update the sorting property values of all models.</description>
           <long-description></long-description>
-          <tag name="return" line="299" description="" type="void">
+          <tag name="return" line="304" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="348" package="DcGeneral\Controller">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="ContaoCommunityAlliance\DcGeneral\Controller" line="353" package="DcGeneral\Controller">
         <name>calculate</name>
         <full_name>\ContaoCommunityAlliance\DcGeneral\Controller\SortingManager::calculate()</full_name>
-        <docblock line="348">
+        <docblock line="353">
           <description>Calculate the resulting list.</description>
           <long-description></long-description>
-          <tag name="return" line="348" description="" type="void">
+          <tag name="return" line="353" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="throws" line="348" description="When no sorting property has been defined." type="\RuntimeException">
+          <tag name="throws" line="353" description="When no sorting property has been defined." type="\RuntimeException">
             <type link="RuntimeException.html">\RuntimeException</type>
           </tag>
         </docblock>
       </method>
     </class>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="ContaoCommunityAlliance/DcGeneral/DataDefinition/Palette/Builder/Event/SetDefaultPaletteConditionClassNameEvent.php" generated-path="ContaoCommunityAlliance.DcGeneral.DataDefinition.Palette.Builder.Event.SetDefaultPaletteConditionClassNameEvent.html" hash="5026c58a7aa076482868a33d86607207" package="generalDriver">
     <docblock line="0">
